@@ -1,0 +1,18 @@
+[global]
+showWarningOnDirectExecution = false
+
+[server]
+enableCORS = false
+enableXsrfProtection = false
+port = 8501
+headless = true
+
+[browser]
+gatherUsageStats = false
+serverAddress = "localhost"
+
+[client]
+showErrorDetails = true
+
+[theme]
+base = "dark"
