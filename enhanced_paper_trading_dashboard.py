@@ -21,7 +21,7 @@ def check_password():
     
     def password_entered():
         """Checks whether a password entered by the user is correct."""
-        if st.session_state["password"] == "102326":
+        if "password" in st.session_state and st.session_state["password"] == "102326":
             st.session_state["password_correct"] = True
             del st.session_state["password"]  # don't store password
         else:
