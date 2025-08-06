@@ -285,7 +285,7 @@ def main():
     if st.sidebar.button("🔄 Reset Account", type="secondary"):
         engine.reset_account()
         st.sidebar.success("Account reset to $10,000!")
-        st.experimental_rerun()
+        st.rerun()
     
     # Manual trade section
     st.sidebar.subheader("Manual Trade")
@@ -441,7 +441,7 @@ def main():
                                     if success:
                                         st.success(message)
                                         engine.save_data()
-                                        st.experimental_rerun()
+                                        st.rerun()
                                     else:
                                         st.error(message)
                             
@@ -542,7 +542,7 @@ def main():
     
     # Auto-refresh every 5 minutes
     time.sleep(300)
-    st.experimental_rerun()
+    st.rerun()
 
 if __name__ == "__main__":
     main()

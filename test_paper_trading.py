@@ -123,7 +123,7 @@ st.write(f"**Python Path**: {os.sys.executable}")
 
 # Manual refresh button
 if st.button("🔄 Refresh Test", type="primary"):
-    st.experimental_rerun()
+    st.rerun()
 
 st.markdown("---")
 st.markdown("**This is a test dashboard to verify the paper trading system is working correctly.**")

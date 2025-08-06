@@ -562,7 +562,7 @@ def main():
     
     # Auto-refresh every 5 minutes during market hours
     if st.button("🔄 Refresh Now"):
-        st.experimental_rerun()
+        st.rerun()
 
 if __name__ == "__main__":
     main()
