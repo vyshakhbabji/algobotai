@@ -109,10 +109,18 @@ The system tracks:
 ## 🎮 How to Use
 
 1. **Access Dashboard** - Navigate to deployed URL
-2. **Monitor Portfolio** - Check current positions and cash
-3. **Generate Signals** - Click "Generate AI Trading Signals"
-4. **Execute Trades** - Manual or automatic execution
-5. **Track Performance** - Monitor real-time results
+2. **Enter Password** - Use access code: `102326`
+3. **Monitor Portfolio** - Check current positions and cash
+4. **Generate Signals** - Click "Generate AI Trading Signals"
+5. **Execute Trades** - Manual or automatic execution
+6. **Track Performance** - Monitor real-time results
+
+## 🔐 Security
+
+The application is password-protected to prevent unauthorized access:
+- **Access Password**: `102326`
+- **Session Management**: Automatic logout on incorrect attempts
+- **Professional Interface**: Clean login screen for authorized users
 
 ## 🚨 Disclaimer
 

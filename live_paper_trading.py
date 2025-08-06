@@ -18,6 +18,43 @@ import time
 import pickle
 from improved_ai_portfolio_manager import ImprovedAIPortfolioManager
 
+# Password Protection
+def check_password():
+    """Returns True if the user had the correct password."""
+    
+    def password_entered():
+        """Checks whether a password entered by the user is correct."""
+        if st.session_state["password"] == "102326":
+            st.session_state["password_correct"] = True
+            del st.session_state["password"]  # don't store password
+        else:
+            st.session_state["password_correct"] = False
+
+    if "password_correct" not in st.session_state:
+        # First run, show input for password
+        st.title("🔐 AI Paper Trading Bot - Secure Access")
+        st.markdown("**Please enter the access password to continue:**")
+        st.text_input(
+            "Password", type="password", on_change=password_entered, key="password"
+        )
+        st.markdown("---")
+        st.markdown("*Authorized users only. This system manages a $10,000 AI trading portfolio.*")
+        return False
+    elif not st.session_state["password_correct"]:
+        # Password not correct, show input + error
+        st.title("🔐 AI Paper Trading Bot - Secure Access")
+        st.markdown("**Please enter the access password to continue:**")
+        st.text_input(
+            "Password", type="password", on_change=password_entered, key="password"
+        )
+        st.error("😞 Password incorrect. Please try again.")
+        st.markdown("---")
+        st.markdown("*Authorized users only. This system manages a $10,000 AI trading portfolio.*")
+        return False
+    else:
+        # Password correct
+        return True
+
 # Page configuration
 st.set_page_config(
     page_title="🚀 Live Paper Trading Engine",
@@ -265,6 +302,10 @@ class PaperTradingEngine:
         self.initialize_account()
 
 def main():
+    # Check password first
+    if not check_password():
+        return
+    
     st.markdown('<h1 class="main-header">🚀 Live Paper Trading Engine</h1>', unsafe_allow_html=True)
     
     # Initialize trading engine
