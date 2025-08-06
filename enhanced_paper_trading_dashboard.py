@@ -16,48 +16,7 @@ import requests
 from live_paper_trading import PaperTradingEngine
 
 # Password Protection (same as main dashboard)
-def check_password():
-    """Returns True if the user had the correct password."""
-    
-    def password_entered():
-        """Checks whether a password entered by the user is correct."""
-        if "password" in st.session_state:
-            # Clean the password input (remove spaces, normalize)
-            entered_password = str(st.session_state["password"]).strip().replace(" ", "")
-            correct_password = "102326"
-            
-            if entered_password == correct_password:
-                st.session_state["password_correct"] = True
-                del st.session_state["password"]  # don't store password
-            else:
-                st.session_state["password_correct"] = False
-        else:
-            st.session_state["password_correct"] = False
-
-    if "password_correct" not in st.session_state:
-        # First run, show input for password
-        st.title("🔐 Enhanced Trading Dashboard - Secure Access")
-        st.markdown("**Please enter the access password to continue:**")
-        st.text_input(
-            "Password", type="password", on_change=password_entered, key="password"
-        )
-        st.markdown("---")
-        st.markdown("*Authorized users only. This system manages a $10,000 AI trading portfolio.*")
-        return False
-    elif not st.session_state["password_correct"]:
-        # Password not correct, show input + error
-        st.title("🔐 Enhanced Trading Dashboard - Secure Access")
-        st.markdown("**Please enter the access password to continue:**")
-        st.text_input(
-            "Password", type="password", on_change=password_entered, key="password"
-        )
-        st.error("😞 Password incorrect. Please try again.")
-        st.markdown("---")
-        st.markdown("*Authorized users only. This system manages a $10,000 AI trading portfolio.*")
-        return False
-    else:
-        # Password correct
-        return True
+# Password protection removed for easier access
 
 # Page configuration
 st.set_page_config(
@@ -191,10 +150,6 @@ def analyze_market_sentiment():
         return pd.DataFrame()
 
 def main():
-    # Check password first
-    if not check_password():
-        return
-        
     st.title("📈 Enhanced Paper Trading Dashboard")
     st.markdown("**Live Market Monitoring & AI Trading Simulation**")
     
