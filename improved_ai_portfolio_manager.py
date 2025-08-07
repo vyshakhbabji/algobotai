@@ -15,12 +15,25 @@ from sklearn.metrics import mean_squared_error, r2_score
 import warnings
 warnings.filterwarnings('ignore')
 
-# Your stock universe
-STOCK_UNIVERSE = [
-    'GOOG', 'AAPL', 'MSFT', 'NVDA', 'META', 'AMZN', 'AVGO', 'PLTR', 
-    'NFLX', 'TSM', 'PANW', 'NOW', 'XLK', 'QQQ', 'COST'
-]
+# Dynamic stock universe - loaded from portfolio_universe.json
+def load_stock_universe():
+    """Load current stock universe from portfolio manager"""
+    import json
+    import os
+    
+    portfolio_file = "portfolio_universe.json"
+    if os.path.exists(portfolio_file):
+        with open(portfolio_file, 'r') as f:
+            data = json.load(f)
+            return data.get('stocks', [])
+    else:
+        # Fallback to default stocks
+        return [
+            'GOOG', 'AAPL', 'MSFT', 'NVDA', 'META', 'AMZN', 'AVGO', 'PLTR', 
+            'NFLX', 'TSM', 'PANW', 'NOW', 'XLK', 'QQQ', 'COST'
+        ]
 
+STOCK_UNIVERSE = load_stock_universe()
 INITIAL_CAPITAL = 10000
 
 class ImprovedAIPortfolioManager:
@@ -28,6 +41,7 @@ class ImprovedAIPortfolioManager:
         self.initial_capital = capital
         self.current_capital = capital
         self.positions = {}
+        self.stock_universe = load_stock_universe()  # Dynamic universe
         self.cash = capital
         self.portfolio_history = []
         self.trades = []
@@ -263,13 +277,16 @@ class ImprovedAIPortfolioManager:
             return 0
     
     def train_all_models(self):
-        """Train improved models for all stocks"""
+        """Train improved models for all stocks in current universe"""
         print("🧠 TRAINING IMPROVED AI MODELS")
         print("=" * 60)
         
+        # Refresh stock universe
+        self.stock_universe = load_stock_universe()
+        
         successful_models = 0
         
-        for symbol in STOCK_UNIVERSE:
+        for symbol in self.stock_universe:
             model, scaler, r2_score = self.train_improved_model(symbol, period='2y')
             
             if model is not None:
@@ -351,10 +368,13 @@ class ImprovedAIPortfolioManager:
         """Rebalance portfolio using improved AI predictions"""
         print(f"\n📅 Rebalancing on {date}")
         
-        # Get predictions for all stocks
+        # Refresh stock universe in case it was updated
+        self.stock_universe = load_stock_universe()
+        
+        # Get predictions for all stocks in current universe
         predictions = {}
         
-        for symbol in STOCK_UNIVERSE:
+        for symbol in self.stock_universe:
             try:
                 # Get recent data for prediction
                 stock = yf.Ticker(symbol)
