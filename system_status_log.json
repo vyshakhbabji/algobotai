@@ -1,5 +1,5 @@
 {
-  "timestamp": "2025-08-07T21:55:23.804810",
+  "timestamp": "2025-08-07T22:27:27.684312",
   "overall_health": "\ud83d\udfe2 HEALTHY",
   "healthy_systems": 6,
   "warning_systems": 0,
@@ -40,12 +40,12 @@
     "streamlit_pages": {
       "status": "healthy",
       "details": [
-        "\u2705 pages.enhanced_paper_trading_dashboard",
-        "\u2705 pages.live_paper_trading",
+        "\u2705 pages.enhanced_dashboard",
+        "\u2705 pages.live_trading",
         "\u2705 pages.portfolio_manager",
-        "\u2705 pages.test_paper_trading",
+        "\u2705 pages.system_monitor",
         "\u2705 pages.ai_optimizer",
-        "\u2705 pages.performance_dashboard"
+        "\u2705 pages.performance_analytics"
       ]
     },
     "ai_models": {

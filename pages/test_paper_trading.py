@@ -370,15 +370,15 @@ st.subheader("🚀 Quick Actions")
 col1, col2, col3 = st.columns(3)
 
 with col1:
-    if st.button("🔄 Refresh All Tests", type="primary", key="sysmon_refresh_button"):
+    if st.button("🔄 Refresh All Tests", type="primary", key="test_system_refresh_button"):
         st.rerun()
 
 with col2:
-    if st.button("📊 Open Live Trading", type="secondary", key="sysmon_live_trading_button"):
+    if st.button("📊 Open Live Trading", type="secondary", key="test_live_trading_button"):
         st.info("Navigate to Live Paper Trading page manually")
 
 with col3:
-    if st.button("⚙️ View Elite Options", type="secondary", key="sysmon_elite_options_button"):
+    if st.button("⚙️ View Elite Options", type="secondary", key="test_elite_options_button"):
         st.info("Check main dashboard for Elite Options Trading")
 
 # ========================================
@@ -442,7 +442,7 @@ st.markdown(f"""
 """)
 
 # Auto-refresh every 5 minutes option
-if st.checkbox("🔄 Auto-refresh every 5 minutes", key="sysmon_auto_refresh_checkbox"):
+if st.checkbox("🔄 Auto-refresh every 5 minutes", key="test_auto_refresh_checkbox"):
     import time
     time.sleep(300)  # 5 minutes
     st.rerun()

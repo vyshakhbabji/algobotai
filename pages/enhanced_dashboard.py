@@ -22,7 +22,7 @@ sys.path.append(parent_dir)
 
 # Import from pages directory
 try:
-    from pages.live_paper_trading import PaperTradingEngine
+    from pages.live_trading import PaperTradingEngine
 except ImportError:
     # Fallback: create a simple trading engine if import fails
     class PaperTradingEngine:
@@ -35,17 +35,15 @@ except ImportError:
             
         def get_positions(self):
             return self.positions
+            
+        def update_portfolio_value(self):
+            return self.account_balance
+            
+        def get_current_price(self, symbol):
+            return 100.0  # Dummy price
 
 # Password Protection (same as main dashboard)
 # Password protection removed for easier access
-
-# Page configuration
-st.set_page_config(
-    page_title="📈 Paper Trading Dashboard",
-    page_icon="📈",
-    layout="wide",
-    initial_sidebar_state="expanded"
-)
 
 # CSS styling
 st.markdown("""
