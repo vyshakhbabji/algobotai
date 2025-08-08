@@ -1,0 +1,18 @@
+# Alpaca API Configuration Template
+# Copy this file to .streamlit/secrets.toml for Streamlit Cloud
+# Or set as environment variables for local development
+
+[alpaca]
+api_key = "YOUR_ALPACA_API_KEY_HERE"
+secret_key = "YOUR_ALPACA_SECRET_KEY_HERE"
+
+# How to get your Alpaca keys:
+# 1. Sign up at https://alpaca.markets
+# 2. Go to "Paper Trading" in your dashboard
+# 3. Click "Generate API Key"
+# 4. Copy the API Key and Secret Key
+# 5. Paste them above
+
+# For local development, you can also set environment variables:
+# export ALPACA_API_KEY="your_api_key"
+# export ALPACA_SECRET_KEY="your_secret_key"
