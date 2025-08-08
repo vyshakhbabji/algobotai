@@ -25,14 +25,6 @@ from improved_ai_portfolio_manager import ImprovedAIPortfolioManager
 # Password Protection
 # Password protection removed for easier access
 
-# Page configuration
-st.set_page_config(
-    page_title="🚀 Live Paper Trading Engine",
-    page_icon="💰",
-    layout="wide",
-    initial_sidebar_state="expanded"
-)
-
 # Custom CSS
 st.markdown("""
 <style>

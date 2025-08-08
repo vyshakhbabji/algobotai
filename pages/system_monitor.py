@@ -14,13 +14,6 @@ import pandas as pd
 # Add parent directory to path for imports
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-# Page configuration
-st.set_page_config(
-    page_title="🔧 System Status Monitor",
-    page_icon="🔧",
-    layout="wide"
-)
-
 st.title("🔧 AlgoTradingBot System Status Monitor")
 st.markdown("**Comprehensive Health Check & Diagnostics**")
 
@@ -188,7 +181,7 @@ engine_tests = []
 
 # Test Paper Trading Engine
 try:
-    from pages.live_paper_trading import PaperTradingEngine
+    from pages.live_trading import PaperTradingEngine
     engine = PaperTradingEngine()
     
     # Test portfolio value calculation

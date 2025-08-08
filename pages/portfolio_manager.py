@@ -17,13 +17,6 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from improved_ai_portfolio_manager import ImprovedAIPortfolioManager
 
-# Page configuration
-st.set_page_config(
-    page_title="📊 Portfolio Manager",
-    page_icon="📊",
-    layout="wide"
-)
-
 # Custom CSS
 st.markdown("""
 <style>
