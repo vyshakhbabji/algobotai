@@ -13,9 +13,13 @@ import plotly.express as px
 from datetime import datetime, timedelta
 import json
 import os
+import sys
 from pathlib import Path
 import time
 import pickle
+
+# Add parent directory to path for imports
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from improved_ai_portfolio_manager import ImprovedAIPortfolioManager
 
 # Password Protection
@@ -82,9 +86,11 @@ st.markdown("""
 
 class PaperTradingEngine:
     def __init__(self):
-        self.data_file = "paper_trading_data.json"
-        self.positions_file = "current_positions.json"
-        self.trades_file = "trade_history.json"
+        # Use parent directory for data files
+        parent_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+        self.data_file = os.path.join(parent_dir, "paper_trading_data.json")
+        self.positions_file = os.path.join(parent_dir, "current_positions.json")
+        self.trades_file = os.path.join(parent_dir, "trade_history.json")
         self.initialize_account()
         
     def initialize_account(self):
@@ -120,10 +126,14 @@ class PaperTradingEngine:
         with open(self.data_file, 'r') as f:
             self.account = json.load(f)
         with open(self.positions_file, 'r') as f:
-            self.positions = json.load(f)
+            positions_data = json.load(f)
+            # Ensure positions is always a dictionary
+            self.positions = positions_data if isinstance(positions_data, dict) else {}
         if os.path.exists(self.trades_file):
             with open(self.trades_file, 'r') as f:
-                self.trades = json.load(f)
+                trades_data = json.load(f)
+                # Ensure trades is always a list
+                self.trades = trades_data if isinstance(trades_data, list) else []
         else:
             self.trades = []
     

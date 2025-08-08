@@ -14,6 +14,10 @@ from plotly.subplots import make_subplots
 import json
 import os
 from datetime import datetime, timedelta
+import sys
+import os
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 from improved_ai_portfolio_manager import ImprovedAIPortfolioManager
 import warnings
 warnings.filterwarnings('ignore')
@@ -61,7 +65,8 @@ class PerformanceAnalyzer:
     
     def load_portfolio(self):
         """Load current portfolio universe"""
-        portfolio_file = "portfolio_universe.json"
+        parent_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+        portfolio_file = os.path.join(parent_dir, "portfolio_universe.json")
         if os.path.exists(portfolio_file):
             with open(portfolio_file, 'r') as f:
                 data = json.load(f)
@@ -193,20 +198,36 @@ class PerformanceAnalyzer:
             if not test_predictions:
                 return None
             
-            # Calculate backtest results
+            # Calculate backtest results with multiple strategies
             predictions_array = np.array(test_predictions)
             returns_array = np.array(test_returns)
             
-            # Strategy: Buy when prediction > 0.02 (2% predicted gain)
-            buy_signals = predictions_array > 0.02
-            strategy_returns = np.where(buy_signals, returns_array, 0)
+            # Strategy 1: Conservative (1% threshold)
+            buy_signals_conservative = predictions_array > 0.01
+            strategy_returns_conservative = np.where(buy_signals_conservative, returns_array, 0)
             
-            # Calculate cumulative performance
+            # Strategy 2: Moderate (0.5% threshold) 
+            buy_signals_moderate = predictions_array > 0.005
+            strategy_returns_moderate = np.where(buy_signals_moderate, returns_array, 0)
+            
+            # Strategy 3: Aggressive (0.1% threshold)
+            buy_signals_aggressive = predictions_array > 0.001
+            strategy_returns_aggressive = np.where(buy_signals_aggressive, returns_array, 0)
+            
+            # Use moderate strategy as default
+            buy_signals = buy_signals_moderate
+            strategy_returns = strategy_returns_moderate
+            
+            # Calculate cumulative performance for all strategies
             cumulative_strategy = (1 + strategy_returns).cumprod()
             cumulative_market = (1 + returns_array).cumprod()
+            cumulative_conservative = (1 + strategy_returns_conservative).cumprod()
+            cumulative_aggressive = (1 + strategy_returns_aggressive).cumprod()
             
             strategy_total_return = (cumulative_strategy[-1] - 1) * 100
             market_total_return = (cumulative_market[-1] - 1) * 100
+            conservative_return = (cumulative_conservative[-1] - 1) * 100
+            aggressive_return = (cumulative_aggressive[-1] - 1) * 100
             
             return {
                 'symbol': symbol,
@@ -215,8 +236,12 @@ class PerformanceAnalyzer:
                 'model_r2': r2_score,
                 'total_predictions': len(test_predictions),
                 'buy_signals': np.sum(buy_signals),
+                'buy_signals_conservative': np.sum(buy_signals_conservative),
+                'buy_signals_aggressive': np.sum(buy_signals_aggressive),
                 'strategy_return': strategy_total_return,
                 'market_return': market_total_return,
+                'conservative_return': conservative_return,
+                'aggressive_return': aggressive_return,
                 'alpha': strategy_total_return - market_total_return,
                 'predictions': test_predictions,
                 'actual_returns': test_returns,
@@ -425,7 +450,9 @@ def main():
             )
             
             if backtest_result:
-                # Backtest results
+                # Backtest results - Multiple strategies
+                st.subheader("🎯 Strategy Comparison")
+                
                 col1, col2, col3, col4 = st.columns(4)
                 
                 with col1:
@@ -433,25 +460,38 @@ def main():
                     st.markdown(f'''
                     <div class="perf-card {card_class}">
                         <h3>{backtest_result['strategy_return']:.1f}%</h3>
-                        <p>AI Strategy Return</p>
+                        <p>Moderate Strategy (0.5%)</p>
+                        <small>{backtest_result['buy_signals']} signals</small>
                     </div>
                     ''', unsafe_allow_html=True)
                 
                 with col2:
-                    card_class = "positive" if backtest_result['market_return'] > 0 else "negative"
+                    card_class = "positive" if backtest_result['conservative_return'] > 0 else "negative"
                     st.markdown(f'''
                     <div class="perf-card {card_class}">
-                        <h3>{backtest_result['market_return']:.1f}%</h3>
-                        <p>Market Return</p>
+                        <h3>{backtest_result['conservative_return']:.1f}%</h3>
+                        <p>Conservative (1%)</p>
+                        <small>{backtest_result['buy_signals_conservative']} signals</small>
                     </div>
                     ''', unsafe_allow_html=True)
                 
                 with col3:
-                    card_class = "positive" if backtest_result['alpha'] > 0 else "negative"
+                    card_class = "positive" if backtest_result['aggressive_return'] > 0 else "negative"
                     st.markdown(f'''
                     <div class="perf-card {card_class}">
-                        <h3>{backtest_result['alpha']:.1f}%</h3>
-                        <p>Alpha (Excess Return)</p>
+                        <h3>{backtest_result['aggressive_return']:.1f}%</h3>
+                        <p>Aggressive (0.1%)</p>
+                        <small>{backtest_result['buy_signals_aggressive']} signals</small>
+                    </div>
+                    ''', unsafe_allow_html=True)
+                
+                with col4:
+                    card_class = "positive" if backtest_result['market_return'] > 0 else "negative"
+                    st.markdown(f'''
+                    <div class="perf-card {card_class}">
+                        <h3>{backtest_result['market_return']:.1f}%</h3>
+                        <p>Market (Buy & Hold)</p>
+                        <small>Baseline</small>
                     </div>
                     ''', unsafe_allow_html=True)
                 

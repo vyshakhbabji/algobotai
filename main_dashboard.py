@@ -73,6 +73,17 @@ def main():
             with open("paper_trading_data.json", 'r') as f:
                 account_data = json.load(f)
             
+            # Check system health
+            try:
+                if os.path.exists("system_status_log.json"):
+                    with open("system_status_log.json", 'r') as f:
+                        status_data = json.load(f)
+                    system_health = status_data.get('overall_health', '🔴 UNKNOWN')
+                else:
+                    system_health = '🟡 CHECK NEEDED'
+            except:
+                system_health = '🔴 ERROR'
+            
             col1, col2, col3, col4 = st.columns(4)
             
             with col1:
@@ -101,17 +112,10 @@ def main():
                 ''', unsafe_allow_html=True)
             
             with col4:
-                # Count portfolio stocks
-                portfolio_count = 0
-                if os.path.exists("portfolio_universe.json"):
-                    with open("portfolio_universe.json", 'r') as f:
-                        portfolio_data = json.load(f)
-                        portfolio_count = len(portfolio_data.get('stocks', []))
-                
                 st.markdown(f'''
                 <div class="stats-card">
-                    <h3>{portfolio_count}</h3>
-                    <p>Tracked Stocks</p>
+                    <h3>{system_health}</h3>
+                    <p>System Health</p>
                 </div>
                 ''', unsafe_allow_html=True)
         
@@ -138,38 +142,38 @@ def main():
         """, unsafe_allow_html=True)
         
         if st.button("Launch Live Trading", type="primary", use_container_width=True):
-            st.switch_page("live_paper_trading.py")
+            st.switch_page("pages/live_paper_trading.py")
     
     with col2:
         st.markdown("""
         <div class="nav-card">
-            <h2>📈 Enhanced Dashboard</h2>
-            <p>Advanced market analysis and scanning</p>
-            <p>✅ Market scanner and top movers</p>
-            <p>✅ Technical analysis charts</p>
-            <p>✅ Advanced AI signals</p>
+            <h2>� Elite Options Trading</h2>
+            <p>AI-powered options strategies for 50-200% returns</p>
+            <p>✅ Smart options strategy selection</p>
+            <p>✅ Risk/reward optimization</p>
+            <p>✅ High-probability setups</p>
         </div>
         """, unsafe_allow_html=True)
         
-        if st.button("Launch Enhanced Dashboard", type="primary", use_container_width=True):
-            st.switch_page("enhanced_paper_trading_dashboard.py")
+        if st.button("Launch Options Trading", type="primary", use_container_width=True):
+            st.switch_page("pages/elite_options_trading.py")
     
     # Portfolio management row
-    col1, col2 = st.columns(2)
+    col1, col2, col3 = st.columns(3)
     
     with col1:
         st.markdown("""
         <div class="nav-card">
             <h2>📊 Portfolio Manager</h2>
-            <p>Manage your stock universe (up to 50 stocks)</p>
+            <p>Manage your elite stock universe (25 stocks)</p>
             <p>✅ Add/remove stocks dynamically</p>
             <p>✅ Sector and market cap analysis</p>
-            <p>✅ Portfolio optimization tools</p>
+            <p>✅ Elite stock selection tools</p>
         </div>
         """, unsafe_allow_html=True)
         
         if st.button("Manage Portfolio", type="secondary", use_container_width=True):
-            st.switch_page("portfolio_manager.py")
+            st.switch_page("pages/portfolio_manager.py")
     
     with col2:
         st.markdown("""
@@ -183,7 +187,21 @@ def main():
         """, unsafe_allow_html=True)
         
         if st.button("View Performance", type="secondary", use_container_width=True):
-            st.switch_page("performance_dashboard.py")
+            st.switch_page("pages/performance_dashboard.py")
+            
+    with col3:
+        st.markdown("""
+        <div class="nav-card">
+            <h2>📈 Enhanced Dashboard</h2>
+            <p>Advanced market analysis and scanning</p>
+            <p>✅ Market scanner and top movers</p>
+            <p>✅ Technical analysis charts</p>
+            <p>✅ Advanced AI signals</p>
+        </div>
+        """, unsafe_allow_html=True)
+        
+        if st.button("Launch Enhanced", type="secondary", use_container_width=True):
+            st.switch_page("pages/enhanced_paper_trading_dashboard.py")
     
     # Test dashboard
     col1, col2 = st.columns(2)
@@ -191,25 +209,42 @@ def main():
     with col1:
         st.markdown("""
         <div class="nav-card">
-            <h2>🎯 System Test</h2>
-            <p>Verify system functionality and data integrity</p>
-            <p>✅ Engine diagnostics</p>
-            <p>✅ Data file validation</p>
-            <p>✅ Price feed testing</p>
+            <h2>🧠 AI Self-Optimizer</h2>
+            <p>Continuously improve AI models for better returns</p>
+            <p>✅ Performance monitoring and evaluation</p>
+            <p>✅ Automatic model retraining</p>
+            <p>✅ Parameter optimization</p>
         </div>
         """, unsafe_allow_html=True)
         
-        if st.button("Run System Test", type="secondary", use_container_width=True):
-            st.switch_page("test_paper_trading.py")
+        if st.button("Launch AI Optimizer", type="secondary", use_container_width=True):
+            st.switch_page("pages/ai_optimizer.py")
     
     with col2:
+        st.markdown("""
+        <div class="nav-card">
+            <h2>🔧 System Status Monitor</h2>
+            <p>Comprehensive health check & diagnostics</p>
+            <p>✅ 6 critical system components</p>
+            <p>✅ Real-time health scoring (🟢🟡🔴)</p>
+            <p>✅ Automated status logging</p>
+        </div>
+        """, unsafe_allow_html=True)
+        
+        if st.button("Open System Monitor", type="secondary", use_container_width=True):
+            st.switch_page("pages/test_paper_trading.py")
+    
+    # Additional features
+    col1, col2 = st.columns(2)
+    
+    with col1:
         st.markdown("""
         <div class="feature-card">
             <h3>🆕 What's New?</h3>
             <p>• Portfolio Manager: Add/remove up to 50 stocks</p>
             <p>• Performance Dashboard: Forward backtesting</p>
             <p>• Enhanced Analytics: Individual stock analysis</p>
-            <p>• Real-time Updates: 5-minute market refresh</p>
+            <p>• AI Self-Optimizer: Auto-improving models</p>
         </div>
         """, unsafe_allow_html=True)
     

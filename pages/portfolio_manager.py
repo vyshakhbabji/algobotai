@@ -11,6 +11,10 @@ import yfinance as yf
 import pandas as pd
 from datetime import datetime, timedelta
 import requests
+import sys
+import os
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 from improved_ai_portfolio_manager import ImprovedAIPortfolioManager
 
 # Page configuration
@@ -55,7 +59,9 @@ st.markdown("""
 
 class PortfolioManager:
     def __init__(self):
-        self.portfolio_file = "portfolio_universe.json"
+        # Point to parent directory for JSON files
+        parent_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+        self.portfolio_file = os.path.join(parent_dir, "portfolio_universe.json")
         self.max_stocks = 50
         self.load_portfolio()
     

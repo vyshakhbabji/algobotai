@@ -20,9 +20,9 @@ st.markdown("**Verifying Dashboard Functionality**")
 
 # Check if our data files exist
 data_files = {
-    "Account Data": "paper_trading_account.json",
-    "Positions": "paper_trading_positions.json", 
-    "Trade History": "paper_trading_trades.json"
+    "Account Data": "paper_trading_data.json",
+    "Positions": "current_positions.json", 
+    "Trade History": "trade_history.json"
 }
 
 st.subheader("📁 Data Files Status")
@@ -32,13 +32,13 @@ for name, filename in data_files.items():
         try:
             with open(filename, 'r') as f:
                 data = json.load(f)
-                if filename == "paper_trading_account.json":
+                if filename == "paper_trading_data.json":
                     st.write(f"   - Initial Capital: ${data.get('initial_capital', 0):,.2f}")
                     st.write(f"   - Current Cash: ${data.get('cash', 0):,.2f}")
                     st.write(f"   - Total Return: ${data.get('total_return', 0):,.2f}")
-                elif filename == "paper_trading_positions.json":
+                elif filename == "current_positions.json":
                     st.write(f"   - Active Positions: {len(data)}")
-                elif filename == "paper_trading_trades.json":
+                elif filename == "trade_history.json":
                     st.write(f"   - Total Trades: {len(data)}")
         except Exception as e:
             st.error(f"   - Error reading file: {str(e)}")
@@ -50,7 +50,7 @@ st.subheader("🔧 Engine Test")
 
 try:
     # Import and test the engine
-    from live_paper_trading import PaperTradingEngine
+    from pages.live_paper_trading import PaperTradingEngine
     
     engine = PaperTradingEngine()
     st.success("✅ Paper Trading Engine loaded successfully!")

@@ -1,0 +1,45 @@
+{
+  "optimizations": [
+    {
+      "timestamp": "2025-08-07T09:47:31.393491",
+      "symbol": "NFLX",
+      "trigger": "poor_performance",
+      "old_performance": {
+        "symbol": "NFLX",
+        "evaluation_period": 30,
+        "total_predictions": 25,
+        "mae": 0.02472204300997654,
+        "mse": 0.001051986386902872,
+        "correlation": 0.4451476900604972,
+        "direction_accuracy": 0.68,
+        "buy_signals": "7",
+        "win_rate": 0.14285714285714285,
+        "avg_return_when_bought": -0.016692709840347465,
+        "model_r2": 0.5855856357412301,
+        "needs_improvement": "True",
+        "performance_score": 0.4226682776392134
+      },
+      "new_model": "RandomForest",
+      "new_parameters": {
+        "max_depth": 15,
+        "min_samples_split": 5,
+        "n_estimators": 200
+      },
+      "new_r2_score": -0.3474654103253025,
+      "improvement": -0.9330510460665327
+    }
+  ],
+  "best_parameters": {
+    "NFLX": {
+      "model": "RandomForest",
+      "params": {
+        "max_depth": 15,
+        "min_samples_split": 5,
+        "n_estimators": 200
+      },
+      "score": -0.3474654103253025
+    }
+  },
+  "performance_trends": {},
+  "last_optimization": "2025-08-07T09:47:31.393505"
+}

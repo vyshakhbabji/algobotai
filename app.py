@@ -22,7 +22,7 @@ sys.path.append(current_dir)
 
 # Import the main trading dashboard
 try:
-    from live_paper_trading import main as trading_dashboard
+    from pages.live_paper_trading import main as trading_dashboard
     
     # Run the trading dashboard
     if __name__ == "__main__":

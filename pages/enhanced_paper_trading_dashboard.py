@@ -13,7 +13,28 @@ import plotly.express as px
 from datetime import datetime, timedelta
 import json
 import requests
-from live_paper_trading import PaperTradingEngine
+import sys
+import os
+
+# Add parent directory to path for imports
+parent_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.append(parent_dir)
+
+# Import from pages directory
+try:
+    from pages.live_paper_trading import PaperTradingEngine
+except ImportError:
+    # Fallback: create a simple trading engine if import fails
+    class PaperTradingEngine:
+        def __init__(self):
+            self.account_balance = 10000
+            self.positions = {}
+            
+        def get_account_balance(self):
+            return self.account_balance
+            
+        def get_positions(self):
+            return self.positions
 
 # Password Protection (same as main dashboard)
 # Password protection removed for easier access

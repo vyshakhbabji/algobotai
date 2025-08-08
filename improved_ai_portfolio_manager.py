@@ -123,14 +123,18 @@ class ImprovedAIPortfolioManager:
             print(f"Error calculating features: {e}")
             return df
     
-    def train_improved_model(self, symbol, period='2y'):
+    def train_improved_model(self, symbol, period='2y', data=None):
         """Train improved AI model with cross-validation"""
         try:
             print(f"🤖 Training improved model for {symbol}...")
             
-            # Get more data for better training
-            stock = yf.Ticker(symbol)
-            df = stock.history(period=period)
+            # Use provided data or fetch new data
+            if data is not None:
+                df = data.copy()
+            else:
+                # Get more data for better training
+                stock = yf.Ticker(symbol)
+                df = stock.history(period=period)
             
             if df.empty or len(df) < 100:
                 print(f"  ❌ Insufficient data for {symbol}")
