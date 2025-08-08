@@ -10,9 +10,14 @@ import os
 import sys
 from datetime import datetime
 import pandas as pd
+import uuid
 
 # Add parent directory to path for imports
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
+# Generate unique session ID for this page
+if 'system_monitor_session_id' not in st.session_state:
+    st.session_state.system_monitor_session_id = str(uuid.uuid4())[:8]
 
 st.title("🔧 AlgoTradingBot System Status Monitor")
 st.markdown("**Comprehensive Health Check & Diagnostics**")
@@ -370,15 +375,15 @@ st.subheader("🚀 Quick Actions")
 col1, col2, col3 = st.columns(3)
 
 with col1:
-    if st.button("🔄 Refresh All Tests", type="primary", key=f"sysmon_refresh_{hash(__file__)}"): 
+    if st.button("🔄 Refresh All Tests", type="primary", key=f"sysmon_refresh_{st.session_state.system_monitor_session_id}"): 
         st.rerun()
 
 with col2:
-    if st.button("📊 Open Live Trading", type="secondary", key=f"sysmon_live_{hash(__file__)}"):
+    if st.button("📊 Open Live Trading", type="secondary", key=f"sysmon_live_{st.session_state.system_monitor_session_id}"):
         st.info("Navigate to Live Paper Trading page manually")
 
 with col3:
-    if st.button("⚙️ View Elite Options", type="secondary", key=f"sysmon_elite_{hash(__file__)}"):
+    if st.button("⚙️ View Elite Options", type="secondary", key=f"sysmon_elite_{st.session_state.system_monitor_session_id}"):
         st.info("Check main dashboard for Elite Options Trading")
 
 # ========================================
@@ -442,7 +447,7 @@ st.markdown(f"""
 """)
 
 # Auto-refresh every 5 minutes option
-if st.checkbox("🔄 Auto-refresh every 5 minutes", key=f"sysmon_autorefresh_{hash(__file__)}"):
+if st.checkbox("🔄 Auto-refresh every 5 minutes", key=f"sysmon_autorefresh_{st.session_state.system_monitor_session_id}"):
     import time
     time.sleep(300)  # 5 minutes
     st.rerun()
