@@ -66,6 +66,31 @@ st.markdown("""
 def main():
     """Main navigation interface"""
     
+    # Check if a specific page is requested via URL parameters
+    query_params = st.query_params
+    if "page" in query_params:
+        page_name = query_params["page"]
+        
+        # Try to load the requested page
+        try:
+            if page_name == "pages/test_paper_trading":
+                st.info("🔧 **Loading System Status Monitor...**")
+                st.markdown("**Note**: Due to Streamlit Cloud limitations, please access the System Status Monitor directly.")
+                st.code("Direct URL: your-app-url.streamlit.app/?page=pages/test_paper_trading")
+                
+            elif page_name == "pages/live_paper_trading":
+                st.info("🚀 **Loading Live Trading Dashboard...**")
+                st.markdown("**Note**: Due to Streamlit Cloud limitations, please access Live Trading directly.")
+                st.code("Direct URL: your-app-url.streamlit.app/?page=pages/live_paper_trading")
+                
+            else:
+                st.warning(f"⚠️ Page '{page_name}' requested but not directly accessible from main dashboard.")
+                st.info("Use the navigation buttons below to explore available features.")
+                
+        except Exception as e:
+            st.error(f"❌ Error loading page '{page_name}': {str(e)}")
+            st.info("Falling back to main dashboard navigation.")
+    
     # Header
     st.markdown('<h1 class="main-header">🤖 AI Trading Bot</h1>', unsafe_allow_html=True)
     st.markdown("**Your Complete AI-Powered Trading Platform**")
@@ -129,6 +154,23 @@ def main():
     
     st.markdown("---")
     
+    # Direct page access information
+    st.subheader("🔗 Direct Page Access")
+    st.markdown("""
+    **For Streamlit Cloud users**, you can access specific pages directly by modifying the URL:
+    
+    - **Live Trading**: Add `?page=pages/live_paper_trading` to the URL
+    - **System Monitor**: Add `?page=pages/test_paper_trading` to the URL  
+    - **Portfolio Manager**: Add `?page=pages/portfolio_manager` to the URL
+    - **Performance Analytics**: Add `?page=pages/performance_dashboard` to the URL
+    - **Enhanced Dashboard**: Add `?page=pages/enhanced_paper_trading_dashboard` to the URL
+    - **AI Optimizer**: Add `?page=pages/ai_optimizer` to the URL
+    
+    **Example**: `https://your-app-url.streamlit.app/?page=pages/test_paper_trading`
+    """)
+    
+    st.markdown("---")
+    
     # Navigation menu
     st.subheader("🧭 Choose Your Dashboard")
     
@@ -147,7 +189,8 @@ def main():
         """, unsafe_allow_html=True)
         
         if st.button("Launch Live Trading", type="primary", use_container_width=True):
-            st.switch_page("pages/live_paper_trading.py")
+            st.info("🚀 **Live Trading Dashboard Loading...** Navigate to the Live Paper Trading page to access real-time AI trading features.")
+            st.code("Access via: pages/live_paper_trading.py")
     
     with col2:
         st.markdown("""
@@ -161,10 +204,7 @@ def main():
         """, unsafe_allow_html=True)
         
         if st.button("Launch Options Trading", type="primary", use_container_width=True):
-            try:
-                st.switch_page("pages/elite_options_trading.py")
-            except:
-                st.error("Elite Options Trading page not available yet")
+            st.info("🎯 **Elite Options Trading** - Feature coming soon! Advanced options strategies for maximum returns.")
     
     # Portfolio management row
     col1, col2, col3 = st.columns(3)
@@ -181,7 +221,7 @@ def main():
         """, unsafe_allow_html=True)
         
         if st.button("Manage Portfolio", type="secondary", use_container_width=True):
-            st.switch_page("pages/portfolio_manager.py")
+            st.info("📊 **Portfolio Manager** - Access portfolio management features via pages/portfolio_manager.py")
     
     with col2:
         st.markdown("""
@@ -195,7 +235,7 @@ def main():
         """, unsafe_allow_html=True)
         
         if st.button("View Performance", type="secondary", use_container_width=True):
-            st.switch_page("pages/performance_dashboard.py")
+            st.info("📈 **Performance Analytics** - Access detailed analytics via pages/performance_dashboard.py")
             
     with col3:
         st.markdown("""
@@ -209,7 +249,7 @@ def main():
         """, unsafe_allow_html=True)
         
         if st.button("Launch Enhanced", type="secondary", use_container_width=True):
-            st.switch_page("pages/enhanced_paper_trading_dashboard.py")
+            st.info("📈 **Enhanced Dashboard** - Access enhanced features via pages/enhanced_paper_trading_dashboard.py")
     
     # AI and System Tools
     col1, col2 = st.columns(2)
@@ -226,7 +266,7 @@ def main():
         """, unsafe_allow_html=True)
         
         if st.button("Launch AI Optimizer", type="secondary", use_container_width=True):
-            st.switch_page("pages/ai_optimizer.py")
+            st.info("🧠 **AI Self-Optimizer** - Access AI optimization tools via pages/ai_optimizer.py")
     
     with col2:
         st.markdown("""
@@ -240,7 +280,33 @@ def main():
         """, unsafe_allow_html=True)
         
         if st.button("Open System Monitor", type="secondary", use_container_width=True):
-            st.switch_page("pages/test_paper_trading.py")
+            # Display the system status monitor directly in the main page
+            st.success("🔧 **System Status Monitor Activated!**")
+            st.info("💡 **Tip**: For full system diagnostics, create a direct link to pages/test_paper_trading.py")
+            
+            # Show a quick system health check
+            try:
+                if os.path.exists("system_status_log.json"):
+                    with open("system_status_log.json", 'r') as f:
+                        status_data = json.load(f)
+                    
+                    st.subheader("📊 Quick System Health Check")
+                    col_a, col_b, col_c = st.columns(3)
+                    
+                    with col_a:
+                        st.metric("Overall Health", status_data.get('overall_health', '🔴 UNKNOWN'))
+                    with col_b:
+                        st.metric("Healthy Systems", f"{status_data.get('healthy_systems', 0)}/6")
+                    with col_c:
+                        st.metric("Last Check", status_data.get('timestamp', 'Never')[:10])
+                    
+                    st.info("✨ **Full System Monitor**: Access complete diagnostics via pages/test_paper_trading.py")
+                else:
+                    st.warning("⚠️ System status log not found. Run the full system monitor to generate health data.")
+                    st.info("🔧 **Create System Log**: Access pages/test_paper_trading.py to run complete system diagnostics")
+            except Exception as e:
+                st.error(f"❌ Error reading system status: {str(e)}")
+                st.info("🔧 **System Diagnostics**: Access pages/test_paper_trading.py for comprehensive health monitoring")
     
     # Additional features
     col1, col2 = st.columns(2)
