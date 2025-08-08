@@ -22,13 +22,6 @@ from improved_ai_portfolio_manager import ImprovedAIPortfolioManager
 import warnings
 warnings.filterwarnings('ignore')
 
-# Page configuration
-st.set_page_config(
-    page_title="📈 Performance Dashboard",
-    page_icon="📈",
-    layout="wide"
-)
-
 # Custom CSS
 st.markdown("""
 <style>

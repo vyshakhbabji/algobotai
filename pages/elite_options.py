@@ -21,12 +21,6 @@ sys.path.append(parent_dir)
 from elite_options_trader import EliteOptionsTrader
 
 def main():
-    st.set_page_config(
-        page_title="Elite Options Trading",
-        page_icon="📈",
-        layout="wide"
-    )
-    
     # Header
     st.title("🚀 Elite Options Trading System")
     st.markdown("**AI-Powered Options Strategy Recommendations for Maximum Returns**")
