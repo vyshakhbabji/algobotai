@@ -1,0 +1,82 @@
+{
+  "system_name": "Full Deployment Optimized ML Trading System",
+  "version": "2.0.0",
+  "description": "99% deployment with Kelly sizing - targeting 58% annual returns",
+  "universe": {
+    "max_stocks": 200,
+    "refresh_days": 3,
+    "selection_method": "elite_ai_scoring",
+    "min_market_cap": 3000000000,
+    "min_avg_volume": 3000000,
+    "min_price": 10,
+    "max_price": 2000,
+    "sectors_enabled": [
+      "Technology",
+      "Healthcare",
+      "Financial Services",
+      "Consumer Discretionary",
+      "Communication Services",
+      "Energy",
+      "Industrials",
+      "Consumer Staples",
+      "Utilities"
+    ]
+  },
+  "portfolio": {
+    "max_positions": 15,
+    "min_position_pct": 0.02,
+    "max_position_pct": 0.15,
+    "cash_reserve": 0.01,
+    "target_deployment": 0.99,
+    "rebalance_threshold": 0.03
+  },
+  "risk_management": {
+    "max_daily_loss": 0.025,
+    "max_drawdown": 0.12,
+    "stop_loss_atr": 2.5,
+    "trailing_stop_atr": 2.0,
+    "take_profit_atr": 4.0,
+    "volatility_scaling": true,
+    "kelly_fraction_cap": 0.25,
+    "var_limit": 0.06,
+    "correlation_limit": 0.6
+  },
+  "ml_config": {
+    "models_enabled": [
+      "lightgbm",
+      "random_forest",
+      "gradient_boosting"
+    ],
+    "ensemble_method": "weighted_average",
+    "cv_folds": 5,
+    "min_r2_threshold": -0.1,
+    "feature_importance_threshold": 0.01,
+    "prediction_horizon": 5,
+    "retraining_frequency": 10
+  },
+  "signals": {
+    "buy_threshold": 0.3,
+    "sell_threshold": 0.25,
+    "position_sizing": "kelly_criterion",
+    "signal_combination": "ensemble_weighted",
+    "technical_fallback": true,
+    "min_volume_ratio": 1.2,
+    "rsi_oversold": 35,
+    "rsi_overbought": 65
+  },
+  "execution": {
+    "market_hours_only": false,
+    "max_orders_per_day": 20,
+    "order_timeout": 300,
+    "partial_fills_allowed": true,
+    "commission_per_trade": 0.0,
+    "slippage_bps": 5
+  },
+  "performance_targets": {
+    "annual_return_target": 0.58,
+    "max_drawdown_target": 0.12,
+    "sharpe_ratio_target": 2.0,
+    "win_rate_target": 0.55,
+    "profit_factor_target": 1.8
+  }
+}

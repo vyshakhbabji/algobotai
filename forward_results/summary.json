@@ -1,0 +1,16 @@
+{
+  "initial_capital": 100000.0,
+  "final_equity": 131814.17204262875,
+  "return_pct": 0.3181417204262875,
+  "max_drawdown": -0.05413575526341485,
+  "start_date": "2025-05-01",
+  "end_date": "2025-08-07",
+  "num_trades": 72,
+  "symbols": [
+    "NVDA",
+    "MSFT",
+    "AAPL",
+    "META",
+    "AMZN"
+  ]
+}

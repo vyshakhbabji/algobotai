@@ -1,0 +1,72 @@
+[
+  {
+    "symbol":"NVDA",
+    "status":"error:unsupported operand type(s) for \/: 'str'",
+    "signal":null,
+    "expected_return_pct":null,
+    "confidence":null,
+    "quality":null,
+    "models_used":null,
+    "best_r2":null,
+    "best_direction":null,
+    "avg_direction":null,
+    "model_count":null,
+    "timestamp":"2025-08-11T05:44:37.942079"
+  },
+  {
+    "symbol":"MSFT",
+    "status":"error:unsupported operand type(s) for \/: 'str'",
+    "signal":null,
+    "expected_return_pct":null,
+    "confidence":null,
+    "quality":null,
+    "models_used":null,
+    "best_r2":null,
+    "best_direction":null,
+    "avg_direction":null,
+    "model_count":null,
+    "timestamp":"2025-08-11T05:44:37.942079"
+  },
+  {
+    "symbol":"AAPL",
+    "status":"error:unsupported operand type(s) for \/: 'str'",
+    "signal":null,
+    "expected_return_pct":null,
+    "confidence":null,
+    "quality":null,
+    "models_used":null,
+    "best_r2":null,
+    "best_direction":null,
+    "avg_direction":null,
+    "model_count":null,
+    "timestamp":"2025-08-11T05:44:37.942079"
+  },
+  {
+    "symbol":"META",
+    "status":"error:unsupported operand type(s) for \/: 'str'",
+    "signal":null,
+    "expected_return_pct":null,
+    "confidence":null,
+    "quality":null,
+    "models_used":null,
+    "best_r2":null,
+    "best_direction":null,
+    "avg_direction":null,
+    "model_count":null,
+    "timestamp":"2025-08-11T05:44:37.942079"
+  },
+  {
+    "symbol":"AMZN",
+    "status":"error:unsupported operand type(s) for \/: 'str'",
+    "signal":null,
+    "expected_return_pct":null,
+    "confidence":null,
+    "quality":null,
+    "models_used":null,
+    "best_r2":null,
+    "best_direction":null,
+    "avg_direction":null,
+    "model_count":null,
+    "timestamp":"2025-08-11T05:44:37.942079"
+  }
+]

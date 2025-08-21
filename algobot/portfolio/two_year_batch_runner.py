@@ -1,0 +1,411 @@
+"""Two-year batch runner for institutional strategy across top 100 symbols.
+
+Steps:
+1. Load predefined universe (default SP100) or custom file.
+2. Fetch 2 years of data (with splits) using existing load_equity (auto-adjust path).
+3. Perform strength scan (adaptive optional) using close series already downloaded to avoid re-downloading in scanner.
+4. Rank and select subset (top K or all) then run strategy with given forward window.
+
+Note: For speed, we reuse price data but strategy internally re-downloads via load_equity; future optimization can inject preloaded data.
+"""
+from __future__ import annotations
+import json, argparse, time, concurrent.futures, hashlib
+from pathlib import Path
+from typing import List, Dict, Any
+import pandas as pd
+
+from algobot.data.loader import load_equity
+from algobot.forward_test.nvda_institutional_strategy import run_nvda_institutional
+
+SP100 = [
+    'AAPL','ABBV','ABT','ACN','ADBE','AIG','AMD','AMGN','AMT','AMZN','APD','AVGO','AXP','BA','BAC','BK','BKNG','BLK','BMY','C','CAT','CHTR','CL','CMCSA','COF','COP','COST','CRM','CSCO','CVS','CVX','DD','DE','DHR','DIS','DOW','DUK','EMR','EXC','F','FDX','GD','GE','GILD','GOOG','GOOGL','GS','HD','HON','IBM','INTC','JNJ','JPM','KHC','KO','LIN','LLY','LMT','LOW','MA','MCD','MDLZ','MDT','MET','META','MMM','MO','MRK','MS','MSFT','NEE','NFLX','NKE','NVDA','ORCL','PEP','PFE','PG','PM','PYPL','QCOM','RTX','SBUX','SLB','SO','SPG','T','TGT','TMO','TMUS','TSLA','TXN','UNH','UNP','UPS','USB','V','VZ','WFC','WMT','XOM'
+]
+
+def strength_score(close: pd.Series) -> float:
+    if len(close) < 120:
+        return -1.0
+    def _h(days):
+        if len(close)<=days: return 0.0
+        # Explicit scalar conversion to avoid FutureWarning on single-element Series
+        val = close.iloc[-1]/close.iloc[-days]-1
+        # Handle pandas/NumPy scalar or 1-length Series
+        if hasattr(val, 'item'):
+            try:
+                return float(val.item())
+            except Exception:
+                pass
+        if hasattr(val, 'iloc') and getattr(val, 'size', 2) == 1:
+            try:
+                return float(val.iloc[0])
+            except Exception:
+                return 0.0
+        try:
+            return float(val)  # plain python or numpy scalar
+        except Exception:
+            return 0.0
+    r252=_h(252); r126=_h(126); r63=_h(63)
+    daily = close.pct_change().dropna()
+    sharpe = (daily.mean()/(daily.std()+1e-9))* (252**0.5) if not daily.empty else 0.0
+    dd_raw = (close/close.cummax()-1).min()
+    # Ensure dd_raw is scalar
+    if hasattr(dd_raw, 'item'):
+        try:
+            dd_raw = dd_raw.item()
+        except Exception:
+            dd_raw = float(dd_raw)
+    try:
+        dd_val = float(dd_raw)
+    except Exception:
+        dd_val = 0.0
+    return 0.35*r252 + 0.25*r126 + 0.10*r63 + 0.20*sharpe + 0.10*dd_val
+
+def adaptive_thresholds(scores: List[float], strong_pct: float, skip_pct: float):
+    import numpy as np
+    arr = [s for s in scores if s is not None]
+    if not arr: return (0.30,-0.05)
+    a = np.array(arr)
+    strong = float(np.nanpercentile(a, strong_pct*100))
+    skip = float(np.nanpercentile(a, skip_pct*100))
+    if strong < skip:
+        strong, skip = max(strong, skip), min(strong, skip)
+    return strong, skip
+
+def load_universe(file: str|None) -> List[str]:
+    if file:
+        with open(file) as f:
+            return [l.strip().upper() for l in f if l.strip() and not l.startswith('#')]
+    return SP100
+
+def main():
+    ap = argparse.ArgumentParser(description='Two-year batch institutional strategy runner')
+    ap.add_argument('--universe-file')
+    ap.add_argument('--topk', type=int, default=100)
+    ap.add_argument('--strong-pct', type=float, default=0.80)
+    ap.add_argument('--skip-pct', type=float, default=0.20)
+    ap.add_argument('--train-start', default=None, help='Override train start (default auto = first date)')
+    ap.add_argument('--train-end', default=None)
+    ap.add_argument('--fwd-start', default=None)
+    ap.add_argument('--fwd-end', default=None)
+    ap.add_argument('--years', type=int, default=2, help='History length years')
+    ap.add_argument('--out-dir', default='two_year_batch')
+    ap.add_argument('--fwd-days', type=int, default=63, help='Approx forward (evaluation) window length in trading days (used to derive dynamic train/forward split)')
+    ap.add_argument('--debug-hash', action='store_true', help='Include price hash & first/last prices for train/forward segments for duplication diagnostics')
+    ap.add_argument('--dry-run', action='store_true')
+    ap.add_argument('--strong-only', action='store_true', help='Only run symbols classified strong')
+    ap.add_argument('--min-score', type=float, default=None, help='Optional minimum strength score threshold')
+    ap.add_argument('--workers', type=int, default=4, help='Concurrent workers for strategy runs')
+    ap.add_argument('--save-individual', action='store_true', help='Save each symbol full result JSON')
+    ap.add_argument('--aggressive', action='store_true', help='Use aggressive exposure-focused parameter overrides')
+    args = ap.parse_args()
+
+    out_dir = Path(args.out_dir); out_dir.mkdir(exist_ok=True)
+    # Load full universe first; selection to top K happens after ranking
+    universe_full = load_universe(args.universe_file)
+    # Deduplicate while preserving order
+    seen = set()
+    universe = []
+    for sym in universe_full:
+        if sym not in seen:
+            seen.add(sym)
+            universe.append(sym)
+    end_date = pd.Timestamp.today().normalize() if args.fwd_end is None else pd.Timestamp(args.fwd_end)
+    start_date = end_date - pd.Timedelta(days=365*args.years)
+    print(f"Fetching {len(universe)} symbols from {start_date.date()} to {end_date.date()} (will later select top {args.topk}) ...")
+    # Derive dynamic train/forward split if explicit not provided
+    # Forward start = end_date - approx fwd_days*1.5 calendar days to approximate trading days; clamp to start_date+180d minimum train span
+    derived_fwd_start = end_date - pd.Timedelta(days=int(args.fwd_days*1.5))
+    if derived_fwd_start - start_date < pd.Timedelta(days=180):
+        derived_fwd_start = start_date + pd.Timedelta(days=180)
+    derived_train_start = start_date
+    derived_train_end = derived_fwd_start - pd.Timedelta(days=1)
+    # Allow overrides via provided params
+    if args.train_start: derived_train_start = pd.Timestamp(args.train_start)
+    if args.train_end: derived_train_end = pd.Timestamp(args.train_end)
+    if args.fwd_start: derived_fwd_start = pd.Timestamp(args.fwd_start)
+    if args.fwd_end: end_date = pd.Timestamp(args.fwd_end)
+    print(f"Partition: train {derived_train_start.date()} -> {derived_train_end.date()}  | forward {derived_fwd_start.date()} -> {end_date.date()}")
+
+    scores: Dict[str,float] = {}
+    aggressive_scores: Dict[str,float] = {}
+    import numpy as np
+    # Cache price data (close + volume) for later optional hashing
+    price_cache: Dict[str,pd.DataFrame] = {}
+
+    # Safe scalar coercion to avoid FutureWarnings on single-element Series
+    def _as_float(val) -> float:
+        try:
+            # numpy scalar
+            if hasattr(val, 'item') and not hasattr(val, 'iloc'):
+                return float(val.item())
+        except Exception:
+            pass
+        try:
+            # pandas single-element Series
+            if hasattr(val, 'iloc') and getattr(val, 'size', None) == 1:
+                return float(val.iloc[0])
+        except Exception:
+            pass
+        try:
+            return float(val)
+        except Exception:
+            return float('nan')
+    for sym in universe:
+        try:
+            df = load_equity(sym, start_date.strftime('%Y-%m-%d'), end_date.strftime('%Y-%m-%d'), adjusted=True)
+            # Use only training window closes (no forward data) for strength scoring to avoid lookahead
+            train_close = df['Close'].loc[str(start_date.date()):str(derived_train_end.date())]
+            sc = strength_score(train_close)
+            # Force scalar float
+            sc = _as_float(sc)
+            scores[sym] = sc
+            # Aggressive short-horizon / vol expansion score (training window only)
+            try:
+                train_df = df.loc[str(start_date.date()):str(derived_train_end.date())]
+                if len(train_df) > 150:
+                    cser = train_df['Close']
+                    # Recent momentum components
+                    def _mom(series, d):
+                        if len(series) <= d:
+                            return float('nan')
+                        val = series.iloc[-1]/series.iloc[-d] - 1
+                        # Robust scalar coercion to avoid FutureWarning on single-element Series
+                        try:
+                            if hasattr(val, 'item'):
+                                return float(val.item())
+                            return float(val)
+                        except Exception:
+                            try:
+                                return float(val.iloc[0]) if hasattr(val, 'iloc') else float('nan')
+                            except Exception:
+                                return float('nan')
+                    m20 = _mom(cser, 21)
+                    m63 = _mom(cser, 63)
+                    daily = cser.pct_change().dropna()
+                    sharpe_s = (daily.mean()/(daily.std()+1e-9))* (252**0.5) if not daily.empty else 0.0
+                    # ATR14 percent
+                    if all(col in train_df.columns for col in ['High','Low','Close']):
+                        high=train_df['High']; low=train_df['Low']; close_ser=train_df['Close']
+                        tr = (high-low).abs()
+                        tr2 = (high-close_ser.shift()).abs()
+                        tr3 = (low-close_ser.shift()).abs()
+                        tr = pd.concat([tr, tr2, tr3], axis=1).max(axis=1)
+                        atr14 = tr.rolling(14).mean()
+                        atr_pct = (atr14/close_ser).rolling(14).mean()
+                        vol_ratio = float((atr_pct.iloc[-1] / (atr_pct.rolling(90).median().iloc[-1] + 1e-9)) if len(atr_pct.dropna())>90 else 1.0)
+                        # Clip vol ratio to reasonable band
+                        vol_ratio = float(np.clip(vol_ratio, 0.5, 2.0))
+                    else:
+                        vol_ratio = 1.0
+                    dd_train = (cser/cser.cummax() - 1).min()
+                    dd_train = _as_float(dd_train)
+                    if dd_train != dd_train:  # nan guard
+                        dd_train = 0.0
+                    # Compose aggressive score emphasizing near-term momentum & healthy (not collapsing) volatility
+                    ag_sc = 0.45*(m20 if m20==m20 else 0.0) + 0.25*(m63 if m63==m63 else 0.0) + 0.15*sharpe_s + 0.15*(vol_ratio-1.0) - 0.10*abs(min(0.0, dd_train))
+                    ag_sc = _as_float(ag_sc)
+                else:
+                    ag_sc = float('nan')
+            except Exception:
+                ag_sc = float('nan')
+            aggressive_scores[sym] = ag_sc
+            price_cache[sym] = df
+        except Exception:
+            scores[sym] = float('nan')
+            aggressive_scores[sym] = float('nan')
+    valid_scores = [float(v) for v in scores.values() if isinstance(v,(int,float,np.floating)) and not (pd.isna(v) or np.isnan(v))]
+    strong_cut, skip_cut = adaptive_thresholds(valid_scores, args.strong_pct, args.skip_pct)
+    classifications = {}
+    for sym, sc in scores.items():
+        if sc!=sc:
+            classifications[sym] = 'skip'
+        elif sc >= strong_cut:
+            classifications[sym] = 'strong'
+        elif sc < skip_cut:
+            classifications[sym] = 'skip'
+        else:
+            classifications[sym] = 'default'
+
+    ranked = sorted(scores.items(), key=lambda x: (x[1] if x[1]==x[1] else -999), reverse=True)
+    def _score_key(t):
+        v = t[1]
+        try:
+            if hasattr(v, 'item'):
+                v = v.item()
+            v = float(v)
+        except Exception:
+            return -999.0
+        if v != v: # nan check
+            return -999.0
+        return v
+    aggressive_ranked = sorted(aggressive_scores.items(), key=_score_key, reverse=True)
+    # Apply min-score filter
+    if args.min_score is not None:
+        ranked = [t for t in ranked if t[1] is not None and t[1] >= args.min_score]
+    # Strong-only filter
+    if args.strong_only:
+        ranked = [t for t in ranked if classifications.get(t[0]) == 'strong']
+    selection_strategy = 'default'
+    if args.aggressive:
+        # Primary aggressive selection: prefer STRONG by base score, then DEFAULT, exclude SKIP
+        strong_first = [s for s,_ in aggressive_ranked if classifications.get(s)=='strong']
+        default_ok = [s for s,_ in aggressive_ranked if classifications.get(s)=='default']
+        filtered = strong_first + default_ok
+        selected_syms = filtered[:args.topk]
+        selection_strategy = 'aggressive_direct_strong_first'
+        # If insufficient fill from base ranked list
+        if len(selected_syms) < args.topk:
+            for s,_ in ranked:
+                if s not in selected_syms and classifications.get(s)!='skip':
+                    selected_syms.append(s)
+                if len(selected_syms) >= args.topk:
+                    break
+        # Diversification fallback: if aggressive selection set identical to base top-k strength list, try to rotate in alternatives
+        base_topk_set = set([s for s,_ in ranked[:args.topk]])
+        if set(selected_syms) == base_topk_set:
+            alt_pool = [s for s in filtered if s not in base_topk_set]
+            # Require at least 40% of target universe available to diversify
+            if len(alt_pool) >= max(1, int(args.topk*0.4)):
+                diversified = alt_pool[:args.topk]
+                # If we could not fill completely, append remainder from original aggressive selection (maintaining order)
+                if len(diversified) < args.topk:
+                    diversified += [s for s in selected_syms if s not in diversified][:args.topk-len(diversified)]
+                selected_syms = diversified
+                selection_strategy = 'aggressive_diversified'
+    else:
+        selected_syms = [s for s,_ in ranked[:args.topk]]
+    class_map = classifications
+
+    scan_summary = {
+        'strong_cut': strong_cut,
+        'skip_cut': skip_cut,
+        'ranked': ranked,
+        'aggressive_ranked': aggressive_ranked,
+        'classifications': classifications,
+        'selection_strategy': selection_strategy
+    }
+    with open(out_dir/'scan_summary.json','w') as f:
+        json.dump(scan_summary, f, indent=2)
+    if args.dry_run:
+        print('Dry run complete. Scan summary saved.')
+        return
+
+    print(f"Running strategy for {len(selected_syms)} symbols (selected)")
+    run_results: Dict[str,Any] = {}
+    t0=time.time()
+
+    def _hash_segment(series: pd.Series) -> str:
+        try:
+            b = series.astype(float).values.tobytes()
+            return hashlib.sha256(b).hexdigest()[:16]
+        except Exception:
+            return 'na'
+
+    def _run(sym: str):
+        try:
+            # Pass dynamic dates
+            if args.aggressive:
+                # AGGRESSIVE ML-OPTIMIZED PARAMETERS for maximum market capture
+                res = run_nvda_institutional(symbol=sym,
+                                             train_start=str(derived_train_start.date()),
+                                             train_end=str(derived_train_end.date()),
+                                             fwd_start=str(derived_fwd_start.date()),
+                                             fwd_end=str(end_date.date()),
+                                             chart=False,
+                                             classification_map=class_map,
+                                             symbol_classification='auto',
+                                             tier_mode='static',
+                                             tier_probs=(0.35,0.42,0.48,0.55),     # Much lower thresholds
+                                             breakout_prob=0.32,                   # 32% vs 50%
+                                             hard_exit_prob=0.28,                  # 28% vs 45%
+                                             soft_exit_prob=0.35,                  # 35% vs 50%
+                                             early_core_fraction=0.90,             # 90% initial position
+                                             atr_initial_mult=1.0,                 # Tighter stops
+                                             atr_trail_mult=1.5,                   # Tighter trailing
+                                             performance_guard_days=10,             # Shorter guard
+                                             performance_guard_min_capture=0.02,   # Lower capture requirement
+                                             performance_guard_max_fraction=0.40,  # More aggressive guard
+                                             enable_expectancy_guard=False,
+                                             risk_per_trade_pct=0.15,              # 15% risk (vs 5%)
+                                             risk_ceiling=0.20,                    # 20% max risk
+                                             risk_increment=0.03,                  # 3% increments
+                                             profit_ladder=(0.06,0.15,0.30,0.50),  # Lower profit thresholds
+                                             profit_trim_fractions=(0.05,0.08,0.12,0.15), # Smaller trims
+                                             fast_scale_gain_threshold=0.02,       # 2% for fast scaling
+                                             min_holding_days=1,                   # 1 day minimum (vs 7)
+                                             momentum_20d_threshold=0.025,         # 2.5% momentum threshold
+                                             adjust_trim_ladder=True,              # Enable trim adjustments
+                                             enable_quality_filter=False,
+                                             enable_prob_ema_exit=False,
+                                             enable_vol_adaptive_trail=True,       # Enable adaptive trailing
+                                             stale_days=30,                        # 30 days vs 60
+                                             enable_pullback_reentry=True)         # Enable reentry
+            else:
+                res = run_nvda_institutional(symbol=sym,
+                                             train_start=str(derived_train_start.date()),
+                                             train_end=str(derived_train_end.date()),
+                                             fwd_start=str(derived_fwd_start.date()),
+                                             fwd_end=str(end_date.date()),
+                                             chart=False,
+                                             classification_map=class_map,
+                                             symbol_classification='auto')
+            mini = {
+                # Primary (current) metric keys
+                'return_pct': res.get('total_return_pct'),
+                'capture': res.get('captured_buy_hold_ratio'),
+                'class': res.get('classification'),
+                'buy_hold_ret': res.get('buy_hold_return_pct'),
+                'buy_hold_return_pct': res.get('buy_hold_return_pct'),
+                'alpha_pct': res.get('alpha_vs_buy_hold_pct'),
+                'exposure_avg': res.get('avg_exposure_fraction'),
+                'pct_days_in_market': res.get('pct_days_in_market'),
+                'alpha_dollars': res.get('alpha_dollars'),
+                # Legacy key style for backward compatibility with earlier analysis scripts
+                'total_return_pct': res.get('total_return_pct'),
+                'captured_buy_hold_ratio': res.get('captured_buy_hold_ratio'),
+                'alpha_vs_buy_hold_pct': res.get('alpha_vs_buy_hold_pct'),
+                'avg_exposure_fraction': res.get('avg_exposure_fraction')
+            }
+            if args.debug_hash:
+                dfp = price_cache.get(sym)
+                if dfp is not None and not dfp.empty:
+                    close_ser = dfp['Close']
+                    train_slice = close_ser.loc[str(derived_train_start.date()):str(derived_train_end.date())]
+                    fwd_slice = close_ser.loc[str(derived_fwd_start.date()):str(end_date.date())]
+                    mini.update({
+                        'train_first_close': float(train_slice.iloc[0]) if len(train_slice)>0 else None,
+                        'train_last_close': float(train_slice.iloc[-1]) if len(train_slice)>0 else None,
+                        'fwd_first_close': float(fwd_slice.iloc[0]) if len(fwd_slice)>0 else None,
+                        'fwd_last_close': float(fwd_slice.iloc[-1]) if len(fwd_slice)>0 else None,
+                        'train_hash': _hash_segment(train_slice) if len(train_slice)>0 else None,
+                        'fwd_hash': _hash_segment(fwd_slice) if len(fwd_slice)>0 else None
+                    })
+            if args.save_individual:
+                with open(out_dir/f"{sym.lower()}_result.json",'w') as f:
+                    json.dump(res, f, indent=2)
+            return sym, mini
+        except Exception as e:
+            return sym, {'error': str(e)}
+
+    with concurrent.futures.ThreadPoolExecutor(max_workers=max(1,args.workers)) as ex:
+        fut_map = {ex.submit(_run, sym): sym for sym in selected_syms}
+        for i,fut in enumerate(concurrent.futures.as_completed(fut_map),1):
+            sym = fut_map[fut]
+            sym, result = fut.result()
+            run_results[sym] = result
+            if i % 5 == 0 or i == len(selected_syms):
+                print(f"Completed {i}/{len(selected_syms)}")
+    runtime = round(time.time()-t0,2)
+    meta = {
+        'scan': scan_summary,
+        'runs': run_results,
+        'selected_symbols': selected_syms,
+        'selection_strategy': selection_strategy,
+        'runtime_sec': runtime,
+        'aggressive': args.aggressive
+    }
+    with open(out_dir/'batch_results.json','w') as f:
+        json.dump(meta, f, indent=2)
+    print(f"Complete in {runtime}s. Aggressive={args.aggressive}. Results at {out_dir/'batch_results.json'}")
+
+if __name__ == '__main__':
+    main()

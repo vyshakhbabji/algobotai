@@ -1,0 +1,14 @@
+{
+  "initial_capital": 100000.0,
+  "final_equity": 100000.0,
+  "return_pct": 0.0,
+  "max_drawdown": 0.0,
+  "num_trades": 0,
+  "sharpe": 0.0,
+  "sortino": NaN,
+  "turnover": 0.0,
+  "round_trips": 0,
+  "win_rate": NaN,
+  "avg_holding_days": NaN,
+  "profit_factor": NaN
+}

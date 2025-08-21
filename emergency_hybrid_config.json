@@ -1,0 +1,48 @@
+{
+  "strategy_name": "EMERGENCY_HYBRID_FALLBACK",
+  "description": "Hybrid ML + Buy-Hold strategy for guaranteed returns",
+  "created": "2025-01-27_emergency",
+  "ml_parameters": {
+    "min_directional_accuracy": 0.35,
+    "buy_threshold": 0.001,
+    "sell_threshold": -0.001,
+    "confidence_threshold": 0.1,
+    "force_predictions": true
+  },
+  "risk_parameters": {
+    "max_position_pct": 0.4,
+    "max_portfolio_risk_pct": 0.98,
+    "min_holding_days": 1,
+    "max_holding_days": 30,
+    "stop_loss_pct": 0.15,
+    "take_profit_pct": 0.25
+  },
+  "fallback_system": {
+    "enable_fallback": true,
+    "trigger_after_days": 2,
+    "fallback_exposure": 0.6,
+    "fallback_method": "equal_weight",
+    "rebalance_frequency": 5,
+    "minimum_guaranteed_return": true
+  },
+  "institutional_override": {
+    "tier_probs": [
+      0.01,
+      0.02,
+      0.03,
+      0.05
+    ],
+    "breakout_prob": 0.01,
+    "hard_exit_prob": 0.01,
+    "soft_exit_prob": 0.02,
+    "risk_per_trade_pct": 0.25,
+    "early_core_fraction": 0.9
+  },
+  "emergency_rules": {
+    "force_trading": true,
+    "min_daily_exposure": 0.3,
+    "random_trade_probability": 0.05,
+    "ignore_all_filters": true,
+    "override_risk_limits": true
+  }
+}

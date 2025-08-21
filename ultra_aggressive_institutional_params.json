@@ -1,0 +1,29 @@
+{
+    "institutional_config_name": "ULTRA_AGGRESSIVE_INSTITUTIONAL",
+    "description": "Maximum aggression institutional parameters",
+    "created": "2025-08-13",
+    "tier_probs": [
+        0.20,
+        0.26,
+        0.32,
+        0.38
+    ],
+    "breakout_prob": 0.18,
+    "hard_exit_prob": 0.10,
+    "soft_exit_prob": 0.15,
+    "risk_per_trade_pct": 0.18,
+    "early_core_fraction": 0.85,
+    "additional_features": {
+        "momentum_multiplier": 1.5,
+        "volatility_boost": true,
+        "trend_following_aggressive": true,
+        "ignore_minor_resistance": true
+    },
+    "target_metrics": {
+        "exposure": "85-95%",
+        "trades_per_week": "15-25",
+        "avg_position_size": "35-40%",
+        "turnover_ratio": "high"
+    },
+    "notes": "Extreme settings for users demanding high returns despite higher risk"
+}

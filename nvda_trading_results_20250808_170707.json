@@ -1,0 +1,386 @@
+{
+  "symbol": "NVDA",
+  "starting_capital": 10000,
+  "final_value": 10000.0,
+  "total_return": 0.0,
+  "buy_hold_value": 12557.831812648585,
+  "buy_hold_return": 25.57831812648585,
+  "outperformance": -25.57831812648585,
+  "num_trades": 0,
+  "trades": [],
+  "daily_values": [
+    {
+      "date": "2025-06-10 00:00:00",
+      "price": 143.95001220703125,
+      "portfolio_value": 10000.0,
+      "cash": 10000,
+      "shares": 0,
+      "position": null,
+      "signal": "HOLD"
+    },
+    {
+      "date": "2025-06-11 00:00:00",
+      "price": 142.8300018310547,
+      "portfolio_value": 10000.0,
+      "cash": 10000,
+      "shares": 0,
+      "position": null,
+      "signal": "HOLD"
+    },
+    {
+      "date": "2025-06-12 00:00:00",
+      "price": 145.0,
+      "portfolio_value": 10000.0,
+      "cash": 10000,
+      "shares": 0,
+      "position": null,
+      "signal": "HOLD"
+    },
+    {
+      "date": "2025-06-13 00:00:00",
+      "price": 141.97000122070312,
+      "portfolio_value": 10000.0,
+      "cash": 10000,
+      "shares": 0,
+      "position": null,
+      "signal": "HOLD"
+    },
+    {
+      "date": "2025-06-16 00:00:00",
+      "price": 144.69000244140625,
+      "portfolio_value": 10000.0,
+      "cash": 10000,
+      "shares": 0,
+      "position": null,
+      "signal": "HOLD"
+    },
+    {
+      "date": "2025-06-17 00:00:00",
+      "price": 144.1199951171875,
+      "portfolio_value": 10000.0,
+      "cash": 10000,
+      "shares": 0,
+      "position": null,
+      "signal": "HOLD"
+    },
+    {
+      "date": "2025-06-18 00:00:00",
+      "price": 145.47999572753906,
+      "portfolio_value": 10000.0,
+      "cash": 10000,
+      "shares": 0,
+      "position": null,
+      "signal": "HOLD"
+    },
+    {
+      "date": "2025-06-20 00:00:00",
+      "price": 143.85000610351562,
+      "portfolio_value": 10000.0,
+      "cash": 10000,
+      "shares": 0,
+      "position": null,
+      "signal": "HOLD"
+    },
+    {
+      "date": "2025-06-23 00:00:00",
+      "price": 144.1699981689453,
+      "portfolio_value": 10000.0,
+      "cash": 10000,
+      "shares": 0,
+      "position": null,
+      "signal": "HOLD"
+    },
+    {
+      "date": "2025-06-24 00:00:00",
+      "price": 147.89999389648438,
+      "portfolio_value": 10000.0,
+      "cash": 10000,
+      "shares": 0,
+      "position": null,
+      "signal": "HOLD"
+    },
+    {
+      "date": "2025-06-25 00:00:00",
+      "price": 154.30999755859375,
+      "portfolio_value": 10000.0,
+      "cash": 10000,
+      "shares": 0,
+      "position": null,
+      "signal": "HOLD"
+    },
+    {
+      "date": "2025-06-26 00:00:00",
+      "price": 155.02000427246094,
+      "portfolio_value": 10000.0,
+      "cash": 10000,
+      "shares": 0,
+      "position": null,
+      "signal": "HOLD"
+    },
+    {
+      "date": "2025-06-27 00:00:00",
+      "price": 157.75,
+      "portfolio_value": 10000.0,
+      "cash": 10000,
+      "shares": 0,
+      "position": null,
+      "signal": "HOLD"
+    },
+    {
+      "date": "2025-06-30 00:00:00",
+      "price": 157.99000549316406,
+      "portfolio_value": 10000.0,
+      "cash": 10000,
+      "shares": 0,
+      "position": null,
+      "signal": "HOLD"
+    },
+    {
+      "date": "2025-07-01 00:00:00",
+      "price": 153.3000030517578,
+      "portfolio_value": 10000.0,
+      "cash": 10000,
+      "shares": 0,
+      "position": null,
+      "signal": "HOLD"
+    },
+    {
+      "date": "2025-07-02 00:00:00",
+      "price": 157.25,
+      "portfolio_value": 10000.0,
+      "cash": 10000,
+      "shares": 0,
+      "position": null,
+      "signal": "HOLD"
+    },
+    {
+      "date": "2025-07-03 00:00:00",
+      "price": 159.33999633789062,
+      "portfolio_value": 10000.0,
+      "cash": 10000,
+      "shares": 0,
+      "position": null,
+      "signal": "HOLD"
+    },
+    {
+      "date": "2025-07-07 00:00:00",
+      "price": 158.24000549316406,
+      "portfolio_value": 10000.0,
+      "cash": 10000,
+      "shares": 0,
+      "position": null,
+      "signal": "HOLD"
+    },
+    {
+      "date": "2025-07-08 00:00:00",
+      "price": 160.0,
+      "portfolio_value": 10000.0,
+      "cash": 10000,
+      "shares": 0,
+      "position": null,
+      "signal": "HOLD"
+    },
+    {
+      "date": "2025-07-09 00:00:00",
+      "price": 162.8800048828125,
+      "portfolio_value": 10000.0,
+      "cash": 10000,
+      "shares": 0,
+      "position": null,
+      "signal": "HOLD"
+    },
+    {
+      "date": "2025-07-10 00:00:00",
+      "price": 164.10000610351562,
+      "portfolio_value": 10000.0,
+      "cash": 10000,
+      "shares": 0,
+      "position": null,
+      "signal": "HOLD"
+    },
+    {
+      "date": "2025-07-11 00:00:00",
+      "price": 164.9199981689453,
+      "portfolio_value": 10000.0,
+      "cash": 10000,
+      "shares": 0,
+      "position": null,
+      "signal": "HOLD"
+    },
+    {
+      "date": "2025-07-14 00:00:00",
+      "price": 164.07000732421875,
+      "portfolio_value": 10000.0,
+      "cash": 10000,
+      "shares": 0,
+      "position": null,
+      "signal": "HOLD"
+    },
+    {
+      "date": "2025-07-15 00:00:00",
+      "price": 170.6999969482422,
+      "portfolio_value": 10000.0,
+      "cash": 10000,
+      "shares": 0,
+      "position": null,
+      "signal": "HOLD"
+    },
+    {
+      "date": "2025-07-16 00:00:00",
+      "price": 171.3699951171875,
+      "portfolio_value": 10000.0,
+      "cash": 10000,
+      "shares": 0,
+      "position": null,
+      "signal": "HOLD"
+    },
+    {
+      "date": "2025-07-17 00:00:00",
+      "price": 173.0,
+      "portfolio_value": 10000.0,
+      "cash": 10000,
+      "shares": 0,
+      "position": null,
+      "signal": "HOLD"
+    },
+    {
+      "date": "2025-07-18 00:00:00",
+      "price": 172.41000366210938,
+      "portfolio_value": 10000.0,
+      "cash": 10000,
+      "shares": 0,
+      "position": null,
+      "signal": "HOLD"
+    },
+    {
+      "date": "2025-07-21 00:00:00",
+      "price": 171.3800048828125,
+      "portfolio_value": 10000.0,
+      "cash": 10000,
+      "shares": 0,
+      "position": null,
+      "signal": "HOLD"
+    },
+    {
+      "date": "2025-07-22 00:00:00",
+      "price": 167.02999877929688,
+      "portfolio_value": 10000.0,
+      "cash": 10000,
+      "shares": 0,
+      "position": null,
+      "signal": "HOLD"
+    },
+    {
+      "date": "2025-07-23 00:00:00",
+      "price": 170.77999877929688,
+      "portfolio_value": 10000.0,
+      "cash": 10000,
+      "shares": 0,
+      "position": null,
+      "signal": "HOLD"
+    },
+    {
+      "date": "2025-07-24 00:00:00",
+      "price": 173.74000549316406,
+      "portfolio_value": 10000.0,
+      "cash": 10000,
+      "shares": 0,
+      "position": null,
+      "signal": "HOLD"
+    },
+    {
+      "date": "2025-07-25 00:00:00",
+      "price": 173.5,
+      "portfolio_value": 10000.0,
+      "cash": 10000,
+      "shares": 0,
+      "position": null,
+      "signal": "HOLD"
+    },
+    {
+      "date": "2025-07-28 00:00:00",
+      "price": 176.75,
+      "portfolio_value": 10000.0,
+      "cash": 10000,
+      "shares": 0,
+      "position": null,
+      "signal": "HOLD"
+    },
+    {
+      "date": "2025-07-29 00:00:00",
+      "price": 175.50999450683594,
+      "portfolio_value": 10000.0,
+      "cash": 10000,
+      "shares": 0,
+      "position": null,
+      "signal": "HOLD"
+    },
+    {
+      "date": "2025-07-30 00:00:00",
+      "price": 179.27000427246094,
+      "portfolio_value": 10000.0,
+      "cash": 10000,
+      "shares": 0,
+      "position": null,
+      "signal": "HOLD"
+    },
+    {
+      "date": "2025-07-31 00:00:00",
+      "price": 177.8699951171875,
+      "portfolio_value": 10000.0,
+      "cash": 10000,
+      "shares": 0,
+      "position": null,
+      "signal": "HOLD"
+    },
+    {
+      "date": "2025-08-01 00:00:00",
+      "price": 173.72000122070312,
+      "portfolio_value": 10000.0,
+      "cash": 10000,
+      "shares": 0,
+      "position": null,
+      "signal": "HOLD"
+    },
+    {
+      "date": "2025-08-04 00:00:00",
+      "price": 180.0,
+      "portfolio_value": 10000.0,
+      "cash": 10000,
+      "shares": 0,
+      "position": null,
+      "signal": "HOLD"
+    },
+    {
+      "date": "2025-08-05 00:00:00",
+      "price": 178.25999450683594,
+      "portfolio_value": 10000.0,
+      "cash": 10000,
+      "shares": 0,
+      "position": null,
+      "signal": "HOLD"
+    },
+    {
+      "date": "2025-08-06 00:00:00",
+      "price": 179.4199981689453,
+      "portfolio_value": 10000.0,
+      "cash": 10000,
+      "shares": 0,
+      "position": null,
+      "signal": "HOLD"
+    },
+    {
+      "date": "2025-08-07 00:00:00",
+      "price": 180.77000427246094,
+      "portfolio_value": 10000.0,
+      "cash": 10000,
+      "shares": 0,
+      "position": null,
+      "signal": "HOLD"
+    }
+  ],
+  "final_cash": 10000,
+  "final_shares": 0,
+  "final_price": 180.77000427246094,
+  "start_price": 143.95001220703125
+}

@@ -11,11 +11,17 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 from datetime import datetime, timedelta
-from alpaca.trading.client import TradingClient
-from alpaca.trading.requests import MarketOrderRequest, LimitOrderRequest
-from alpaca.trading.enums import OrderSide, TimeInForce
-from alpaca.data.historical import StockHistoricalDataClient
-from alpaca.data.requests import StockLatestQuoteRequest
+
+try:
+    from alpaca.trading.client import TradingClient
+    from alpaca.trading.requests import MarketOrderRequest, LimitOrderRequest
+    from alpaca.trading.enums import OrderSide, TimeInForce
+    from alpaca.data.historical import StockHistoricalDataClient
+    from alpaca.data.requests import StockLatestQuoteRequest
+    ALPACA_AVAILABLE = True
+except ImportError:
+    ALPACA_AVAILABLE = False
+
 import plotly.graph_objects as go
 import plotly.express as px
 
@@ -28,21 +34,23 @@ class AlpacaPaperTradingEngine:
         self.load_configuration()
     
     def setup_credentials(self):
-        """Setup Alpaca API credentials"""
-        # Check for credentials in environment or streamlit secrets
-        if hasattr(st, 'secrets') and 'alpaca' in st.secrets:
-            self.api_key = st.secrets['alpaca']['api_key']
-            self.secret_key = st.secrets['alpaca']['secret_key']
-        else:
-            # For local development - you'll need to add these
-            self.api_key = os.getenv('ALPACA_API_KEY', '')
-            self.secret_key = os.getenv('ALPACA_SECRET_KEY', '')
-        
-        self.base_url = 'https://paper-api.alpaca.markets'  # Paper trading URL
+        """Setup Alpaca API credentials (pulled from env).
+
+        DEPRECATED: Prefer using algobot.broker.alpaca.AlpacaBroker.
+        Environment variables: ALPACA_API_KEY, ALPACA_SECRET_KEY
+        """
+        self.api_key = os.getenv('ALPACA_API_KEY', '')
+        self.secret_key = os.getenv('ALPACA_SECRET_KEY', '')
+        self.base_url = 'https://paper-api.alpaca.markets'
         
     def initialize_clients(self):
         """Initialize Alpaca trading and data clients"""
         try:
+            if not ALPACA_AVAILABLE:
+                self.connected = False
+                st.error("❌ Alpaca SDK not available. Run: pip install alpaca-py")
+                return
+                
             if self.api_key and self.secret_key:
                 # Trading client for orders and account info
                 self.trading_client = TradingClient(
@@ -57,8 +65,10 @@ class AlpacaPaperTradingEngine:
                     secret_key=self.secret_key
                 )
                 
+                # Test the connection
+                account = self.trading_client.get_account()
                 self.connected = True
-                st.success("✅ Connected to Alpaca Paper Trading!")
+                st.success(f"✅ Connected to Alpaca Paper Trading! Account: {account.account_number}")
             else:
                 self.connected = False
                 st.error("❌ Alpaca API credentials not found!")
@@ -66,6 +76,7 @@ class AlpacaPaperTradingEngine:
         except Exception as e:
             self.connected = False
             st.error(f"❌ Failed to connect to Alpaca: {str(e)}")
+            st.info("💡 Make sure your API keys are valid and you have paper trading enabled.")
     
     def load_configuration(self):
         """Load trading configuration"""

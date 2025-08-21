@@ -1,0 +1,29 @@
+{
+  "strategy": "High Conviction Momentum",
+  "period": "2024-05-13 to 2024-08-13",
+  "initial_capital": 100000,
+  "final_value": 100000,
+  "total_return_pct": 0.0,
+  "profit_loss": 0,
+  "trades_log": [],
+  "portfolio_history": [
+    {
+      "date": "2024-05-13",
+      "value": 100000,
+      "cash": 100000,
+      "positions": 0
+    },
+    {
+      "date": "2024-06-13",
+      "value": 100000,
+      "cash": 100000,
+      "positions": 0
+    },
+    {
+      "date": "2024-07-13",
+      "value": 100000,
+      "cash": 100000,
+      "positions": 0
+    }
+  ]
+}

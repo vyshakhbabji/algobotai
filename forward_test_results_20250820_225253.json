@@ -1,0 +1,1117 @@
+{
+  "test_metadata": {
+    "account_size": 100000,
+    "data_splits": {
+      "train_start": "2023-11-21",
+      "train_end": "2025-05-21",
+      "test_start": "2025-05-22",
+      "test_end": "2025-08-20"
+    },
+    "universe_size": 25,
+    "models_trained": 0,
+    "symbols_with_data": 25,
+    "test_type": "3_month_forward_test",
+    "ml_system_used": true
+  },
+  "performance_metrics": {
+    "account_performance": {
+      "initial_value": 99943.32762118531,
+      "final_value": 109627.8390388336,
+      "total_return_pct": 9.690002972840214,
+      "annualized_return_pct": 43.12798470831376,
+      "profit_loss_amount": 9684.51141764829,
+      "trading_days": 65
+    },
+    "risk_metrics": {
+      "volatility_pct": 16.187304371729898,
+      "sharpe_ratio": 2.5407556294636175,
+      "max_drawdown_pct": -4.437885885226285,
+      "win_rate_pct": 55.38461538461539
+    },
+    "trading_activity": {
+      "total_trades": 43,
+      "buy_trades": 35,
+      "sell_trades": 8,
+      "avg_trade_value": 4681.332802705987
+    }
+  },
+  "daily_portfolio_values": [
+    {
+      "date": "2025-05-22",
+      "portfolio_value": 99943.32762118531,
+      "cash": 81052.53468295289,
+      "positions_value": 18890.792938232422,
+      "active_positions": 3,
+      "daily_return": -0.0005667237881469191,
+      "trades_today": 3
+    },
+    {
+      "date": "2025-05-23",
+      "portfolio_value": 99651.59895297242,
+      "cash": 81052.53468295289,
+      "positions_value": 18599.06427001953,
+      "active_positions": 3,
+      "daily_return": -0.0029189409153818485,
+      "trades_today": 0
+    },
+    {
+      "date": "2025-05-26",
+      "portfolio_value": 99651.59895297242,
+      "cash": 81052.53468295289,
+      "positions_value": 18599.06427001953,
+      "active_positions": 3,
+      "daily_return": 0.0,
+      "trades_today": 0
+    },
+    {
+      "date": "2025-05-27",
+      "portfolio_value": 100002.72838973999,
+      "cash": 66306.71224594116,
+      "positions_value": 33696.01614379883,
+      "active_positions": 5,
+      "daily_return": 0.003523570524275057,
+      "trades_today": 3
+    },
+    {
+      "date": "2025-05-28",
+      "portfolio_value": 99554.39591943359,
+      "cash": 53746.06779443359,
+      "positions_value": 45808.328125,
+      "active_positions": 6,
+      "daily_return": -0.004483202383830127,
+      "trades_today": 3
+    },
+    {
+      "date": "2025-05-29",
+      "portfolio_value": 99351.43033051681,
+      "cash": 46945.306432964324,
+      "positions_value": 52406.12389755249,
+      "active_positions": 6,
+      "daily_return": -0.0020387406004756543,
+      "trades_today": 2
+    },
+    {
+      "date": "2025-05-30",
+      "portfolio_value": 100022.41110944557,
+      "cash": 40377.76261091042,
+      "positions_value": 59644.648498535156,
+      "active_positions": 6,
+      "daily_return": 0.006753609653092837,
+      "trades_today": 2
+    },
+    {
+      "date": "2025-06-02",
+      "portfolio_value": 100279.52523674964,
+      "cash": 35453.12304558754,
+      "positions_value": 64826.40219116211,
+      "active_positions": 7,
+      "daily_return": 0.0025705651808646496,
+      "trades_today": 2
+    },
+    {
+      "date": "2025-06-03",
+      "portfolio_value": 100474.62748772622,
+      "cash": 32882.966766901016,
+      "positions_value": 67591.6607208252,
+      "active_positions": 7,
+      "daily_return": 0.0019455841111728337,
+      "trades_today": 1
+    },
+    {
+      "date": "2025-06-04",
+      "portfolio_value": 100412.86443505288,
+      "cash": 30531.73188958168,
+      "positions_value": 69881.13254547119,
+      "active_positions": 7,
+      "daily_return": -0.0006147129301960921,
+      "trades_today": 1
+    },
+    {
+      "date": "2025-06-05",
+      "portfolio_value": 99064.16550377847,
+      "cash": 35026.903693475724,
+      "positions_value": 64037.261810302734,
+      "active_positions": 6,
+      "daily_return": -0.013431535280489397,
+      "trades_today": 2
+    },
+    {
+      "date": "2025-06-06",
+      "portfolio_value": 99740.62934827614,
+      "cash": 30396.601867197038,
+      "positions_value": 69344.0274810791,
+      "active_positions": 7,
+      "daily_return": 0.006828542299403634,
+      "trades_today": 2
+    },
+    {
+      "date": "2025-06-09",
+      "portfolio_value": 99284.05897985268,
+      "cash": 28198.88838659096,
+      "positions_value": 71085.17059326172,
+      "active_positions": 8,
+      "daily_return": -0.004577576574428868,
+      "trades_today": 1
+    },
+    {
+      "date": "2025-06-10",
+      "portfolio_value": 99725.76663671303,
+      "cash": 28198.88838659096,
+      "positions_value": 71526.87825012207,
+      "active_positions": 8,
+      "daily_return": 0.004448928271052914,
+      "trades_today": 0
+    },
+    {
+      "date": "2025-06-11",
+      "portfolio_value": 99981.66765294838,
+      "cash": 28198.88838659096,
+      "positions_value": 71782.77926635742,
+      "active_positions": 8,
+      "daily_return": 0.0025660471196733243,
+      "trades_today": 0
+    },
+    {
+      "date": "2025-06-12",
+      "portfolio_value": 99539.54744420815,
+      "cash": 28198.88838659096,
+      "positions_value": 71340.65905761719,
+      "active_positions": 8,
+      "daily_return": -0.00442201274612563,
+      "trades_today": 0
+    },
+    {
+      "date": "2025-06-13",
+      "portfolio_value": 98931.67197118569,
+      "cash": 28198.88838659096,
+      "positions_value": 70732.78358459473,
+      "active_positions": 8,
+      "daily_return": -0.006106873987579407,
+      "trades_today": 0
+    },
+    {
+      "date": "2025-06-16",
+      "portfolio_value": 101106.5924271183,
+      "cash": 28198.88838659096,
+      "positions_value": 72907.70404052734,
+      "active_positions": 8,
+      "daily_return": 0.021984066503657928,
+      "trades_today": 0
+    },
+    {
+      "date": "2025-06-17",
+      "portfolio_value": 100580.26066289711,
+      "cash": 28198.88838659096,
+      "positions_value": 72381.37227630615,
+      "active_positions": 8,
+      "daily_return": -0.005205711631519898,
+      "trades_today": 0
+    },
+    {
+      "date": "2025-06-18",
+      "portfolio_value": 101750.99851690102,
+      "cash": 28198.88838659096,
+      "positions_value": 73552.11013031006,
+      "active_positions": 8,
+      "daily_return": 0.01163983714386791,
+      "trades_today": 0
+    },
+    {
+      "date": "2025-06-19",
+      "portfolio_value": 101750.99851690102,
+      "cash": 28198.88838659096,
+      "positions_value": 73552.11013031006,
+      "active_positions": 8,
+      "daily_return": 0.0,
+      "trades_today": 0
+    },
+    {
+      "date": "2025-06-20",
+      "portfolio_value": 100780.65836944008,
+      "cash": 38687.24848784828,
+      "positions_value": 62093.4098815918,
+      "active_positions": 7,
+      "daily_return": -0.009536418920741762,
+      "trades_today": 1
+    },
+    {
+      "date": "2025-06-23",
+      "portfolio_value": 101232.85468497657,
+      "cash": 35957.904909280776,
+      "positions_value": 65274.9497756958,
+      "active_positions": 7,
+      "daily_return": 0.00448693551771452,
+      "trades_today": 1
+    },
+    {
+      "date": "2025-06-24",
+      "portfolio_value": 103237.23009737587,
+      "cash": 48921.77138765907,
+      "positions_value": 54315.4587097168,
+      "active_positions": 6,
+      "daily_return": 0.01979965317224979,
+      "trades_today": 2
+    },
+    {
+      "date": "2025-06-25",
+      "portfolio_value": 103630.12021766853,
+      "cash": 42282.05363594246,
+      "positions_value": 61348.066581726074,
+      "active_positions": 7,
+      "daily_return": 0.0038057018763684473,
+      "trades_today": 2
+    },
+    {
+      "date": "2025-06-26",
+      "portfolio_value": 104687.98845784187,
+      "cash": 39251.833794755934,
+      "positions_value": 65436.15466308594,
+      "active_positions": 7,
+      "daily_return": 0.01020811553582446,
+      "trades_today": 1
+    },
+    {
+      "date": "2025-06-27",
+      "portfolio_value": 104411.57580043221,
+      "cash": 36403.815294755936,
+      "positions_value": 68007.76050567627,
+      "active_positions": 7,
+      "daily_return": -0.002640347393062874,
+      "trades_today": 1
+    },
+    {
+      "date": "2025-06-30",
+      "portfolio_value": 104363.1649051075,
+      "cash": 34274.19554475594,
+      "positions_value": 70088.96936035156,
+      "active_positions": 8,
+      "daily_return": -0.00046365448422357023,
+      "trades_today": 1
+    },
+    {
+      "date": "2025-07-01",
+      "portfolio_value": 101611.86464265632,
+      "cash": 34274.19554475594,
+      "positions_value": 67337.66909790039,
+      "active_positions": 8,
+      "daily_return": -0.026362752269469783,
+      "trades_today": 0
+    },
+    {
+      "date": "2025-07-02",
+      "portfolio_value": 102963.5566363697,
+      "cash": 34274.19554475594,
+      "positions_value": 68689.36109161377,
+      "active_positions": 8,
+      "daily_return": 0.01330250161698089,
+      "trades_today": 0
+    },
+    {
+      "date": "2025-07-03",
+      "portfolio_value": 103704.14978364753,
+      "cash": 34274.19554475594,
+      "positions_value": 69429.9542388916,
+      "active_positions": 8,
+      "daily_return": 0.00719276966988758,
+      "trades_today": 0
+    },
+    {
+      "date": "2025-07-04",
+      "portfolio_value": 103704.14978364753,
+      "cash": 34274.19554475594,
+      "positions_value": 69429.9542388916,
+      "active_positions": 8,
+      "daily_return": 0.0,
+      "trades_today": 0
+    },
+    {
+      "date": "2025-07-07",
+      "portfolio_value": 104095.32633546638,
+      "cash": 34274.19554475594,
+      "positions_value": 69821.13079071045,
+      "active_positions": 8,
+      "daily_return": 0.0037720433814359268,
+      "trades_today": 0
+    },
+    {
+      "date": "2025-07-08",
+      "portfolio_value": 103908.0161776905,
+      "cash": 34274.19554475594,
+      "positions_value": 69633.82063293457,
+      "active_positions": 8,
+      "daily_return": -0.0017994098714118768,
+      "trades_today": 0
+    },
+    {
+      "date": "2025-07-09",
+      "portfolio_value": 104930.61604646491,
+      "cash": 34274.19554475594,
+      "positions_value": 70656.42050170898,
+      "active_positions": 8,
+      "daily_return": 0.009841395364778129,
+      "trades_today": 0
+    },
+    {
+      "date": "2025-07-10",
+      "portfolio_value": 104988.53534272956,
+      "cash": 34274.19554475594,
+      "positions_value": 70714.33979797363,
+      "active_positions": 8,
+      "daily_return": 0.0005519770915954679,
+      "trades_today": 0
+    },
+    {
+      "date": "2025-07-11",
+      "portfolio_value": 105279.3258853321,
+      "cash": 34274.19554475594,
+      "positions_value": 71005.13034057617,
+      "active_positions": 8,
+      "daily_return": 0.0027697361588412354,
+      "trades_today": 0
+    },
+    {
+      "date": "2025-07-14",
+      "portfolio_value": 106370.75677827644,
+      "cash": 34274.19554475594,
+      "positions_value": 72096.56123352051,
+      "active_positions": 8,
+      "daily_return": 0.010367001153988184,
+      "trades_today": 0
+    },
+    {
+      "date": "2025-07-15",
+      "portfolio_value": 107748.32609132575,
+      "cash": 34274.19554475594,
+      "positions_value": 73474.13054656982,
+      "active_positions": 8,
+      "daily_return": 0.012950639393501526,
+      "trades_today": 0
+    },
+    {
+      "date": "2025-07-16",
+      "portfolio_value": 109510.72500947761,
+      "cash": 34274.19554475594,
+      "positions_value": 75236.52946472168,
+      "active_positions": 8,
+      "daily_return": 0.016356624572135575,
+      "trades_today": 0
+    },
+    {
+      "date": "2025-07-17",
+      "portfolio_value": 110537.60693998146,
+      "cash": 39807.2864291172,
+      "positions_value": 70730.32051086426,
+      "active_positions": 7,
+      "daily_return": 0.009376998740671083,
+      "trades_today": 1
+    },
+    {
+      "date": "2025-07-18",
+      "portfolio_value": 110976.67104770851,
+      "cash": 37281.05039646339,
+      "positions_value": 73695.62065124512,
+      "active_positions": 7,
+      "daily_return": 0.003972079004437413,
+      "trades_today": 1
+    },
+    {
+      "date": "2025-07-21",
+      "portfolio_value": 110969.27185764503,
+      "cash": 34974.72217502784,
+      "positions_value": 75994.54968261719,
+      "active_positions": 8,
+      "daily_return": -6.667338273559828e-05,
+      "trades_today": 1
+    },
+    {
+      "date": "2025-07-22",
+      "portfolio_value": 108948.22151889991,
+      "cash": 34974.72217502784,
+      "positions_value": 73973.49934387207,
+      "active_positions": 8,
+      "daily_return": -0.01821270253388511,
+      "trades_today": 0
+    },
+    {
+      "date": "2025-07-23",
+      "portfolio_value": 109117.88096561622,
+      "cash": 34974.72217502784,
+      "positions_value": 74143.15879058838,
+      "active_positions": 8,
+      "daily_return": 0.0015572484282074925,
+      "trades_today": 0
+    },
+    {
+      "date": "2025-07-24",
+      "portfolio_value": 109473.57243290138,
+      "cash": 34974.72217502784,
+      "positions_value": 74498.85025787354,
+      "active_positions": 8,
+      "daily_return": 0.0032596991816330914,
+      "trades_today": 0
+    },
+    {
+      "date": "2025-07-25",
+      "portfolio_value": 110234.79188480567,
+      "cash": 34974.72217502784,
+      "positions_value": 75260.06970977783,
+      "active_positions": 8,
+      "daily_return": 0.006953454016227195,
+      "trades_today": 0
+    },
+    {
+      "date": "2025-07-28",
+      "portfolio_value": 111245.04174747657,
+      "cash": 34974.72217502784,
+      "positions_value": 76270.31957244873,
+      "active_positions": 8,
+      "daily_return": 0.009164528234666602,
+      "trades_today": 0
+    },
+    {
+      "date": "2025-07-29",
+      "portfolio_value": 110917.84287204932,
+      "cash": 34974.72217502784,
+      "positions_value": 75943.12069702148,
+      "active_positions": 8,
+      "daily_return": -0.002941244574027661,
+      "trades_today": 0
+    },
+    {
+      "date": "2025-07-30",
+      "portfolio_value": 112816.11684467507,
+      "cash": 45136.10659076881,
+      "positions_value": 67680.01025390625,
+      "active_positions": 7,
+      "daily_return": 0.017114234495305865,
+      "trades_today": 1
+    },
+    {
+      "date": "2025-07-31",
+      "portfolio_value": 114718.93443793678,
+      "cash": 41953.005894845955,
+      "positions_value": 72765.92854309082,
+      "active_positions": 7,
+      "daily_return": 0.016866540406469673,
+      "trades_today": 1
+    },
+    {
+      "date": "2025-08-01",
+      "portfolio_value": 111163.93593525123,
+      "cash": 38943.965735666265,
+      "positions_value": 72219.97019958496,
+      "active_positions": 8,
+      "daily_return": -0.030988768507162347,
+      "trades_today": 1
+    },
+    {
+      "date": "2025-08-04",
+      "portfolio_value": 113813.46088422583,
+      "cash": 41102.29134382056,
+      "positions_value": 72711.16954040527,
+      "active_positions": 7,
+      "daily_return": 0.02383439311214973,
+      "trades_today": 1
+    },
+    {
+      "date": "2025-08-05",
+      "portfolio_value": 112539.91389367102,
+      "cash": 38147.86450097083,
+      "positions_value": 74392.0493927002,
+      "active_positions": 8,
+      "daily_return": -0.011189774747736525,
+      "trades_today": 1
+    },
+    {
+      "date": "2025-08-06",
+      "portfolio_value": 113571.41413781165,
+      "cash": 38147.86450097083,
+      "positions_value": 75423.54963684082,
+      "active_positions": 8,
+      "daily_return": 0.009165639180381798,
+      "trades_today": 0
+    },
+    {
+      "date": "2025-08-07",
+      "portfolio_value": 113568.98541161536,
+      "cash": 38147.86450097083,
+      "positions_value": 75421.12091064453,
+      "active_positions": 8,
+      "daily_return": -2.138501325115102e-05,
+      "trades_today": 0
+    },
+    {
+      "date": "2025-08-08",
+      "portfolio_value": 113436.93551537512,
+      "cash": 38147.86450097083,
+      "positions_value": 75289.0710144043,
+      "active_positions": 8,
+      "daily_return": -0.001162728501638343,
+      "trades_today": 0
+    },
+    {
+      "date": "2025-08-11",
+      "portfolio_value": 113483.26484581946,
+      "cash": 38147.86450097083,
+      "positions_value": 75335.40034484863,
+      "active_positions": 8,
+      "daily_return": 0.0004084148627063053,
+      "trades_today": 0
+    },
+    {
+      "date": "2025-08-12",
+      "portfolio_value": 114191.84367272376,
+      "cash": 38147.86450097083,
+      "positions_value": 76043.97917175293,
+      "active_positions": 8,
+      "daily_return": 0.006243905899843344,
+      "trades_today": 0
+    },
+    {
+      "date": "2025-08-13",
+      "portfolio_value": 114223.88368126868,
+      "cash": 38147.86450097083,
+      "positions_value": 76076.01918029785,
+      "active_positions": 8,
+      "daily_return": 0.00028058053460235934,
+      "trades_today": 0
+    },
+    {
+      "date": "2025-08-14",
+      "portfolio_value": 113483.53153380775,
+      "cash": 45550.03136596106,
+      "positions_value": 67933.50016784668,
+      "active_positions": 7,
+      "daily_return": -0.00648158794466151,
+      "trades_today": 1
+    },
+    {
+      "date": "2025-08-15",
+      "portfolio_value": 111303.30657686423,
+      "cash": 42249.11831773947,
+      "positions_value": 69054.18825912476,
+      "active_positions": 8,
+      "daily_return": -0.019211818027481935,
+      "trades_today": 1
+    },
+    {
+      "date": "2025-08-18",
+      "portfolio_value": 111372.61594312094,
+      "cash": 64612.47579877279,
+      "positions_value": 46760.140144348145,
+      "active_positions": 7,
+      "daily_return": 0.0006227071628716416,
+      "trades_today": 1
+    },
+    {
+      "date": "2025-08-19",
+      "portfolio_value": 109627.8390388336,
+      "cash": 59916.07884786985,
+      "positions_value": 49711.760190963745,
+      "active_positions": 7,
+      "daily_return": -0.01566612124095581,
+      "trades_today": 1
+    },
+    {
+      "date": "2025-08-20",
+      "portfolio_value": 109627.8390388336,
+      "cash": 59916.07884786985,
+      "positions_value": 49711.760190963745,
+      "active_positions": 7,
+      "daily_return": 0.0,
+      "trades_today": 0
+    }
+  ],
+  "trade_history": [
+    {
+      "date": "2025-05-22",
+      "symbol": "GOOGL",
+      "action": "BUY",
+      "shares": 42,
+      "price": 170.66339111328125,
+      "value": 7167.8624267578125,
+      "strength": 0.6050000000000001,
+      "rsi": 57.862062183699344,
+      "ml_boost": 0.0
+    },
+    {
+      "date": "2025-05-22",
+      "symbol": "NET",
+      "action": "BUY",
+      "shares": 38,
+      "price": 158.2100067138672,
+      "value": 6011.980255126953,
+      "strength": 0.55,
+      "rsi": 87.5718672121182,
+      "ml_boost": 0.0
+    },
+    {
+      "date": "2025-05-22",
+      "symbol": "COIN",
+      "action": "BUY",
+      "shares": 21,
+      "price": 271.95001220703125,
+      "value": 5710.950256347656,
+      "strength": 0.55,
+      "rsi": 72.19205944743378,
+      "ml_boost": 0.0
+    },
+    {
+      "date": "2025-05-27",
+      "symbol": "TSLA",
+      "action": "BUY",
+      "shares": 14,
+      "price": 362.8900146484375,
+      "value": 5080.460205078125,
+      "strength": 0.55,
+      "rsi": 82.4606835128877,
+      "ml_boost": 0.0
+    },
+    {
+      "date": "2025-05-27",
+      "symbol": "GOOGL",
+      "action": "BUY",
+      "shares": 29,
+      "price": 172.69093322753906,
+      "value": 5008.037063598633,
+      "strength": 0.55,
+      "rsi": 59.83323944922289,
+      "ml_boost": 0.0
+    },
+    {
+      "date": "2025-05-27",
+      "symbol": "RBLX",
+      "action": "BUY",
+      "shares": 54,
+      "price": 85.43000030517578,
+      "value": 4613.220016479492,
+      "strength": 0.55,
+      "rsi": 92.32108341071394,
+      "ml_boost": 0.0
+    },
+    {
+      "date": "2025-05-28",
+      "symbol": "U",
+      "action": "BUY",
+      "shares": 196,
+      "price": 24.540000915527344,
+      "value": 4809.840179443359,
+      "strength": 0.6050000000000001,
+      "rsi": 66.49659483296922,
+      "ml_boost": 0.0
+    },
+    {
+      "date": "2025-05-28",
+      "symbol": "TSLA",
+      "action": "BUY",
+      "shares": 11,
+      "price": 356.8999938964844,
+      "value": 3925.899932861328,
+      "strength": 0.55,
+      "rsi": 78.82250100954775,
+      "ml_boost": 0.0
+    },
+    {
+      "date": "2025-05-28",
+      "symbol": "GOOGL",
+      "action": "BUY",
+      "shares": 22,
+      "price": 172.15159606933594,
+      "value": 3787.3351135253906,
+      "strength": 0.55,
+      "rsi": 77.70736799544507,
+      "ml_boost": 0.0
+    },
+    {
+      "date": "2025-05-29",
+      "symbol": "RBLX",
+      "action": "BUY",
+      "shares": 41,
+      "price": 84.79000091552734,
+      "value": 3476.390037536621,
+      "strength": 0.55,
+      "rsi": 92.01827228435307,
+      "ml_boost": 0.0
+    },
+    {
+      "date": "2025-05-29",
+      "symbol": "U",
+      "action": "BUY",
+      "shares": 139,
+      "price": 23.770000457763672,
+      "value": 3304.0300636291504,
+      "strength": 0.55,
+      "rsi": 62.46006109911063,
+      "ml_boost": 0.0
+    },
+    {
+      "date": "2025-05-30",
+      "symbol": "RBLX",
+      "action": "BUY",
+      "shares": 39,
+      "price": 86.9800033569336,
+      "value": 3392.22013092041,
+      "strength": 0.6050000000000001,
+      "rsi": 92.17880238071288,
+      "ml_boost": 0.0
+    },
+    {
+      "date": "2025-05-30",
+      "symbol": "U",
+      "action": "BUY",
+      "shares": 121,
+      "price": 26.079999923706055,
+      "value": 3155.6799907684326,
+      "strength": 0.6050000000000001,
+      "rsi": 68.72455359777061,
+      "ml_boost": 0.0
+    },
+    {
+      "date": "2025-06-02",
+      "symbol": "AVGO",
+      "action": "BUY",
+      "shares": 10,
+      "price": 248.12599182128906,
+      "value": 2481.2599182128906,
+      "strength": 0.55,
+      "rsi": 81.32069734763664,
+      "ml_boost": 0.0
+    },
+    {
+      "date": "2025-06-02",
+      "symbol": "RBLX",
+      "action": "BUY",
+      "shares": 27,
+      "price": 89.94999694824219,
+      "value": 2428.649917602539,
+      "strength": 0.55,
+      "rsi": 92.73107554333725,
+      "ml_boost": 0.0
+    },
+    {
+      "date": "2025-06-03",
+      "symbol": "AVGO",
+      "action": "BUY",
+      "shares": 10,
+      "price": 256.24688720703125,
+      "value": 2562.4688720703125,
+      "strength": 0.6050000000000001,
+      "rsi": 80.0787896820166,
+      "ml_boost": 0.0
+    },
+    {
+      "date": "2025-06-04",
+      "symbol": "AVGO",
+      "action": "BUY",
+      "shares": 9,
+      "price": 260.4669189453125,
+      "value": 2344.2022705078125,
+      "strength": 0.6050000000000001,
+      "rsi": 82.51008973191,
+      "ml_boost": 0.0
+    },
+    {
+      "date": "2025-06-05",
+      "symbol": "TSLA",
+      "action": "SELL",
+      "shares": 25,
+      "price": 284.70001220703125,
+      "value": 7117.500305175781,
+      "strength": 0.6050000000000001,
+      "rsi": 29.54386486514356,
+      "ml_boost": 0.0
+    },
+    {
+      "date": "2025-06-05",
+      "symbol": "AVGO",
+      "action": "BUY",
+      "shares": 10,
+      "price": 259.31964111328125,
+      "value": 2593.1964111328125,
+      "strength": 0.6050000000000001,
+      "rsi": 80.20812593877781,
+      "ml_boost": 0.0
+    },
+    {
+      "date": "2025-06-06",
+      "symbol": "RBLX",
+      "action": "BUY",
+      "shares": 26,
+      "price": 95.80000305175781,
+      "value": 2490.800079345703,
+      "strength": 0.6050000000000001,
+      "rsi": 91.92155588632419,
+      "ml_boost": 0.0
+    },
+    {
+      "date": "2025-06-06",
+      "symbol": "NVDA",
+      "action": "BUY",
+      "shares": 15,
+      "price": 141.7101593017578,
+      "value": 2125.652389526367,
+      "strength": 0.55,
+      "rsi": 60.42904850566806,
+      "ml_boost": 0.0
+    },
+    {
+      "date": "2025-06-09",
+      "symbol": "AMD",
+      "action": "BUY",
+      "shares": 18,
+      "price": 121.7300033569336,
+      "value": 2191.1400604248047,
+      "strength": 0.6050000000000001,
+      "rsi": 61.795490956731044,
+      "ml_boost": 0.0
+    },
+    {
+      "date": "2025-06-20",
+      "symbol": "U",
+      "action": "SELL",
+      "shares": 456,
+      "price": 23.06999969482422,
+      "value": 10519.919860839844,
+      "strength": 0.55,
+      "rsi": 31.21097642720818,
+      "ml_boost": 0.0
+    },
+    {
+      "date": "2025-06-23",
+      "symbol": "AMD",
+      "action": "BUY",
+      "shares": 21,
+      "price": 129.5800018310547,
+      "value": 2721.1800384521484,
+      "strength": 0.6050000000000001,
+      "rsi": 71.05042256032777,
+      "ml_boost": 0.0
+    },
+    {
+      "date": "2025-06-24",
+      "symbol": "AMD",
+      "action": "BUY",
+      "shares": 18,
+      "price": 138.42999267578125,
+      "value": 2491.7398681640625,
+      "strength": 0.6050000000000001,
+      "rsi": 75.33590038436208,
+      "ml_boost": 0.0
+    },
+    {
+      "date": "2025-06-24",
+      "symbol": "GOOGL",
+      "action": "SELL",
+      "shares": 93,
+      "price": 166.77000427246094,
+      "value": 15509.610397338867,
+      "strength": 0.55,
+      "rsi": 51.243186875438596,
+      "ml_boost": 0.0
+    },
+    {
+      "date": "2025-06-25",
+      "symbol": "AMD",
+      "action": "BUY",
+      "shares": 24,
+      "price": 143.39999389648438,
+      "value": 3441.599853515625,
+      "strength": 0.6050000000000001,
+      "rsi": 77.34685553771962,
+      "ml_boost": 0.0
+    },
+    {
+      "date": "2025-06-25",
+      "symbol": "MU",
+      "action": "BUY",
+      "shares": 25,
+      "price": 127.13033294677734,
+      "value": 3178.2583236694336,
+      "strength": 0.6050000000000001,
+      "rsi": 90.65039462107762,
+      "ml_boost": 0.0
+    },
+    {
+      "date": "2025-06-26",
+      "symbol": "MU",
+      "action": "BUY",
+      "shares": 24,
+      "price": 125.88151550292969,
+      "value": 3021.1563720703125,
+      "strength": 0.6050000000000001,
+      "rsi": 85.53913738899011,
+      "ml_boost": 0.0
+    },
+    {
+      "date": "2025-06-27",
+      "symbol": "NVDA",
+      "action": "BUY",
+      "shares": 18,
+      "price": 157.75,
+      "value": 2839.5,
+      "strength": 0.6050000000000001,
+      "rsi": 77.90522406483691,
+      "ml_boost": 0.0
+    },
+    {
+      "date": "2025-06-30",
+      "symbol": "GS",
+      "action": "BUY",
+      "shares": 3,
+      "price": 707.75,
+      "value": 2123.25,
+      "strength": 0.6050000000000001,
+      "rsi": 88.06044254585652,
+      "ml_boost": 0.0
+    },
+    {
+      "date": "2025-07-17",
+      "symbol": "MU",
+      "action": "SELL",
+      "shares": 49,
+      "price": 113.26000213623047,
+      "value": 5549.740104675293,
+      "strength": 0.55,
+      "rsi": 30.2782035683435,
+      "ml_boost": 0.0
+    },
+    {
+      "date": "2025-07-18",
+      "symbol": "COIN",
+      "action": "BUY",
+      "shares": 6,
+      "price": 419.7799987792969,
+      "value": 2518.6799926757812,
+      "strength": 0.6050000000000001,
+      "rsi": 76.99567976148171,
+      "ml_boost": 0.0
+    },
+    {
+      "date": "2025-07-21",
+      "symbol": "TSLA",
+      "action": "BUY",
+      "shares": 7,
+      "price": 328.489990234375,
+      "value": 2299.429931640625,
+      "strength": 0.55,
+      "rsi": 54.8744202580245,
+      "ml_boost": 0.0
+    },
+    {
+      "date": "2025-07-30",
+      "symbol": "COIN",
+      "action": "SELL",
+      "shares": 27,
+      "price": 377.4800109863281,
+      "value": 10191.96029663086,
+      "strength": 0.55,
+      "rsi": 44.31571808756589,
+      "ml_boost": 0.0
+    },
+    {
+      "date": "2025-07-31",
+      "symbol": "AMD",
+      "action": "BUY",
+      "shares": 18,
+      "price": 176.30999755859375,
+      "value": 3173.5799560546875,
+      "strength": 0.6050000000000001,
+      "rsi": 81.10303483356478,
+      "ml_boost": 0.0
+    },
+    {
+      "date": "2025-08-01",
+      "symbol": "META",
+      "action": "BUY",
+      "shares": 4,
+      "price": 750.010009765625,
+      "value": 3000.0400390625,
+      "strength": 0.6050000000000001,
+      "rsi": 58.06398998910726,
+      "ml_boost": 0.0
+    },
+    {
+      "date": "2025-08-04",
+      "symbol": "TSLA",
+      "action": "SELL",
+      "shares": 7,
+      "price": 309.260009765625,
+      "value": 2164.820068359375,
+      "strength": 0.55,
+      "rsi": 49.281397298260444,
+      "ml_boost": 0.0
+    },
+    {
+      "date": "2025-08-05",
+      "symbol": "PLTR",
+      "action": "BUY",
+      "shares": 17,
+      "price": 173.27000427246094,
+      "value": 2945.590072631836,
+      "strength": 0.6050000000000001,
+      "rsi": 74.30435655157888,
+      "ml_boost": 0.0
+    },
+    {
+      "date": "2025-08-14",
+      "symbol": "NET",
+      "action": "SELL",
+      "shares": 38,
+      "price": 195.3800048828125,
+      "value": 7424.440185546875,
+      "strength": 0.55,
+      "rsi": 47.31922976212166,
+      "ml_boost": 0.0
+    },
+    {
+      "date": "2025-08-15",
+      "symbol": "INTC",
+      "action": "BUY",
+      "shares": 134,
+      "price": 24.559999465942383,
+      "value": 3291.0399284362793,
+      "strength": 0.6050000000000001,
+      "rsi": 74.55695789950204,
+      "ml_boost": 0.0
+    },
+    {
+      "date": "2025-08-18",
+      "symbol": "RBLX",
+      "action": "SELL",
+      "shares": 187,
+      "price": 119.94999694824219,
+      "value": 22430.64942932129,
+      "strength": 0.6050000000000001,
+      "rsi": 51.12530950039006,
+      "ml_boost": 0.0
+    },
+    {
+      "date": "2025-08-19",
+      "symbol": "INTC",
+      "action": "BUY",
+      "shares": 185,
+      "price": 25.309999465942383,
+      "value": 4682.349901199341,
+      "strength": 0.6050000000000001,
+      "rsi": 74.57962389193123,
+      "ml_boost": 0.0
+    }
+  ],
+  "final_positions": {
+    "GOOGL": 0,
+    "NET": 0,
+    "COIN": 0,
+    "TSLA": 0,
+    "RBLX": 0,
+    "U": 0,
+    "AVGO": 39,
+    "NVDA": 33,
+    "AMD": 99,
+    "MU": 0,
+    "GS": 3,
+    "META": 4,
+    "PLTR": 17,
+    "INTC": 319
+  },
+  "test_timestamp": "2025-08-20T22:52:53.095777"
+}

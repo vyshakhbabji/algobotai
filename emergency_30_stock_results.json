@@ -1,0 +1,293 @@
+{
+  "strategy": "EMERGENCY_HYBRID_FULL_30_STOCKS",
+  "analysis_date": "2025-08-12T23:41:42.794893",
+  "forward_test_period": "2025-05-14 to 2025-08-12",
+  "initial_capital": 45000,
+  "total_profit": 3149.365371478625,
+  "total_return_pct": 6.998589714396945,
+  "avg_exposure_pct": 100.0,
+  "stocks_analyzed": 30,
+  "stocks_successful": 30,
+  "position_size": 1500.0,
+  "allocation_method": "equal_weight",
+  "individual_results": {
+    "AAPL": {
+      "position_size": 1500.0,
+      "shares": 7.101926487142857,
+      "start_price": 211.21029663085938,
+      "end_price": 229.64999389648438,
+      "return_pct": 8.73049162837586,
+      "profit": 130.9573744256379,
+      "exposure": 100.0
+    },
+    "MSFT": {
+      "position_size": 1500.0,
+      "shares": 3.310308264375313,
+      "start_price": 453.1300048828125,
+      "end_price": 529.239990234375,
+      "return_pct": 16.796500900717422,
+      "profit": 251.94751351076135,
+      "exposure": 100.0
+    },
+    "GOOGL": {
+      "position_size": 1500.0,
+      "shares": 9.159648127286907,
+      "start_price": 163.76174926757812,
+      "end_price": 203.33999633789062,
+      "return_pct": 24.168187777259092,
+      "profit": 362.52281665888637,
+      "exposure": 100.0
+    },
+    "AMZN": {
+      "position_size": 1500.0,
+      "shares": 7.31101044688239,
+      "start_price": 205.1699981689453,
+      "end_price": 221.47000122070312,
+      "return_pct": 7.944632839707746,
+      "profit": 119.16949259561619,
+      "exposure": 100.0
+    },
+    "NVDA": {
+      "position_size": 1500.0,
+      "shares": 11.125893473055891,
+      "start_price": 134.8206329345703,
+      "end_price": 183.16000366210938,
+      "return_pct": 35.854579284610395,
+      "profit": 537.8186892691559,
+      "exposure": 100.0
+    },
+    "TSLA": {
+      "position_size": 1500.0,
+      "shares": 4.375473916204048,
+      "start_price": 342.82000732421875,
+      "end_price": 340.8399963378906,
+      "return_pct": -0.5775657616317441,
+      "profit": -8.663486424476162,
+      "exposure": 100.0
+    },
+    "META": {
+      "position_size": 1500.0,
+      "shares": 2.3314191650889713,
+      "start_price": 643.3849487304688,
+      "end_price": 790.0,
+      "return_pct": 22.788076028019148,
+      "profit": 341.82114042028724,
+      "exposure": 100.0
+    },
+    "BRK-B": {
+      "position_size": 1500.0,
+      "shares": 2.9566555096311764,
+      "start_price": 507.3299865722656,
+      "end_price": 470.3900146484375,
+      "return_pct": -7.2812514342804935,
+      "profit": -109.2187715142074,
+      "exposure": 100.0
+    },
+    "UNH": {
+      "position_size": 1500.0,
+      "shares": 5.506281106001625,
+      "start_price": 272.4161682128906,
+      "end_price": 261.57000732421875,
+      "return_pct": -3.9814673849298488,
+      "profit": -59.72201077394773,
+      "exposure": 100.0
+    },
+    "JNJ": {
+      "position_size": 1500.0,
+      "shares": 10.112020790209412,
+      "start_price": 148.3383026123047,
+      "end_price": 172.77999877929688,
+      "return_pct": 16.476995985907113,
+      "profit": 247.15493978860667,
+      "exposure": 100.0
+    },
+    "JPM": {
+      "position_size": 1500.0,
+      "shares": 5.634702485484783,
+      "start_price": 266.2074890136719,
+      "end_price": 292.8500061035156,
+      "return_pct": 10.008177151047558,
+      "profit": 150.1226572657134,
+      "exposure": 100.0
+    },
+    "V": {
+      "position_size": 1500.0,
+      "shares": 4.147500551219632,
+      "start_price": 361.6636047363281,
+      "end_price": 336.739990234375,
+      "return_pct": -6.891380325682412,
+      "profit": -103.3707048852362,
+      "exposure": 100.0
+    },
+    "PG": {
+      "position_size": 1500.0,
+      "shares": 9.299045122466184,
+      "start_price": 161.306884765625,
+      "end_price": 155.08999633789062,
+      "return_pct": -3.8540750673893203,
+      "profit": -57.81112601083981,
+      "exposure": 100.0
+    },
+    "MA": {
+      "position_size": 1500.0,
+      "shares": 2.57992020891307,
+      "start_price": 581.413330078125,
+      "end_price": 574.1799926757812,
+      "return_pct": -1.2440955561462275,
+      "profit": -18.661433342193412,
+      "exposure": 100.0
+    },
+    "HD": {
+      "position_size": 1500.0,
+      "shares": 3.98627091703452,
+      "start_price": 376.2915344238281,
+      "end_price": 396.0,
+      "return_pct": 5.237552209711328,
+      "profit": 78.56328314566993,
+      "exposure": 100.0
+    },
+    "CVX": {
+      "position_size": 1500.0,
+      "shares": 10.672505509198935,
+      "start_price": 140.54806518554688,
+      "end_price": 154.44000244140625,
+      "return_pct": 9.884118459773674,
+      "profit": 148.2617768966051,
+      "exposure": 100.0
+    },
+    "ABBV": {
+      "position_size": 1500.0,
+      "shares": 8.327584879246038,
+      "start_price": 180.12425231933594,
+      "end_price": 198.63999938964844,
+      "return_pct": 10.279430355378565,
+      "profit": 154.19145533067848,
+      "exposure": 100.0
+    },
+    "PFE": {
+      "position_size": 1500.0,
+      "shares": 67.51693563882039,
+      "start_price": 22.21664810180664,
+      "end_price": 24.649999618530273,
+      "return_pct": 10.952829182750365,
+      "profit": 164.29243774125547,
+      "exposure": 100.0
+    },
+    "KO": {
+      "position_size": 1500.0,
+      "shares": 21.095727140984327,
+      "start_price": 71.10444641113281,
+      "end_price": 70.70999908447266,
+      "return_pct": -0.5547435449808912,
+      "profit": -8.321153174713368,
+      "exposure": 100.0
+    },
+    "PEP": {
+      "position_size": 1500.0,
+      "shares": 11.532006350205156,
+      "start_price": 130.07276916503906,
+      "end_price": 146.8699951171875,
+      "return_pct": 12.91371442306711,
+      "profit": 193.70571634600665,
+      "exposure": 100.0
+    },
+    "TMO": {
+      "position_size": 1500.0,
+      "shares": 3.708183352284661,
+      "start_price": 404.5107421875,
+      "end_price": 477.4100036621094,
+      "return_pct": 18.021588519599536,
+      "profit": 270.323827793993,
+      "exposure": 100.0
+    },
+    "COST": {
+      "position_size": 1500.0,
+      "shares": 1.4865143102406657,
+      "start_price": 1009.072021484375,
+      "end_price": 991.25,
+      "return_pct": -1.7661793315960022,
+      "profit": -26.49268997394003,
+      "exposure": 100.0
+    },
+    "WMT": {
+      "position_size": 1500.0,
+      "shares": 15.568241035342508,
+      "start_price": 96.3499984741211,
+      "end_price": 103.62000274658203,
+      "return_pct": 7.545411922776115,
+      "profit": 113.18117884164171,
+      "exposure": 100.0
+    },
+    "DIS": {
+      "position_size": 1500.0,
+      "shares": 13.423601445320303,
+      "start_price": 111.74348449707031,
+      "end_price": 113.72000122070312,
+      "return_pct": 1.7687981832038113,
+      "profit": 26.53197274805717,
+      "exposure": 100.0
+    },
+    "ABT": {
+      "position_size": 1500.0,
+      "shares": 11.299085661859827,
+      "start_price": 132.7541046142578,
+      "end_price": 131.02000427246094,
+      "return_pct": -1.3062498872148864,
+      "profit": -19.593748308223297,
+      "exposure": 100.0
+    },
+    "CRM": {
+      "position_size": 1500.0,
+      "shares": 5.167074198899558,
+      "start_price": 290.2996826171875,
+      "end_price": 231.66000366210938,
+      "return_pct": -20.199704810702503,
+      "profit": -302.99557216053756,
+      "exposure": 100.0
+    },
+    "NKE": {
+      "position_size": 1500.0,
+      "shares": 24.19821147293172,
+      "start_price": 61.98805236816406,
+      "end_price": 74.9000015258789,
+      "return_pct": 20.82973841640843,
+      "profit": 312.44607624612644,
+      "exposure": 100.0
+    },
+    "DHR": {
+      "position_size": 1500.0,
+      "shares": 7.8679568843902405,
+      "start_price": 190.64669799804688,
+      "end_price": 205.72000122070312,
+      "return_pct": 7.9064066574133225,
+      "profit": 118.59609986119985,
+      "exposure": 100.0
+    },
+    "MRK": {
+      "position_size": 1500.0,
+      "shares": 20.254257856910623,
+      "start_price": 74.05850219726562,
+      "end_price": 80.30000305175781,
+      "return_pct": 8.427797848067517,
+      "profit": 126.41696772101275,
+      "exposure": 100.0
+    },
+    "VZ": {
+      "position_size": 1500.0,
+      "shares": 35.05643124716828,
+      "start_price": 42.78815460205078,
+      "end_price": 43.25,
+      "return_pct": 1.079376762668524,
+      "profit": 16.19065144002786,
+      "exposure": 100.0
+    }
+  },
+  "comparison_vs_ml_strategy": {
+    "ml_strategy_return": -0.003,
+    "ml_strategy_exposure": 4.2,
+    "emergency_strategy_return": 6.998589714396945,
+    "emergency_strategy_exposure": 100.0,
+    "improvement_factor": 2332.863238132315,
+    "exposure_improvement": 23.80952380952381
+  }
+}

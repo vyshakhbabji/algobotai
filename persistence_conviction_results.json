@@ -1,0 +1,51 @@
+{
+  "strategy": "PERSISTENCE CONVICTION",
+  "period": "2024-05-13 to 2024-08-13",
+  "initial_capital": 100000,
+  "final_value": 93742.65014648438,
+  "total_return": -0.06257349853515626,
+  "profit_loss": -6257.349853515625,
+  "nvda_return": 0.2060857658317281,
+  "performance_vs_nvda": -0.26865926436688436,
+  "final_positions": {
+    "NVDA": {
+      "shares": 540,
+      "price": 129.56906127929688,
+      "entry_period": 2,
+      "entry_date": "2024-06-13"
+    },
+    "AAPL": {
+      "shares": 140,
+      "price": 213.0010223388672,
+      "entry_period": 2,
+      "entry_date": "2024-06-13"
+    }
+  },
+  "cash_remaining": 212.56378173828125,
+  "trade_history": [
+    {
+      "date": "2024-06-13",
+      "action": "BUY",
+      "symbol": "NVDA",
+      "shares": 540,
+      "price": 129.56906127929688,
+      "value": 69967.29309082031,
+      "entry_momentum": 0.50781285472138
+    },
+    {
+      "date": "2024-06-13",
+      "action": "BUY",
+      "symbol": "AAPL",
+      "shares": 140,
+      "price": 213.0010223388672,
+      "value": 29820.143127441406,
+      "entry_momentum": 0.2602421575042284
+    }
+  ],
+  "persistence_rules": {
+    "momentum_decay_threshold": -0.1,
+    "min_hold_periods": 2,
+    "stop_loss": -0.25,
+    "profit_taking_threshold": 0.8
+  }
+}

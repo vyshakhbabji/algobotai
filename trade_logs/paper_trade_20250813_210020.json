@@ -1,0 +1,32 @@
+{
+  "timestamp": "20250813_210020",
+  "trade_date": "2025-08-12",
+  "executed": false,
+  "sells": [],
+  "buys": [
+    {
+      "symbol": "TSLA",
+      "qty": 37.0,
+      "side": "buy"
+    },
+    {
+      "symbol": "PLTR",
+      "qty": 65.0,
+      "side": "buy"
+    },
+    {
+      "symbol": "AAPL",
+      "qty": 55.0,
+      "side": "buy"
+    }
+  ],
+  "meta": {
+    "account_base": 45000.0,
+    "universe_size": 15,
+    "max_buys": 3,
+    "max_sells": 99,
+    "buy_only": false,
+    "sell_only": false,
+    "market_hours_only": false
+  }
+}

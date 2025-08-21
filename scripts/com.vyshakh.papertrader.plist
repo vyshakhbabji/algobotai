@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.vyshakh.papertrader</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/zsh</string>
+        <string>/Users/vyshakhbabji/Desktop/AlgoTradingBot/scripts/run_paper_trade.sh</string>
+    </array>
+
+    <!-- Run at specific times (9:35am ET weekdays). Note: launchd uses local time. -->
+    <key>StartCalendarInterval</key>
+    <array>
+        <dict>
+            <key>Hour</key><integer>9</integer>
+            <key>Minute</key><integer>35</integer>
+        </dict>
+    </array>
+
+    <!-- Ensure it runs even if not logged in: keep in LaunchAgents for user login. -->
+    <key>RunAtLoad</key><true/>
+
+    <key>WorkingDirectory</key>
+    <string>/Users/vyshakhbabji/Desktop/AlgoTradingBot</string>
+
+    <key>StandardOutPath</key>
+    <string>/Users/vyshakhbabji/Desktop/AlgoTradingBot/trade_logs/papertrader_stdout.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/vyshakhbabji/Desktop/AlgoTradingBot/trade_logs/papertrader_stderr.log</string>
+
+    <!-- Environment variables (fill in your keys or set in shell init) -->
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>ALPACA_API_KEY</key><string></string>
+        <key>ALPACA_SECRET_KEY</key><string></string>
+        <!-- Optional: extra runner args like "--max-buys 3" -->
+        <key>PAPER_ARGS</key><string>--account 45000 --execute --market-hours-only --max-buys 3</string>
+    </dict>
+</dict>
+</plist>

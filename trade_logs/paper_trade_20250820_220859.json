@@ -1,0 +1,27 @@
+{
+  "timestamp": "20250820_220859",
+  "trade_date": "2025-08-19",
+  "executed": false,
+  "sells": [],
+  "buys": [
+    {
+      "symbol": "UBER",
+      "qty": 119.0,
+      "side": "buy"
+    },
+    {
+      "symbol": "CRM",
+      "qty": 31.0,
+      "side": "buy"
+    }
+  ],
+  "meta": {
+    "account_base": 45000.0,
+    "universe_size": 15,
+    "max_buys": 3,
+    "max_sells": 99,
+    "buy_only": false,
+    "sell_only": false,
+    "market_hours_only": false
+  }
+}

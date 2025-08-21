@@ -1,0 +1,18 @@
+{
+  "current_iteration": 50,
+  "total_iterations": 500,
+  "progress_percent": 10.0,
+  "best_config_so_far": {
+    "trend_5d_buy_threshold": 0.025,
+    "trend_5d_sell_threshold": -0.025,
+    "trend_10d_buy_threshold": 0.015,
+    "trend_10d_sell_threshold": -0.015,
+    "rsi_overbought": 85,
+    "rsi_oversold": 35,
+    "volatility_threshold": 0.06,
+    "volume_ratio_threshold": 1.3
+  },
+  "best_performance_so_far": -55.45594596566178,
+  "timestamp": "2025-08-08T15:09:49.945242",
+  "completed_tests": 50
+}

@@ -1,0 +1,1098 @@
+{
+  "best_config": {
+    "trend_5d_buy_threshold": 0.025,
+    "trend_5d_sell_threshold": -0.01,
+    "trend_10d_buy_threshold": 0.015,
+    "trend_10d_sell_threshold": -0.015,
+    "rsi_overbought": 75,
+    "rsi_oversold": 15,
+    "volatility_threshold": 0.1,
+    "volume_ratio_threshold": 1.8
+  },
+  "best_performance": -20.281676078550458,
+  "top_10_results": [
+    {
+      "config": {
+        "trend_5d_buy_threshold": 0.025,
+        "trend_5d_sell_threshold": -0.01,
+        "trend_10d_buy_threshold": 0.015,
+        "trend_10d_sell_threshold": -0.015,
+        "rsi_overbought": 75,
+        "rsi_oversold": 15,
+        "volatility_threshold": 0.1,
+        "volume_ratio_threshold": 1.8
+      },
+      "final_value": 100000,
+      "strategy_return": 0.0,
+      "buy_hold_return": 20.281676078550458,
+      "outperformance": -20.281676078550458,
+      "num_trades": 0,
+      "trades": []
+    },
+    {
+      "config": {
+        "trend_5d_buy_threshold": 0.015,
+        "trend_5d_sell_threshold": -0.03,
+        "trend_10d_buy_threshold": 0.02,
+        "trend_10d_sell_threshold": -0.035,
+        "rsi_overbought": 80,
+        "rsi_oversold": 15,
+        "volatility_threshold": 0.05,
+        "volume_ratio_threshold": 1.4
+      },
+      "final_value": 100000,
+      "strategy_return": 0.0,
+      "buy_hold_return": 20.281676078550458,
+      "outperformance": -20.281676078550458,
+      "num_trades": 0,
+      "trades": []
+    },
+    {
+      "config": {
+        "trend_5d_buy_threshold": 0.025,
+        "trend_5d_sell_threshold": -0.03,
+        "trend_10d_buy_threshold": 0.025,
+        "trend_10d_sell_threshold": -0.015,
+        "rsi_overbought": 75,
+        "rsi_oversold": 25,
+        "volatility_threshold": 0.1,
+        "volume_ratio_threshold": 1.1
+      },
+      "final_value": 100000,
+      "strategy_return": 0.0,
+      "buy_hold_return": 20.281676078550458,
+      "outperformance": -20.281676078550458,
+      "num_trades": 0,
+      "trades": []
+    },
+    {
+      "config": {
+        "trend_5d_buy_threshold": 0.035,
+        "trend_5d_sell_threshold": -0.03,
+        "trend_10d_buy_threshold": 0.02,
+        "trend_10d_sell_threshold": -0.015,
+        "rsi_overbought": 75,
+        "rsi_oversold": 35,
+        "volatility_threshold": 0.05,
+        "volume_ratio_threshold": 1.4
+      },
+      "final_value": 100000,
+      "strategy_return": 0.0,
+      "buy_hold_return": 20.281676078550458,
+      "outperformance": -20.281676078550458,
+      "num_trades": 0,
+      "trades": []
+    },
+    {
+      "config": {
+        "trend_5d_buy_threshold": 0.03,
+        "trend_5d_sell_threshold": -0.015,
+        "trend_10d_buy_threshold": 0.03,
+        "trend_10d_sell_threshold": -0.03,
+        "rsi_overbought": 70,
+        "rsi_oversold": 35,
+        "volatility_threshold": 0.1,
+        "volume_ratio_threshold": 1.6
+      },
+      "final_value": 100000,
+      "strategy_return": 0.0,
+      "buy_hold_return": 20.281676078550458,
+      "outperformance": -20.281676078550458,
+      "num_trades": 0,
+      "trades": []
+    },
+    {
+      "config": {
+        "trend_5d_buy_threshold": 0.02,
+        "trend_5d_sell_threshold": -0.015,
+        "trend_10d_buy_threshold": 0.03,
+        "trend_10d_sell_threshold": -0.015,
+        "rsi_overbought": 70,
+        "rsi_oversold": 20,
+        "volatility_threshold": 0.08,
+        "volume_ratio_threshold": 1.2
+      },
+      "final_value": 100000,
+      "strategy_return": 0.0,
+      "buy_hold_return": 20.281676078550458,
+      "outperformance": -20.281676078550458,
+      "num_trades": 0,
+      "trades": []
+    },
+    {
+      "config": {
+        "trend_5d_buy_threshold": 0.015,
+        "trend_5d_sell_threshold": -0.02,
+        "trend_10d_buy_threshold": 0.015,
+        "trend_10d_sell_threshold": -0.03,
+        "rsi_overbought": 80,
+        "rsi_oversold": 35,
+        "volatility_threshold": 0.1,
+        "volume_ratio_threshold": 1.4
+      },
+      "final_value": 100000,
+      "strategy_return": 0.0,
+      "buy_hold_return": 20.281676078550458,
+      "outperformance": -20.281676078550458,
+      "num_trades": 0,
+      "trades": []
+    },
+    {
+      "config": {
+        "trend_5d_buy_threshold": 0.035,
+        "trend_5d_sell_threshold": -0.03,
+        "trend_10d_buy_threshold": 0.025,
+        "trend_10d_sell_threshold": -0.03,
+        "rsi_overbought": 75,
+        "rsi_oversold": 25,
+        "volatility_threshold": 0.06,
+        "volume_ratio_threshold": 1.6
+      },
+      "final_value": 100000,
+      "strategy_return": 0.0,
+      "buy_hold_return": 20.281676078550458,
+      "outperformance": -20.281676078550458,
+      "num_trades": 0,
+      "trades": []
+    },
+    {
+      "config": {
+        "trend_5d_buy_threshold": 0.02,
+        "trend_5d_sell_threshold": -0.03,
+        "trend_10d_buy_threshold": 0.03,
+        "trend_10d_sell_threshold": -0.02,
+        "rsi_overbought": 75,
+        "rsi_oversold": 25,
+        "volatility_threshold": 0.08,
+        "volume_ratio_threshold": 1.1
+      },
+      "final_value": 100000,
+      "strategy_return": 0.0,
+      "buy_hold_return": 20.281676078550458,
+      "outperformance": -20.281676078550458,
+      "num_trades": 0,
+      "trades": []
+    },
+    {
+      "config": {
+        "trend_5d_buy_threshold": 0.035,
+        "trend_5d_sell_threshold": -0.01,
+        "trend_10d_buy_threshold": 0.025,
+        "trend_10d_sell_threshold": -0.025,
+        "rsi_overbought": 75,
+        "rsi_oversold": 15,
+        "volatility_threshold": 0.1,
+        "volume_ratio_threshold": 1.6
+      },
+      "final_value": 100000,
+      "strategy_return": 0.0,
+      "buy_hold_return": 20.281676078550458,
+      "outperformance": -20.281676078550458,
+      "num_trades": 0,
+      "trades": []
+    }
+  ],
+  "all_results": [
+    {
+      "config": {
+        "trend_5d_buy_threshold": 0.025,
+        "trend_5d_sell_threshold": -0.01,
+        "trend_10d_buy_threshold": 0.015,
+        "trend_10d_sell_threshold": -0.015,
+        "rsi_overbought": 75,
+        "rsi_oversold": 15,
+        "volatility_threshold": 0.1,
+        "volume_ratio_threshold": 1.8
+      },
+      "final_value": 100000,
+      "strategy_return": 0.0,
+      "buy_hold_return": 20.281676078550458,
+      "outperformance": -20.281676078550458,
+      "num_trades": 0,
+      "trades": []
+    },
+    {
+      "config": {
+        "trend_5d_buy_threshold": 0.015,
+        "trend_5d_sell_threshold": -0.03,
+        "trend_10d_buy_threshold": 0.02,
+        "trend_10d_sell_threshold": -0.035,
+        "rsi_overbought": 80,
+        "rsi_oversold": 15,
+        "volatility_threshold": 0.05,
+        "volume_ratio_threshold": 1.4
+      },
+      "final_value": 100000,
+      "strategy_return": 0.0,
+      "buy_hold_return": 20.281676078550458,
+      "outperformance": -20.281676078550458,
+      "num_trades": 0,
+      "trades": []
+    },
+    {
+      "config": {
+        "trend_5d_buy_threshold": 0.025,
+        "trend_5d_sell_threshold": -0.03,
+        "trend_10d_buy_threshold": 0.025,
+        "trend_10d_sell_threshold": -0.015,
+        "rsi_overbought": 75,
+        "rsi_oversold": 25,
+        "volatility_threshold": 0.1,
+        "volume_ratio_threshold": 1.1
+      },
+      "final_value": 100000,
+      "strategy_return": 0.0,
+      "buy_hold_return": 20.281676078550458,
+      "outperformance": -20.281676078550458,
+      "num_trades": 0,
+      "trades": []
+    },
+    {
+      "config": {
+        "trend_5d_buy_threshold": 0.035,
+        "trend_5d_sell_threshold": -0.03,
+        "trend_10d_buy_threshold": 0.02,
+        "trend_10d_sell_threshold": -0.015,
+        "rsi_overbought": 75,
+        "rsi_oversold": 35,
+        "volatility_threshold": 0.05,
+        "volume_ratio_threshold": 1.4
+      },
+      "final_value": 100000,
+      "strategy_return": 0.0,
+      "buy_hold_return": 20.281676078550458,
+      "outperformance": -20.281676078550458,
+      "num_trades": 0,
+      "trades": []
+    },
+    {
+      "config": {
+        "trend_5d_buy_threshold": 0.03,
+        "trend_5d_sell_threshold": -0.015,
+        "trend_10d_buy_threshold": 0.03,
+        "trend_10d_sell_threshold": -0.03,
+        "rsi_overbought": 70,
+        "rsi_oversold": 35,
+        "volatility_threshold": 0.1,
+        "volume_ratio_threshold": 1.6
+      },
+      "final_value": 100000,
+      "strategy_return": 0.0,
+      "buy_hold_return": 20.281676078550458,
+      "outperformance": -20.281676078550458,
+      "num_trades": 0,
+      "trades": []
+    },
+    {
+      "config": {
+        "trend_5d_buy_threshold": 0.02,
+        "trend_5d_sell_threshold": -0.015,
+        "trend_10d_buy_threshold": 0.03,
+        "trend_10d_sell_threshold": -0.015,
+        "rsi_overbought": 70,
+        "rsi_oversold": 20,
+        "volatility_threshold": 0.08,
+        "volume_ratio_threshold": 1.2
+      },
+      "final_value": 100000,
+      "strategy_return": 0.0,
+      "buy_hold_return": 20.281676078550458,
+      "outperformance": -20.281676078550458,
+      "num_trades": 0,
+      "trades": []
+    },
+    {
+      "config": {
+        "trend_5d_buy_threshold": 0.015,
+        "trend_5d_sell_threshold": -0.02,
+        "trend_10d_buy_threshold": 0.015,
+        "trend_10d_sell_threshold": -0.03,
+        "rsi_overbought": 80,
+        "rsi_oversold": 35,
+        "volatility_threshold": 0.1,
+        "volume_ratio_threshold": 1.4
+      },
+      "final_value": 100000,
+      "strategy_return": 0.0,
+      "buy_hold_return": 20.281676078550458,
+      "outperformance": -20.281676078550458,
+      "num_trades": 0,
+      "trades": []
+    },
+    {
+      "config": {
+        "trend_5d_buy_threshold": 0.035,
+        "trend_5d_sell_threshold": -0.03,
+        "trend_10d_buy_threshold": 0.025,
+        "trend_10d_sell_threshold": -0.03,
+        "rsi_overbought": 75,
+        "rsi_oversold": 25,
+        "volatility_threshold": 0.06,
+        "volume_ratio_threshold": 1.6
+      },
+      "final_value": 100000,
+      "strategy_return": 0.0,
+      "buy_hold_return": 20.281676078550458,
+      "outperformance": -20.281676078550458,
+      "num_trades": 0,
+      "trades": []
+    },
+    {
+      "config": {
+        "trend_5d_buy_threshold": 0.02,
+        "trend_5d_sell_threshold": -0.03,
+        "trend_10d_buy_threshold": 0.03,
+        "trend_10d_sell_threshold": -0.02,
+        "rsi_overbought": 75,
+        "rsi_oversold": 25,
+        "volatility_threshold": 0.08,
+        "volume_ratio_threshold": 1.1
+      },
+      "final_value": 100000,
+      "strategy_return": 0.0,
+      "buy_hold_return": 20.281676078550458,
+      "outperformance": -20.281676078550458,
+      "num_trades": 0,
+      "trades": []
+    },
+    {
+      "config": {
+        "trend_5d_buy_threshold": 0.035,
+        "trend_5d_sell_threshold": -0.01,
+        "trend_10d_buy_threshold": 0.025,
+        "trend_10d_sell_threshold": -0.025,
+        "rsi_overbought": 75,
+        "rsi_oversold": 15,
+        "volatility_threshold": 0.1,
+        "volume_ratio_threshold": 1.6
+      },
+      "final_value": 100000,
+      "strategy_return": 0.0,
+      "buy_hold_return": 20.281676078550458,
+      "outperformance": -20.281676078550458,
+      "num_trades": 0,
+      "trades": []
+    },
+    {
+      "config": {
+        "trend_5d_buy_threshold": 0.015,
+        "trend_5d_sell_threshold": -0.02,
+        "trend_10d_buy_threshold": 0.03,
+        "trend_10d_sell_threshold": -0.035,
+        "rsi_overbought": 65,
+        "rsi_oversold": 20,
+        "volatility_threshold": 0.1,
+        "volume_ratio_threshold": 1.1
+      },
+      "final_value": 100000,
+      "strategy_return": 0.0,
+      "buy_hold_return": 20.281676078550458,
+      "outperformance": -20.281676078550458,
+      "num_trades": 0,
+      "trades": []
+    },
+    {
+      "config": {
+        "trend_5d_buy_threshold": 0.025,
+        "trend_5d_sell_threshold": -0.01,
+        "trend_10d_buy_threshold": 0.035,
+        "trend_10d_sell_threshold": -0.02,
+        "rsi_overbought": 75,
+        "rsi_oversold": 25,
+        "volatility_threshold": 0.06,
+        "volume_ratio_threshold": 1.6
+      },
+      "final_value": 100000,
+      "strategy_return": 0.0,
+      "buy_hold_return": 20.281676078550458,
+      "outperformance": -20.281676078550458,
+      "num_trades": 0,
+      "trades": []
+    },
+    {
+      "config": {
+        "trend_5d_buy_threshold": 0.035,
+        "trend_5d_sell_threshold": -0.025,
+        "trend_10d_buy_threshold": 0.03,
+        "trend_10d_sell_threshold": -0.02,
+        "rsi_overbought": 70,
+        "rsi_oversold": 20,
+        "volatility_threshold": 0.08,
+        "volume_ratio_threshold": 1.2
+      },
+      "final_value": 100000,
+      "strategy_return": 0.0,
+      "buy_hold_return": 20.281676078550458,
+      "outperformance": -20.281676078550458,
+      "num_trades": 0,
+      "trades": []
+    },
+    {
+      "config": {
+        "trend_5d_buy_threshold": 0.04,
+        "trend_5d_sell_threshold": -0.01,
+        "trend_10d_buy_threshold": 0.02,
+        "trend_10d_sell_threshold": -0.04,
+        "rsi_overbought": 70,
+        "rsi_oversold": 25,
+        "volatility_threshold": 0.07,
+        "volume_ratio_threshold": 1.8
+      },
+      "final_value": 100000,
+      "strategy_return": 0.0,
+      "buy_hold_return": 20.281676078550458,
+      "outperformance": -20.281676078550458,
+      "num_trades": 0,
+      "trades": []
+    },
+    {
+      "config": {
+        "trend_5d_buy_threshold": 0.015,
+        "trend_5d_sell_threshold": -0.015,
+        "trend_10d_buy_threshold": 0.015,
+        "trend_10d_sell_threshold": -0.04,
+        "rsi_overbought": 70,
+        "rsi_oversold": 20,
+        "volatility_threshold": 0.06,
+        "volume_ratio_threshold": 1.6
+      },
+      "final_value": 100000,
+      "strategy_return": 0.0,
+      "buy_hold_return": 20.281676078550458,
+      "outperformance": -20.281676078550458,
+      "num_trades": 0,
+      "trades": []
+    },
+    {
+      "config": {
+        "trend_5d_buy_threshold": 0.03,
+        "trend_5d_sell_threshold": -0.015,
+        "trend_10d_buy_threshold": 0.03,
+        "trend_10d_sell_threshold": -0.015,
+        "rsi_overbought": 75,
+        "rsi_oversold": 30,
+        "volatility_threshold": 0.06,
+        "volume_ratio_threshold": 1.4
+      },
+      "final_value": 100000,
+      "strategy_return": 0.0,
+      "buy_hold_return": 20.281676078550458,
+      "outperformance": -20.281676078550458,
+      "num_trades": 0,
+      "trades": []
+    },
+    {
+      "config": {
+        "trend_5d_buy_threshold": 0.035,
+        "trend_5d_sell_threshold": -0.02,
+        "trend_10d_buy_threshold": 0.02,
+        "trend_10d_sell_threshold": -0.03,
+        "rsi_overbought": 80,
+        "rsi_oversold": 25,
+        "volatility_threshold": 0.06,
+        "volume_ratio_threshold": 1.2
+      },
+      "final_value": 100000,
+      "strategy_return": 0.0,
+      "buy_hold_return": 20.281676078550458,
+      "outperformance": -20.281676078550458,
+      "num_trades": 0,
+      "trades": []
+    },
+    {
+      "config": {
+        "trend_5d_buy_threshold": 0.04,
+        "trend_5d_sell_threshold": -0.01,
+        "trend_10d_buy_threshold": 0.01,
+        "trend_10d_sell_threshold": -0.025,
+        "rsi_overbought": 75,
+        "rsi_oversold": 20,
+        "volatility_threshold": 0.05,
+        "volume_ratio_threshold": 1.2
+      },
+      "final_value": 100000,
+      "strategy_return": 0.0,
+      "buy_hold_return": 20.281676078550458,
+      "outperformance": -20.281676078550458,
+      "num_trades": 0,
+      "trades": []
+    },
+    {
+      "config": {
+        "trend_5d_buy_threshold": 0.03,
+        "trend_5d_sell_threshold": -0.03,
+        "trend_10d_buy_threshold": 0.015,
+        "trend_10d_sell_threshold": -0.025,
+        "rsi_overbought": 65,
+        "rsi_oversold": 20,
+        "volatility_threshold": 0.1,
+        "volume_ratio_threshold": 1.6
+      },
+      "final_value": 100000,
+      "strategy_return": 0.0,
+      "buy_hold_return": 20.281676078550458,
+      "outperformance": -20.281676078550458,
+      "num_trades": 0,
+      "trades": []
+    },
+    {
+      "config": {
+        "trend_5d_buy_threshold": 0.025,
+        "trend_5d_sell_threshold": -0.02,
+        "trend_10d_buy_threshold": 0.015,
+        "trend_10d_sell_threshold": -0.015,
+        "rsi_overbought": 60,
+        "rsi_oversold": 30,
+        "volatility_threshold": 0.08,
+        "volume_ratio_threshold": 1.8
+      },
+      "final_value": 100000,
+      "strategy_return": 0.0,
+      "buy_hold_return": 20.281676078550458,
+      "outperformance": -20.281676078550458,
+      "num_trades": 0,
+      "trades": []
+    },
+    {
+      "config": {
+        "trend_5d_buy_threshold": 0.04,
+        "trend_5d_sell_threshold": -0.02,
+        "trend_10d_buy_threshold": 0.035,
+        "trend_10d_sell_threshold": -0.035,
+        "rsi_overbought": 75,
+        "rsi_oversold": 35,
+        "volatility_threshold": 0.07,
+        "volume_ratio_threshold": 1.8
+      },
+      "final_value": 100000,
+      "strategy_return": 0.0,
+      "buy_hold_return": 20.281676078550458,
+      "outperformance": -20.281676078550458,
+      "num_trades": 0,
+      "trades": []
+    },
+    {
+      "config": {
+        "trend_5d_buy_threshold": 0.03,
+        "trend_5d_sell_threshold": -0.01,
+        "trend_10d_buy_threshold": 0.03,
+        "trend_10d_sell_threshold": -0.025,
+        "rsi_overbought": 70,
+        "rsi_oversold": 35,
+        "volatility_threshold": 0.05,
+        "volume_ratio_threshold": 1.8
+      },
+      "final_value": 100000,
+      "strategy_return": 0.0,
+      "buy_hold_return": 20.281676078550458,
+      "outperformance": -20.281676078550458,
+      "num_trades": 0,
+      "trades": []
+    },
+    {
+      "config": {
+        "trend_5d_buy_threshold": 0.025,
+        "trend_5d_sell_threshold": -0.015,
+        "trend_10d_buy_threshold": 0.03,
+        "trend_10d_sell_threshold": -0.02,
+        "rsi_overbought": 80,
+        "rsi_oversold": 35,
+        "volatility_threshold": 0.08,
+        "volume_ratio_threshold": 1.8
+      },
+      "final_value": 100000,
+      "strategy_return": 0.0,
+      "buy_hold_return": 20.281676078550458,
+      "outperformance": -20.281676078550458,
+      "num_trades": 0,
+      "trades": []
+    },
+    {
+      "config": {
+        "trend_5d_buy_threshold": 0.04,
+        "trend_5d_sell_threshold": -0.025,
+        "trend_10d_buy_threshold": 0.03,
+        "trend_10d_sell_threshold": -0.02,
+        "rsi_overbought": 65,
+        "rsi_oversold": 35,
+        "volatility_threshold": 0.1,
+        "volume_ratio_threshold": 1.4
+      },
+      "final_value": 100000,
+      "strategy_return": 0.0,
+      "buy_hold_return": 20.281676078550458,
+      "outperformance": -20.281676078550458,
+      "num_trades": 0,
+      "trades": []
+    },
+    {
+      "config": {
+        "trend_5d_buy_threshold": 0.035,
+        "trend_5d_sell_threshold": -0.01,
+        "trend_10d_buy_threshold": 0.02,
+        "trend_10d_sell_threshold": -0.04,
+        "rsi_overbought": 70,
+        "rsi_oversold": 25,
+        "volatility_threshold": 0.07,
+        "volume_ratio_threshold": 1.2
+      },
+      "final_value": 100000,
+      "strategy_return": 0.0,
+      "buy_hold_return": 20.281676078550458,
+      "outperformance": -20.281676078550458,
+      "num_trades": 0,
+      "trades": []
+    },
+    {
+      "config": {
+        "trend_5d_buy_threshold": 0.015,
+        "trend_5d_sell_threshold": -0.015,
+        "trend_10d_buy_threshold": 0.01,
+        "trend_10d_sell_threshold": -0.015,
+        "rsi_overbought": 60,
+        "rsi_oversold": 20,
+        "volatility_threshold": 0.06,
+        "volume_ratio_threshold": 1.1
+      },
+      "final_value": 100000,
+      "strategy_return": 0.0,
+      "buy_hold_return": 20.281676078550458,
+      "outperformance": -20.281676078550458,
+      "num_trades": 0,
+      "trades": []
+    },
+    {
+      "config": {
+        "trend_5d_buy_threshold": 0.015,
+        "trend_5d_sell_threshold": -0.025,
+        "trend_10d_buy_threshold": 0.02,
+        "trend_10d_sell_threshold": -0.03,
+        "rsi_overbought": 70,
+        "rsi_oversold": 25,
+        "volatility_threshold": 0.1,
+        "volume_ratio_threshold": 1.2
+      },
+      "final_value": 100000,
+      "strategy_return": 0.0,
+      "buy_hold_return": 20.281676078550458,
+      "outperformance": -20.281676078550458,
+      "num_trades": 0,
+      "trades": []
+    },
+    {
+      "config": {
+        "trend_5d_buy_threshold": 0.015,
+        "trend_5d_sell_threshold": -0.01,
+        "trend_10d_buy_threshold": 0.035,
+        "trend_10d_sell_threshold": -0.03,
+        "rsi_overbought": 80,
+        "rsi_oversold": 20,
+        "volatility_threshold": 0.07,
+        "volume_ratio_threshold": 1.2
+      },
+      "final_value": 100000,
+      "strategy_return": 0.0,
+      "buy_hold_return": 20.281676078550458,
+      "outperformance": -20.281676078550458,
+      "num_trades": 0,
+      "trades": []
+    },
+    {
+      "config": {
+        "trend_5d_buy_threshold": 0.04,
+        "trend_5d_sell_threshold": -0.03,
+        "trend_10d_buy_threshold": 0.03,
+        "trend_10d_sell_threshold": -0.02,
+        "rsi_overbought": 75,
+        "rsi_oversold": 35,
+        "volatility_threshold": 0.08,
+        "volume_ratio_threshold": 1.8
+      },
+      "final_value": 100000,
+      "strategy_return": 0.0,
+      "buy_hold_return": 20.281676078550458,
+      "outperformance": -20.281676078550458,
+      "num_trades": 0,
+      "trades": []
+    },
+    {
+      "config": {
+        "trend_5d_buy_threshold": 0.02,
+        "trend_5d_sell_threshold": -0.01,
+        "trend_10d_buy_threshold": 0.03,
+        "trend_10d_sell_threshold": -0.035,
+        "rsi_overbought": 60,
+        "rsi_oversold": 35,
+        "volatility_threshold": 0.05,
+        "volume_ratio_threshold": 1.8
+      },
+      "final_value": 100000,
+      "strategy_return": 0.0,
+      "buy_hold_return": 20.281676078550458,
+      "outperformance": -20.281676078550458,
+      "num_trades": 0,
+      "trades": []
+    },
+    {
+      "config": {
+        "trend_5d_buy_threshold": 0.03,
+        "trend_5d_sell_threshold": -0.025,
+        "trend_10d_buy_threshold": 0.025,
+        "trend_10d_sell_threshold": -0.015,
+        "rsi_overbought": 75,
+        "rsi_oversold": 20,
+        "volatility_threshold": 0.1,
+        "volume_ratio_threshold": 1.6
+      },
+      "final_value": 100000,
+      "strategy_return": 0.0,
+      "buy_hold_return": 20.281676078550458,
+      "outperformance": -20.281676078550458,
+      "num_trades": 0,
+      "trades": []
+    },
+    {
+      "config": {
+        "trend_5d_buy_threshold": 0.02,
+        "trend_5d_sell_threshold": -0.02,
+        "trend_10d_buy_threshold": 0.02,
+        "trend_10d_sell_threshold": -0.04,
+        "rsi_overbought": 80,
+        "rsi_oversold": 30,
+        "volatility_threshold": 0.08,
+        "volume_ratio_threshold": 1.6
+      },
+      "final_value": 100000,
+      "strategy_return": 0.0,
+      "buy_hold_return": 20.281676078550458,
+      "outperformance": -20.281676078550458,
+      "num_trades": 0,
+      "trades": []
+    },
+    {
+      "config": {
+        "trend_5d_buy_threshold": 0.02,
+        "trend_5d_sell_threshold": -0.025,
+        "trend_10d_buy_threshold": 0.01,
+        "trend_10d_sell_threshold": -0.02,
+        "rsi_overbought": 75,
+        "rsi_oversold": 25,
+        "volatility_threshold": 0.07,
+        "volume_ratio_threshold": 1.8
+      },
+      "final_value": 100000,
+      "strategy_return": 0.0,
+      "buy_hold_return": 20.281676078550458,
+      "outperformance": -20.281676078550458,
+      "num_trades": 0,
+      "trades": []
+    },
+    {
+      "config": {
+        "trend_5d_buy_threshold": 0.015,
+        "trend_5d_sell_threshold": -0.025,
+        "trend_10d_buy_threshold": 0.01,
+        "trend_10d_sell_threshold": -0.025,
+        "rsi_overbought": 65,
+        "rsi_oversold": 30,
+        "volatility_threshold": 0.1,
+        "volume_ratio_threshold": 1.6
+      },
+      "final_value": 100000,
+      "strategy_return": 0.0,
+      "buy_hold_return": 20.281676078550458,
+      "outperformance": -20.281676078550458,
+      "num_trades": 0,
+      "trades": []
+    },
+    {
+      "config": {
+        "trend_5d_buy_threshold": 0.025,
+        "trend_5d_sell_threshold": -0.02,
+        "trend_10d_buy_threshold": 0.03,
+        "trend_10d_sell_threshold": -0.035,
+        "rsi_overbought": 70,
+        "rsi_oversold": 35,
+        "volatility_threshold": 0.07,
+        "volume_ratio_threshold": 1.8
+      },
+      "final_value": 100000,
+      "strategy_return": 0.0,
+      "buy_hold_return": 20.281676078550458,
+      "outperformance": -20.281676078550458,
+      "num_trades": 0,
+      "trades": []
+    },
+    {
+      "config": {
+        "trend_5d_buy_threshold": 0.025,
+        "trend_5d_sell_threshold": -0.03,
+        "trend_10d_buy_threshold": 0.03,
+        "trend_10d_sell_threshold": -0.03,
+        "rsi_overbought": 60,
+        "rsi_oversold": 20,
+        "volatility_threshold": 0.05,
+        "volume_ratio_threshold": 1.2
+      },
+      "final_value": 100000,
+      "strategy_return": 0.0,
+      "buy_hold_return": 20.281676078550458,
+      "outperformance": -20.281676078550458,
+      "num_trades": 0,
+      "trades": []
+    },
+    {
+      "config": {
+        "trend_5d_buy_threshold": 0.04,
+        "trend_5d_sell_threshold": -0.015,
+        "trend_10d_buy_threshold": 0.025,
+        "trend_10d_sell_threshold": -0.02,
+        "rsi_overbought": 60,
+        "rsi_oversold": 15,
+        "volatility_threshold": 0.1,
+        "volume_ratio_threshold": 1.8
+      },
+      "final_value": 100000,
+      "strategy_return": 0.0,
+      "buy_hold_return": 20.281676078550458,
+      "outperformance": -20.281676078550458,
+      "num_trades": 0,
+      "trades": []
+    },
+    {
+      "config": {
+        "trend_5d_buy_threshold": 0.04,
+        "trend_5d_sell_threshold": -0.015,
+        "trend_10d_buy_threshold": 0.035,
+        "trend_10d_sell_threshold": -0.015,
+        "rsi_overbought": 70,
+        "rsi_oversold": 15,
+        "volatility_threshold": 0.07,
+        "volume_ratio_threshold": 1.2
+      },
+      "final_value": 100000,
+      "strategy_return": 0.0,
+      "buy_hold_return": 20.281676078550458,
+      "outperformance": -20.281676078550458,
+      "num_trades": 0,
+      "trades": []
+    },
+    {
+      "config": {
+        "trend_5d_buy_threshold": 0.025,
+        "trend_5d_sell_threshold": -0.02,
+        "trend_10d_buy_threshold": 0.02,
+        "trend_10d_sell_threshold": -0.02,
+        "rsi_overbought": 60,
+        "rsi_oversold": 20,
+        "volatility_threshold": 0.08,
+        "volume_ratio_threshold": 1.4
+      },
+      "final_value": 100000,
+      "strategy_return": 0.0,
+      "buy_hold_return": 20.281676078550458,
+      "outperformance": -20.281676078550458,
+      "num_trades": 0,
+      "trades": []
+    },
+    {
+      "config": {
+        "trend_5d_buy_threshold": 0.035,
+        "trend_5d_sell_threshold": -0.015,
+        "trend_10d_buy_threshold": 0.02,
+        "trend_10d_sell_threshold": -0.025,
+        "rsi_overbought": 75,
+        "rsi_oversold": 30,
+        "volatility_threshold": 0.05,
+        "volume_ratio_threshold": 1.2
+      },
+      "final_value": 100000,
+      "strategy_return": 0.0,
+      "buy_hold_return": 20.281676078550458,
+      "outperformance": -20.281676078550458,
+      "num_trades": 0,
+      "trades": []
+    },
+    {
+      "config": {
+        "trend_5d_buy_threshold": 0.025,
+        "trend_5d_sell_threshold": -0.03,
+        "trend_10d_buy_threshold": 0.02,
+        "trend_10d_sell_threshold": -0.04,
+        "rsi_overbought": 80,
+        "rsi_oversold": 20,
+        "volatility_threshold": 0.05,
+        "volume_ratio_threshold": 1.2
+      },
+      "final_value": 100000,
+      "strategy_return": 0.0,
+      "buy_hold_return": 20.281676078550458,
+      "outperformance": -20.281676078550458,
+      "num_trades": 0,
+      "trades": []
+    },
+    {
+      "config": {
+        "trend_5d_buy_threshold": 0.03,
+        "trend_5d_sell_threshold": -0.03,
+        "trend_10d_buy_threshold": 0.03,
+        "trend_10d_sell_threshold": -0.04,
+        "rsi_overbought": 65,
+        "rsi_oversold": 15,
+        "volatility_threshold": 0.05,
+        "volume_ratio_threshold": 1.8
+      },
+      "final_value": 100000,
+      "strategy_return": 0.0,
+      "buy_hold_return": 20.281676078550458,
+      "outperformance": -20.281676078550458,
+      "num_trades": 0,
+      "trades": []
+    },
+    {
+      "config": {
+        "trend_5d_buy_threshold": 0.025,
+        "trend_5d_sell_threshold": -0.02,
+        "trend_10d_buy_threshold": 0.025,
+        "trend_10d_sell_threshold": -0.02,
+        "rsi_overbought": 60,
+        "rsi_oversold": 20,
+        "volatility_threshold": 0.07,
+        "volume_ratio_threshold": 1.2
+      },
+      "final_value": 100000,
+      "strategy_return": 0.0,
+      "buy_hold_return": 20.281676078550458,
+      "outperformance": -20.281676078550458,
+      "num_trades": 0,
+      "trades": []
+    },
+    {
+      "config": {
+        "trend_5d_buy_threshold": 0.015,
+        "trend_5d_sell_threshold": -0.03,
+        "trend_10d_buy_threshold": 0.025,
+        "trend_10d_sell_threshold": -0.04,
+        "rsi_overbought": 80,
+        "rsi_oversold": 15,
+        "volatility_threshold": 0.06,
+        "volume_ratio_threshold": 1.4
+      },
+      "final_value": 100000,
+      "strategy_return": 0.0,
+      "buy_hold_return": 20.281676078550458,
+      "outperformance": -20.281676078550458,
+      "num_trades": 0,
+      "trades": []
+    },
+    {
+      "config": {
+        "trend_5d_buy_threshold": 0.02,
+        "trend_5d_sell_threshold": -0.02,
+        "trend_10d_buy_threshold": 0.01,
+        "trend_10d_sell_threshold": -0.025,
+        "rsi_overbought": 70,
+        "rsi_oversold": 25,
+        "volatility_threshold": 0.1,
+        "volume_ratio_threshold": 1.4
+      },
+      "final_value": 100000,
+      "strategy_return": 0.0,
+      "buy_hold_return": 20.281676078550458,
+      "outperformance": -20.281676078550458,
+      "num_trades": 0,
+      "trades": []
+    },
+    {
+      "config": {
+        "trend_5d_buy_threshold": 0.02,
+        "trend_5d_sell_threshold": -0.03,
+        "trend_10d_buy_threshold": 0.01,
+        "trend_10d_sell_threshold": -0.025,
+        "rsi_overbought": 80,
+        "rsi_oversold": 25,
+        "volatility_threshold": 0.05,
+        "volume_ratio_threshold": 1.1
+      },
+      "final_value": 100000,
+      "strategy_return": 0.0,
+      "buy_hold_return": 20.281676078550458,
+      "outperformance": -20.281676078550458,
+      "num_trades": 0,
+      "trades": []
+    },
+    {
+      "config": {
+        "trend_5d_buy_threshold": 0.02,
+        "trend_5d_sell_threshold": -0.01,
+        "trend_10d_buy_threshold": 0.025,
+        "trend_10d_sell_threshold": -0.04,
+        "rsi_overbought": 70,
+        "rsi_oversold": 20,
+        "volatility_threshold": 0.1,
+        "volume_ratio_threshold": 1.8
+      },
+      "final_value": 100000,
+      "strategy_return": 0.0,
+      "buy_hold_return": 20.281676078550458,
+      "outperformance": -20.281676078550458,
+      "num_trades": 0,
+      "trades": []
+    },
+    {
+      "config": {
+        "trend_5d_buy_threshold": 0.015,
+        "trend_5d_sell_threshold": -0.015,
+        "trend_10d_buy_threshold": 0.025,
+        "trend_10d_sell_threshold": -0.04,
+        "rsi_overbought": 70,
+        "rsi_oversold": 30,
+        "volatility_threshold": 0.1,
+        "volume_ratio_threshold": 1.6
+      },
+      "final_value": 100000,
+      "strategy_return": 0.0,
+      "buy_hold_return": 20.281676078550458,
+      "outperformance": -20.281676078550458,
+      "num_trades": 0,
+      "trades": []
+    },
+    {
+      "config": {
+        "trend_5d_buy_threshold": 0.03,
+        "trend_5d_sell_threshold": -0.025,
+        "trend_10d_buy_threshold": 0.02,
+        "trend_10d_sell_threshold": -0.035,
+        "rsi_overbought": 70,
+        "rsi_oversold": 15,
+        "volatility_threshold": 0.08,
+        "volume_ratio_threshold": 1.1
+      },
+      "final_value": 100000,
+      "strategy_return": 0.0,
+      "buy_hold_return": 20.281676078550458,
+      "outperformance": -20.281676078550458,
+      "num_trades": 0,
+      "trades": []
+    },
+    {
+      "config": {
+        "trend_5d_buy_threshold": 0.02,
+        "trend_5d_sell_threshold": -0.025,
+        "trend_10d_buy_threshold": 0.01,
+        "trend_10d_sell_threshold": -0.02,
+        "rsi_overbought": 65,
+        "rsi_oversold": 15,
+        "volatility_threshold": 0.08,
+        "volume_ratio_threshold": 1.4
+      },
+      "final_value": 100000,
+      "strategy_return": 0.0,
+      "buy_hold_return": 20.281676078550458,
+      "outperformance": -20.281676078550458,
+      "num_trades": 0,
+      "trades": []
+    }
+  ],
+  "optimization_timestamp": "2025-08-08T17:03:57.977299"
+}

@@ -1,0 +1,56 @@
+{
+  "strategy": "EMERGENCY_HYBRID_BUYHOLD",
+  "initial_capital": 45000,
+  "total_profit": 7647.497444639793,
+  "total_return_pct": 16.994438765866207,
+  "avg_exposure_pct": 100.0,
+  "stocks_traded": 5,
+  "individual_results": {
+    "AAPL": {
+      "position_size": 9000.0,
+      "shares": 42.61155892285714,
+      "start_price": 211.21029663085938,
+      "end_price": 229.64999389648438,
+      "return_pct": 8.73049162837586,
+      "profit": 785.7442465538275,
+      "exposure": 100.0
+    },
+    "GOOGL": {
+      "position_size": 9000.0,
+      "shares": 54.95788876372144,
+      "start_price": 163.76174926757812,
+      "end_price": 203.33999633789062,
+      "return_pct": 24.168187777259092,
+      "profit": 2175.1368999533183,
+      "exposure": 100.0
+    },
+    "MSFT": {
+      "position_size": 9000.0,
+      "shares": 19.861849586251875,
+      "start_price": 453.1300048828125,
+      "end_price": 529.239990234375,
+      "return_pct": 16.796500900717422,
+      "profit": 1511.685081064568,
+      "exposure": 100.0
+    },
+    "NVDA": {
+      "position_size": 9000.0,
+      "shares": 66.75536083833535,
+      "start_price": 134.8206329345703,
+      "end_price": 183.16000366210938,
+      "return_pct": 35.854579284610395,
+      "profit": 3226.9121356149353,
+      "exposure": 100.0
+    },
+    "TSLA": {
+      "position_size": 9000.0,
+      "shares": 26.25284349722429,
+      "start_price": 342.82000732421875,
+      "end_price": 340.8399963378906,
+      "return_pct": -0.5775657616317441,
+      "profit": -51.98091854685698,
+      "exposure": 100.0
+    }
+  },
+  "timestamp": "2025-08-12T23:40:49.432857"
+}

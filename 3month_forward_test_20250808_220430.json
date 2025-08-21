@@ -1,0 +1,46 @@
+{
+  "test_config": {
+    "stocks": [
+      "NVDA",
+      "AAPL",
+      "GOOGL",
+      "MSFT",
+      "AMZN",
+      "TSLA",
+      "META",
+      "NFLX",
+      "CRM",
+      "UBER",
+      "JPM",
+      "WMT",
+      "JNJ",
+      "PG",
+      "KO",
+      "PLTR",
+      "COIN",
+      "SNOW",
+      "AMD",
+      "INTC",
+      "XOM",
+      "CVX",
+      "CAT",
+      "BA",
+      "GE"
+    ],
+    "parameters": {
+      "momentum_6m_threshold": 0.15,
+      "momentum_3m_threshold": 0.08,
+      "momentum_1m_threshold": 0.03,
+      "rsi_max": 75,
+      "rsi_min": 30,
+      "volume_multiplier": 1.2,
+      "volatility_max": 0.4
+    },
+    "initial_capital": 100000,
+    "max_positions": 5,
+    "position_size": 0.18
+  },
+  "trade_log": [],
+  "daily_decisions": [],
+  "portfolio_history": []
+}

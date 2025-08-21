@@ -1,0 +1,316 @@
+{
+  "timestamp": "2025-08-08T23:38:04.505806",
+  "summary": {
+    "total_py_files": 117,
+    "working_ml_models": 4,
+    "working_options_models": 5,
+    "potential_duplicates": 1,
+    "cleanup_recommendations": 2
+  },
+  "categories": {
+    "ml_models": [
+      "/Users/vyshakhbabji/Desktop/AlgoTradingBot/ai_enhanced_options_trader.py",
+      "/Users/vyshakhbabji/Desktop/AlgoTradingBot/elite_ai_trader.py",
+      "/Users/vyshakhbabji/Desktop/AlgoTradingBot/ml_filtered_momentum_trader.py",
+      "/Users/vyshakhbabji/Desktop/AlgoTradingBot/test_ai_optimizer.py",
+      "/Users/vyshakhbabji/Desktop/AlgoTradingBot/auto_trader_ai_analysis.py",
+      "/Users/vyshakhbabji/Desktop/AlgoTradingBot/practical_model_validation.py",
+      "/Users/vyshakhbabji/Desktop/AlgoTradingBot/ai_monitor.py",
+      "/Users/vyshakhbabji/Desktop/AlgoTradingBot/improved_ai_portfolio_manager.py",
+      "/Users/vyshakhbabji/Desktop/AlgoTradingBot/elite_ai_integration_master.py",
+      "/Users/vyshakhbabji/Desktop/AlgoTradingBot/elite_ai_trader_BROKEN.py",
+      "/Users/vyshakhbabji/Desktop/AlgoTradingBot/improved_nvda_model.py",
+      "/Users/vyshakhbabji/Desktop/AlgoTradingBot/momentum_enhanced_ml_model.py",
+      "/Users/vyshakhbabji/Desktop/AlgoTradingBot/model_validation_research.py",
+      "/Users/vyshakhbabji/Desktop/AlgoTradingBot/model_architecture_analysis.py",
+      "/Users/vyshakhbabji/Desktop/AlgoTradingBot/elite_ai_v3_high_performance.py",
+      "/Users/vyshakhbabji/Desktop/AlgoTradingBot/model_comparison_final.py",
+      "/Users/vyshakhbabji/Desktop/AlgoTradingBot/simplified_ml_momentum_trader.py",
+      "/Users/vyshakhbabji/Desktop/AlgoTradingBot/model_confidence_analyzer.py",
+      "/Users/vyshakhbabji/Desktop/AlgoTradingBot/alpaca_elite_ai_trader.py",
+      "/Users/vyshakhbabji/Desktop/AlgoTradingBot/model_performance_summary.py",
+      "/Users/vyshakhbabji/Desktop/AlgoTradingBot/comprehensive_momentum_ml.py",
+      "/Users/vyshakhbabji/Desktop/AlgoTradingBot/pages/elite_ai_trader.py",
+      "/Users/vyshakhbabji/Desktop/AlgoTradingBot/pages/enhanced_dashboard.py",
+      "/Users/vyshakhbabji/Desktop/AlgoTradingBot/pages/ai_optimizer.py"
+    ],
+    "options_trading": [
+      "/Users/vyshakhbabji/Desktop/AlgoTradingBot/elite_options_trader.py",
+      "/Users/vyshakhbabji/Desktop/AlgoTradingBot/momentum_options_trader.py",
+      "/Users/vyshakhbabji/Desktop/AlgoTradingBot/comprehensive_momentum_options.py",
+      "/Users/vyshakhbabji/Desktop/AlgoTradingBot/pages/elite_options.py"
+    ],
+    "momentum_strategies": [
+      "/Users/vyshakhbabji/Desktop/AlgoTradingBot/institutional_factor_strategy.py",
+      "/Users/vyshakhbabji/Desktop/AlgoTradingBot/momentum_integration_demo.py",
+      "/Users/vyshakhbabji/Desktop/AlgoTradingBot/institutional_strategy_selector.py",
+      "/Users/vyshakhbabji/Desktop/AlgoTradingBot/institutional_hybrid_tester.py",
+      "/Users/vyshakhbabji/Desktop/AlgoTradingBot/momentum_feature_analysis.py",
+      "/Users/vyshakhbabji/Desktop/AlgoTradingBot/smart_momentum_trader.py",
+      "/Users/vyshakhbabji/Desktop/AlgoTradingBot/academic_momentum_strategy.py",
+      "/Users/vyshakhbabji/Desktop/AlgoTradingBot/institutional_momentum_screener.py",
+      "/Users/vyshakhbabji/Desktop/AlgoTradingBot/clean_momentum_strategy.py",
+      "/Users/vyshakhbabji/Desktop/AlgoTradingBot/institutional_momentum_strategy.py",
+      "/Users/vyshakhbabji/Desktop/AlgoTradingBot/simple_institutional_momentum.py",
+      "/Users/vyshakhbabji/Desktop/AlgoTradingBot/final_momentum_trader.py",
+      "/Users/vyshakhbabji/Desktop/AlgoTradingBot/ultra_simple_momentum.py",
+      "/Users/vyshakhbabji/Desktop/AlgoTradingBot/institutional_momentum_trader.py",
+      "/Users/vyshakhbabji/Desktop/AlgoTradingBot/proven_institutional_strategies.py",
+      "/Users/vyshakhbabji/Desktop/AlgoTradingBot/multi_stock_momentum_trader.py",
+      "/Users/vyshakhbabji/Desktop/AlgoTradingBot/institutional_mean_reversion.py",
+      "/Users/vyshakhbabji/Desktop/AlgoTradingBot/momentum_feature_engine.py"
+    ],
+    "backtesting": [
+      "/Users/vyshakhbabji/Desktop/AlgoTradingBot/three_month_forward_tester.py",
+      "/Users/vyshakhbabji/Desktop/AlgoTradingBot/nvda_performance_test.py",
+      "/Users/vyshakhbabji/Desktop/AlgoTradingBot/comprehensive_time_series_validation.py",
+      "/Users/vyshakhbabji/Desktop/AlgoTradingBot/time_series_validation.py",
+      "/Users/vyshakhbabji/Desktop/AlgoTradingBot/tesla_backtest.py",
+      "/Users/vyshakhbabji/Desktop/AlgoTradingBot/simple_time_series_validation.py",
+      "/Users/vyshakhbabji/Desktop/AlgoTradingBot/realistic_forward_test.py",
+      "/Users/vyshakhbabji/Desktop/AlgoTradingBot/aggressive_forward_tester.py",
+      "/Users/vyshakhbabji/Desktop/AlgoTradingBot/relaxed_forward_tester.py",
+      "/Users/vyshakhbabji/Desktop/AlgoTradingBot/quick_time_series_validation.py",
+      "/Users/vyshakhbabji/Desktop/AlgoTradingBot/pages/test_paper_trading.py"
+    ],
+    "paper_trading": [
+      "/Users/vyshakhbabji/Desktop/AlgoTradingBot/alpaca_paper_trading.py",
+      "/Users/vyshakhbabji/Desktop/AlgoTradingBot/trading_systems_architecture_analysis.py",
+      "/Users/vyshakhbabji/Desktop/AlgoTradingBot/pages/alpaca_trading.py",
+      "/Users/vyshakhbabji/Desktop/AlgoTradingBot/pages/live_trading.py"
+    ],
+    "dashboards": [
+      "/Users/vyshakhbabji/Desktop/AlgoTradingBot/signal_analysis_dashboard.py",
+      "/Users/vyshakhbabji/Desktop/AlgoTradingBot/main_dashboard.py",
+      "/Users/vyshakhbabji/Desktop/AlgoTradingBot/app.py"
+    ],
+    "utilities": [
+      "/Users/vyshakhbabji/Desktop/AlgoTradingBot/nvda_simple_chart.py",
+      "/Users/vyshakhbabji/Desktop/AlgoTradingBot/consolidation_success_report.py",
+      "/Users/vyshakhbabji/Desktop/AlgoTradingBot/complete_auto_trader.py",
+      "/Users/vyshakhbabji/Desktop/AlgoTradingBot/system_verification_cleanup.py",
+      "/Users/vyshakhbabji/Desktop/AlgoTradingBot/ultimate_high_performance_portfolio.py",
+      "/Users/vyshakhbabji/Desktop/AlgoTradingBot/optimized_portfolio_trader.py",
+      "/Users/vyshakhbabji/Desktop/AlgoTradingBot/nvda_position_decision.py",
+      "/Users/vyshakhbabji/Desktop/AlgoTradingBot/multi_stock_final_analysis.py",
+      "/Users/vyshakhbabji/Desktop/AlgoTradingBot/aapl_tesla_signals_chart.py",
+      "/Users/vyshakhbabji/Desktop/AlgoTradingBot/extensibility_demo.py",
+      "/Users/vyshakhbabji/Desktop/AlgoTradingBot/high_performance_portfolio.py",
+      "/Users/vyshakhbabji/Desktop/AlgoTradingBot/simple_robust_ai.py",
+      "/Users/vyshakhbabji/Desktop/AlgoTradingBot/elite_stock_selector.py",
+      "/Users/vyshakhbabji/Desktop/AlgoTradingBot/validate_split_adjusted_data.py",
+      "/Users/vyshakhbabji/Desktop/AlgoTradingBot/prediction_systems_analysis.py",
+      "/Users/vyshakhbabji/Desktop/AlgoTradingBot/corrected_nvda_split_analysis.py",
+      "/Users/vyshakhbabji/Desktop/AlgoTradingBot/tesla_improved_signals.py",
+      "/Users/vyshakhbabji/Desktop/AlgoTradingBot/smart_parameter_optimizer.py",
+      "/Users/vyshakhbabji/Desktop/AlgoTradingBot/portfolio_simulation.py",
+      "/Users/vyshakhbabji/Desktop/AlgoTradingBot/alpaca_integration.py",
+      "/Users/vyshakhbabji/Desktop/AlgoTradingBot/run_automated_optimization.py",
+      "/Users/vyshakhbabji/Desktop/AlgoTradingBot/final_nvda_decision.py",
+      "/Users/vyshakhbabji/Desktop/AlgoTradingBot/power_elite_ai.py",
+      "/Users/vyshakhbabji/Desktop/AlgoTradingBot/strategy_analysis.py",
+      "/Users/vyshakhbabji/Desktop/AlgoTradingBot/nvda_decision_matrix.py",
+      "/Users/vyshakhbabji/Desktop/AlgoTradingBot/consolidation_analysis.py",
+      "/Users/vyshakhbabji/Desktop/AlgoTradingBot/nvda_deep_analysis.py",
+      "/Users/vyshakhbabji/Desktop/AlgoTradingBot/simple_nvda_analysis.py",
+      "/Users/vyshakhbabji/Desktop/AlgoTradingBot/simplified_nvda_trader.py",
+      "/Users/vyshakhbabji/Desktop/AlgoTradingBot/stock_splits_summary.py",
+      "/Users/vyshakhbabji/Desktop/AlgoTradingBot/real_portfolio_trader.py",
+      "/Users/vyshakhbabji/Desktop/AlgoTradingBot/nvda_split_analysis.py",
+      "/Users/vyshakhbabji/Desktop/AlgoTradingBot/split_data_cleaner.py",
+      "/Users/vyshakhbabji/Desktop/AlgoTradingBot/check_data_availability.py",
+      "/Users/vyshakhbabji/Desktop/AlgoTradingBot/ultra_simple_nvda.py",
+      "/Users/vyshakhbabji/Desktop/AlgoTradingBot/quick_nvda_analysis.py",
+      "/Users/vyshakhbabji/Desktop/AlgoTradingBot/improved_elite_ai.py",
+      "/Users/vyshakhbabji/Desktop/AlgoTradingBot/automated_signal_optimizer.py",
+      "/Users/vyshakhbabji/Desktop/AlgoTradingBot/nvda_signal_visualizer.py",
+      "/Users/vyshakhbabji/Desktop/AlgoTradingBot/nvda_signal_analysis.py",
+      "/Users/vyshakhbabji/Desktop/AlgoTradingBot/corrected_signal_logic.py",
+      "/Users/vyshakhbabji/Desktop/AlgoTradingBot/nvda_signal_chart.py",
+      "/Users/vyshakhbabji/Desktop/AlgoTradingBot/debug_series_ambiguity.py",
+      "/Users/vyshakhbabji/Desktop/AlgoTradingBot/nvda_split_analysis_fixed.py",
+      "/Users/vyshakhbabji/Desktop/AlgoTradingBot/overnight_optimizer.py",
+      "/Users/vyshakhbabji/Desktop/AlgoTradingBot/easy_extension_guide.py",
+      "/Users/vyshakhbabji/Desktop/AlgoTradingBot/quick_signal_chart.py",
+      "/Users/vyshakhbabji/Desktop/AlgoTradingBot/strategy_comparison.py",
+      "/Users/vyshakhbabji/Desktop/AlgoTradingBot/single_stock_trader.py",
+      "/Users/vyshakhbabji/Desktop/AlgoTradingBot/restored_high_performance.py",
+      "/Users/vyshakhbabji/Desktop/AlgoTradingBot/pages/system_monitor.py",
+      "/Users/vyshakhbabji/Desktop/AlgoTradingBot/pages/portfolio_manager.py",
+      "/Users/vyshakhbabji/Desktop/AlgoTradingBot/pages/performance_analytics.py"
+    ],
+    "obsolete_duplicates": []
+  },
+  "ml_models": {
+    "working": [
+      [
+        "comprehensive_momentum_ml.py",
+        4
+      ],
+      [
+        "simplified_ml_momentum_trader.py",
+        4
+      ],
+      [
+        "ml_filtered_momentum_trader.py",
+        4
+      ],
+      [
+        "momentum_enhanced_ml_model.py",
+        4
+      ]
+    ],
+    "broken": []
+  },
+  "options_models": {
+    "working": [
+      [
+        "elite_options_trader.py",
+        4
+      ],
+      [
+        "ai_enhanced_options_trader.py",
+        3
+      ],
+      [
+        "momentum_options_trader.py",
+        4
+      ],
+      [
+        "comprehensive_momentum_options.py",
+        4
+      ],
+      [
+        "pages/elite_options.py",
+        3
+      ]
+    ],
+    "broken": []
+  },
+  "duplicates": [
+    {
+      "improved": "/Users/vyshakhbabji/Desktop/AlgoTradingBot/comprehensive_time_series_validation.py",
+      "original": "/Users/vyshakhbabji/Desktop/AlgoTradingBot/time_series_validation.py",
+      "pattern": "comprehensive_",
+      "description": "simple version"
+    }
+  ],
+  "data_status": {
+    "paper_trading_data.json": {
+      "status": "\u2705 VALID",
+      "size": 198,
+      "records": 7
+    },
+    "paper_trading_account.json": {
+      "status": "\u2705 VALID",
+      "size": 221,
+      "records": 7
+    },
+    "portfolio_universe.json": {
+      "status": "\u2705 VALID",
+      "size": 1785,
+      "records": 8
+    },
+    "model_performance_history.json": {
+      "status": "\u2705 VALID",
+      "size": 80,
+      "records": 3
+    }
+  },
+  "recommendations": [
+    {
+      "category": "Data Cleanup",
+      "action": "Remove old optimization checkpoints",
+      "files": [
+        "/Users/vyshakhbabji/Desktop/AlgoTradingBot/optimization_checkpoint_20250808_042213.json",
+        "/Users/vyshakhbabji/Desktop/AlgoTradingBot/optimization_checkpoint_20250808_151024.json",
+        "/Users/vyshakhbabji/Desktop/AlgoTradingBot/optimization_checkpoint_20250808_094026.json",
+        "/Users/vyshakhbabji/Desktop/AlgoTradingBot/optimization_checkpoint_20250808_042622.json",
+        "/Users/vyshakhbabji/Desktop/AlgoTradingBot/optimization_checkpoint_20250808_035031.json",
+        "/Users/vyshakhbabji/Desktop/AlgoTradingBot/optimization_checkpoint_20250808_051809.json",
+        "/Users/vyshakhbabji/Desktop/AlgoTradingBot/optimization_checkpoint_20250808_054133.json",
+        "/Users/vyshakhbabji/Desktop/AlgoTradingBot/optimization_checkpoint_20250808_060440.json",
+        "/Users/vyshakhbabji/Desktop/AlgoTradingBot/optimization_checkpoint_20250808_024437.json",
+        "/Users/vyshakhbabji/Desktop/AlgoTradingBot/optimization_checkpoint_20250808_191844.json",
+        "/Users/vyshakhbabji/Desktop/AlgoTradingBot/optimization_checkpoint_20250808_030615.json",
+        "/Users/vyshakhbabji/Desktop/AlgoTradingBot/optimization_checkpoint_20250808_035929.json",
+        "/Users/vyshakhbabji/Desktop/AlgoTradingBot/optimization_checkpoint_20250808_102257.json",
+        "/Users/vyshakhbabji/Desktop/AlgoTradingBot/optimization_checkpoint_20250808_143833.json",
+        "/Users/vyshakhbabji/Desktop/AlgoTradingBot/optimization_checkpoint_20250808_024416.json",
+        "/Users/vyshakhbabji/Desktop/AlgoTradingBot/optimization_checkpoint_20250808_143838.json",
+        "/Users/vyshakhbabji/Desktop/AlgoTradingBot/optimization_checkpoint_20250808_094041.json",
+        "/Users/vyshakhbabji/Desktop/AlgoTradingBot/optimization_checkpoint_20250808_031808.json",
+        "/Users/vyshakhbabji/Desktop/AlgoTradingBot/optimization_checkpoint_20250808_083602.json",
+        "/Users/vyshakhbabji/Desktop/AlgoTradingBot/optimization_checkpoint_20250808_055456.json",
+        "/Users/vyshakhbabji/Desktop/AlgoTradingBot/optimization_checkpoint_20250808_090720.json",
+        "/Users/vyshakhbabji/Desktop/AlgoTradingBot/optimization_checkpoint_20250808_052520.json",
+        "/Users/vyshakhbabji/Desktop/AlgoTradingBot/optimization_checkpoint_20250808_031848.json",
+        "/Users/vyshakhbabji/Desktop/AlgoTradingBot/optimization_checkpoint_20250808_052536.json",
+        "/Users/vyshakhbabji/Desktop/AlgoTradingBot/optimization_checkpoint_20250808_035020.json",
+        "/Users/vyshakhbabji/Desktop/AlgoTradingBot/optimization_checkpoint_20250808_083552.json",
+        "/Users/vyshakhbabji/Desktop/AlgoTradingBot/optimization_checkpoint_20250808_190929.json",
+        "/Users/vyshakhbabji/Desktop/AlgoTradingBot/optimization_checkpoint_20250808_065922.json",
+        "/Users/vyshakhbabji/Desktop/AlgoTradingBot/optimization_checkpoint_20250808_024015.json",
+        "/Users/vyshakhbabji/Desktop/AlgoTradingBot/optimization_checkpoint_20250808_062823.json",
+        "/Users/vyshakhbabji/Desktop/AlgoTradingBot/optimization_checkpoint_20250808_045336.json",
+        "/Users/vyshakhbabji/Desktop/AlgoTradingBot/optimization_checkpoint_20250808_042236.json",
+        "/Users/vyshakhbabji/Desktop/AlgoTradingBot/optimization_checkpoint_20250808_055530.json",
+        "/Users/vyshakhbabji/Desktop/AlgoTradingBot/optimization_checkpoint_20250808_080312.json",
+        "/Users/vyshakhbabji/Desktop/AlgoTradingBot/optimization_checkpoint_20250808_150949.json",
+        "/Users/vyshakhbabji/Desktop/AlgoTradingBot/optimization_checkpoint_20250808_190016.json",
+        "/Users/vyshakhbabji/Desktop/AlgoTradingBot/optimization_checkpoint_20250808_065949.json",
+        "/Users/vyshakhbabji/Desktop/AlgoTradingBot/optimization_checkpoint_20250808_073106.json",
+        "/Users/vyshakhbabji/Desktop/AlgoTradingBot/optimization_checkpoint_20250808_102235.json",
+        "/Users/vyshakhbabji/Desktop/AlgoTradingBot/optimization_checkpoint_20250808_033309.json",
+        "/Users/vyshakhbabji/Desktop/AlgoTradingBot/optimization_checkpoint_20250808_073110.json",
+        "/Users/vyshakhbabji/Desktop/AlgoTradingBot/optimization_checkpoint_20250808_062804.json"
+      ],
+      "reason": "Reduce clutter from old optimization runs"
+    },
+    {
+      "category": "Testing",
+      "action": "Consolidate test files",
+      "files": [
+        "/Users/vyshakhbabji/Desktop/AlgoTradingBot/test_ai_optimizer.py",
+        "/Users/vyshakhbabji/Desktop/AlgoTradingBot/tesla_backtest.py",
+        "/Users/vyshakhbabji/Desktop/AlgoTradingBot/realistic_forward_test.py",
+        "/Users/vyshakhbabji/Desktop/AlgoTradingBot/aggressive_forward_tester.py",
+        "/Users/vyshakhbabji/Desktop/AlgoTradingBot/relaxed_forward_tester.py"
+      ],
+      "reason": "Too many similar testing files"
+    }
+  ],
+  "core_files": {
+    "main_interface": [
+      "main_dashboard.py",
+      "app.py"
+    ],
+    "working_ml": [
+      "comprehensive_momentum_ml.py",
+      "simplified_ml_momentum_trader.py",
+      "ml_filtered_momentum_trader.py",
+      "momentum_enhanced_ml_model.py"
+    ],
+    "working_options": [
+      "elite_options_trader.py",
+      "ai_enhanced_options_trader.py",
+      "momentum_options_trader.py",
+      "comprehensive_momentum_options.py",
+      "pages/elite_options.py"
+    ],
+    "proven_strategies": [
+      "aggressive_forward_tester.py",
+      "institutional_hybrid_tester.py",
+      "institutional_momentum_screener.py"
+    ],
+    "data_files": [
+      "paper_trading_data.json",
+      "paper_trading_account.json",
+      "portfolio_universe.json"
+    ],
+    "utilities": [
+      "momentum_feature_engine.py",
+      "automated_signal_optimizer.py"
+    ]
+  }
+}

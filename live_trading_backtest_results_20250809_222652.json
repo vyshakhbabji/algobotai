@@ -1,0 +1,113 @@
+{
+  "backtest_config": {
+    "starting_capital": 10000,
+    "training_period": "2025-05-11 to 2026-05-11",
+    "trading_period": "2025-05-11 to 2025-08-09",
+    "strategy": "ImprovedAIPortfolioManager (Live Trading System)"
+  },
+  "performance_summary": {
+    "total_return_pct": 0.0,
+    "annualized_return_pct": 0.0,
+    "final_portfolio_value": 10000,
+    "total_trades": 0,
+    "trading_days": 90
+  },
+  "detailed_results": {
+    "portfolio_values": [
+      {
+        "date": "2025-05-11 22:26:02.746714",
+        "portfolio_value": 10000,
+        "cash": 10000,
+        "positions": {},
+        "return_pct": 0.0
+      },
+      {
+        "date": "2025-05-18 22:26:02.746714",
+        "portfolio_value": 10000,
+        "cash": 10000,
+        "positions": {},
+        "return_pct": 0.0
+      },
+      {
+        "date": "2025-05-25 22:26:02.746714",
+        "portfolio_value": 10000,
+        "cash": 10000,
+        "positions": {},
+        "return_pct": 0.0
+      },
+      {
+        "date": "2025-06-01 22:26:02.746714",
+        "portfolio_value": 10000,
+        "cash": 10000,
+        "positions": {},
+        "return_pct": 0.0
+      },
+      {
+        "date": "2025-06-08 22:26:02.746714",
+        "portfolio_value": 10000,
+        "cash": 10000,
+        "positions": {},
+        "return_pct": 0.0
+      },
+      {
+        "date": "2025-06-15 22:26:02.746714",
+        "portfolio_value": 10000,
+        "cash": 10000,
+        "positions": {},
+        "return_pct": 0.0
+      },
+      {
+        "date": "2025-06-22 22:26:02.746714",
+        "portfolio_value": 10000,
+        "cash": 10000,
+        "positions": {},
+        "return_pct": 0.0
+      },
+      {
+        "date": "2025-06-29 22:26:02.746714",
+        "portfolio_value": 10000,
+        "cash": 10000,
+        "positions": {},
+        "return_pct": 0.0
+      },
+      {
+        "date": "2025-07-06 22:26:02.746714",
+        "portfolio_value": 10000,
+        "cash": 10000,
+        "positions": {},
+        "return_pct": 0.0
+      },
+      {
+        "date": "2025-07-13 22:26:02.746714",
+        "portfolio_value": 10000,
+        "cash": 10000,
+        "positions": {},
+        "return_pct": 0.0
+      },
+      {
+        "date": "2025-07-20 22:26:02.746714",
+        "portfolio_value": 10000,
+        "cash": 10000,
+        "positions": {},
+        "return_pct": 0.0
+      },
+      {
+        "date": "2025-07-27 22:26:02.746714",
+        "portfolio_value": 10000,
+        "cash": 10000,
+        "positions": {},
+        "return_pct": 0.0
+      },
+      {
+        "date": "2025-08-03 22:26:02.746714",
+        "portfolio_value": 10000,
+        "cash": 10000,
+        "positions": {},
+        "return_pct": 0.0
+      }
+    ],
+    "trades": [],
+    "final_value": 10000,
+    "total_return": 0.0
+  }
+}

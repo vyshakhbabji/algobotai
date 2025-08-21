@@ -1,0 +1,14 @@
+{
+  "initial_capital": 100000.0,
+  "final_equity": 115936.98613874802,
+  "return_pct": 0.1593698613874801,
+  "max_drawdown": -0.031671851758358516,
+  "num_trades": 179,
+  "sharpe": 1.6820778542502774,
+  "sortino": 1.3459315397987466,
+  "turnover": 15.039621030823493,
+  "round_trips": 22,
+  "win_rate": 0.7272727272727273,
+  "avg_holding_days": 19.0,
+  "profit_factor": 4.045235494417657
+}

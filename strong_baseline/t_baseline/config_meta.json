@@ -1,0 +1,48 @@
+{
+  "symbol": "T",
+  "tier_mode": "quantile",
+  "tier_quantiles": [
+    0.55,
+    0.65,
+    0.75,
+    0.85
+  ],
+  "used_tier_probs": [
+    0.5616896899042134,
+    0.5816896899042134,
+    0.6016896899042135,
+    0.6216896899042135
+  ],
+  "tier_min_spacing": "0.020",
+  "performance_guard": {
+    "days": 30,
+    "min_capture": 0.05,
+    "max_fraction": 0.4,
+    "triggered": false
+  },
+  "trend_filter": {
+    "enabled": true,
+    "min_score": 0.35
+  },
+  "atr_vol_normalization": true,
+  "churn_cooldown": {
+    "enabled": true,
+    "loss_trades_threshold": 3,
+    "cooldown_days": 10
+  },
+  "expectancy_guard": {
+    "enabled": false,
+    "window": 8,
+    "max_fraction": 0.15
+  },
+  "tier_smoothing": {
+    "enabled": true,
+    "alpha": 0.5
+  },
+  "core_fraction": {
+    "early_core_fraction": 0.72,
+    "guard_core_fraction": 0.5
+  },
+  "classification": "strong",
+  "rollback_guard": false
+}

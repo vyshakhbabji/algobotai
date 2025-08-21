@@ -1,0 +1,55 @@
+{
+  "strategy": "HIGH CONVICTION MOMENTUM",
+  "period": "2024-05-13 to 2024-08-13",
+  "initial_capital": 100000,
+  "final_value": 91130.19611930847,
+  "total_return": -0.08869803880691529,
+  "profit_loss": -8869.803880691528,
+  "nvda_return": 0.20608586766213577,
+  "underperformance": 0.29478390646905106,
+  "final_positions": {
+    "TSLA": {
+      "shares": 235,
+      "price": 252.63999938964844
+    },
+    "PLTR": {
+      "shares": 1385,
+      "price": 28.670000076293945
+    }
+  },
+  "cash_remaining": 199.99653434753418,
+  "trade_history": [
+    {
+      "date": "2024-06-13",
+      "action": "BUY",
+      "symbol": "NVDA",
+      "shares": 617,
+      "price": 129.56906127929688,
+      "value": 79944.11080932617
+    },
+    {
+      "date": "2024-07-15",
+      "action": "SELL",
+      "symbol": "NVDA",
+      "shares": 617,
+      "price": 128.39944458007812,
+      "value": 79222.4573059082
+    },
+    {
+      "date": "2024-07-15",
+      "action": "BUY",
+      "symbol": "TSLA",
+      "shares": 235,
+      "price": 252.63999938964844,
+      "value": 59370.39985656738
+    },
+    {
+      "date": "2024-07-15",
+      "action": "BUY",
+      "symbol": "PLTR",
+      "shares": 1385,
+      "price": 28.670000076293945,
+      "value": 39707.950105667114
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "optimization_target": "risk_adjusted_return",
+  "description": "Production signal configuration",
+  "trend_5d_buy_threshold": 0.018,
+  "trend_20d_buy_threshold": 0.025,
+  "momentum_buy_threshold": 0.015,
+  "volatility_threshold": 0.02,
+  "rsi_period": 14,
+  "rsi_overbought": 72,
+  "rsi_oversold": 28,
+  "rsi_momentum_threshold": 0.1,
+  "macd_fast": 12,
+  "macd_slow": 26,
+  "macd_signal": 9,
+  "macd_threshold": 0.005,
+  "volume_ma_period": 20,
+  "volume_spike_threshold": 1.5,
+  "volume_confirmation": true,
+  "support_resistance_lookback": 50,
+  "support_resistance_strength": 0.02,
+  "breakout_confirmation": 0.015
+}

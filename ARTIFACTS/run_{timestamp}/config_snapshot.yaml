@@ -1,0 +1,93 @@
+backtest:
+  test_months: 3
+  train_months: 12
+  val_months: 3
+costs:
+  commission_bps: 1.0
+  slippage_bps: 2.0
+data:
+  bar_intervals:
+  - 1d
+  include_fundamentals: false
+  include_news_sentiment: false
+  vendor: yfinance
+execution:
+  broker: alpaca
+  mode: paper
+exits:
+  hard_stop_atr: 2.0
+  time_exit_days: 10
+  trail_stop_atr: 1.5
+features:
+  include:
+  - returns
+  - ema
+  - rsi
+  - macd
+  - atr
+  - vwap_dist
+  - boll_z
+  - vol_rank
+  - regime
+  standardize: true
+labels:
+  horizon_bars: 20
+  threshold_ret: 0.005
+  type: binary_momo
+logging:
+  artifacts_dir: ./artifacts/run_{timestamp}
+  experiment_tracking: mlflow
+  seed: 42
+model:
+  hyperopt:
+    max_evals: 50
+  time_series_cv:
+    embargo_days: 3
+    folds: 5
+  type: lightgbm
+portfolio:
+  kelly_cap: 0.25
+  max_positions: 20
+  target_vol_daily: 0.01
+rebalance:
+  eod: true
+  intraday: false
+risk:
+  daily_loss_limit_pct: 0.02
+  max_dd_halt_pct: 0.1
+  max_gross_exposure: 1.0
+  max_name_weight: 0.1
+  max_sector_weight: 0.25
+signals:
+  ensemble: stacked
+  families:
+  - xsec_momo
+  - ts_momo
+  - meanrev
+  - vol_breakout
+  - meta_label
+universe:
+  refresh_days: 5
+  source: adv_top150
+  symbols:
+  - AAPL
+  - MSFT
+  - NVDA
+  - GOOGL
+  - AMZN
+  - TSLA
+  - META
+  - NFLX
+  - AMD
+  - CRM
+  - PLTR
+  - SNOW
+  - COIN
+  - UBER
+  - DIS
+  - JPM
+  - BAC
+  - JNJ
+  - PG
+  - KO
+  - WMT

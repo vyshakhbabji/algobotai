@@ -1,0 +1,25 @@
+{
+  "strategy_name": "INSTITUTIONAL_PRODUCTION_V1",
+  "description": "Production institutional strategy configuration",
+  "tier_probs": [
+    0.45,
+    0.52,
+    0.58,
+    0.65
+  ],
+  "breakout_prob": 0.42,
+  "hard_exit_prob": 0.25,
+  "soft_exit_prob": 0.35,
+  "risk_per_trade_pct": 0.08,
+  "early_core_fraction": 0.6,
+  "scaling_increment": 0.2,
+  "max_scaling_attempts": 3,
+  "entry_confirmation_bars": 2,
+  "exit_confirmation_bars": 1,
+  "momentum_lookback": 20,
+  "volatility_adjustment": true,
+  "max_sector_allocation": 0.35,
+  "correlation_filter": 0.65,
+  "liquidity_minimum": 1000000,
+  "market_cap_minimum": 5000000000
+}

@@ -1,0 +1,23 @@
+{
+    "config_name": "ULTRA_AGGRESSIVE_SIGNALS",
+    "description": "Ultra-aggressive signal configuration for maximum returns",
+    "created": "2025-08-13",
+    "optimization_level": "MAXIMUM_PERFORMANCE",
+    "best_config": {
+        "trend_5d_buy_threshold": 0.005,
+        "trend_20d_buy_threshold": 0.008,
+        "momentum_buy_threshold": 0.004,
+        "volatility_threshold": 0.035,
+        "rsi_overbought": 65,
+        "rsi_oversold": 35,
+        "rsi_momentum_threshold": 0.05,
+        "macd_threshold": 0.001,
+        "volume_spike_threshold": 1.1,
+        "breakout_confirmation": 0.005,
+        "support_resistance_strength": 0.008
+    },
+    "risk_level": "ULTRA_AGGRESSIVE",
+    "expected_exposure": "80-95%",
+    "target_annual_return": "25-50%",
+    "description_changes": "Dramatically lowered all thresholds for maximum signal generation"
+}

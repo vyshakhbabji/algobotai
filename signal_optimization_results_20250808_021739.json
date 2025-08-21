@@ -1,0 +1,42 @@
+{
+  "best_config": {
+    "trend_5d_buy_threshold": 0.02,
+    "trend_5d_sell_threshold": -0.025,
+    "trend_10d_buy_threshold": 0.02,
+    "trend_10d_sell_threshold": -0.025,
+    "rsi_overbought": 70,
+    "rsi_oversold": 30,
+    "volatility_threshold": 0.1,
+    "volume_ratio_threshold": 1.1
+  },
+  "best_avg_performance": -59.49767162490762,
+  "optimization_timestamp": "2025-08-08T02:17:39.333005",
+  "stocks_tested": [
+    "NVDA",
+    "AAPL",
+    "GOOGL",
+    "MSFT",
+    "AMZN",
+    "TSLA",
+    "META",
+    "NFLX",
+    "CRM",
+    "UBER",
+    "JPM",
+    "WMT",
+    "JNJ",
+    "PG",
+    "KO",
+    "PLTR",
+    "COIN",
+    "SNOW",
+    "AMD",
+    "INTC",
+    "XOM",
+    "CVX",
+    "CAT",
+    "BA",
+    "GE"
+  ],
+  "total_iterations": 20
+}

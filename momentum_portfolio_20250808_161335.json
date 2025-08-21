@@ -1,0 +1,88 @@
+{
+  "portfolio": [
+    {
+      "rank": 1,
+      "symbol": "AMD",
+      "weight": 12.5,
+      "momentum_score": 0.9176921191402736,
+      "momentum_6m": 60.6173284010389,
+      "expected_return": 54.30326586982696,
+      "volatility": 59.17373020561642,
+      "current_price": 172.75999450683594
+    },
+    {
+      "rank": 2,
+      "symbol": "GE",
+      "weight": 12.5,
+      "momentum_score": 0.7784318403878291,
+      "momentum_6m": 34.4135005237285,
+      "expected_return": 27.17737394025764,
+      "volatility": 34.91297828557138,
+      "current_price": 275.010009765625
+    },
+    {
+      "rank": 3,
+      "symbol": "PLTR",
+      "weight": 12.5,
+      "momentum_score": 0.7437196051063953,
+      "momentum_6m": 68.66036020516016,
+      "expected_return": 58.459900644299786,
+      "volatility": 78.60475943206661,
+      "current_price": 186.9600067138672
+    },
+    {
+      "rank": 4,
+      "symbol": "MSFT",
+      "weight": 12.5,
+      "momentum_score": 0.7150555322005461,
+      "momentum_6m": 27.894333308536318,
+      "expected_return": 20.453226573147077,
+      "volatility": 28.60368971652221,
+      "current_price": 522.0399780273438
+    },
+    {
+      "rank": 5,
+      "symbol": "NVDA",
+      "weight": 12.5,
+      "momentum_score": 0.6761073161314584,
+      "momentum_6m": 40.734371437101395,
+      "expected_return": 39.51335741298488,
+      "volatility": 58.442434315120074,
+      "current_price": 182.6999969482422
+    },
+    {
+      "rank": 6,
+      "symbol": "JNJ",
+      "weight": 12.5,
+      "momentum_score": 0.6010927749042709,
+      "momentum_6m": 15.083128473395394,
+      "expected_return": 13.642367496517455,
+      "volatility": 22.69594323220757,
+      "current_price": 173.3300018310547
+    },
+    {
+      "rank": 7,
+      "symbol": "CAT",
+      "weight": 12.5,
+      "momentum_score": 0.5298314869964549,
+      "momentum_6m": 15.438782803905518,
+      "expected_return": 16.832208256463723,
+      "volatility": 31.76898442160035,
+      "current_price": 416.5199890136719
+    },
+    {
+      "rank": 8,
+      "symbol": "GOOGL",
+      "weight": 12.5,
+      "momentum_score": 0.4765577942306836,
+      "momentum_6m": 8.932826827710214,
+      "expected_return": 16.429459267252806,
+      "volatility": 34.47527134410884,
+      "current_price": 201.4199981689453
+    }
+  ],
+  "expected_return": 30.85139493259379,
+  "momentum_strength": 1.0,
+  "generation_date": "2025-08-08T16:13:35.092023",
+  "rebalance_due": "2025-09-07T16:13:35.092039"
+}

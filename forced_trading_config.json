@@ -1,0 +1,19 @@
+{
+  "name": "FORCED_TRADING_CONFIG",
+  "description": "Emergency config to force trading when ML fails",
+  "tier_probs": [
+    0.01,
+    0.05,
+    0.1,
+    0.15
+  ],
+  "breakout_prob": 0.01,
+  "hard_exit_prob": 0.01,
+  "soft_exit_prob": 0.05,
+  "risk_per_trade_pct": 0.2,
+  "early_core_fraction": 0.95,
+  "force_min_exposure": 0.5,
+  "buy_hold_fallback": true,
+  "random_trade_after_days": 3,
+  "override_ml_confidence": true
+}

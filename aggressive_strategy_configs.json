@@ -1,0 +1,137 @@
+{
+  "aggressive": {
+    "strategy_name": "Aggressive High Return Strategy",
+    "description": "Optimized for maximum returns with higher risk tolerance",
+    "created": "2025-08-12",
+    "risk_settings": {
+      "risk_per_trade_pct": 0.08,
+      "max_position_pct": 0.25,
+      "max_portfolio_risk_pct": 0.95,
+      "risk_ceiling": 0.12,
+      "risk_increment": 0.02
+    },
+    "position_settings": {
+      "min_position_size": 0.08,
+      "max_position_size": 0.25,
+      "position_concentration_limit": 3
+    },
+    "profit_settings": {
+      "profit_ladder": [
+        0.15,
+        0.3,
+        0.5,
+        0.75
+      ],
+      "profit_trim_fractions": [
+        0.08,
+        0.12,
+        0.15,
+        0.2
+      ],
+      "fast_scale_gain_threshold": 0.06,
+      "take_profit_pct": 0.25
+    },
+    "signal_settings": {
+      "buy_threshold": 0.01,
+      "sell_threshold": -0.01,
+      "tier_probs": [
+        0.48,
+        0.54,
+        0.6,
+        0.67
+      ],
+      "breakout_prob": 0.48,
+      "hard_exit_prob": 0.42,
+      "soft_exit_prob": 0.46
+    },
+    "timing_settings": {
+      "min_holding_days": 3,
+      "time_scalein_days": 3,
+      "momentum_20d_threshold": 0.06,
+      "stale_days": 45
+    },
+    "trail_settings": {
+      "atr_initial_mult": 1.5,
+      "atr_trail_mult": 2.0,
+      "stop_loss_pct": 0.06,
+      "adaptive_trail_mult_after_gain": 1.3
+    },
+    "model_settings": {
+      "min_directional_accuracy": 0.5,
+      "min_r2": -0.1,
+      "confidence_threshold": 0.45
+    },
+    "execution_settings": {
+      "rebalance_weekdays": [
+        0,
+        2,
+        4
+      ],
+      "hard_add_buy_strength": 0.7,
+      "hard_trim_sell_strength": 0.6,
+      "hard_add_chunk_weight": 0.08,
+      "enable_pullback_reentry": true,
+      "allow_midweek_exits": true
+    }
+  },
+  "ultra_aggressive": {
+    "strategy_name": "Ultra Aggressive Maximum Return Strategy",
+    "description": "Maximum risk/reward optimization - use with caution",
+    "created": "2025-08-12",
+    "risk_settings": {
+      "risk_per_trade_pct": 0.12,
+      "max_position_pct": 0.35,
+      "max_portfolio_risk_pct": 0.98,
+      "risk_ceiling": 0.15,
+      "risk_increment": 0.03
+    },
+    "position_settings": {
+      "min_position_size": 0.12,
+      "max_position_size": 0.35,
+      "position_concentration_limit": 2
+    },
+    "profit_settings": {
+      "profit_ladder": [
+        0.1,
+        0.2,
+        0.35,
+        0.6,
+        1.0
+      ],
+      "profit_trim_fractions": [
+        0.05,
+        0.08,
+        0.1,
+        0.12,
+        0.15
+      ],
+      "fast_scale_gain_threshold": 0.04,
+      "take_profit_pct": 0.4
+    },
+    "signal_settings": {
+      "buy_threshold": 0.005,
+      "sell_threshold": -0.005,
+      "tier_probs": [
+        0.45,
+        0.5,
+        0.55,
+        0.62
+      ],
+      "breakout_prob": 0.45,
+      "hard_exit_prob": 0.4,
+      "soft_exit_prob": 0.43
+    },
+    "timing_settings": {
+      "min_holding_days": 1,
+      "time_scalein_days": 1,
+      "momentum_20d_threshold": 0.04,
+      "stale_days": 30
+    },
+    "trail_settings": {
+      "atr_initial_mult": 1.2,
+      "atr_trail_mult": 1.8,
+      "stop_loss_pct": 0.05,
+      "adaptive_trail_mult_after_gain": 1.0
+    }
+  }
+}

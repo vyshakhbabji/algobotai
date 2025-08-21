@@ -1,0 +1,48 @@
+{
+  "symbol": "AMT",
+  "tier_mode": "quantile",
+  "tier_quantiles": [
+    0.55,
+    0.65,
+    0.75,
+    0.85
+  ],
+  "used_tier_probs": [
+    0.5464613126763527,
+    0.5664613126763527,
+    0.5864613126763527,
+    0.6064613126763527
+  ],
+  "tier_min_spacing": "0.020",
+  "performance_guard": {
+    "days": 30,
+    "min_capture": 0.1,
+    "max_fraction": 0.2,
+    "triggered": true
+  },
+  "trend_filter": {
+    "enabled": true,
+    "min_score": 0.35
+  },
+  "atr_vol_normalization": true,
+  "churn_cooldown": {
+    "enabled": true,
+    "loss_trades_threshold": 3,
+    "cooldown_days": 10
+  },
+  "expectancy_guard": {
+    "enabled": true,
+    "window": 8,
+    "max_fraction": 0.15
+  },
+  "tier_smoothing": {
+    "enabled": true,
+    "alpha": 0.5
+  },
+  "core_fraction": {
+    "early_core_fraction": 0.6,
+    "guard_core_fraction": 0.3
+  },
+  "classification": "default",
+  "rollback_guard": false
+}

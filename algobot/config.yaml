@@ -1,0 +1,57 @@
+universe:
+  symbols: [AAPL, MSFT, NVDA, GOOGL, AMZN, TSLA, META, NFLX, AMD, CRM, PLTR, SNOW, COIN, UBER, DIS, JPM, BAC, JNJ, PG, KO, WMT]
+  source: "adv_top150"
+  refresh_days: 5
+data:
+  bar_intervals: ["1d"]
+  vendor: "yfinance"
+  include_fundamentals: false
+  include_news_sentiment: false
+costs:
+  commission_bps: 1.0
+  slippage_bps: 2.0
+risk:
+  max_gross_exposure: 1.0
+  max_name_weight: 0.10
+  max_sector_weight: 0.25
+  daily_loss_limit_pct: 0.02
+  max_dd_halt_pct: 0.10
+signals:
+  families: ["xsec_momo","ts_momo","meanrev","vol_breakout","meta_label"]
+  ensemble: "stacked"
+features:
+  include: ["returns","ema","rsi","macd","atr","vwap_dist","boll_z","vol_rank","regime"]
+  standardize: true
+labels:
+  type: "binary_momo"
+  horizon_bars: 20
+  threshold_ret: 0.005
+model:
+  type: "lightgbm"
+  time_series_cv:
+    folds: 5
+    embargo_days: 3
+  hyperopt:
+    max_evals: 50
+portfolio:
+  target_vol_daily: 0.01
+  kelly_cap: 0.25
+  max_positions: 20
+exits:
+  hard_stop_atr: 2.0
+  trail_stop_atr: 1.5
+  time_exit_days: 10
+rebalance:
+  intraday: false
+  eod: true
+backtest:
+  train_months: 12
+  val_months: 3
+  test_months: 3
+execution:
+  mode: "paper"
+  broker: "alpaca"
+logging:
+  seed: 42
+  experiment_tracking: "mlflow"
+  artifacts_dir: "./artifacts/run_{timestamp}"

@@ -1,0 +1,699 @@
+{
+  "test_metadata": {
+    "account_size": 100000,
+    "data_splits": {
+      "train_start": "2023-11-21",
+      "train_end": "2025-05-21",
+      "test_start": "2025-05-22",
+      "test_end": "2025-08-20"
+    },
+    "universe_size": 25,
+    "models_trained": 0,
+    "symbols_with_data": 25,
+    "test_type": "kelly_optimized_forward_test",
+    "optimization": "Kelly sizing + 99% deployment + 15 positions",
+    "ml_system_used": true
+  },
+  "performance_metrics": {
+    "account_performance": {
+      "initial_value": 100000,
+      "final_value": 100000,
+      "total_return_pct": 0.0,
+      "annualized_return_pct": 0.0,
+      "profit_loss_amount": 0,
+      "trading_days": 65
+    },
+    "risk_metrics": {
+      "volatility_pct": 0.0,
+      "sharpe_ratio": 0,
+      "max_drawdown_pct": 0.0,
+      "win_rate_pct": 0.0
+    },
+    "deployment_metrics": {
+      "average_deployment_pct": 0.0,
+      "target_deployment_pct": 99.0,
+      "deployment_efficiency": 0.0
+    },
+    "trading_activity": {
+      "total_trades": 0,
+      "buy_trades": 0,
+      "sell_trades": 0,
+      "avg_trade_value": 0
+    }
+  },
+  "daily_portfolio_values": [
+    {
+      "date": "2025-05-22",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "positions_value": 0,
+      "active_positions": 0,
+      "actual_deployment": 0.0,
+      "daily_return": 0.0,
+      "trades_today": 0
+    },
+    {
+      "date": "2025-05-23",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "positions_value": 0,
+      "active_positions": 0,
+      "actual_deployment": 0.0,
+      "daily_return": 0.0,
+      "trades_today": 0
+    },
+    {
+      "date": "2025-05-26",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "positions_value": 0,
+      "active_positions": 0,
+      "actual_deployment": 0.0,
+      "daily_return": 0.0,
+      "trades_today": 0
+    },
+    {
+      "date": "2025-05-27",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "positions_value": 0,
+      "active_positions": 0,
+      "actual_deployment": 0.0,
+      "daily_return": 0.0,
+      "trades_today": 0
+    },
+    {
+      "date": "2025-05-28",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "positions_value": 0,
+      "active_positions": 0,
+      "actual_deployment": 0.0,
+      "daily_return": 0.0,
+      "trades_today": 0
+    },
+    {
+      "date": "2025-05-29",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "positions_value": 0,
+      "active_positions": 0,
+      "actual_deployment": 0.0,
+      "daily_return": 0.0,
+      "trades_today": 0
+    },
+    {
+      "date": "2025-05-30",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "positions_value": 0,
+      "active_positions": 0,
+      "actual_deployment": 0.0,
+      "daily_return": 0.0,
+      "trades_today": 0
+    },
+    {
+      "date": "2025-06-02",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "positions_value": 0,
+      "active_positions": 0,
+      "actual_deployment": 0.0,
+      "daily_return": 0.0,
+      "trades_today": 0
+    },
+    {
+      "date": "2025-06-03",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "positions_value": 0,
+      "active_positions": 0,
+      "actual_deployment": 0.0,
+      "daily_return": 0.0,
+      "trades_today": 0
+    },
+    {
+      "date": "2025-06-04",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "positions_value": 0,
+      "active_positions": 0,
+      "actual_deployment": 0.0,
+      "daily_return": 0.0,
+      "trades_today": 0
+    },
+    {
+      "date": "2025-06-05",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "positions_value": 0,
+      "active_positions": 0,
+      "actual_deployment": 0.0,
+      "daily_return": 0.0,
+      "trades_today": 0
+    },
+    {
+      "date": "2025-06-06",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "positions_value": 0,
+      "active_positions": 0,
+      "actual_deployment": 0.0,
+      "daily_return": 0.0,
+      "trades_today": 0
+    },
+    {
+      "date": "2025-06-09",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "positions_value": 0,
+      "active_positions": 0,
+      "actual_deployment": 0.0,
+      "daily_return": 0.0,
+      "trades_today": 0
+    },
+    {
+      "date": "2025-06-10",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "positions_value": 0,
+      "active_positions": 0,
+      "actual_deployment": 0.0,
+      "daily_return": 0.0,
+      "trades_today": 0
+    },
+    {
+      "date": "2025-06-11",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "positions_value": 0,
+      "active_positions": 0,
+      "actual_deployment": 0.0,
+      "daily_return": 0.0,
+      "trades_today": 0
+    },
+    {
+      "date": "2025-06-12",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "positions_value": 0,
+      "active_positions": 0,
+      "actual_deployment": 0.0,
+      "daily_return": 0.0,
+      "trades_today": 0
+    },
+    {
+      "date": "2025-06-13",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "positions_value": 0,
+      "active_positions": 0,
+      "actual_deployment": 0.0,
+      "daily_return": 0.0,
+      "trades_today": 0
+    },
+    {
+      "date": "2025-06-16",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "positions_value": 0,
+      "active_positions": 0,
+      "actual_deployment": 0.0,
+      "daily_return": 0.0,
+      "trades_today": 0
+    },
+    {
+      "date": "2025-06-17",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "positions_value": 0,
+      "active_positions": 0,
+      "actual_deployment": 0.0,
+      "daily_return": 0.0,
+      "trades_today": 0
+    },
+    {
+      "date": "2025-06-18",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "positions_value": 0,
+      "active_positions": 0,
+      "actual_deployment": 0.0,
+      "daily_return": 0.0,
+      "trades_today": 0
+    },
+    {
+      "date": "2025-06-19",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "positions_value": 0,
+      "active_positions": 0,
+      "actual_deployment": 0.0,
+      "daily_return": 0.0,
+      "trades_today": 0
+    },
+    {
+      "date": "2025-06-20",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "positions_value": 0,
+      "active_positions": 0,
+      "actual_deployment": 0.0,
+      "daily_return": 0.0,
+      "trades_today": 0
+    },
+    {
+      "date": "2025-06-23",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "positions_value": 0,
+      "active_positions": 0,
+      "actual_deployment": 0.0,
+      "daily_return": 0.0,
+      "trades_today": 0
+    },
+    {
+      "date": "2025-06-24",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "positions_value": 0,
+      "active_positions": 0,
+      "actual_deployment": 0.0,
+      "daily_return": 0.0,
+      "trades_today": 0
+    },
+    {
+      "date": "2025-06-25",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "positions_value": 0,
+      "active_positions": 0,
+      "actual_deployment": 0.0,
+      "daily_return": 0.0,
+      "trades_today": 0
+    },
+    {
+      "date": "2025-06-26",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "positions_value": 0,
+      "active_positions": 0,
+      "actual_deployment": 0.0,
+      "daily_return": 0.0,
+      "trades_today": 0
+    },
+    {
+      "date": "2025-06-27",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "positions_value": 0,
+      "active_positions": 0,
+      "actual_deployment": 0.0,
+      "daily_return": 0.0,
+      "trades_today": 0
+    },
+    {
+      "date": "2025-06-30",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "positions_value": 0,
+      "active_positions": 0,
+      "actual_deployment": 0.0,
+      "daily_return": 0.0,
+      "trades_today": 0
+    },
+    {
+      "date": "2025-07-01",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "positions_value": 0,
+      "active_positions": 0,
+      "actual_deployment": 0.0,
+      "daily_return": 0.0,
+      "trades_today": 0
+    },
+    {
+      "date": "2025-07-02",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "positions_value": 0,
+      "active_positions": 0,
+      "actual_deployment": 0.0,
+      "daily_return": 0.0,
+      "trades_today": 0
+    },
+    {
+      "date": "2025-07-03",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "positions_value": 0,
+      "active_positions": 0,
+      "actual_deployment": 0.0,
+      "daily_return": 0.0,
+      "trades_today": 0
+    },
+    {
+      "date": "2025-07-04",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "positions_value": 0,
+      "active_positions": 0,
+      "actual_deployment": 0.0,
+      "daily_return": 0.0,
+      "trades_today": 0
+    },
+    {
+      "date": "2025-07-07",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "positions_value": 0,
+      "active_positions": 0,
+      "actual_deployment": 0.0,
+      "daily_return": 0.0,
+      "trades_today": 0
+    },
+    {
+      "date": "2025-07-08",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "positions_value": 0,
+      "active_positions": 0,
+      "actual_deployment": 0.0,
+      "daily_return": 0.0,
+      "trades_today": 0
+    },
+    {
+      "date": "2025-07-09",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "positions_value": 0,
+      "active_positions": 0,
+      "actual_deployment": 0.0,
+      "daily_return": 0.0,
+      "trades_today": 0
+    },
+    {
+      "date": "2025-07-10",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "positions_value": 0,
+      "active_positions": 0,
+      "actual_deployment": 0.0,
+      "daily_return": 0.0,
+      "trades_today": 0
+    },
+    {
+      "date": "2025-07-11",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "positions_value": 0,
+      "active_positions": 0,
+      "actual_deployment": 0.0,
+      "daily_return": 0.0,
+      "trades_today": 0
+    },
+    {
+      "date": "2025-07-14",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "positions_value": 0,
+      "active_positions": 0,
+      "actual_deployment": 0.0,
+      "daily_return": 0.0,
+      "trades_today": 0
+    },
+    {
+      "date": "2025-07-15",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "positions_value": 0,
+      "active_positions": 0,
+      "actual_deployment": 0.0,
+      "daily_return": 0.0,
+      "trades_today": 0
+    },
+    {
+      "date": "2025-07-16",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "positions_value": 0,
+      "active_positions": 0,
+      "actual_deployment": 0.0,
+      "daily_return": 0.0,
+      "trades_today": 0
+    },
+    {
+      "date": "2025-07-17",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "positions_value": 0,
+      "active_positions": 0,
+      "actual_deployment": 0.0,
+      "daily_return": 0.0,
+      "trades_today": 0
+    },
+    {
+      "date": "2025-07-18",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "positions_value": 0,
+      "active_positions": 0,
+      "actual_deployment": 0.0,
+      "daily_return": 0.0,
+      "trades_today": 0
+    },
+    {
+      "date": "2025-07-21",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "positions_value": 0,
+      "active_positions": 0,
+      "actual_deployment": 0.0,
+      "daily_return": 0.0,
+      "trades_today": 0
+    },
+    {
+      "date": "2025-07-22",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "positions_value": 0,
+      "active_positions": 0,
+      "actual_deployment": 0.0,
+      "daily_return": 0.0,
+      "trades_today": 0
+    },
+    {
+      "date": "2025-07-23",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "positions_value": 0,
+      "active_positions": 0,
+      "actual_deployment": 0.0,
+      "daily_return": 0.0,
+      "trades_today": 0
+    },
+    {
+      "date": "2025-07-24",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "positions_value": 0,
+      "active_positions": 0,
+      "actual_deployment": 0.0,
+      "daily_return": 0.0,
+      "trades_today": 0
+    },
+    {
+      "date": "2025-07-25",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "positions_value": 0,
+      "active_positions": 0,
+      "actual_deployment": 0.0,
+      "daily_return": 0.0,
+      "trades_today": 0
+    },
+    {
+      "date": "2025-07-28",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "positions_value": 0,
+      "active_positions": 0,
+      "actual_deployment": 0.0,
+      "daily_return": 0.0,
+      "trades_today": 0
+    },
+    {
+      "date": "2025-07-29",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "positions_value": 0,
+      "active_positions": 0,
+      "actual_deployment": 0.0,
+      "daily_return": 0.0,
+      "trades_today": 0
+    },
+    {
+      "date": "2025-07-30",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "positions_value": 0,
+      "active_positions": 0,
+      "actual_deployment": 0.0,
+      "daily_return": 0.0,
+      "trades_today": 0
+    },
+    {
+      "date": "2025-07-31",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "positions_value": 0,
+      "active_positions": 0,
+      "actual_deployment": 0.0,
+      "daily_return": 0.0,
+      "trades_today": 0
+    },
+    {
+      "date": "2025-08-01",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "positions_value": 0,
+      "active_positions": 0,
+      "actual_deployment": 0.0,
+      "daily_return": 0.0,
+      "trades_today": 0
+    },
+    {
+      "date": "2025-08-04",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "positions_value": 0,
+      "active_positions": 0,
+      "actual_deployment": 0.0,
+      "daily_return": 0.0,
+      "trades_today": 0
+    },
+    {
+      "date": "2025-08-05",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "positions_value": 0,
+      "active_positions": 0,
+      "actual_deployment": 0.0,
+      "daily_return": 0.0,
+      "trades_today": 0
+    },
+    {
+      "date": "2025-08-06",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "positions_value": 0,
+      "active_positions": 0,
+      "actual_deployment": 0.0,
+      "daily_return": 0.0,
+      "trades_today": 0
+    },
+    {
+      "date": "2025-08-07",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "positions_value": 0,
+      "active_positions": 0,
+      "actual_deployment": 0.0,
+      "daily_return": 0.0,
+      "trades_today": 0
+    },
+    {
+      "date": "2025-08-08",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "positions_value": 0,
+      "active_positions": 0,
+      "actual_deployment": 0.0,
+      "daily_return": 0.0,
+      "trades_today": 0
+    },
+    {
+      "date": "2025-08-11",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "positions_value": 0,
+      "active_positions": 0,
+      "actual_deployment": 0.0,
+      "daily_return": 0.0,
+      "trades_today": 0
+    },
+    {
+      "date": "2025-08-12",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "positions_value": 0,
+      "active_positions": 0,
+      "actual_deployment": 0.0,
+      "daily_return": 0.0,
+      "trades_today": 0
+    },
+    {
+      "date": "2025-08-13",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "positions_value": 0,
+      "active_positions": 0,
+      "actual_deployment": 0.0,
+      "daily_return": 0.0,
+      "trades_today": 0
+    },
+    {
+      "date": "2025-08-14",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "positions_value": 0,
+      "active_positions": 0,
+      "actual_deployment": 0.0,
+      "daily_return": 0.0,
+      "trades_today": 0
+    },
+    {
+      "date": "2025-08-15",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "positions_value": 0,
+      "active_positions": 0,
+      "actual_deployment": 0.0,
+      "daily_return": 0.0,
+      "trades_today": 0
+    },
+    {
+      "date": "2025-08-18",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "positions_value": 0,
+      "active_positions": 0,
+      "actual_deployment": 0.0,
+      "daily_return": 0.0,
+      "trades_today": 0
+    },
+    {
+      "date": "2025-08-19",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "positions_value": 0,
+      "active_positions": 0,
+      "actual_deployment": 0.0,
+      "daily_return": 0.0,
+      "trades_today": 0
+    },
+    {
+      "date": "2025-08-20",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "positions_value": 0,
+      "active_positions": 0,
+      "actual_deployment": 0.0,
+      "daily_return": 0.0,
+      "trades_today": 0
+    }
+  ],
+  "trade_history": [],
+  "final_positions": {},
+  "test_timestamp": "2025-08-20T23:26:56.739629"
+}

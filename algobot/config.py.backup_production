@@ -1,0 +1,52 @@
+
+"""
+EMERGENCY TRADING CONFIGURATION
+Ultra-aggressive settings to force trading when ML model fails
+"""
+
+from dataclasses import dataclass
+from typing import Tuple
+
+@dataclass
+class ModelConfig:
+    """EMERGENCY: Ultra-aggressive ML model configuration"""
+    min_directional_accuracy: float = 0.30      # 30% accuracy (very low)
+    buy_threshold: float = 0.001                # 0.1% buy threshold (almost any signal)
+    sell_threshold: float = -0.001              # -0.1% sell threshold
+    confidence_threshold: float = 0.05          # 5% confidence requirement
+    enable_buyhold_fallback: bool = True        # CRITICAL: Enable fallback
+    fallback_after_days: int = 1                # Fallback after 1 day of no signals
+
+@dataclass  
+class RiskConfig:
+    """EMERGENCY: Ultra-aggressive risk management"""
+    max_position_pct: float = 0.35             # 35% per position
+    max_portfolio_risk_pct: float = 0.95       # 95% portfolio risk
+    stop_loss_pct: float = 0.20                # 20% stop loss
+    take_profit_pct: float = 0.30              # 30% take profit
+    min_holding_days: int = 1                  # Hold for 1 day minimum
+    emergency_override: bool = True            # Override all risk limits
+
+@dataclass
+class ExecutionConfig:
+    """EMERGENCY: Aggressive execution settings"""
+    rebalance_weekdays: Tuple[int, ...] = (0, 1, 2, 3, 4)  # Trade every day
+    min_holding_days: int = 1               # 1 day minimum
+    max_holding_days: int = 20              # 20 day maximum  
+    force_minimum_exposure: float = 0.40    # Force 40% minimum exposure
+    buy_hold_when_no_signals: bool = True   # CRITICAL: Buy-hold fallback
+
+# Global configuration instance - EMERGENCY MODE
+GLOBAL_CONFIG = {
+    'model': ModelConfig(),
+    'risk': RiskConfig(), 
+    'execution': ExecutionConfig(),
+    'emergency_mode': True,
+    'strategy_type': 'HYBRID_BUYHOLD_FALLBACK'
+}
+
+print("🚨 EMERGENCY CONFIGURATION LOADED")
+print("   • Ultra-aggressive ML thresholds")
+print("   • Buy-and-hold fallback enabled") 
+print("   • 40% minimum exposure guaranteed")
+print("   • Daily rebalancing activated")

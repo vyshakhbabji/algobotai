@@ -1,0 +1,80 @@
+{
+  "signals": [
+    {
+      "symbol": "AMD",
+      "action": "BUY",
+      "strength": "STRONG BUY",
+      "weight": 12.5,
+      "score": 0.9176921191402736,
+      "price": 172.75999450683594,
+      "rationale": "Momentum score +0.918, 6M return +60.6%"
+    },
+    {
+      "symbol": "GE",
+      "action": "BUY",
+      "strength": "STRONG BUY",
+      "weight": 12.5,
+      "score": 0.7784318403878291,
+      "price": 275.010009765625,
+      "rationale": "Momentum score +0.778, 6M return +34.4%"
+    },
+    {
+      "symbol": "PLTR",
+      "action": "BUY",
+      "strength": "STRONG BUY",
+      "weight": 12.5,
+      "score": 0.7437196051063953,
+      "price": 186.9600067138672,
+      "rationale": "Momentum score +0.744, 6M return +68.7%"
+    },
+    {
+      "symbol": "MSFT",
+      "action": "BUY",
+      "strength": "STRONG BUY",
+      "weight": 12.5,
+      "score": 0.7150555322005461,
+      "price": 522.0399780273438,
+      "rationale": "Momentum score +0.715, 6M return +27.9%"
+    },
+    {
+      "symbol": "NVDA",
+      "action": "BUY",
+      "strength": "STRONG BUY",
+      "weight": 12.5,
+      "score": 0.6761073161314584,
+      "price": 182.6999969482422,
+      "rationale": "Momentum score +0.676, 6M return +40.7%"
+    },
+    {
+      "symbol": "JNJ",
+      "action": "BUY",
+      "strength": "STRONG BUY",
+      "weight": 12.5,
+      "score": 0.6010927749042709,
+      "price": 173.3300018310547,
+      "rationale": "Momentum score +0.601, 6M return +15.1%"
+    },
+    {
+      "symbol": "CAT",
+      "action": "BUY",
+      "strength": "STRONG BUY",
+      "weight": 12.5,
+      "score": 0.5298314869964549,
+      "price": 416.5199890136719,
+      "rationale": "Momentum score +0.530, 6M return +15.4%"
+    },
+    {
+      "symbol": "GOOGL",
+      "action": "BUY",
+      "strength": "STRONG BUY",
+      "weight": 12.5,
+      "score": 0.4765577942306836,
+      "price": 201.4199981689453,
+      "rationale": "Momentum score +0.477, 6M return +8.9%"
+    }
+  ],
+  "market_regime": "\ud83d\udfe2 STRONG MOMENTUM",
+  "avg_momentum": 0.679811058637239,
+  "recommendation": "Deploy aggressively",
+  "timestamp": "2025-08-08T16:13:35.092188"
+}

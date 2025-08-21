@@ -1,0 +1,42 @@
+{
+  "date": "2025-08-13 21:03",
+  "capital": 10000,
+  "strategy": "Bulletproof Momentum",
+  "recommendations": [
+    {
+      "symbol": "NVDA",
+      "shares": 18,
+      "price": 181.58999633789062,
+      "investment": 3268.6199340820312,
+      "momentum": 0.18574242038453884
+    },
+    {
+      "symbol": "GOOGL",
+      "shares": 16,
+      "price": 201.9600067138672,
+      "investment": 3231.360107421875,
+      "momentum": 0.15665029604049624
+    },
+    {
+      "symbol": "AAPL",
+      "shares": 14,
+      "price": 233.3300018310547,
+      "investment": 3266.6200256347656,
+      "momentum": 0.13144581904314356
+    }
+  ],
+  "total_investment": 9766.600067138672,
+  "cash_remaining": 233.39993286132812,
+  "backtest_30d": {
+    "return_pct": "+12.70%",
+    "profit_dollars": "$+1270.19"
+  },
+  "action_plan": [
+    "1. Open a brokerage account (Schwab, Fidelity, etc.)",
+    "2. Buy the recommended stocks in the exact amounts",
+    "3. Set stop-loss orders at -8% for each position",
+    "4. Set target sell orders at +15% for each position",
+    "5. Review and rebalance monthly",
+    "6. Start with paper trading if you're nervous!"
+  ]
+}

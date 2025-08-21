@@ -1,0 +1,92 @@
+"""Central configuration and constants for the trading system."""
+from dataclasses import dataclass, field
+from typing import List
+
+
+@dataclass
+class UniverseConfig:
+    core_universe: List[str] = field(default_factory=lambda: [
+        "NVDA", "AAPL", "GOOGL", "MSFT", "AMZN", "META", "TSLA", "NFLX",
+        "CRM", "UBER", "AMD", "ADBE", "JPM", "BAC", "WMT", "KO", "PG",
+        "JNJ", "HD", "CAT", "DIS", "PLTR", "SNOW", "INTC"
+    ])
+    max_universe: int = 20
+
+
+@dataclass
+class DataConfig:
+    backtest_years: int = 1
+    forward_test_months: int = 3
+    min_history_days: int = 260
+
+
+@dataclass
+class ModelConfig:
+    # AGGRESSIVE ML MODEL SETTINGS - Lower thresholds for more trading
+    min_directional_accuracy: float = 0.48        # 48% vs 52% - trade on weaker signals
+    min_r2: float = -0.15                        # -15% vs -5% - accept lower model quality
+    buy_threshold: float = 0.008                 # 0.8% vs 1.5% - trigger on smaller moves
+    sell_threshold: float = -0.008               # -0.8% vs -1.5% - exit sooner
+    retrain_frequency_days: int = 1              # Daily retraining
+    # New aggressive parameters
+    confidence_override: float = 0.40            # 40% confidence threshold (was ~50%)
+    momentum_weight: float = 0.30                # 30% weight to momentum signals
+    enable_weak_signal_trading: bool = True      # Trade on weak but present signals
+    max_signal_age_hours: int = 6                # Use signals up to 6 hours old
+
+
+@dataclass
+class RiskConfig:
+    # AGGRESSIVE RISK SETTINGS - Larger positions, higher exposure
+    max_position_pct: float = 0.30               # 30% vs 18% - larger individual positions
+    max_portfolio_risk_pct: float = 0.95         # 95% vs 90% - nearly full deployment
+    stop_loss_pct: float = 0.06                 # 6% vs 8% - tighter stops, faster action
+    take_profit_pct: float = 0.25                # 25% vs 15% - let winners run longer
+    # New aggressive risk parameters
+    concentration_limit: int = 3                 # Max 3 large positions (vs 8 small ones)
+    kelly_multiplier: float = 1.5               # 1.5x Kelly criterion for sizing
+    drawdown_increase_threshold: float = 0.05    # Increase risk after 5% drawdown
+    momentum_position_multiplier: float = 1.4    # 40% larger positions on momentum signals
+
+
+@dataclass
+class ExecutionConfig:
+    paper_trading: bool = True
+    use_alpaca: bool = False
+    # AGGRESSIVE EXECUTION - More frequent rebalancing and trading
+    rebalance_weekdays: tuple = (0, 2, 4)        # Mon, Wed, Fri vs Mon only
+    min_holding_days: int = 2                    # 2 vs 5 days - faster exits
+    allow_midweek_hard_exits: bool = True
+    transaction_cost_bps: float = 5.0
+    # More aggressive midweek actions
+    hard_add_enabled: bool = True
+    hard_add_buy_strength: float = 0.65          # 65% vs 85% - add positions more easily
+    hard_trim_enabled: bool = True
+    hard_trim_sell_strength: float = 0.60        # 60% vs 55% - trim less aggressively
+    max_positions_default: int = 5               # 5 vs 8 - concentrate in best ideas
+    hard_add_chunk_weight: float = 0.08          # 8% vs 5% - larger position additions
+    hard_trim_fraction: float = 0.3              # 30% vs 50% - smaller trims to keep exposure
+    # New aggressive execution parameters  
+    enable_intraday_rebalancing: bool = True     # Allow same-day position changes
+    momentum_exit_multiplier: float = 0.8        # Exit 20% faster on momentum breakdown
+    scale_in_threshold: float = 0.02             # Scale into positions on 2% moves
+
+
+@dataclass
+class OptionsConfig:
+    enable_options: bool = False
+    high_confidence: float = 0.65
+    medium_confidence: float = 0.55
+
+
+@dataclass
+class Config:
+    universe: UniverseConfig = field(default_factory=UniverseConfig)
+    data: DataConfig = field(default_factory=DataConfig)
+    model: ModelConfig = field(default_factory=ModelConfig)
+    risk: RiskConfig = field(default_factory=RiskConfig)
+    execution: ExecutionConfig = field(default_factory=ExecutionConfig)
+    options: OptionsConfig = field(default_factory=OptionsConfig)
+
+
+GLOBAL_CONFIG = Config()

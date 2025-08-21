@@ -1,0 +1,211 @@
+{
+  "strategy": "$100K 3-Month Momentum",
+  "period": "2024-05-13 to 2024-08-13",
+  "initial_capital": 100000,
+  "final_value": 101407.33186340332,
+  "total_return_pct": 1.407331863403316,
+  "profit_loss": 1407.3318634033203,
+  "monthly_returns": [
+    3.6936178569279443,
+    1.4674355074985046
+  ],
+  "total_trades": 18,
+  "portfolio_history": [
+    {
+      "date": "2024-05-13",
+      "value": 100279.46762084961,
+      "cash": 46228.79718017578,
+      "positions": 3
+    },
+    {
+      "date": "2024-06-13",
+      "value": 103983.40794372559,
+      "cash": 11511.838745117188,
+      "positions": 5
+    },
+    {
+      "date": "2024-07-13",
+      "value": 105509.29739379883,
+      "cash": 11074.076126098633,
+      "positions": 5
+    }
+  ],
+  "trades_log": [
+    {
+      "date": "2024-05-13",
+      "action": "BUY",
+      "symbol": "GOOGL",
+      "shares": 107,
+      "price": 167.64456176757812,
+      "value": 17937.96810913086
+    },
+    {
+      "date": "2024-05-13",
+      "action": "BUY",
+      "symbol": "AAPL",
+      "shares": 98,
+      "price": 181.9913787841797,
+      "value": 17835.15512084961
+    },
+    {
+      "date": "2024-05-13",
+      "action": "BUY",
+      "symbol": "AMZN",
+      "shares": 96,
+      "price": 187.47999572753906,
+      "value": 17998.07958984375
+    },
+    {
+      "date": "2024-06-13",
+      "action": "SELL",
+      "symbol": "GOOGL",
+      "shares": 107,
+      "price": 174.3155975341797,
+      "value": 18651.768936157227
+    },
+    {
+      "date": "2024-06-13",
+      "action": "SELL",
+      "symbol": "AMZN",
+      "shares": 96,
+      "price": 183.8300018310547,
+      "value": 17647.68017578125
+    },
+    {
+      "date": "2024-06-13",
+      "action": "BUY",
+      "symbol": "NVDA",
+      "shares": 148,
+      "price": 125.16045379638672,
+      "value": 18523.747161865234
+    },
+    {
+      "date": "2024-06-13",
+      "action": "SELL",
+      "symbol": "AAPL",
+      "shares": 11,
+      "price": 211.83775329589844,
+      "value": 2330.215286254883
+    },
+    {
+      "date": "2024-06-13",
+      "action": "BUY",
+      "symbol": "NFLX",
+      "shares": 28,
+      "price": 650.0599975585938,
+      "value": 18201.679931640625
+    },
+    {
+      "date": "2024-06-13",
+      "action": "BUY",
+      "symbol": "META",
+      "shares": 36,
+      "price": 506.6006164550781,
+      "value": 18237.622192382812
+    },
+    {
+      "date": "2024-06-13",
+      "action": "BUY",
+      "symbol": "MSFT",
+      "shares": 42,
+      "price": 437.7041320800781,
+      "value": 18383.57354736328
+    },
+    {
+      "date": "2024-07-13",
+      "action": "SELL",
+      "symbol": "NFLX",
+      "shares": 28,
+      "price": 647.5999755859375,
+      "value": 18132.79931640625
+    },
+    {
+      "date": "2024-07-13",
+      "action": "SELL",
+      "symbol": "META",
+      "shares": 36,
+      "price": 497.1676025390625,
+      "value": 17898.03369140625
+    },
+    {
+      "date": "2024-07-13",
+      "action": "SELL",
+      "symbol": "MSFT",
+      "shares": 42,
+      "price": 450.0990905761719,
+      "value": 18904.16180419922
+    },
+    {
+      "date": "2024-07-13",
+      "action": "BUY",
+      "symbol": "TSLA",
+      "shares": 76,
+      "price": 248.22999572753906,
+      "value": 18865.47967529297
+    },
+    {
+      "date": "2024-07-13",
+      "action": "BUY",
+      "symbol": "PLTR",
+      "shares": 676,
+      "price": 28.06999969482422,
+      "value": 18975.319793701172
+    },
+    {
+      "date": "2024-07-13",
+      "action": "SELL",
+      "symbol": "AAPL",
+      "shares": 5,
+      "price": 229.2067108154297,
+      "value": 1146.0335540771484
+    },
+    {
+      "date": "2024-07-13",
+      "action": "SELL",
+      "symbol": "NVDA",
+      "shares": 2,
+      "price": 129.19920349121094,
+      "value": 258.3984069824219
+    },
+    {
+      "date": "2024-07-13",
+      "action": "BUY",
+      "symbol": "CRM",
+      "shares": 75,
+      "price": 252.48519897460938,
+      "value": 18936.389923095703
+    }
+  ],
+  "final_positions": {
+    "AAPL": {
+      "shares": 82,
+      "avg_price": 181.9913787841797,
+      "current_price": 220.24497985839844,
+      "value": 18060.088348388672
+    },
+    "NVDA": {
+      "shares": 146,
+      "avg_price": 125.16045379638672,
+      "current_price": 116.10331726074219,
+      "value": 16951.08432006836
+    },
+    "TSLA": {
+      "shares": 76,
+      "avg_price": 248.22999572753906,
+      "current_price": 207.8300018310547,
+      "value": 15795.080139160156
+    },
+    "PLTR": {
+      "shares": 676,
+      "avg_price": 28.06999969482422,
+      "current_price": 30.389999389648438,
+      "value": 20543.639587402344
+    },
+    "CRM": {
+      "shares": 75,
+      "avg_price": 252.48519897460938,
+      "current_price": 253.11151123046875,
+      "value": 18983.363342285156
+    }
+  }
+}

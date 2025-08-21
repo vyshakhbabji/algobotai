@@ -1,0 +1,58 @@
+{
+  "config_name": "PRODUCTION_OPTIMIZED_V1",
+  "description": "Production-ready configuration for live trading",
+  "created": "2025-08-13T00:46:42.558390",
+  "risk_level": "MODERATE_AGGRESSIVE",
+  "target_annual_return": "15-25%",
+  "max_drawdown_target": "8-12%",
+  "ml_parameters": {
+    "min_directional_accuracy": 0.52,
+    "buy_threshold": 0.008,
+    "sell_threshold": -0.006,
+    "confidence_threshold": 0.35,
+    "prediction_window": 5,
+    "feature_importance_min": 0.02,
+    "model_retrain_frequency": 30,
+    "validation_score_min": 0.55
+  },
+  "risk_parameters": {
+    "max_position_pct": 0.25,
+    "max_portfolio_risk_pct": 0.85,
+    "stop_loss_pct": 0.08,
+    "take_profit_pct": 0.15,
+    "trailing_stop_pct": 0.05,
+    "max_daily_loss_pct": 0.03,
+    "correlation_limit": 0.7,
+    "sector_concentration_limit": 0.4
+  },
+  "execution_parameters": {
+    "rebalance_frequency": "weekly",
+    "min_holding_days": 3,
+    "max_holding_days": 45,
+    "market_hours_only": true,
+    "pre_market_analysis": true,
+    "after_hours_exit": false,
+    "slippage_assumption": 0.002,
+    "commission_per_trade": 0.0,
+    "min_trade_size": 100
+  },
+  "signal_parameters": {
+    "momentum_threshold": 0.012,
+    "trend_confirmation_days": 3,
+    "volume_confirmation": true,
+    "rsi_overbought": 75,
+    "rsi_oversold": 30,
+    "macd_signal_strength": 0.8,
+    "bollinger_band_width": 2.0,
+    "support_resistance_strength": 0.015
+  },
+  "portfolio_parameters": {
+    "target_positions": 8,
+    "min_positions": 5,
+    "max_positions": 12,
+    "cash_reserve_pct": 0.15,
+    "position_sizing_method": "kelly_fraction",
+    "rebalancing_threshold": 0.05,
+    "correlation_check_frequency": "daily"
+  }
+}

@@ -1,0 +1,212 @@
+[
+  {
+    "symbol": "AVGO",
+    "classification": "strong",
+    "initial_capital": 100000.0,
+    "final_equity": 140187.2505119241,
+    "profit_dollars": 40187.250511924096,
+    "total_return_pct": 0.4018725051192409,
+    "buy_hold_return_pct": 0.5491197697818886,
+    "alpha_pct": -0.1472472646626477
+  },
+  {
+    "symbol": "GE",
+    "classification": "strong",
+    "initial_capital": 100000.0,
+    "final_equity": 130796.29121412568,
+    "profit_dollars": 30796.291214125682,
+    "total_return_pct": 0.3079629121412568,
+    "buy_hold_return_pct": 0.352642876446968,
+    "alpha_pct": -0.044679964305711195
+  },
+  {
+    "symbol": "BK",
+    "classification": "strong",
+    "initial_capital": 100000.0,
+    "final_equity": 120145.23602002456,
+    "profit_dollars": 20145.23602002456,
+    "total_return_pct": 0.2014523602002456,
+    "buy_hold_return_pct": 0.2809226290126319,
+    "alpha_pct": -0.07947026881238628
+  },
+  {
+    "symbol": "GS",
+    "classification": "default",
+    "initial_capital": 100000.0,
+    "final_equity": 118325.26622934412,
+    "profit_dollars": 18325.266229344124,
+    "total_return_pct": 0.18325266229344117,
+    "buy_hold_return_pct": 0.30882253587517305,
+    "alpha_pct": -0.12556987358173188
+  },
+  {
+    "symbol": "RTX",
+    "classification": "strong",
+    "initial_capital": 100000.0,
+    "final_equity": 118140.75821055088,
+    "profit_dollars": 18140.758210550877,
+    "total_return_pct": 0.18140758210550878,
+    "buy_hold_return_pct": 0.22164235095348328,
+    "alpha_pct": -0.0402347688479745
+  },
+  {
+    "symbol": "JPM",
+    "classification": "strong",
+    "initial_capital": 100000.0,
+    "final_equity": 111922.87105328115,
+    "profit_dollars": 11922.871053281153,
+    "total_return_pct": 0.11922871053281159,
+    "buy_hold_return_pct": 0.1752244326166832,
+    "alpha_pct": -0.0559957220838716
+  },
+  {
+    "symbol": "GILD",
+    "classification": "strong",
+    "initial_capital": 100000.0,
+    "final_equity": 109222.26058059851,
+    "profit_dollars": 9222.260580598508,
+    "total_return_pct": 0.09222260580598518,
+    "buy_hold_return_pct": 0.16472509947707104,
+    "alpha_pct": -0.07250249367108585
+  },
+  {
+    "symbol": "COF",
+    "classification": "default",
+    "initial_capital": 100000.0,
+    "final_equity": 105894.86565676495,
+    "profit_dollars": 5894.865656764945,
+    "total_return_pct": 0.05894865656764936,
+    "buy_hold_return_pct": 0.15910937920973156,
+    "alpha_pct": -0.1001607226420822
+  },
+  {
+    "symbol": "BKNG",
+    "classification": "strong",
+    "initial_capital": 100000.0,
+    "final_equity": 105379.29593341869,
+    "profit_dollars": 5379.295933418689,
+    "total_return_pct": 0.05379295933418682,
+    "buy_hold_return_pct": 0.06151457123889381,
+    "alpha_pct": -0.007721611904706993
+  },
+  {
+    "symbol": "NFLX",
+    "classification": "strong",
+    "initial_capital": 100000.0,
+    "final_equity": 105318.93670072238,
+    "profit_dollars": 5318.936700722377,
+    "total_return_pct": 0.053189367007223876,
+    "buy_hold_return_pct": 0.06896525357158012,
+    "alpha_pct": -0.015775886564356245
+  },
+  {
+    "symbol": "IBM",
+    "classification": "strong",
+    "initial_capital": 100000.0,
+    "final_equity": 102587.20658368508,
+    "profit_dollars": 2587.2065836850816,
+    "total_return_pct": 0.025872065836850755,
+    "buy_hold_return_pct": 0.024497622203069724,
+    "alpha_pct": 0.0013744436337810306
+  },
+  {
+    "symbol": "MMM",
+    "classification": "strong",
+    "initial_capital": 100000.0,
+    "final_equity": 99946.1704060989,
+    "profit_dollars": -53.82959390110045,
+    "total_return_pct": -0.000538295939011002,
+    "buy_hold_return_pct": 0.1171198729018843,
+    "alpha_pct": -0.1176581688408953
+  },
+  {
+    "symbol": "TMUS",
+    "classification": "strong",
+    "initial_capital": 100000.0,
+    "final_equity": 99189.31381140623,
+    "profit_dollars": -810.6861885937687,
+    "total_return_pct": -0.008106861885937677,
+    "buy_hold_return_pct": -0.004517398924160143,
+    "alpha_pct": -0.003589462961777534
+  },
+  {
+    "symbol": "WMT",
+    "classification": "strong",
+    "initial_capital": 100000.0,
+    "final_equity": 98992.91295711938,
+    "profit_dollars": -1007.0870428806229,
+    "total_return_pct": -0.010070870428806278,
+    "buy_hold_return_pct": 0.067455035668331,
+    "alpha_pct": -0.07752590609713728
+  },
+  {
+    "symbol": "MO",
+    "classification": "strong",
+    "initial_capital": 100000.0,
+    "final_equity": 98785.795418444,
+    "profit_dollars": -1214.2045815559977,
+    "total_return_pct": -0.012142045815559999,
+    "buy_hold_return_pct": 0.10105702501451153,
+    "alpha_pct": -0.11319907083007152
+  },
+  {
+    "symbol": "COST",
+    "classification": "strong",
+    "initial_capital": 100000.0,
+    "final_equity": 96970.57416651395,
+    "profit_dollars": -3029.4258334860497,
+    "total_return_pct": -0.030294258334860547,
+    "buy_hold_return_pct": -0.015435830975506826,
+    "alpha_pct": -0.01485842735935372
+  },
+  {
+    "symbol": "PM",
+    "classification": "strong",
+    "initial_capital": 100000.0,
+    "final_equity": 96950.27167017812,
+    "profit_dollars": -3049.7283298218827,
+    "total_return_pct": -0.03049728329821888,
+    "buy_hold_return_pct": 0.008298978765260756,
+    "alpha_pct": -0.038796262063479636
+  },
+  {
+    "symbol": "V",
+    "classification": "strong",
+    "initial_capital": 100000.0,
+    "final_equity": 96402.84164552113,
+    "profit_dollars": -3597.1583544788737,
+    "total_return_pct": -0.03597158354478869,
+    "buy_hold_return_pct": -0.014923951581020334,
+    "alpha_pct": -0.021047631963768354
+  },
+  {
+    "symbol": "WFC",
+    "classification": "default",
+    "initial_capital": 100000.0,
+    "final_equity": 96261.04070467544,
+    "profit_dollars": -3738.959295324559,
+    "total_return_pct": -0.03738959295324562,
+    "buy_hold_return_pct": 0.09646223888389871,
+    "alpha_pct": -0.13385183183714433
+  },
+  {
+    "symbol": "MA",
+    "classification": "default",
+    "initial_capital": 100000.0,
+    "final_equity": 93919.287653321,
+    "profit_dollars": -6080.712346679007,
+    "total_return_pct": -0.06080712346679007,
+    "buy_hold_return_pct": 0.05207748669370038,
+    "alpha_pct": -0.11288461016049045
+  },
+  {
+    "symbol": "T",
+    "classification": "strong",
+    "initial_capital": 100000.0,
+    "final_equity": 92952.24541576026,
+    "profit_dollars": -7047.754584239738,
+    "total_return_pct": -0.0704775458423974,
+    "buy_hold_return_pct": 0.026070128186917785,
+    "alpha_pct": -0.09654767402931519
+  }
+]

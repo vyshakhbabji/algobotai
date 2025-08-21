@@ -1,0 +1,24 @@
+{
+  "timestamp": "20250820_220959",
+  "trade_date": "2025-08-19",
+  "executed": true,
+  "sells": [],
+  "buys": [
+    {
+      "symbol": "UBER",
+      "qty": 263.0,
+      "side": "buy"
+    },
+    {
+      "symbol": "CRM",
+      "qty": 69.0,
+      "side": "buy"
+    }
+  ],
+  "meta": {
+    "placed": [
+      [
+        "UBER",
+        "buy",
+        263.0,
+        

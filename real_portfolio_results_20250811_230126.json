@@ -1,0 +1,335 @@
+{
+  "starting_capital": 100000,
+  "final_value": 104526.38252900608,
+  "total_return": 4.526382529006077,
+  "buy_hold_value": 107623.47920695889,
+  "buy_hold_return": 7.623479206958887,
+  "outperformance": -3.09709667795281,
+  "num_trades": 7,
+  "trades": [
+    {
+      "date": "2025-06-26 00:00:00",
+      "symbol": "NVDA",
+      "action": "BUY",
+      "shares": 62.95554211866885,
+      "price": 155.02000427246094,
+      "value": 9759.36840821114,
+      "position_size": 0.09759368408211139,
+      "signal_strength": 0.5,
+      "reason": "Strong buy signal (0.50)"
+    },
+    {
+      "date": "2025-06-26 00:00:00",
+      "symbol": "AVGO",
+      "action": "BUY",
+      "shares": 36.159503872614756,
+      "price": 270.1700134277344,
+      "value": 9769.213646804543,
+      "position_size": 0.09769213646804542,
+      "signal_strength": 0.5,
+      "reason": "Strong buy signal (0.50)"
+    },
+    {
+      "date": "2025-06-26 00:00:00",
+      "symbol": "AMD",
+      "action": "BUY",
+      "shares": 65.03809623496909,
+      "price": 143.67999267578125,
+      "value": 9344.673190687115,
+      "position_size": 0.09344673190687115,
+      "signal_strength": 0.5,
+      "reason": "Strong buy signal (0.50)"
+    },
+    {
+      "date": "2025-06-26 00:00:00",
+      "symbol": "INTC",
+      "action": "BUY",
+      "shares": 428.88206703958036,
+      "price": 22.5,
+      "value": 9649.846508390558,
+      "position_size": 0.09649846508390557,
+      "signal_strength": 0.49969060561788475,
+      "reason": "Strong buy signal (0.50)"
+    },
+    {
+      "date": "2025-06-26 00:00:00",
+      "symbol": "LRCX",
+      "action": "BUY",
+      "shares": 97.28594643522916,
+      "price": 96.83999633789062,
+      "value": 9421.170696515816,
+      "position_size": 0.09421170696515815,
+      "signal_strength": 0.46461681332119353,
+      "reason": "Strong buy signal (0.46)"
+    },
+    {
+      "date": "2025-07-28 00:00:00",
+      "symbol": "INTC",
+      "action": "SELL",
+      "shares": 428.88206703958036,
+      "price": 20.68000030517578,
+      "value": 8869.281277262942,
+      "profit": -780.5652311276153,
+      "profit_pct": -8.088887532552073,
+      "reason": "Stop loss triggered"
+    },
+    {
+      "date": "2025-07-31 00:00:00",
+      "symbol": "META",
+      "action": "BUY",
+      "shares": 15.21583718825817,
+      "price": 773.4400024414062,
+      "value": 11768.53715203444,
+      "position_size": 0.11377556203299645,
+      "signal_strength": 0.65,
+      "reason": "Strong buy signal (0.65)"
+    }
+  ],
+  "daily_values": [
+    {
+      "date": "2025-06-26 00:00:00",
+      "total_value": 100000,
+      "cash": 52055.72754939082,
+      "positions_value": 47944.27245060918,
+      "num_positions": 5
+    },
+    {
+      "date": "2025-06-27 00:00:00",
+      "total_value": 100267.18339495313,
+      "cash": 52055.72754939082,
+      "positions_value": 48211.45584556231,
+      "num_positions": 5
+    },
+    {
+      "date": "2025-06-30 00:00:00",
+      "total_value": 100275.11828292617,
+      "cash": 52055.72754939082,
+      "positions_value": 48219.39073353535,
+      "num_positions": 5
+    },
+    {
+      "date": "2025-07-01 00:00:00",
+      "total_value": 99350.2220010014,
+      "cash": 52055.72754939082,
+      "positions_value": 47294.49445161058,
+      "num_positions": 5
+    },
+    {
+      "date": "2025-07-02 00:00:00",
+      "total_value": 99722.72332163423,
+      "cash": 52055.72754939082,
+      "positions_value": 47666.99577224341,
+      "num_positions": 5
+    },
+    {
+      "date": "2025-07-03 00:00:00",
+      "total_value": 100265.22122010397,
+      "cash": 52055.72754939082,
+      "positions_value": 48209.49367071315,
+      "num_positions": 5
+    },
+    {
+      "date": "2025-07-07 00:00:00",
+      "total_value": 99682.20915662737,
+      "cash": 52055.72754939082,
+      "positions_value": 47626.48160723656,
+      "num_positions": 5
+    },
+    {
+      "date": "2025-07-08 00:00:00",
+      "total_value": 100749.70213668175,
+      "cash": 52055.72754939082,
+      "positions_value": 48693.97458729093,
+      "num_positions": 5
+    },
+    {
+      "date": "2025-07-09 00:00:00",
+      "total_value": 101123.68155727915,
+      "cash": 52055.72754939082,
+      "positions_value": 49067.95400788834,
+      "num_positions": 5
+    },
+    {
+      "date": "2025-07-10 00:00:00",
+      "total_value": 101768.63994777041,
+      "cash": 52055.72754939082,
+      "positions_value": 49712.912398379594,
+      "num_positions": 5
+    },
+    {
+      "date": "2025-07-11 00:00:00",
+      "total_value": 101828.28484015072,
+      "cash": 52055.72754939082,
+      "positions_value": 49772.557290759905,
+      "num_positions": 5
+    },
+    {
+      "date": "2025-07-14 00:00:00",
+      "total_value": 101546.15293045304,
+      "cash": 52055.72754939082,
+      "positions_value": 49490.425381062225,
+      "num_positions": 5
+    },
+    {
+      "date": "2025-07-15 00:00:00",
+      "total_value": 102744.13528378216,
+      "cash": 52055.72754939082,
+      "positions_value": 50688.407734391345,
+      "num_positions": 5
+    },
+    {
+      "date": "2025-07-16 00:00:00",
+      "total_value": 102905.59229452166,
+      "cash": 52055.72754939082,
+      "positions_value": 50849.86474513084,
+      "num_positions": 5
+    },
+    {
+      "date": "2025-07-17 00:00:00",
+      "total_value": 103321.64934842532,
+      "cash": 52055.72754939082,
+      "positions_value": 51265.9217990345,
+      "num_positions": 5
+    },
+    {
+      "date": "2025-07-18 00:00:00",
+      "total_value": 103065.6372133217,
+      "cash": 52055.72754939082,
+      "positions_value": 51009.90966393088,
+      "num_positions": 5
+    },
+    {
+      "date": "2025-07-21 00:00:00",
+      "total_value": 103351.22903612367,
+      "cash": 52055.72754939082,
+      "positions_value": 51295.50148673285,
+      "num_positions": 5
+    },
+    {
+      "date": "2025-07-22 00:00:00",
+      "total_value": 102178.64553754895,
+      "cash": 52055.72754939082,
+      "positions_value": 50122.91798815813,
+      "num_positions": 5
+    },
+    {
+      "date": "2025-07-23 00:00:00",
+      "total_value": 102904.56317519658,
+      "cash": 52055.72754939082,
+      "positions_value": 50848.83562580577,
+      "num_positions": 5
+    },
+    {
+      "date": "2025-07-24 00:00:00",
+      "total_value": 103195.43022189329,
+      "cash": 52055.72754939082,
+      "positions_value": 51139.70267250247,
+      "num_positions": 5
+    },
+    {
+      "date": "2025-07-25 00:00:00",
+      "total_value": 102608.87502774486,
+      "cash": 52055.72754939082,
+      "positions_value": 50553.14747835404,
+      "num_positions": 5
+    },
+    {
+      "date": "2025-07-28 00:00:00",
+      "total_value": 103582.9987794263,
+      "cash": 60925.00882665376,
+      "positions_value": 42657.98995277254,
+      "num_positions": 4
+    },
+    {
+      "date": "2025-07-29 00:00:00",
+      "total_value": 103894.72753794292,
+      "cash": 60925.00882665376,
+      "positions_value": 42969.71871128916,
+      "num_positions": 4
+    },
+    {
+      "date": "2025-07-30 00:00:00",
+      "total_value": 104468.69039048266,
+      "cash": 60925.00882665376,
+      "positions_value": 43543.681563828904,
+      "num_positions": 4
+    },
+    {
+      "date": "2025-07-31 00:00:00",
+      "total_value": 103436.42291673677,
+      "cash": 49156.471674619315,
+      "positions_value": 54279.95124211746,
+      "num_positions": 5
+    },
+    {
+      "date": "2025-08-01 00:00:00",
+      "total_value": 102484.70630418445,
+      "cash": 49156.471674619315,
+      "positions_value": 53328.23462956514,
+      "num_positions": 5
+    },
+    {
+      "date": "2025-08-04 00:00:00",
+      "total_value": 104138.34115461483,
+      "cash": 49156.471674619315,
+      "positions_value": 54981.86947999551,
+      "num_positions": 5
+    },
+    {
+      "date": "2025-08-05 00:00:00",
+      "total_value": 103330.20859249329,
+      "cash": 49156.471674619315,
+      "positions_value": 54173.736917873975,
+      "num_positions": 5
+    },
+    {
+      "date": "2025-08-06 00:00:00",
+      "total_value": 103049.29482622874,
+      "cash": 49156.471674619315,
+      "positions_value": 53892.823151609424,
+      "num_positions": 5
+    },
+    {
+      "date": "2025-08-07 00:00:00",
+      "total_value": 103971.10717846599,
+      "cash": 49156.471674619315,
+      "positions_value": 54814.63550384667,
+      "num_positions": 5
+    },
+    {
+      "date": "2025-08-08 00:00:00",
+      "total_value": 104526.38252900608,
+      "cash": 49156.471674619315,
+      "positions_value": 55369.91085438676,
+      "num_positions": 5
+    }
+  ],
+  "final_positions": {
+    "NVDA": {
+      "shares": 62.95554211866885,
+      "avg_cost": 155.02000427246094,
+      "current_value": 11501.977352955731
+    },
+    "AVGO": {
+      "shares": 36.159503872614756,
+      "avg_cost": 270.1700134277344,
+      "current_value": 11027.563940171342
+    },
+    "AMD": {
+      "shares": 65.03809623496909,
+      "avg_cost": 143.67999267578125,
+      "current_value": 11235.981148288327
+    },
+    "LRCX": {
+      "shares": 97.28594643522916,
+      "avg_cost": 96.83999633789062,
+      "current_value": 9898.845049784568
+    },
+    "META": {
+      "shares": 15.21583718825817,
+      "avg_cost": 773.4400024414062,
+      "current_value": 11705.54336318681
+    }
+  },
+  "final_cash": 49156.471674619315
+}

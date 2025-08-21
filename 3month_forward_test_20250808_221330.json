@@ -1,0 +1,299 @@
+{
+  "test_config": {
+    "stocks": [
+      "NVDA",
+      "AAPL",
+      "GOOGL",
+      "MSFT",
+      "AMZN",
+      "TSLA",
+      "META",
+      "NFLX",
+      "CRM",
+      "UBER",
+      "JPM",
+      "WMT",
+      "JNJ",
+      "PG",
+      "KO",
+      "PLTR",
+      "COIN",
+      "SNOW",
+      "AMD",
+      "INTC",
+      "XOM",
+      "CVX",
+      "CAT",
+      "BA",
+      "GE"
+    ],
+    "parameters": {
+      "momentum_6m_threshold": 0.15,
+      "momentum_3m_threshold": 0.08,
+      "momentum_1m_threshold": 0.03,
+      "rsi_max": 75,
+      "rsi_min": 30,
+      "volume_multiplier": 1.2,
+      "volatility_max": 0.4
+    },
+    "initial_capital": 100000,
+    "max_positions": 5,
+    "position_size": 0.18
+  },
+  "trade_log": [],
+  "daily_decisions": [
+    {
+      "date": "2024-04-01",
+      "actions": []
+    },
+    {
+      "date": "2024-04-02",
+      "actions": []
+    },
+    {
+      "date": "2024-04-03",
+      "actions": []
+    },
+    {
+      "date": "2024-04-04",
+      "actions": []
+    },
+    {
+      "date": "2024-04-05",
+      "actions": []
+    },
+    {
+      "date": "2024-04-08",
+      "actions": []
+    },
+    {
+      "date": "2024-04-09",
+      "actions": []
+    },
+    {
+      "date": "2024-04-10",
+      "actions": []
+    },
+    {
+      "date": "2024-04-11",
+      "actions": []
+    },
+    {
+      "date": "2024-04-12",
+      "actions": []
+    },
+    {
+      "date": "2024-04-15",
+      "actions": []
+    },
+    {
+      "date": "2024-04-16",
+      "actions": []
+    },
+    {
+      "date": "2024-04-17",
+      "actions": []
+    },
+    {
+      "date": "2024-04-18",
+      "actions": []
+    },
+    {
+      "date": "2024-04-19",
+      "actions": []
+    },
+    {
+      "date": "2024-04-22",
+      "actions": []
+    },
+    {
+      "date": "2024-04-23",
+      "actions": []
+    },
+    {
+      "date": "2024-04-24",
+      "actions": []
+    },
+    {
+      "date": "2024-04-25",
+      "actions": []
+    },
+    {
+      "date": "2024-04-26",
+      "actions": []
+    },
+    {
+      "date": "2024-04-29",
+      "actions": []
+    },
+    {
+      "date": "2024-04-30",
+      "actions": []
+    },
+    {
+      "date": "2024-05-01",
+      "actions": []
+    },
+    {
+      "date": "2024-05-02",
+      "actions": []
+    },
+    {
+      "date": "2024-05-03",
+      "actions": []
+    },
+    {
+      "date": "2024-05-06",
+      "actions": []
+    },
+    {
+      "date": "2024-05-07",
+      "actions": []
+    },
+    {
+      "date": "2024-05-08",
+      "actions": []
+    },
+    {
+      "date": "2024-05-09",
+      "actions": []
+    },
+    {
+      "date": "2024-05-10",
+      "actions": []
+    },
+    {
+      "date": "2024-05-13",
+      "actions": []
+    },
+    {
+      "date": "2024-05-14",
+      "actions": []
+    },
+    {
+      "date": "2024-05-15",
+      "actions": []
+    },
+    {
+      "date": "2024-05-16",
+      "actions": []
+    },
+    {
+      "date": "2024-05-17",
+      "actions": []
+    },
+    {
+      "date": "2024-05-20",
+      "actions": []
+    },
+    {
+      "date": "2024-05-21",
+      "actions": []
+    },
+    {
+      "date": "2024-05-22",
+      "actions": []
+    },
+    {
+      "date": "2024-05-23",
+      "actions": []
+    },
+    {
+      "date": "2024-05-24",
+      "actions": []
+    },
+    {
+      "date": "2024-05-28",
+      "actions": []
+    },
+    {
+      "date": "2024-05-29",
+      "actions": []
+    },
+    {
+      "date": "2024-05-30",
+      "actions": []
+    },
+    {
+      "date": "2024-05-31",
+      "actions": []
+    },
+    {
+      "date": "2024-06-03",
+      "actions": []
+    },
+    {
+      "date": "2024-06-04",
+      "actions": []
+    },
+    {
+      "date": "2024-06-05",
+      "actions": []
+    },
+    {
+      "date": "2024-06-06",
+      "actions": []
+    },
+    {
+      "date": "2024-06-07",
+      "actions": []
+    },
+    {
+      "date": "2024-06-10",
+      "actions": []
+    },
+    {
+      "date": "2024-06-11",
+      "actions": []
+    },
+    {
+      "date": "2024-06-12",
+      "actions": []
+    },
+    {
+      "date": "2024-06-13",
+      "actions": []
+    },
+    {
+      "date": "2024-06-14",
+      "actions": []
+    },
+    {
+      "date": "2024-06-17",
+      "actions": []
+    },
+    {
+      "date": "2024-06-18",
+      "actions": []
+    },
+    {
+      "date": "2024-06-20",
+      "actions": []
+    },
+    {
+      "date": "2024-06-21",
+      "actions": []
+    },
+    {
+      "date": "2024-06-24",
+      "actions": []
+    },
+    {
+      "date": "2024-06-25",
+      "actions": []
+    },
+    {
+      "date": "2024-06-26",
+      "actions": []
+    },
+    {
+      "date": "2024-06-27",
+      "actions": []
+    },
+    {
+      "date": "2024-06-28",
+      "actions": []
+    }
+  ],
+  "portfolio_history": []
+}

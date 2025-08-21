@@ -1,0 +1,15 @@
+{
+  "initial_capital": 100000.0,
+  "final_equity": 98555.91330652322,
+  "strategy_return_pct": -0.01444086693476787,
+  "buy_hold_return_pct": 0.6063296720725353,
+  "alpha_vs_buy_hold_pct": -0.6207705390073032,
+  "max_drawdown": -0.03322386731485738,
+  "sharpe": -0.6858205394584377,
+  "num_trades": 4,
+  "auc_train": 0.9998998297105078,
+  "train_start": "2024-01-01",
+  "train_end": "2025-04-30",
+  "forward_start": "2025-05-01",
+  "forward_end": "2025-07-31"
+}

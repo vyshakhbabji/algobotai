@@ -1,0 +1,16 @@
+{
+  "date": "2025-08-13 21:02",
+  "capital": 10000,
+  "strategy": "Simple Momentum",
+  "recommendations": [],
+  "total_invested": 0,
+  "cash_remaining": 10000,
+  "back_test_30d_return": "0.00%",
+  "instructions": [
+    "1. Buy the recommended stocks",
+    "2. Set stop losses at -8%",
+    "3. Take profits at +15%",
+    "4. Review and rebalance monthly",
+    "5. Start with paper trading first!"
+  ]
+}

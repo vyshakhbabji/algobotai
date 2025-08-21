@@ -1,0 +1,40 @@
+{
+  "test_period": "2024-05-13 to 2024-08-13",
+  "capital": 10000,
+  "nvda_single_strategy": {
+    "initial_capital": 100000.0,
+    "final_equity": 100000.0,
+    "return_pct": 0.0,
+    "max_drawdown": 0.0,
+    "num_trades": 0,
+    "sharpe": 0.0,
+    "sortino": NaN,
+    "turnover": 0.0,
+    "round_trips": 0,
+    "win_rate": NaN,
+    "avg_holding_days": NaN,
+    "profit_factor": NaN
+  },
+  "cross_sectional_strategy": {
+    "initial_capital": 100000.0,
+    "final_equity": 100000.0,
+    "return_pct": 0.0,
+    "max_drawdown": 0.0,
+    "num_trades": 0,
+    "sharpe": 0.0,
+    "sortino": NaN,
+    "turnover": 0.0,
+    "round_trips": 0,
+    "win_rate": NaN,
+    "avg_holding_days": NaN,
+    "profit_factor": NaN
+  },
+  "nvda_buy_hold": {
+    "total_return": 0.20608586766213574,
+    "final_value": 12060.858676621358,
+    "start_price": 90.36302947998047,
+    "end_price": 108.9855728149414,
+    "shares_bought": 110.66472712953316,
+    "strategy": "Buy and Hold"
+  }
+}

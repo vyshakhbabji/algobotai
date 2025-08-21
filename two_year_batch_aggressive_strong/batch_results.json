@@ -1,0 +1,1089 @@
+{
+  "scan": {
+    "strong_cut": 0.33312683851896335,
+    "skip_cut": -0.09969936126264847,
+    "ranked": [
+      [
+        "NFLX",
+        0.7937052282750116
+      ],
+      [
+        "PM",
+        0.7656731828788148
+      ],
+      [
+        "T",
+        0.7301501399309303
+      ],
+      [
+        "BK",
+        0.5896841095275169
+      ],
+      [
+        "WMT",
+        0.5891138586817297
+      ],
+      [
+        "IBM",
+        0.5563938535593955
+      ],
+      [
+        "TMUS",
+        0.541578275025173
+      ],
+      [
+        "MO",
+        0.530444659337705
+      ],
+      [
+        "COST",
+        0.4882370806634843
+      ],
+      [
+        "GE",
+        0.48589990640057473
+      ],
+      [
+        "AVGO",
+        0.4684870060401958
+      ],
+      [
+        "MMM",
+        0.4140401970530205
+      ],
+      [
+        "JPM",
+        0.41086849137421855
+      ],
+      [
+        "V",
+        0.3872303146349387
+      ],
+      [
+        "BKNG",
+        0.3826004379991546
+      ],
+      [
+        "COF",
+        0.35187328695054226
+      ],
+      [
+        "GILD",
+        0.3502622858750699
+      ],
+      [
+        "MA",
+        0.3473922211466473
+      ],
+      [
+        "WFC",
+        0.33963882701385645
+      ],
+      [
+        "RTX",
+        0.3383501804590118
+      ],
+      [
+        "GS",
+        0.33312683851896335
+      ]
+    ],
+    "aggressive_ranked": [
+      [
+        "PM",
+        0.3840933845340358
+      ],
+      [
+        "NFLX",
+        0.3801591931030451
+      ],
+      [
+        "T",
+        0.35694704481277517
+      ],
+      [
+        "GE",
+        0.3165922704920887
+      ],
+      [
+        "BK",
+        0.3110761536393521
+      ],
+      [
+        "MO",
+        0.29880645054715604
+      ],
+      [
+        "WMT",
+        0.27363834404159193
+      ],
+      [
+        "COST",
+        0.26896163658759875
+      ],
+      [
+        "IBM",
+        0.25907298400465917
+      ],
+      [
+        "TMUS",
+        0.22895479559198845
+      ],
+      [
+        "BKNG",
+        0.21847957932804207
+      ],
+      [
+        "MA",
+        0.2116357404259581
+      ],
+      [
+        "JPM",
+        0.2035530612759042
+      ],
+      [
+        "V",
+        0.20271214770216175
+      ],
+      [
+        "DUK",
+        0.1931390410864145
+      ],
+      [
+        "VZ",
+        0.1928035166319435
+      ],
+      [
+        "SO",
+        0.19262504805544398
+      ],
+      [
+        "WFC",
+        0.18598225308935099
+      ],
+      [
+        "AVGO",
+        0.184286791827431
+      ],
+      [
+        "MSFT",
+        0.18361113201620827
+      ],
+      [
+        "C",
+        0.18014802150976597
+      ],
+      [
+        "AXP",
+        0.17605250291702756
+      ],
+      [
+        "GS",
+        0.1660486209408743
+      ],
+      [
+        "AIG",
+        0.16394414655808456
+      ],
+      [
+        "COF",
+        0.16358117733114766
+      ],
+      [
+        "RTX",
+        0.16229876718923494
+      ],
+      [
+        "ABT",
+        0.1554614283905046
+      ],
+      [
+        "KO",
+        0.15306769123201697
+      ],
+      [
+        "NVDA",
+        0.15127285480351685
+      ],
+      [
+        "MMM",
+        0.14721917910814117
+      ],
+      [
+        "SPG",
+        0.14514716083115992
+      ],
+      [
+        "BAC",
+        0.12902610735373443
+      ],
+      [
+        "AMT",
+        0.12848079093188658
+      ],
+      [
+        "MS",
+        0.12058344733916568
+      ],
+      [
+        "META",
+        0.11990691572102852
+      ],
+      [
+        "CL",
+        0.11921889050300104
+      ],
+      [
+        "BLK",
+        0.11863144676177928
+      ],
+      [
+        "GD",
+        0.1076907926309941
+      ],
+      [
+        "ABBV",
+        0.10748706160409169
+      ],
+      [
+        "HON",
+        0.10556817135181551
+      ],
+      [
+        "EXC",
+        0.1050170543135225
+      ],
+      [
+        "LIN",
+        0.0999446860702362
+      ],
+      [
+        "DIS",
+        0.09681917896523329
+      ],
+      [
+        "DE",
+        0.09615583014578996
+      ],
+      [
+        "CHTR",
+        0.08830340144769655
+      ],
+      [
+        "MCD",
+        0.08690133982198509
+      ],
+      [
+        "MET",
+        0.08376730590413582
+      ],
+      [
+        "GILD",
+        0.06528674403107002
+      ],
+      [
+        "CSCO",
+        0.0627297021299075
+      ],
+      [
+        "EMR",
+        0.06018352188890612
+      ],
+      [
+        "ORCL",
+        0.05909502662887512
+      ],
+      [
+        "LMT",
+        0.05743491618995933
+      ],
+      [
+        "CRM",
+        0.05323346914375793
+      ],
+      [
+        "F",
+        0.05219422474626503
+      ],
+      [
+        "LLY",
+        0.05143428144712063
+      ],
+      [
+        "USB",
+        0.04853720334528705
+      ],
+      [
+        "CAT",
+        0.04694797712237864
+      ],
+      [
+        "AMZN",
+        0.0410984864299047
+      ],
+      [
+        "HD",
+        0.03987881075551046
+      ],
+      [
+        "PYPL",
+        0.03962968186361727
+      ],
+      [
+        "CVS",
+        0.03473431070377706
+      ],
+      [
+        "BA",
+        0.02862809579403909
+      ],
+      [
+        "QCOM",
+        0.019718427312175622
+      ],
+      [
+        "MDLZ",
+        0.018371641117034695
+      ],
+      [
+        "NEE",
+        0.01482598288737056
+      ],
+      [
+        "PG",
+        0.012625075365060934
+      ],
+      [
+        "MDT",
+        0.001638865026119235
+      ],
+      [
+        "XOM",
+        -0.0027976924387595054
+      ],
+      [
+        "JNJ",
+        -0.010007476775520106
+      ],
+      [
+        "GOOGL",
+        -0.013593313661596843
+      ],
+      [
+        "GOOG",
+        -0.013685050241237375
+      ],
+      [
+        "TSLA",
+        -0.015410258085932216
+      ],
+      [
+        "AAPL",
+        -0.016613376506507772
+      ],
+      [
+        "AMGN",
+        -0.01698626025942183
+      ],
+      [
+        "LOW",
+        -0.018012088233259727
+      ],
+      [
+        "TXN",
+        -0.02733768303824233
+      ],
+      [
+        "AMD",
+        -0.03310976943115675
+      ],
+      [
+        "ACN",
+        -0.03705561127768149
+      ],
+      [
+        "DD",
+        -0.04782946282379714
+      ],
+      [
+        "APD",
+        -0.048424536041499835
+      ],
+      [
+        "UNP",
+        -0.04869159784033941
+      ],
+      [
+        "KHC",
+        -0.06266683165955775
+      ],
+      [
+        "DHR",
+        -0.0740954267135581
+      ],
+      [
+        "FDX",
+        -0.08689132188669893
+      ],
+      [
+        "INTC",
+        -0.0909477151628238
+      ],
+      [
+        "CVX",
+        -0.09356408667590047
+      ],
+      [
+        "ADBE",
+        -0.10011103616493437
+      ],
+      [
+        "CMCSA",
+        -0.10335198972830932
+      ],
+      [
+        "COP",
+        -0.12118268752868691
+      ],
+      [
+        "TGT",
+        -0.14074205185406136
+      ],
+      [
+        "SBUX",
+        -0.14554650746097314
+      ],
+      [
+        "PFE",
+        -0.1626459396306991
+      ],
+      [
+        "BMY",
+        -0.1735934456443811
+      ],
+      [
+        "MRK",
+        -0.1820520639789483
+      ],
+      [
+        "NKE",
+        -0.20640239218039544
+      ],
+      [
+        "PEP",
+        -0.20766955891452016
+      ],
+      [
+        "SLB",
+        -0.2193683508840751
+      ],
+      [
+        "UPS",
+        -0.2227372000282744
+      ],
+      [
+        "TMO",
+        -0.2269296537254683
+      ],
+      [
+        "DOW",
+        -0.2591526336818903
+      ],
+      [
+        "UNH",
+        -0.29966458768939386
+      ]
+    ],
+    "classifications": {
+      "AAPL": "default",
+      "ABBV": "default",
+      "ABT": "default",
+      "ACN": "default",
+      "ADBE": "skip",
+      "AIG": "default",
+      "AMD": "skip",
+      "AMGN": "default",
+      "AMT": "default",
+      "AMZN": "default",
+      "APD": "default",
+      "AVGO": "strong",
+      "AXP": "default",
+      "BA": "default",
+      "BAC": "default",
+      "BK": "strong",
+      "BKNG": "strong",
+      "BLK": "default",
+      "BMY": "default",
+      "C": "default",
+      "CAT": "default",
+      "CHTR": "default",
+      "CL": "default",
+      "CMCSA": "skip",
+      "COF": "strong",
+      "COP": "skip",
+      "COST": "strong",
+      "CRM": "default",
+      "CSCO": "default",
+      "CVS": "default",
+      "CVX": "skip",
+      "DD": "skip",
+      "DE": "default",
+      "DHR": "skip",
+      "DIS": "default",
+      "DOW": "skip",
+      "DUK": "default",
+      "EMR": "default",
+      "EXC": "default",
+      "F": "default",
+      "FDX": "skip",
+      "GD": "default",
+      "GE": "strong",
+      "GILD": "strong",
+      "GOOG": "default",
+      "GOOGL": "default",
+      "GS": "strong",
+      "HD": "default",
+      "HON": "default",
+      "IBM": "strong",
+      "INTC": "skip",
+      "JNJ": "default",
+      "JPM": "strong",
+      "KHC": "skip",
+      "KO": "default",
+      "LIN": "default",
+      "LLY": "default",
+      "LMT": "default",
+      "LOW": "default",
+      "MA": "strong",
+      "MCD": "default",
+      "MDLZ": "default",
+      "MDT": "default",
+      "MET": "default",
+      "META": "default",
+      "MMM": "strong",
+      "MO": "strong",
+      "MRK": "skip",
+      "MS": "default",
+      "MSFT": "default",
+      "NEE": "default",
+      "NFLX": "strong",
+      "NKE": "skip",
+      "NVDA": "default",
+      "ORCL": "default",
+      "PEP": "skip",
+      "PFE": "skip",
+      "PG": "default",
+      "PM": "strong",
+      "PYPL": "default",
+      "QCOM": "default",
+      "RTX": "strong",
+      "SBUX": "default",
+      "SLB": "skip",
+      "SO": "default",
+      "SPG": "default",
+      "T": "strong",
+      "TGT": "skip",
+      "TMO": "skip",
+      "TMUS": "strong",
+      "TSLA": "default",
+      "TXN": "default",
+      "UNH": "skip",
+      "UNP": "default",
+      "UPS": "skip",
+      "USB": "default",
+      "V": "strong",
+      "VZ": "default",
+      "WFC": "strong",
+      "WMT": "strong",
+      "XOM": "default"
+    },
+    "selection_strategy": "aggressive_direct_strong_first"
+  },
+  "runs": {
+    "PM": {
+      "return_pct": -0.03307181430345907,
+      "capture": -3.1865293387222207,
+      "class": "strong",
+      "buy_hold_ret": 0.010378631667242288,
+      "buy_hold_return_pct": 0.010378631667242288,
+      "alpha_pct": -0.04345044597070136,
+      "exposure_avg": 0.653713998104923,
+      "pct_days_in_market": 0.7619047619047619,
+      "alpha_dollars": -4345.044597070139,
+      "total_return_pct": -0.03307181430345907,
+      "captured_buy_hold_ratio": -3.1865293387222207,
+      "alpha_vs_buy_hold_pct": -0.04345044597070136,
+      "avg_exposure_fraction": 0.653713998104923
+    },
+    "T": {
+      "return_pct": -0.03307181430345907,
+      "capture": -3.1865293387222207,
+      "class": "strong",
+      "buy_hold_ret": 0.010378631667242288,
+      "buy_hold_return_pct": 0.010378631667242288,
+      "alpha_pct": -0.04345044597070136,
+      "exposure_avg": 0.653713998104923,
+      "pct_days_in_market": 0.7619047619047619,
+      "alpha_dollars": -4345.044597070139,
+      "total_return_pct": -0.03307181430345907,
+      "captured_buy_hold_ratio": -3.1865293387222207,
+      "alpha_vs_buy_hold_pct": -0.04345044597070136,
+      "avg_exposure_fraction": 0.653713998104923
+    },
+    "NFLX": {
+      "return_pct": -0.03307181430345907,
+      "capture": -3.1865293387222207,
+      "class": "strong",
+      "buy_hold_ret": 0.010378631667242288,
+      "buy_hold_return_pct": 0.010378631667242288,
+      "alpha_pct": -0.04345044597070136,
+      "exposure_avg": 0.653713998104923,
+      "pct_days_in_market": 0.7619047619047619,
+      "alpha_dollars": -4345.044597070139,
+      "total_return_pct": -0.03307181430345907,
+      "captured_buy_hold_ratio": -3.1865293387222207,
+      "alpha_vs_buy_hold_pct": -0.04345044597070136,
+      "avg_exposure_fraction": 0.653713998104923
+    },
+    "GE": {
+      "return_pct": -0.03307181430345907,
+      "capture": -3.1865293387222207,
+      "class": "strong",
+      "buy_hold_ret": 0.010378631667242288,
+      "buy_hold_return_pct": 0.010378631667242288,
+      "alpha_pct": -0.04345044597070136,
+      "exposure_avg": 0.653713998104923,
+      "pct_days_in_market": 0.7619047619047619,
+      "alpha_dollars": -4345.044597070139,
+      "total_return_pct": -0.03307181430345907,
+      "captured_buy_hold_ratio": -3.1865293387222207,
+      "alpha_vs_buy_hold_pct": -0.04345044597070136,
+      "avg_exposure_fraction": 0.653713998104923
+    },
+    "BK": {
+      "return_pct": -0.013827658794118514,
+      "capture": -0.1399082307386074,
+      "class": "strong",
+      "buy_hold_ret": 0.09883377640557067,
+      "buy_hold_return_pct": 0.09883377640557067,
+      "alpha_pct": -0.11266143519968919,
+      "exposure_avg": 0.5445573644370642,
+      "pct_days_in_market": 0.8095238095238095,
+      "alpha_dollars": -11266.143519968915,
+      "total_return_pct": -0.013827658794118514,
+      "captured_buy_hold_ratio": -0.1399082307386074,
+      "alpha_vs_buy_hold_pct": -0.11266143519968919,
+      "avg_exposure_fraction": 0.5445573644370642
+    },
+    "COST": {
+      "return_pct": 0.09155574272252509,
+      "capture": 0.4436435273161667,
+      "class": "strong",
+      "buy_hold_ret": 0.20637231715380588,
+      "buy_hold_return_pct": 0.20637231715380588,
+      "alpha_pct": -0.1148165744312808,
+      "exposure_avg": 0.678684367513015,
+      "pct_days_in_market": 0.7936507936507936,
+      "alpha_dollars": -11481.657443128071,
+      "total_return_pct": 0.09155574272252509,
+      "captured_buy_hold_ratio": 0.4436435273161667,
+      "alpha_vs_buy_hold_pct": -0.1148165744312808,
+      "avg_exposure_fraction": 0.678684367513015
+    },
+    "MO": {
+      "return_pct": -0.013827658794118514,
+      "capture": -0.1399082307386074,
+      "class": "strong",
+      "buy_hold_ret": 0.09883377640557067,
+      "buy_hold_return_pct": 0.09883377640557067,
+      "alpha_pct": -0.11266143519968919,
+      "exposure_avg": 0.5445573644370642,
+      "pct_days_in_market": 0.8095238095238095,
+      "alpha_dollars": -11266.143519968915,
+      "total_return_pct": -0.013827658794118514,
+      "captured_buy_hold_ratio": -0.1399082307386074,
+      "alpha_vs_buy_hold_pct": -0.11266143519968919,
+      "avg_exposure_fraction": 0.5445573644370642
+    },
+    "WMT": {
+      "return_pct": -0.004650234846699464,
+      "capture": -0.06416128145307325,
+      "class": "strong",
+      "buy_hold_ret": 0.07247727510088131,
+      "buy_hold_return_pct": 0.07247727510088131,
+      "alpha_pct": -0.07712750994758077,
+      "exposure_avg": 0.3934961144927368,
+      "pct_days_in_market": 0.8412698412698413,
+      "alpha_dollars": -7712.750994758077,
+      "total_return_pct": -0.004650234846699464,
+      "captured_buy_hold_ratio": -0.06416128145307325,
+      "alpha_vs_buy_hold_pct": -0.07712750994758077,
+      "avg_exposure_fraction": 0.3934961144927368
+    },
+    "TMUS": {
+      "return_pct": -0.010750043591759906,
+      "capture": -1.2636033112729246,
+      "class": "strong",
+      "buy_hold_ret": 0.008507451267226074,
+      "buy_hold_return_pct": 0.008507451267226074,
+      "alpha_pct": -0.01925749485898598,
+      "exposure_avg": 0.0033722575059859775,
+      "pct_days_in_market": 0.015873015873015872,
+      "alpha_dollars": -1925.749485898597,
+      "total_return_pct": -0.010750043591759906,
+      "captured_buy_hold_ratio": -1.2636033112729246,
+      "alpha_vs_buy_hold_pct": -0.01925749485898598,
+      "avg_exposure_fraction": 0.0033722575059859775
+    },
+    "MA": {
+      "return_pct": -0.0706736655621949,
+      "capture": -6.223837391894427,
+      "class": "strong",
+      "buy_hold_ret": 0.011355320056117835,
+      "buy_hold_return_pct": 0.011355320056117835,
+      "alpha_pct": -0.08202898561831273,
+      "exposure_avg": 0.424556002844097,
+      "pct_days_in_market": 0.8253968253968254,
+      "alpha_dollars": -8202.898561831278,
+      "total_return_pct": -0.0706736655621949,
+      "captured_buy_hold_ratio": -6.223837391894427,
+      "alpha_vs_buy_hold_pct": -0.08202898561831273,
+      "avg_exposure_fraction": 0.424556002844097
+    },
+    "BKNG": {
+      "return_pct": -0.0706736655621949,
+      "capture": -6.223837391894427,
+      "class": "strong",
+      "buy_hold_ret": 0.011355320056117835,
+      "buy_hold_return_pct": 0.011355320056117835,
+      "alpha_pct": -0.08202898561831273,
+      "exposure_avg": 0.424556002844097,
+      "pct_days_in_market": 0.8253968253968254,
+      "alpha_dollars": -8202.898561831278,
+      "total_return_pct": -0.0706736655621949,
+      "captured_buy_hold_ratio": -6.223837391894427,
+      "alpha_vs_buy_hold_pct": -0.08202898561831273,
+      "avg_exposure_fraction": 0.424556002844097
+    },
+    "IBM": {
+      "return_pct": 0.02955474118209045,
+      "capture": -1.3917368168766333,
+      "class": "strong",
+      "buy_hold_ret": -0.02123586932795085,
+      "buy_hold_return_pct": -0.02123586932795085,
+      "alpha_pct": 0.0507906105100413,
+      "exposure_avg": 0.6809656178110456,
+      "pct_days_in_market": 0.8253968253968254,
+      "alpha_dollars": 5079.061051004136,
+      "total_return_pct": 0.02955474118209045,
+      "captured_buy_hold_ratio": -1.3917368168766333,
+      "alpha_vs_buy_hold_pct": 0.0507906105100413,
+      "avg_exposure_fraction": 0.6809656178110456
+    },
+    "JPM": {
+      "return_pct": 0.10098294323248291,
+      "capture": 0.6893978298727997,
+      "class": "strong",
+      "buy_hold_ret": 0.14647992618589356,
+      "buy_hold_return_pct": 0.14647992618589356,
+      "alpha_pct": -0.04549698295341065,
+      "exposure_avg": 0.612684754867003,
+      "pct_days_in_market": 0.7142857142857143,
+      "alpha_dollars": -4549.6982953410625,
+      "total_return_pct": 0.10098294323248291,
+      "captured_buy_hold_ratio": 0.6893978298727997,
+      "alpha_vs_buy_hold_pct": -0.04549698295341065,
+      "avg_exposure_fraction": 0.612684754867003
+    },
+    "V": {
+      "return_pct": -0.07032838074968695,
+      "capture": 1.6310828419074286,
+      "class": "strong",
+      "buy_hold_ret": -0.04311760196523384,
+      "buy_hold_return_pct": -0.04311760196523384,
+      "alpha_pct": -0.027210778784453105,
+      "exposure_avg": 0.42240340617056965,
+      "pct_days_in_market": 0.7619047619047619,
+      "alpha_dollars": -2721.077878445307,
+      "total_return_pct": -0.07032838074968695,
+      "captured_buy_hold_ratio": 1.6310828419074286,
+      "alpha_vs_buy_hold_pct": -0.027210778784453105,
+      "avg_exposure_fraction": 0.42240340617056965
+    },
+    "AVGO": {
+      "return_pct": 0.36254034497694865,
+      "capture": 0.7742598259131708,
+      "class": "strong",
+      "buy_hold_ret": 0.4682411935158388,
+      "buy_hold_return_pct": 0.4682411935158388,
+      "alpha_pct": -0.10570084853889017,
+      "exposure_avg": 0.834988462291653,
+      "pct_days_in_market": 0.9841269841269841,
+      "alpha_dollars": -10570.084853889013,
+      "total_return_pct": 0.36254034497694865,
+      "captured_buy_hold_ratio": 0.7742598259131708,
+      "alpha_vs_buy_hold_pct": -0.10570084853889017,
+      "avg_exposure_fraction": 0.834988462291653
+    },
+    "WFC": {
+      "return_pct": -0.07032838074968695,
+      "capture": 1.6310828419074286,
+      "class": "strong",
+      "buy_hold_ret": -0.04311760196523384,
+      "buy_hold_return_pct": -0.04311760196523384,
+      "alpha_pct": -0.027210778784453105,
+      "exposure_avg": 0.42240340617056965,
+      "pct_days_in_market": 0.7619047619047619,
+      "alpha_dollars": -2721.077878445307,
+      "total_return_pct": -0.07032838074968695,
+      "captured_buy_hold_ratio": 1.6310828419074286,
+      "alpha_vs_buy_hold_pct": -0.027210778784453105,
+      "avg_exposure_fraction": 0.42240340617056965
+    },
+    "GS": {
+      "return_pct": 0.18853241013465838,
+      "capture": 0.677694880118699,
+      "class": "strong",
+      "buy_hold_ret": 0.27819659800533936,
+      "buy_hold_return_pct": 0.27819659800533936,
+      "alpha_pct": -0.08966418787068098,
+      "exposure_avg": 0.8108273947276686,
+      "pct_days_in_market": 0.9841269841269841,
+      "alpha_dollars": -8966.418787068094,
+      "total_return_pct": 0.18853241013465838,
+      "captured_buy_hold_ratio": 0.677694880118699,
+      "alpha_vs_buy_hold_pct": -0.08966418787068098,
+      "avg_exposure_fraction": 0.8108273947276686
+    },
+    "COF": {
+      "return_pct": 0.13775651103408326,
+      "capture": 0.656986055362092,
+      "class": "strong",
+      "buy_hold_ret": 0.20967950523418644,
+      "buy_hold_return_pct": 0.20967950523418644,
+      "alpha_pct": -0.07192299420010317,
+      "exposure_avg": 0.7867664443867407,
+      "pct_days_in_market": 0.9841269841269841,
+      "alpha_dollars": -7192.29942001032,
+      "total_return_pct": 0.13775651103408326,
+      "captured_buy_hold_ratio": 0.656986055362092,
+      "alpha_vs_buy_hold_pct": -0.07192299420010317,
+      "avg_exposure_fraction": 0.7867664443867407
+    },
+    "RTX": {
+      "return_pct": 0.13775651103408326,
+      "capture": 0.656986055362092,
+      "class": "strong",
+      "buy_hold_ret": 0.20967950523418644,
+      "buy_hold_return_pct": 0.20967950523418644,
+      "alpha_pct": -0.07192299420010317,
+      "exposure_avg": 0.7867664443867407,
+      "pct_days_in_market": 0.9841269841269841,
+      "alpha_dollars": -7192.29942001032,
+      "total_return_pct": 0.13775651103408326,
+      "captured_buy_hold_ratio": 0.656986055362092,
+      "alpha_vs_buy_hold_pct": -0.07192299420010317,
+      "avg_exposure_fraction": 0.7867664443867407
+    },
+    "MMM": {
+      "return_pct": -0.014304164845839962,
+      "capture": -0.17813354400343756,
+      "class": "strong",
+      "buy_hold_ret": 0.08030023163724809,
+      "buy_hold_return_pct": 0.08030023163724809,
+      "alpha_pct": -0.09460439648308805,
+      "exposure_avg": 0.5784531778403222,
+      "pct_days_in_market": 0.8571428571428571,
+      "alpha_dollars": -9460.439648308808,
+      "total_return_pct": -0.014304164845839962,
+      "captured_buy_hold_ratio": -0.17813354400343756,
+      "alpha_vs_buy_hold_pct": -0.09460439648308805,
+      "avg_exposure_fraction": 0.5784531778403222
+    },
+    "GILD": {
+      "return_pct": 0.058132407086395776,
+      "capture": 0.24129027157800995,
+      "class": "strong",
+      "buy_hold_ret": 0.2409231284221145,
+      "buy_hold_return_pct": 0.2409231284221145,
+      "alpha_pct": -0.18279072133571872,
+      "exposure_avg": 0.5617203962657902,
+      "pct_days_in_market": 0.6825396825396826,
+      "alpha_dollars": -18279.072133571866,
+      "total_return_pct": 0.058132407086395776,
+      "captured_buy_hold_ratio": 0.24129027157800995,
+      "alpha_vs_buy_hold_pct": -0.18279072133571872,
+      "avg_exposure_fraction": 0.5617203962657902
+    },
+    "SO": {
+      "return_pct": 0.014369413314420543,
+      "capture": 0.25275365391688626,
+      "class": "default",
+      "buy_hold_ret": 0.056851456316218796,
+      "buy_hold_return_pct": 0.056851456316218796,
+      "alpha_pct": -0.04248204300179825,
+      "exposure_avg": 0.38072394328972214,
+      "pct_days_in_market": 0.9523809523809523,
+      "alpha_dollars": -4248.2043001798265,
+      "total_return_pct": 0.014369413314420543,
+      "captured_buy_hold_ratio": 0.25275365391688626,
+      "alpha_vs_buy_hold_pct": -0.04248204300179825,
+      "avg_exposure_fraction": 0.38072394328972214
+    },
+    "VZ": {
+      "return_pct": 0.014369413314420543,
+      "capture": 0.25275365391688626,
+      "class": "default",
+      "buy_hold_ret": 0.056851456316218796,
+      "buy_hold_return_pct": 0.056851456316218796,
+      "alpha_pct": -0.04248204300179825,
+      "exposure_avg": 0.38072394328972214,
+      "pct_days_in_market": 0.9523809523809523,
+      "alpha_dollars": -4248.2043001798265,
+      "total_return_pct": 0.014369413314420543,
+      "captured_buy_hold_ratio": 0.25275365391688626,
+      "alpha_vs_buy_hold_pct": -0.04248204300179825,
+      "avg_exposure_fraction": 0.38072394328972214
+    },
+    "DUK": {
+      "return_pct": 0.014369413314420543,
+      "capture": 0.25275365391688626,
+      "class": "default",
+      "buy_hold_ret": 0.056851456316218796,
+      "buy_hold_return_pct": 0.056851456316218796,
+      "alpha_pct": -0.04248204300179825,
+      "exposure_avg": 0.38072394328972214,
+      "pct_days_in_market": 0.9523809523809523,
+      "alpha_dollars": -4248.2043001798265,
+      "total_return_pct": 0.014369413314420543,
+      "captured_buy_hold_ratio": 0.25275365391688626,
+      "alpha_vs_buy_hold_pct": -0.04248204300179825,
+      "avg_exposure_fraction": 0.38072394328972214
+    },
+    "MSFT": {
+      "return_pct": 0.16323298918900142,
+      "capture": 0.8498471756957721,
+      "class": "default",
+      "buy_hold_ret": 0.19207334431083112,
+      "buy_hold_return_pct": 0.19207334431083112,
+      "alpha_pct": -0.028840355121829697,
+      "exposure_avg": 0.8371148338319595,
+      "pct_days_in_market": 0.9841269841269841,
+      "alpha_dollars": -2884.0355121829743,
+      "total_return_pct": 0.16323298918900142,
+      "captured_buy_hold_ratio": 0.8498471756957721,
+      "alpha_vs_buy_hold_pct": -0.028840355121829697,
+      "avg_exposure_fraction": 0.8371148338319595
+    },
+    "AXP": {
+      "return_pct": 0.19543624862597997,
+      "capture": 0.6379168473146601,
+      "class": "default",
+      "buy_hold_ret": 0.30636633825972415,
+      "buy_hold_return_pct": 0.30636633825972415,
+      "alpha_pct": -0.11093008963374418,
+      "exposure_avg": 0.8159858563877714,
+      "pct_days_in_market": 0.9682539682539683,
+      "alpha_dollars": -11093.008963374421,
+      "total_return_pct": 0.19543624862597997,
+      "captured_buy_hold_ratio": 0.6379168473146601,
+      "alpha_vs_buy_hold_pct": -0.11093008963374418,
+      "avg_exposure_fraction": 0.8159858563877714
+    },
+    "C": {
+      "return_pct": 0.19543624862597997,
+      "capture": 0.6379168473146601,
+      "class": "default",
+      "buy_hold_ret": 0.30636633825972415,
+      "buy_hold_return_pct": 0.30636633825972415,
+      "alpha_pct": -0.11093008963374418,
+      "exposure_avg": 0.8159858563877714,
+      "pct_days_in_market": 0.9682539682539683,
+      "alpha_dollars": -11093.008963374421,
+      "total_return_pct": 0.19543624862597997,
+      "captured_buy_hold_ratio": 0.6379168473146601,
+      "alpha_vs_buy_hold_pct": -0.11093008963374418,
+      "avg_exposure_fraction": 0.8159858563877714
+    },
+    "AIG": {
+      "return_pct": 0.19543624862597997,
+      "capture": 0.6379168473146601,
+      "class": "default",
+      "buy_hold_ret": 0.30636633825972415,
+      "buy_hold_return_pct": 0.30636633825972415,
+      "alpha_pct": -0.11093008963374418,
+      "exposure_avg": 0.8159858563877714,
+      "pct_days_in_market": 0.9682539682539683,
+      "alpha_dollars": -11093.008963374421,
+      "total_return_pct": 0.19543624862597997,
+      "captured_buy_hold_ratio": 0.6379168473146601,
+      "alpha_vs_buy_hold_pct": -0.11093008963374418,
+      "avg_exposure_fraction": 0.8159858563877714
+    },
+    "ABT": {
+      "return_pct": -0.018907750639167387,
+      "capture": -1.5335703285681836,
+      "class": "default",
+      "buy_hold_ret": 0.012329236088455486,
+      "buy_hold_return_pct": 0.012329236088455486,
+      "alpha_pct": -0.031236986727622873,
+      "exposure_avg": 0.5628471032575523,
+      "pct_days_in_market": 0.746031746031746,
+      "alpha_dollars": -3123.698672762284,
+      "total_return_pct": -0.018907750639167387,
+      "captured_buy_hold_ratio": -1.5335703285681836,
+      "alpha_vs_buy_hold_pct": -0.031236986727622873,
+      "avg_exposure_fraction": 0.5628471032575523
+    },
+    "KO": {
+      "return_pct": -0.010106259223016334,
+      "capture": -2.2263612161155986,
+      "class": "default",
+      "buy_hold_ret": 0.004539361874372316,
+      "buy_hold_return_pct": 0.004539361874372316,
+      "alpha_pct": -0.01464562109738865,
+      "exposure_avg": 0.09896045078323858,
+      "pct_days_in_market": 0.49206349206349204,
+      "alpha_dollars": -1464.5621097388703,
+      "total_return_pct": -0.010106259223016334,
+      "captured_buy_hold_ratio": -2.2263612161155986,
+      "alpha_vs_buy_hold_pct": -0.01464562109738865,
+      "avg_exposure_fraction": 0.09896045078323858
+    }
+  },
+  "selected_symbols": [
+    "PM",
+    "NFLX",
+    "T",
+    "GE",
+    "BK",
+    "MO",
+    "WMT",
+    "COST",
+    "IBM",
+    "TMUS",
+    "BKNG",
+    "MA",
+    "JPM",
+    "V",
+    "WFC",
+    "AVGO",
+    "GS",
+    "COF",
+    "RTX",
+    "MMM",
+    "GILD",
+    "DUK",
+    "VZ",
+    "SO",
+    "MSFT",
+    "C",
+    "AXP",
+    "AIG",
+    "ABT",
+    "KO"
+  ],
+  "selection_strategy": "aggressive_direct_strong_first",
+  "runtime_sec": 45.23,
+  "aggressive": true
+}

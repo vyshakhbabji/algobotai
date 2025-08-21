@@ -1,0 +1,24 @@
+{
+  "timestamp": "20250812_104117",
+  "trade_date": "2025-08-11",
+  "executed": true,
+  "sells": [],
+  "buys": [
+    {
+      "symbol": "TSLA",
+      "qty": 40.0,
+      "side": "buy"
+    },
+    {
+      "symbol": "AAPL",
+      "qty": 59.0,
+      "side": "buy"
+    }
+  ],
+  "meta": {
+    "placed": [
+      [
+        "TSLA",
+        "buy",
+        40.0,
+        

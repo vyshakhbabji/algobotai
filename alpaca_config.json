@@ -1,0 +1,8 @@
+{
+  "alpaca": {
+    "api_key": "PKRMXTM54FQT7A54CH6W",
+    "secret_key": "Yoj18lZnKc6i5lPjFgb8IcHsqoEAqeXNCE4y1qtj",
+    "paper_trading": true,
+    "base_url": "https://paper-api.alpaca.markets"
+  }
+}

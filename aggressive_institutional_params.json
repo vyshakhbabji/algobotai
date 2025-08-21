@@ -1,0 +1,32 @@
+{
+  "tier_probs": [
+    0.35,
+    0.42,
+    0.48,
+    0.55
+  ],
+  "breakout_prob": 0.32,
+  "hard_exit_prob": 0.28,
+  "soft_exit_prob": 0.35,
+  "early_core_fraction": 0.9,
+  "risk_per_trade_pct": 0.15,
+  "risk_ceiling": 0.2,
+  "risk_increment": 0.03,
+  "profit_ladder": [
+    0.06,
+    0.15,
+    0.3,
+    0.5
+  ],
+  "profit_trim_fractions": [
+    0.05,
+    0.08,
+    0.12,
+    0.15
+  ],
+  "fast_scale_gain_threshold": 0.02,
+  "min_holding_days": 1,
+  "momentum_20d_threshold": 0.025,
+  "atr_initial_mult": 1.0,
+  "atr_trail_mult": 1.5
+}

@@ -1,0 +1,119 @@
+[
+  {
+    "strategy_type": "momentum_spreads",
+    "symbol": "AMD",
+    "rationale": "Moderate momentum (1.00) with elevated IV (100%)",
+    "momentum_score": 1,
+    "vol_percentile": 100.0,
+    "target_dte": [
+      20,
+      40
+    ],
+    "long_delta": [
+      0.6,
+      0.75
+    ],
+    "short_delta": [
+      0.25,
+      0.4
+    ],
+    "position_size": 0.027999999999999997,
+    "profit_target": 0.5,
+    "stop_loss": 0.75,
+    "priority": 1.0,
+    "current_price": 172.39999389648438,
+    "analysis_date": "2025-08-08T16:54:58.211216"
+  },
+  {
+    "strategy_type": "momentum_calls",
+    "symbol": "PLTR",
+    "rationale": "Strong momentum (1.00) with low IV (0%)",
+    "momentum_score": 1,
+    "vol_percentile": 0.0,
+    "target_dte": [
+      30,
+      45
+    ],
+    "delta_range": [
+      0.45,
+      0.65
+    ],
+    "position_size": 0.05,
+    "profit_target": 1.0,
+    "stop_loss": 0.5,
+    "priority": 1.0,
+    "current_price": 182.1999969482422,
+    "analysis_date": "2025-08-08T16:54:58.587391"
+  },
+  {
+    "strategy_type": "momentum_calls",
+    "symbol": "GE",
+    "rationale": "Strong momentum (0.99) with low IV (0%)",
+    "momentum_score": 0.9938736902359905,
+    "vol_percentile": 0.0,
+    "target_dte": [
+      30,
+      45
+    ],
+    "delta_range": [
+      0.45,
+      0.65
+    ],
+    "position_size": 0.05,
+    "profit_target": 1.0,
+    "stop_loss": 0.5,
+    "priority": 0.9938736902359905,
+    "current_price": 272.0199890136719,
+    "analysis_date": "2025-08-08T16:54:58.459215"
+  },
+  {
+    "strategy_type": "momentum_spreads",
+    "symbol": "CAT",
+    "rationale": "Moderate momentum (0.97) with elevated IV (100%)",
+    "momentum_score": 0.9735708216573128,
+    "vol_percentile": 100.0,
+    "target_dte": [
+      20,
+      40
+    ],
+    "long_delta": [
+      0.6,
+      0.75
+    ],
+    "short_delta": [
+      0.25,
+      0.4
+    ],
+    "position_size": 0.027999999999999997,
+    "profit_target": 0.5,
+    "stop_loss": 0.75,
+    "priority": 0.9735708216573128,
+    "current_price": 417.1199951171875,
+    "analysis_date": "2025-08-08T16:54:59.360004"
+  },
+  {
+    "strategy_type": "momentum_spreads",
+    "symbol": "MSFT",
+    "rationale": "Moderate momentum (0.86) with elevated IV (100%)",
+    "momentum_score": 0.8604994026673338,
+    "vol_percentile": 100.0,
+    "target_dte": [
+      20,
+      40
+    ],
+    "long_delta": [
+      0.6,
+      0.75
+    ],
+    "short_delta": [
+      0.25,
+      0.4
+    ],
+    "position_size": 0.027999999999999997,
+    "profit_target": 0.5,
+    "stop_loss": 0.75,
+    "priority": 0.8604994026673338,
+    "current_price": 520.8400268554688,
+    "analysis_date": "2025-08-08T16:54:58.751711"
+  }
+]
