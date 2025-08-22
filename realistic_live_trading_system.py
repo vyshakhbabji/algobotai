@@ -67,6 +67,8 @@ class RealisticLiveTradingSystem:
             'min_position_size': 0.03,  # Min 3% per stock
             'stop_loss_pct': 0.06,      # 6% stop loss (tighter - preserve capital)
             'take_profit_pct': 0.20,    # 20% take profit (lock in gains faster)
+            'trailing_stop_trigger_pct': 0.10,  # Start trailing after 10% gain
+            'trailing_stop_pct': 0.05,  # 5% trailing stop from peak
             'rebalance_threshold': 0.10, # 10% threshold for rebalancing
             'signal_threshold': 0.55,    # Higher minimum signal (was 0.25 - QUALITY OVER QUANTITY!)
             'max_positions': 6,         # Max 6 positions (was 8 - more concentrated)
@@ -105,6 +107,7 @@ class RealisticLiveTradingSystem:
         
         # Position cost basis tracking
         self.position_cost_basis = {}  # {symbol: avg_entry_price}
+        self.position_peak_prices = {}  # {symbol: highest_price_since_entry}
         
         # Pending orders queue for next-day execution (Fix #2)
         self.pending_orders = []  # Orders to execute next trading day
@@ -232,10 +235,17 @@ class RealisticLiveTradingSystem:
             # Calculate stop loss and take profit levels
             stop_loss_price = avg_entry * (1 - self.config['stop_loss_pct'])
             take_profit_price = avg_entry * (1 + self.config['take_profit_pct'])
-            
-            # Check if we need to queue risk exit orders
+
+            # Track peak price for trailing stop
+            peak_price = self.position_peak_prices.get(symbol, avg_entry)
+            if current_price > peak_price:
+                peak_price = current_price
+            self.position_peak_prices[symbol] = peak_price
+
+            order_queued = False
+
+            # Stop loss check
             if pnl_pct <= -self.config['stop_loss_pct']:
-                # Stop loss triggered - queue order
                 stop_decision = {
                     'action': 'STOP_LOSS',
                     'shares': shares,
@@ -243,8 +253,7 @@ class RealisticLiveTradingSystem:
                     'stop_price': stop_loss_price,
                     'order_type': 'STOP_LOSS'
                 }
-                
-                # Create risk signal
+
                 risk_signal = {
                     'strength': 0.0,
                     'price': current_price,
@@ -256,14 +265,15 @@ class RealisticLiveTradingSystem:
                     'risk_exit': True,
                     'exit_price': stop_loss_price
                 }
-                
+
                 if self._queue_pending_order(symbol, stop_decision, risk_signal, current_date):
                     risk_orders_queued += 1
                     self.enhancement_metrics['risk_orders_queued'] += 1
                     self.logger.info(f"   🛡️ Stop loss queued: {symbol} @ ${stop_loss_price:.2f} (P&L: {pnl_pct:.1%})")
-            
-            elif pnl_pct >= self.config['take_profit_pct']:
-                # Take profit triggered - queue order
+                    order_queued = True
+
+            # Take profit check
+            if pnl_pct >= self.config['take_profit_pct'] and not order_queued:
                 tp_decision = {
                     'action': 'TAKE_PROFIT',
                     'shares': shares,
@@ -271,8 +281,7 @@ class RealisticLiveTradingSystem:
                     'take_profit_price': take_profit_price,
                     'order_type': 'TAKE_PROFIT'
                 }
-                
-                # Create risk signal
+
                 risk_signal = {
                     'strength': 0.0,
                     'price': current_price,
@@ -284,11 +293,47 @@ class RealisticLiveTradingSystem:
                     'risk_exit': True,
                     'exit_price': take_profit_price
                 }
-                
+
                 if self._queue_pending_order(symbol, tp_decision, risk_signal, current_date):
                     risk_orders_queued += 1
                     self.enhancement_metrics['risk_orders_queued'] += 1
                     self.logger.info(f"   🎯 Take profit queued: {symbol} @ ${take_profit_price:.2f} (P&L: {pnl_pct:.1%})")
+                    order_queued = True
+
+            # Trailing stop check
+            trigger_pct = self.config.get('trailing_stop_trigger_pct')
+            trail_pct = self.config.get('trailing_stop_pct')
+            if (
+                trigger_pct is not None and trail_pct is not None and
+                pnl_pct >= trigger_pct and not order_queued
+            ):
+                trailing_price = peak_price * (1 - trail_pct)
+                if current_price <= trailing_price:
+                    ts_decision = {
+                        'action': 'TRAILING_STOP',
+                        'shares': shares,
+                        'reason': f'Trailing stop: {pnl_pct:.1%} (trail @ ${trailing_price:.2f})',
+                        'trailing_stop_price': trailing_price,
+                        'order_type': 'TRAILING_STOP'
+                    }
+
+                    risk_signal = {
+                        'strength': 0.0,
+                        'price': current_price,
+                        'base_strength': 0.0,
+                        'ml_multiplier': 1.0,
+                        'regime_boost': 1.0,
+                        'total_enhancement': 1.0,
+                        'ml_enhanced': False,
+                        'risk_exit': True,
+                        'exit_price': trailing_price
+                    }
+
+                    if self._queue_pending_order(symbol, ts_decision, risk_signal, current_date):
+                        risk_orders_queued += 1
+                        self.enhancement_metrics['risk_orders_queued'] += 1
+                        self.logger.info(f"   ⏳ Trailing stop queued: {symbol} @ ${trailing_price:.2f} (P&L: {pnl_pct:.1%})")
+                        order_queued = True
         
         return risk_orders_queued
     
