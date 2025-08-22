@@ -59,16 +59,16 @@ class RealisticLiveTradingSystem:
         # Configuration - SMART AGGRESSIVE: Quality over Quantity
         self.config = {
             # TIERED POSITION SIZING - Deploy capital based on signal confidence
-            'max_position_size': 0.25,  # 25% for regular signals (was 50% - too risky!)
-            'max_position_size_exceptional': 0.45,  # 45% for exceptional signals (concentrate on best)
-            'max_position_size_ultra': 0.65,  # 65% for ultra signals (new tier!)
+            'max_position_size': 0.30,  # 30% for regular signals (more capital per idea)
+            'max_position_size_exceptional': 0.50,  # 50% for exceptional signals
+            'max_position_size_ultra': 0.70,  # 70% for ultra signals (new tier!)
             'exceptional_signal_threshold': 0.80,  # 80% for exceptional (was 0.75)
             'ultra_signal_threshold': 0.92,  # 92% for ultra confidence
             'min_position_size': 0.03,  # Min 3% per stock
-            'stop_loss_pct': 0.06,      # 6% stop loss (tighter - preserve capital)
-            'take_profit_pct': 0.20,    # 20% take profit (lock in gains faster)
+            'stop_loss_pct': 0.03,      # 3% stop loss (tighter - preserve capital)
+            'take_profit_pct': 0.10,    # 10% take profit (more attainable)
             'rebalance_threshold': 0.10, # 10% threshold for rebalancing
-            'signal_threshold': 0.55,    # Higher minimum signal (was 0.25 - QUALITY OVER QUANTITY!)
+            'signal_threshold': 0.50,    # Slightly lower threshold to capture more opportunities
             'max_positions': 6,         # Max 6 positions (was 8 - more concentrated)
             'partial_sell_threshold': 0.3,  # Sell 30% on weak signals (faster profit taking)
             'ml_retrain_days': 1,       # Retrain every day (realistic)
@@ -87,6 +87,10 @@ class RealisticLiveTradingSystem:
             'cash_reserve_floor': 0.15,       # Minimum 15% cash (was 1% - need dry powder!)
             'max_utilization_topups_per_day': 3,  # Conservative top-ups
             'min_extra_position_size': 0.03,   # Minimum size for extra allocations
+
+            # Dynamic trailing stop to protect profits
+            'trailing_stop_trigger': 0.10,  # Start trailing after 10% profit
+            'trailing_stop_pct': 0.05,      # Trail by 5% from the high watermark
             
             # Portfolio-Level Exposure Guards (Enhancement #4)
             'max_net_exposure': 0.95,         # Max portfolio exposure (95%)
@@ -105,6 +109,9 @@ class RealisticLiveTradingSystem:
         
         # Position cost basis tracking
         self.position_cost_basis = {}  # {symbol: avg_entry_price}
+
+        # Track highest price since entry for trailing stop logic
+        self.position_high_watermark = {}  # {symbol: highest_price}
         
         # Pending orders queue for next-day execution (Fix #2)
         self.pending_orders = []  # Orders to execute next trading day
@@ -225,14 +232,20 @@ class RealisticLiveTradingSystem:
                 
             current_price = prices_today[symbol]
             avg_entry = self.position_cost_basis.get(symbol, current_price)
-            
+
+            # Update high watermark for trailing stop logic
+            prev_high = self.position_high_watermark.get(symbol, avg_entry)
+            if current_price > prev_high:
+                self.position_high_watermark[symbol] = current_price
+            high_water = self.position_high_watermark.get(symbol, current_price)
+
             # Calculate P&L percentage
             pnl_pct = (current_price - avg_entry) / avg_entry
-            
+
             # Calculate stop loss and take profit levels
             stop_loss_price = avg_entry * (1 - self.config['stop_loss_pct'])
             take_profit_price = avg_entry * (1 + self.config['take_profit_pct'])
-            
+
             # Check if we need to queue risk exit orders
             if pnl_pct <= -self.config['stop_loss_pct']:
                 # Stop loss triggered - queue order
@@ -261,8 +274,8 @@ class RealisticLiveTradingSystem:
                     risk_orders_queued += 1
                     self.enhancement_metrics['risk_orders_queued'] += 1
                     self.logger.info(f"   🛡️ Stop loss queued: {symbol} @ ${stop_loss_price:.2f} (P&L: {pnl_pct:.1%})")
-            
-            elif pnl_pct >= self.config['take_profit_pct']:
+
+            if pnl_pct >= self.config['take_profit_pct']:
                 # Take profit triggered - queue order
                 tp_decision = {
                     'action': 'TAKE_PROFIT',
@@ -289,7 +302,36 @@ class RealisticLiveTradingSystem:
                     risk_orders_queued += 1
                     self.enhancement_metrics['risk_orders_queued'] += 1
                     self.logger.info(f"   🎯 Take profit queued: {symbol} @ ${take_profit_price:.2f} (P&L: {pnl_pct:.1%})")
-        
+
+            if pnl_pct >= self.config.get('trailing_stop_trigger', 1.0):
+                # Trailing stop logic
+                trailing_stop_price = high_water * (1 - self.config.get('trailing_stop_pct', 0.05))
+                if current_price <= trailing_stop_price:
+                    ts_decision = {
+                        'action': 'TRAILING_STOP',
+                        'shares': shares,
+                        'reason': f'Trailing stop: {pnl_pct:.1%} (exit @ ${trailing_stop_price:.2f})',
+                        'stop_price': trailing_stop_price,
+                        'order_type': 'TRAILING_STOP'
+                    }
+
+                    risk_signal = {
+                        'strength': 0.0,
+                        'price': current_price,
+                        'base_strength': 0.0,
+                        'ml_multiplier': 1.0,
+                        'regime_boost': 1.0,
+                        'total_enhancement': 1.0,
+                        'ml_enhanced': False,
+                        'risk_exit': True,
+                        'exit_price': trailing_stop_price
+                    }
+
+                    if self._queue_pending_order(symbol, ts_decision, risk_signal, current_date):
+                        risk_orders_queued += 1
+                        self.enhancement_metrics['risk_orders_queued'] += 1
+                        self.logger.info(f"   🏁 Trailing stop queued: {symbol} @ ${trailing_stop_price:.2f} (P&L: {pnl_pct:.1%})")
+
         return risk_orders_queued
     
     def _get_current_invested_ratio(self, current_date: pd.Timestamp, prices_today: Dict[str, float]) -> float:
@@ -1063,6 +1105,10 @@ class RealisticLiveTradingSystem:
                     
                     self.positions[symbol] = new_position
                     self.current_capital -= total_cost
+
+                    # Initialize or update high watermark for trailing stops
+                    current_high = self.position_high_watermark.get(symbol, 0)
+                    self.position_high_watermark[symbol] = max(current_high, final_price)
                     
                     # DEBUG: Track execution details
                     execution_info = {
@@ -1122,6 +1168,8 @@ class RealisticLiveTradingSystem:
                         del self.positions[symbol]
                         if symbol in self.position_cost_basis:
                             del self.position_cost_basis[symbol]
+                        if symbol in self.position_high_watermark:
+                            del self.position_high_watermark[symbol]
                     
                     self.trades.append({
                         'date': current_date,
@@ -1734,7 +1782,8 @@ class RealisticLiveTradingSystem:
                 # SMART PROFIT TAKING - Different thresholds based on original signal strength
                 # Check if we have profit to protect
                 current_value = current_position * price
-                position_return = (current_value / (position_weight * portfolio_value)) - 1
+                avg_entry = self.position_cost_basis.get(symbol, price)
+                position_return = (price - avg_entry) / avg_entry
                 
                 if position_return > 0.15:  # If we have 15%+ profit, be more selective about selling
                     sell_threshold_adjustment = 0.1  # Require stronger sell signal to exit winners
