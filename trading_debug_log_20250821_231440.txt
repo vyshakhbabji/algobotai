@@ -754,3 +754,132 @@
 2025-08-21 23:18:16,796 - WARNING -    🚨 ULTRA SIGNAL REJECTED! 70.2% > 65.0% for NVDA (strength: 1.000)
 2025-08-21 23:18:16,796 - INFO -    ❌ Rejected: BUY 75 NVDA @ $165.37
 2025-08-21 23:18:16,796 - INFO -    ❌ Rejected: BUY 75 NVDA @ $165.37
+2025-08-21 23:18:22,980 - INFO -    📝 Queued: SELL_ALL 144 GOOGL @ $181.56 (close) → execute tomorrow @ open
+2025-08-21 23:18:23,040 - INFO -    🚀 Exceptional signal (0.905) - using enhanced position limit 45.0%
+2025-08-21 23:18:23,047 - INFO -    ⚖️ Portfolio rebalancing: 3 orders queued
+2025-08-21 23:18:23,047 - INFO -    ⚖️ Portfolio rebalancing: 3 orders queued
+2025-08-21 23:18:23,127 - INFO -    🔥 ULTRA SIGNAL (0.943) - DEPLOYING EMERGENCY RESERVES!
+2025-08-21 23:18:23,127 - INFO -    🔍 DEBUG: Ultra signal #29 detected
+2025-08-21 23:18:23,127 - INFO -    💰 Capital utilization: +1 extra orders queued
+2025-08-21 23:18:23,128 - INFO - 📊 EOD Summary [56.5%]: $103,495 (+3.49%) | Pos: 5 (0.0%) | Trades: 1 (ML: 1) | Pending: 5 (Risk: 0) | Cash: $17,667
+2025-08-21 23:18:23,129 - INFO - 📈 Weekly Summary: +1.61% | Active Models: 120 | Drawdown: 0.23% | Top Holdings: 
+2025-08-21 23:18:23,129 - INFO - 📅 Day 36/62: 2025-07-15
+2025-08-21 23:18:23,130 - INFO -    📋 Executed: SELL_ALL 144 GOOGL @ $182.81
+2025-08-21 23:18:23,130 - WARNING -    ⚠️ Order would exceed position size limit: 45.7% > 25.0% for DIS
+2025-08-21 23:18:23,130 - INFO -    ❌ Rejected: BUY_MORE 110 DIS @ $120.23
+2025-08-21 23:18:23,130 - INFO -    ❌ Rejected: BUY_MORE 110 DIS @ $120.23
+2025-08-21 23:18:23,130 - WARNING -    ⚠️ Order would exceed position size limit: 44.9% > 25.0% for COIN
+2025-08-21 23:18:23,130 - INFO -    ❌ Rejected: BUY_MORE 35 COIN @ $391.53
+2025-08-21 23:18:23,130 - INFO -    ❌ Rejected: BUY_MORE 35 COIN @ $391.53
+2025-08-21 23:18:23,131 - WARNING -    ⚠️ Order would exceed position size limit: 44.5% > 25.0% for AAPL
+2025-08-21 23:18:23,131 - INFO -    ❌ Rejected: BUY_MORE 67 AAPL @ $208.98
+2025-08-21 23:18:23,131 - INFO -    ❌ Rejected: BUY_MORE 67 AAPL @ $208.98
+2025-08-21 23:18:23,131 - INFO -    ✅ ULTRA SIGNAL EXECUTED: BUY 79 JNJ @ $156.39 (strength: 0.943)
+2025-08-21 23:18:23,131 - INFO -    📋 Executed: BUY 79 JNJ @ $156.36
+2025-08-21 23:18:23,131 - INFO -    📋 Executed 2 pending orders at market open
+2025-08-21 23:18:29,468 - INFO -    🔥 ULTRA signal (0.928) - using maximum position limit 65.0%
+2025-08-21 23:18:29,484 - INFO -    📝 Queued: BUY 65 CRM @ $257.58 (close) → execute tomorrow @ open
+2025-08-21 23:18:29,519 - INFO -    🔥 ULTRA signal (1.000) - using maximum position limit 65.0%
+2025-08-21 23:18:29,526 - INFO -    ⚖️ Portfolio rebalancing: 4 orders queued
+2025-08-21 23:18:29,526 - INFO -    ⚖️ Portfolio rebalancing: 4 orders queued
+2025-08-21 23:18:29,604 - INFO -    🔥 ULTRA SIGNAL (1.000) - DEPLOYING EMERGENCY RESERVES!
+2025-08-21 23:18:29,604 - INFO -    🔍 DEBUG: Ultra signal #30 detected
+2025-08-21 23:18:29,604 - INFO -    💰 Capital utilization: +1 extra orders queued
+2025-08-21 23:18:29,606 - INFO - 📊 EOD Summary [58.1%]: $103,264 (+3.26%) | Pos: 5 (0.0%) | Trades: 3 (ML: 1) | Pending: 6 (Risk: 0) | Cash: $31,613
+2025-08-21 23:18:29,606 - INFO - 📅 Day 37/62: 2025-07-16
+2025-08-21 23:18:29,607 - WARNING -    ⚠️ Order would exceed position size limit: 53.2% > 25.0% for CRM
+2025-08-21 23:18:29,607 - INFO -    ❌ Rejected: BUY 65 CRM @ $258.93
+2025-08-21 23:18:29,607 - INFO -    ❌ Rejected: BUY 65 CRM @ $258.93
+2025-08-21 23:18:29,608 - WARNING -    ⚠️ Order would exceed position size limit: 58.4% > 25.0% for DIS
+2025-08-21 23:18:29,608 - INFO -    ❌ Rejected: BUY_MORE 111 DIS @ $119.36
+2025-08-21 23:18:29,608 - INFO -    ❌ Rejected: BUY_MORE 111 DIS @ $119.36
+2025-08-21 23:18:29,608 - WARNING -    ⚠️ Order would exceed position size limit: 60.8% > 25.0% for COIN
+2025-08-21 23:18:29,608 - INFO -    ❌ Rejected: BUY_MORE 38 COIN @ $392.80
+2025-08-21 23:18:29,608 - INFO -    ❌ Rejected: BUY_MORE 38 COIN @ $392.80
+2025-08-21 23:18:29,608 - WARNING -    ⚠️ Order would exceed position size limit: 62.0% > 25.0% for AAPL
+2025-08-21 23:18:29,608 - INFO -    ❌ Rejected: BUY_MORE 75 AAPL @ $210.06
+2025-08-21 23:18:29,608 - INFO -    ❌ Rejected: BUY_MORE 75 AAPL @ $210.06
+2025-08-21 23:18:29,608 - WARNING -    ⚠️ Order would exceed position size limit: 60.1% > 25.0% for JNJ
+2025-08-21 23:18:29,608 - INFO -    ❌ Rejected: BUY_MORE 87 JNJ @ $160.30
+2025-08-21 23:18:29,608 - INFO -    ❌ Rejected: BUY_MORE 87 JNJ @ $160.30
+2025-08-21 23:18:29,608 - WARNING -    🚨 ULTRA SIGNAL REJECTED! 83.5% > 65.0% for PG (strength: 1.000)
+2025-08-21 23:18:29,608 - INFO -    ❌ Rejected: BUY 174 PG @ $151.70
+2025-08-21 23:18:29,608 - INFO -    ❌ Rejected: BUY 174 PG @ $151.70
+2025-08-21 23:18:35,965 - INFO -    📝 Queued: BUY_MORE 126 JNJ @ $164.78 (close) → execute tomorrow @ open
+2025-08-21 23:18:35,971 - INFO -    🚀 Exceptional signal (0.851) - using enhanced position limit 45.0%
+2025-08-21 23:18:35,978 - INFO -    ⚖️ Portfolio rebalancing: 4 orders queued
+2025-08-21 23:18:35,978 - INFO -    ⚖️ Portfolio rebalancing: 4 orders queued
+2025-08-21 23:18:36,053 - INFO -    💰 Capital utilization: +1 extra orders queued
+2025-08-21 23:18:36,054 - INFO - 📊 EOD Summary [59.7%]: $104,413 (+4.41%) | Pos: 5 (0.0%) | Trades: 1 (ML: 1) | Pending: 6 (Risk: 0) | Cash: $31,613
+2025-08-21 23:18:36,054 - INFO - 📅 Day 38/62: 2025-07-17
+2025-08-21 23:18:36,056 - WARNING -    ⚠️ Order would exceed position size limit: 75.2% > 45.0% for JNJ
+2025-08-21 23:18:36,056 - INFO -    ❌ Rejected: BUY_MORE 126 JNJ @ $163.18
+2025-08-21 23:18:36,056 - INFO -    ❌ Rejected: BUY_MORE 126 JNJ @ $163.18
+2025-08-21 23:18:36,056 - WARNING -    ⚠️ Order would exceed position size limit: 58.8% > 25.0% for DIS
+2025-08-21 23:18:36,056 - INFO -    ❌ Rejected: BUY_MORE 112 DIS @ $119.75
+2025-08-21 23:18:36,056 - INFO -    ❌ Rejected: BUY_MORE 112 DIS @ $119.75
+2025-08-21 23:18:36,056 - WARNING -    ⚠️ Order would exceed position size limit: 60.7% > 25.0% for COIN
+2025-08-21 23:18:36,056 - INFO -    ❌ Rejected: BUY_MORE 37 COIN @ $399.70
+2025-08-21 23:18:36,056 - INFO -    ❌ Rejected: BUY_MORE 37 COIN @ $399.70
+2025-08-21 23:18:36,056 - WARNING -    ⚠️ Order would exceed position size limit: 62.5% > 25.0% for AAPL
+2025-08-21 23:18:36,056 - INFO -    ❌ Rejected: BUY_MORE 76 AAPL @ $210.33
+2025-08-21 23:18:36,056 - INFO -    ❌ Rejected: BUY_MORE 76 AAPL @ $210.33
+2025-08-21 23:18:36,056 - WARNING -    ⚠️ Order would exceed position size limit: 57.9% > 25.0% for JNJ
+2025-08-21 23:18:36,057 - INFO -    ❌ Rejected: BUY_MORE 79 JNJ @ $163.18
+2025-08-21 23:18:36,057 - INFO -    ❌ Rejected: BUY_MORE 79 JNJ @ $163.18
+2025-08-21 23:18:36,057 - WARNING -    ⚠️ Order would exceed position size limit: 50.3% > 45.0% for PG
+2025-08-21 23:18:36,057 - INFO -    ❌ Rejected: BUY 104 PG @ $152.99
+2025-08-21 23:18:36,057 - INFO -    ❌ Rejected: BUY 104 PG @ $152.99
+2025-08-21 23:18:42,434 - INFO -    📝 Queued: BUY_MORE 129 JNJ @ $162.98 (close) → execute tomorrow @ open
+2025-08-21 23:18:42,445 - INFO -    ⚖️ Portfolio rebalancing: 4 orders queued
+2025-08-21 23:18:42,445 - INFO -    ⚖️ Portfolio rebalancing: 4 orders queued
+2025-08-21 23:18:42,517 - INFO -    💰 Capital utilization: +1 extra orders queued
+2025-08-21 23:18:42,519 - INFO - 📊 EOD Summary [61.3%]: $105,362 (+5.36%) | Pos: 5 (0.0%) | Trades: 1 (ML: 1) | Pending: 6 (Risk: 0) | Cash: $31,613
+2025-08-21 23:18:42,519 - INFO - 📅 Day 39/62: 2025-07-18
+2025-08-21 23:18:42,521 - WARNING -    ⚠️ Order would exceed position size limit: 76.5% > 45.0% for JNJ
+2025-08-21 23:18:42,521 - INFO -    ❌ Rejected: BUY_MORE 129 JNJ @ $163.93
+2025-08-21 23:18:42,521 - INFO -    ❌ Rejected: BUY_MORE 129 JNJ @ $163.93
+2025-08-21 23:18:42,521 - WARNING -    ⚠️ Order would exceed position size limit: 59.0% > 25.0% for DIS
+2025-08-21 23:18:42,521 - INFO -    ❌ Rejected: BUY_MORE 110 DIS @ $121.97
+2025-08-21 23:18:42,521 - INFO -    ❌ Rejected: BUY_MORE 110 DIS @ $121.97
+2025-08-21 23:18:42,521 - WARNING -    ⚠️ Order would exceed position size limit: 62.0% > 25.0% for COIN
+2025-08-21 23:18:42,521 - INFO -    ❌ Rejected: BUY_MORE 36 COIN @ $419.82
+2025-08-21 23:18:42,521 - INFO -    ❌ Rejected: BUY_MORE 36 COIN @ $419.82
+2025-08-21 23:18:42,521 - WARNING -    ⚠️ Order would exceed position size limit: 63.1% > 25.0% for AAPL
+2025-08-21 23:18:42,521 - INFO -    ❌ Rejected: BUY_MORE 77 AAPL @ $210.63
+2025-08-21 23:18:42,521 - INFO -    ❌ Rejected: BUY_MORE 77 AAPL @ $210.63
+2025-08-21 23:18:42,521 - WARNING -    ⚠️ Order would exceed position size limit: 59.2% > 25.0% for JNJ
+2025-08-21 23:18:42,521 - INFO -    ❌ Rejected: BUY_MORE 82 JNJ @ $163.93
+2025-08-21 23:18:42,521 - INFO -    ❌ Rejected: BUY_MORE 82 JNJ @ $163.93
+2025-08-21 23:18:42,521 - WARNING -    ⚠️ Order would exceed position size limit: 64.4% > 45.0% for JNJ
+2025-08-21 23:18:42,521 - INFO -    ❌ Rejected: BUY_MORE 96 JNJ @ $163.93
+2025-08-21 23:18:42,522 - INFO -    ❌ Rejected: BUY_MORE 96 JNJ @ $163.93
+2025-08-21 23:18:48,818 - INFO -    🚀 Exceptional signal (0.890) - using enhanced position limit 45.0%
+2025-08-21 23:18:48,842 - INFO -    📝 Queued: BUY_MORE 50 COIN @ $419.78 (close) → execute tomorrow @ open
+2025-08-21 23:18:48,861 - INFO -    📝 Queued: SELL_ALL 79 JNJ @ $163.70 (close) → execute tomorrow @ open
+2025-08-21 23:18:48,872 - INFO -    ⚖️ Portfolio rebalancing: 4 orders queued
+2025-08-21 23:18:48,872 - INFO -    ⚖️ Portfolio rebalancing: 4 orders queued
+2025-08-21 23:18:48,954 - INFO -    🔥 ULTRA SIGNAL (1.000) - DEPLOYING EMERGENCY RESERVES!
+2025-08-21 23:18:48,954 - INFO -    🔍 DEBUG: Ultra signal #31 detected
+2025-08-21 23:18:48,954 - INFO -    💰 Capital utilization: +1 extra orders queued
+2025-08-21 23:18:48,956 - INFO - 📊 EOD Summary [62.9%]: $105,367 (+5.37%) | Pos: 5 (0.0%) | Trades: 2 (ML: 2) | Pending: 7 (Risk: 0) | Cash: $31,613
+2025-08-21 23:18:48,956 - INFO - 📅 Day 40/62: 2025-07-21
+2025-08-21 23:18:48,957 - WARNING -    🚨 ULTRA SIGNAL REJECTED! 76.3% > 65.0% for COIN (strength: 1.000)
+2025-08-21 23:18:48,957 - INFO -    ❌ Rejected: BUY_MORE 50 COIN @ $425.55
+2025-08-21 23:18:48,957 - INFO -    ❌ Rejected: BUY_MORE 50 COIN @ $425.55
+2025-08-21 23:18:48,957 - INFO -    📋 Executed: SELL_ALL 79 JNJ @ $163.77
+2025-08-21 23:18:48,957 - WARNING -    ⚠️ Order would exceed position size limit: 45.7% > 25.0% for DIS
+2025-08-21 23:18:48,957 - INFO -    ❌ Rejected: BUY_MORE 111 DIS @ $121.07
+2025-08-21 23:18:48,957 - INFO -    ❌ Rejected: BUY_MORE 111 DIS @ $121.07
+2025-08-21 23:18:48,957 - WARNING -    ⚠️ Order would exceed position size limit: 46.7% > 25.0% for COIN
+2025-08-21 23:18:48,957 - INFO -    ❌ Rejected: BUY_MORE 34 COIN @ $425.55
+2025-08-21 23:18:48,957 - INFO -    ❌ Rejected: BUY_MORE 34 COIN @ $425.55
+2025-08-21 23:18:48,957 - WARNING -    ⚠️ Order would exceed position size limit: 48.0% > 25.0% for AAPL
+2025-08-21 23:18:48,957 - INFO -    ❌ Rejected: BUY_MORE 76 AAPL @ $211.86
+2025-08-21 23:18:48,958 - INFO -    ❌ Rejected: BUY_MORE 76 AAPL @ $211.86
+2025-08-21 23:18:48,958 - WARNING -    ⚠️ Order would exceed position size limit: 29.8% > 25.0% for JNJ
+2025-08-21 23:18:48,958 - INFO -    ❌ Rejected: BUY_MORE 81 JNJ @ $163.77
+2025-08-21 23:18:48,958 - INFO -    ❌ Rejected: BUY_MORE 81 JNJ @ $163.77
+2025-08-21 23:18:48,958 - INFO -    ✅ ULTRA SIGNAL EXECUTED: BUY 171 PLTR @ $153.91 (strength: 1.000)
+2025-08-21 23:18:48,958 - INFO -    📋 Executed: BUY 171 PLTR @ $153.88
+2025-08-21 23:18:48,958 - INFO -    📋 Executed 2 pending orders at market open
