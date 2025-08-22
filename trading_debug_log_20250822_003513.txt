@@ -1,0 +1,1752 @@
+2025-08-22 00:35:13,628 - INFO - 🔍 DEBUG MODE: Logging to trading_debug_log_20250822_003513.txt
+2025-08-22 00:35:13,628 - INFO - 🚀 Realistic Live Trading System initialized
+2025-08-22 00:35:13,628 - INFO - 🚀 Starting Realistic Live Trading: 2025-05-22 to 2025-08-21
+2025-08-22 00:35:13,634 - INFO - 📊 Pre-fetching historical data for all symbols...
+2025-08-22 00:35:13,933 - INFO -    ✅ AAPL: 564 bars
+2025-08-22 00:35:14,082 - INFO -    ✅ MSFT: 564 bars
+2025-08-22 00:35:14,169 - INFO -    ✅ GOOGL: 564 bars
+2025-08-22 00:35:14,235 - INFO -    ✅ AMZN: 564 bars
+2025-08-22 00:35:14,348 - INFO -    ✅ NVDA: 564 bars
+2025-08-22 00:35:14,425 - INFO -    ✅ TSLA: 564 bars
+2025-08-22 00:35:14,520 - INFO -    ✅ META: 564 bars
+2025-08-22 00:35:14,607 - INFO -    ✅ NFLX: 564 bars
+2025-08-22 00:35:14,693 - INFO -    ✅ CRM: 564 bars
+2025-08-22 00:35:14,761 - INFO -    ✅ SNOW: 564 bars
+2025-08-22 00:35:14,830 - INFO -    ✅ PLTR: 564 bars
+2025-08-22 00:35:14,897 - INFO -    ✅ COIN: 564 bars
+2025-08-22 00:35:14,997 - INFO -    ✅ UBER: 564 bars
+2025-08-22 00:35:15,159 - INFO -    ✅ DIS: 564 bars
+2025-08-22 00:35:15,305 - INFO -    ✅ JPM: 564 bars
+2025-08-22 00:35:15,447 - INFO -    ✅ BAC: 564 bars
+2025-08-22 00:35:15,721 - INFO -    ✅ JNJ: 564 bars
+2025-08-22 00:35:15,884 - INFO -    ✅ PG: 564 bars
+2025-08-22 00:35:16,054 - INFO -    ✅ KO: 564 bars
+2025-08-22 00:35:16,228 - INFO -    ✅ WMT: 564 bars
+2025-08-22 00:35:16,230 - INFO - 📅 Found 62 trading days with available data
+2025-08-22 00:35:16,230 - INFO - 📅 Day 1/62: 2025-05-22
+2025-08-22 00:35:22,253 - INFO -    🚀 Exceptional signal (0.899) - using enhanced position limit 50.0%
+2025-08-22 00:35:22,254 - INFO -    📝 Queued: BUY 125 GOOGL @ $170.66 (close) → execute tomorrow @ open
+2025-08-22 00:35:22,282 - INFO -    📝 Queued: BUY 63 SNOW @ $203.18 (close) → execute tomorrow @ open
+2025-08-22 00:35:22,399 - INFO -    🔥 ULTRA SIGNAL (0.923) - DEPLOYING EMERGENCY RESERVES!
+2025-08-22 00:35:22,399 - INFO -    🔍 DEBUG: Ultra signal #1 detected
+2025-08-22 00:35:22,399 - INFO -    💰 Capital utilization: +2 extra orders queued
+2025-08-22 00:35:22,399 - INFO - 📊 EOD Summary [1.6%]: $100,000 (+0.00%) | Pos: 0 (0.0%) | Trades: 2 (ML: 2) | Pending: 4 (Risk: 0) | Cash: $100,000
+2025-08-22 00:35:22,399 - INFO - 📅 Day 2/62: 2025-05-23
+2025-08-22 00:35:22,401 - INFO -    📋 Executed: BUY 125 GOOGL @ $168.86
+2025-08-22 00:35:22,401 - INFO -    📋 Executed: BUY 63 SNOW @ $198.51
+2025-08-22 00:35:22,401 - INFO -    ✅ ULTRA SIGNAL EXECUTED: BUY 167 NVDA @ $130.02 (strength: 0.923)
+2025-08-22 00:35:22,401 - INFO -    📋 Executed: BUY 167 NVDA @ $129.99
+2025-08-22 00:35:22,401 - WARNING -    ⚠️ Order would exceed position size limit: 64.2% > 50.0% for GOOGL
+2025-08-22 00:35:22,401 - INFO -    ❌ Rejected: BUY 125 GOOGL @ $168.86
+2025-08-22 00:35:22,401 - INFO -    ❌ Rejected: BUY 125 GOOGL @ $168.86
+2025-08-22 00:35:22,401 - INFO -    📋 Executed 3 pending orders at market open
+2025-08-22 00:35:28,373 - INFO -    📝 Queued: SELL_ALL 167 NVDA @ $131.28 (close) → execute tomorrow @ open
+2025-08-22 00:35:28,396 - INFO -    📝 Queued: BUY_MORE 24 SNOW @ $200.05 (close) → execute tomorrow @ open
+2025-08-22 00:35:28,433 - INFO -    ⚖️ Portfolio rebalancing: 1 orders queued
+2025-08-22 00:35:28,433 - INFO -    ⚖️ Portfolio rebalancing: 1 orders queued
+2025-08-22 00:35:28,513 - INFO -    💰 Capital utilization: +3 extra orders queued
+2025-08-22 00:35:28,513 - INFO - 📊 EOD Summary [3.2%]: $100,200 (+0.20%) | Pos: 3 (0.0%) | Trades: 5 (ML: 2) | Pending: 6 (Risk: 0) | Cash: $44,640
+2025-08-22 00:35:28,513 - INFO - 📅 Day 3/62: 2025-05-27
+2025-08-22 00:35:28,514 - INFO -    📋 Executed: SELL_ALL 167 NVDA @ $134.14
+2025-08-22 00:35:28,514 - INFO -    📋 Executed: BUY_MORE 24 SNOW @ $202.60
+2025-08-22 00:35:28,515 - INFO -    📋 Executed: BUY_MORE 16 SNOW @ $202.60
+2025-08-22 00:35:28,515 - INFO -    📋 Executed: BUY_MORE 65 NVDA @ $134.14
+2025-08-22 00:35:28,515 - INFO -    📋 Executed: BUY 31 CRM @ $272.74
+2025-08-22 00:35:28,515 - INFO -    📋 Executed: BUY 41 AAPL @ $198.08
+2025-08-22 00:35:28,515 - INFO -    📋 Executed 6 pending orders at market open
+2025-08-22 00:35:34,517 - INFO -    📝 Queued: SELL_ALL 65 NVDA @ $135.49 (close) → execute tomorrow @ open
+2025-08-22 00:35:34,537 - INFO -    📝 Queued: BUY_MORE 15 SNOW @ $206.35 (close) → execute tomorrow @ open
+2025-08-22 00:35:34,573 - INFO -    ⚖️ Portfolio rebalancing: 3 orders queued
+2025-08-22 00:35:34,573 - INFO -    ⚖️ Portfolio rebalancing: 3 orders queued
+2025-08-22 00:35:34,652 - INFO -    🔥 ULTRA SIGNAL (0.985) - DEPLOYING EMERGENCY RESERVES!
+2025-08-22 00:35:34,652 - INFO -    🔍 DEBUG: Ultra signal #2 detected
+2025-08-22 00:35:34,652 - INFO -    💰 Capital utilization: +2 extra orders queued
+2025-08-22 00:35:34,652 - INFO - 📊 EOD Summary [4.8%]: $102,029 (+2.03%) | Pos: 5 (0.0%) | Trades: 8 (ML: 2) | Pending: 7 (Risk: 0) | Cash: $33,603
+2025-08-22 00:35:34,652 - INFO - 📅 Day 4/62: 2025-05-28
+2025-08-22 00:35:34,653 - INFO -    📋 Executed: SELL_ALL 65 NVDA @ $136.02
+2025-08-22 00:35:34,653 - WARNING -    ⚠️ Order would exceed position size limit: 38.3% > 30.0% for SNOW
+2025-08-22 00:35:34,654 - INFO -    ❌ Rejected: BUY_MORE 15 SNOW @ $207.00
+2025-08-22 00:35:34,654 - INFO -    ❌ Rejected: BUY_MORE 15 SNOW @ $207.00
+2025-08-22 00:35:34,654 - INFO -    📋 Executed: BUY_MORE 18 NVDA @ $136.02
+2025-08-22 00:35:34,654 - INFO -    📋 Executed: BUY_MORE 9 CRM @ $277.27
+2025-08-22 00:35:34,654 - INFO -    📋 Executed: BUY_MORE 12 AAPL @ $200.36
+2025-08-22 00:35:34,654 - INFO -    ✅ ULTRA SIGNAL EXECUTED: BUY_MORE 60 NVDA @ $136.05 (strength: 0.985)
+2025-08-22 00:35:34,654 - INFO -    📋 Executed: BUY_MORE 60 NVDA @ $136.02
+2025-08-22 00:35:34,654 - INFO -    📋 Executed: BUY 61 DIS @ $111.72
+2025-08-22 00:35:34,654 - INFO -    📋 Executed 6 pending orders at market open
+2025-08-22 00:35:40,653 - INFO -    📝 Queued: SELL_PARTIAL 75 GOOGL @ $172.15 (close) → execute tomorrow @ open
+2025-08-22 00:35:40,662 - INFO -    📝 Queued: SELL_ALL 78 NVDA @ $134.80 (close) → execute tomorrow @ open
+2025-08-22 00:35:40,713 - INFO -    ⚖️ Portfolio rebalancing: 4 orders queued
+2025-08-22 00:35:40,713 - INFO -    ⚖️ Portfolio rebalancing: 4 orders queued
+2025-08-22 00:35:40,784 - INFO -    💰 Capital utilization: +1 extra orders queued
+2025-08-22 00:35:40,785 - INFO - 📊 EOD Summary [6.5%]: $101,593 (+1.59%) | Pos: 6 (0.0%) | Trades: 8 (ML: 2) | Pending: 7 (Risk: 0) | Cash: $20,098
+2025-08-22 00:35:40,785 - INFO - 📅 Day 5/62: 2025-05-29
+2025-08-22 00:35:40,786 - INFO -    📋 Executed: SELL_PARTIAL 75 GOOGL @ $173.79
+2025-08-22 00:35:40,786 - INFO -    📋 Executed: SELL_ALL 78 NVDA @ $142.24
+2025-08-22 00:35:40,786 - INFO -    📋 Executed: BUY_MORE 5 CRM @ $263.17
+2025-08-22 00:35:40,786 - INFO -    📋 Executed: BUY_MORE 7 AAPL @ $203.35
+2025-08-22 00:35:40,786 - INFO -    📋 Executed: BUY_MORE 11 NVDA @ $142.24
+2025-08-22 00:35:40,787 - INFO -    📋 Executed: BUY_MORE 13 DIS @ $111.53
+2025-08-22 00:35:40,787 - INFO -    📋 Executed: BUY_MORE 19 GOOGL @ $173.79
+2025-08-22 00:35:40,787 - INFO -    📋 Executed 7 pending orders at market open
+2025-08-22 00:35:46,772 - INFO -    📝 Queued: BUY_MORE 63 NVDA @ $139.18 (close) → execute tomorrow @ open
+2025-08-22 00:35:46,791 - INFO -    📝 Queued: SELL_ALL 45 CRM @ $266.50 (close) → execute tomorrow @ open
+2025-08-22 00:35:46,796 - INFO -    📝 Queued: SELL_ALL 103 SNOW @ $202.31 (close) → execute tomorrow @ open
+2025-08-22 00:35:46,837 - INFO -    ⚖️ Portfolio rebalancing: 5 orders queued
+2025-08-22 00:35:46,837 - INFO -    ⚖️ Portfolio rebalancing: 5 orders queued
+2025-08-22 00:35:46,918 - INFO -    🔥 ULTRA SIGNAL (1.000) - DEPLOYING EMERGENCY RESERVES!
+2025-08-22 00:35:46,918 - INFO -    🔍 DEBUG: Ultra signal #3 detected
+2025-08-22 00:35:46,918 - INFO -    💰 Capital utilization: +3 extra orders queued
+2025-08-22 00:35:46,919 - INFO - 📊 EOD Summary [8.1%]: $101,590 (+1.59%) | Pos: 6 (0.0%) | Trades: 10 (ML: 3) | Pending: 11 (Risk: 0) | Cash: $35,147
+2025-08-22 00:35:46,919 - INFO - 📈 Weekly Summary: +1.59% | Active Models: 100 | Drawdown: 0.43% | Top Holdings: 
+2025-08-22 00:35:46,919 - INFO - 📅 Day 6/62: 2025-05-30
+2025-08-22 00:35:46,920 - INFO -    ✅ ULTRA SIGNAL EXECUTED: BUY_MORE 63 NVDA @ $138.74 (strength: 1.000)
+2025-08-22 00:35:46,920 - INFO -    📋 Executed: BUY_MORE 63 NVDA @ $138.71
+2025-08-22 00:35:46,920 - INFO -    📋 Executed: SELL_ALL 45 CRM @ $267.66
+2025-08-22 00:35:46,920 - INFO -    📋 Executed: SELL_ALL 103 SNOW @ $202.19
+2025-08-22 00:35:46,920 - INFO -    📋 Executed: BUY_MORE 15 GOOGL @ $171.14
+2025-08-22 00:35:46,920 - INFO -    📋 Executed: BUY_MORE 9 CRM @ $267.66
+2025-08-22 00:35:46,920 - INFO -    📋 Executed: BUY_MORE 13 AAPL @ $199.14
+2025-08-22 00:35:46,920 - INFO -    📋 Executed: BUY_MORE 23 DIS @ $111.53
+2025-08-22 00:35:46,921 - INFO -    📋 Executed: BUY_MORE 18 NVDA @ $138.71
+2025-08-22 00:35:46,921 - INFO -    ✅ ULTRA SIGNAL EXECUTED: BUY_MORE 37 NVDA @ $138.74 (strength: 1.000)
+2025-08-22 00:35:46,921 - INFO -    📋 Executed: BUY_MORE 37 NVDA @ $138.71
+2025-08-22 00:35:46,921 - INFO -    ✅ ULTRA SIGNAL EXECUTED: BUY_MORE 19 CRM @ $267.71 (strength: 1.000)
+2025-08-22 00:35:46,921 - INFO -    📋 Executed: BUY_MORE 19 CRM @ $267.66
+2025-08-22 00:35:46,921 - INFO -    ✅ ULTRA SIGNAL EXECUTED: BUY_MORE 41 SNOW @ $202.23 (strength: 0.968)
+2025-08-22 00:35:46,921 - INFO -    📋 Executed: BUY_MORE 41 SNOW @ $202.19
+2025-08-22 00:35:46,921 - INFO -    📋 Executed 11 pending orders at market open
+2025-08-22 00:35:52,915 - INFO -    📝 Queued: SELL_ALL 84 GOOGL @ $171.53 (close) → execute tomorrow @ open
+2025-08-22 00:35:52,938 - INFO -    📝 Queued: SELL_ALL 28 CRM @ $264.95 (close) → execute tomorrow @ open
+2025-08-22 00:35:52,944 - INFO -    📝 Queued: SELL_ALL 41 SNOW @ $205.67 (close) → execute tomorrow @ open
+2025-08-22 00:35:52,983 - INFO -    ⚖️ Portfolio rebalancing: 6 orders queued
+2025-08-22 00:35:52,983 - INFO -    ⚖️ Portfolio rebalancing: 6 orders queued
+2025-08-22 00:35:53,063 - INFO -    🔥 ULTRA SIGNAL (1.000) - DEPLOYING EMERGENCY RESERVES!
+2025-08-22 00:35:53,063 - INFO -    🔍 DEBUG: Ultra signal #4 detected
+2025-08-22 00:35:53,064 - INFO -    💰 Capital utilization: +3 extra orders queued
+2025-08-22 00:35:53,064 - INFO - 📊 EOD Summary [9.7%]: $101,347 (+1.35%) | Pos: 6 (0.0%) | Trades: 14 (ML: 3) | Pending: 12 (Risk: 0) | Cash: $28,093
+2025-08-22 00:35:53,064 - INFO - 📅 Day 7/62: 2025-06-02
+2025-08-22 00:35:53,065 - INFO -    📋 Executed: SELL_ALL 84 GOOGL @ $167.64
+2025-08-22 00:35:53,065 - INFO -    📋 Executed: SELL_ALL 28 CRM @ $262.69
+2025-08-22 00:35:53,065 - INFO -    📋 Executed: SELL_ALL 41 SNOW @ $205.67
+2025-08-22 00:35:53,065 - INFO -    📋 Executed: BUY_MORE 12 GOOGL @ $167.64
+2025-08-22 00:35:53,065 - INFO -    📋 Executed: BUY_MORE 10 AAPL @ $200.05
+2025-08-22 00:35:53,065 - INFO -    📋 Executed: BUY_MORE 18 DIS @ $112.20
+2025-08-22 00:35:53,065 - INFO -    📋 Executed: BUY_MORE 15 NVDA @ $135.48
+2025-08-22 00:35:53,065 - INFO -    📋 Executed: BUY_MORE 7 CRM @ $262.69
+2025-08-22 00:35:53,066 - INFO -    📋 Executed: BUY_MORE 10 SNOW @ $205.67
+2025-08-22 00:35:53,066 - INFO -    ✅ ULTRA SIGNAL EXECUTED: BUY_MORE 23 CRM @ $262.75 (strength: 0.993)
+2025-08-22 00:35:53,066 - INFO -    📋 Executed: BUY_MORE 23 CRM @ $262.69
+2025-08-22 00:35:53,066 - INFO -    📋 Executed: BUY_MORE 28 SNOW @ $205.67
+2025-08-22 00:35:53,066 - INFO -    📋 Executed: BUY_MORE 33 GOOGL @ $167.64
+2025-08-22 00:35:53,066 - INFO -    📋 Executed 12 pending orders at market open
+2025-08-22 00:35:59,075 - INFO -    📝 Queued: BUY_MORE 23 AAPL @ $201.47 (close) → execute tomorrow @ open
+2025-08-22 00:35:59,111 - INFO -    📝 Queued: BUY_MORE 26 CRM @ $261.21 (close) → execute tomorrow @ open
+2025-08-22 00:35:59,151 - INFO -    ⚖️ Portfolio rebalancing: 6 orders queued
+2025-08-22 00:35:59,152 - INFO -    ⚖️ Portfolio rebalancing: 6 orders queued
+2025-08-22 00:35:59,232 - INFO -    🔥 ULTRA SIGNAL (0.996) - DEPLOYING EMERGENCY RESERVES!
+2025-08-22 00:35:59,232 - INFO -    🔍 DEBUG: Ultra signal #5 detected
+2025-08-22 00:35:59,232 - INFO -    💰 Capital utilization: +2 extra orders queued
+2025-08-22 00:35:59,234 - INFO - 📊 EOD Summary [11.3%]: $101,486 (+1.49%) | Pos: 6 (0.0%) | Trades: 14 (ML: 2) | Pending: 10 (Risk: 0) | Cash: $28,629
+2025-08-22 00:35:59,234 - INFO - 📅 Day 8/62: 2025-06-03
+2025-08-22 00:35:59,236 - WARNING -    ⚠️ Order would exceed position size limit: 47.0% > 30.0% for AAPL
+2025-08-22 00:35:59,236 - INFO -    ❌ Rejected: BUY_MORE 23 AAPL @ $201.12
+2025-08-22 00:35:59,236 - INFO -    ❌ Rejected: BUY_MORE 23 AAPL @ $201.12
+2025-08-22 00:35:59,236 - INFO -    ✅ ULTRA SIGNAL EXECUTED: BUY_MORE 26 CRM @ $261.64 (strength: 0.971)
+2025-08-22 00:35:59,236 - INFO -    📋 Executed: BUY_MORE 26 CRM @ $261.59
+2025-08-22 00:35:59,236 - WARNING -    ⚠️ Order would exceed position size limit: 48.6% > 30.0% for AAPL
+2025-08-22 00:35:59,236 - INFO -    ❌ Rejected: BUY_MORE 10 AAPL @ $201.12
+2025-08-22 00:35:59,236 - INFO -    ❌ Rejected: BUY_MORE 10 AAPL @ $201.12
+2025-08-22 00:35:59,236 - WARNING -    ⚠️ Order would exceed position size limit: 43.3% > 30.0% for DIS
+2025-08-22 00:35:59,236 - INFO -    ❌ Rejected: BUY_MORE 19 DIS @ $112.25
+2025-08-22 00:35:59,236 - INFO -    ❌ Rejected: BUY_MORE 19 DIS @ $112.25
+2025-08-22 00:35:59,236 - WARNING -    ⚠️ Order would exceed position size limit: 52.8% > 30.0% for NVDA
+2025-08-22 00:35:59,236 - INFO -    ❌ Rejected: BUY_MORE 15 NVDA @ $138.77
+2025-08-22 00:35:59,236 - INFO -    ❌ Rejected: BUY_MORE 15 NVDA @ $138.77
+2025-08-22 00:35:59,236 - WARNING -    ⚠️ Order would exceed position size limit: 32.5% > 30.0% for GOOGL
+2025-08-22 00:35:59,236 - INFO -    ❌ Rejected: BUY_MORE 12 GOOGL @ $167.29
+2025-08-22 00:35:59,236 - INFO -    ❌ Rejected: BUY_MORE 12 GOOGL @ $167.29
+2025-08-22 00:35:59,236 - WARNING -    ⚠️ Order would exceed position size limit: 45.9% > 30.0% for CRM
+2025-08-22 00:35:59,237 - INFO -    ❌ Rejected: BUY_MORE 8 CRM @ $261.59
+2025-08-22 00:35:59,237 - INFO -    ❌ Rejected: BUY_MORE 8 CRM @ $261.59
+2025-08-22 00:35:59,237 - WARNING -    ⚠️ Order would exceed position size limit: 33.9% > 30.0% for SNOW
+2025-08-22 00:35:59,237 - INFO -    ❌ Rejected: BUY_MORE 10 SNOW @ $210.50
+2025-08-22 00:35:59,237 - INFO -    ❌ Rejected: BUY_MORE 10 SNOW @ $210.50
+2025-08-22 00:35:59,237 - INFO -    ✅ ULTRA SIGNAL EXECUTED: BUY_MORE 25 CRM @ $261.64 (strength: 0.971)
+2025-08-22 00:35:59,237 - INFO -    📋 Executed: BUY_MORE 25 CRM @ $261.59
+2025-08-22 00:35:59,237 - WARNING -    ⚠️ Order would exceed position size limit: 66.7% > 30.0% for AAPL
+2025-08-22 00:35:59,237 - INFO -    ❌ Rejected: BUY_MORE 23 AAPL @ $201.12
+2025-08-22 00:35:59,237 - INFO -    ❌ Rejected: BUY_MORE 23 AAPL @ $201.12
+2025-08-22 00:35:59,237 - INFO -    📋 Executed 2 pending orders at market open
+2025-08-22 00:36:05,354 - INFO -    📝 Queued: BUY_MORE 11 AAPL @ $203.04 (close) → execute tomorrow @ open
+2025-08-22 00:36:05,387 - INFO -    📝 Queued: BUY_MORE 14 CRM @ $264.05 (close) → execute tomorrow @ open
+2025-08-22 00:36:05,393 - INFO -    📝 Queued: SELL_ALL 38 SNOW @ $209.15 (close) → execute tomorrow @ open
+2025-08-22 00:36:05,428 - INFO -    ⚖️ Portfolio rebalancing: 5 orders queued
+2025-08-22 00:36:05,429 - INFO -    ⚖️ Portfolio rebalancing: 5 orders queued
+2025-08-22 00:36:05,508 - INFO -    🔥 ULTRA SIGNAL (1.000) - DEPLOYING EMERGENCY RESERVES!
+2025-08-22 00:36:05,508 - INFO -    🔍 DEBUG: Ultra signal #6 detected
+2025-08-22 00:36:05,508 - INFO -    💰 Capital utilization: +1 extra orders queued
+2025-08-22 00:36:05,510 - INFO - 📊 EOD Summary [12.9%]: $102,278 (+2.28%) | Pos: 6 (0.0%) | Trades: 5 (ML: 3) | Pending: 9 (Risk: 0) | Cash: $15,278
+2025-08-22 00:36:05,510 - INFO - 📅 Day 9/62: 2025-06-04
+2025-08-22 00:36:05,512 - WARNING -    ⚠️ Order would exceed position size limit: 59.4% > 30.0% for AAPL
+2025-08-22 00:36:05,512 - INFO -    ❌ Rejected: BUY_MORE 11 AAPL @ $202.68
+2025-08-22 00:36:05,512 - INFO -    ❌ Rejected: BUY_MORE 11 AAPL @ $202.68
+2025-08-22 00:36:05,512 - INFO -    ✅ ULTRA SIGNAL EXECUTED: BUY_MORE 14 CRM @ $263.82 (strength: 1.000)
+2025-08-22 00:36:05,512 - INFO -    📋 Executed: BUY_MORE 14 CRM @ $263.77
+2025-08-22 00:36:05,512 - INFO -    📋 Executed: SELL_ALL 38 SNOW @ $213.43
+2025-08-22 00:36:05,512 - WARNING -    ⚠️ Order would exceed position size limit: 48.9% > 30.0% for AAPL
+2025-08-22 00:36:05,512 - INFO -    ❌ Rejected: BUY_MORE 5 AAPL @ $202.68
+2025-08-22 00:36:05,512 - INFO -    ❌ Rejected: BUY_MORE 5 AAPL @ $202.68
+2025-08-22 00:36:05,512 - WARNING -    ⚠️ Order would exceed position size limit: 43.3% > 30.0% for DIS
+2025-08-22 00:36:05,512 - INFO -    ❌ Rejected: BUY_MORE 10 DIS @ $113.38
+2025-08-22 00:36:05,512 - INFO -    ❌ Rejected: BUY_MORE 10 DIS @ $113.38
+2025-08-22 00:36:05,512 - WARNING -    ⚠️ Order would exceed position size limit: 53.8% > 30.0% for NVDA
+2025-08-22 00:36:05,513 - INFO -    ❌ Rejected: BUY_MORE 8 NVDA @ $142.18
+2025-08-22 00:36:05,513 - INFO -    ❌ Rejected: BUY_MORE 8 NVDA @ $142.18
+2025-08-22 00:36:05,513 - WARNING -    ⚠️ Order would exceed position size limit: 31.2% > 30.0% for GOOGL
+2025-08-22 00:36:05,513 - INFO -    ❌ Rejected: BUY_MORE 6 GOOGL @ $166.54
+2025-08-22 00:36:05,513 - INFO -    ❌ Rejected: BUY_MORE 6 GOOGL @ $166.54
+2025-08-22 00:36:05,513 - INFO -    📋 Executed: BUY_MORE 5 SNOW @ $213.43
+2025-08-22 00:36:05,513 - WARNING -    ⚠️ Order would exceed position size limit: 53.8% > 30.0% for AAPL
+2025-08-22 00:36:05,513 - INFO -    ❌ Rejected: BUY_MORE 11 AAPL @ $202.68
+2025-08-22 00:36:05,513 - INFO -    ❌ Rejected: BUY_MORE 11 AAPL @ $202.68
+2025-08-22 00:36:05,513 - INFO -    📋 Executed 3 pending orders at market open
+2025-08-22 00:36:11,632 - INFO -    📝 Queued: BUY_MORE 15 AAPL @ $202.59 (close) → execute tomorrow @ open
+2025-08-22 00:36:11,662 - INFO -    📝 Queued: BUY_MORE 16 CRM @ $262.75 (close) → execute tomorrow @ open
+2025-08-22 00:36:11,667 - INFO -    📝 Queued: SELL_PARTIAL 3 SNOW @ $209.60 (close) → execute tomorrow @ open
+2025-08-22 00:36:11,706 - INFO -    ⚖️ Portfolio rebalancing: 5 orders queued
+2025-08-22 00:36:11,706 - INFO -    ⚖️ Portfolio rebalancing: 5 orders queued
+2025-08-22 00:36:11,786 - INFO -    🔥 ULTRA SIGNAL (0.971) - DEPLOYING EMERGENCY RESERVES!
+2025-08-22 00:36:11,786 - INFO -    🔍 DEBUG: Ultra signal #7 detected
+2025-08-22 00:36:11,786 - INFO -    💰 Capital utilization: +3 extra orders queued
+2025-08-22 00:36:11,788 - INFO - 📊 EOD Summary [14.5%]: $102,428 (+2.43%) | Pos: 6 (0.0%) | Trades: 6 (ML: 3) | Pending: 11 (Risk: 0) | Cash: $18,619
+2025-08-22 00:36:11,788 - INFO - 📅 Day 10/62: 2025-06-05
+2025-08-22 00:36:11,789 - WARNING -    ⚠️ Order would exceed position size limit: 56.1% > 30.0% for AAPL
+2025-08-22 00:36:11,789 - INFO -    ❌ Rejected: BUY_MORE 15 AAPL @ $203.27
+2025-08-22 00:36:11,789 - INFO -    ❌ Rejected: BUY_MORE 15 AAPL @ $203.27
+2025-08-22 00:36:11,790 - INFO -    ✅ ULTRA SIGNAL EXECUTED: BUY_MORE 16 CRM @ $263.35 (strength: 0.971)
+2025-08-22 00:36:11,790 - INFO -    📋 Executed: BUY_MORE 16 CRM @ $263.29
+2025-08-22 00:36:11,790 - INFO -    📋 Executed: SELL_PARTIAL 3 SNOW @ $211.23
+2025-08-22 00:36:11,790 - WARNING -    ⚠️ Order would exceed position size limit: 56.7% > 30.0% for AAPL
+2025-08-22 00:36:11,790 - INFO -    ❌ Rejected: BUY_MORE 6 AAPL @ $203.27
+2025-08-22 00:36:11,790 - INFO -    ❌ Rejected: BUY_MORE 6 AAPL @ $203.27
+2025-08-22 00:36:11,790 - WARNING -    ⚠️ Order would exceed position size limit: 51.3% > 30.0% for DIS
+2025-08-22 00:36:11,790 - INFO -    ❌ Rejected: BUY_MORE 12 DIS @ $113.25
+2025-08-22 00:36:11,790 - INFO -    ❌ Rejected: BUY_MORE 12 DIS @ $113.25
+2025-08-22 00:36:11,790 - WARNING -    ⚠️ Order would exceed position size limit: 61.3% > 30.0% for NVDA
+2025-08-22 00:36:11,790 - INFO -    ❌ Rejected: BUY_MORE 9 NVDA @ $142.16
+2025-08-22 00:36:11,790 - INFO -    ❌ Rejected: BUY_MORE 9 NVDA @ $142.16
+2025-08-22 00:36:11,790 - WARNING -    ⚠️ Order would exceed position size limit: 39.7% > 30.0% for GOOGL
+2025-08-22 00:36:11,790 - INFO -    ❌ Rejected: BUY_MORE 8 GOOGL @ $170.13
+2025-08-22 00:36:11,790 - INFO -    ❌ Rejected: BUY_MORE 8 GOOGL @ $170.13
+2025-08-22 00:36:11,790 - INFO -    📋 Executed: BUY_MORE 6 SNOW @ $211.23
+2025-08-22 00:36:11,790 - WARNING -    🚨 ULTRA SIGNAL REJECTED! 75.3% > 70.0% for CRM (strength: 0.971)
+2025-08-22 00:36:11,790 - INFO -    ❌ Rejected: BUY_MORE 12 CRM @ $263.29
+2025-08-22 00:36:11,790 - INFO -    ❌ Rejected: BUY_MORE 12 CRM @ $263.29
+2025-08-22 00:36:11,790 - WARNING -    ⚠️ Order would exceed position size limit: 65.0% > 30.0% for AAPL
+2025-08-22 00:36:11,791 - INFO -    ❌ Rejected: BUY_MORE 15 AAPL @ $203.27
+2025-08-22 00:36:11,791 - INFO -    ❌ Rejected: BUY_MORE 15 AAPL @ $203.27
+2025-08-22 00:36:11,791 - INFO -    📋 Executed: BUY_MORE 13 SNOW @ $211.23
+2025-08-22 00:36:11,791 - INFO -    📋 Executed 4 pending orders at market open
+2025-08-22 00:36:17,916 - INFO -    📝 Queued: BUY_MORE 10 AAPL @ $200.40 (close) → execute tomorrow @ open
+2025-08-22 00:36:17,951 - INFO -    📝 Queued: BUY_MORE 8 CRM @ $266.72 (close) → execute tomorrow @ open
+2025-08-22 00:36:17,999 - INFO -    ⚖️ Portfolio rebalancing: 5 orders queued
+2025-08-22 00:36:17,999 - INFO -    ⚖️ Portfolio rebalancing: 5 orders queued
+2025-08-22 00:36:18,084 - INFO - 📊 EOD Summary [16.1%]: $102,274 (+2.27%) | Pos: 6 (0.0%) | Trades: 6 (ML: 2) | Pending: 7 (Risk: 0) | Cash: $11,019
+2025-08-22 00:36:18,085 - INFO - 📈 Weekly Summary: +0.91% | Active Models: 120 | Drawdown: 0.15% | Top Holdings: 
+2025-08-22 00:36:18,085 - INFO -    Progress: +2.3% | Positions: 6 | Queued orders: 7 | Actions today: 6
+2025-08-22 00:36:18,085 - INFO - 📅 Day 11/62: 2025-06-06
+2025-08-22 00:36:18,086 - WARNING -    ⚠️ Order would exceed position size limit: 67.7% > 50.0% for AAPL
+2025-08-22 00:36:18,086 - INFO -    ❌ Rejected: BUY_MORE 10 AAPL @ $202.77
+2025-08-22 00:36:18,086 - INFO -    ❌ Rejected: BUY_MORE 10 AAPL @ $202.77
+2025-08-22 00:36:18,086 - WARNING -    ⚠️ Order would exceed position size limit: 78.4% > 50.0% for CRM
+2025-08-22 00:36:18,086 - INFO -    ❌ Rejected: BUY_MORE 8 CRM @ $269.54
+2025-08-22 00:36:18,086 - INFO -    ❌ Rejected: BUY_MORE 8 CRM @ $269.54
+2025-08-22 00:36:18,086 - WARNING -    ⚠️ Order would exceed position size limit: 63.3% > 30.0% for AAPL
+2025-08-22 00:36:18,086 - INFO -    ❌ Rejected: BUY_MORE 4 AAPL @ $202.77
+2025-08-22 00:36:18,086 - INFO -    ❌ Rejected: BUY_MORE 4 AAPL @ $202.77
+2025-08-22 00:36:18,086 - WARNING -    ⚠️ Order would exceed position size limit: 57.4% > 30.0% for DIS
+2025-08-22 00:36:18,086 - INFO -    ❌ Rejected: BUY_MORE 7 DIS @ $112.88
+2025-08-22 00:36:18,086 - INFO -    ❌ Rejected: BUY_MORE 7 DIS @ $112.88
+2025-08-22 00:36:18,087 - WARNING -    ⚠️ Order would exceed position size limit: 67.3% > 30.0% for NVDA
+2025-08-22 00:36:18,087 - INFO -    ❌ Rejected: BUY_MORE 5 NVDA @ $142.50
+2025-08-22 00:36:18,087 - INFO -    ❌ Rejected: BUY_MORE 5 NVDA @ $142.50
+2025-08-22 00:36:18,087 - WARNING -    ⚠️ Order would exceed position size limit: 44.7% > 30.0% for GOOGL
+2025-08-22 00:36:18,087 - INFO -    ❌ Rejected: BUY_MORE 4 GOOGL @ $170.62
+2025-08-22 00:36:18,087 - INFO -    ❌ Rejected: BUY_MORE 4 GOOGL @ $170.62
+2025-08-22 00:36:18,087 - WARNING -    ⚠️ Order would exceed position size limit: 32.8% > 30.0% for SNOW
+2025-08-22 00:36:18,087 - INFO -    ❌ Rejected: BUY_MORE 3 SNOW @ $211.45
+2025-08-22 00:36:18,087 - INFO -    ❌ Rejected: BUY_MORE 3 SNOW @ $211.45
+2025-08-22 00:36:24,173 - INFO -    📝 Queued: SELL_ALL 21 SNOW @ $210.84 (close) → execute tomorrow @ open
+2025-08-22 00:36:24,211 - INFO -    ⚖️ Portfolio rebalancing: 5 orders queued
+2025-08-22 00:36:24,211 - INFO -    ⚖️ Portfolio rebalancing: 5 orders queued
+2025-08-22 00:36:24,290 - INFO - 📊 EOD Summary [17.7%]: $104,031 (+4.03%) | Pos: 6 (0.0%) | Trades: 1 (ML: 1) | Pending: 6 (Risk: 0) | Cash: $11,019
+2025-08-22 00:36:24,290 - INFO - 📅 Day 12/62: 2025-06-09
+2025-08-22 00:36:24,291 - INFO -    📋 Executed: SELL_ALL 21 SNOW @ $211.31
+2025-08-22 00:36:24,291 - WARNING -    ⚠️ Order would exceed position size limit: 54.8% > 30.0% for AAPL
+2025-08-22 00:36:24,291 - INFO -    ❌ Rejected: BUY_MORE 4 AAPL @ $204.16
+2025-08-22 00:36:24,291 - INFO -    ❌ Rejected: BUY_MORE 4 AAPL @ $204.16
+2025-08-22 00:36:24,291 - WARNING -    ⚠️ Order would exceed position size limit: 48.6% > 30.0% for DIS
+2025-08-22 00:36:24,291 - INFO -    ❌ Rejected: BUY_MORE 7 DIS @ $113.50
+2025-08-22 00:36:24,291 - INFO -    ❌ Rejected: BUY_MORE 7 DIS @ $113.50
+2025-08-22 00:36:24,291 - WARNING -    ⚠️ Order would exceed position size limit: 59.1% > 30.0% for NVDA
+2025-08-22 00:36:24,291 - INFO -    ❌ Rejected: BUY_MORE 5 NVDA @ $143.18
+2025-08-22 00:36:24,291 - INFO -    ❌ Rejected: BUY_MORE 5 NVDA @ $143.18
+2025-08-22 00:36:24,291 - WARNING -    ⚠️ Order would exceed position size limit: 36.7% > 30.0% for GOOGL
+2025-08-22 00:36:24,291 - INFO -    ❌ Rejected: BUY_MORE 4 GOOGL @ $174.54
+2025-08-22 00:36:24,291 - INFO -    ❌ Rejected: BUY_MORE 4 GOOGL @ $174.54
+2025-08-22 00:36:24,292 - INFO -    📋 Executed: BUY_MORE 3 SNOW @ $211.31
+2025-08-22 00:36:24,292 - INFO -    📋 Executed 2 pending orders at market open
+2025-08-22 00:36:30,325 - INFO -    📝 Queued: SELL_ALL 3 SNOW @ $210.85 (close) → execute tomorrow @ open
+2025-08-22 00:36:30,363 - INFO -    ⚖️ Portfolio rebalancing: 5 orders queued
+2025-08-22 00:36:30,363 - INFO -    ⚖️ Portfolio rebalancing: 5 orders queued
+2025-08-22 00:36:30,438 - INFO -    🔥 ULTRA SIGNAL (0.938) - DEPLOYING EMERGENCY RESERVES!
+2025-08-22 00:36:30,438 - INFO -    🔍 DEBUG: Ultra signal #8 detected
+2025-08-22 00:36:30,438 - INFO -    💰 Capital utilization: +1 extra orders queued
+2025-08-22 00:36:30,440 - INFO - 📊 EOD Summary [19.4%]: $104,030 (+4.03%) | Pos: 6 (0.0%) | Trades: 3 (ML: 1) | Pending: 7 (Risk: 0) | Cash: $14,819
+2025-08-22 00:36:30,440 - INFO - 📅 Day 13/62: 2025-06-10
+2025-08-22 00:36:30,441 - INFO -    📋 Executed: SELL_ALL 3 SNOW @ $210.07
+2025-08-22 00:36:30,442 - WARNING -    ⚠️ Order would exceed position size limit: 55.0% > 30.0% for AAPL
+2025-08-22 00:36:30,442 - INFO -    ❌ Rejected: BUY_MORE 5 AAPL @ $200.37
+2025-08-22 00:36:30,442 - INFO -    ❌ Rejected: BUY_MORE 5 AAPL @ $200.37
+2025-08-22 00:36:30,442 - WARNING -    ⚠️ Order would exceed position size limit: 49.7% > 30.0% for DIS
+2025-08-22 00:36:30,442 - INFO -    ❌ Rejected: BUY_MORE 9 DIS @ $115.04
+2025-08-22 00:36:30,442 - INFO -    ❌ Rejected: BUY_MORE 9 DIS @ $115.04
+2025-08-22 00:36:30,442 - WARNING -    ⚠️ Order would exceed position size limit: 59.9% > 30.0% for NVDA
+2025-08-22 00:36:30,442 - INFO -    ❌ Rejected: BUY_MORE 7 NVDA @ $142.68
+2025-08-22 00:36:30,442 - INFO -    ❌ Rejected: BUY_MORE 7 NVDA @ $142.68
+2025-08-22 00:36:30,442 - WARNING -    ⚠️ Order would exceed position size limit: 38.4% > 30.0% for GOOGL
+2025-08-22 00:36:30,442 - INFO -    ❌ Rejected: BUY_MORE 6 GOOGL @ $176.20
+2025-08-22 00:36:30,442 - INFO -    ❌ Rejected: BUY_MORE 6 GOOGL @ $176.20
+2025-08-22 00:36:30,442 - INFO -    📋 Executed: BUY_MORE 5 SNOW @ $210.07
+2025-08-22 00:36:30,442 - INFO -    📋 Executed: BUY_MORE 14 SNOW @ $210.07
+2025-08-22 00:36:30,442 - INFO -    📋 Executed 3 pending orders at market open
+2025-08-22 00:36:36,489 - INFO -    📝 Queued: BUY_MORE 16 GOOGL @ $178.60 (close) → execute tomorrow @ open
+2025-08-22 00:36:36,515 - INFO -    📝 Queued: BUY_MORE 7 CRM @ $267.80 (close) → execute tomorrow @ open
+2025-08-22 00:36:36,556 - INFO -    ⚖️ Portfolio rebalancing: 5 orders queued
+2025-08-22 00:36:36,556 - INFO -    ⚖️ Portfolio rebalancing: 5 orders queued
+2025-08-22 00:36:36,634 - INFO -    🔥 ULTRA SIGNAL (1.000) - DEPLOYING EMERGENCY RESERVES!
+2025-08-22 00:36:36,634 - INFO -    🔍 DEBUG: Ultra signal #9 detected
+2025-08-22 00:36:36,634 - INFO -    💰 Capital utilization: +1 extra orders queued
+2025-08-22 00:36:36,635 - INFO - 📊 EOD Summary [21.0%]: $104,299 (+4.30%) | Pos: 6 (0.0%) | Trades: 5 (ML: 2) | Pending: 8 (Risk: 0) | Cash: $11,453
+2025-08-22 00:36:36,636 - INFO - 📅 Day 14/62: 2025-06-11
+2025-08-22 00:36:36,637 - INFO -    ✅ ULTRA SIGNAL EXECUTED: BUY_MORE 16 GOOGL @ $179.81 (strength: 1.000)
+2025-08-22 00:36:36,637 - INFO -    📋 Executed: BUY_MORE 16 GOOGL @ $179.77
+2025-08-22 00:36:36,637 - WARNING -    ⚠️ Order would exceed position size limit: 82.5% > 50.0% for CRM
+2025-08-22 00:36:36,637 - INFO -    ❌ Rejected: BUY_MORE 7 CRM @ $268.07
+2025-08-22 00:36:36,637 - INFO -    ❌ Rejected: BUY_MORE 7 CRM @ $268.07
+2025-08-22 00:36:36,637 - WARNING -    ⚠️ Order would exceed position size limit: 69.5% > 30.0% for AAPL
+2025-08-22 00:36:36,637 - INFO -    ❌ Rejected: BUY_MORE 4 AAPL @ $203.27
+2025-08-22 00:36:36,637 - INFO -    ❌ Rejected: BUY_MORE 4 AAPL @ $203.27
+2025-08-22 00:36:36,637 - WARNING -    ⚠️ Order would exceed position size limit: 65.0% > 30.0% for DIS
+2025-08-22 00:36:36,637 - INFO -    ❌ Rejected: BUY_MORE 7 DIS @ $117.88
+2025-08-22 00:36:36,637 - INFO -    ❌ Rejected: BUY_MORE 7 DIS @ $117.88
+2025-08-22 00:36:36,637 - WARNING -    ⚠️ Order would exceed position size limit: 73.3% > 30.0% for NVDA
+2025-08-22 00:36:36,637 - INFO -    ❌ Rejected: BUY_MORE 5 NVDA @ $144.61
+2025-08-22 00:36:36,637 - INFO -    ❌ Rejected: BUY_MORE 5 NVDA @ $144.61
+2025-08-22 00:36:36,637 - WARNING -    ⚠️ Order would exceed position size limit: 59.8% > 30.0% for GOOGL
+2025-08-22 00:36:36,637 - INFO -    ❌ Rejected: BUY_MORE 4 GOOGL @ $179.77
+2025-08-22 00:36:36,638 - INFO -    ❌ Rejected: BUY_MORE 4 GOOGL @ $179.77
+2025-08-22 00:36:36,638 - WARNING -    ⚠️ Order would exceed position size limit: 38.2% > 30.0% for SNOW
+2025-08-22 00:36:36,638 - INFO -    ❌ Rejected: BUY_MORE 4 SNOW @ $207.99
+2025-08-22 00:36:36,638 - INFO -    ❌ Rejected: BUY_MORE 4 SNOW @ $207.99
+2025-08-22 00:36:36,638 - WARNING -    ⚠️ Order would exceed position size limit: 82.5% > 50.0% for CRM
+2025-08-22 00:36:36,638 - INFO -    ❌ Rejected: BUY_MORE 7 CRM @ $268.07
+2025-08-22 00:36:36,638 - INFO -    ❌ Rejected: BUY_MORE 7 CRM @ $268.07
+2025-08-22 00:36:36,638 - INFO -    📋 Executed 1 pending orders at market open
+2025-08-22 00:36:36,639 - INFO -    🎯 Take profit queued: DIS @ $118.21 (P&L: 6.5%)
+2025-08-22 00:36:36,642 - INFO -    🛡️ Risk management: 1 orders queued
+2025-08-22 00:36:42,753 - INFO -    📝 Queued: SELL_PARTIAL 11 SNOW @ $208.61 (close) → execute tomorrow @ open
+2025-08-22 00:36:42,788 - INFO -    ⚖️ Portfolio rebalancing: 5 orders queued
+2025-08-22 00:36:42,788 - INFO -    ⚖️ Portfolio rebalancing: 5 orders queued
+2025-08-22 00:36:42,864 - INFO -    🔥 ULTRA SIGNAL (0.940) - DEPLOYING EMERGENCY RESERVES!
+2025-08-22 00:36:42,864 - INFO -    🔍 DEBUG: Ultra signal #10 detected
+2025-08-22 00:36:42,864 - INFO -    💰 Capital utilization: +1 extra orders queued
+2025-08-22 00:36:42,866 - INFO - 📊 EOD Summary [22.6%]: $103,560 (+3.56%) | Pos: 6 (0.0%) | Trades: 2 (ML: 1) | Pending: 8 (Risk: 1) | Cash: $8,575
+2025-08-22 00:36:42,866 - INFO - 📅 Day 15/62: 2025-06-12
+2025-08-22 00:36:42,867 - INFO -    ❌ Rejected: TAKE_PROFIT 115 DIS @ $118.37
+2025-08-22 00:36:42,867 - INFO -    📋 Executed: SELL_PARTIAL 11 SNOW @ $206.14
+2025-08-22 00:36:42,867 - WARNING -    ⚠️ Order would exceed position size limit: 62.5% > 30.0% for AAPL
+2025-08-22 00:36:42,868 - INFO -    ❌ Rejected: BUY_MORE 3 AAPL @ $198.85
+2025-08-22 00:36:42,868 - INFO -    ❌ Rejected: BUY_MORE 3 AAPL @ $198.85
+2025-08-22 00:36:42,868 - WARNING -    ⚠️ Order would exceed position size limit: 58.1% > 30.0% for DIS
+2025-08-22 00:36:42,868 - INFO -    ❌ Rejected: BUY_MORE 5 DIS @ $118.37
+2025-08-22 00:36:42,868 - INFO -    ❌ Rejected: BUY_MORE 5 DIS @ $118.37
+2025-08-22 00:36:42,868 - WARNING -    ⚠️ Order would exceed position size limit: 67.2% > 30.0% for NVDA
+2025-08-22 00:36:42,868 - INFO -    ❌ Rejected: BUY_MORE 4 NVDA @ $141.97
+2025-08-22 00:36:42,868 - INFO -    ❌ Rejected: BUY_MORE 4 NVDA @ $141.97
+2025-08-22 00:36:42,868 - WARNING -    ⚠️ Order would exceed position size limit: 52.2% > 30.0% for GOOGL
+2025-08-22 00:36:42,868 - INFO -    ❌ Rejected: BUY_MORE 3 GOOGL @ $176.18
+2025-08-22 00:36:42,868 - INFO -    ❌ Rejected: BUY_MORE 3 GOOGL @ $176.18
+2025-08-22 00:36:42,868 - INFO -    📋 Executed: BUY_MORE 3 SNOW @ $206.14
+2025-08-22 00:36:42,868 - INFO -    📋 Executed: BUY_MORE 6 SNOW @ $206.14
+2025-08-22 00:36:42,868 - INFO -    📋 Executed 3 pending orders at market open
+2025-08-22 00:36:48,975 - INFO -    📝 Queued: BUY_MORE 6 CRM @ $266.49 (close) → execute tomorrow @ open
+2025-08-22 00:36:49,016 - INFO -    ⚖️ Portfolio rebalancing: 4 orders queued
+2025-08-22 00:36:49,016 - INFO -    ⚖️ Portfolio rebalancing: 4 orders queued
+2025-08-22 00:36:49,091 - INFO -    🔥 ULTRA SIGNAL (0.961) - DEPLOYING EMERGENCY RESERVES!
+2025-08-22 00:36:49,091 - INFO -    🔍 DEBUG: Ultra signal #11 detected
+2025-08-22 00:36:49,091 - INFO -    💰 Capital utilization: +1 extra orders queued
+2025-08-22 00:36:49,092 - INFO - 📊 EOD Summary [24.2%]: $103,850 (+3.85%) | Pos: 6 (0.0%) | Trades: 4 (ML: 1) | Pending: 6 (Risk: 0) | Cash: $8,983
+2025-08-22 00:36:49,092 - INFO - 📈 Weekly Summary: -0.17% | Active Models: 120 | Drawdown: 0.43% | Top Holdings: 
+2025-08-22 00:36:49,092 - INFO - 📅 Day 16/62: 2025-06-13
+2025-08-22 00:36:49,094 - WARNING -    ⚠️ Order would exceed position size limit: 80.6% > 50.0% for CRM
+2025-08-22 00:36:49,094 - INFO -    ❌ Rejected: BUY_MORE 6 CRM @ $263.06
+2025-08-22 00:36:49,094 - INFO -    ❌ Rejected: BUY_MORE 6 CRM @ $263.06
+2025-08-22 00:36:49,094 - WARNING -    ⚠️ Order would exceed position size limit: 67.2% > 30.0% for AAPL
+2025-08-22 00:36:49,094 - INFO -    ❌ Rejected: BUY_MORE 3 AAPL @ $199.50
+2025-08-22 00:36:49,094 - INFO -    ❌ Rejected: BUY_MORE 3 AAPL @ $199.50
+2025-08-22 00:36:49,094 - WARNING -    ⚠️ Order would exceed position size limit: 62.5% > 30.0% for DIS
+2025-08-22 00:36:49,094 - INFO -    ❌ Rejected: BUY_MORE 5 DIS @ $116.81
+2025-08-22 00:36:49,094 - INFO -    ❌ Rejected: BUY_MORE 5 DIS @ $116.81
+2025-08-22 00:36:49,094 - WARNING -    ⚠️ Order would exceed position size limit: 56.6% > 30.0% for GOOGL
+2025-08-22 00:36:49,094 - INFO -    ❌ Rejected: BUY_MORE 3 GOOGL @ $172.44
+2025-08-22 00:36:49,094 - INFO -    ❌ Rejected: BUY_MORE 3 GOOGL @ $172.44
+2025-08-22 00:36:49,094 - WARNING -    ⚠️ Order would exceed position size limit: 33.2% > 30.0% for SNOW
+2025-08-22 00:36:49,094 - INFO -    ❌ Rejected: BUY_MORE 3 SNOW @ $208.00
+2025-08-22 00:36:49,094 - INFO -    ❌ Rejected: BUY_MORE 3 SNOW @ $208.00
+2025-08-22 00:36:49,095 - WARNING -    ⚠️ Order would exceed position size limit: 80.6% > 50.0% for CRM
+2025-08-22 00:36:49,095 - INFO -    ❌ Rejected: BUY_MORE 6 CRM @ $263.06
+2025-08-22 00:36:49,095 - INFO -    ❌ Rejected: BUY_MORE 6 CRM @ $263.06
+2025-08-22 00:36:55,160 - INFO -    📝 Queued: SELL_ALL 111 CRM @ $257.99 (close) → execute tomorrow @ open
+2025-08-22 00:36:55,183 - INFO -    📝 Queued: SELL_ALL 115 DIS @ $117.44 (close) → execute tomorrow @ open
+2025-08-22 00:36:55,206 - INFO -    ⚖️ Portfolio rebalancing: 4 orders queued
+2025-08-22 00:36:55,206 - INFO -    ⚖️ Portfolio rebalancing: 4 orders queued
+2025-08-22 00:36:55,286 - INFO -    🔥 ULTRA SIGNAL (0.984) - DEPLOYING EMERGENCY RESERVES!
+2025-08-22 00:36:55,286 - INFO -    🔍 DEBUG: Ultra signal #12 detected
+2025-08-22 00:36:55,287 - INFO - 📊 EOD Summary [25.8%]: $102,050 (+2.05%) | Pos: 6 (0.0%) | Trades: 2 (ML: 2) | Pending: 6 (Risk: 0) | Cash: $8,983
+2025-08-22 00:36:55,287 - INFO - 📅 Day 17/62: 2025-06-16
+2025-08-22 00:36:55,289 - INFO -    📋 Executed: SELL_ALL 111 CRM @ $259.98
+2025-08-22 00:36:55,289 - INFO -    📋 Executed: SELL_ALL 115 DIS @ $117.52
+2025-08-22 00:36:55,289 - INFO -    📋 Executed: BUY_MORE 3 AAPL @ $197.08
+2025-08-22 00:36:55,289 - INFO -    📋 Executed: BUY_MORE 5 DIS @ $117.52
+2025-08-22 00:36:55,289 - INFO -    📋 Executed: BUY_MORE 3 GOOGL @ $174.73
+2025-08-22 00:36:55,289 - INFO -    📋 Executed: BUY_MORE 3 SNOW @ $210.31
+2025-08-22 00:36:55,289 - INFO -    📋 Executed 6 pending orders at market open
+2025-08-22 00:37:01,404 - INFO -    🔥 ULTRA signal (0.933) - using maximum position limit 70.0%
+2025-08-22 00:37:01,404 - INFO -    📝 Queued: BUY 69 PG @ $159.79 (close) → execute tomorrow @ open
+2025-08-22 00:37:01,412 - INFO -    🔥 ULTRA signal (0.953) - using maximum position limit 70.0%
+2025-08-22 00:37:01,412 - INFO -    📝 Queued: BUY 121 WMT @ $94.07 (close) → execute tomorrow @ open
+2025-08-22 00:37:01,412 - INFO -    ⚖️ Portfolio rebalancing: 4 orders queued
+2025-08-22 00:37:01,413 - INFO -    ⚖️ Portfolio rebalancing: 4 orders queued
+2025-08-22 00:37:01,488 - INFO -    🔥 ULTRA SIGNAL (1.000) - DEPLOYING EMERGENCY RESERVES!
+2025-08-22 00:37:01,489 - INFO -    🔍 DEBUG: Ultra signal #13 detected
+2025-08-22 00:37:01,489 - INFO -    💰 Capital utilization: +2 extra orders queued
+2025-08-22 00:37:01,490 - INFO - 📊 EOD Summary [27.4%]: $102,958 (+2.96%) | Pos: 5 (0.0%) | Trades: 8 (ML: 2) | Pending: 8 (Risk: 0) | Cash: $48,987
+2025-08-22 00:37:01,490 - INFO - 📅 Day 18/62: 2025-06-17
+2025-08-22 00:37:01,492 - INFO -    ✅ ULTRA SIGNAL EXECUTED: BUY 69 PG @ $159.00 (strength: 0.933)
+2025-08-22 00:37:01,492 - INFO -    📋 Executed: BUY 69 PG @ $158.97
+2025-08-22 00:37:01,492 - INFO -    ✅ ULTRA SIGNAL EXECUTED: BUY 121 WMT @ $93.75 (strength: 0.953)
+2025-08-22 00:37:01,492 - INFO -    📋 Executed: BUY 121 WMT @ $93.73
+2025-08-22 00:37:01,492 - WARNING -    ⚠️ Order would exceed position size limit: 47.0% > 30.0% for AAPL
+2025-08-22 00:37:01,492 - INFO -    ❌ Rejected: BUY_MORE 18 AAPL @ $196.98
+2025-08-22 00:37:01,492 - INFO -    ❌ Rejected: BUY_MORE 18 AAPL @ $196.98
+2025-08-22 00:37:01,493 - WARNING -    ⚠️ Order would exceed position size limit: 38.9% > 30.0% for GOOGL
+2025-08-22 00:37:01,493 - INFO -    ❌ Rejected: BUY_MORE 20 GOOGL @ $175.70
+2025-08-22 00:37:01,493 - INFO -    ❌ Rejected: BUY_MORE 20 GOOGL @ $175.70
+2025-08-22 00:37:01,493 - INFO -    📋 Executed: BUY_MORE 17 SNOW @ $208.00
+2025-08-22 00:37:01,493 - INFO -    📋 Executed: BUY_MORE 30 DIS @ $118.48
+2025-08-22 00:37:01,493 - INFO -    ✅ ULTRA SIGNAL EXECUTED: BUY 25 MSFT @ $474.71 (strength: 1.000)
+2025-08-22 00:37:01,493 - INFO -    📋 Executed: BUY 25 MSFT @ $474.62
+2025-08-22 00:37:01,493 - WARNING -    🚨 ULTRA SIGNAL REJECTED! 119.2% > 70.0% for WMT (strength: 0.953)
+2025-08-22 00:37:01,493 - INFO -    ❌ Rejected: BUY 121 WMT @ $93.73
+2025-08-22 00:37:01,493 - INFO -    ❌ Rejected: BUY 121 WMT @ $93.73
+2025-08-22 00:37:01,493 - INFO -    📋 Executed 5 pending orders at market open
+2025-08-22 00:37:07,616 - INFO -    📝 Queued: SELL_ALL 25 MSFT @ $477.26 (close) → execute tomorrow @ open
+2025-08-22 00:37:07,676 - INFO -    📝 Queued: BUY_MORE 11 PG @ $157.44 (close) → execute tomorrow @ open
+2025-08-22 00:37:07,685 - INFO -    📝 Queued: BUY_MORE 18 WMT @ $94.03 (close) → execute tomorrow @ open
+2025-08-22 00:37:07,685 - INFO -    ⚖️ Portfolio rebalancing: 7 orders queued
+2025-08-22 00:37:07,685 - INFO -    ⚖️ Portfolio rebalancing: 7 orders queued
+2025-08-22 00:37:07,761 - INFO -    🔥 ULTRA SIGNAL (1.000) - DEPLOYING EMERGENCY RESERVES!
+2025-08-22 00:37:07,761 - INFO -    🔍 DEBUG: Ultra signal #14 detected
+2025-08-22 00:37:07,763 - INFO - 📊 EOD Summary [29.0%]: $102,551 (+2.55%) | Pos: 8 (0.0%) | Trades: 8 (ML: 3) | Pending: 10 (Risk: 0) | Cash: $7,692
+2025-08-22 00:37:07,763 - INFO - 📅 Day 19/62: 2025-06-18
+2025-08-22 00:37:07,764 - INFO -    📋 Executed: SELL_ALL 25 MSFT @ $477.22
+2025-08-22 00:37:07,765 - INFO -    ✅ ULTRA SIGNAL EXECUTED: BUY_MORE 11 PG @ $157.50 (strength: 0.983)
+2025-08-22 00:37:07,765 - INFO -    📋 Executed: BUY_MORE 11 PG @ $157.47
+2025-08-22 00:37:07,765 - INFO -    ✅ ULTRA SIGNAL EXECUTED: BUY_MORE 18 WMT @ $94.37 (strength: 0.934)
+2025-08-22 00:37:07,765 - INFO -    📋 Executed: BUY_MORE 18 WMT @ $94.35
+2025-08-22 00:37:07,765 - WARNING -    ⚠️ Order would exceed position size limit: 52.2% > 30.0% for AAPL
+2025-08-22 00:37:07,765 - INFO -    ❌ Rejected: BUY_MORE 2 AAPL @ $195.72
+2025-08-22 00:37:07,765 - INFO -    ❌ Rejected: BUY_MORE 2 AAPL @ $195.72
+2025-08-22 00:37:07,765 - WARNING -    ⚠️ Order would exceed position size limit: 43.0% > 30.0% for GOOGL
+2025-08-22 00:37:07,765 - INFO -    ❌ Rejected: BUY_MORE 3 GOOGL @ $176.01
+2025-08-22 00:37:07,765 - INFO -    ❌ Rejected: BUY_MORE 3 GOOGL @ $176.01
+2025-08-22 00:37:07,765 - WARNING -    ⚠️ Order would exceed position size limit: 34.2% > 30.0% for SNOW
+2025-08-22 00:37:07,765 - INFO -    ❌ Rejected: BUY_MORE 2 SNOW @ $210.36
+2025-08-22 00:37:07,765 - INFO -    ❌ Rejected: BUY_MORE 2 SNOW @ $210.36
+2025-08-22 00:37:07,765 - INFO -    📋 Executed: BUY_MORE 4 DIS @ $117.38
+2025-08-22 00:37:07,765 - WARNING -    ⚠️ Order would exceed position size limit: 46.2% > 30.0% for PG
+2025-08-22 00:37:07,765 - INFO -    ❌ Rejected: BUY_MORE 3 PG @ $157.47
+2025-08-22 00:37:07,765 - INFO -    ❌ Rejected: BUY_MORE 3 PG @ $157.47
+2025-08-22 00:37:07,765 - WARNING -    ⚠️ Order would exceed position size limit: 47.5% > 30.0% for WMT
+2025-08-22 00:37:07,765 - INFO -    ❌ Rejected: BUY_MORE 6 WMT @ $94.35
+2025-08-22 00:37:07,765 - INFO -    ❌ Rejected: BUY_MORE 6 WMT @ $94.35
+2025-08-22 00:37:07,765 - INFO -    📋 Executed: BUY_MORE 1 MSFT @ $477.22
+2025-08-22 00:37:07,766 - INFO -    📋 Executed 5 pending orders at market open
+2025-08-22 00:37:07,768 - INFO -    🏁 Trailing stop queued: GOOGL @ $174.12 (P&L: 1.3%)
+2025-08-22 00:37:07,770 - INFO -    🛡️ Risk management: 1 orders queued
+2025-08-22 00:37:13,871 - INFO -    📝 Queued: SELL_ALL 1 MSFT @ $479.45 (close) → execute tomorrow @ open
+2025-08-22 00:37:13,932 - INFO -    📝 Queued: BUY_MORE 24 PG @ $156.95 (close) → execute tomorrow @ open
+2025-08-22 00:37:13,939 - INFO -    ⚖️ Portfolio rebalancing: 7 orders queued
+2025-08-22 00:37:13,939 - INFO -    ⚖️ Portfolio rebalancing: 7 orders queued
+2025-08-22 00:37:14,018 - INFO -    🔥 ULTRA SIGNAL (1.000) - DEPLOYING EMERGENCY RESERVES!
+2025-08-22 00:37:14,018 - INFO -    🔍 DEBUG: Ultra signal #15 detected
+2025-08-22 00:37:14,018 - INFO -    💰 Capital utilization: +2 extra orders queued
+2025-08-22 00:37:14,020 - INFO - 📊 EOD Summary [30.6%]: $102,806 (+2.81%) | Pos: 8 (0.0%) | Trades: 7 (ML: 2) | Pending: 12 (Risk: 0) | Cash: $15,232
+2025-08-22 00:37:14,020 - INFO - 📅 Day 20/62: 2025-06-20
+2025-08-22 00:37:14,021 - INFO -    ❌ Rejected: TRAILING_STOP 64 GOOGL @ $173.95
+2025-08-22 00:37:14,021 - INFO -    📋 Executed: SELL_ALL 1 MSFT @ $481.44
+2025-08-22 00:37:14,021 - INFO -    ✅ ULTRA SIGNAL EXECUTED: BUY_MORE 24 PG @ $156.99 (strength: 1.000)
+2025-08-22 00:37:14,021 - INFO -    📋 Executed: BUY_MORE 24 PG @ $156.96
+2025-08-22 00:37:14,022 - WARNING -    ⚠️ Order would exceed position size limit: 62.2% > 30.0% for AAPL
+2025-08-22 00:37:14,022 - INFO -    ❌ Rejected: BUY_MORE 5 AAPL @ $198.02
+2025-08-22 00:37:14,022 - INFO -    ❌ Rejected: BUY_MORE 5 AAPL @ $198.02
+2025-08-22 00:37:14,022 - WARNING -    ⚠️ Order would exceed position size limit: 52.8% > 30.0% for GOOGL
+2025-08-22 00:37:14,022 - INFO -    ❌ Rejected: BUY_MORE 6 GOOGL @ $173.95
+2025-08-22 00:37:14,022 - INFO -    ❌ Rejected: BUY_MORE 6 GOOGL @ $173.95
+2025-08-22 00:37:14,022 - WARNING -    ⚠️ Order would exceed position size limit: 45.2% > 30.0% for SNOW
+2025-08-22 00:37:14,022 - INFO -    ❌ Rejected: BUY_MORE 5 SNOW @ $213.35
+2025-08-22 00:37:14,022 - INFO -    ❌ Rejected: BUY_MORE 5 SNOW @ $213.35
+2025-08-22 00:37:14,022 - WARNING -    ⚠️ Order would exceed position size limit: 34.2% > 30.0% for DIS
+2025-08-22 00:37:14,022 - INFO -    ❌ Rejected: BUY_MORE 9 DIS @ $117.75
+2025-08-22 00:37:14,022 - INFO -    ❌ Rejected: BUY_MORE 9 DIS @ $117.75
+2025-08-22 00:37:14,022 - WARNING -    ⚠️ Order would exceed position size limit: 61.6% > 30.0% for PG
+2025-08-22 00:37:14,022 - INFO -    ❌ Rejected: BUY_MORE 7 PG @ $156.96
+2025-08-22 00:37:14,022 - INFO -    ❌ Rejected: BUY_MORE 7 PG @ $156.96
+2025-08-22 00:37:14,022 - WARNING -    ⚠️ Order would exceed position size limit: 57.0% > 30.0% for WMT
+2025-08-22 00:37:14,022 - INFO -    ❌ Rejected: BUY_MORE 12 WMT @ $95.02
+2025-08-22 00:37:14,022 - INFO -    ❌ Rejected: BUY_MORE 12 WMT @ $95.02
+2025-08-22 00:37:14,022 - INFO -    📋 Executed: BUY_MORE 2 MSFT @ $481.44
+2025-08-22 00:37:14,022 - INFO -    ✅ ULTRA SIGNAL EXECUTED: BUY_MORE 7 MSFT @ $481.53 (strength: 1.000)
+2025-08-22 00:37:14,022 - INFO -    📋 Executed: BUY_MORE 7 MSFT @ $481.44
+2025-08-22 00:37:14,023 - WARNING -    🚨 ULTRA SIGNAL REJECTED! 83.3% > 70.0% for PG (strength: 1.000)
+2025-08-22 00:37:14,023 - INFO -    ❌ Rejected: BUY_MORE 23 PG @ $156.96
+2025-08-22 00:37:14,023 - INFO -    ❌ Rejected: BUY_MORE 23 PG @ $156.96
+2025-08-22 00:37:14,023 - INFO -    📋 Executed 4 pending orders at market open
+2025-08-22 00:37:20,123 - INFO -    📝 Queued: SELL_ALL 64 GOOGL @ $166.64 (close) → execute tomorrow @ open
+2025-08-22 00:37:20,182 - INFO -    📝 Queued: BUY_MORE 10 PG @ $158.00 (close) → execute tomorrow @ open
+2025-08-22 00:37:20,191 - INFO -    ⚖️ Portfolio rebalancing: 7 orders queued
+2025-08-22 00:37:20,191 - INFO -    ⚖️ Portfolio rebalancing: 7 orders queued
+2025-08-22 00:37:20,271 - INFO -    🔥 ULTRA SIGNAL (0.976) - DEPLOYING EMERGENCY RESERVES!
+2025-08-22 00:37:20,271 - INFO -    🔍 DEBUG: Ultra signal #16 detected
+2025-08-22 00:37:20,273 - INFO - 📊 EOD Summary [32.3%]: $102,715 (+2.71%) | Pos: 8 (0.0%) | Trades: 6 (ML: 2) | Pending: 9 (Risk: 0) | Cash: $7,606
+2025-08-22 00:37:20,273 - INFO - 📈 Weekly Summary: +0.65% | Active Models: 120 | Drawdown: 1.52% | Top Holdings: 
+2025-08-22 00:37:20,273 - INFO -    Progress: +2.7% | Positions: 8 | Queued orders: 9 | Actions today: 6
+2025-08-22 00:37:20,273 - INFO - 📅 Day 21/62: 2025-06-23
+2025-08-22 00:37:20,274 - INFO -    📋 Executed: SELL_ALL 64 GOOGL @ $166.27
+2025-08-22 00:37:20,274 - WARNING -    ⚠️ Order would exceed position size limit: 51.9% > 50.0% for PG
+2025-08-22 00:37:20,274 - INFO -    ❌ Rejected: BUY_MORE 10 PG @ $157.99
+2025-08-22 00:37:20,274 - INFO -    ❌ Rejected: BUY_MORE 10 PG @ $157.99
+2025-08-22 00:37:20,275 - WARNING -    ⚠️ Order would exceed position size limit: 49.8% > 30.0% for AAPL
+2025-08-22 00:37:20,275 - INFO -    ❌ Rejected: BUY_MORE 2 AAPL @ $201.40
+2025-08-22 00:37:20,275 - INFO -    ❌ Rejected: BUY_MORE 2 AAPL @ $201.40
+2025-08-22 00:37:20,275 - INFO -    📋 Executed: BUY_MORE 3 GOOGL @ $166.27
+2025-08-22 00:37:20,275 - WARNING -    ⚠️ Order would exceed position size limit: 32.1% > 30.0% for SNOW
+2025-08-22 00:37:20,275 - INFO -    ❌ Rejected: BUY_MORE 2 SNOW @ $209.62
+2025-08-22 00:37:20,275 - INFO -    ❌ Rejected: BUY_MORE 2 SNOW @ $209.62
+2025-08-22 00:37:20,275 - INFO -    📋 Executed: BUY_MORE 4 DIS @ $116.16
+2025-08-22 00:37:20,275 - WARNING -    ⚠️ Order would exceed position size limit: 50.2% > 30.0% for PG
+2025-08-22 00:37:20,275 - INFO -    ❌ Rejected: BUY_MORE 3 PG @ $157.99
+2025-08-22 00:37:20,275 - INFO -    ❌ Rejected: BUY_MORE 3 PG @ $157.99
+2025-08-22 00:37:20,275 - WARNING -    ⚠️ Order would exceed position size limit: 45.1% > 30.0% for WMT
+2025-08-22 00:37:20,275 - INFO -    ❌ Rejected: BUY_MORE 5 WMT @ $95.70
+2025-08-22 00:37:20,275 - INFO -    ❌ Rejected: BUY_MORE 5 WMT @ $95.70
+2025-08-22 00:37:20,275 - INFO -    📋 Executed: BUY_MORE 1 MSFT @ $477.43
+2025-08-22 00:37:20,275 - INFO -    📋 Executed 4 pending orders at market open
+2025-08-22 00:37:26,439 - INFO -    📝 Queued: SELL_ALL 10 MSFT @ $485.20 (close) → execute tomorrow @ open
+2025-08-22 00:37:26,444 - INFO -    📝 Queued: SELL_ALL 3 GOOGL @ $165.19 (close) → execute tomorrow @ open
+2025-08-22 00:37:26,500 - INFO -    📝 Queued: BUY_MORE 22 PG @ $159.94 (close) → execute tomorrow @ open
+2025-08-22 00:37:26,507 - INFO -    ⚖️ Portfolio rebalancing: 7 orders queued
+2025-08-22 00:37:26,507 - INFO -    ⚖️ Portfolio rebalancing: 7 orders queued
+2025-08-22 00:37:26,584 - INFO -    🔥 ULTRA SIGNAL (0.963) - DEPLOYING EMERGENCY RESERVES!
+2025-08-22 00:37:26,584 - INFO -    🔍 DEBUG: Ultra signal #17 detected
+2025-08-22 00:37:26,584 - INFO -    💰 Capital utilization: +2 extra orders queued
+2025-08-22 00:37:26,586 - INFO - 📊 EOD Summary [33.9%]: $103,368 (+3.37%) | Pos: 8 (0.0%) | Trades: 7 (ML: 3) | Pending: 12 (Risk: 0) | Cash: $16,796
+2025-08-22 00:37:26,586 - INFO - 📅 Day 22/62: 2025-06-24
+2025-08-22 00:37:26,587 - INFO -    📋 Executed: SELL_ALL 10 MSFT @ $488.15
+2025-08-22 00:37:26,587 - INFO -    📋 Executed: SELL_ALL 3 GOOGL @ $166.92
+2025-08-22 00:37:26,587 - WARNING -    ⚠️ Order would exceed position size limit: 52.0% > 50.0% for PG
+2025-08-22 00:37:26,587 - INFO -    ❌ Rejected: BUY_MORE 22 PG @ $160.09
+2025-08-22 00:37:26,587 - INFO -    ❌ Rejected: BUY_MORE 22 PG @ $160.09
+2025-08-22 00:37:26,587 - WARNING -    ⚠️ Order would exceed position size limit: 47.0% > 30.0% for AAPL
+2025-08-22 00:37:26,587 - INFO -    ❌ Rejected: BUY_MORE 6 AAPL @ $202.36
+2025-08-22 00:37:26,587 - INFO -    ❌ Rejected: BUY_MORE 6 AAPL @ $202.36
+2025-08-22 00:37:26,588 - WARNING -    ⚠️ Order would exceed position size limit: 30.4% > 30.0% for SNOW
+2025-08-22 00:37:26,588 - INFO -    ❌ Rejected: BUY_MORE 5 SNOW @ $219.49
+2025-08-22 00:37:26,588 - INFO -    ❌ Rejected: BUY_MORE 5 SNOW @ $219.49
+2025-08-22 00:37:26,588 - INFO -    📋 Executed: BUY_MORE 10 DIS @ $117.75
+2025-08-22 00:37:26,588 - WARNING -    ⚠️ Order would exceed position size limit: 47.2% > 30.0% for PG
+2025-08-22 00:37:26,588 - INFO -    ❌ Rejected: BUY_MORE 7 PG @ $160.09
+2025-08-22 00:37:26,588 - INFO -    ❌ Rejected: BUY_MORE 7 PG @ $160.09
+2025-08-22 00:37:26,588 - WARNING -    ⚠️ Order would exceed position size limit: 42.6% > 30.0% for WMT
+2025-08-22 00:37:26,588 - INFO -    ❌ Rejected: BUY_MORE 12 WMT @ $97.50
+2025-08-22 00:37:26,588 - INFO -    ❌ Rejected: BUY_MORE 12 WMT @ $97.50
+2025-08-22 00:37:26,588 - INFO -    📋 Executed: BUY_MORE 2 MSFT @ $488.15
+2025-08-22 00:37:26,588 - INFO -    📋 Executed: BUY_MORE 7 GOOGL @ $166.92
+2025-08-22 00:37:26,588 - WARNING -    ⚠️ Order would exceed position size limit: 56.8% > 50.0% for PG
+2025-08-22 00:37:26,588 - INFO -    ❌ Rejected: BUY_MORE 22 PG @ $160.09
+2025-08-22 00:37:26,588 - INFO -    ❌ Rejected: BUY_MORE 22 PG @ $160.09
+2025-08-22 00:37:26,589 - INFO -    📋 Executed: BUY_MORE 6 MSFT @ $488.15
+2025-08-22 00:37:26,589 - INFO -    📋 Executed 6 pending orders at market open
+2025-08-22 00:37:32,674 - INFO -    📝 Queued: SELL_ALL 8 MSFT @ $489.31 (close) → execute tomorrow @ open
+2025-08-22 00:37:32,736 - INFO -    📝 Queued: BUY_MORE 23 PG @ $159.27 (close) → execute tomorrow @ open
+2025-08-22 00:37:32,744 - INFO -    ⚖️ Portfolio rebalancing: 7 orders queued
+2025-08-22 00:37:32,744 - INFO -    ⚖️ Portfolio rebalancing: 7 orders queued
+2025-08-22 00:37:32,822 - INFO -    🔥 ULTRA SIGNAL (0.954) - DEPLOYING EMERGENCY RESERVES!
+2025-08-22 00:37:32,822 - INFO -    🔍 DEBUG: Ultra signal #18 detected
+2025-08-22 00:37:32,822 - INFO -    💰 Capital utilization: +2 extra orders queued
+2025-08-22 00:37:32,824 - INFO - 📊 EOD Summary [35.5%]: $104,201 (+4.20%) | Pos: 8 (0.0%) | Trades: 8 (ML: 2) | Pending: 11 (Risk: 0) | Cash: $15,917
+2025-08-22 00:37:32,824 - INFO - 📅 Day 23/62: 2025-06-25
+2025-08-22 00:37:32,825 - INFO -    📋 Executed: SELL_ALL 8 MSFT @ $491.23
+2025-08-22 00:37:32,825 - INFO -    ✅ ULTRA SIGNAL EXECUTED: BUY_MORE 23 PG @ $158.77 (strength: 0.953)
+2025-08-22 00:37:32,825 - INFO -    📋 Executed: BUY_MORE 23 PG @ $158.73
+2025-08-22 00:37:32,825 - WARNING -    ⚠️ Order would exceed position size limit: 54.7% > 30.0% for AAPL
+2025-08-22 00:37:32,825 - INFO -    ❌ Rejected: BUY_MORE 5 AAPL @ $201.22
+2025-08-22 00:37:32,825 - INFO -    ❌ Rejected: BUY_MORE 5 AAPL @ $201.22
+2025-08-22 00:37:32,826 - WARNING -    ⚠️ Order would exceed position size limit: 38.3% > 30.0% for SNOW
+2025-08-22 00:37:32,826 - INFO -    ❌ Rejected: BUY_MORE 5 SNOW @ $223.19
+2025-08-22 00:37:32,826 - INFO -    ❌ Rejected: BUY_MORE 5 SNOW @ $223.19
+2025-08-22 00:37:32,826 - WARNING -    ⚠️ Order would exceed position size limit: 33.3% > 30.0% for DIS
+2025-08-22 00:37:32,826 - INFO -    ❌ Rejected: BUY_MORE 10 DIS @ $118.77
+2025-08-22 00:37:32,826 - INFO -    ❌ Rejected: BUY_MORE 10 DIS @ $118.77
+2025-08-22 00:37:32,826 - WARNING -    ⚠️ Order would exceed position size limit: 58.5% > 30.0% for PG
+2025-08-22 00:37:32,826 - INFO -    ❌ Rejected: BUY_MORE 7 PG @ $158.73
+2025-08-22 00:37:32,826 - INFO -    ❌ Rejected: BUY_MORE 7 PG @ $158.73
+2025-08-22 00:37:32,826 - WARNING -    ⚠️ Order would exceed position size limit: 49.7% > 30.0% for WMT
+2025-08-22 00:37:32,826 - INFO -    ❌ Rejected: BUY_MORE 12 WMT @ $98.08
+2025-08-22 00:37:32,826 - INFO -    ❌ Rejected: BUY_MORE 12 WMT @ $98.08
+2025-08-22 00:37:32,826 - INFO -    📋 Executed: BUY_MORE 2 MSFT @ $491.23
+2025-08-22 00:37:32,826 - INFO -    📋 Executed: BUY_MORE 7 GOOGL @ $167.63
+2025-08-22 00:37:32,826 - INFO -    ✅ ULTRA SIGNAL EXECUTED: BUY_MORE 23 PG @ $158.77 (strength: 0.953)
+2025-08-22 00:37:32,826 - INFO -    📋 Executed: BUY_MORE 23 PG @ $158.73
+2025-08-22 00:37:32,826 - INFO -    📋 Executed: BUY_MORE 6 MSFT @ $491.23
+2025-08-22 00:37:32,826 - INFO -    📋 Executed 6 pending orders at market open
+2025-08-22 00:37:32,828 - INFO -    🎯 Take profit queued: NVDA @ $149.33 (P&L: 11.3%)
+2025-08-22 00:37:32,831 - INFO -    🛡️ Risk management: 1 orders queued
+2025-08-22 00:37:38,949 - INFO -    📝 Queued: SELL_PARTIAL 4 MSFT @ $491.46 (close) → execute tomorrow @ open
+2025-08-22 00:37:38,962 - INFO -    📝 Queued: BUY_MORE 6 NVDA @ $154.31 (close) → execute tomorrow @ open
+2025-08-22 00:37:39,014 - INFO -    📝 Queued: BUY_MORE 10 PG @ $157.89 (close) → execute tomorrow @ open
+2025-08-22 00:37:39,022 - INFO -    ⚖️ Portfolio rebalancing: 6 orders queued
+2025-08-22 00:37:39,022 - INFO -    ⚖️ Portfolio rebalancing: 6 orders queued
+2025-08-22 00:37:39,105 - INFO -    🔥 ULTRA SIGNAL (0.992) - DEPLOYING EMERGENCY RESERVES!
+2025-08-22 00:37:39,105 - INFO -    🔍 DEBUG: Ultra signal #19 detected
+2025-08-22 00:37:39,106 - INFO - 📊 EOD Summary [37.1%]: $104,982 (+4.98%) | Pos: 8 (0.0%) | Trades: 9 (ML: 3) | Pending: 10 (Risk: 1) | Cash: $7,429
+2025-08-22 00:37:39,106 - INFO - 📅 Day 24/62: 2025-06-26
+2025-08-22 00:37:39,108 - INFO -    ❌ Rejected: TAKE_PROFIT 144 NVDA @ $155.98
+2025-08-22 00:37:39,108 - INFO -    📋 Executed: SELL_PARTIAL 4 MSFT @ $492.17
+2025-08-22 00:37:39,108 - WARNING -    ⚠️ Order would exceed position size limit: 73.4% > 30.0% for NVDA
+2025-08-22 00:37:39,108 - INFO -    ❌ Rejected: BUY_MORE 6 NVDA @ $155.98
+2025-08-22 00:37:39,108 - INFO -    ❌ Rejected: BUY_MORE 6 NVDA @ $155.98
+2025-08-22 00:37:39,108 - WARNING -    🚨 ULTRA SIGNAL REJECTED! 76.4% > 70.0% for PG (strength: 0.920)
+2025-08-22 00:37:39,108 - INFO -    ❌ Rejected: BUY_MORE 10 PG @ $158.47
+2025-08-22 00:37:39,108 - INFO -    ❌ Rejected: BUY_MORE 10 PG @ $158.47
+2025-08-22 00:37:39,108 - WARNING -    ⚠️ Order would exceed position size limit: 66.3% > 30.0% for AAPL
+2025-08-22 00:37:39,108 - INFO -    ❌ Rejected: BUY_MORE 2 AAPL @ $201.20
+2025-08-22 00:37:39,109 - INFO -    ❌ Rejected: BUY_MORE 2 AAPL @ $201.20
+2025-08-22 00:37:39,109 - WARNING -    ⚠️ Order would exceed position size limit: 49.2% > 30.0% for SNOW
+2025-08-22 00:37:39,109 - INFO -    ❌ Rejected: BUY_MORE 2 SNOW @ $222.05
+2025-08-22 00:37:39,109 - INFO -    ❌ Rejected: BUY_MORE 2 SNOW @ $222.05
+2025-08-22 00:37:39,109 - WARNING -    ⚠️ Order would exceed position size limit: 43.4% > 30.0% for DIS
+2025-08-22 00:37:39,109 - INFO -    ❌ Rejected: BUY_MORE 4 DIS @ $119.98
+2025-08-22 00:37:39,109 - INFO -    ❌ Rejected: BUY_MORE 4 DIS @ $119.98
+2025-08-22 00:37:39,109 - WARNING -    ⚠️ Order would exceed position size limit: 61.0% > 30.0% for WMT
+2025-08-22 00:37:39,109 - INFO -    ❌ Rejected: BUY_MORE 5 WMT @ $96.67
+2025-08-22 00:37:39,109 - INFO -    ❌ Rejected: BUY_MORE 5 WMT @ $96.67
+2025-08-22 00:37:39,109 - INFO -    📋 Executed: BUY_MORE 3 GOOGL @ $172.43
+2025-08-22 00:37:39,109 - INFO -    📋 Executed: BUY_MORE 1 MSFT @ $492.17
+2025-08-22 00:37:39,109 - INFO -    📋 Executed 3 pending orders at market open
+2025-08-22 00:37:39,111 - INFO -    🎯 Take profit queued: NVDA @ $148.80 (P&L: 11.8%)
+2025-08-22 00:37:39,114 - INFO -    🛡️ Risk management: 1 orders queued
+2025-08-22 00:37:45,210 - INFO -    📝 Queued: SELL_ALL 5 MSFT @ $496.63 (close) → execute tomorrow @ open
+2025-08-22 00:37:45,279 - INFO -    ⚖️ Portfolio rebalancing: 6 orders queued
+2025-08-22 00:37:45,279 - INFO -    ⚖️ Portfolio rebalancing: 6 orders queued
+2025-08-22 00:37:45,356 - INFO -    🔥 ULTRA SIGNAL (0.953) - DEPLOYING EMERGENCY RESERVES!
+2025-08-22 00:37:45,356 - INFO -    🔍 DEBUG: Ultra signal #20 detected
+2025-08-22 00:37:45,358 - INFO - 📊 EOD Summary [38.7%]: $105,004 (+5.00%) | Pos: 8 (0.0%) | Trades: 4 (ML: 1) | Pending: 8 (Risk: 1) | Cash: $8,385
+2025-08-22 00:37:45,358 - INFO - 📅 Day 25/62: 2025-06-27
+2025-08-22 00:37:45,359 - INFO -    ❌ Rejected: TAKE_PROFIT 144 NVDA @ $156.04
+2025-08-22 00:37:45,359 - INFO -    📋 Executed: SELL_ALL 5 MSFT @ $496.73
+2025-08-22 00:37:45,360 - WARNING -    ⚠️ Order would exceed position size limit: 63.6% > 30.0% for AAPL
+2025-08-22 00:37:45,360 - INFO -    ❌ Rejected: BUY_MORE 3 AAPL @ $201.66
+2025-08-22 00:37:45,360 - INFO -    ❌ Rejected: BUY_MORE 3 AAPL @ $201.66
+2025-08-22 00:37:45,360 - WARNING -    ⚠️ Order would exceed position size limit: 45.4% > 30.0% for SNOW
+2025-08-22 00:37:45,360 - INFO -    ❌ Rejected: BUY_MORE 2 SNOW @ $222.43
+2025-08-22 00:37:45,360 - INFO -    ❌ Rejected: BUY_MORE 2 SNOW @ $222.43
+2025-08-22 00:37:45,360 - WARNING -    ⚠️ Order would exceed position size limit: 40.8% > 30.0% for DIS
+2025-08-22 00:37:45,360 - INFO -    ❌ Rejected: BUY_MORE 5 DIS @ $121.85
+2025-08-22 00:37:45,360 - INFO -    ❌ Rejected: BUY_MORE 5 DIS @ $121.85
+2025-08-22 00:37:45,360 - WARNING -    ⚠️ Order would exceed position size limit: 57.5% > 30.0% for WMT
+2025-08-22 00:37:45,360 - INFO -    ❌ Rejected: BUY_MORE 6 WMT @ $96.10
+2025-08-22 00:37:45,360 - INFO -    ❌ Rejected: BUY_MORE 6 WMT @ $96.10
+2025-08-22 00:37:45,360 - INFO -    📋 Executed: BUY_MORE 3 GOOGL @ $173.54
+2025-08-22 00:37:45,360 - INFO -    📋 Executed: BUY_MORE 1 MSFT @ $496.73
+2025-08-22 00:37:45,360 - INFO -    📋 Executed 3 pending orders at market open
+2025-08-22 00:37:45,362 - INFO -    🎯 Take profit queued: NVDA @ $148.89 (P&L: 13.8%)
+2025-08-22 00:37:45,365 - INFO -    🛡️ Risk management: 1 orders queued
+2025-08-22 00:37:51,494 - INFO -    📝 Queued: SELL_ALL 1 MSFT @ $495.13 (close) → execute tomorrow @ open
+2025-08-22 00:37:51,508 - INFO -    📝 Queued: BUY_MORE 14 NVDA @ $157.75 (close) → execute tomorrow @ open
+2025-08-22 00:37:51,571 - INFO -    ⚖️ Portfolio rebalancing: 6 orders queued
+2025-08-22 00:37:51,571 - INFO -    ⚖️ Portfolio rebalancing: 6 orders queued
+2025-08-22 00:37:51,656 - INFO -    🔥 ULTRA SIGNAL (1.000) - DEPLOYING EMERGENCY RESERVES!
+2025-08-22 00:37:51,656 - INFO -    🔍 DEBUG: Ultra signal #21 detected
+2025-08-22 00:37:51,657 - INFO - 📊 EOD Summary [40.3%]: $105,928 (+5.93%) | Pos: 8 (0.0%) | Trades: 5 (ML: 2) | Pending: 9 (Risk: 1) | Cash: $9,847
+2025-08-22 00:37:51,657 - INFO - 📈 Weekly Summary: +2.48% | Active Models: 120 | Drawdown: 0.00% | Top Holdings: 
+2025-08-22 00:37:51,657 - INFO - 📅 Day 26/62: 2025-06-30
+2025-08-22 00:37:51,659 - INFO -    ❌ Rejected: TAKE_PROFIT 144 NVDA @ $158.40
+2025-08-22 00:37:51,659 - INFO -    📋 Executed: SELL_ALL 1 MSFT @ $496.22
+2025-08-22 00:37:51,659 - WARNING -    🚨 ULTRA SIGNAL REJECTED! 75.5% > 70.0% for NVDA (strength: 0.934)
+2025-08-22 00:37:51,659 - INFO -    ❌ Rejected: BUY_MORE 14 NVDA @ $158.40
+2025-08-22 00:37:51,659 - INFO -    ❌ Rejected: BUY_MORE 14 NVDA @ $158.40
+2025-08-22 00:37:51,659 - WARNING -    ⚠️ Order would exceed position size limit: 64.8% > 30.0% for AAPL
+2025-08-22 00:37:51,659 - INFO -    ❌ Rejected: BUY_MORE 3 AAPL @ $201.78
+2025-08-22 00:37:51,659 - INFO -    ❌ Rejected: BUY_MORE 3 AAPL @ $201.78
+2025-08-22 00:37:51,659 - WARNING -    ⚠️ Order would exceed position size limit: 48.1% > 30.0% for SNOW
+2025-08-22 00:37:51,659 - INFO -    ❌ Rejected: BUY_MORE 3 SNOW @ $224.40
+2025-08-22 00:37:51,659 - INFO -    ❌ Rejected: BUY_MORE 3 SNOW @ $224.40
+2025-08-22 00:37:51,660 - WARNING -    ⚠️ Order would exceed position size limit: 43.3% > 30.0% for DIS
+2025-08-22 00:37:51,660 - INFO -    ❌ Rejected: BUY_MORE 6 DIS @ $124.31
+2025-08-22 00:37:51,660 - INFO -    ❌ Rejected: BUY_MORE 6 DIS @ $124.31
+2025-08-22 00:37:51,660 - WARNING -    ⚠️ Order would exceed position size limit: 59.4% > 30.0% for WMT
+2025-08-22 00:37:51,660 - INFO -    ❌ Rejected: BUY_MORE 7 WMT @ $97.00
+2025-08-22 00:37:51,660 - INFO -    ❌ Rejected: BUY_MORE 7 WMT @ $97.00
+2025-08-22 00:37:51,660 - WARNING -    ⚠️ Order would exceed position size limit: 31.1% > 30.0% for GOOGL
+2025-08-22 00:37:51,660 - INFO -    ❌ Rejected: BUY_MORE 4 GOOGL @ $180.78
+2025-08-22 00:37:51,660 - INFO -    ❌ Rejected: BUY_MORE 4 GOOGL @ $180.78
+2025-08-22 00:37:51,660 - INFO -    📋 Executed: BUY_MORE 1 MSFT @ $496.22
+2025-08-22 00:37:51,660 - INFO -    📋 Executed 2 pending orders at market open
+2025-08-22 00:37:51,662 - INFO -    🎯 Take profit queued: NVDA @ $148.77 (P&L: 13.9%)
+2025-08-22 00:37:51,665 - INFO -    🛡️ Risk management: 1 orders queued
+2025-08-22 00:37:57,777 - INFO -    📝 Queued: SELL_ALL 1 MSFT @ $496.59 (close) → execute tomorrow @ open
+2025-08-22 00:37:57,824 - INFO -    📝 Queued: BUY_MORE 17 DIS @ $124.01 (close) → execute tomorrow @ open
+2025-08-22 00:37:57,846 - INFO -    ⚖️ Portfolio rebalancing: 6 orders queued
+2025-08-22 00:37:57,846 - INFO -    ⚖️ Portfolio rebalancing: 6 orders queued
+2025-08-22 00:37:57,925 - INFO -    🔥 ULTRA SIGNAL (0.954) - DEPLOYING EMERGENCY RESERVES!
+2025-08-22 00:37:57,925 - INFO -    🔍 DEBUG: Ultra signal #22 detected
+2025-08-22 00:37:57,927 - INFO - 📊 EOD Summary [41.9%]: $106,389 (+6.39%) | Pos: 8 (0.0%) | Trades: 4 (ML: 2) | Pending: 9 (Risk: 1) | Cash: $9,845
+2025-08-22 00:37:57,927 - INFO - 📅 Day 27/62: 2025-07-01
+2025-08-22 00:37:57,928 - INFO -    ❌ Rejected: TAKE_PROFIT 144 NVDA @ $156.29
+2025-08-22 00:37:57,928 - INFO -    📋 Executed: SELL_ALL 1 MSFT @ $495.66
+2025-08-22 00:37:57,928 - INFO -    ✅ ULTRA SIGNAL EXECUTED: BUY_MORE 17 DIS @ $123.52 (strength: 0.928)
+2025-08-22 00:37:57,929 - INFO -    📋 Executed: BUY_MORE 17 DIS @ $123.50
+2025-08-22 00:37:57,929 - WARNING -    ⚠️ Order would exceed position size limit: 70.7% > 30.0% for AAPL
+2025-08-22 00:37:57,929 - INFO -    ❌ Rejected: BUY_MORE 3 AAPL @ $206.44
+2025-08-22 00:37:57,929 - INFO -    ❌ Rejected: BUY_MORE 3 AAPL @ $206.44
+2025-08-22 00:37:57,929 - WARNING -    ⚠️ Order would exceed position size limit: 53.6% > 30.0% for SNOW
+2025-08-22 00:37:57,929 - INFO -    ❌ Rejected: BUY_MORE 3 SNOW @ $218.90
+2025-08-22 00:37:57,929 - INFO -    ❌ Rejected: BUY_MORE 3 SNOW @ $218.90
+2025-08-22 00:37:57,929 - WARNING -    ⚠️ Order would exceed position size limit: 54.9% > 30.0% for DIS
+2025-08-22 00:37:57,929 - INFO -    ❌ Rejected: BUY_MORE 5 DIS @ $123.50
+2025-08-22 00:37:57,929 - INFO -    ❌ Rejected: BUY_MORE 5 DIS @ $123.50
+2025-08-22 00:37:57,929 - WARNING -    ⚠️ Order would exceed position size limit: 65.3% > 30.0% for WMT
+2025-08-22 00:37:57,929 - INFO -    ❌ Rejected: BUY_MORE 7 WMT @ $97.37
+2025-08-22 00:37:57,929 - INFO -    ❌ Rejected: BUY_MORE 7 WMT @ $97.37
+2025-08-22 00:37:57,929 - WARNING -    ⚠️ Order would exceed position size limit: 35.9% > 30.0% for GOOGL
+2025-08-22 00:37:57,929 - INFO -    ❌ Rejected: BUY_MORE 4 GOOGL @ $175.74
+2025-08-22 00:37:57,929 - INFO -    ❌ Rejected: BUY_MORE 4 GOOGL @ $175.74
+2025-08-22 00:37:57,929 - INFO -    📋 Executed: BUY_MORE 1 MSFT @ $495.66
+2025-08-22 00:37:57,929 - INFO -    📋 Executed 3 pending orders at market open
+2025-08-22 00:37:57,932 - INFO -    🎯 Take profit queued: NVDA @ $149.57 (P&L: 10.5%)
+2025-08-22 00:37:57,934 - INFO -    🛡️ Risk management: 1 orders queued
+2025-08-22 00:38:04,099 - INFO -    📝 Queued: BUY_MORE 8 AAPL @ $207.58 (close) → execute tomorrow @ open
+2025-08-22 00:38:04,174 - INFO -    ⚖️ Portfolio rebalancing: 6 orders queued
+2025-08-22 00:38:04,174 - INFO -    ⚖️ Portfolio rebalancing: 6 orders queued
+2025-08-22 00:38:04,258 - INFO -    🔥 ULTRA SIGNAL (1.000) - DEPLOYING EMERGENCY RESERVES!
+2025-08-22 00:38:04,258 - INFO -    🔍 DEBUG: Ultra signal #23 detected
+2025-08-22 00:38:04,260 - INFO - 📊 EOD Summary [43.5%]: $105,955 (+5.95%) | Pos: 8 (0.0%) | Trades: 4 (ML: 1) | Pending: 8 (Risk: 1) | Cash: $7,742
+2025-08-22 00:38:04,260 - INFO - 📅 Day 28/62: 2025-07-02
+2025-08-22 00:38:04,262 - INFO -    ❌ Rejected: TAKE_PROFIT 144 NVDA @ $152.98
+2025-08-22 00:38:04,262 - WARNING -    🚨 ULTRA SIGNAL REJECTED! 76.4% > 70.0% for AAPL (strength: 0.927)
+2025-08-22 00:38:04,262 - INFO -    ❌ Rejected: BUY_MORE 8 AAPL @ $208.67
+2025-08-22 00:38:04,262 - INFO -    ❌ Rejected: BUY_MORE 8 AAPL @ $208.67
+2025-08-22 00:38:04,262 - WARNING -    ⚠️ Order would exceed position size limit: 71.5% > 30.0% for AAPL
+2025-08-22 00:38:04,262 - INFO -    ❌ Rejected: BUY_MORE 2 AAPL @ $208.67
+2025-08-22 00:38:04,262 - INFO -    ❌ Rejected: BUY_MORE 2 AAPL @ $208.67
+2025-08-22 00:38:04,262 - WARNING -    ⚠️ Order would exceed position size limit: 53.5% > 30.0% for SNOW
+2025-08-22 00:38:04,262 - INFO -    ❌ Rejected: BUY_MORE 2 SNOW @ $215.61
+2025-08-22 00:38:04,262 - INFO -    ❌ Rejected: BUY_MORE 2 SNOW @ $215.61
+2025-08-22 00:38:04,262 - WARNING -    ⚠️ Order would exceed position size limit: 55.7% > 30.0% for DIS
+2025-08-22 00:38:04,262 - INFO -    ❌ Rejected: BUY_MORE 4 DIS @ $123.32
+2025-08-22 00:38:04,262 - INFO -    ❌ Rejected: BUY_MORE 4 DIS @ $123.32
+2025-08-22 00:38:04,263 - WARNING -    ⚠️ Order would exceed position size limit: 66.0% > 30.0% for WMT
+2025-08-22 00:38:04,263 - INFO -    ❌ Rejected: BUY_MORE 5 WMT @ $97.90
+2025-08-22 00:38:04,263 - INFO -    ❌ Rejected: BUY_MORE 5 WMT @ $97.90
+2025-08-22 00:38:04,263 - WARNING -    ⚠️ Order would exceed position size limit: 35.9% > 30.0% for GOOGL
+2025-08-22 00:38:04,263 - INFO -    ❌ Rejected: BUY_MORE 3 GOOGL @ $175.54
+2025-08-22 00:38:04,263 - INFO -    ❌ Rejected: BUY_MORE 3 GOOGL @ $175.54
+2025-08-22 00:38:04,263 - INFO -    📋 Executed: BUY_MORE 1 MSFT @ $489.19
+2025-08-22 00:38:04,263 - INFO -    📋 Executed 1 pending orders at market open
+2025-08-22 00:38:04,264 - INFO -    🎯 Take profit queued: AAPL @ $211.01 (P&L: 6.5%)
+2025-08-22 00:38:04,265 - INFO -    🎯 Take profit queued: NVDA @ $149.89 (P&L: 13.4%)
+2025-08-22 00:38:04,268 - INFO -    🛡️ Risk management: 2 orders queued
+2025-08-22 00:38:10,549 - INFO -    ⚖️ Portfolio rebalancing: 6 orders queued
+2025-08-22 00:38:10,549 - INFO -    ⚖️ Portfolio rebalancing: 6 orders queued
+2025-08-22 00:38:10,624 - INFO - 📊 EOD Summary [45.2%]: $106,900 (+6.90%) | Pos: 8 (0.0%) | Trades: 1 (ML: 0) | Pending: 8 (Risk: 2) | Cash: $7,251
+2025-08-22 00:38:10,624 - INFO - 📅 Day 29/62: 2025-07-03
+2025-08-22 00:38:10,626 - INFO -    ❌ Rejected: TAKE_PROFIT 86 AAPL @ $211.91
+2025-08-22 00:38:10,626 - INFO -    ❌ Rejected: TAKE_PROFIT 144 NVDA @ $158.37
+2025-08-22 00:38:10,626 - WARNING -    ⚠️ Order would exceed position size limit: 73.2% > 30.0% for AAPL
+2025-08-22 00:38:10,626 - INFO -    ❌ Rejected: BUY_MORE 2 AAPL @ $211.91
+2025-08-22 00:38:10,626 - INFO -    ❌ Rejected: BUY_MORE 2 AAPL @ $211.91
+2025-08-22 00:38:10,626 - WARNING -    ⚠️ Order would exceed position size limit: 55.5% > 30.0% for SNOW
+2025-08-22 00:38:10,626 - INFO -    ❌ Rejected: BUY_MORE 2 SNOW @ $217.74
+2025-08-22 00:38:10,626 - INFO -    ❌ Rejected: BUY_MORE 2 SNOW @ $217.74
+2025-08-22 00:38:10,626 - WARNING -    ⚠️ Order would exceed position size limit: 57.4% > 30.0% for DIS
+2025-08-22 00:38:10,626 - INFO -    ❌ Rejected: BUY_MORE 4 DIS @ $123.07
+2025-08-22 00:38:10,626 - INFO -    ❌ Rejected: BUY_MORE 4 DIS @ $123.07
+2025-08-22 00:38:10,626 - WARNING -    ⚠️ Order would exceed position size limit: 67.5% > 30.0% for WMT
+2025-08-22 00:38:10,626 - INFO -    ❌ Rejected: BUY_MORE 5 WMT @ $97.47
+2025-08-22 00:38:10,626 - INFO -    ❌ Rejected: BUY_MORE 5 WMT @ $97.47
+2025-08-22 00:38:10,626 - WARNING -    ⚠️ Order would exceed position size limit: 37.9% > 30.0% for GOOGL
+2025-08-22 00:38:10,627 - INFO -    ❌ Rejected: BUY_MORE 3 GOOGL @ $178.50
+2025-08-22 00:38:10,627 - INFO -    ❌ Rejected: BUY_MORE 3 GOOGL @ $178.50
+2025-08-22 00:38:10,627 - INFO -    📋 Executed: BUY_MORE 1 MSFT @ $493.00
+2025-08-22 00:38:10,627 - INFO -    📋 Executed 1 pending orders at market open
+2025-08-22 00:38:10,628 - INFO -    🎯 Take profit queued: AAPL @ $211.12 (P&L: 7.1%)
+2025-08-22 00:38:10,629 - INFO -    🎯 Take profit queued: NVDA @ $150.02 (P&L: 14.9%)
+2025-08-22 00:38:10,632 - INFO -    🛡️ Risk management: 2 orders queued
+2025-08-22 00:38:16,869 - INFO -    ⚖️ Portfolio rebalancing: 6 orders queued
+2025-08-22 00:38:16,869 - INFO -    ⚖️ Portfolio rebalancing: 6 orders queued
+2025-08-22 00:38:16,943 - INFO -    🔥 ULTRA SIGNAL (0.992) - DEPLOYING EMERGENCY RESERVES!
+2025-08-22 00:38:16,943 - INFO -    🔍 DEBUG: Ultra signal #24 detected
+2025-08-22 00:38:16,945 - INFO - 📊 EOD Summary [46.8%]: $107,607 (+7.61%) | Pos: 8 (0.0%) | Trades: 1 (ML: 0) | Pending: 8 (Risk: 2) | Cash: $6,757
+2025-08-22 00:38:16,945 - INFO - 📅 Day 30/62: 2025-07-07
+2025-08-22 00:38:16,947 - INFO -    ❌ Rejected: TAKE_PROFIT 86 AAPL @ $212.44
+2025-08-22 00:38:16,947 - INFO -    ❌ Rejected: TAKE_PROFIT 144 NVDA @ $158.20
+2025-08-22 00:38:16,947 - WARNING -    ⚠️ Order would exceed position size limit: 74.7% > 30.0% for AAPL
+2025-08-22 00:38:16,947 - INFO -    ❌ Rejected: BUY_MORE 2 AAPL @ $212.44
+2025-08-22 00:38:16,947 - INFO -    ❌ Rejected: BUY_MORE 2 AAPL @ $212.44
+2025-08-22 00:38:16,947 - WARNING -    ⚠️ Order would exceed position size limit: 57.8% > 30.0% for SNOW
+2025-08-22 00:38:16,947 - INFO -    ❌ Rejected: BUY_MORE 2 SNOW @ $221.43
+2025-08-22 00:38:16,948 - INFO -    ❌ Rejected: BUY_MORE 2 SNOW @ $221.43
+2025-08-22 00:38:16,948 - WARNING -    ⚠️ Order would exceed position size limit: 59.3% > 30.0% for DIS
+2025-08-22 00:38:16,948 - INFO -    ❌ Rejected: BUY_MORE 4 DIS @ $123.21
+2025-08-22 00:38:16,948 - INFO -    ❌ Rejected: BUY_MORE 4 DIS @ $123.21
+2025-08-22 00:38:16,948 - WARNING -    ⚠️ Order would exceed position size limit: 69.2% > 30.0% for WMT
+2025-08-22 00:38:16,948 - INFO -    ❌ Rejected: BUY_MORE 5 WMT @ $98.00
+2025-08-22 00:38:16,948 - INFO -    ❌ Rejected: BUY_MORE 5 WMT @ $98.00
+2025-08-22 00:38:16,948 - WARNING -    ⚠️ Order would exceed position size limit: 38.1% > 30.0% for GOOGL
+2025-08-22 00:38:16,948 - INFO -    ❌ Rejected: BUY_MORE 2 GOOGL @ $179.06
+2025-08-22 00:38:16,948 - INFO -    ❌ Rejected: BUY_MORE 2 GOOGL @ $179.06
+2025-08-22 00:38:16,948 - INFO -    📋 Executed: BUY_MORE 1 MSFT @ $496.56
+2025-08-22 00:38:16,948 - INFO -    📋 Executed 1 pending orders at market open
+2025-08-22 00:38:16,950 - INFO -    🎯 Take profit queued: NVDA @ $149.55 (P&L: 14.1%)
+2025-08-22 00:38:16,950 - INFO -    🎯 Take profit queued: SNOW @ $225.22 (P&L: 8.4%)
+2025-08-22 00:38:16,952 - INFO -    🎯 Take profit queued: WMT @ $98.51 (P&L: 5.6%)
+2025-08-22 00:38:16,953 - INFO -    🛡️ Risk management: 3 orders queued
+2025-08-22 00:38:23,089 - INFO -    📝 Queued: SELL_ALL 144 NVDA @ $158.24 (close) → execute tomorrow @ open
+2025-08-22 00:38:23,152 - INFO -    ⚖️ Portfolio rebalancing: 5 orders queued
+2025-08-22 00:38:23,152 - INFO -    ⚖️ Portfolio rebalancing: 5 orders queued
+2025-08-22 00:38:23,234 - INFO -    🔥 ULTRA SIGNAL (0.955) - DEPLOYING EMERGENCY RESERVES!
+2025-08-22 00:38:23,234 - INFO -    🔍 DEBUG: Ultra signal #25 detected
+2025-08-22 00:38:23,235 - INFO - 📊 EOD Summary [48.4%]: $107,269 (+7.27%) | Pos: 8 (0.0%) | Trades: 2 (ML: 1) | Pending: 9 (Risk: 3) | Cash: $6,260
+2025-08-22 00:38:23,236 - INFO - 📈 Weekly Summary: +0.83% | Active Models: 120 | Drawdown: 0.31% | Top Holdings: 
+2025-08-22 00:38:23,236 - INFO -    Progress: +7.3% | Positions: 8 | Queued orders: 9 | Actions today: 2
+2025-08-22 00:38:23,236 - INFO - 📅 Day 31/62: 2025-07-08
+2025-08-22 00:38:23,237 - INFO -    ❌ Rejected: TAKE_PROFIT 144 NVDA @ $159.33
+2025-08-22 00:38:23,237 - INFO -    ❌ Rejected: TAKE_PROFIT 37 SNOW @ $225.60
+2025-08-22 00:38:23,237 - INFO -    ❌ Rejected: TAKE_PROFIT 139 WMT @ $98.59
+2025-08-22 00:38:23,237 - INFO -    📋 Executed: SELL_ALL 144 NVDA @ $159.33
+2025-08-22 00:38:23,237 - WARNING -    ⚠️ Order would exceed position size limit: 39.1% > 30.0% for AAPL
+2025-08-22 00:38:23,237 - INFO -    ❌ Rejected: BUY_MORE 2 AAPL @ $209.86
+2025-08-22 00:38:23,237 - INFO -    ❌ Rejected: BUY_MORE 2 AAPL @ $209.86
+2025-08-22 00:38:23,237 - INFO -    📋 Executed: BUY_MORE 2 SNOW @ $225.60
+2025-08-22 00:38:23,237 - INFO -    📋 Executed: BUY_MORE 3 DIS @ $123.22
+2025-08-22 00:38:23,238 - WARNING -    ⚠️ Order would exceed position size limit: 33.5% > 30.0% for WMT
+2025-08-22 00:38:23,238 - INFO -    ❌ Rejected: BUY_MORE 4 WMT @ $98.59
+2025-08-22 00:38:23,238 - INFO -    ❌ Rejected: BUY_MORE 4 WMT @ $98.59
+2025-08-22 00:38:23,238 - INFO -    📋 Executed: BUY_MORE 2 GOOGL @ $177.85
+2025-08-22 00:38:23,238 - INFO -    📋 Executed 4 pending orders at market open
+2025-08-22 00:38:29,469 - INFO -    ⚖️ Portfolio rebalancing: 6 orders queued
+2025-08-22 00:38:29,470 - INFO -    ⚖️ Portfolio rebalancing: 6 orders queued
+2025-08-22 00:38:29,543 - INFO - 📊 EOD Summary [50.0%]: $106,463 (+6.46%) | Pos: 7 (0.0%) | Trades: 4 (ML: 0) | Pending: 6 (Risk: 0) | Cash: $28,007
+2025-08-22 00:38:29,543 - INFO - 📅 Day 32/62: 2025-07-09
+2025-08-22 00:38:29,545 - WARNING -    ⚠️ Order would exceed position size limit: 43.7% > 30.0% for AAPL
+2025-08-22 00:38:29,545 - INFO -    ❌ Rejected: BUY_MORE 10 AAPL @ $209.29
+2025-08-22 00:38:29,545 - INFO -    ❌ Rejected: BUY_MORE 10 AAPL @ $209.29
+2025-08-22 00:38:29,545 - INFO -    📋 Executed: BUY_MORE 9 SNOW @ $224.60
+2025-08-22 00:38:29,545 - WARNING -    ⚠️ Order would exceed position size limit: 31.4% > 30.0% for DIS
+2025-08-22 00:38:29,545 - INFO -    ❌ Rejected: BUY_MORE 17 DIS @ $121.84
+2025-08-22 00:38:29,545 - INFO -    ❌ Rejected: BUY_MORE 17 DIS @ $121.84
+2025-08-22 00:38:29,545 - WARNING -    ⚠️ Order would exceed position size limit: 39.3% > 30.0% for WMT
+2025-08-22 00:38:29,545 - INFO -    ❌ Rejected: BUY_MORE 21 WMT @ $96.92
+2025-08-22 00:38:29,545 - INFO -    ❌ Rejected: BUY_MORE 21 WMT @ $96.92
+2025-08-22 00:38:29,545 - INFO -    📋 Executed: BUY_MORE 12 GOOGL @ $175.25
+2025-08-22 00:38:29,545 - INFO -    📋 Executed: BUY_MORE 4 MSFT @ $499.48
+2025-08-22 00:38:29,545 - INFO -    📋 Executed 3 pending orders at market open
+2025-08-22 00:38:29,548 - INFO -    🏁 Trailing stop queued: DIS @ $121.25 (P&L: 0.9%)
+2025-08-22 00:38:29,549 - INFO -    🏁 Trailing stop queued: WMT @ $96.68 (P&L: 2.9%)
+2025-08-22 00:38:29,550 - INFO -    🛡️ Risk management: 2 orders queued
+2025-08-22 00:38:35,707 - INFO -    📝 Queued: SELL_ALL 86 AAPL @ $210.90 (close) → execute tomorrow @ open
+2025-08-22 00:38:35,779 - INFO -    ⚖️ Portfolio rebalancing: 6 orders queued
+2025-08-22 00:38:35,779 - INFO -    ⚖️ Portfolio rebalancing: 6 orders queued
+2025-08-22 00:38:35,856 - INFO -    🔥 ULTRA SIGNAL (1.000) - DEPLOYING EMERGENCY RESERVES!
+2025-08-22 00:38:35,856 - INFO -    🔍 DEBUG: Ultra signal #26 detected
+2025-08-22 00:38:35,856 - INFO -    💰 Capital utilization: +1 extra orders queued
+2025-08-22 00:38:35,857 - INFO - 📊 EOD Summary [51.6%]: $106,393 (+6.39%) | Pos: 7 (0.0%) | Trades: 4 (ML: 1) | Pending: 10 (Risk: 0) | Cash: $21,881
+2025-08-22 00:38:35,858 - INFO - 📅 Day 33/62: 2025-07-10
+2025-08-22 00:38:35,859 - INFO -    ❌ Rejected: TRAILING_STOP 73 DIS @ $120.62
+2025-08-22 00:38:35,859 - INFO -    ❌ Rejected: TRAILING_STOP 139 WMT @ $96.43
+2025-08-22 00:38:35,859 - INFO -    📋 Executed: SELL_ALL 86 AAPL @ $210.27
+2025-08-22 00:38:35,859 - INFO -    📋 Executed: BUY_MORE 7 AAPL @ $210.27
+2025-08-22 00:38:35,859 - INFO -    📋 Executed: BUY_MORE 7 SNOW @ $221.83
+2025-08-22 00:38:35,859 - INFO -    📋 Executed: BUY_MORE 13 DIS @ $120.62
+2025-08-22 00:38:35,859 - WARNING -    ⚠️ Order would exceed position size limit: 30.7% > 30.0% for WMT
+2025-08-22 00:38:35,859 - INFO -    ❌ Rejected: BUY_MORE 16 WMT @ $96.43
+2025-08-22 00:38:35,859 - INFO -    ❌ Rejected: BUY_MORE 16 WMT @ $96.43
+2025-08-22 00:38:35,860 - INFO -    📋 Executed: BUY_MORE 9 GOOGL @ $175.63
+2025-08-22 00:38:35,860 - INFO -    📋 Executed: BUY_MORE 3 MSFT @ $502.22
+2025-08-22 00:38:35,860 - INFO -    ✅ ULTRA SIGNAL EXECUTED: BUY_MORE 25 AAPL @ $210.31 (strength: 1.000)
+2025-08-22 00:38:35,860 - INFO -    📋 Executed: BUY_MORE 25 AAPL @ $210.27
+2025-08-22 00:38:35,860 - INFO -    📋 Executed 7 pending orders at market open
+2025-08-22 00:38:35,861 - INFO -    🏁 Trailing stop queued: SNOW @ $216.50 (P&L: 0.5%)
+2025-08-22 00:38:35,863 - INFO -    🏁 Trailing stop queued: WMT @ $96.61 (P&L: 0.9%)
+2025-08-22 00:38:35,864 - INFO -    🛡️ Risk management: 2 orders queued
+2025-08-22 00:38:42,037 - INFO -    📝 Queued: SELL_ALL 32 AAPL @ $212.17 (close) → execute tomorrow @ open
+2025-08-22 00:38:42,075 - INFO -    📝 Queued: SELL_ALL 55 SNOW @ $214.42 (close) → execute tomorrow @ open
+2025-08-22 00:38:42,118 - INFO -    📝 Queued: SELL_PARTIAL 83 WMT @ $94.64 (close) → execute tomorrow @ open
+2025-08-22 00:38:42,118 - INFO -    ⚖️ Portfolio rebalancing: 6 orders queued
+2025-08-22 00:38:42,118 - INFO -    ⚖️ Portfolio rebalancing: 6 orders queued
+2025-08-22 00:38:42,201 - INFO -    🔥 ULTRA SIGNAL (1.000) - DEPLOYING EMERGENCY RESERVES!
+2025-08-22 00:38:42,201 - INFO -    🔍 DEBUG: Ultra signal #27 detected
+2025-08-22 00:38:42,201 - INFO -    💰 Capital utilization: +3 extra orders queued
+2025-08-22 00:38:42,203 - INFO - 📊 EOD Summary [53.2%]: $105,953 (+5.95%) | Pos: 7 (0.0%) | Trades: 10 (ML: 3) | Pending: 14 (Risk: 0) | Cash: $27,004
+2025-08-22 00:38:42,203 - INFO - 📅 Day 34/62: 2025-07-11
+2025-08-22 00:38:42,204 - INFO -    ❌ Rejected: TRAILING_STOP 55 SNOW @ $213.48
+2025-08-22 00:38:42,204 - INFO -    ❌ Rejected: TRAILING_STOP 139 WMT @ $94.79
+2025-08-22 00:38:42,204 - INFO -    📋 Executed: SELL_ALL 32 AAPL @ $210.33
+2025-08-22 00:38:42,205 - INFO -    📋 Executed: SELL_ALL 55 SNOW @ $213.48
+2025-08-22 00:38:42,205 - INFO -    📋 Executed: SELL_PARTIAL 83 WMT @ $94.79
+2025-08-22 00:38:42,205 - INFO -    📋 Executed: BUY_MORE 9 SNOW @ $213.48
+2025-08-22 00:38:42,205 - INFO -    📋 Executed: BUY_MORE 16 DIS @ $120.64
+2025-08-22 00:38:42,205 - INFO -    📋 Executed: BUY_MORE 21 WMT @ $94.79
+2025-08-22 00:38:42,205 - INFO -    📋 Executed: BUY_MORE 11 GOOGL @ $176.79
+2025-08-22 00:38:42,205 - INFO -    📋 Executed: BUY_MORE 4 MSFT @ $497.65
+2025-08-22 00:38:42,205 - INFO -    📋 Executed: BUY_MORE 9 AAPL @ $210.33
+2025-08-22 00:38:42,205 - INFO -    ✅ ULTRA SIGNAL EXECUTED: BUY_MORE 19 AAPL @ $210.37 (strength: 1.000)
+2025-08-22 00:38:42,205 - INFO -    📋 Executed: BUY_MORE 19 AAPL @ $210.33
+2025-08-22 00:38:42,205 - INFO -    📋 Executed: BUY_MORE 23 SNOW @ $213.48
+2025-08-22 00:38:42,206 - INFO -    📋 Executed: BUY_MORE 45 WMT @ $94.79
+2025-08-22 00:38:42,206 - INFO -    📋 Executed 12 pending orders at market open
+2025-08-22 00:38:42,207 - INFO -    🏁 Trailing stop queued: DIS @ $121.35 (P&L: 0.0%)
+2025-08-22 00:38:42,210 - INFO -    🛡️ Risk management: 1 orders queued
+2025-08-22 00:38:48,385 - INFO -    📝 Queued: SELL_ALL 15 MSFT @ $502.49 (close) → execute tomorrow @ open
+2025-08-22 00:38:48,419 - INFO -    📝 Queued: SELL_PARTIAL 19 SNOW @ $210.84 (close) → execute tomorrow @ open
+2025-08-22 00:38:48,459 - INFO -    📝 Queued: SELL_ALL 122 WMT @ $94.18 (close) → execute tomorrow @ open
+2025-08-22 00:38:48,459 - INFO -    ⚖️ Portfolio rebalancing: 6 orders queued
+2025-08-22 00:38:48,459 - INFO -    ⚖️ Portfolio rebalancing: 6 orders queued
+2025-08-22 00:38:48,543 - INFO -    🔥 ULTRA SIGNAL (1.000) - DEPLOYING EMERGENCY RESERVES!
+2025-08-22 00:38:48,543 - INFO -    🔍 DEBUG: Ultra signal #28 detected
+2025-08-22 00:38:48,543 - INFO -    💰 Capital utilization: +3 extra orders queued
+2025-08-22 00:38:48,545 - INFO - 📊 EOD Summary [54.8%]: $105,500 (+5.50%) | Pos: 7 (0.0%) | Trades: 15 (ML: 3) | Pending: 13 (Risk: 0) | Cash: $28,465
+2025-08-22 00:38:48,545 - INFO - 📅 Day 35/62: 2025-07-14
+2025-08-22 00:38:48,547 - INFO -    ❌ Rejected: TRAILING_STOP 102 DIS @ $119.78
+2025-08-22 00:38:48,547 - INFO -    📋 Executed: SELL_ALL 15 MSFT @ $500.70
+2025-08-22 00:38:48,547 - INFO -    📋 Executed: SELL_PARTIAL 19 SNOW @ $209.87
+2025-08-22 00:38:48,547 - INFO -    📋 Executed: SELL_ALL 122 WMT @ $94.29
+2025-08-22 00:38:48,547 - INFO -    📋 Executed: BUY_MORE 17 DIS @ $119.78
+2025-08-22 00:38:48,547 - INFO -    📋 Executed: BUY_MORE 22 WMT @ $94.29
+2025-08-22 00:38:48,547 - INFO -    📋 Executed: BUY_MORE 11 GOOGL @ $181.01
+2025-08-22 00:38:48,547 - INFO -    📋 Executed: BUY_MORE 4 MSFT @ $500.70
+2025-08-22 00:38:48,547 - INFO -    📋 Executed: BUY_MORE 10 SNOW @ $209.87
+2025-08-22 00:38:48,548 - INFO -    📋 Executed: BUY_MORE 10 AAPL @ $209.69
+2025-08-22 00:38:48,548 - INFO -    ✅ ULTRA SIGNAL EXECUTED: BUY_MORE 8 MSFT @ $500.80 (strength: 0.980)
+2025-08-22 00:38:48,548 - INFO -    📋 Executed: BUY_MORE 8 MSFT @ $500.70
+2025-08-22 00:38:48,548 - INFO -    📋 Executed: BUY_MORE 56 WMT @ $94.29
+2025-08-22 00:38:48,548 - INFO -    📋 Executed: BUY_MORE 19 SNOW @ $209.87
+2025-08-22 00:38:48,548 - INFO -    📋 Executed 12 pending orders at market open
+2025-08-22 00:38:48,549 - INFO -    🏁 Trailing stop queued: DIS @ $121.57 (P&L: 0.1%)
+2025-08-22 00:38:48,550 - INFO -    🛡️ Stop loss queued: PG @ $153.86 (P&L: -3.6%)
+2025-08-22 00:38:48,553 - INFO -    🛡️ Risk management: 2 orders queued
+2025-08-22 00:38:54,700 - INFO -    📝 Queued: SELL_ALL 65 GOOGL @ $181.56 (close) → execute tomorrow @ open
+2025-08-22 00:38:54,760 - INFO -    📝 Queued: BUY_MORE 36 PG @ $152.72 (close) → execute tomorrow @ open
+2025-08-22 00:38:54,767 - INFO -    ⚖️ Portfolio rebalancing: 6 orders queued
+2025-08-22 00:38:54,767 - INFO -    ⚖️ Portfolio rebalancing: 6 orders queued
+2025-08-22 00:38:54,848 - INFO -    🔥 ULTRA SIGNAL (0.943) - DEPLOYING EMERGENCY RESERVES!
+2025-08-22 00:38:54,848 - INFO -    🔍 DEBUG: Ultra signal #29 detected
+2025-08-22 00:38:54,848 - INFO -    💰 Capital utilization: +2 extra orders queued
+2025-08-22 00:38:54,850 - INFO - 📊 EOD Summary [56.5%]: $105,211 (+5.21%) | Pos: 7 (0.0%) | Trades: 14 (ML: 2) | Pending: 12 (Risk: 1) | Cash: $25,859
+2025-08-22 00:38:54,850 - INFO - 📈 Weekly Summary: -1.18% | Active Models: 120 | Drawdown: 2.23% | Top Holdings: 
+2025-08-22 00:38:54,850 - INFO - 📅 Day 36/62: 2025-07-15
+2025-08-22 00:38:54,851 - INFO -    ❌ Rejected: TRAILING_STOP 119 DIS @ $120.23
+2025-08-22 00:38:54,852 - INFO -    ❌ Rejected: STOP_LOSS 150 PG @ $152.52
+2025-08-22 00:38:54,852 - INFO -    📋 Executed: SELL_ALL 65 GOOGL @ $182.81
+2025-08-22 00:38:54,852 - INFO -    📋 Executed: BUY_MORE 36 PG @ $152.52
+2025-08-22 00:38:54,852 - WARNING -    ⚠️ Order would exceed position size limit: 34.9% > 30.0% for DIS
+2025-08-22 00:38:54,852 - INFO -    ❌ Rejected: BUY_MORE 16 DIS @ $120.23
+2025-08-22 00:38:54,852 - INFO -    ❌ Rejected: BUY_MORE 16 DIS @ $120.23
+2025-08-22 00:38:54,852 - INFO -    📋 Executed: BUY_MORE 10 GOOGL @ $182.81
+2025-08-22 00:38:54,852 - INFO -    📋 Executed: BUY_MORE 9 SNOW @ $213.75
+2025-08-22 00:38:54,852 - INFO -    📋 Executed: BUY_MORE 9 AAPL @ $208.98
+2025-08-22 00:38:54,852 - INFO -    📋 Executed: BUY_MORE 20 WMT @ $95.38
+2025-08-22 00:38:54,853 - INFO -    📋 Executed: BUY_MORE 3 MSFT @ $502.19
+2025-08-22 00:38:54,853 - WARNING -    ⚠️ Order would exceed position size limit: 65.7% > 50.0% for PG
+2025-08-22 00:38:54,853 - INFO -    ❌ Rejected: BUY_MORE 36 PG @ $152.52
+2025-08-22 00:38:54,853 - INFO -    ❌ Rejected: BUY_MORE 36 PG @ $152.52
+2025-08-22 00:38:54,853 - INFO -    📋 Executed: BUY_MORE 25 GOOGL @ $182.81
+2025-08-22 00:38:54,853 - INFO -    📋 Executed 8 pending orders at market open
+2025-08-22 00:38:54,855 - INFO -    🛡️ Stop loss queued: PG @ $152.70 (P&L: -3.6%)
+2025-08-22 00:38:54,857 - INFO -    🛡️ Risk management: 1 orders queued
+2025-08-22 00:39:01,109 - INFO -    📝 Queued: BUY_MORE 30 PG @ $151.64 (close) → execute tomorrow @ open
+2025-08-22 00:39:01,116 - INFO -    ⚖️ Portfolio rebalancing: 6 orders queued
+2025-08-22 00:39:01,116 - INFO -    ⚖️ Portfolio rebalancing: 6 orders queued
+2025-08-22 00:39:01,192 - INFO -    🔥 ULTRA SIGNAL (1.000) - DEPLOYING EMERGENCY RESERVES!
+2025-08-22 00:39:01,192 - INFO -    🔍 DEBUG: Ultra signal #30 detected
+2025-08-22 00:39:01,192 - INFO -    💰 Capital utilization: +1 extra orders queued
+2025-08-22 00:39:01,194 - INFO - 📊 EOD Summary [58.1%]: $104,917 (+4.92%) | Pos: 7 (0.0%) | Trades: 9 (ML: 1) | Pending: 9 (Risk: 1) | Cash: $18,612
+2025-08-22 00:39:01,194 - INFO - 📅 Day 37/62: 2025-07-16
+2025-08-22 00:39:01,195 - INFO -    ❌ Rejected: STOP_LOSS 186 PG @ $151.70
+2025-08-22 00:39:01,195 - INFO -    ✅ ULTRA SIGNAL EXECUTED: BUY_MORE 30 PG @ $151.73 (strength: 1.000)
+2025-08-22 00:39:01,196 - INFO -    📋 Executed: BUY_MORE 30 PG @ $151.70
+2025-08-22 00:39:01,196 - WARNING -    ⚠️ Order would exceed position size limit: 54.9% > 30.0% for DIS
+2025-08-22 00:39:01,196 - INFO -    ❌ Rejected: BUY_MORE 11 DIS @ $119.36
+2025-08-22 00:39:01,196 - INFO -    ❌ Rejected: BUY_MORE 11 DIS @ $119.36
+2025-08-22 00:39:01,196 - WARNING -    ⚠️ Order would exceed position size limit: 48.7% > 30.0% for SNOW
+2025-08-22 00:39:01,196 - INFO -    ❌ Rejected: BUY_MORE 6 SNOW @ $212.98
+2025-08-22 00:39:01,196 - INFO -    ❌ Rejected: BUY_MORE 6 SNOW @ $212.98
+2025-08-22 00:39:01,196 - WARNING -    ⚠️ Order would exceed position size limit: 46.5% > 30.0% for AAPL
+2025-08-22 00:39:01,196 - INFO -    ❌ Rejected: BUY_MORE 6 AAPL @ $210.06
+2025-08-22 00:39:01,196 - INFO -    ❌ Rejected: BUY_MORE 6 AAPL @ $210.06
+2025-08-22 00:39:01,196 - WARNING -    ⚠️ Order would exceed position size limit: 45.6% > 30.0% for WMT
+2025-08-22 00:39:01,196 - INFO -    ❌ Rejected: BUY_MORE 14 WMT @ $95.20
+2025-08-22 00:39:01,196 - INFO -    ❌ Rejected: BUY_MORE 14 WMT @ $95.20
+2025-08-22 00:39:01,196 - WARNING -    ⚠️ Order would exceed position size limit: 39.7% > 30.0% for MSFT
+2025-08-22 00:39:01,196 - INFO -    ❌ Rejected: BUY_MORE 2 MSFT @ $504.35
+2025-08-22 00:39:01,196 - INFO -    ❌ Rejected: BUY_MORE 2 MSFT @ $504.35
+2025-08-22 00:39:01,196 - WARNING -    ⚠️ Order would exceed position size limit: 37.6% > 30.0% for GOOGL
+2025-08-22 00:39:01,196 - INFO -    ❌ Rejected: BUY_MORE 7 GOOGL @ $183.24
+2025-08-22 00:39:01,196 - INFO -    ❌ Rejected: BUY_MORE 7 GOOGL @ $183.24
+2025-08-22 00:39:01,196 - WARNING -    🚨 ULTRA SIGNAL REJECTED! 79.7% > 70.0% for PG (strength: 1.000)
+2025-08-22 00:39:01,197 - INFO -    ❌ Rejected: BUY_MORE 30 PG @ $151.70
+2025-08-22 00:39:01,197 - INFO -    ❌ Rejected: BUY_MORE 30 PG @ $151.70
+2025-08-22 00:39:01,197 - INFO -    📋 Executed 1 pending orders at market open
+2025-08-22 00:39:07,771 - INFO -    ⚖️ Portfolio rebalancing: 6 orders queued
+2025-08-22 00:39:07,772 - INFO -    ⚖️ Portfolio rebalancing: 6 orders queued
+2025-08-22 00:39:07,866 - INFO - 📊 EOD Summary [59.7%]: $105,251 (+5.25%) | Pos: 7 (0.0%) | Trades: 1 (ML: 0) | Pending: 6 (Risk: 0) | Cash: $14,058
+2025-08-22 00:39:07,866 - INFO - 📅 Day 38/62: 2025-07-17
+2025-08-22 00:39:07,867 - WARNING -    ⚠️ Order would exceed position size limit: 53.7% > 30.0% for DIS
+2025-08-22 00:39:07,867 - INFO -    ❌ Rejected: BUY_MORE 8 DIS @ $119.75
+2025-08-22 00:39:07,867 - INFO -    ❌ Rejected: BUY_MORE 8 DIS @ $119.75
+2025-08-22 00:39:07,868 - WARNING -    ⚠️ Order would exceed position size limit: 46.9% > 30.0% for SNOW
+2025-08-22 00:39:07,868 - INFO -    ❌ Rejected: BUY_MORE 4 SNOW @ $211.75
+2025-08-22 00:39:07,868 - INFO -    ❌ Rejected: BUY_MORE 4 SNOW @ $211.75
+2025-08-22 00:39:07,868 - WARNING -    ⚠️ Order would exceed position size limit: 45.7% > 30.0% for AAPL
+2025-08-22 00:39:07,868 - INFO -    ❌ Rejected: BUY_MORE 5 AAPL @ $210.33
+2025-08-22 00:39:07,868 - INFO -    ❌ Rejected: BUY_MORE 5 AAPL @ $210.33
+2025-08-22 00:39:07,868 - WARNING -    ⚠️ Order would exceed position size limit: 44.3% > 30.0% for WMT
+2025-08-22 00:39:07,868 - INFO -    ❌ Rejected: BUY_MORE 11 WMT @ $94.86
+2025-08-22 00:39:07,868 - INFO -    ❌ Rejected: BUY_MORE 11 WMT @ $94.86
+2025-08-22 00:39:07,868 - WARNING -    ⚠️ Order would exceed position size limit: 39.7% > 30.0% for MSFT
+2025-08-22 00:39:07,868 - INFO -    ❌ Rejected: BUY_MORE 2 MSFT @ $504.85
+2025-08-22 00:39:07,868 - INFO -    ❌ Rejected: BUY_MORE 2 MSFT @ $504.85
+2025-08-22 00:39:07,868 - WARNING -    ⚠️ Order would exceed position size limit: 35.7% > 30.0% for GOOGL
+2025-08-22 00:39:07,868 - INFO -    ❌ Rejected: BUY_MORE 5 GOOGL @ $182.14
+2025-08-22 00:39:07,868 - INFO -    ❌ Rejected: BUY_MORE 5 GOOGL @ $182.14
+2025-08-22 00:39:14,913 - INFO -    ⚖️ Portfolio rebalancing: 6 orders queued
+2025-08-22 00:39:14,913 - INFO -    ⚖️ Portfolio rebalancing: 6 orders queued
+2025-08-22 00:39:14,988 - INFO - 📊 EOD Summary [61.3%]: $106,022 (+6.02%) | Pos: 7 (0.0%) | Trades: 0 (ML: 0) | Pending: 6 (Risk: 0) | Cash: $14,058
+2025-08-22 00:39:14,988 - INFO - 📅 Day 39/62: 2025-07-18
+2025-08-22 00:39:14,989 - WARNING -    ⚠️ Order would exceed position size limit: 54.2% > 30.0% for DIS
+2025-08-22 00:39:14,989 - INFO -    ❌ Rejected: BUY_MORE 8 DIS @ $121.97
+2025-08-22 00:39:14,989 - INFO -    ❌ Rejected: BUY_MORE 8 DIS @ $121.97
+2025-08-22 00:39:14,990 - WARNING -    ⚠️ Order would exceed position size limit: 47.0% > 30.0% for SNOW
+2025-08-22 00:39:14,990 - INFO -    ❌ Rejected: BUY_MORE 4 SNOW @ $212.69
+2025-08-22 00:39:14,990 - INFO -    ❌ Rejected: BUY_MORE 4 SNOW @ $212.69
+2025-08-22 00:39:14,990 - WARNING -    ⚠️ Order would exceed position size limit: 45.7% > 30.0% for AAPL
+2025-08-22 00:39:14,990 - INFO -    ❌ Rejected: BUY_MORE 5 AAPL @ $210.63
+2025-08-22 00:39:14,990 - INFO -    ❌ Rejected: BUY_MORE 5 AAPL @ $210.63
+2025-08-22 00:39:14,990 - WARNING -    ⚠️ Order would exceed position size limit: 44.3% > 30.0% for WMT
+2025-08-22 00:39:14,990 - INFO -    ❌ Rejected: BUY_MORE 11 WMT @ $94.87
+2025-08-22 00:39:14,990 - INFO -    ❌ Rejected: BUY_MORE 11 WMT @ $94.87
+2025-08-22 00:39:14,990 - WARNING -    ⚠️ Order would exceed position size limit: 40.1% > 30.0% for MSFT
+2025-08-22 00:39:14,990 - INFO -    ❌ Rejected: BUY_MORE 2 MSFT @ $513.64
+2025-08-22 00:39:14,990 - INFO -    ❌ Rejected: BUY_MORE 2 MSFT @ $513.64
+2025-08-22 00:39:14,990 - WARNING -    ⚠️ Order would exceed position size limit: 36.1% > 30.0% for GOOGL
+2025-08-22 00:39:14,990 - INFO -    ❌ Rejected: BUY_MORE 5 GOOGL @ $185.40
+2025-08-22 00:39:14,990 - INFO -    ❌ Rejected: BUY_MORE 5 GOOGL @ $185.40
+2025-08-22 00:39:14,992 - INFO -    🏁 Trailing stop queued: DIS @ $121.47 (P&L: 1.3%)
+2025-08-22 00:39:14,995 - INFO -    🛡️ Risk management: 1 orders queued
+2025-08-22 00:39:21,511 - INFO -    ⚖️ Portfolio rebalancing: 6 orders queued
+2025-08-22 00:39:21,512 - INFO -    ⚖️ Portfolio rebalancing: 6 orders queued
+2025-08-22 00:39:21,600 - INFO -    🔥 ULTRA SIGNAL (1.000) - DEPLOYING EMERGENCY RESERVES!
+2025-08-22 00:39:21,600 - INFO -    🔍 DEBUG: Ultra signal #31 detected
+2025-08-22 00:39:21,602 - INFO - 📊 EOD Summary [62.9%]: $106,393 (+6.39%) | Pos: 7 (0.0%) | Trades: 0 (ML: 0) | Pending: 7 (Risk: 0) | Cash: $14,058
+2025-08-22 00:39:21,602 - INFO - 📅 Day 40/62: 2025-07-21
+2025-08-22 00:39:21,603 - INFO -    ❌ Rejected: TRAILING_STOP 119 DIS @ $121.07
+2025-08-22 00:39:21,603 - WARNING -    ⚠️ Order would exceed position size limit: 54.0% > 30.0% for DIS
+2025-08-22 00:39:21,603 - INFO -    ❌ Rejected: BUY_MORE 8 DIS @ $121.07
+2025-08-22 00:39:21,603 - INFO -    ❌ Rejected: BUY_MORE 8 DIS @ $121.07
+2025-08-22 00:39:21,604 - WARNING -    ⚠️ Order would exceed position size limit: 47.5% > 30.0% for SNOW
+2025-08-22 00:39:21,604 - INFO -    ❌ Rejected: BUY_MORE 4 SNOW @ $217.00
+2025-08-22 00:39:21,604 - INFO -    ❌ Rejected: BUY_MORE 4 SNOW @ $217.00
+2025-08-22 00:39:21,604 - WARNING -    ⚠️ Order would exceed position size limit: 45.0% > 30.0% for AAPL
+2025-08-22 00:39:21,604 - INFO -    ❌ Rejected: BUY_MORE 4 AAPL @ $211.86
+2025-08-22 00:39:21,604 - INFO -    ❌ Rejected: BUY_MORE 4 AAPL @ $211.86
+2025-08-22 00:39:21,604 - WARNING -    ⚠️ Order would exceed position size limit: 44.3% > 30.0% for WMT
+2025-08-22 00:39:21,604 - INFO -    ❌ Rejected: BUY_MORE 11 WMT @ $95.04
+2025-08-22 00:39:21,604 - INFO -    ❌ Rejected: BUY_MORE 11 WMT @ $95.04
+2025-08-22 00:39:21,604 - WARNING -    ⚠️ Order would exceed position size limit: 39.7% > 30.0% for MSFT
+2025-08-22 00:39:21,604 - INFO -    ❌ Rejected: BUY_MORE 2 MSFT @ $505.88
+2025-08-22 00:39:21,604 - INFO -    ❌ Rejected: BUY_MORE 2 MSFT @ $505.88
+2025-08-22 00:39:21,604 - WARNING -    ⚠️ Order would exceed position size limit: 36.2% > 30.0% for GOOGL
+2025-08-22 00:39:21,604 - INFO -    ❌ Rejected: BUY_MORE 5 GOOGL @ $186.25
+2025-08-22 00:39:21,604 - INFO -    ❌ Rejected: BUY_MORE 5 GOOGL @ $186.25
+2025-08-22 00:39:21,606 - INFO -    🏁 Trailing stop queued: DIS @ $121.59 (P&L: 0.8%)
+2025-08-22 00:39:21,609 - INFO -    🛡️ Risk management: 1 orders queued
+2025-08-22 00:39:28,231 - INFO -    ⚖️ Portfolio rebalancing: 6 orders queued
+2025-08-22 00:39:28,231 - INFO -    ⚖️ Portfolio rebalancing: 6 orders queued
+2025-08-22 00:39:28,311 - INFO -    🔥 ULTRA SIGNAL (1.000) - DEPLOYING EMERGENCY RESERVES!
+2025-08-22 00:39:28,311 - INFO -    🔍 DEBUG: Ultra signal #32 detected
+2025-08-22 00:39:28,313 - INFO - 📊 EOD Summary [64.5%]: $106,543 (+6.54%) | Pos: 7 (0.0%) | Trades: 0 (ML: 0) | Pending: 7 (Risk: 0) | Cash: $14,058
+2025-08-22 00:39:28,313 - INFO - 📈 Weekly Summary: +1.55% | Active Models: 120 | Drawdown: 0.99% | Top Holdings: 
+2025-08-22 00:39:28,313 - INFO -    Progress: +6.5% | Positions: 7 | Queued orders: 7 | Actions today: 0
+2025-08-22 00:39:28,313 - INFO - 📅 Day 41/62: 2025-07-22
+2025-08-22 00:39:28,315 - INFO -    ❌ Rejected: TRAILING_STOP 119 DIS @ $120.75
+2025-08-22 00:39:28,315 - WARNING -    ⚠️ Order would exceed position size limit: 53.9% > 30.0% for DIS
+2025-08-22 00:39:28,315 - INFO -    ❌ Rejected: BUY_MORE 8 DIS @ $120.75
+2025-08-22 00:39:28,315 - INFO -    ❌ Rejected: BUY_MORE 8 DIS @ $120.75
+2025-08-22 00:39:28,315 - WARNING -    ⚠️ Order would exceed position size limit: 47.2% > 30.0% for SNOW
+2025-08-22 00:39:28,315 - INFO -    ❌ Rejected: BUY_MORE 4 SNOW @ $214.90
+2025-08-22 00:39:28,315 - INFO -    ❌ Rejected: BUY_MORE 4 SNOW @ $214.90
+2025-08-22 00:39:28,315 - WARNING -    ⚠️ Order would exceed position size limit: 45.1% > 30.0% for AAPL
+2025-08-22 00:39:28,315 - INFO -    ❌ Rejected: BUY_MORE 4 AAPL @ $212.90
+2025-08-22 00:39:28,315 - INFO -    ❌ Rejected: BUY_MORE 4 AAPL @ $212.90
+2025-08-22 00:39:28,315 - WARNING -    ⚠️ Order would exceed position size limit: 44.5% > 30.0% for WMT
+2025-08-22 00:39:28,315 - INFO -    ❌ Rejected: BUY_MORE 11 WMT @ $95.62
+2025-08-22 00:39:28,315 - INFO -    ❌ Rejected: BUY_MORE 11 WMT @ $95.62
+2025-08-22 00:39:28,315 - WARNING -    ⚠️ Order would exceed position size limit: 39.9% > 30.0% for MSFT
+2025-08-22 00:39:28,315 - INFO -    ❌ Rejected: BUY_MORE 2 MSFT @ $510.13
+2025-08-22 00:39:28,316 - INFO -    ❌ Rejected: BUY_MORE 2 MSFT @ $510.13
+2025-08-22 00:39:28,316 - WARNING -    ⚠️ Order would exceed position size limit: 36.9% > 30.0% for GOOGL
+2025-08-22 00:39:28,316 - INFO -    ❌ Rejected: BUY_MORE 5 GOOGL @ $191.50
+2025-08-22 00:39:28,316 - INFO -    ❌ Rejected: BUY_MORE 5 GOOGL @ $191.50
+2025-08-22 00:39:28,317 - INFO -    🏁 Trailing stop queued: DIS @ $121.66 (P&L: 1.0%)
+2025-08-22 00:39:28,320 - INFO -    🛡️ Risk management: 1 orders queued
+2025-08-22 00:39:34,859 - INFO -    ⚖️ Portfolio rebalancing: 6 orders queued
+2025-08-22 00:39:34,860 - INFO -    ⚖️ Portfolio rebalancing: 6 orders queued
+2025-08-22 00:39:34,939 - INFO - 📊 EOD Summary [66.1%]: $107,186 (+7.19%) | Pos: 7 (0.0%) | Trades: 0 (ML: 0) | Pending: 7 (Risk: 0) | Cash: $14,058
+2025-08-22 00:39:34,939 - INFO - 📅 Day 42/62: 2025-07-23
+2025-08-22 00:39:34,941 - INFO -    ❌ Rejected: TRAILING_STOP 119 DIS @ $121.52
+2025-08-22 00:39:34,941 - WARNING -    ⚠️ Order would exceed position size limit: 54.1% > 30.0% for DIS
+2025-08-22 00:39:34,941 - INFO -    ❌ Rejected: BUY_MORE 8 DIS @ $121.52
+2025-08-22 00:39:34,941 - INFO -    ❌ Rejected: BUY_MORE 8 DIS @ $121.52
+2025-08-22 00:39:34,941 - WARNING -    ⚠️ Order would exceed position size limit: 46.9% > 30.0% for SNOW
+2025-08-22 00:39:34,941 - INFO -    ❌ Rejected: BUY_MORE 4 SNOW @ $211.77
+2025-08-22 00:39:34,941 - INFO -    ❌ Rejected: BUY_MORE 4 SNOW @ $211.77
+2025-08-22 00:39:34,941 - WARNING -    ⚠️ Order would exceed position size limit: 45.3% > 30.0% for AAPL
+2025-08-22 00:39:34,941 - INFO -    ❌ Rejected: BUY_MORE 4 AAPL @ $214.76
+2025-08-22 00:39:34,941 - INFO -    ❌ Rejected: BUY_MORE 4 AAPL @ $214.76
+2025-08-22 00:39:34,941 - WARNING -    ⚠️ Order would exceed position size limit: 44.5% > 30.0% for WMT
+2025-08-22 00:39:34,941 - INFO -    ❌ Rejected: BUY_MORE 11 WMT @ $95.79
+2025-08-22 00:39:34,941 - INFO -    ❌ Rejected: BUY_MORE 11 WMT @ $95.79
+2025-08-22 00:39:34,942 - WARNING -    ⚠️ Order would exceed position size limit: 39.7% > 30.0% for MSFT
+2025-08-22 00:39:34,942 - INFO -    ❌ Rejected: BUY_MORE 2 MSFT @ $505.92
+2025-08-22 00:39:34,942 - INFO -    ❌ Rejected: BUY_MORE 2 MSFT @ $505.92
+2025-08-22 00:39:34,942 - WARNING -    ⚠️ Order would exceed position size limit: 36.9% > 30.0% for GOOGL
+2025-08-22 00:39:34,942 - INFO -    ❌ Rejected: BUY_MORE 5 GOOGL @ $191.50
+2025-08-22 00:39:34,942 - INFO -    ❌ Rejected: BUY_MORE 5 GOOGL @ $191.50
+2025-08-22 00:39:41,396 - INFO -    ⚖️ Portfolio rebalancing: 6 orders queued
+2025-08-22 00:39:41,397 - INFO -    ⚖️ Portfolio rebalancing: 6 orders queued
+2025-08-22 00:39:41,471 - INFO -    🔥 ULTRA SIGNAL (0.960) - DEPLOYING EMERGENCY RESERVES!
+2025-08-22 00:39:41,471 - INFO -    🔍 DEBUG: Ultra signal #33 detected
+2025-08-22 00:39:41,473 - INFO - 📊 EOD Summary [67.7%]: $107,359 (+7.36%) | Pos: 7 (0.0%) | Trades: 0 (ML: 0) | Pending: 6 (Risk: 0) | Cash: $14,058
+2025-08-22 00:39:41,473 - INFO - 📅 Day 43/62: 2025-07-24
+2025-08-22 00:39:41,474 - WARNING -    ⚠️ Order would exceed position size limit: 54.4% > 30.0% for DIS
+2025-08-22 00:39:41,474 - INFO -    ❌ Rejected: BUY_MORE 8 DIS @ $122.85
+2025-08-22 00:39:41,474 - INFO -    ❌ Rejected: BUY_MORE 8 DIS @ $122.85
+2025-08-22 00:39:41,474 - WARNING -    ⚠️ Order would exceed position size limit: 47.2% > 30.0% for SNOW
+2025-08-22 00:39:41,474 - INFO -    ❌ Rejected: BUY_MORE 4 SNOW @ $214.51
+2025-08-22 00:39:41,474 - INFO -    ❌ Rejected: BUY_MORE 4 SNOW @ $214.51
+2025-08-22 00:39:41,474 - WARNING -    ⚠️ Order would exceed position size limit: 45.2% > 30.0% for AAPL
+2025-08-22 00:39:41,474 - INFO -    ❌ Rejected: BUY_MORE 4 AAPL @ $213.66
+2025-08-22 00:39:41,474 - INFO -    ❌ Rejected: BUY_MORE 4 AAPL @ $213.66
+2025-08-22 00:39:41,475 - WARNING -    ⚠️ Order would exceed position size limit: 44.4% > 30.0% for WMT
+2025-08-22 00:39:41,475 - INFO -    ❌ Rejected: BUY_MORE 11 WMT @ $95.35
+2025-08-22 00:39:41,475 - INFO -    ❌ Rejected: BUY_MORE 11 WMT @ $95.35
+2025-08-22 00:39:41,475 - WARNING -    ⚠️ Order would exceed position size limit: 39.8% > 30.0% for MSFT
+2025-08-22 00:39:41,475 - INFO -    ❌ Rejected: BUY_MORE 2 MSFT @ $507.93
+2025-08-22 00:39:41,475 - INFO -    ❌ Rejected: BUY_MORE 2 MSFT @ $507.93
+2025-08-22 00:39:41,475 - WARNING -    ⚠️ Order would exceed position size limit: 37.6% > 30.0% for GOOGL
+2025-08-22 00:39:41,475 - INFO -    ❌ Rejected: BUY_MORE 5 GOOGL @ $197.03
+2025-08-22 00:39:41,475 - INFO -    ❌ Rejected: BUY_MORE 5 GOOGL @ $197.03
+2025-08-22 00:39:47,868 - INFO -    📝 Queued: SELL_ALL 35 GOOGL @ $192.17 (close) → execute tomorrow @ open
+2025-08-22 00:39:47,936 - INFO -    ⚖️ Portfolio rebalancing: 6 orders queued
+2025-08-22 00:39:47,937 - INFO -    ⚖️ Portfolio rebalancing: 6 orders queued
+2025-08-22 00:39:48,016 - INFO -    🔥 ULTRA SIGNAL (0.987) - DEPLOYING EMERGENCY RESERVES!
+2025-08-22 00:39:48,016 - INFO -    🔍 DEBUG: Ultra signal #34 detected
+2025-08-22 00:39:48,018 - INFO - 📊 EOD Summary [69.4%]: $107,696 (+7.70%) | Pos: 7 (0.0%) | Trades: 1 (ML: 1) | Pending: 7 (Risk: 0) | Cash: $14,058
+2025-08-22 00:39:48,018 - INFO - 📅 Day 44/62: 2025-07-25
+2025-08-22 00:39:48,019 - INFO -    📋 Executed: SELL_ALL 35 GOOGL @ $191.98
+2025-08-22 00:39:48,019 - WARNING -    ⚠️ Order would exceed position size limit: 44.0% > 30.0% for DIS
+2025-08-22 00:39:48,019 - INFO -    ❌ Rejected: BUY_MORE 8 DIS @ $122.26
+2025-08-22 00:39:48,019 - INFO -    ❌ Rejected: BUY_MORE 8 DIS @ $122.26
+2025-08-22 00:39:48,019 - WARNING -    ⚠️ Order would exceed position size limit: 37.3% > 30.0% for SNOW
+2025-08-22 00:39:48,019 - INFO -    ❌ Rejected: BUY_MORE 4 SNOW @ $215.43
+2025-08-22 00:39:48,019 - INFO -    ❌ Rejected: BUY_MORE 4 SNOW @ $215.43
+2025-08-22 00:39:48,019 - WARNING -    ⚠️ Order would exceed position size limit: 35.5% > 30.0% for AAPL
+2025-08-22 00:39:48,019 - INFO -    ❌ Rejected: BUY_MORE 4 AAPL @ $214.46
+2025-08-22 00:39:48,019 - INFO -    ❌ Rejected: BUY_MORE 4 AAPL @ $214.46
+2025-08-22 00:39:48,019 - WARNING -    ⚠️ Order would exceed position size limit: 34.5% > 30.0% for WMT
+2025-08-22 00:39:48,019 - INFO -    ❌ Rejected: BUY_MORE 10 WMT @ $96.61
+2025-08-22 00:39:48,020 - INFO -    ❌ Rejected: BUY_MORE 10 WMT @ $96.61
+2025-08-22 00:39:48,020 - WARNING -    ⚠️ Order would exceed position size limit: 30.6% > 30.0% for MSFT
+2025-08-22 00:39:48,020 - INFO -    ❌ Rejected: BUY_MORE 2 MSFT @ $511.63
+2025-08-22 00:39:48,020 - INFO -    ❌ Rejected: BUY_MORE 2 MSFT @ $511.63
+2025-08-22 00:39:48,020 - INFO -    📋 Executed: BUY_MORE 5 GOOGL @ $191.98
+2025-08-22 00:39:48,020 - INFO -    📋 Executed 2 pending orders at market open
+2025-08-22 00:39:48,021 - INFO -    🏁 Trailing stop queued: DIS @ $121.58 (P&L: 1.4%)
+2025-08-22 00:39:48,024 - INFO -    🛡️ Risk management: 1 orders queued
+2025-08-22 00:39:54,332 - INFO -    📝 Queued: SELL_ALL 5 GOOGL @ $193.18 (close) → execute tomorrow @ open
+2025-08-22 00:39:54,402 - INFO -    ⚖️ Portfolio rebalancing: 6 orders queued
+2025-08-22 00:39:54,402 - INFO -    ⚖️ Portfolio rebalancing: 6 orders queued
+2025-08-22 00:39:54,489 - INFO - 📊 EOD Summary [71.0%]: $107,884 (+7.88%) | Pos: 7 (0.0%) | Trades: 3 (ML: 1) | Pending: 8 (Risk: 0) | Cash: $19,811
+2025-08-22 00:39:54,489 - INFO - 📅 Day 45/62: 2025-07-28
+2025-08-22 00:39:54,491 - INFO -    ❌ Rejected: TRAILING_STOP 119 DIS @ $121.03
+2025-08-22 00:39:54,491 - INFO -    📋 Executed: SELL_ALL 5 GOOGL @ $193.65
+2025-08-22 00:39:54,491 - WARNING -    ⚠️ Order would exceed position size limit: 45.1% > 30.0% for DIS
+2025-08-22 00:39:54,491 - INFO -    ❌ Rejected: BUY_MORE 12 DIS @ $121.03
+2025-08-22 00:39:54,491 - INFO -    ❌ Rejected: BUY_MORE 12 DIS @ $121.03
+2025-08-22 00:39:54,491 - WARNING -    ⚠️ Order would exceed position size limit: 39.2% > 30.0% for SNOW
+2025-08-22 00:39:54,491 - INFO -    ❌ Rejected: BUY_MORE 6 SNOW @ $219.93
+2025-08-22 00:39:54,491 - INFO -    ❌ Rejected: BUY_MORE 6 SNOW @ $219.93
+2025-08-22 00:39:54,491 - WARNING -    ⚠️ Order would exceed position size limit: 36.8% > 30.0% for AAPL
+2025-08-22 00:39:54,491 - INFO -    ❌ Rejected: BUY_MORE 6 AAPL @ $213.79
+2025-08-22 00:39:54,491 - INFO -    ❌ Rejected: BUY_MORE 6 AAPL @ $213.79
+2025-08-22 00:39:54,491 - WARNING -    ⚠️ Order would exceed position size limit: 36.2% > 30.0% for WMT
+2025-08-22 00:39:54,491 - INFO -    ❌ Rejected: BUY_MORE 15 WMT @ $97.05
+2025-08-22 00:39:54,491 - INFO -    ❌ Rejected: BUY_MORE 15 WMT @ $97.05
+2025-08-22 00:39:54,491 - WARNING -    ⚠️ Order would exceed position size limit: 30.6% > 30.0% for MSFT
+2025-08-22 00:39:54,491 - INFO -    ❌ Rejected: BUY_MORE 2 MSFT @ $513.24
+2025-08-22 00:39:54,491 - INFO -    ❌ Rejected: BUY_MORE 2 MSFT @ $513.24
+2025-08-22 00:39:54,492 - INFO -    📋 Executed: BUY_MORE 7 GOOGL @ $193.65
+2025-08-22 00:39:54,492 - INFO -    📋 Executed 2 pending orders at market open
+2025-08-22 00:39:54,493 - INFO -    🏁 Trailing stop queued: DIS @ $121.62 (P&L: 0.4%)
+2025-08-22 00:39:54,496 - INFO -    🛡️ Risk management: 1 orders queued
+2025-08-22 00:40:00,728 - INFO -    📝 Queued: SELL_ALL 7 GOOGL @ $192.58 (close) → execute tomorrow @ open
+2025-08-22 00:40:00,799 - INFO -    ⚖️ Portfolio rebalancing: 6 orders queued
+2025-08-22 00:40:00,799 - INFO -    ⚖️ Portfolio rebalancing: 6 orders queued
+2025-08-22 00:40:00,881 - INFO -    🔥 ULTRA SIGNAL (0.987) - DEPLOYING EMERGENCY RESERVES!
+2025-08-22 00:40:00,881 - INFO -    🔍 DEBUG: Ultra signal #35 detected
+2025-08-22 00:40:00,881 - INFO -    💰 Capital utilization: +1 extra orders queued
+2025-08-22 00:40:00,883 - INFO - 📊 EOD Summary [72.6%]: $107,449 (+7.45%) | Pos: 7 (0.0%) | Trades: 3 (ML: 1) | Pending: 9 (Risk: 0) | Cash: $19,422
+2025-08-22 00:40:00,883 - INFO - 📈 Weekly Summary: +0.25% | Active Models: 120 | Drawdown: 0.40% | Top Holdings: 
+2025-08-22 00:40:00,883 - INFO - 📅 Day 46/62: 2025-07-29
+2025-08-22 00:40:00,885 - INFO -    ❌ Rejected: TRAILING_STOP 119 DIS @ $120.58
+2025-08-22 00:40:00,885 - INFO -    📋 Executed: SELL_ALL 7 GOOGL @ $192.43
+2025-08-22 00:40:00,885 - WARNING -    ⚠️ Order would exceed position size limit: 45.0% > 30.0% for DIS
+2025-08-22 00:40:00,885 - INFO -    ❌ Rejected: BUY_MORE 12 DIS @ $120.58
+2025-08-22 00:40:00,885 - INFO -    ❌ Rejected: BUY_MORE 12 DIS @ $120.58
+2025-08-22 00:40:00,885 - WARNING -    ⚠️ Order would exceed position size limit: 39.2% > 30.0% for SNOW
+2025-08-22 00:40:00,885 - INFO -    ❌ Rejected: BUY_MORE 6 SNOW @ $220.36
+2025-08-22 00:40:00,885 - INFO -    ❌ Rejected: BUY_MORE 6 SNOW @ $220.36
+2025-08-22 00:40:00,885 - WARNING -    ⚠️ Order would exceed position size limit: 36.8% > 30.0% for AAPL
+2025-08-22 00:40:00,885 - INFO -    ❌ Rejected: BUY_MORE 6 AAPL @ $213.94
+2025-08-22 00:40:00,885 - INFO -    ❌ Rejected: BUY_MORE 6 AAPL @ $213.94
+2025-08-22 00:40:00,885 - WARNING -    ⚠️ Order would exceed position size limit: 36.0% > 30.0% for WMT
+2025-08-22 00:40:00,885 - INFO -    ❌ Rejected: BUY_MORE 14 WMT @ $97.55
+2025-08-22 00:40:00,885 - INFO -    ❌ Rejected: BUY_MORE 14 WMT @ $97.55
+2025-08-22 00:40:00,885 - WARNING -    ⚠️ Order would exceed position size limit: 30.7% > 30.0% for MSFT
+2025-08-22 00:40:00,885 - INFO -    ❌ Rejected: BUY_MORE 2 MSFT @ $514.68
+2025-08-22 00:40:00,885 - INFO -    ❌ Rejected: BUY_MORE 2 MSFT @ $514.68
+2025-08-22 00:40:00,886 - INFO -    📋 Executed: BUY_MORE 7 GOOGL @ $192.43
+2025-08-22 00:40:00,886 - INFO -    ✅ ULTRA SIGNAL EXECUTED: BUY_MORE 19 GOOGL @ $192.47 (strength: 0.942)
+2025-08-22 00:40:00,886 - INFO -    📋 Executed: BUY_MORE 19 GOOGL @ $192.43
+2025-08-22 00:40:00,886 - INFO -    📋 Executed 3 pending orders at market open
+2025-08-22 00:40:00,887 - INFO -    🏁 Trailing stop queued: DIS @ $121.65 (P&L: 0.1%)
+2025-08-22 00:40:00,888 - INFO -    🏁 Trailing stop queued: PG @ $156.84 (P&L: 0.0%)
+2025-08-22 00:40:00,890 - INFO -    🛡️ Risk management: 2 orders queued
+2025-08-22 00:40:07,409 - INFO -    📝 Queued: SELL_ALL 26 GOOGL @ $195.75 (close) → execute tomorrow @ open
+2025-08-22 00:40:07,481 - INFO -    ⚖️ Portfolio rebalancing: 6 orders queued
+2025-08-22 00:40:07,481 - INFO -    ⚖️ Portfolio rebalancing: 6 orders queued
+2025-08-22 00:40:07,565 - INFO -    🔥 ULTRA SIGNAL (0.962) - DEPLOYING EMERGENCY RESERVES!
+2025-08-22 00:40:07,565 - INFO -    🔍 DEBUG: Ultra signal #36 detected
+2025-08-22 00:40:07,567 - INFO - 📊 EOD Summary [74.2%]: $107,312 (+7.31%) | Pos: 7 (0.0%) | Trades: 4 (ML: 1) | Pending: 9 (Risk: 0) | Cash: $15,760
+2025-08-22 00:40:07,567 - INFO - 📅 Day 47/62: 2025-07-30
+2025-08-22 00:40:07,568 - INFO -    ❌ Rejected: TRAILING_STOP 119 DIS @ $119.95
+2025-08-22 00:40:07,569 - INFO -    ❌ Rejected: TRAILING_STOP 216 PG @ $156.84
+2025-08-22 00:40:07,569 - INFO -    📋 Executed: SELL_ALL 26 GOOGL @ $195.60
+2025-08-22 00:40:07,569 - WARNING -    ⚠️ Order would exceed position size limit: 43.7% > 30.0% for DIS
+2025-08-22 00:40:07,569 - INFO -    ❌ Rejected: BUY_MORE 9 DIS @ $119.95
+2025-08-22 00:40:07,569 - INFO -    ❌ Rejected: BUY_MORE 9 DIS @ $119.95
+2025-08-22 00:40:07,569 - WARNING -    ⚠️ Order would exceed position size limit: 38.3% > 30.0% for SNOW
+2025-08-22 00:40:07,569 - INFO -    ❌ Rejected: BUY_MORE 5 SNOW @ $218.75
+2025-08-22 00:40:07,569 - INFO -    ❌ Rejected: BUY_MORE 5 SNOW @ $218.75
+2025-08-22 00:40:07,569 - WARNING -    ⚠️ Order would exceed position size limit: 35.7% > 30.0% for AAPL
+2025-08-22 00:40:07,569 - INFO -    ❌ Rejected: BUY_MORE 5 AAPL @ $211.66
+2025-08-22 00:40:07,569 - INFO -    ❌ Rejected: BUY_MORE 5 AAPL @ $211.66
+2025-08-22 00:40:07,569 - WARNING -    ⚠️ Order would exceed position size limit: 35.5% > 30.0% for WMT
+2025-08-22 00:40:07,569 - INFO -    ❌ Rejected: BUY_MORE 12 WMT @ $98.38
+2025-08-22 00:40:07,569 - INFO -    ❌ Rejected: BUY_MORE 12 WMT @ $98.38
+2025-08-22 00:40:07,570 - WARNING -    ⚠️ Order would exceed position size limit: 30.6% > 30.0% for MSFT
+2025-08-22 00:40:07,570 - INFO -    ❌ Rejected: BUY_MORE 2 MSFT @ $514.32
+2025-08-22 00:40:07,570 - INFO -    ❌ Rejected: BUY_MORE 2 MSFT @ $514.32
+2025-08-22 00:40:07,570 - INFO -    📋 Executed: BUY_MORE 6 GOOGL @ $195.60
+2025-08-22 00:40:07,570 - INFO -    📋 Executed 2 pending orders at market open
+2025-08-22 00:40:13,932 - INFO -    📝 Queued: SELL_ALL 6 GOOGL @ $196.53 (close) → execute tomorrow @ open
+2025-08-22 00:40:13,995 - INFO -    ⚖️ Portfolio rebalancing: 6 orders queued
+2025-08-22 00:40:13,995 - INFO -    ⚖️ Portfolio rebalancing: 6 orders queued
+2025-08-22 00:40:14,072 - INFO -    🔥 ULTRA SIGNAL (0.989) - DEPLOYING EMERGENCY RESERVES!
+2025-08-22 00:40:14,072 - INFO -    🔍 DEBUG: Ultra signal #37 detected
+2025-08-22 00:40:14,072 - INFO -    💰 Capital utilization: +1 extra orders queued
+2025-08-22 00:40:14,074 - INFO - 📊 EOD Summary [75.8%]: $106,370 (+6.37%) | Pos: 7 (0.0%) | Trades: 3 (ML: 1) | Pending: 8 (Risk: 0) | Cash: $19,668
+2025-08-22 00:40:14,074 - INFO - 📅 Day 48/62: 2025-07-31
+2025-08-22 00:40:14,075 - INFO -    📋 Executed: SELL_ALL 6 GOOGL @ $195.71
+2025-08-22 00:40:14,075 - WARNING -    ⚠️ Order would exceed position size limit: 44.6% > 30.0% for DIS
+2025-08-22 00:40:14,076 - INFO -    ❌ Rejected: BUY_MORE 12 DIS @ $119.46
+2025-08-22 00:40:14,076 - INFO -    ❌ Rejected: BUY_MORE 12 DIS @ $119.46
+2025-08-22 00:40:14,076 - WARNING -    ⚠️ Order would exceed position size limit: 39.7% > 30.0% for SNOW
+2025-08-22 00:40:14,076 - INFO -    ❌ Rejected: BUY_MORE 6 SNOW @ $225.13
+2025-08-22 00:40:14,076 - INFO -    ❌ Rejected: BUY_MORE 6 SNOW @ $225.13
+2025-08-22 00:40:14,076 - WARNING -    ⚠️ Order would exceed position size limit: 36.7% > 30.0% for AAPL
+2025-08-22 00:40:14,076 - INFO -    ❌ Rejected: BUY_MORE 7 AAPL @ $208.25
+2025-08-22 00:40:14,076 - INFO -    ❌ Rejected: BUY_MORE 7 AAPL @ $208.25
+2025-08-22 00:40:14,076 - WARNING -    ⚠️ Order would exceed position size limit: 36.2% > 30.0% for WMT
+2025-08-22 00:40:14,076 - INFO -    ❌ Rejected: BUY_MORE 15 WMT @ $97.21
+2025-08-22 00:40:14,076 - INFO -    ❌ Rejected: BUY_MORE 15 WMT @ $97.21
+2025-08-22 00:40:14,076 - WARNING -    ⚠️ Order would exceed position size limit: 32.3% > 30.0% for MSFT
+2025-08-22 00:40:14,076 - INFO -    ❌ Rejected: BUY_MORE 2 MSFT @ $554.32
+2025-08-22 00:40:14,076 - INFO -    ❌ Rejected: BUY_MORE 2 MSFT @ $554.32
+2025-08-22 00:40:14,076 - INFO -    📋 Executed: BUY_MORE 7 GOOGL @ $195.71
+2025-08-22 00:40:14,076 - INFO -    📋 Executed: BUY_MORE 21 GOOGL @ $195.71
+2025-08-22 00:40:14,076 - INFO -    📋 Executed 3 pending orders at market open
+2025-08-22 00:40:14,078 - INFO -    🛡️ Stop loss queued: PG @ $151.71 (P&L: -3.9%)
+2025-08-22 00:40:14,080 - INFO -    🎯 Take profit queued: MSFT @ $527.24 (P&L: 6.3%)
+2025-08-22 00:40:14,081 - INFO -    🛡️ Risk management: 2 orders queued
+2025-08-22 00:40:20,358 - INFO -    📝 Queued: BUY_MORE 6 MSFT @ $532.62 (close) → execute tomorrow @ open
+2025-08-22 00:40:20,423 - INFO -    📝 Queued: SELL_ALL 216 PG @ $150.47 (close) → execute tomorrow @ open
+2025-08-22 00:40:20,432 - INFO -    📝 Queued: SELL_ALL 98 WMT @ $97.75 (close) → execute tomorrow @ open
+2025-08-22 00:40:20,432 - INFO -    ⚖️ Portfolio rebalancing: 6 orders queued
+2025-08-22 00:40:20,432 - INFO -    ⚖️ Portfolio rebalancing: 6 orders queued
+2025-08-22 00:40:20,515 - INFO -    🔥 ULTRA SIGNAL (1.000) - DEPLOYING EMERGENCY RESERVES!
+2025-08-22 00:40:20,515 - INFO -    🔍 DEBUG: Ultra signal #38 detected
+2025-08-22 00:40:20,515 - INFO -    💰 Capital utilization: +1 extra orders queued
+2025-08-22 00:40:20,517 - INFO - 📊 EOD Summary [77.4%]: $106,118 (+6.12%) | Pos: 7 (0.0%) | Trades: 6 (ML: 3) | Pending: 12 (Risk: 2) | Cash: $15,357
+2025-08-22 00:40:20,517 - INFO - 📅 Day 49/62: 2025-08-01
+2025-08-22 00:40:20,518 - INFO -    ❌ Rejected: STOP_LOSS 216 PG @ $151.71
+2025-08-22 00:40:20,519 - INFO -    ❌ Rejected: TAKE_PROFIT 15 MSFT @ $534.12
+2025-08-22 00:40:20,519 - INFO -    ✅ ULTRA SIGNAL EXECUTED: BUY_MORE 6 MSFT @ $534.23 (strength: 0.933)
+2025-08-22 00:40:20,519 - INFO -    📋 Executed: BUY_MORE 6 MSFT @ $534.12
+2025-08-22 00:40:20,519 - INFO -    📋 Executed: SELL_ALL 216 PG @ $151.78
+2025-08-22 00:40:20,519 - INFO -    📋 Executed: SELL_ALL 98 WMT @ $97.77
+2025-08-22 00:40:20,519 - INFO -    📋 Executed: BUY_MORE 9 DIS @ $117.59
+2025-08-22 00:40:20,519 - INFO -    📋 Executed: BUY_MORE 5 SNOW @ $216.80
+2025-08-22 00:40:20,519 - INFO -    📋 Executed: BUY_MORE 5 AAPL @ $210.63
+2025-08-22 00:40:20,519 - INFO -    📋 Executed: BUY_MORE 11 WMT @ $97.77
+2025-08-22 00:40:20,519 - INFO -    📋 Executed: BUY_MORE 2 MSFT @ $534.12
+2025-08-22 00:40:20,519 - INFO -    📋 Executed: BUY_MORE 6 GOOGL @ $189.03
+2025-08-22 00:40:20,520 - INFO -    📋 Executed: BUY_MORE 21 PG @ $151.78
+2025-08-22 00:40:20,520 - INFO -    📋 Executed 10 pending orders at market open
+2025-08-22 00:40:20,522 - INFO -    🛡️ Stop loss queued: AAPL @ $202.83 (P&L: -3.8%)
+2025-08-22 00:40:20,524 - INFO -    🛡️ Risk management: 1 orders queued
+2025-08-22 00:40:26,711 - INFO -    📝 Queued: SELL_ALL 52 AAPL @ $202.15 (close) → execute tomorrow @ open
+2025-08-22 00:40:26,753 - INFO -    📝 Queued: SELL_ALL 56 SNOW @ $205.02 (close) → execute tomorrow @ open
+2025-08-22 00:40:26,772 - INFO -    📝 Queued: SELL_ALL 128 DIS @ $116.59 (close) → execute tomorrow @ open
+2025-08-22 00:40:26,795 - INFO -    ⚖️ Portfolio rebalancing: 7 orders queued
+2025-08-22 00:40:26,795 - INFO -    ⚖️ Portfolio rebalancing: 7 orders queued
+2025-08-22 00:40:26,886 - INFO -    🔥 ULTRA SIGNAL (0.934) - DEPLOYING EMERGENCY RESERVES!
+2025-08-22 00:40:26,886 - INFO -    🔍 DEBUG: Ultra signal #39 detected
+2025-08-22 00:40:26,886 - INFO -    💰 Capital utilization: +3 extra orders queued
+2025-08-22 00:40:26,888 - INFO - 📊 EOD Summary [79.0%]: $104,442 (+4.44%) | Pos: 7 (0.0%) | Trades: 13 (ML: 3) | Pending: 14 (Risk: 1) | Cash: $44,816
+2025-08-22 00:40:26,888 - INFO - 📅 Day 50/62: 2025-08-04
+2025-08-22 00:40:26,890 - INFO -    ❌ Rejected: STOP_LOSS 52 AAPL @ $202.83
+2025-08-22 00:40:26,890 - INFO -    📋 Executed: SELL_ALL 52 AAPL @ $204.28
+2025-08-22 00:40:26,890 - INFO -    📋 Executed: SELL_ALL 56 SNOW @ $207.70
+2025-08-22 00:40:26,890 - INFO -    📋 Executed: SELL_ALL 128 DIS @ $117.73
+2025-08-22 00:40:26,890 - INFO -    📋 Executed: BUY_MORE 28 DIS @ $117.73
+2025-08-22 00:40:26,890 - INFO -    📋 Executed: BUY_MORE 16 SNOW @ $207.70
+2025-08-22 00:40:26,891 - INFO -    📋 Executed: BUY_MORE 16 AAPL @ $204.28
+2025-08-22 00:40:26,891 - INFO -    📋 Executed: BUY_MORE 6 MSFT @ $527.40
+2025-08-22 00:40:26,891 - INFO -    📋 Executed: BUY_MORE 17 GOOGL @ $190.29
+2025-08-22 00:40:26,891 - INFO -    📋 Executed: BUY_MORE 34 WMT @ $97.97
+2025-08-22 00:40:26,891 - INFO -    📋 Executed: BUY_MORE 22 PG @ $150.25
+2025-08-22 00:40:26,891 - INFO -    ✅ ULTRA SIGNAL EXECUTED: BUY_MORE 32 DIS @ $117.75 (strength: 0.934)
+2025-08-22 00:40:26,891 - INFO -    📋 Executed: BUY_MORE 32 DIS @ $117.73
+2025-08-22 00:40:26,891 - INFO -    ✅ ULTRA SIGNAL EXECUTED: BUY_MORE 20 SNOW @ $207.74 (strength: 0.926)
+2025-08-22 00:40:26,891 - INFO -    📋 Executed: BUY_MORE 20 SNOW @ $207.70
+2025-08-22 00:40:26,891 - INFO -    📋 Executed: BUY_MORE 33 AAPL @ $204.28
+2025-08-22 00:40:26,891 - INFO -    📋 Executed 13 pending orders at market open
+2025-08-22 00:40:33,097 - INFO -    📝 Queued: BUY_MORE 54 AAPL @ $203.12 (close) → execute tomorrow @ open
+2025-08-22 00:40:33,103 - INFO -    📝 Queued: BUY_MORE 16 MSFT @ $534.76 (close) → execute tomorrow @ open
+2025-08-22 00:40:33,139 - INFO -    📝 Queued: SELL_PARTIAL 21 SNOW @ $208.48 (close) → execute tomorrow @ open
+2025-08-22 00:40:33,179 - INFO -    📝 Queued: SELL_ALL 45 WMT @ $99.36 (close) → execute tomorrow @ open
+2025-08-22 00:40:33,179 - INFO -    ⚖️ Portfolio rebalancing: 7 orders queued
+2025-08-22 00:40:33,179 - INFO -    ⚖️ Portfolio rebalancing: 7 orders queued
+2025-08-22 00:40:33,264 - INFO -    🔥 ULTRA SIGNAL (1.000) - DEPLOYING EMERGENCY RESERVES!
+2025-08-22 00:40:33,264 - INFO -    🔍 DEBUG: Ultra signal #40 detected
+2025-08-22 00:40:33,264 - INFO -    💰 Capital utilization: +3 extra orders queued
+2025-08-22 00:40:33,266 - INFO - 📊 EOD Summary [80.6%]: $105,528 (+5.53%) | Pos: 7 (0.0%) | Trades: 17 (ML: 4) | Pending: 14 (Risk: 0) | Cash: $44,500
+2025-08-22 00:40:33,266 - INFO - 📈 Weekly Summary: -1.66% | Active Models: 120 | Drawdown: 2.18% | Top Holdings: 
+2025-08-22 00:40:33,266 - INFO -    Progress: +5.5% | Positions: 7 | Queued orders: 14 | Actions today: 17
+2025-08-22 00:40:33,266 - INFO - 📅 Day 51/62: 2025-08-05
+2025-08-22 00:40:33,267 - INFO -    ✅ ULTRA SIGNAL EXECUTED: BUY_MORE 54 AAPL @ $203.21 (strength: 0.991)
+2025-08-22 00:40:33,267 - INFO -    📋 Executed: BUY_MORE 54 AAPL @ $203.17
+2025-08-22 00:40:33,268 - INFO -    📋 Executed: BUY_MORE 16 MSFT @ $536.30
+2025-08-22 00:40:33,268 - INFO -    📋 Executed: SELL_PARTIAL 21 SNOW @ $208.25
+2025-08-22 00:40:33,268 - INFO -    📋 Executed: SELL_ALL 45 WMT @ $99.44
+2025-08-22 00:40:33,268 - WARNING -    ⚠️ Order would exceed position size limit: 47.2% > 30.0% for MSFT
+2025-08-22 00:40:33,268 - INFO -    ❌ Rejected: BUY_MORE 6 MSFT @ $536.30
+2025-08-22 00:40:33,268 - INFO -    ❌ Rejected: BUY_MORE 6 MSFT @ $536.30
+2025-08-22 00:40:33,268 - WARNING -    ⚠️ Order would exceed position size limit: 30.3% > 30.0% for GOOGL
+2025-08-22 00:40:33,268 - INFO -    ❌ Rejected: BUY_MORE 17 GOOGL @ $194.71
+2025-08-22 00:40:33,268 - INFO -    ❌ Rejected: BUY_MORE 17 GOOGL @ $194.71
+2025-08-22 00:40:33,268 - INFO -    📋 Executed: BUY_MORE 33 WMT @ $99.44
+2025-08-22 00:40:33,268 - INFO -    📋 Executed: BUY_MORE 22 PG @ $150.71
+2025-08-22 00:40:33,268 - WARNING -    ⚠️ Order would exceed position size limit: 30.2% > 30.0% for DIS
+2025-08-22 00:40:33,268 - INFO -    ❌ Rejected: BUY_MORE 27 DIS @ $119.25
+2025-08-22 00:40:33,268 - INFO -    ❌ Rejected: BUY_MORE 27 DIS @ $119.25
+2025-08-22 00:40:33,269 - INFO -    📋 Executed: BUY_MORE 16 SNOW @ $208.25
+2025-08-22 00:40:33,269 - WARNING -    ⚠️ Order would exceed position size limit: 54.0% > 30.0% for AAPL
+2025-08-22 00:40:33,269 - INFO -    ❌ Rejected: BUY_MORE 16 AAPL @ $203.17
+2025-08-22 00:40:33,269 - INFO -    ❌ Rejected: BUY_MORE 16 AAPL @ $203.17
+2025-08-22 00:40:33,269 - INFO -    ✅ ULTRA SIGNAL EXECUTED: BUY_MORE 50 WMT @ $99.46 (strength: 1.000)
+2025-08-22 00:40:33,269 - INFO -    📋 Executed: BUY_MORE 50 WMT @ $99.44
+2025-08-22 00:40:33,269 - INFO -    ✅ ULTRA SIGNAL EXECUTED: BUY_MORE 24 AAPL @ $203.21 (strength: 0.991)
+2025-08-22 00:40:33,269 - INFO -    📋 Executed: BUY_MORE 24 AAPL @ $203.17
+2025-08-22 00:40:33,269 - WARNING -    ⚠️ Order would exceed position size limit: 78.8% > 50.0% for MSFT
+2025-08-22 00:40:33,269 - INFO -    ❌ Rejected: BUY_MORE 11 MSFT @ $536.30
+2025-08-22 00:40:33,269 - INFO -    ❌ Rejected: BUY_MORE 11 MSFT @ $536.30
+2025-08-22 00:40:33,269 - INFO -    📋 Executed 9 pending orders at market open
+2025-08-22 00:40:39,850 - INFO -    📝 Queued: BUY_MORE 16 AAPL @ $202.69 (close) → execute tomorrow @ open
+2025-08-22 00:40:39,935 - INFO -    📝 Queued: SELL_ALL 31 SNOW @ $205.77 (close) → execute tomorrow @ open
+2025-08-22 00:40:40,022 - INFO -    📝 Queued: SELL_ALL 83 WMT @ $99.08 (close) → execute tomorrow @ open
+2025-08-22 00:40:40,023 - INFO -    ⚖️ Portfolio rebalancing: 5 orders queued
+2025-08-22 00:40:40,023 - INFO -    ⚖️ Portfolio rebalancing: 5 orders queued
+2025-08-22 00:40:40,115 - INFO -    🔥 ULTRA SIGNAL (1.000) - DEPLOYING EMERGENCY RESERVES!
+2025-08-22 00:40:40,115 - INFO -    🔍 DEBUG: Ultra signal #41 detected
+2025-08-22 00:40:40,115 - INFO -    💰 Capital utilization: +1 extra orders queued
+2025-08-22 00:40:40,117 - INFO - 📊 EOD Summary [82.3%]: $104,850 (+4.85%) | Pos: 7 (0.0%) | Trades: 12 (ML: 3) | Pending: 9 (Risk: 0) | Cash: $13,985
+2025-08-22 00:40:40,117 - INFO - 📅 Day 52/62: 2025-08-06
+2025-08-22 00:40:40,118 - WARNING -    🚨 ULTRA SIGNAL REJECTED! 73.3% > 70.0% for AAPL (strength: 0.961)
+2025-08-22 00:40:40,118 - INFO -    ❌ Rejected: BUY_MORE 16 AAPL @ $205.40
+2025-08-22 00:40:40,118 - INFO -    ❌ Rejected: BUY_MORE 16 AAPL @ $205.40
+2025-08-22 00:40:40,118 - INFO -    📋 Executed: SELL_ALL 31 SNOW @ $205.97
+2025-08-22 00:40:40,118 - INFO -    📋 Executed: SELL_ALL 83 WMT @ $99.23
+2025-08-22 00:40:40,118 - INFO -    📋 Executed: BUY_MORE 5 GOOGL @ $194.50
+2025-08-22 00:40:40,118 - INFO -    📋 Executed: BUY_MORE 6 PG @ $150.86
+2025-08-22 00:40:40,119 - INFO -    📋 Executed: BUY_MORE 8 DIS @ $115.78
+2025-08-22 00:40:40,119 - INFO -    📋 Executed: BUY_MORE 5 SNOW @ $205.97
+2025-08-22 00:40:40,119 - INFO -    📋 Executed: BUY_MORE 10 WMT @ $99.23
+2025-08-22 00:40:40,119 - INFO -    📋 Executed: BUY_MORE 12 SNOW @ $205.97
+2025-08-22 00:40:40,119 - INFO -    📋 Executed 8 pending orders at market open
+2025-08-22 00:40:46,398 - INFO -    📝 Queued: BUY_MORE 41 DIS @ $115.17 (close) → execute tomorrow @ open
+2025-08-22 00:40:46,423 - INFO -    📝 Queued: BUY_MORE 51 WMT @ $103.12 (close) → execute tomorrow @ open
+2025-08-22 00:40:46,423 - INFO -    ⚖️ Portfolio rebalancing: 5 orders queued
+2025-08-22 00:40:46,423 - INFO -    ⚖️ Portfolio rebalancing: 5 orders queued
+2025-08-22 00:40:46,504 - INFO -    🔥 ULTRA SIGNAL (1.000) - DEPLOYING EMERGENCY RESERVES!
+2025-08-22 00:40:46,504 - INFO -    🔍 DEBUG: Ultra signal #42 detected
+2025-08-22 00:40:46,504 - INFO -    💰 Capital utilization: +2 extra orders queued
+2025-08-22 00:40:46,506 - INFO - 📊 EOD Summary [83.9%]: $106,202 (+6.20%) | Pos: 7 (0.0%) | Trades: 10 (ML: 2) | Pending: 9 (Risk: 0) | Cash: $21,291
+2025-08-22 00:40:46,506 - INFO - 📅 Day 53/62: 2025-08-07
+2025-08-22 00:40:46,508 - INFO -    ✅ ULTRA SIGNAL EXECUTED: BUY_MORE 41 DIS @ $115.77 (strength: 0.926)
+2025-08-22 00:40:46,508 - INFO -    📋 Executed: BUY_MORE 41 DIS @ $115.75
+2025-08-22 00:40:46,508 - INFO -    ✅ ULTRA SIGNAL EXECUTED: BUY_MORE 51 WMT @ $103.24 (strength: 1.000)
+2025-08-22 00:40:46,508 - INFO -    📋 Executed: BUY_MORE 51 WMT @ $103.22
+2025-08-22 00:40:46,508 - WARNING -    ⚠️ Order would exceed position size limit: 56.5% > 30.0% for GOOGL
+2025-08-22 00:40:46,508 - INFO -    ❌ Rejected: BUY_MORE 8 GOOGL @ $197.06
+2025-08-22 00:40:46,508 - INFO -    ❌ Rejected: BUY_MORE 8 GOOGL @ $197.06
+2025-08-22 00:40:46,508 - WARNING -    ⚠️ Order would exceed position size limit: 56.0% > 30.0% for PG
+2025-08-22 00:40:46,508 - INFO -    ❌ Rejected: BUY_MORE 10 PG @ $153.12
+2025-08-22 00:40:46,508 - INFO -    ❌ Rejected: BUY_MORE 10 PG @ $153.12
+2025-08-22 00:40:46,508 - WARNING -    ⚠️ Order would exceed position size limit: 59.1% > 30.0% for DIS
+2025-08-22 00:40:46,508 - INFO -    ❌ Rejected: BUY_MORE 13 DIS @ $115.75
+2025-08-22 00:40:46,508 - INFO -    ❌ Rejected: BUY_MORE 13 DIS @ $115.75
+2025-08-22 00:40:46,508 - WARNING -    ⚠️ Order would exceed position size limit: 34.6% > 30.0% for SNOW
+2025-08-22 00:40:46,508 - INFO -    ❌ Rejected: BUY_MORE 7 SNOW @ $215.00
+2025-08-22 00:40:46,509 - INFO -    ❌ Rejected: BUY_MORE 7 SNOW @ $215.00
+2025-08-22 00:40:46,509 - WARNING -    ⚠️ Order would exceed position size limit: 44.6% > 30.0% for WMT
+2025-08-22 00:40:46,509 - INFO -    ❌ Rejected: BUY_MORE 15 WMT @ $103.22
+2025-08-22 00:40:46,509 - INFO -    ❌ Rejected: BUY_MORE 15 WMT @ $103.22
+2025-08-22 00:40:46,509 - INFO -    ✅ ULTRA SIGNAL EXECUTED: BUY_MORE 34 WMT @ $103.24 (strength: 1.000)
+2025-08-22 00:40:46,509 - INFO -    📋 Executed: BUY_MORE 34 WMT @ $103.22
+2025-08-22 00:40:46,509 - WARNING -    🚨 ULTRA SIGNAL REJECTED! 78.4% > 70.0% for DIS (strength: 0.926)
+2025-08-22 00:40:46,509 - INFO -    ❌ Rejected: BUY_MORE 29 DIS @ $115.75
+2025-08-22 00:40:46,509 - INFO -    ❌ Rejected: BUY_MORE 29 DIS @ $115.75
+2025-08-22 00:40:46,509 - INFO -    📋 Executed 3 pending orders at market open
+2025-08-22 00:40:46,512 - INFO -    🎯 Take profit queued: AAPL @ $218.34 (P&L: 7.9%)
+2025-08-22 00:40:46,513 - INFO -    🛡️ Risk management: 1 orders queued
+2025-08-22 00:40:53,174 - INFO -    📝 Queued: BUY_MORE 5 AAPL @ $219.78 (close) → execute tomorrow @ open
+2025-08-22 00:40:53,230 - INFO -    📝 Queued: SELL_ALL 109 DIS @ $112.88 (close) → execute tomorrow @ open
+2025-08-22 00:40:53,254 - INFO -    ⚖️ Portfolio rebalancing: 5 orders queued
+2025-08-22 00:40:53,254 - INFO -    ⚖️ Portfolio rebalancing: 5 orders queued
+2025-08-22 00:40:53,337 - INFO -    🔥 ULTRA SIGNAL (1.000) - DEPLOYING EMERGENCY RESERVES!
+2025-08-22 00:40:53,337 - INFO -    🔍 DEBUG: Ultra signal #43 detected
+2025-08-22 00:40:53,339 - INFO - 📊 EOD Summary [85.5%]: $106,562 (+6.56%) | Pos: 7 (0.0%) | Trades: 5 (ML: 2) | Pending: 8 (Risk: 1) | Cash: $7,762
+2025-08-22 00:40:53,339 - INFO - 📅 Day 54/62: 2025-08-08
+2025-08-22 00:40:53,341 - INFO -    ❌ Rejected: TAKE_PROFIT 127 AAPL @ $220.58
+2025-08-22 00:40:53,341 - WARNING -    ⚠️ Order would exceed position size limit: 81.4% > 30.0% for AAPL
+2025-08-22 00:40:53,341 - INFO -    ❌ Rejected: BUY_MORE 5 AAPL @ $220.58
+2025-08-22 00:40:53,341 - INFO -    ❌ Rejected: BUY_MORE 5 AAPL @ $220.58
+2025-08-22 00:40:53,341 - INFO -    📋 Executed: SELL_ALL 109 DIS @ $113.30
+2025-08-22 00:40:53,341 - WARNING -    ⚠️ Order would exceed position size limit: 36.7% > 30.0% for GOOGL
+2025-08-22 00:40:53,341 - INFO -    ❌ Rejected: BUY_MORE 2 GOOGL @ $197.22
+2025-08-22 00:40:53,341 - INFO -    ❌ Rejected: BUY_MORE 2 GOOGL @ $197.22
+2025-08-22 00:40:53,341 - WARNING -    ⚠️ Order would exceed position size limit: 36.5% > 30.0% for PG
+2025-08-22 00:40:53,341 - INFO -    ❌ Rejected: BUY_MORE 3 PG @ $152.77
+2025-08-22 00:40:53,341 - INFO -    ❌ Rejected: BUY_MORE 3 PG @ $152.77
+2025-08-22 00:40:53,341 - INFO -    📋 Executed: BUY_MORE 5 DIS @ $113.30
+2025-08-22 00:40:53,342 - INFO -    📋 Executed: BUY_MORE 2 SNOW @ $205.79
+2025-08-22 00:40:53,342 - WARNING -    ⚠️ Order would exceed position size limit: 35.7% > 30.0% for WMT
+2025-08-22 00:40:53,342 - INFO -    ❌ Rejected: BUY_MORE 5 WMT @ $103.13
+2025-08-22 00:40:53,342 - INFO -    ❌ Rejected: BUY_MORE 5 WMT @ $103.13
+2025-08-22 00:40:53,342 - INFO -    📋 Executed 3 pending orders at market open
+2025-08-22 00:40:53,345 - INFO -    🎯 Take profit queued: AAPL @ $219.88 (P&L: 12.5%)
+2025-08-22 00:40:53,346 - INFO -    🛡️ Risk management: 1 orders queued
+2025-08-22 00:40:59,837 - INFO -    📝 Queued: BUY_MORE 15 AAPL @ $229.09 (close) → execute tomorrow @ open
+2025-08-22 00:40:59,875 - INFO -    📝 Queued: SELL_ALL 19 SNOW @ $191.73 (close) → execute tomorrow @ open
+2025-08-22 00:40:59,895 - INFO -    📝 Queued: BUY_MORE 42 DIS @ $112.43 (close) → execute tomorrow @ open
+2025-08-22 00:40:59,919 - INFO -    📝 Queued: SELL_ALL 95 WMT @ $103.49 (close) → execute tomorrow @ open
+2025-08-22 00:40:59,919 - INFO -    ⚖️ Portfolio rebalancing: 5 orders queued
+2025-08-22 00:40:59,919 - INFO -    ⚖️ Portfolio rebalancing: 5 orders queued
+2025-08-22 00:41:00,006 - INFO -    🔥 ULTRA SIGNAL (0.997) - DEPLOYING EMERGENCY RESERVES!
+2025-08-22 00:41:00,006 - INFO -    🔍 DEBUG: Ultra signal #44 detected
+2025-08-22 00:41:00,006 - INFO -    💰 Capital utilization: +3 extra orders queued
+2025-08-22 00:41:00,008 - INFO - 📊 EOD Summary [87.1%]: $107,885 (+7.89%) | Pos: 7 (0.0%) | Trades: 7 (ML: 4) | Pending: 13 (Risk: 1) | Cash: $19,123
+2025-08-22 00:41:00,008 - INFO - 📅 Day 55/62: 2025-08-11
+2025-08-22 00:41:00,009 - INFO -    ❌ Rejected: TAKE_PROFIT 127 AAPL @ $227.92
+2025-08-22 00:41:00,009 - WARNING -    ⚠️ Order would exceed position size limit: 67.3% > 50.0% for AAPL
+2025-08-22 00:41:00,009 - INFO -    ❌ Rejected: BUY_MORE 15 AAPL @ $227.92
+2025-08-22 00:41:00,009 - INFO -    ❌ Rejected: BUY_MORE 15 AAPL @ $227.92
+2025-08-22 00:41:00,009 - INFO -    📋 Executed: SELL_ALL 19 SNOW @ $192.16
+2025-08-22 00:41:00,009 - INFO -    ✅ ULTRA SIGNAL EXECUTED: BUY_MORE 42 DIS @ $112.93 (strength: 0.997)
+2025-08-22 00:41:00,009 - INFO -    📋 Executed: BUY_MORE 42 DIS @ $112.91
+2025-08-22 00:41:00,009 - INFO -    📋 Executed: SELL_ALL 95 WMT @ $103.66
+2025-08-22 00:41:00,009 - WARNING -    ⚠️ Order would exceed position size limit: 32.4% > 30.0% for GOOGL
+2025-08-22 00:41:00,009 - INFO -    ❌ Rejected: BUY_MORE 7 GOOGL @ $200.94
+2025-08-22 00:41:00,009 - INFO -    ❌ Rejected: BUY_MORE 7 GOOGL @ $200.94
+2025-08-22 00:41:00,010 - WARNING -    ⚠️ Order would exceed position size limit: 31.7% > 30.0% for PG
+2025-08-22 00:41:00,010 - INFO -    ❌ Rejected: BUY_MORE 9 PG @ $153.54
+2025-08-22 00:41:00,010 - INFO -    ❌ Rejected: BUY_MORE 9 PG @ $153.54
+2025-08-22 00:41:00,010 - INFO -    📋 Executed: BUY_MORE 7 SNOW @ $192.16
+2025-08-22 00:41:00,010 - INFO -    📋 Executed: BUY_MORE 13 WMT @ $103.66
+2025-08-22 00:41:00,010 - INFO -    📋 Executed: BUY_MORE 12 DIS @ $112.91
+2025-08-22 00:41:00,010 - INFO -    ✅ ULTRA SIGNAL EXECUTED: BUY_MORE 36 WMT @ $103.68 (strength: 0.965)
+2025-08-22 00:41:00,010 - INFO -    📋 Executed: BUY_MORE 36 WMT @ $103.66
+2025-08-22 00:41:00,010 - INFO -    📋 Executed: BUY_MORE 18 SNOW @ $192.16
+2025-08-22 00:41:00,010 - WARNING -    ⚠️ Order would exceed position size limit: 71.0% > 50.0% for AAPL
+2025-08-22 00:41:00,010 - INFO -    ❌ Rejected: BUY_MORE 15 AAPL @ $227.92
+2025-08-22 00:41:00,010 - INFO -    ❌ Rejected: BUY_MORE 15 AAPL @ $227.92
+2025-08-22 00:41:00,010 - INFO -    📋 Executed 8 pending orders at market open
+2025-08-22 00:41:00,013 - INFO -    🎯 Take profit queued: AAPL @ $220.32 (P&L: 11.6%)
+2025-08-22 00:41:00,015 - INFO -    🛡️ Risk management: 1 orders queued
+2025-08-22 00:41:06,472 - INFO -    📝 Queued: SELL_ALL 25 SNOW @ $191.80 (close) → execute tomorrow @ open
+2025-08-22 00:41:06,493 - INFO -    📝 Queued: BUY_MORE 36 DIS @ $112.55 (close) → execute tomorrow @ open
+2025-08-22 00:41:06,518 - INFO -    📝 Queued: SELL_ALL 49 WMT @ $103.69 (close) → execute tomorrow @ open
+2025-08-22 00:41:06,518 - INFO -    ⚖️ Portfolio rebalancing: 5 orders queued
+2025-08-22 00:41:06,518 - INFO -    ⚖️ Portfolio rebalancing: 5 orders queued
+2025-08-22 00:41:06,604 - INFO -    🔥 ULTRA SIGNAL (1.000) - DEPLOYING EMERGENCY RESERVES!
+2025-08-22 00:41:06,604 - INFO -    🔍 DEBUG: Ultra signal #45 detected
+2025-08-22 00:41:06,604 - INFO -    💰 Capital utilization: +2 extra orders queued
+2025-08-22 00:41:06,606 - INFO - 📊 EOD Summary [88.7%]: $107,688 (+7.69%) | Pos: 7 (0.0%) | Trades: 11 (ML: 3) | Pending: 11 (Risk: 1) | Cash: $16,619
+2025-08-22 00:41:06,606 - INFO - 📈 Weekly Summary: +2.71% | Active Models: 120 | Drawdown: 0.18% | Top Holdings: 
+2025-08-22 00:41:06,606 - INFO - 📅 Day 56/62: 2025-08-12
+2025-08-22 00:41:06,608 - INFO -    ❌ Rejected: TAKE_PROFIT 127 AAPL @ $228.01
+2025-08-22 00:41:06,608 - INFO -    📋 Executed: SELL_ALL 25 SNOW @ $191.75
+2025-08-22 00:41:06,608 - INFO -    ✅ ULTRA SIGNAL EXECUTED: BUY_MORE 36 DIS @ $113.33 (strength: 1.000)
+2025-08-22 00:41:06,608 - INFO -    📋 Executed: BUY_MORE 36 DIS @ $113.31
+2025-08-22 00:41:06,608 - INFO -    📋 Executed: SELL_ALL 49 WMT @ $104.01
+2025-08-22 00:41:06,608 - WARNING -    ⚠️ Order would exceed position size limit: 37.1% > 30.0% for GOOGL
+2025-08-22 00:41:06,608 - INFO -    ❌ Rejected: BUY_MORE 6 GOOGL @ $201.37
+2025-08-22 00:41:06,608 - INFO -    ❌ Rejected: BUY_MORE 6 GOOGL @ $201.37
+2025-08-22 00:41:06,608 - WARNING -    ⚠️ Order would exceed position size limit: 36.6% > 30.0% for PG
+2025-08-22 00:41:06,608 - INFO -    ❌ Rejected: BUY_MORE 8 PG @ $155.06
+2025-08-22 00:41:06,608 - INFO -    ❌ Rejected: BUY_MORE 8 PG @ $155.06
+2025-08-22 00:41:06,608 - WARNING -    ⚠️ Order would exceed position size limit: 36.2% > 30.0% for DIS
+2025-08-22 00:41:06,608 - INFO -    ❌ Rejected: BUY_MORE 11 DIS @ $113.31
+2025-08-22 00:41:06,608 - INFO -    ❌ Rejected: BUY_MORE 11 DIS @ $113.31
+2025-08-22 00:41:06,608 - INFO -    📋 Executed: BUY_MORE 6 SNOW @ $191.75
+2025-08-22 00:41:06,608 - INFO -    📋 Executed: BUY_MORE 12 WMT @ $104.01
+2025-08-22 00:41:06,609 - INFO -    ✅ ULTRA SIGNAL EXECUTED: BUY_MORE 37 WMT @ $104.03 (strength: 0.958)
+2025-08-22 00:41:06,609 - INFO -    📋 Executed: BUY_MORE 37 WMT @ $104.01
+2025-08-22 00:41:06,609 - INFO -    ✅ ULTRA SIGNAL EXECUTED: BUY_MORE 19 SNOW @ $191.79 (strength: 0.935)
+2025-08-22 00:41:06,609 - INFO -    📋 Executed: BUY_MORE 19 SNOW @ $191.75
+2025-08-22 00:41:06,609 - INFO -    📋 Executed 7 pending orders at market open
+2025-08-22 00:41:06,612 - INFO -    🎯 Take profit queued: AAPL @ $220.53 (P&L: 12.8%)
+2025-08-22 00:41:06,613 - INFO -    🛡️ Risk management: 1 orders queued
+2025-08-22 00:41:13,151 - INFO -    📝 Queued: BUY_MORE 13 SNOW @ $193.06 (close) → execute tomorrow @ open
+2025-08-22 00:41:13,173 - INFO -    📝 Queued: BUY_MORE 22 DIS @ $113.72 (close) → execute tomorrow @ open
+2025-08-22 00:41:13,199 - INFO -    📝 Queued: SELL_ALL 49 WMT @ $103.38 (close) → execute tomorrow @ open
+2025-08-22 00:41:13,199 - INFO -    ⚖️ Portfolio rebalancing: 5 orders queued
+2025-08-22 00:41:13,199 - INFO -    ⚖️ Portfolio rebalancing: 5 orders queued
+2025-08-22 00:41:13,293 - INFO -    🔥 ULTRA SIGNAL (1.000) - DEPLOYING EMERGENCY RESERVES!
+2025-08-22 00:41:13,293 - INFO -    🔍 DEBUG: Ultra signal #46 detected
+2025-08-22 00:41:13,293 - INFO -    💰 Capital utilization: +2 extra orders queued
+2025-08-22 00:41:13,295 - INFO - 📊 EOD Summary [90.3%]: $108,559 (+8.56%) | Pos: 7 (0.0%) | Trades: 10 (ML: 3) | Pending: 11 (Risk: 1) | Cash: $12,522
+2025-08-22 00:41:13,295 - INFO - 📅 Day 57/62: 2025-08-13
+2025-08-22 00:41:13,296 - INFO -    ❌ Rejected: TAKE_PROFIT 127 AAPL @ $231.07
+2025-08-22 00:41:13,296 - INFO -    📋 Executed: BUY_MORE 13 SNOW @ $194.12
+2025-08-22 00:41:13,296 - WARNING -    ⚠️ Order would exceed position size limit: 64.1% > 50.0% for DIS
+2025-08-22 00:41:13,296 - INFO -    ❌ Rejected: BUY_MORE 22 DIS @ $114.23
+2025-08-22 00:41:13,296 - INFO -    ❌ Rejected: BUY_MORE 22 DIS @ $114.23
+2025-08-22 00:41:13,297 - INFO -    📋 Executed: SELL_ALL 49 WMT @ $101.91
+2025-08-22 00:41:13,297 - WARNING -    ⚠️ Order would exceed position size limit: 46.4% > 30.0% for GOOGL
+2025-08-22 00:41:13,297 - INFO -    ❌ Rejected: BUY_MORE 4 GOOGL @ $204.13
+2025-08-22 00:41:13,297 - INFO -    ❌ Rejected: BUY_MORE 4 GOOGL @ $204.13
+2025-08-22 00:41:13,297 - WARNING -    ⚠️ Order would exceed position size limit: 46.0% > 30.0% for PG
+2025-08-22 00:41:13,297 - INFO -    ❌ Rejected: BUY_MORE 6 PG @ $155.21
+2025-08-22 00:41:13,297 - INFO -    ❌ Rejected: BUY_MORE 6 PG @ $155.21
+2025-08-22 00:41:13,297 - WARNING -    ⚠️ Order would exceed position size limit: 45.5% > 30.0% for DIS
+2025-08-22 00:41:13,297 - INFO -    ❌ Rejected: BUY_MORE 8 DIS @ $114.23
+2025-08-22 00:41:13,297 - INFO -    ❌ Rejected: BUY_MORE 8 DIS @ $114.23
+2025-08-22 00:41:13,297 - WARNING -    ⚠️ Order would exceed position size limit: 36.5% > 30.0% for SNOW
+2025-08-22 00:41:13,297 - INFO -    ❌ Rejected: BUY_MORE 4 SNOW @ $194.12
+2025-08-22 00:41:13,297 - INFO -    ❌ Rejected: BUY_MORE 4 SNOW @ $194.12
+2025-08-22 00:41:13,297 - INFO -    📋 Executed: BUY_MORE 9 WMT @ $101.91
+2025-08-22 00:41:13,303 - WARNING -    ⚠️ Order would exceed position size limit: 53.6% > 50.0% for DIS
+2025-08-22 00:41:13,317 - INFO -    ❌ Rejected: BUY_MORE 22 DIS @ $114.23
+2025-08-22 00:41:13,317 - INFO -    ❌ Rejected: BUY_MORE 22 DIS @ $114.23
+2025-08-22 00:41:13,318 - INFO -    📋 Executed: BUY_MORE 13 SNOW @ $194.12
+2025-08-22 00:41:13,321 - INFO -    📋 Executed 4 pending orders at market open
+2025-08-22 00:41:13,337 - INFO -    🎯 Take profit queued: AAPL @ $221.22 (P&L: 14.6%)
+2025-08-22 00:41:13,339 - INFO -    🛡️ Risk management: 1 orders queued
+2025-08-22 00:41:20,003 - INFO -    ⚖️ Portfolio rebalancing: 5 orders queued
+2025-08-22 00:41:20,004 - INFO -    ⚖️ Portfolio rebalancing: 5 orders queued
+2025-08-22 00:41:20,079 - INFO -    🔥 ULTRA SIGNAL (1.000) - DEPLOYING EMERGENCY RESERVES!
+2025-08-22 00:41:20,079 - INFO -    🔍 DEBUG: Ultra signal #47 detected
+2025-08-22 00:41:20,081 - INFO - 📊 EOD Summary [91.9%]: $108,936 (+8.94%) | Pos: 7 (0.0%) | Trades: 4 (ML: 0) | Pending: 6 (Risk: 1) | Cash: $11,543
+2025-08-22 00:41:20,082 - INFO - 📅 Day 58/62: 2025-08-14
+2025-08-22 00:41:20,083 - INFO -    ❌ Rejected: TAKE_PROFIT 127 AAPL @ $234.06
+2025-08-22 00:41:20,083 - WARNING -    ⚠️ Order would exceed position size limit: 53.0% > 30.0% for GOOGL
+2025-08-22 00:41:20,083 - INFO -    ❌ Rejected: BUY_MORE 4 GOOGL @ $201.50
+2025-08-22 00:41:20,083 - INFO -    ❌ Rejected: BUY_MORE 4 GOOGL @ $201.50
+2025-08-22 00:41:20,083 - WARNING -    ⚠️ Order would exceed position size limit: 52.2% > 30.0% for PG
+2025-08-22 00:41:20,083 - INFO -    ❌ Rejected: BUY_MORE 5 PG @ $154.64
+2025-08-22 00:41:20,083 - INFO -    ❌ Rejected: BUY_MORE 5 PG @ $154.64
+2025-08-22 00:41:20,083 - WARNING -    ⚠️ Order would exceed position size limit: 52.3% > 30.0% for DIS
+2025-08-22 00:41:20,083 - INFO -    ❌ Rejected: BUY_MORE 7 DIS @ $115.48
+2025-08-22 00:41:20,083 - INFO -    ❌ Rejected: BUY_MORE 7 DIS @ $115.48
+2025-08-22 00:41:20,084 - WARNING -    ⚠️ Order would exceed position size limit: 50.0% > 30.0% for SNOW
+2025-08-22 00:41:20,084 - INFO -    ❌ Rejected: BUY_MORE 4 SNOW @ $195.94
+2025-08-22 00:41:20,084 - INFO -    ❌ Rejected: BUY_MORE 4 SNOW @ $195.94
+2025-08-22 00:41:20,084 - INFO -    📋 Executed: BUY_MORE 8 WMT @ $100.98
+2025-08-22 00:41:20,084 - INFO -    📋 Executed 1 pending orders at market open
+2025-08-22 00:41:20,086 - INFO -    🎯 Take profit queued: AAPL @ $221.74 (P&L: 14.3%)
+2025-08-22 00:41:20,088 - INFO -    🛡️ Risk management: 1 orders queued
+2025-08-22 00:41:26,807 - INFO -    📝 Queued: BUY_MORE 7 SNOW @ $194.90 (close) → execute tomorrow @ open
+2025-08-22 00:41:26,841 - INFO -    📝 Queued: BUY_MORE 14 PG @ $153.74 (close) → execute tomorrow @ open
+2025-08-22 00:41:26,848 - INFO -    ⚖️ Portfolio rebalancing: 5 orders queued
+2025-08-22 00:41:26,848 - INFO -    ⚖️ Portfolio rebalancing: 5 orders queued
+2025-08-22 00:41:26,929 - INFO -    🔥 ULTRA SIGNAL (0.969) - DEPLOYING EMERGENCY RESERVES!
+2025-08-22 00:41:26,929 - INFO -    🔍 DEBUG: Ultra signal #48 detected
+2025-08-22 00:41:26,929 - INFO -    💰 Capital utilization: +1 extra orders queued
+2025-08-22 00:41:26,931 - INFO - 📊 EOD Summary [93.5%]: $108,750 (+8.75%) | Pos: 7 (0.0%) | Trades: 3 (ML: 2) | Pending: 9 (Risk: 1) | Cash: $10,734
+2025-08-22 00:41:26,931 - INFO - 📅 Day 59/62: 2025-08-15
+2025-08-22 00:41:26,933 - INFO -    ❌ Rejected: TAKE_PROFIT 127 AAPL @ $234.00
+2025-08-22 00:41:26,933 - WARNING -    ⚠️ Order would exceed position size limit: 54.7% > 30.0% for SNOW
+2025-08-22 00:41:26,933 - INFO -    ❌ Rejected: BUY_MORE 7 SNOW @ $195.25
+2025-08-22 00:41:26,933 - INFO -    ❌ Rejected: BUY_MORE 7 SNOW @ $195.25
+2025-08-22 00:41:26,933 - WARNING -    ⚠️ Order would exceed position size limit: 60.5% > 50.0% for PG
+2025-08-22 00:41:26,933 - INFO -    ❌ Rejected: BUY_MORE 14 PG @ $154.47
+2025-08-22 00:41:26,933 - INFO -    ❌ Rejected: BUY_MORE 14 PG @ $154.47
+2025-08-22 00:41:26,933 - WARNING -    ⚠️ Order would exceed position size limit: 54.3% > 30.0% for GOOGL
+2025-08-22 00:41:26,933 - INFO -    ❌ Rejected: BUY_MORE 3 GOOGL @ $203.85
+2025-08-22 00:41:26,933 - INFO -    ❌ Rejected: BUY_MORE 3 GOOGL @ $203.85
+2025-08-22 00:41:26,933 - WARNING -    ⚠️ Order would exceed position size limit: 54.1% > 30.0% for PG
+2025-08-22 00:41:26,933 - INFO -    ❌ Rejected: BUY_MORE 5 PG @ $154.47
+2025-08-22 00:41:26,933 - INFO -    ❌ Rejected: BUY_MORE 5 PG @ $154.47
+2025-08-22 00:41:26,933 - WARNING -    ⚠️ Order would exceed position size limit: 54.0% > 30.0% for DIS
+2025-08-22 00:41:26,933 - INFO -    ❌ Rejected: BUY_MORE 6 DIS @ $116.57
+2025-08-22 00:41:26,933 - INFO -    ❌ Rejected: BUY_MORE 6 DIS @ $116.57
+2025-08-22 00:41:26,933 - WARNING -    ⚠️ Order would exceed position size limit: 51.9% > 30.0% for SNOW
+2025-08-22 00:41:26,933 - INFO -    ❌ Rejected: BUY_MORE 4 SNOW @ $195.25
+2025-08-22 00:41:26,933 - INFO -    ❌ Rejected: BUY_MORE 4 SNOW @ $195.25
+2025-08-22 00:41:26,934 - INFO -    📋 Executed: BUY_MORE 8 WMT @ $100.63
+2025-08-22 00:41:26,934 - WARNING -    ⚠️ Order would exceed position size limit: 62.8% > 50.0% for PG
+2025-08-22 00:41:26,934 - INFO -    ❌ Rejected: BUY_MORE 14 PG @ $154.47
+2025-08-22 00:41:26,934 - INFO -    ❌ Rejected: BUY_MORE 14 PG @ $154.47
+2025-08-22 00:41:26,934 - INFO -    📋 Executed 1 pending orders at market open
+2025-08-22 00:41:26,937 - INFO -    🎯 Take profit queued: AAPL @ $222.42 (P&L: 13.7%)
+2025-08-22 00:41:26,938 - INFO -    🛡️ Risk management: 1 orders queued
+2025-08-22 00:41:33,671 - INFO -    📝 Queued: BUY_MORE 5 SNOW @ $199.08 (close) → execute tomorrow @ open
+2025-08-22 00:41:33,712 - INFO -    ⚖️ Portfolio rebalancing: 5 orders queued
+2025-08-22 00:41:33,713 - INFO -    ⚖️ Portfolio rebalancing: 5 orders queued
+2025-08-22 00:41:33,793 - INFO -    🔥 ULTRA SIGNAL (0.931) - DEPLOYING EMERGENCY RESERVES!
+2025-08-22 00:41:33,794 - INFO -    🔍 DEBUG: Ultra signal #49 detected
+2025-08-22 00:41:33,796 - INFO - 📊 EOD Summary [95.2%]: $108,702 (+8.70%) | Pos: 7 (0.0%) | Trades: 2 (ML: 1) | Pending: 7 (Risk: 1) | Cash: $9,928
+2025-08-22 00:41:33,796 - INFO - 📅 Day 60/62: 2025-08-18
+2025-08-22 00:41:33,797 - INFO -    ❌ Rejected: TAKE_PROFIT 127 AAPL @ $231.70
+2025-08-22 00:41:33,797 - WARNING -    ⚠️ Order would exceed position size limit: 55.3% > 30.0% for SNOW
+2025-08-22 00:41:33,797 - INFO -    ❌ Rejected: BUY_MORE 5 SNOW @ $197.47
+2025-08-22 00:41:33,797 - INFO -    ❌ Rejected: BUY_MORE 5 SNOW @ $197.47
+2025-08-22 00:41:33,797 - WARNING -    ⚠️ Order would exceed position size limit: 56.4% > 30.0% for GOOGL
+2025-08-22 00:41:33,797 - INFO -    ❌ Rejected: BUY_MORE 3 GOOGL @ $204.20
+2025-08-22 00:41:33,798 - INFO -    ❌ Rejected: BUY_MORE 3 GOOGL @ $204.20
+2025-08-22 00:41:33,798 - WARNING -    ⚠️ Order would exceed position size limit: 55.4% > 30.0% for PG
+2025-08-22 00:41:33,798 - INFO -    ❌ Rejected: BUY_MORE 4 PG @ $154.42
+2025-08-22 00:41:33,798 - INFO -    ❌ Rejected: BUY_MORE 4 PG @ $154.42
+2025-08-22 00:41:33,798 - WARNING -    ⚠️ Order would exceed position size limit: 55.7% > 30.0% for DIS
+2025-08-22 00:41:33,798 - INFO -    ❌ Rejected: BUY_MORE 6 DIS @ $115.19
+2025-08-22 00:41:33,798 - INFO -    ❌ Rejected: BUY_MORE 6 DIS @ $115.19
+2025-08-22 00:41:33,798 - WARNING -    ⚠️ Order would exceed position size limit: 53.3% > 30.0% for SNOW
+2025-08-22 00:41:33,798 - INFO -    ❌ Rejected: BUY_MORE 3 SNOW @ $197.47
+2025-08-22 00:41:33,798 - INFO -    ❌ Rejected: BUY_MORE 3 SNOW @ $197.47
+2025-08-22 00:41:33,798 - INFO -    📋 Executed: BUY_MORE 7 WMT @ $100.00
+2025-08-22 00:41:33,798 - INFO -    📋 Executed 1 pending orders at market open
+2025-08-22 00:41:33,802 - INFO -    🎯 Take profit queued: AAPL @ $222.21 (P&L: 13.4%)
+2025-08-22 00:41:33,803 - INFO -    🛡️ Risk management: 1 orders queued
+2025-08-22 00:41:40,435 - INFO -    📝 Queued: BUY_MORE 8 SNOW @ $198.24 (close) → execute tomorrow @ open
+2025-08-22 00:41:40,473 - INFO -    ⚖️ Portfolio rebalancing: 5 orders queued
+2025-08-22 00:41:40,473 - INFO -    ⚖️ Portfolio rebalancing: 5 orders queued
+2025-08-22 00:41:40,554 - INFO - 📊 EOD Summary [96.8%]: $108,638 (+8.64%) | Pos: 7 (0.0%) | Trades: 2 (ML: 1) | Pending: 7 (Risk: 1) | Cash: $9,227
+2025-08-22 00:41:40,555 - INFO - 📈 Weekly Summary: +0.07% | Active Models: 120 | Drawdown: 0.27% | Top Holdings: 
+2025-08-22 00:41:40,555 - INFO -    Progress: +8.6% | Positions: 7 | Queued orders: 7 | Actions today: 2
+2025-08-22 00:41:40,555 - INFO - 📅 Day 61/62: 2025-08-19
+2025-08-22 00:41:40,556 - INFO -    ❌ Rejected: TAKE_PROFIT 127 AAPL @ $231.28
+2025-08-22 00:41:40,556 - WARNING -    ⚠️ Order would exceed position size limit: 60.7% > 30.0% for SNOW
+2025-08-22 00:41:40,556 - INFO -    ❌ Rejected: BUY_MORE 8 SNOW @ $199.39
+2025-08-22 00:41:40,556 - INFO -    ❌ Rejected: BUY_MORE 8 SNOW @ $199.39
+2025-08-22 00:41:40,556 - WARNING -    ⚠️ Order would exceed position size limit: 58.2% > 30.0% for GOOGL
+2025-08-22 00:41:40,556 - INFO -    ❌ Rejected: BUY_MORE 3 GOOGL @ $203.03
+2025-08-22 00:41:40,556 - INFO -    ❌ Rejected: BUY_MORE 3 GOOGL @ $203.03
+2025-08-22 00:41:40,556 - WARNING -    ⚠️ Order would exceed position size limit: 57.6% > 30.0% for PG
+2025-08-22 00:41:40,556 - INFO -    ❌ Rejected: BUY_MORE 4 PG @ $155.73
+2025-08-22 00:41:40,556 - INFO -    ❌ Rejected: BUY_MORE 4 PG @ $155.73
+2025-08-22 00:41:40,556 - WARNING -    ⚠️ Order would exceed position size limit: 57.4% > 30.0% for DIS
+2025-08-22 00:41:40,556 - INFO -    ❌ Rejected: BUY_MORE 5 DIS @ $116.50
+2025-08-22 00:41:40,556 - INFO -    ❌ Rejected: BUY_MORE 5 DIS @ $116.50
+2025-08-22 00:41:40,556 - WARNING -    ⚠️ Order would exceed position size limit: 55.5% > 30.0% for SNOW
+2025-08-22 00:41:40,557 - INFO -    ❌ Rejected: BUY_MORE 3 SNOW @ $199.39
+2025-08-22 00:41:40,557 - INFO -    ❌ Rejected: BUY_MORE 3 SNOW @ $199.39
+2025-08-22 00:41:40,557 - WARNING -    ⚠️ Order would exceed position size limit: 30.8% > 30.0% for WMT
+2025-08-22 00:41:40,557 - INFO -    ❌ Rejected: BUY_MORE 6 WMT @ $100.96
+2025-08-22 00:41:40,557 - INFO -    ❌ Rejected: BUY_MORE 6 WMT @ $100.96
+2025-08-22 00:41:40,559 - INFO -    🎯 Take profit queued: PG @ $157.39 (P&L: 5.0%)
+2025-08-22 00:41:40,560 - INFO -    🎯 Take profit queued: AAPL @ $221.96 (P&L: 13.2%)
+2025-08-22 00:41:40,561 - INFO -    🛡️ Risk management: 2 orders queued
+2025-08-22 00:41:47,321 - INFO -    📝 Queued: BUY_MORE 9 SNOW @ $192.63 (close) → execute tomorrow @ open
+2025-08-22 00:41:47,366 - INFO -    ⚖️ Portfolio rebalancing: 5 orders queued
+2025-08-22 00:41:47,366 - INFO -    ⚖️ Portfolio rebalancing: 5 orders queued
+2025-08-22 00:41:47,452 - INFO -    🔥 ULTRA SIGNAL (1.000) - DEPLOYING EMERGENCY RESERVES!
+2025-08-22 00:41:47,452 - INFO -    🔍 DEBUG: Ultra signal #50 detected
+2025-08-22 00:41:47,454 - INFO - 📊 EOD Summary [98.4%]: $108,056 (+8.06%) | Pos: 7 (0.0%) | Trades: 1 (ML: 1) | Pending: 8 (Risk: 2) | Cash: $9,227
+2025-08-22 00:41:47,454 - INFO - 📅 Day 62/62: 2025-08-20
+2025-08-22 00:41:47,455 - INFO -    ❌ Rejected: TAKE_PROFIT 71 PG @ $158.58
+2025-08-22 00:41:47,455 - INFO -    ❌ Rejected: TAKE_PROFIT 127 AAPL @ $229.98
+2025-08-22 00:41:47,455 - WARNING -    ⚠️ Order would exceed position size limit: 61.4% > 50.0% for SNOW
+2025-08-22 00:41:47,455 - INFO -    ❌ Rejected: BUY_MORE 9 SNOW @ $197.61
+2025-08-22 00:41:47,455 - INFO -    ❌ Rejected: BUY_MORE 9 SNOW @ $197.61
+2025-08-22 00:41:47,455 - WARNING -    ⚠️ Order would exceed position size limit: 57.9% > 30.0% for GOOGL
+2025-08-22 00:41:47,455 - INFO -    ❌ Rejected: BUY_MORE 3 GOOGL @ $200.73
+2025-08-22 00:41:47,455 - INFO -    ❌ Rejected: BUY_MORE 3 GOOGL @ $200.73
+2025-08-22 00:41:47,455 - WARNING -    ⚠️ Order would exceed position size limit: 58.1% > 30.0% for PG
+2025-08-22 00:41:47,455 - INFO -    ❌ Rejected: BUY_MORE 4 PG @ $158.58
+2025-08-22 00:41:47,455 - INFO -    ❌ Rejected: BUY_MORE 4 PG @ $158.58
+2025-08-22 00:41:47,456 - WARNING -    ⚠️ Order would exceed position size limit: 57.3% > 30.0% for DIS
+2025-08-22 00:41:47,456 - INFO -    ❌ Rejected: BUY_MORE 5 DIS @ $116.08
+2025-08-22 00:41:47,456 - INFO -    ❌ Rejected: BUY_MORE 5 DIS @ $116.08
+2025-08-22 00:41:47,456 - WARNING -    ⚠️ Order would exceed position size limit: 55.3% > 30.0% for SNOW
+2025-08-22 00:41:47,456 - INFO -    ❌ Rejected: BUY_MORE 3 SNOW @ $197.61
+2025-08-22 00:41:47,456 - INFO -    ❌ Rejected: BUY_MORE 3 SNOW @ $197.61
+2025-08-22 00:41:47,456 - WARNING -    ⚠️ Order would exceed position size limit: 30.8% > 30.0% for WMT
+2025-08-22 00:41:47,456 - INFO -    ❌ Rejected: BUY_MORE 6 WMT @ $101.15
+2025-08-22 00:41:47,456 - INFO -    ❌ Rejected: BUY_MORE 6 WMT @ $101.15
+2025-08-22 00:41:47,459 - INFO -    🎯 Take profit queued: PG @ $157.31 (P&L: 5.7%)
+2025-08-22 00:41:47,459 - INFO -    🎯 Take profit queued: AAPL @ $222.41 (P&L: 11.0%)
+2025-08-22 00:41:47,461 - INFO -    🛡️ Risk management: 2 orders queued
+2025-08-22 00:41:54,060 - INFO -    📝 Queued: BUY_MORE 3 MSFT @ $504.89 (close) → execute tomorrow @ open
+2025-08-22 00:41:54,094 - INFO -    📝 Queued: BUY_MORE 10 SNOW @ $194.80 (close) → execute tomorrow @ open
+2025-08-22 00:41:54,138 - INFO -    ⚖️ Portfolio rebalancing: 5 orders queued
+2025-08-22 00:41:54,138 - INFO -    ⚖️ Portfolio rebalancing: 5 orders queued
+2025-08-22 00:41:54,224 - INFO -    🔥 ULTRA SIGNAL (1.000) - DEPLOYING EMERGENCY RESERVES!
+2025-08-22 00:41:54,224 - INFO -    🔍 DEBUG: Ultra signal #51 detected
+2025-08-22 00:41:54,226 - INFO - 📊 EOD Summary [100.0%]: $107,473 (+7.47%) | Pos: 7 (0.0%) | Trades: 2 (ML: 2) | Pending: 9 (Risk: 2) | Cash: $9,227
+2025-08-22 00:41:54,234 - INFO - Results saved to realistic_live_trading_results_20250822_004154.json

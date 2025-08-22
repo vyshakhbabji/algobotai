@@ -57,46 +57,46 @@ class RealisticLiveTradingSystem:
         self.signal_strength_models = {}  # {date: {symbol: strength_model}}
         self.regime_models = {}  # {date: {symbol: regime_model}}
         
-        # Configuration - SMART AGGRESSIVE: Quality over Quantity
+        # Configuration - ULTRA AGGRESSIVE: Maximum Kelly Sizing & Capital Deployment
         self.config = {
-            # TIERED POSITION SIZING - Deploy capital based on signal confidence
-            'max_position_size': 0.30,  # 30% for regular signals (more capital per idea)
-            'max_position_size_exceptional': 0.50,  # 50% for exceptional signals
-            'max_position_size_ultra': 0.70,  # 70% for ultra signals (new tier!)
-            'exceptional_signal_threshold': 0.80,  # 80% for exceptional (was 0.75)
-            'ultra_signal_threshold': 0.92,  # 92% for ultra confidence
-            'min_position_size': 0.03,  # Min 3% per stock
-            'stop_loss_mult': 2.0,      # 2x ATR stop loss
-            'take_profit_mult': 3.0,    # 3x ATR take profit
-            'rebalance_threshold': 0.10, # 10% threshold for rebalancing
-            'signal_threshold': 0.50,    # Slightly lower threshold to capture more opportunities
-            'max_positions': 6,         # Max 6 positions (was 8 - more concentrated)
-            'partial_sell_threshold': 0.3,  # Sell 30% on weak signals (faster profit taking)
+            # AGGRESSIVE TIERED POSITION SIZING - Deploy capital based on signal confidence
+            'max_position_size': 0.50,  # 50% for regular signals (MUCH more aggressive!)
+            'max_position_size_exceptional': 0.75,  # 75% for exceptional signals (was 50%)
+            'max_position_size_ultra': 1.20,  # 120% for ultra signals (LEVERAGE allowed!)
+            'exceptional_signal_threshold': 0.75,  # 75% for exceptional (lowered threshold)
+            'ultra_signal_threshold': 0.88,  # 88% for ultra confidence (lowered threshold)
+            'min_position_size': 0.05,  # Min 5% per stock (bigger minimum)
+            'stop_loss_mult': 1.8,      # 1.8x ATR stop loss (tighter stops for more leverage)
+            'take_profit_mult': 4.0,    # 4x ATR take profit (let winners run longer)
+            'rebalance_threshold': 0.08, # 8% threshold for rebalancing (more frequent)
+            'signal_threshold': 0.45,    # Lower threshold to capture more opportunities
+            'max_positions': 8,         # Max 8 positions (more diversification with leverage)
+            'partial_sell_threshold': 0.25,  # Sell 25% on weak signals (hold winners longer)
             'ml_retrain_days': 1,       # Retrain every day (realistic)
             'min_training_days': 100,   # Need 100 days to train
-            'max_new_positions_per_day': 4,  # Limit entries (was 12 - QUALITY OVER QUANTITY!)
+            'max_new_positions_per_day': 6,  # More entries allowed (was 4)
             'commission_bps': 5,        # 0.05% commission
             'slippage_bps': 2,          # 0.02% slippage
             'min_commission': 1.0,      # $1 minimum commission
             
-            # SMART Capital Deployment - Reserve cash for amazing opportunities
-            'target_invested_floor': 0.70,    # Keep 30% cash for opportunities (was 90%)
-            'target_invested_ceiling': 0.85,  # Max 85% deployed normally (was 98%)
-            'emergency_cash_reserve': 0.20,   # Always keep 20% for ultra signals
-            'min_avg_strength_for_ceiling': 0.75,  # High bar for full deployment
-            'min_individual_strength_for_extra': 0.70,  # High bar for extra allocation
-            'cash_reserve_floor': 0.15,       # Minimum 15% cash (was 1% - need dry powder!)
-            'max_utilization_topups_per_day': 3,  # Conservative top-ups
-            'min_extra_position_size': 0.03,   # Minimum size for extra allocations
+            # AGGRESSIVE Capital Deployment - Deploy maximum capital
+            'target_invested_floor': 0.90,    # Keep only 10% cash minimum (was 70%)
+            'target_invested_ceiling': 1.15,  # Allow 115% deployment with leverage (was 85%)
+            'emergency_cash_reserve': 0.08,   # Only 8% emergency reserve (was 20%)
+            'min_avg_strength_for_ceiling': 0.65,  # Lower bar for full deployment (was 0.75)
+            'min_individual_strength_for_extra': 0.60,  # Lower bar for extra allocation (was 0.70)
+            'cash_reserve_floor': 0.05,       # Minimum 5% cash only (was 15%)
+            'max_utilization_topups_per_day': 8,  # Many more top-ups allowed (was 3)
+            'min_extra_position_size': 0.05,   # Minimum size for extra allocations
 
-            # Dynamic trailing stop to protect profits
-            'trailing_stop_mult': 1.5,  # Trail by 1.5x ATR from the high watermark
+            # Dynamic trailing stop to protect profits - AGGRESSIVE
+            'trailing_stop_mult': 1.2,  # Trail by 1.2x ATR from high watermark (tighter)
             
-            # Portfolio-Level Exposure Guards (Enhancement #4)
-            'max_net_exposure': 0.95,         # Max portfolio exposure (95%)
-            'drawdown_throttle_threshold': 0.10,  # Drawdown threshold for throttling (10%)
-            'drawdown_throttle_sessions': 10,     # Sessions to throttle after drawdown
-            'drawdown_throttle_ceiling': 0.70,    # Reduced ceiling during throttling (70%)
+            # Portfolio-Level Exposure Guards - LOOSENED FOR AGGRESSION
+            'max_net_exposure': 1.25,         # Max portfolio exposure (125% - leverage allowed!)
+            'drawdown_throttle_threshold': 0.15,  # Higher drawdown tolerance (15%)
+            'drawdown_throttle_sessions': 5,      # Fewer throttle sessions (5 vs 10)
+            'drawdown_throttle_ceiling': 0.85,    # Higher ceiling during throttling (85% vs 70%)
             
             # Enhancement Tracking and Persistence (Enhancement #9)
             'enable_enhancement_logging': True,   # Track all enhancements

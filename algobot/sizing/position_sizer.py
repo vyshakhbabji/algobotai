@@ -11,14 +11,14 @@ class AccountState:
     equity: float
 
 
-def kelly_fraction(win_rate: float, avg_win: float, avg_loss: float, fraction: float = 0.25) -> float:
+def kelly_fraction(win_rate: float, avg_win: float, avg_loss: float, fraction: float = 0.60) -> float:
     """Compute fractional Kelly bet fraction of equity.
 
     Args:
         win_rate: Estimated probability of a win, in [0,1].
         avg_win: Average win (as a fraction, e.g., 0.05 for +5%).
         avg_loss: Average loss (as a fraction, e.g., 0.02 for -2%).
-        fraction: Fraction of full Kelly to apply (e.g., 0.25 = 25% Kelly).
+        fraction: Fraction of full Kelly to apply (e.g., 0.60 = 60% Kelly - AGGRESSIVE!).
 
     Returns:
         Kelly fraction in [0, 1] (typically small), after applying caps and guards.
@@ -38,9 +38,9 @@ def kelly_fraction(win_rate: float, avg_win: float, avg_loss: float, fraction: f
         return 0.0
 
 
-def kelly_size(confidence: float, equity: float, price: float, cap_fraction: float = 0.15,
-               win_rate: Optional[float] = None, avg_win: float = 0.05, avg_loss: float = 0.02,
-               frac: float = 0.25) -> int:
+def kelly_size(confidence: float, equity: float, price: float, cap_fraction: float = 0.50,
+               win_rate: Optional[float] = None, avg_win: float = 0.08, avg_loss: float = 0.025,
+               frac: float = 0.60) -> int:
     """Return integer shares using (fractional) Kelly sizing with a per-position cap.
 
     Backward compatible: if win_rate is None, maps confidence -> win_rate.
@@ -49,11 +49,11 @@ def kelly_size(confidence: float, equity: float, price: float, cap_fraction: flo
         confidence: Proxy for win probability in [0,1] when win_rate not provided.
         equity: Account equity in dollars.
         price: Current asset price.
-        cap_fraction: Hard cap on position as a fraction of equity (e.g., 0.15 = 15%).
+        cap_fraction: Hard cap on position as a fraction of equity (e.g., 0.50 = 50% - AGGRESSIVE!).
         win_rate: If provided, use as win probability; otherwise use confidence.
-        avg_win: Assumed average win (fraction of price).
-        avg_loss: Assumed average loss (fraction of price).
-        frac: Fraction of full Kelly to apply (e.g., 0.25 = 25%).
+        avg_win: Assumed average win (fraction of price) - INCREASED TO 8%.
+        avg_loss: Assumed average loss (fraction of price) - INCREASED TO 2.5%.
+        frac: Fraction of full Kelly to apply (e.g., 0.60 = 60% - MUCH MORE AGGRESSIVE!).
 
     Returns:
         Integer number of shares to buy given the cap and Kelly fraction.
