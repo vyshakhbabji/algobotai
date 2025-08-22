@@ -1327,12 +1327,33 @@ class RealisticLiveTradingSystem:
         print("="*80)
     
     def get_elite_stocks(self) -> List[str]:
-        """Same elite stock selection"""
+        """Top 100 most liquid stocks across all sectors - THE ULTIMATE TEST"""
         return [
-            'AAPL', 'MSFT', 'GOOGL', 'AMZN', 'NVDA', 'TSLA', 'META', 'NFLX',
-            'CRM', 'SNOW', 'PLTR', 'COIN', 'UBER', 'DIS', 'JPM', 'BAC',
-            'JNJ', 'PG', 'KO', 'WMT', 'HD', 'V', 'MA', 'PFE', 'VZ'
-        ][:20]  # Limit to 20 for faster daily training
+            # Technology Giants (25 stocks)
+            "AAPL", "MSFT", "GOOGL", "GOOG", "AMZN", "META", "TSLA", "NVDA", "ORCL", "CRM",
+            "ADBE", "NFLX", "AMD", "INTC", "CSCO", "AVGO", "QCOM", "TXN", "AMAT", "LRCX",
+            "KLAC", "MRVL", "ADI", "SNPS", "CDNS",
+            
+            # Financial Services (15 stocks)
+            "JPM", "BAC", "WFC", "GS", "MS", "C", "BLK", "AXP", "SPGI", "ICE",
+            "V", "MA", "COF", "USB", "PNC",
+            
+            # Healthcare & Biotech (15 stocks)
+            "UNH", "JNJ", "PFE", "ABBV", "MRK", "TMO", "ABT", "DHR", "BMY", "AMGN",
+            "GILD", "LLY", "MDT", "ISRG", "VRTX",
+            
+            # Consumer & Retail (15 stocks)
+            "HD", "PG", "KO", "PEP", "WMT", "NKE", "MCD", "SBUX", "DIS", "COST",
+            "TGT", "LOW", "TJX", "ROST", "ULTA",
+            
+            # Energy & Industrials (15 stocks)
+            "XOM", "CVX", "COP", "EOG", "SLB", "CAT", "BA", "HON", "UPS", "RTX",
+            "LMT", "GE", "MMM", "DE", "EMR",
+            
+            # Growth & Momentum (15 stocks)
+            "PLTR", "SNOW", "COIN", "CRWD", "ZS", "NET", "DDOG", "OKTA", "SHOP", "SQ",
+            "UBER", "LYFT", "ABNB", "DASH", "ROKU"
+        ]  # Full 100 stocks - the ultimate test!
     
     def fetch_data_up_to_date(self, symbol: str, current_date: pd.Timestamp) -> pd.DataFrame:
         """Fetch data up to specific date (no look-ahead bias)"""
@@ -2500,34 +2521,42 @@ class RealisticLiveTradingSystem:
             return f"Error generating enhancement summary: {e}"
 
 def main():
-    """Test the Realistic Live Trading System"""
-    print("🚀 ENHANCED REALISTIC LIVE TRADING SIMULATOR")
-    print("Daily ML Training + Advanced Signal Enhancement + Human-like Decisions")
-    print("=" * 60)
+    """🚀 ULTIMATE 100-STOCK 2-YEAR TEST: The Final Challenge"""
+    print("🚀 ULTIMATE 100-STOCK 2-YEAR BACKTESTER")
+    print("🎯 100 Top Stocks | 2 Years Data | 1 Year Trading | Ultra-Aggressive Kelly")
+    print("=" * 80)
     
     # Initialize system
     system = RealisticLiveTradingSystem(initial_capital=100000.0)
     
-    # Run 3-month realistic simulation
-    print("📈 Running 3-month enhanced realistic live trading simulation...")
-    print("• ML models retrained DAILY")
-    print("• ENHANCED: LightGBM signal strength models")
-    print("• ENHANCED: ML multiplier system (0.3-1.0x)")
-    print("• Human-like decisions: buy more, hold, partial sell, full sell")
+    print(f"📊 Testing Universe: {len(system.get_elite_stocks())} stocks")
+    print("💰 Initial Capital: $100,000")
+    print("� Configuration: Ultra-aggressive Kelly sizing")
+    print("📅 Data Period: 2 years (2023-2025)")
+    print("💼 Trading Period: 1 year (2024-2025)")
+    print("\n🚀 Starting the ultimate test...")
+    print("• ML models retrained DAILY on 100 stocks")
+    print("• Ultra-aggressive position sizing (up to 120%)")
+    print("• Capital deployment: 90-115% (leverage allowed)")
+    print("• Emergency reserves: Only 8%")
+    print("• Human-like decisions across 100 stocks")
     print("• NO look-ahead bias - only past data used")
     print("• Real-time portfolio rebalancing")
     
+    # Run the ultimate 2-year test with 1 year of trading
     result = system.run_realistic_live_trading(
-        start_date="2025-05-22",
-        end_date="2025-08-21"
+        start_date="2024-01-01",  # 1 year of trading
+        end_date="2025-01-01"     # Using 2 years of prior data (2023-2025)
     )
     
     # Add debug summary
     system._print_debug_summary()
     
     if "error" not in result:
-        print(f"\n✅ Realistic Live Trading Results:")
+        print(f"\n🏆 ULTIMATE 100-STOCK RESULTS:")
+        print("=" * 50)
         print(f"   Period:                 {result['period']}")
+        print(f"   Trading Universe:       100 stocks")
         print(f"   Initial Capital:        ${result['initial_capital']:,.0f}")
         print(f"   Final Value:            ${result['final_value']:,.0f}")
         print(f"   Total Return:           {result['total_return_pct']:+.1f}%")
@@ -2537,57 +2566,63 @@ def main():
         print(f"   Calmar Ratio:           {result['calmar_ratio']:.2f}")
         print(f"   Sortino Ratio:          {result['sortino_ratio']:.2f}")
         print(f"   Max Drawdown:           {result['max_drawdown_pct']:.1f}%")
-        print(f"   Total Trades:           {result['total_trades']}")
+        print(f"   Total Trades:           {result['total_trades']:,}")
         print(f"   Hit Rate:               {result['hit_rate_pct']:.1f}%")
         print(f"   Win/Loss Ratio:         {result['win_loss_ratio']:.2f}")
         print(f"   Risk Triggered:         {result['risk_triggered_trades']}")
-        print(f"   ML Enhanced Trades:     {result['ml_enhanced_trades']} ({result['ml_enhancement_rate']:.1f}%)")
+        print(f"   ML Enhanced Trades:     {result['ml_enhanced_trades']:,} ({result['ml_enhancement_rate']:.1f}%)")
         print(f"   Avg ML Multiplier:      {result['avg_ml_multiplier']:.2f}x")
         print(f"   Avg Regime Boost:       {result['avg_regime_boost']:.2f}x") 
         print(f"   Avg Total Enhancement:  {result['avg_total_enhancement']:.2f}x")
         print(f"   Portfolio Exposure:     {result['portfolio_exposure_pct']:.1f}%")
         print(f"   Final Positions:        {result['final_positions']}")
-        print(f"   Models Trained:         {result['models_trained']}")
+        print(f"   Models Trained:         {result['models_trained']:,}")
         
-        print(f"\n💰 Capital Utilization:")
+        print(f"\n💰 ULTRA-AGGRESSIVE CAPITAL UTILIZATION:")
         print(f"   Average Invested:       {result['avg_invested_ratio_pct']:.1f}%")
         print(f"   Final Invested:         {result['final_invested_ratio_pct']:.1f}%")
         print(f"   Range:                  {result['min_invested_ratio_pct']:.1f}% - {result['max_invested_ratio_pct']:.1f}%")
         print(f"   Target Floor/Ceiling:   {system.config['target_invested_floor']*100:.0f}% - {system.config['target_invested_ceiling']*100:.0f}%")
         
-        print(f"\n🤖 Model Performance (Top 5):")
+        print(f"\n🤖 MODEL PERFORMANCE (Top 10 of 100 stocks):")
         model_stats = result['model_stats']
-        sorted_models = sorted(model_stats.items(), key=lambda x: x[1]['avg_accuracy'], reverse=True)[:5]
+        sorted_models = sorted(model_stats.items(), key=lambda x: x[1]['avg_accuracy'], reverse=True)[:10]
         for symbol, stats in sorted_models:
             print(f"   {symbol}: {stats['avg_accuracy']:.3f} regime acc | {stats['avg_strength_r2']:.3f} strength R²")
         
-        # Compare to previous systems
-        print(f"\n🎯 Performance Comparison:")
-        print(f"   Baseline Kelly System:  49.8% annual")
-        print(f"   Enhanced ML System:     91.2% annual")
-        print(f"   Realistic Live System:  {result['annual_return_pct']:+.1f}% annual")
+        # Ultimate performance comparison
+        print(f"\n🎯 ULTIMATE PERFORMANCE COMPARISON:")
+        print(f"   Previous 20-stock system:  {7.5:.1f}% (3 months) → {34:.1f}% annual")
+        print(f"   Ultra-aggressive 20-stock: {8.2:.1f}% (3 months) → {37.9:.1f}% annual")
+        print(f"   🚀 ULTIMATE 100-stock:     {result['total_return_pct']:+.1f}% (1 year) → {result['annual_return_pct']:+.1f}% annual")
         
-        if result['annual_return_pct'] > 60:
-            print("🎉 Excellent! Realistic system maintains strong performance!")
-        elif result['annual_return_pct'] > 30:
-            print("✅ Good performance with realistic constraints")
+        annual_return = result['annual_return_pct']
+        if annual_return > 50:
+            print("� PHENOMENAL! 100-stock system is crushing it!")
+        elif annual_return > 40:
+            print("🎉 EXCELLENT! Ultra-aggressive strategy scales beautifully!")
+        elif annual_return > 30:
+            print("✅ STRONG! Good performance across 100 stocks")
         else:
-            print("⚠️ Performance impacted by realistic daily training")
+            print("⚠️ Performance impact from scaling to 100 stocks")
             
     else:
         print(f"❌ Error: {result['error']}")
     
-    print("\n🔬 Enhanced Realistic Trading Features:")
-    print("• Daily ML model retraining (like real trading)")
-    print("• ENHANCED: LightGBM signal strength prediction")
-    print("• ENHANCED: ML multiplier system (0.3-1.0x)")
-    print("• NEW: Intelligent capital utilization (80-90% target)")
-    print("• NEW: Dynamic position sizing with exceptional limits")
-    print("• Human-like position management") 
+    print("\n🔬 ULTIMATE 100-STOCK TESTING FEATURES:")
+    print("🎯 100 top liquid stocks across all sectors")
+    print("📊 2 years of historical data (2023-2025)")
+    print("💼 1 year of live trading simulation (2024-2025)")
+    print("• Daily ML model retraining on 100 stocks")
+    print("• ULTRA-AGGRESSIVE: Up to 120% position sizing")
+    print("• LEVERAGE ALLOWED: 115% capital deployment")
+    print("• Emergency reserves: Only 8% (vs 20%)")
+    print("• Human-like position management across 100 stocks") 
     print("• No future data exposure")
-    print("• Portfolio rebalancing")
-    print("• Advanced signal enhancement")
+    print("• Advanced portfolio rebalancing")
     print("• Comprehensive risk management")
+    print("• Real market conditions simulation")
+    print("\n🏆 THE ULTIMATE TEST OF OUR ULTRA-AGGRESSIVE KELLY STRATEGY!")
 
 if __name__ == "__main__":
     main()
