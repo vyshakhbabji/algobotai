@@ -1,0 +1,2 @@
+2025-08-22 09:25:42,110 - INFO - 🔍 DEBUG MODE: Logging to trading_debug_log_20250822_092542.txt
+2025-08-22 09:25:42,110 - INFO - 🚀 Realistic Live Trading System initialized

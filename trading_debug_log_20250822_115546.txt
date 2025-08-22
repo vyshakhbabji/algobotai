@@ -1,0 +1,4 @@
+2025-08-22 11:55:46,066 - INFO - 🔍 DEBUG MODE: Logging to trading_debug_log_20250822_115546.txt
+2025-08-22 11:55:46,067 - INFO - 🚀 Realistic Live Trading System initialized
+2025-08-22 11:55:46,067 - INFO -    🎯 Signal-based exit: AAPL (Signal below threshold: 0.850→0.450)
+2025-08-22 11:55:46,067 - INFO -    🎯 Signal-based exit: AAPL (Ultra→Normal signal: 0.900→0.400)

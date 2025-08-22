@@ -1,0 +1,35 @@
+2025-08-22 10:38:17,163 - INFO - 🔍 DEBUG MODE: Logging to trading_debug_log_20250822_103817.txt
+2025-08-22 10:38:17,163 - INFO - 🚀 Realistic Live Trading System initialized
+2025-08-22 10:38:17,163 - INFO - 🚀 Starting Realistic Live Trading: 2024-08-22 to 2025-08-22
+2025-08-22 10:38:17,163 - INFO - 📊 Configuration: 3 months back from today, 2+ years data, 100 stocks, profit pot separation
+2025-08-22 10:38:17,172 - INFO - 📊 Pre-fetching historical data for all symbols...
+2025-08-22 10:38:17,470 - INFO -    ✅ AAPL: 565 bars
+2025-08-22 10:38:17,587 - INFO -    ✅ MSFT: 565 bars
+2025-08-22 10:38:17,737 - INFO -    ✅ GOOGL: 565 bars
+2025-08-22 10:38:17,805 - INFO -    ✅ AMZN: 565 bars
+2025-08-22 10:38:17,883 - INFO -    ✅ META: 565 bars
+2025-08-22 10:38:18,019 - INFO -    ✅ TSLA: 565 bars
+2025-08-22 10:38:18,112 - INFO -    ✅ NVDA: 565 bars
+2025-08-22 10:38:18,206 - INFO -    ✅ ORCL: 565 bars
+2025-08-22 10:38:18,393 - INFO -    ✅ JPM: 565 bars
+2025-08-22 10:38:18,506 - INFO -    ✅ BAC: 565 bars
+2025-08-22 10:38:18,595 - INFO -    ✅ V: 565 bars
+2025-08-22 10:38:18,699 - INFO -    ✅ MA: 565 bars
+2025-08-22 10:38:18,855 - INFO -    ✅ UNH: 565 bars
+2025-08-22 10:38:19,053 - INFO -    ✅ JNJ: 565 bars
+2025-08-22 10:38:19,246 - INFO -    ✅ PG: 565 bars
+2025-08-22 10:38:19,477 - INFO -    ✅ KO: 565 bars
+2025-08-22 10:38:19,682 - INFO -    ✅ XOM: 565 bars
+2025-08-22 10:38:19,825 - INFO -    ✅ HD: 565 bars
+2025-08-22 10:38:20,024 - INFO -    ✅ DIS: 565 bars
+2025-08-22 10:38:20,108 - INFO -    ✅ CRM: 565 bars
+2025-08-22 10:38:20,110 - INFO - 📅 Found 250 trading days with available data
+2025-08-22 10:38:20,110 - INFO - 📅 Day 1/250: 2024-08-22
+2025-08-22 10:38:24,814 - INFO -    🔥 ULTRA SIGNAL (0.888) - DEPLOYING EMERGENCY RESERVES!
+2025-08-22 10:38:24,815 - INFO -    🔍 DEBUG: Ultra signal #1 detected
+2025-08-22 10:38:24,815 - INFO -    💰 Capital utilization: +1 extra orders queued
+2025-08-22 10:38:24,815 - INFO - 📊 EOD Summary [0.4%]: $100,000 (+0.00%) | Pos: 0 (0.0%) | Trades: 0 (ML: 0) | Pending: 1 (Risk: 0) | Cash: $100,000
+2025-08-22 10:38:24,815 - INFO - 📅 Day 2/250: 2024-08-23
+2025-08-22 10:38:24,816 - INFO -    ✅ ULTRA SIGNAL EXECUTED: BUY 94 JPM @ $212.86 (strength: 0.888)
+2025-08-22 10:38:24,816 - INFO -    📋 Executed: BUY 94 JPM @ $212.82
+2025-08-22 10:38:24,816 - INFO -    📋 Executed 1 pending orders at market open

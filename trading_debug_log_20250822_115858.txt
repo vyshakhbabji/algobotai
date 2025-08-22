@@ -1,0 +1,401 @@
+2025-08-22 11:58:58,214 - INFO - 🔍 DEBUG MODE: Logging to trading_debug_log_20250822_115858.txt
+2025-08-22 11:58:58,214 - INFO - 🚀 Realistic Live Trading System initialized
+2025-08-22 11:58:58,214 - INFO - 🚀 Starting Realistic Live Trading: 2025-07-22 to 2025-08-22
+2025-08-22 11:58:58,214 - INFO - 📊 Configuration: 3 months back from today, 2+ years data, 100 stocks, profit pot separation
+2025-08-22 11:58:58,220 - INFO - 📊 Pre-fetching historical data for all symbols...
+2025-08-22 11:58:58,549 - INFO -    ✅ AAPL: 565 bars
+2025-08-22 11:58:58,657 - INFO -    ✅ MSFT: 565 bars
+2025-08-22 11:58:58,817 - INFO -    ✅ GOOGL: 565 bars
+2025-08-22 11:58:58,890 - INFO -    ✅ AMZN: 565 bars
+2025-08-22 11:58:58,976 - INFO -    ✅ META: 565 bars
+2025-08-22 11:58:59,045 - INFO -    ✅ TSLA: 565 bars
+2025-08-22 11:58:59,142 - INFO -    ✅ NVDA: 565 bars
+2025-08-22 11:58:59,244 - INFO -    ✅ ORCL: 565 bars
+2025-08-22 11:58:59,364 - INFO -    ✅ JPM: 565 bars
+2025-08-22 11:58:59,511 - INFO -    ✅ BAC: 565 bars
+2025-08-22 11:58:59,603 - INFO -    ✅ V: 565 bars
+2025-08-22 11:58:59,703 - INFO -    ✅ MA: 565 bars
+2025-08-22 11:58:59,816 - INFO -    ✅ UNH: 565 bars
+2025-08-22 11:59:00,043 - INFO -    ✅ JNJ: 565 bars
+2025-08-22 11:59:00,329 - INFO -    ✅ PG: 565 bars
+2025-08-22 11:59:00,539 - INFO -    ✅ KO: 565 bars
+2025-08-22 11:59:00,763 - INFO -    ✅ XOM: 565 bars
+2025-08-22 11:59:00,966 - INFO -    ✅ HD: 565 bars
+2025-08-22 11:59:01,199 - INFO -    ✅ DIS: 565 bars
+2025-08-22 11:59:01,353 - INFO -    ✅ CRM: 565 bars
+2025-08-22 11:59:01,355 - INFO - 📅 Found 23 trading days with available data
+2025-08-22 11:59:01,355 - INFO - 📅 Day 1/23: 2025-07-22
+2025-08-22 11:59:07,521 - INFO -    🔥 ULTRA signal (0.885) - using maximum position limit 40.0%
+2025-08-22 11:59:07,521 - INFO -    📝 Queued: BUY 140 UNH @ $285.13 (close) → execute tomorrow @ open
+2025-08-22 11:59:07,545 - INFO - 📊 EOD Summary [4.3%]: $100,000 (+0.00%) | Pos: 0 (0.0%) | Trades: 1 (ML: 1) | Pending: 1 (Risk: 0) | Cash: $100,000
+2025-08-22 11:59:07,545 - INFO - 📅 Day 2/23: 2025-07-23
+2025-08-22 11:59:07,547 - WARNING -    🚨 ULTRA SIGNAL REJECTED! 40.2% > 40.0% for UNH (strength: 0.885)
+2025-08-22 11:59:07,547 - INFO -    ❌ Rejected: BUY 140 UNH @ $287.50
+2025-08-22 11:59:07,547 - INFO -    ❌ Rejected: BUY 140 UNH @ $287.50
+2025-08-22 11:59:13,659 - INFO -    🚀 Exceptional signal (0.800) - using enhanced position limit 30.0%
+2025-08-22 11:59:13,659 - INFO -    📝 Queued: BUY 177 JNJ @ $169.10 (close) → execute tomorrow @ open
+2025-08-22 11:59:13,679 - INFO - 📊 EOD Summary [8.7%]: $100,000 (+0.00%) | Pos: 0 (0.0%) | Trades: 1 (ML: 1) | Pending: 1 (Risk: 0) | Cash: $100,000
+2025-08-22 11:59:13,679 - INFO - 📅 Day 3/23: 2025-07-24
+2025-08-22 11:59:13,681 - WARNING -    ⚠️ Order would exceed position size limit: 30.0% > 30.0% for JNJ
+2025-08-22 11:59:13,681 - INFO -    ❌ Rejected: BUY 177 JNJ @ $169.50
+2025-08-22 11:59:13,681 - INFO -    ❌ Rejected: BUY 177 JNJ @ $169.50
+2025-08-22 11:59:19,773 - INFO -    🚀 Exceptional signal (0.861) - using enhanced position limit 30.0%
+2025-08-22 11:59:19,774 - INFO -    📝 Queued: BUY 107 UNH @ $278.58 (close) → execute tomorrow @ open
+2025-08-22 11:59:19,787 - INFO -    🚀 Exceptional signal (0.814) - using enhanced position limit 30.0%
+2025-08-22 11:59:19,787 - INFO -    📝 Queued: BUY 434 KO @ $69.10 (close) → execute tomorrow @ open
+2025-08-22 11:59:19,869 - INFO -    🔥 ULTRA SIGNAL (0.895) - DEPLOYING EMERGENCY RESERVES!
+2025-08-22 11:59:19,869 - INFO -    🔍 DEBUG: Ultra signal #1 detected
+2025-08-22 11:59:19,869 - INFO -    💰 Capital utilization: +2 extra orders queued
+2025-08-22 11:59:19,869 - INFO - 📊 EOD Summary [13.0%]: $100,000 (+0.00%) | Pos: 0 (0.0%) | Trades: 2 (ML: 2) | Pending: 4 (Risk: 0) | Cash: $100,000
+2025-08-22 11:59:19,869 - INFO - 📅 Day 4/23: 2025-07-25
+2025-08-22 11:59:19,870 - WARNING -    ⚠️ Order would exceed position size limit: 30.1% > 30.0% for UNH
+2025-08-22 11:59:19,870 - INFO -    ❌ Rejected: BUY 107 UNH @ $281.00
+2025-08-22 11:59:19,870 - INFO -    ❌ Rejected: BUY 107 UNH @ $281.00
+2025-08-22 11:59:19,870 - WARNING -    ⚠️ Order would exceed position size limit: 30.0% > 30.0% for KO
+2025-08-22 11:59:19,870 - INFO -    ❌ Rejected: BUY 434 KO @ $69.13
+2025-08-22 11:59:19,870 - INFO -    ❌ Rejected: BUY 434 KO @ $69.13
+2025-08-22 11:59:19,871 - INFO -    ✅ ULTRA SIGNAL EXECUTED: BUY 104 GOOGL @ $192.02 (strength: 0.895)
+2025-08-22 11:59:19,871 - INFO -    📋 Executed: BUY 104 GOOGL @ $191.98
+2025-08-22 11:59:19,871 - INFO -    📋 Executed: BUY 71 UNH @ $281.00
+2025-08-22 11:59:19,871 - INFO -    📋 Executed 2 pending orders at market open
+2025-08-22 11:59:25,956 - INFO -    📝 Queued: SELL_ALL 104 GOOGL @ $193.18 (close) → execute tomorrow @ open
+2025-08-22 11:59:26,005 - INFO -    🚀 Exceptional signal (0.869) - using enhanced position limit 30.0%
+2025-08-22 11:59:26,005 - INFO -    📝 Queued: BUY 433 KO @ $69.17 (close) → execute tomorrow @ open
+2025-08-22 11:59:26,018 - INFO - 📊 EOD Summary [17.4%]: $100,101 (+0.10%) | Pos: 2 (0.0%) | Trades: 4 (ML: 2) | Pending: 2 (Risk: 0) | Cash: $60,055
+2025-08-22 11:59:26,018 - INFO - 📅 Day 5/23: 2025-07-28
+2025-08-22 11:59:26,019 - INFO -    📋 Executed: SELL_ALL 104 GOOGL @ $193.65
+2025-08-22 11:59:26,019 - WARNING -    ⚠️ Order would exceed position size limit: 37.1% > 30.0% for KO
+2025-08-22 11:59:26,019 - INFO -    ❌ Rejected: BUY 433 KO @ $68.74
+2025-08-22 11:59:26,019 - INFO -    ❌ Rejected: BUY 433 KO @ $68.74
+2025-08-22 11:59:26,019 - INFO -    📋 Executed 1 pending orders at market open
+2025-08-22 11:59:32,149 - INFO -    🔥 ULTRA signal (0.964) - using maximum position limit 40.0%
+2025-08-22 11:59:32,149 - INFO -    📝 Queued: BUY 587 KO @ $68.09 (close) → execute tomorrow @ open
+2025-08-22 11:59:32,234 - INFO -    🔥 ULTRA SIGNAL (0.964) - DEPLOYING EMERGENCY RESERVES!
+2025-08-22 11:59:32,234 - INFO -    🔍 DEBUG: Ultra signal #2 detected
+2025-08-22 11:59:32,234 - INFO -    💰 Capital utilization: +4 extra orders queued
+2025-08-22 11:59:32,234 - INFO - 📊 EOD Summary [21.7%]: $100,211 (+0.21%) | Pos: 1 (0.0%) | Trades: 2 (ML: 1) | Pending: 5 (Risk: 0) | Cash: $80,181
+2025-08-22 11:59:32,234 - INFO - 📈 Weekly Summary: +0.21% | Active Models: 100 | Drawdown: 0.00% | Top Holdings: 
+2025-08-22 11:59:32,234 - INFO - 📅 Day 6/23: 2025-07-29
+2025-08-22 11:59:32,235 - WARNING -    🚨 ULTRA SIGNAL REJECTED! 50.0% > 40.0% for KO (strength: 0.964)
+2025-08-22 11:59:32,235 - INFO -    ❌ Rejected: BUY 587 KO @ $68.34
+2025-08-22 11:59:32,235 - INFO -    ❌ Rejected: BUY 587 KO @ $68.34
+2025-08-22 11:59:32,235 - INFO -    ✅ ULTRA SIGNAL EXECUTED: BUY 239 KO @ $68.35 (strength: 0.964)
+2025-08-22 11:59:32,235 - INFO -    📋 Executed: BUY 239 KO @ $68.34
+2025-08-22 11:59:32,235 - INFO -    ✅ ULTRA SIGNAL EXECUTED: BUY 82 GOOGL @ $192.47 (strength: 0.942)
+2025-08-22 11:59:32,235 - INFO -    📋 Executed: BUY 82 GOOGL @ $192.43
+2025-08-22 11:59:32,235 - WARNING -    ⚠️ Order would exceed position size limit: 30.7% > 30.0% for AMZN
+2025-08-22 11:59:32,235 - INFO -    ❌ Rejected: BUY 63 AMZN @ $234.15
+2025-08-22 11:59:32,235 - INFO -    ❌ Rejected: BUY 63 AMZN @ $234.15
+2025-08-22 11:59:32,235 - WARNING -    ⚠️ Order would exceed position size limit: 42.1% > 30.0% for UNH
+2025-08-22 11:59:32,235 - INFO -    ❌ Rejected: BUY_MORE 35 UNH @ $265.70
+2025-08-22 11:59:32,235 - INFO -    ❌ Rejected: BUY_MORE 35 UNH @ $265.70
+2025-08-22 11:59:32,235 - INFO -    📋 Executed 2 pending orders at market open
+2025-08-22 11:59:32,237 - INFO -    🛡️ Stop loss queued: UNH @ $265.92 (P&L: -7.1%)
+2025-08-22 11:59:32,237 - INFO -    🛡️ Risk management: 1 orders queued
+2025-08-22 11:59:38,324 - INFO -    📝 Queued: SELL_ALL 82 GOOGL @ $195.75 (close) → execute tomorrow @ open
+2025-08-22 11:59:38,332 - INFO -    🔥 ULTRA signal (0.945) - using maximum position limit 40.0%
+2025-08-22 11:59:38,332 - INFO -    📝 Queued: BUY 56 META @ $700.00 (close) → execute tomorrow @ open
+2025-08-22 11:59:38,361 - INFO -    📝 Queued: SELL_PARTIAL 42 UNH @ $261.07 (close) → execute tomorrow @ open
+2025-08-22 11:59:38,385 - INFO - 📊 EOD Summary [26.1%]: $99,215 (-0.79%) | Pos: 3 (0.0%) | Trades: 5 (ML: 3) | Pending: 4 (Risk: 1) | Cash: $48,046
+2025-08-22 11:59:38,385 - INFO - 📅 Day 7/23: 2025-07-30
+2025-08-22 11:59:38,386 - INFO -    ❌ Rejected: STOP_LOSS 71 UNH @ $264.80
+2025-08-22 11:59:38,386 - INFO -    📋 Executed: SELL_ALL 82 GOOGL @ $195.60
+2025-08-22 11:59:38,386 - WARNING -    🚨 ULTRA SIGNAL REJECTED! 61.9% > 40.0% for META (strength: 0.945)
+2025-08-22 11:59:38,386 - INFO -    ❌ Rejected: BUY 56 META @ $708.09
+2025-08-22 11:59:38,386 - INFO -    ❌ Rejected: BUY 56 META @ $708.09
+2025-08-22 11:59:38,386 - INFO -    📋 Executed: SELL_PARTIAL 42 UNH @ $264.80
+2025-08-22 11:59:38,386 - INFO -    📋 Executed 2 pending orders at market open
+2025-08-22 11:59:44,493 - INFO -    🔥 ULTRA signal (0.989) - using maximum position limit 40.0%
+2025-08-22 11:59:44,493 - INFO -    📝 Queued: BUY 57 META @ $695.21 (close) → execute tomorrow @ open
+2025-08-22 11:59:44,545 - INFO - 📊 EOD Summary [30.4%]: $99,334 (-0.67%) | Pos: 2 (0.0%) | Trades: 3 (ML: 1) | Pending: 1 (Risk: 0) | Cash: $75,187
+2025-08-22 11:59:44,545 - INFO - 📅 Day 8/23: 2025-07-31
+2025-08-22 11:59:44,546 - WARNING -    🚨 ULTRA SIGNAL REJECTED! 58.8% > 40.0% for META (strength: 0.989)
+2025-08-22 11:59:44,546 - INFO -    ❌ Rejected: BUY 57 META @ $775.20
+2025-08-22 11:59:44,546 - INFO -    ❌ Rejected: BUY 57 META @ $775.20
+2025-08-22 11:59:44,547 - INFO -    🛡️ Stop loss queued: UNH @ $264.34 (P&L: -11.2%)
+2025-08-22 11:59:44,548 - INFO -    🛡️ Risk management: 1 orders queued
+2025-08-22 11:59:50,623 - INFO -    🔥 ULTRA signal (0.933) - using maximum position limit 40.0%
+2025-08-22 11:59:50,623 - INFO -    📝 Queued: BUY 74 MSFT @ $532.62 (close) → execute tomorrow @ open
+2025-08-22 11:59:50,635 - INFO -    🚀 Exceptional signal (0.829) - using enhanced position limit 30.0%
+2025-08-22 11:59:50,635 - INFO -    📝 Queued: BUY 38 META @ $773.44 (close) → execute tomorrow @ open
+2025-08-22 11:59:50,665 - INFO -    📝 Queued: SELL_ALL 29 UNH @ $249.56 (close) → execute tomorrow @ open
+2025-08-22 11:59:50,759 - INFO -    🔥 ULTRA SIGNAL (0.933) - DEPLOYING EMERGENCY RESERVES!
+2025-08-22 11:59:50,759 - INFO -    🔍 DEBUG: Ultra signal #3 detected
+2025-08-22 11:59:50,759 - INFO -    💰 Capital utilization: +3 extra orders queued
+2025-08-22 11:59:50,761 - INFO - 📊 EOD Summary [34.8%]: $98,650 (-1.35%) | Pos: 2 (0.0%) | Trades: 3 (ML: 3) | Pending: 7 (Risk: 1) | Cash: $75,187
+2025-08-22 11:59:50,761 - INFO - 📅 Day 9/23: 2025-08-01
+2025-08-22 11:59:50,762 - INFO -    ❌ Rejected: STOP_LOSS 29 UNH @ $250.61
+2025-08-22 11:59:50,762 - WARNING -    🚨 ULTRA SIGNAL REJECTED! 52.6% > 40.0% for MSFT (strength: 0.933)
+2025-08-22 11:59:50,762 - INFO -    ❌ Rejected: BUY 74 MSFT @ $534.12
+2025-08-22 11:59:50,762 - INFO -    ❌ Rejected: BUY 74 MSFT @ $534.12
+2025-08-22 11:59:50,762 - WARNING -    ⚠️ Order would exceed position size limit: 38.4% > 30.0% for META
+2025-08-22 11:59:50,762 - INFO -    ❌ Rejected: BUY 38 META @ $760.73
+2025-08-22 11:59:50,762 - INFO -    ❌ Rejected: BUY 38 META @ $760.73
+2025-08-22 11:59:50,762 - INFO -    📋 Executed: SELL_ALL 29 UNH @ $250.61
+2025-08-22 11:59:50,763 - INFO -    ✅ ULTRA SIGNAL EXECUTED: BUY 35 MSFT @ $534.23 (strength: 0.933)
+2025-08-22 11:59:50,763 - INFO -    📋 Executed: BUY 35 MSFT @ $534.12
+2025-08-22 11:59:50,763 - INFO -    ✅ ULTRA SIGNAL EXECUTED: BUY 119 PG @ $151.81 (strength: 0.886)
+2025-08-22 11:59:50,763 - INFO -    📋 Executed: BUY 119 PG @ $151.78
+2025-08-22 11:59:50,763 - WARNING -    ⚠️ Order would exceed position size limit: 43.9% > 30.0% for UNH
+2025-08-22 11:59:50,763 - INFO -    ❌ Rejected: BUY_MORE 80 UNH @ $250.61
+2025-08-22 11:59:50,763 - INFO -    ❌ Rejected: BUY_MORE 80 UNH @ $250.61
+2025-08-22 11:59:50,763 - INFO -    📋 Executed 3 pending orders at market open
+2025-08-22 11:59:56,878 - INFO -    🚀 Exceptional signal (0.841) - using enhanced position limit 30.0%
+2025-08-22 11:59:56,878 - INFO -    📝 Queued: BUY 39 META @ $750.01 (close) → execute tomorrow @ open
+2025-08-22 11:59:56,903 - INFO -    🚀 Exceptional signal (0.848) - using enhanced position limit 30.0%
+2025-08-22 11:59:56,903 - INFO -    📝 Queued: BUY 87 V @ $338.75 (close) → execute tomorrow @ open
+2025-08-22 11:59:56,939 - INFO -    🎯 Signal-based exit: KO (Strong→Weak signal: 0.964→0.000)
+2025-08-22 11:59:56,939 - INFO -    🎯 Signal-based exits: 1 positions to exit based on signal changes
+2025-08-22 11:59:56,940 - INFO - 📊 EOD Summary [39.1%]: $98,367 (-1.63%) | Pos: 3 (0.0%) | Trades: 5 (ML: 2) | Pending: 3 (Risk: 0) | Cash: $45,668
+2025-08-22 11:59:56,940 - INFO - 📅 Day 10/23: 2025-08-04
+2025-08-22 11:59:56,942 - WARNING -    ⚠️ Order would exceed position size limit: 64.9% > 30.0% for META
+2025-08-22 11:59:56,942 - INFO -    ❌ Rejected: BUY 39 META @ $760.00
+2025-08-22 11:59:56,942 - INFO -    ❌ Rejected: BUY 39 META @ $760.00
+2025-08-22 11:59:56,942 - WARNING -    ⚠️ Order would exceed position size limit: 65.0% > 30.0% for V
+2025-08-22 11:59:56,942 - INFO -    ❌ Rejected: BUY 87 V @ $341.10
+2025-08-22 11:59:56,942 - INFO -    ❌ Rejected: BUY 87 V @ $341.10
+2025-08-22 11:59:56,942 - INFO -    📋 Executed: SELL_ALL 239 KO @ $68.72
+2025-08-22 11:59:56,942 - INFO -    📋 Executed 1 pending orders at market open
+2025-08-22 12:00:03,117 - INFO -    🔥 ULTRA signal (0.991) - using maximum position limit 40.0%
+2025-08-22 12:00:03,117 - INFO -    📝 Queued: BUY 194 AAPL @ $203.12 (close) → execute tomorrow @ open
+2025-08-22 12:00:03,177 - INFO -    📝 Queued: BUY 185 XOM @ $106.38 (close) → execute tomorrow @ open
+2025-08-22 12:00:03,190 - INFO -    🎯 Signal-based exit: PG (Strong→Weak signal: 0.886→0.000)
+2025-08-22 12:00:03,190 - INFO -    🎯 Signal-based exits: 1 positions to exit based on signal changes
+2025-08-22 12:00:03,265 - INFO -    🔥 ULTRA SIGNAL (0.991) - DEPLOYING EMERGENCY RESERVES!
+2025-08-22 12:00:03,265 - INFO -    🔍 DEBUG: Ultra signal #4 detected
+2025-08-22 12:00:03,265 - INFO -    💰 Capital utilization: +3 extra orders queued
+2025-08-22 12:00:03,266 - INFO - 📊 EOD Summary [43.5%]: $98,738 (-1.26%) | Pos: 2 (0.0%) | Trades: 3 (ML: 2) | Pending: 6 (Risk: 0) | Cash: $62,081
+2025-08-22 12:00:03,267 - INFO - 📈 Weekly Summary: -0.48% | Active Models: 120 | Drawdown: 1.47% | Top Holdings: 
+2025-08-22 12:00:03,267 - INFO -    Progress: -1.3% | Positions: 2 | Queued orders: 6 | Actions today: 3
+2025-08-22 12:00:03,267 - INFO - 📅 Day 11/23: 2025-08-05
+2025-08-22 12:00:03,268 - WARNING -    🚨 ULTRA SIGNAL REJECTED! 63.5% > 40.0% for AAPL (strength: 0.991)
+2025-08-22 12:00:03,268 - INFO -    ❌ Rejected: BUY 194 AAPL @ $203.17
+2025-08-22 12:00:03,268 - INFO -    ❌ Rejected: BUY 194 AAPL @ $203.17
+2025-08-22 12:00:03,268 - WARNING -    ⚠️ Order would exceed position size limit: 31.7% > 20.0% for XOM
+2025-08-22 12:00:03,268 - INFO -    ❌ Rejected: BUY 185 XOM @ $106.23
+2025-08-22 12:00:03,268 - INFO -    ❌ Rejected: BUY 185 XOM @ $106.23
+2025-08-22 12:00:03,268 - INFO -    📋 Executed: SELL_ALL 119 PG @ $150.71
+2025-08-22 12:00:03,268 - INFO -    ✅ ULTRA SIGNAL EXECUTED: BUY 64 AAPL @ $203.21 (strength: 0.991)
+2025-08-22 12:00:03,268 - INFO -    📋 Executed: BUY 64 AAPL @ $203.17
+2025-08-22 12:00:03,268 - INFO -    ✅ ULTRA SIGNAL EXECUTED: BUY 55 AMZN @ $213.09 (strength: 0.890)
+2025-08-22 12:00:03,268 - INFO -    📋 Executed: BUY 55 AMZN @ $213.05
+2025-08-22 12:00:03,268 - WARNING -    ⚠️ Order would exceed position size limit: 39.8% > 30.0% for MSFT
+2025-08-22 12:00:03,268 - INFO -    ❌ Rejected: BUY_MORE 20 MSFT @ $536.30
+2025-08-22 12:00:03,268 - INFO -    ❌ Rejected: BUY_MORE 20 MSFT @ $536.30
+2025-08-22 12:00:03,268 - INFO -    📋 Executed 3 pending orders at market open
+2025-08-22 12:00:09,424 - INFO -    📝 Queued: SELL_ALL 55 AMZN @ $213.75 (close) → execute tomorrow @ open
+2025-08-22 12:00:09,449 - INFO -    🔥 ULTRA signal (0.898) - using maximum position limit 40.0%
+2025-08-22 12:00:09,449 - INFO -    📝 Queued: BUY 116 V @ $336.84 (close) → execute tomorrow @ open
+2025-08-22 12:00:09,457 - INFO -    🚀 Exceptional signal (0.803) - using enhanced position limit 30.0%
+2025-08-22 12:00:09,457 - INFO -    📝 Queued: BUY 117 UNH @ $251.00 (close) → execute tomorrow @ open
+2025-08-22 12:00:09,472 - INFO -    🚀 Exceptional signal (0.800) - using enhanced position limit 30.0%
+2025-08-22 12:00:09,472 - INFO -    📝 Queued: BUY 277 XOM @ $106.25 (close) → execute tomorrow @ open
+2025-08-22 12:00:09,484 - INFO -    🎯 Signal-based exit: MSFT (Strong→Weak signal: 0.933→0.000)
+2025-08-22 12:00:09,484 - INFO -    🎯 Signal-based exits: 1 positions to exit based on signal changes
+2025-08-22 12:00:09,485 - INFO - 📊 EOD Summary [47.8%]: $98,434 (-1.57%) | Pos: 3 (0.0%) | Trades: 7 (ML: 4) | Pending: 5 (Risk: 0) | Cash: $55,265
+2025-08-22 12:00:09,485 - INFO - 📅 Day 12/23: 2025-08-06
+2025-08-22 12:00:09,487 - INFO -    📋 Executed: SELL_ALL 55 AMZN @ $214.70
+2025-08-22 12:00:09,487 - WARNING -    🚨 ULTRA SIGNAL REJECTED! 58.4% > 40.0% for V (strength: 0.898)
+2025-08-22 12:00:09,487 - INFO -    ❌ Rejected: BUY 116 V @ $337.71
+2025-08-22 12:00:09,487 - INFO -    ❌ Rejected: BUY 116 V @ $337.71
+2025-08-22 12:00:09,487 - WARNING -    ⚠️ Order would exceed position size limit: 43.7% > 30.0% for UNH
+2025-08-22 12:00:09,487 - INFO -    ❌ Rejected: BUY 117 UNH @ $250.64
+2025-08-22 12:00:09,487 - INFO -    ❌ Rejected: BUY 117 UNH @ $250.64
+2025-08-22 12:00:09,487 - WARNING -    ⚠️ Order would exceed position size limit: 44.3% > 30.0% for XOM
+2025-08-22 12:00:09,487 - INFO -    ❌ Rejected: BUY 277 XOM @ $107.31
+2025-08-22 12:00:09,487 - INFO -    ❌ Rejected: BUY 277 XOM @ $107.31
+2025-08-22 12:00:09,487 - INFO -    📋 Executed: SELL_ALL 35 MSFT @ $530.03
+2025-08-22 12:00:09,487 - INFO -    📋 Executed 2 pending orders at market open
+2025-08-22 12:00:15,641 - INFO -    🔥 ULTRA signal (0.900) - using maximum position limit 40.0%
+2025-08-22 12:00:15,641 - INFO -    📝 Queued: BUY 873 BAC @ $45.42 (close) → execute tomorrow @ open
+2025-08-22 12:00:15,652 - INFO -    📝 Queued: BUY 80 UNH @ $245.78 (close) → execute tomorrow @ open
+2025-08-22 12:00:15,668 - INFO -    🚀 Exceptional signal (0.768) - using enhanced position limit 30.0%
+2025-08-22 12:00:15,668 - INFO -    📝 Queued: BUY 282 XOM @ $105.53 (close) → execute tomorrow @ open
+2025-08-22 12:00:15,676 - INFO -    🔥 ULTRA signal (0.926) - using maximum position limit 40.0%
+2025-08-22 12:00:15,676 - INFO -    📝 Queued: BUY 344 DIS @ $115.17 (close) → execute tomorrow @ open
+2025-08-22 12:00:15,681 - INFO - 📊 EOD Summary [52.2%]: $99,236 (-0.76%) | Pos: 1 (0.0%) | Trades: 6 (ML: 4) | Pending: 4 (Risk: 0) | Cash: $85,603
+2025-08-22 12:00:15,681 - INFO - 📅 Day 13/23: 2025-08-07
+2025-08-22 12:00:15,683 - WARNING -    🚨 ULTRA SIGNAL REJECTED! 46.6% > 40.0% for BAC (strength: 0.900)
+2025-08-22 12:00:15,683 - INFO -    ❌ Rejected: BUY 873 BAC @ $45.71
+2025-08-22 12:00:15,683 - INFO -    ❌ Rejected: BUY 873 BAC @ $45.71
+2025-08-22 12:00:15,683 - WARNING -    ⚠️ Order would exceed position size limit: 23.0% > 20.0% for UNH
+2025-08-22 12:00:15,683 - INFO -    ❌ Rejected: BUY 80 UNH @ $246.42
+2025-08-22 12:00:15,683 - INFO -    ❌ Rejected: BUY 80 UNH @ $246.42
+2025-08-22 12:00:15,683 - WARNING -    ⚠️ Order would exceed position size limit: 35.0% > 30.0% for XOM
+2025-08-22 12:00:15,683 - INFO -    ❌ Rejected: BUY 282 XOM @ $106.15
+2025-08-22 12:00:15,683 - INFO -    ❌ Rejected: BUY 282 XOM @ $106.15
+2025-08-22 12:00:15,683 - WARNING -    🚨 ULTRA SIGNAL REJECTED! 46.5% > 40.0% for DIS (strength: 0.926)
+2025-08-22 12:00:15,683 - INFO -    ❌ Rejected: BUY 344 DIS @ $115.75
+2025-08-22 12:00:15,683 - INFO -    ❌ Rejected: BUY 344 DIS @ $115.75
+2025-08-22 12:00:15,685 - INFO -    🎯 Take profit queued: AAPL @ $215.47 (P&L: 8.2%)
+2025-08-22 12:00:15,685 - INFO -    🛡️ Risk management: 1 orders queued
+2025-08-22 12:00:21,855 - INFO -    🔥 ULTRA signal (1.000) - using maximum position limit 40.0%
+2025-08-22 12:00:21,855 - INFO -    📝 Queued: BUY 887 BAC @ $44.92 (close) → execute tomorrow @ open
+2025-08-22 12:00:21,860 - INFO -    🚀 Exceptional signal (0.871) - using enhanced position limit 30.0%
+2025-08-22 12:00:21,860 - INFO -    📝 Queued: BUY 90 V @ $331.51 (close) → execute tomorrow @ open
+2025-08-22 12:00:21,869 - INFO -    📝 Queued: BUY 81 UNH @ $244.67 (close) → execute tomorrow @ open
+2025-08-22 12:00:21,896 - INFO -    🔥 ULTRA signal (0.976) - using maximum position limit 40.0%
+2025-08-22 12:00:21,896 - INFO -    📝 Queued: BUY 165 CRM @ $240.88 (close) → execute tomorrow @ open
+2025-08-22 12:00:21,971 - INFO -    🔥 ULTRA SIGNAL (1.000) - DEPLOYING EMERGENCY RESERVES!
+2025-08-22 12:00:21,971 - INFO -    🔍 DEBUG: Ultra signal #5 detected
+2025-08-22 12:00:21,972 - INFO - 📊 EOD Summary [56.5%]: $99,669 (-0.33%) | Pos: 1 (0.0%) | Trades: 4 (ML: 4) | Pending: 5 (Risk: 1) | Cash: $85,603
+2025-08-22 12:00:21,972 - INFO - 📅 Day 14/23: 2025-08-08
+2025-08-22 12:00:21,974 - INFO -    ❌ Rejected: TAKE_PROFIT 64 AAPL @ $220.58
+2025-08-22 12:00:21,974 - WARNING -    🚨 ULTRA SIGNAL REJECTED! 46.8% > 40.0% for BAC (strength: 1.000)
+2025-08-22 12:00:21,974 - INFO -    ❌ Rejected: BUY 887 BAC @ $45.15
+2025-08-22 12:00:21,974 - INFO -    ❌ Rejected: BUY 887 BAC @ $45.15
+2025-08-22 12:00:21,974 - WARNING -    ⚠️ Order would exceed position size limit: 35.0% > 30.0% for V
+2025-08-22 12:00:21,974 - INFO -    ❌ Rejected: BUY 90 V @ $333.09
+2025-08-22 12:00:21,974 - INFO -    ❌ Rejected: BUY 90 V @ $333.09
+2025-08-22 12:00:21,974 - WARNING -    ⚠️ Order would exceed position size limit: 23.2% > 20.0% for UNH
+2025-08-22 12:00:21,974 - INFO -    ❌ Rejected: BUY 81 UNH @ $244.79
+2025-08-22 12:00:21,974 - INFO -    ❌ Rejected: BUY 81 UNH @ $244.79
+2025-08-22 12:00:21,974 - WARNING -    🚨 ULTRA SIGNAL REJECTED! 46.5% > 40.0% for CRM (strength: 0.976)
+2025-08-22 12:00:21,974 - INFO -    ❌ Rejected: BUY 165 CRM @ $241.29
+2025-08-22 12:00:21,974 - INFO -    ❌ Rejected: BUY 165 CRM @ $241.29
+2025-08-22 12:00:21,975 - INFO -    🎯 Take profit queued: AAPL @ $216.74 (P&L: 12.7%)
+2025-08-22 12:00:21,975 - INFO -    🛡️ Risk management: 1 orders queued
+2025-08-22 12:00:28,178 - INFO -    🔥 ULTRA signal (0.997) - using maximum position limit 40.0%
+2025-08-22 12:00:28,178 - INFO -    📝 Queued: BUY 355 DIS @ $112.43 (close) → execute tomorrow @ open
+2025-08-22 12:00:28,184 - INFO -    🔥 ULTRA signal (0.997) - using maximum position limit 40.0%
+2025-08-22 12:00:28,184 - INFO -    📝 Queued: BUY 166 CRM @ $240.51 (close) → execute tomorrow @ open
+2025-08-22 12:00:28,185 - INFO - 📊 EOD Summary [60.9%]: $100,265 (+0.26%) | Pos: 1 (0.0%) | Trades: 2 (ML: 2) | Pending: 3 (Risk: 1) | Cash: $85,603
+2025-08-22 12:00:28,185 - INFO - 📅 Day 15/23: 2025-08-11
+2025-08-22 12:00:28,187 - INFO -    ❌ Rejected: TAKE_PROFIT 64 AAPL @ $227.92
+2025-08-22 12:00:28,187 - WARNING -    🚨 ULTRA SIGNAL REJECTED! 46.8% > 40.0% for DIS (strength: 0.997)
+2025-08-22 12:00:28,187 - INFO -    ❌ Rejected: BUY 355 DIS @ $112.91
+2025-08-22 12:00:28,187 - INFO -    ❌ Rejected: BUY 355 DIS @ $112.91
+2025-08-22 12:00:28,187 - WARNING -    🚨 ULTRA SIGNAL REJECTED! 46.3% > 40.0% for CRM (strength: 0.997)
+2025-08-22 12:00:28,187 - INFO -    ❌ Rejected: BUY 166 CRM @ $238.92
+2025-08-22 12:00:28,187 - INFO -    ❌ Rejected: BUY 166 CRM @ $238.92
+2025-08-22 12:00:28,188 - INFO -    🎯 Take profit queued: AAPL @ $217.11 (P&L: 11.8%)
+2025-08-22 12:00:28,188 - INFO -    🛡️ Risk management: 1 orders queued
+2025-08-22 12:00:34,341 - INFO -    🔥 ULTRA signal (0.964) - using maximum position limit 40.0%
+2025-08-22 12:00:34,341 - INFO -    📝 Queued: BUY 119 V @ $335.31 (close) → execute tomorrow @ open
+2025-08-22 12:00:34,349 - INFO -    📝 Queued: BUY 79 UNH @ $252.37 (close) → execute tomorrow @ open
+2025-08-22 12:00:34,370 - INFO -    🔥 ULTRA signal (1.000) - using maximum position limit 40.0%
+2025-08-22 12:00:34,370 - INFO -    📝 Queued: BUY 355 DIS @ $112.55 (close) → execute tomorrow @ open
+2025-08-22 12:00:34,376 - INFO -    🎯 Signal-based exit: AAPL (Strong→Weak signal: 0.991→0.000)
+2025-08-22 12:00:34,376 - INFO -    🎯 Signal-based exits: 1 positions to exit based on signal changes
+2025-08-22 12:00:34,447 - INFO -    🔥 ULTRA SIGNAL (1.000) - DEPLOYING EMERGENCY RESERVES!
+2025-08-22 12:00:34,447 - INFO -    🔍 DEBUG: Ultra signal #6 detected
+2025-08-22 12:00:34,447 - INFO -    💰 Capital utilization: +1 extra orders queued
+2025-08-22 12:00:34,448 - INFO - 📊 EOD Summary [65.2%]: $100,143 (+0.14%) | Pos: 1 (0.0%) | Trades: 3 (ML: 3) | Pending: 6 (Risk: 1) | Cash: $85,603
+2025-08-22 12:00:34,449 - INFO - 📈 Weekly Summary: +1.74% | Active Models: 120 | Drawdown: 0.12% | Top Holdings: 
+2025-08-22 12:00:34,449 - INFO - 📅 Day 16/23: 2025-08-12
+2025-08-22 12:00:34,450 - INFO -    ❌ Rejected: TAKE_PROFIT 64 AAPL @ $228.01
+2025-08-22 12:00:34,450 - WARNING -    🚨 ULTRA SIGNAL REJECTED! 46.6% > 40.0% for V (strength: 0.964)
+2025-08-22 12:00:34,450 - INFO -    ❌ Rejected: BUY 119 V @ $335.20
+2025-08-22 12:00:34,450 - INFO -    ❌ Rejected: BUY 119 V @ $335.20
+2025-08-22 12:00:34,450 - WARNING -    ⚠️ Order would exceed position size limit: 23.4% > 20.0% for UNH
+2025-08-22 12:00:34,450 - INFO -    ❌ Rejected: BUY 79 UNH @ $254.02
+2025-08-22 12:00:34,450 - INFO -    ❌ Rejected: BUY 79 UNH @ $254.02
+2025-08-22 12:00:34,450 - WARNING -    🚨 ULTRA SIGNAL REJECTED! 47.0% > 40.0% for DIS (strength: 1.000)
+2025-08-22 12:00:34,450 - INFO -    ❌ Rejected: BUY 355 DIS @ $113.31
+2025-08-22 12:00:34,450 - INFO -    ❌ Rejected: BUY 355 DIS @ $113.31
+2025-08-22 12:00:34,450 - INFO -    📋 Executed: SELL_ALL 64 AAPL @ $228.01
+2025-08-22 12:00:34,450 - INFO -    ✅ ULTRA SIGNAL EXECUTED: BUY 177 DIS @ $113.33 (strength: 1.000)
+2025-08-22 12:00:34,450 - INFO -    📋 Executed: BUY 177 DIS @ $113.31
+2025-08-22 12:00:34,450 - INFO -    📋 Executed 2 pending orders at market open
+2025-08-22 12:00:40,630 - INFO -    🔥 ULTRA signal (0.991) - using maximum position limit 40.0%
+2025-08-22 12:00:40,630 - INFO -    📝 Queued: BUY 118 V @ $336.74 (close) → execute tomorrow @ open
+2025-08-22 12:00:40,664 - INFO - 📊 EOD Summary [69.6%]: $100,244 (+0.24%) | Pos: 1 (0.0%) | Trades: 3 (ML: 1) | Pending: 1 (Risk: 0) | Cash: $80,116
+2025-08-22 12:00:40,664 - INFO - 📅 Day 17/23: 2025-08-13
+2025-08-22 12:00:40,665 - WARNING -    🚨 ULTRA SIGNAL REJECTED! 49.6% > 40.0% for V (strength: 0.991)
+2025-08-22 12:00:40,665 - INFO -    ❌ Rejected: BUY 118 V @ $336.98
+2025-08-22 12:00:40,665 - INFO -    ❌ Rejected: BUY 118 V @ $336.98
+2025-08-22 12:00:46,872 - INFO -    🚀 Exceptional signal (0.876) - using enhanced position limit 30.0%
+2025-08-22 12:00:46,872 - INFO -    📝 Queued: BUY 73 HD @ $407.18 (close) → execute tomorrow @ open
+2025-08-22 12:00:46,880 - INFO -    🔥 ULTRA signal (0.940) - using maximum position limit 40.0%
+2025-08-22 12:00:46,880 - INFO -    📝 Queued: BUY 168 CRM @ $237.03 (close) → execute tomorrow @ open
+2025-08-22 12:00:46,882 - INFO - 📊 EOD Summary [73.9%]: $100,761 (+0.76%) | Pos: 1 (0.0%) | Trades: 2 (ML: 2) | Pending: 2 (Risk: 0) | Cash: $80,116
+2025-08-22 12:00:46,882 - INFO - 📅 Day 18/23: 2025-08-14
+2025-08-22 12:00:46,883 - WARNING -    ⚠️ Order would exceed position size limit: 36.6% > 30.0% for HD
+2025-08-22 12:00:46,883 - INFO -    ❌ Rejected: BUY 73 HD @ $401.20
+2025-08-22 12:00:46,883 - INFO -    ❌ Rejected: BUY 73 HD @ $401.20
+2025-08-22 12:00:46,883 - WARNING -    🚨 ULTRA SIGNAL REJECTED! 49.7% > 40.0% for CRM (strength: 0.940)
+2025-08-22 12:00:46,883 - INFO -    ❌ Rejected: BUY 168 CRM @ $237.00
+2025-08-22 12:00:46,883 - INFO -    ❌ Rejected: BUY 168 CRM @ $237.00
+2025-08-22 12:00:53,087 - INFO -    📝 Queued: BUY 73 UNH @ $271.49 (close) → execute tomorrow @ open
+2025-08-22 12:00:53,095 - INFO -    🔥 ULTRA signal (0.884) - using maximum position limit 40.0%
+2025-08-22 12:00:53,095 - INFO -    📝 Queued: BUY 260 PG @ $153.74 (close) → execute tomorrow @ open
+2025-08-22 12:00:53,113 - INFO -    🔥 ULTRA signal (0.969) - using maximum position limit 40.0%
+2025-08-22 12:00:53,113 - INFO -    📝 Queued: BUY 171 CRM @ $233.37 (close) → execute tomorrow @ open
+2025-08-22 12:00:53,182 - INFO -    🔥 ULTRA SIGNAL (0.969) - DEPLOYING EMERGENCY RESERVES!
+2025-08-22 12:00:53,182 - INFO -    🔍 DEBUG: Ultra signal #7 detected
+2025-08-22 12:00:53,182 - INFO -    💰 Capital utilization: +1 extra orders queued
+2025-08-22 12:00:53,184 - INFO - 📊 EOD Summary [78.3%]: $100,702 (+0.70%) | Pos: 1 (0.0%) | Trades: 3 (ML: 3) | Pending: 4 (Risk: 0) | Cash: $80,116
+2025-08-22 12:00:53,184 - INFO - 📅 Day 19/23: 2025-08-15
+2025-08-22 12:00:53,185 - WARNING -    ⚠️ Order would exceed position size limit: 27.5% > 20.0% for UNH
+2025-08-22 12:00:53,185 - INFO -    ❌ Rejected: BUY 73 UNH @ $301.71
+2025-08-22 12:00:53,185 - INFO -    ❌ Rejected: BUY 73 UNH @ $301.71
+2025-08-22 12:00:53,185 - WARNING -    🚨 ULTRA SIGNAL REJECTED! 50.1% > 40.0% for PG (strength: 0.884)
+2025-08-22 12:00:53,185 - INFO -    ❌ Rejected: BUY 260 PG @ $154.47
+2025-08-22 12:00:53,185 - INFO -    ❌ Rejected: BUY 260 PG @ $154.47
+2025-08-22 12:00:53,185 - WARNING -    🚨 ULTRA SIGNAL REJECTED! 50.4% > 40.0% for CRM (strength: 0.969)
+2025-08-22 12:00:53,185 - INFO -    ❌ Rejected: BUY 171 CRM @ $236.15
+2025-08-22 12:00:53,185 - INFO -    ❌ Rejected: BUY 171 CRM @ $236.15
+2025-08-22 12:00:53,185 - INFO -    ✅ ULTRA SIGNAL EXECUTED: BUY 85 CRM @ $236.20 (strength: 0.969)
+2025-08-22 12:00:53,185 - INFO -    📋 Executed: BUY 85 CRM @ $236.15
+2025-08-22 12:00:53,185 - INFO -    📋 Executed 1 pending orders at market open
+2025-08-22 12:00:59,396 - INFO -    🔥 ULTRA signal (0.914) - using maximum position limit 40.0%
+2025-08-22 12:00:59,396 - INFO -    📝 Queued: BUY 131 UNH @ $304.01 (close) → execute tomorrow @ open
+2025-08-22 12:00:59,413 - INFO -    🚀 Exceptional signal (0.820) - using enhanced position limit 30.0%
+2025-08-22 12:00:59,413 - INFO -    📝 Queued: BUY 281 XOM @ $106.49 (close) → execute tomorrow @ open
+2025-08-22 12:00:59,424 - INFO -    🎯 Signal-based exit: DIS (Strong→Weak signal: 1.000→0.000)
+2025-08-22 12:00:59,425 - INFO -    🎯 Signal-based exits: 1 positions to exit based on signal changes
+2025-08-22 12:00:59,426 - INFO - 📊 EOD Summary [82.6%]: $101,060 (+1.06%) | Pos: 2 (0.0%) | Trades: 3 (ML: 2) | Pending: 3 (Risk: 0) | Cash: $60,029
+2025-08-22 12:00:59,426 - INFO - 📅 Day 20/23: 2025-08-18
+2025-08-22 12:00:59,427 - WARNING -    🚨 ULTRA SIGNAL REJECTED! 68.3% > 40.0% for UNH (strength: 0.914)
+2025-08-22 12:00:59,427 - INFO -    ❌ Rejected: BUY 131 UNH @ $313.18
+2025-08-22 12:00:59,427 - INFO -    ❌ Rejected: BUY 131 UNH @ $313.18
+2025-08-22 12:00:59,428 - WARNING -    ⚠️ Order would exceed position size limit: 49.7% > 30.0% for XOM
+2025-08-22 12:00:59,428 - INFO -    ❌ Rejected: BUY 281 XOM @ $106.10
+2025-08-22 12:00:59,428 - INFO -    ❌ Rejected: BUY 281 XOM @ $106.10
+2025-08-22 12:00:59,428 - INFO -    📋 Executed: SELL_ALL 177 DIS @ $115.19
+2025-08-22 12:00:59,428 - INFO -    📋 Executed 1 pending orders at market open
+2025-08-22 12:01:05,663 - INFO -    🔥 ULTRA signal (0.977) - using maximum position limit 40.0%
+2025-08-22 12:01:05,663 - INFO -    📝 Queued: BUY 129 UNH @ $308.49 (close) → execute tomorrow @ open
+2025-08-22 12:01:05,679 - INFO -    🚀 Exceptional signal (0.824) - using enhanced position limit 30.0%
+2025-08-22 12:01:05,679 - INFO -    📝 Queued: BUY 281 XOM @ $106.72 (close) → execute tomorrow @ open
+2025-08-22 12:01:05,690 - INFO -    🎯 Signal-based exit: CRM (Ultra→Normal signal: 0.969→0.667)
+2025-08-22 12:01:05,690 - INFO -    🎯 Signal-based exits: 1 positions to exit based on signal changes
+2025-08-22 12:01:05,781 - INFO -    🔥 ULTRA SIGNAL (0.977) - DEPLOYING EMERGENCY RESERVES!
+2025-08-22 12:01:05,781 - INFO -    🔍 DEBUG: Ultra signal #8 detected
+2025-08-22 12:01:05,782 - INFO -    💰 Capital utilization: +2 extra orders queued
+2025-08-22 12:01:05,783 - INFO - 📊 EOD Summary [87.0%]: $101,141 (+1.14%) | Pos: 1 (0.0%) | Trades: 3 (ML: 2) | Pending: 5 (Risk: 0) | Cash: $80,403
+2025-08-22 12:01:05,783 - INFO - 📈 Weekly Summary: +0.89% | Active Models: 120 | Drawdown: 0.00% | Top Holdings: 
+2025-08-22 12:01:05,783 - INFO -    Progress: +1.1% | Positions: 1 | Queued orders: 5 | Actions today: 3
+2025-08-22 12:01:05,783 - INFO - 📅 Day 21/23: 2025-08-19
+2025-08-22 12:01:05,784 - WARNING -    🚨 ULTRA SIGNAL REJECTED! 49.6% > 40.0% for UNH (strength: 0.977)
+2025-08-22 12:01:05,784 - INFO -    ❌ Rejected: BUY 129 UNH @ $308.90
+2025-08-22 12:01:05,784 - INFO -    ❌ Rejected: BUY 129 UNH @ $308.90
+2025-08-22 12:01:05,785 - WARNING -    ⚠️ Order would exceed position size limit: 37.1% > 30.0% for XOM
+2025-08-22 12:01:05,785 - INFO -    ❌ Rejected: BUY 281 XOM @ $106.20
+2025-08-22 12:01:05,785 - INFO -    ❌ Rejected: BUY 281 XOM @ $106.20
+2025-08-22 12:01:05,785 - INFO -    📋 Executed: SELL_ALL 85 CRM @ $245.00
+2025-08-22 12:01:05,785 - INFO -    ✅ ULTRA SIGNAL EXECUTED: BUY 64 UNH @ $308.96 (strength: 0.977)
+2025-08-22 12:01:05,785 - INFO -    📋 Executed: BUY 64 UNH @ $308.90
+2025-08-22 12:01:05,785 - INFO -    📋 Executed: BUY 187 XOM @ $106.20
+2025-08-22 12:01:05,785 - INFO -    📋 Executed 3 pending orders at market open
+2025-08-22 12:01:12,048 - INFO -    📝 Queued: BUY 81 CRM @ $246.00 (close) → execute tomorrow @ open
+2025-08-22 12:01:12,050 - INFO - 📊 EOD Summary [91.3%]: $101,116 (+1.12%) | Pos: 2 (0.0%) | Trades: 4 (ML: 1) | Pending: 1 (Risk: 0) | Cash: $61,557
+2025-08-22 12:01:12,050 - INFO - 📅 Day 22/23: 2025-08-20
+2025-08-22 12:01:12,051 - WARNING -    ⚠️ Order would exceed position size limit: 32.3% > 20.0% for CRM
+2025-08-22 12:01:12,051 - INFO -    ❌ Rejected: BUY 81 CRM @ $245.70
+2025-08-22 12:01:12,051 - INFO -    ❌ Rejected: BUY 81 CRM @ $245.70
+2025-08-22 12:01:18,254 - INFO -    🚀 Exceptional signal (0.823) - using enhanced position limit 30.0%
+2025-08-22 12:01:18,254 - INFO -    📝 Queued: BUY 59 MSFT @ $504.89 (close) → execute tomorrow @ open
+2025-08-22 12:01:18,318 - INFO - 📊 EOD Summary [95.7%]: $101,042 (+1.04%) | Pos: 2 (0.0%) | Trades: 1 (ML: 1) | Pending: 1 (Risk: 0) | Cash: $61,557
+2025-08-22 12:01:18,318 - INFO - 📅 Day 23/23: 2025-08-21
+2025-08-22 12:01:18,319 - WARNING -    ⚠️ Order would exceed position size limit: 48.3% > 30.0% for MSFT
+2025-08-22 12:01:18,319 - INFO -    ❌ Rejected: BUY 59 MSFT @ $503.69
+2025-08-22 12:01:18,319 - INFO -    ❌ Rejected: BUY 59 MSFT @ $503.69
+2025-08-22 12:01:24,622 - INFO -    🚀 Exceptional signal (0.808) - using enhanced position limit 30.0%
+2025-08-22 12:01:24,622 - INFO -    📝 Queued: BUY 59 MSFT @ $504.24 (close) → execute tomorrow @ open
+2025-08-22 12:01:24,666 - INFO -    📝 Queued: SELL_ALL 64 UNH @ $303.35 (close) → execute tomorrow @ open
+2025-08-22 12:01:24,772 - INFO -    🔥 ULTRA SIGNAL (1.000) - DEPLOYING EMERGENCY RESERVES!
+2025-08-22 12:01:24,772 - INFO -    🔍 DEBUG: Ultra signal #9 detected
+2025-08-22 12:01:24,772 - INFO -    💰 Capital utilization: +4 extra orders queued
+2025-08-22 12:01:24,774 - INFO - 📊 EOD Summary [100.0%]: $101,397 (+1.40%) | Pos: 2 (0.0%) | Trades: 2 (ML: 2) | Pending: 6 (Risk: 0) | Cash: $61,557
+2025-08-22 12:01:24,778 - INFO - Results saved to realistic_live_trading_results_20250822_120124.json

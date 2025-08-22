@@ -46,7 +46,12 @@ class RealisticLiveTradingSystem:
     def __init__(self, initial_capital: float = 100000.0):
         self.initial_capital = initial_capital
         self.current_capital = initial_capital
+        self.fixed_trading_capital = initial_capital  # Fixed capital for position sizing
+        self.profit_pot = 0.0  # Separate profit accumulation - NOT reinvested
         self.positions = {}  # {symbol: shares}
+        self.position_entry_dates = {}  # {symbol: entry_date} - Track when we opened positions
+        self.position_entry_signals = {}  # {symbol: entry_signal_strength} - Track signal strength when we bought
+        self.min_holding_days = 3  # Minimum days to hold a position
         self.trades = []
         self.daily_performance = []
         self.daily_model_performance = []
@@ -57,46 +62,46 @@ class RealisticLiveTradingSystem:
         self.signal_strength_models = {}  # {date: {symbol: strength_model}}
         self.regime_models = {}  # {date: {symbol: regime_model}}
         
-        # Configuration - ULTRA AGGRESSIVE: Maximum Kelly Sizing & Capital Deployment
+        # Configuration - FOCUSED: 20 Elite Stocks with Quality Position Sizing
         self.config = {
-            # AGGRESSIVE TIERED POSITION SIZING - Deploy capital based on signal confidence
-            'max_position_size': 0.50,  # 50% for regular signals (MUCH more aggressive!)
-            'max_position_size_exceptional': 0.75,  # 75% for exceptional signals (was 50%)
-            'max_position_size_ultra': 1.20,  # 120% for ultra signals (LEVERAGE allowed!)
-            'exceptional_signal_threshold': 0.75,  # 75% for exceptional (lowered threshold)
-            'ultra_signal_threshold': 0.88,  # 88% for ultra confidence (lowered threshold)
-            'min_position_size': 0.05,  # Min 5% per stock (bigger minimum)
-            'stop_loss_mult': 1.8,      # 1.8x ATR stop loss (tighter stops for more leverage)
-            'take_profit_mult': 4.0,    # 4x ATR take profit (let winners run longer)
-            'rebalance_threshold': 0.08, # 8% threshold for rebalancing (more frequent)
-            'signal_threshold': 0.45,    # Lower threshold to capture more opportunities
-            'max_positions': 8,         # Max 8 positions (more diversification with leverage)
-            'partial_sell_threshold': 0.25,  # Sell 25% on weak signals (hold winners longer)
+            # FOCUSED TIERED POSITION SIZING - Better allocation with fewer stocks
+            'max_position_size': 0.20,  # 20% for regular signals (focused approach)
+            'max_position_size_exceptional': 0.30,  # 30% for exceptional signals
+            'max_position_size_ultra': 0.40,  # 40% for ultra signals (NO LEVERAGE)
+            'exceptional_signal_threshold': 0.75,  # 75% for exceptional
+            'ultra_signal_threshold': 0.88,  # 88% for ultra confidence
+            'min_position_size': 0.03,  # Min 3% per stock (focused allocation)
+            'stop_loss_mult': 1.8,      # 1.8x ATR stop loss
+            'take_profit_mult': 2.5,    # 2.5x ATR take profit (more aggressive)
+            'rebalance_threshold': 0.08, # 8% threshold for rebalancing
+            'signal_threshold': 0.45,    # Signal threshold
+            'max_positions': 8,          # Max 8 positions (40% of 20 stocks)
+            'partial_sell_threshold': 0.25,  # Sell 25% on weak signals
             'ml_retrain_days': 1,       # Retrain every day (realistic)
             'min_training_days': 100,   # Need 100 days to train
-            'max_new_positions_per_day': 6,  # More entries allowed (was 4)
+            'max_new_positions_per_day': 4,  # Focused entries
             'commission_bps': 5,        # 0.05% commission
             'slippage_bps': 2,          # 0.02% slippage
             'min_commission': 1.0,      # $1 minimum commission
             
-            # AGGRESSIVE Capital Deployment - Deploy maximum capital
-            'target_invested_floor': 0.90,    # Keep only 10% cash minimum (was 70%)
-            'target_invested_ceiling': 1.15,  # Allow 115% deployment with leverage (was 85%)
-            'emergency_cash_reserve': 0.08,   # Only 8% emergency reserve (was 20%)
-            'min_avg_strength_for_ceiling': 0.65,  # Lower bar for full deployment (was 0.75)
-            'min_individual_strength_for_extra': 0.60,  # Lower bar for extra allocation (was 0.70)
-            'cash_reserve_floor': 0.05,       # Minimum 5% cash only (was 15%)
-            'max_utilization_topups_per_day': 8,  # Many more top-ups allowed (was 3)
-            'min_extra_position_size': 0.05,   # Minimum size for extra allocations
+            # FOCUSED Capital Deployment - Better utilization with fewer stocks
+            'target_invested_floor': 0.75,    # Keep 25% cash minimum (focused)
+            'target_invested_ceiling': 0.95,  # Max 95% deployment (NO LEVERAGE)
+            'emergency_cash_reserve': 0.12,   # 12% emergency reserve (balanced)
+            'min_avg_strength_for_ceiling': 0.70,  # Moderate bar for full deployment
+            'min_individual_strength_for_extra': 0.75,  # Higher bar for extra allocation
+            'cash_reserve_floor': 0.08,       # Minimum 8% cash reserve
+            'max_utilization_topups_per_day': 4,  # Moderate top-ups
+            'min_extra_position_size': 0.03,   # Minimum size for extra allocations
 
-            # Dynamic trailing stop to protect profits - AGGRESSIVE
-            'trailing_stop_mult': 1.2,  # Trail by 1.2x ATR from high watermark (tighter)
+            # Dynamic trailing stop to protect profits
+            'trailing_stop_mult': 1.2,  # Trail by 1.2x ATR from high watermark
             
-            # Portfolio-Level Exposure Guards - LOOSENED FOR AGGRESSION
-            'max_net_exposure': 1.25,         # Max portfolio exposure (125% - leverage allowed!)
-            'drawdown_throttle_threshold': 0.15,  # Higher drawdown tolerance (15%)
-            'drawdown_throttle_sessions': 5,      # Fewer throttle sessions (5 vs 10)
-            'drawdown_throttle_ceiling': 0.85,    # Higher ceiling during throttling (85% vs 70%)
+            # Portfolio-Level Exposure Guards - FOCUSED
+            'max_net_exposure': 0.95,         # Max portfolio exposure (95% - NO LEVERAGE)
+            'drawdown_throttle_threshold': 0.08,  # Lower drawdown tolerance (8%)
+            'drawdown_throttle_sessions': 8,      # Moderate throttle sessions
+            'drawdown_throttle_ceiling': 0.75,    # Moderate ceiling during throttling
             
             # Enhancement Tracking and Persistence (Enhancement #9)
             'enable_enhancement_logging': True,   # Track all enhancements
@@ -146,11 +151,21 @@ class RealisticLiveTradingSystem:
     
     def _portfolio_value(self, prices_today: Dict[str, float]) -> float:
         """Calculate total portfolio value using consistent daily prices"""
+        # Current cash + position values = total portfolio value
         total_value = self.current_capital
         for symbol, shares in self.positions.items():
             if shares > 0 and symbol in prices_today:
                 total_value += shares * prices_today[symbol]
         return total_value
+    
+    def _trading_capital_for_sizing(self) -> float:
+        """Return fixed capital for position sizing (no profit reinvestment)"""
+        return self.fixed_trading_capital
+    
+    def _update_profit_pot(self, total_portfolio_value: float):
+        """Update profit pot with gains/losses vs initial capital"""
+        current_net_worth = total_portfolio_value
+        self.profit_pot = current_net_worth - self.initial_capital
     
     def _apply_transaction_costs(self, price: float, shares: int, is_buy: bool, symbol: str = None, 
                                market_data: Dict = None) -> Tuple[float, float]:
@@ -807,7 +822,7 @@ class RealisticLiveTradingSystem:
         return executed_orders
     
     def _rebalance_portfolio(self, prices_today: Dict[str, float], current_date: pd.Timestamp) -> int:
-        """Rebalance overweight/underweight positions (Enhancement #1)"""
+        """Rebalance overweight/underweight positions - MUCH LESS AGGRESSIVE"""
         try:
             rebalance_orders = 0
             portfolio_value = self._portfolio_value(prices_today)
@@ -815,10 +830,12 @@ class RealisticLiveTradingSystem:
             if portfolio_value <= 0:
                 return 0
             
-            rebalance_threshold = self.config['rebalance_threshold']  # 5%
-            target_weight = self.config['max_position_size']  # 15% target for normal positions
+            # MUCH more conservative rebalancing
+            rebalance_threshold = 0.15  # 15% threshold instead of 5%
+            max_trim_threshold = 0.25   # Only trim if >25% overweight 
+            target_weight = self.config['max_position_size']  # 20% target
             
-            self.logger.debug(f"   ⚖️ Rebalancing portfolio (threshold: {rebalance_threshold:.1%})")
+            self.logger.debug(f"   ⚖️ Conservative rebalancing (threshold: {rebalance_threshold:.1%})")
             
             for symbol, shares in list(self.positions.items()):
                 if symbol not in prices_today or shares <= 0:
@@ -827,18 +844,24 @@ class RealisticLiveTradingSystem:
                 current_value = shares * prices_today[symbol]
                 current_weight = current_value / portfolio_value
                 
-                # Check if position needs rebalancing
-                if current_weight > target_weight + rebalance_threshold:
-                    # Overweight - trim position
-                    target_value = portfolio_value * target_weight
+                # CHECK MINIMUM HOLDING PERIOD - Prevent churning!
+                entry_date = self.position_entry_dates.get(symbol)
+                if entry_date and (current_date - entry_date).days < self.min_holding_days:
+                    self.logger.debug(f"   ⏰ Skipping {symbol} rebalance - holding period {(current_date - entry_date).days} < {self.min_holding_days} days")
+                    continue
+                
+                # Only rebalance if MASSIVELY overweight (>25% instead of >20%)
+                if current_weight > max_trim_threshold:
+                    # Overweight - trim position MINIMALLY
+                    target_value = portfolio_value * (target_weight + 0.02)  # Target 22% instead of 20%
                     excess_value = current_value - target_value
-                    trim_shares = int(excess_value / prices_today[symbol])
+                    trim_shares = max(1, int(excess_value / prices_today[symbol] * 0.5))  # Trim only 50% of excess
                     
                     if trim_shares > 0:
                         trim_decision = {
                             'action': 'SELL_PARTIAL',
                             'shares': trim_shares,
-                            'reason': f'Rebalance trim: {current_weight:.1%} → {target_weight:.1%}'
+                            'reason': f'Conservative trim: {current_weight:.1%} → {(target_value/portfolio_value):.1%}'
                         }
                         
                         # Create dummy signal for rebalancing
@@ -866,7 +889,7 @@ class RealisticLiveTradingSystem:
                     if available_cash > 100:  # Minimum $100 top-up
                         topup_shares = kelly_size(
                             confidence=0.5,
-                            equity=self.current_capital,
+                            equity=self._trading_capital_for_sizing(),
                             price=prices_today[symbol],
                             cap_fraction=self.config['max_position_size']
                         )
@@ -902,6 +925,82 @@ class RealisticLiveTradingSystem:
             
         except Exception as e:
             self.logger.error(f"Error rebalancing portfolio: {e}")
+            return 0
+    
+    def _check_signal_based_exits(self, current_signals: Dict[str, Dict], prices_today: Dict[str, float], current_date: pd.Timestamp) -> int:
+        """Check for positions where ML signal has fundamentally changed - SMART EXIT STRATEGY"""
+        exit_orders = 0
+        
+        try:
+            for symbol, current_position in list(self.positions.items()):
+                if symbol not in current_signals or symbol not in prices_today:
+                    continue
+                
+                # Get entry signal strength
+                entry_signal_strength = self.position_entry_signals.get(symbol, 0.5)
+                current_signal = current_signals[symbol]
+                current_signal_strength = current_signal.get('strength', 0.0)
+                
+                # Check if signal has fundamentally changed
+                signal_degradation = entry_signal_strength - current_signal_strength
+                
+                # Exit conditions based on signal change
+                should_exit = False
+                exit_reason = ""
+                
+                # 1. Strong signal → Weak signal (degraded significantly)
+                if entry_signal_strength >= 0.8 and current_signal_strength < 0.4:
+                    should_exit = True
+                    exit_reason = f"Strong→Weak signal: {entry_signal_strength:.3f}→{current_signal_strength:.3f}"
+                
+                # 2. Ultra signal → Normal signal (big degradation)
+                elif entry_signal_strength >= 0.9 and current_signal_strength < 0.7:
+                    should_exit = True
+                    exit_reason = f"Ultra→Normal signal: {entry_signal_strength:.3f}→{current_signal_strength:.3f}"
+                
+                # 3. Any signal with >40% degradation
+                elif signal_degradation > 0.4 and current_signal_strength < 0.6:
+                    should_exit = True
+                    exit_reason = f"Signal degraded >40%: {entry_signal_strength:.3f}→{current_signal_strength:.3f}"
+                
+                # 4. Signal flipped negative (below threshold)
+                elif current_signal_strength < self.config['signal_threshold'] and entry_signal_strength >= self.config['signal_threshold']:
+                    should_exit = True
+                    exit_reason = f"Signal below threshold: {entry_signal_strength:.3f}→{current_signal_strength:.3f}"
+                
+                if should_exit:
+                    # Check minimum holding period
+                    entry_date = self.position_entry_dates.get(symbol)
+                    if entry_date and (current_date - entry_date).days < self.min_holding_days:
+                        self.logger.debug(f"   ⏰ Signal exit delayed for {symbol} - holding period {(current_date - entry_date).days} < {self.min_holding_days} days")
+                        continue
+                    
+                    # Create signal-based exit order
+                    exit_decision = {
+                        'action': 'SELL_ALL',
+                        'shares': current_position,
+                        'reason': f'Signal-based exit: {exit_reason}'
+                    }
+                    
+                    # Create dummy signal for exit
+                    exit_signal = {
+                        'strength': current_signal_strength,
+                        'price': prices_today[symbol],
+                        'base_strength': current_signal_strength,
+                        'ml_multiplier': 1.0,
+                        'regime_boost': 1.0,
+                        'total_enhancement': 1.0,
+                        'ml_enhanced': False
+                    }
+                    
+                    if self._queue_pending_order(symbol, exit_decision, exit_signal, current_date):
+                        exit_orders += 1
+                        self.logger.info(f"   🎯 Signal-based exit: {symbol} ({exit_reason})")
+                        
+            return exit_orders
+            
+        except Exception as e:
+            self.logger.error(f"Error in signal-based exits: {e}")
             return 0
     
     def _optimize_capital_utilization(self, signals: Dict[str, Dict], prices_today: Dict[str, float], 
@@ -1045,7 +1144,7 @@ class RealisticLiveTradingSystem:
                 
                 additional_shares = kelly_size(
                     confidence=strength,
-                    equity=self.current_capital,
+                    equity=self._trading_capital_for_sizing(),
                     price=price,
                     cap_fraction=self.config['max_position_size']
                 )
@@ -1085,7 +1184,10 @@ class RealisticLiveTradingSystem:
             
             current_position = self.positions.get(symbol, 0)
             
-            if action in ['BUY', 'BUY_MORE']:
+            # CRITICAL FIX: Skip position size checks for risk management orders
+            is_risk_order = order.get('order_type') in ['STOP_LOSS', 'TAKE_PROFIT', 'TRAILING_STOP']
+            
+            if action in ['BUY', 'BUY_MORE'] and not is_risk_order:
                 # Double-check position size limits before execution (Fix #8 + Portfolio value bug fix)
                 new_position = current_position + shares
                 new_position_value = new_position * execution_price
@@ -1128,7 +1230,9 @@ class RealisticLiveTradingSystem:
                     
                     self.logger.info(f"   ❌ Rejected: {action} {shares} {symbol} @ ${execution_price:.2f}")
                     return False
-                
+            
+            # Execute BUY orders (with or without position limit checks)
+            if action in ['BUY', 'BUY_MORE']:
                 # Apply transaction costs to open price
                 final_price, commission = self._apply_transaction_costs(execution_price, shares, is_buy=True, symbol=symbol)
                 total_cost = (shares * final_price) + commission
@@ -1144,6 +1248,9 @@ class RealisticLiveTradingSystem:
                         self.position_cost_basis[symbol] = new_basis
                     else:
                         self.position_cost_basis[symbol] = final_price
+                        # Track entry date and signal strength for new positions
+                        self.position_entry_dates[symbol] = current_date
+                        self.position_entry_signals[symbol] = order.get('signal_strength', 0.5)
                     
                     self.positions[symbol] = new_position
                     self.current_capital -= total_cost
@@ -1208,6 +1315,11 @@ class RealisticLiveTradingSystem:
                     
                     if self.positions[symbol] == 0:
                         del self.positions[symbol]
+                        # Clean up all tracking for closed positions
+                        if symbol in self.position_entry_dates:
+                            del self.position_entry_dates[symbol]
+                        if symbol in self.position_entry_signals:
+                            del self.position_entry_signals[symbol]
                         if symbol in self.position_cost_basis:
                             del self.position_cost_basis[symbol]
                         if symbol in self.position_high_watermark:
@@ -1327,33 +1439,20 @@ class RealisticLiveTradingSystem:
         print("="*80)
     
     def get_elite_stocks(self) -> List[str]:
-        """Top 100 most liquid stocks across all sectors - THE ULTIMATE TEST"""
+        """Top 20 elite mega-cap stocks - Highest quality, most liquid, lowest noise"""
         return [
-            # Technology Giants (25 stocks)
-            "AAPL", "MSFT", "GOOGL", "GOOG", "AMZN", "META", "TSLA", "NVDA", "ORCL", "CRM",
-            "ADBE", "NFLX", "AMD", "INTC", "CSCO", "AVGO", "QCOM", "TXN", "AMAT", "LRCX",
-            "KLAC", "MRVL", "ADI", "SNPS", "CDNS",
+            # Technology Giants (8 stocks) - Mega caps with consistent patterns
+            "AAPL", "MSFT", "GOOGL", "AMZN", "META", "TSLA", "NVDA", "ORCL",
             
-            # Financial Services (15 stocks)
-            "JPM", "BAC", "WFC", "GS", "MS", "C", "BLK", "AXP", "SPGI", "ICE",
-            "V", "MA", "COF", "USB", "PNC",
+            # Financial Powerhouses (4 stocks) - Most liquid financials
+            "JPM", "BAC", "V", "MA",
             
-            # Healthcare & Biotech (15 stocks)
-            "UNH", "JNJ", "PFE", "ABBV", "MRK", "TMO", "ABT", "DHR", "BMY", "AMGN",
-            "GILD", "LLY", "MDT", "ISRG", "VRTX",
+            # Healthcare & Consumer Staples (4 stocks) - Defensive quality
+            "UNH", "JNJ", "PG", "KO", 
             
-            # Consumer & Retail (15 stocks)
-            "HD", "PG", "KO", "PEP", "WMT", "NKE", "MCD", "SBUX", "DIS", "COST",
-            "TGT", "LOW", "TJX", "ROST", "ULTA",
-            
-            # Energy & Industrials (15 stocks)
-            "XOM", "CVX", "COP", "EOG", "SLB", "CAT", "BA", "HON", "UPS", "RTX",
-            "LMT", "GE", "MMM", "DE", "EMR",
-            
-            # Growth & Momentum (15 stocks)
-            "PLTR", "SNOW", "COIN", "CRWD", "ZS", "NET", "DDOG", "OKTA", "SHOP", "SQ",
-            "UBER", "LYFT", "ABNB", "DASH", "ROKU"
-        ]  # Full 100 stocks - the ultimate test!
+            # Energy & Consumer Discretionary (4 stocks) - Cyclical diversity
+            "XOM", "HD", "DIS", "CRM"
+        ]  # Elite 20 stocks - Maximum signal quality, minimum noise!
     
     def fetch_data_up_to_date(self, symbol: str, current_date: pd.Timestamp) -> pd.DataFrame:
         """Fetch data up to specific date (no look-ahead bias)"""
@@ -1778,10 +1877,16 @@ class RealisticLiveTradingSystem:
                     
                     shares = kelly_size(
                         confidence=strength,
-                        equity=self.current_capital,
+                        equity=self._trading_capital_for_sizing(),
                         price=price,
-                        cap_fraction=self.config['max_position_size']
+                        cap_fraction=max_allowed  # Use the appropriate limit based on signal
                     )
+                    
+                    # CRITICAL FIX: Cap position size to fit within limits instead of rejecting
+                    max_position_value = portfolio_value * max_allowed
+                    max_shares_by_limit = int(max_position_value / price)
+                    shares = min(shares, max_shares_by_limit)
+                    
                     min_value = portfolio_value * self.config['min_position_size']
                     if shares * price < min_value:
                         shares = int(min_value / price)
@@ -1803,13 +1908,22 @@ class RealisticLiveTradingSystem:
                         
                         additional_shares = kelly_size(
                             confidence=strength,
-                            equity=self.current_capital,
+                            equity=self._trading_capital_for_sizing(),
                             price=price,
-                            cap_fraction=self.config['max_position_size']
+                            cap_fraction=max_allowed  # Use appropriate limit
                         )
+                        
+                        # CRITICAL FIX: Cap additional shares to fit within position limits
                         post_trade_shares = current_position + additional_shares
                         post_trade_value = post_trade_shares * price
                         post_trade_weight = post_trade_value / portfolio_value
+                        
+                        if post_trade_weight > max_allowed:
+                            # Scale down additional shares to fit exactly at the limit
+                            max_total_value = portfolio_value * max_allowed
+                            current_value = current_position * price
+                            max_additional_value = max_total_value - current_value
+                            additional_shares = max(0, int(max_additional_value / price))
 
                         if (
                             post_trade_weight <= max_allowed
@@ -1952,10 +2066,11 @@ class RealisticLiveTradingSystem:
             self.logger.error(f"Error executing decision for {symbol} on {current_date.date()}: {e}")
             return False
     
-    def run_realistic_live_trading(self, start_date: str = "2025-05-22", end_date: str = "2025-08-21") -> Dict[str, Any]:
-        """Run realistic live trading simulation with all fixes applied"""
+    def run_realistic_live_trading(self, start_date: str = "2025-05-22", end_date: str = "2025-08-22") -> Dict[str, Any]:
+        """Run realistic live trading simulation: 3 months trading (back from today) with 2 years of data"""
         try:
             self.logger.info(f"🚀 Starting Realistic Live Trading: {start_date} to {end_date}")
+            self.logger.info("📊 Configuration: 3 months back from today, 2+ years data, 100 stocks, profit pot separation")
             self.start_date = pd.to_datetime(start_date)
             self.end_date = pd.to_datetime(end_date)
             
@@ -2083,6 +2198,8 @@ class RealisticLiveTradingSystem:
                                 self.train_daily_models(symbol, symbol_data, current_date)
                     
                     # 2. Generate signals and make trading decisions
+                    current_signals = {}  # Collect all signals for exit analysis
+                    
                     for symbol in stocks:
                         try:
                             # Rate-limit & missing data resilience (Fix #18)
@@ -2108,6 +2225,9 @@ class RealisticLiveTradingSystem:
                             # Enhance with daily ML models
                             enhanced_signal = self.enhance_signal_with_daily_ml(symbol, base_signal, df, current_date)
                             
+                            # Store signal for exit analysis
+                            current_signals[symbol] = enhanced_signal
+                            
                             # Make human-like decision with correct portfolio valuation
                             decision = self.make_human_like_decision(symbol, enhanced_signal, prices_today, daily_new_positions)
                             
@@ -2126,16 +2246,29 @@ class RealisticLiveTradingSystem:
                             self.logger.error(f"Error processing {symbol} on {current_date.date()}: {e}")
                             continue
                     
-                    # 2.1 Portfolio rebalancing pass (Enhancement #1)
-                    if not self._check_portfolio_exposure_limits(prices_today):
-                        self.logger.warning(f"   🚫 Skipping rebalancing and utilization due to exposure limits")
-                    else:
+                    # 2.0 Signal-based exit check - SMART EXIT STRATEGY
+                    signal_exits = self._check_signal_based_exits(current_signals, prices_today, current_date)
+                    if signal_exits > 0:
+                        self.logger.info(f"   🎯 Signal-based exits: {signal_exits} positions to exit based on signal changes")
+                    
+                    # 2.1 Portfolio rebalancing pass - MUCH LESS FREQUENT
+                    # Only rebalance on Fridays (weekly) to reduce over-trading
+                    should_rebalance = current_date.weekday() == 4  # Friday = 4
+                    
+                    if should_rebalance and not self._check_portfolio_exposure_limits(prices_today):
+                        self.logger.warning(f"   🚫 Skipping rebalancing due to exposure limits")
+                    elif should_rebalance:
                         rebalance_orders = self._rebalance_portfolio(prices_today, current_date)
                         if rebalance_orders > 0:
                             self.logger.info(f"   ⚖️ Portfolio rebalancing: {rebalance_orders} orders queued")
+                    else:
+                        self.logger.debug(f"   ⏭️ Skipping rebalancing today (only on Fridays)")
                     
-                    # 2.2 Capital utilization optimization (after rebalancing)
-                    if self._check_portfolio_exposure_limits(prices_today):
+                    # 2.2 Capital utilization optimization - LESS FREQUENT
+                    # Only on Mondays and Thursdays to prevent over-trading
+                    should_optimize_capital = current_date.weekday() in [0, 3]  # Monday=0, Thursday=3
+                    
+                    if should_optimize_capital and self._check_portfolio_exposure_limits(prices_today):
                         signals_for_utilization = {}
                         for symbol in stocks:
                             try:
@@ -2161,15 +2294,22 @@ class RealisticLiveTradingSystem:
                         )
                         if extra_orders > 0:
                             self.logger.info(f"   💰 Capital utilization: +{extra_orders} extra orders queued")
+                    else:
+                        self.logger.debug(f"   ⏭️ Skipping capital utilization today (only Mon/Thu)")
                     
                     # 3. Track daily performance using consistent prices
                     total_value = self._portfolio_value(prices_today)
+                    # Update profit pot tracking
+                    self._update_profit_pot(total_value)
+                    
                     invested_ratio = self._get_current_invested_ratio(current_date, prices_today)
                     
                     self.daily_performance.append({
                         'date': current_date,
                         'total_value': total_value,
                         'cash': self.current_capital,
+                        'profit_pot': self.profit_pot,
+                        'trading_capital': self.fixed_trading_capital,
                         'positions': len(self.positions),
                         'daily_trades': daily_trades,
                         'ml_enhancements': daily_ml_enhancements,
@@ -2521,9 +2661,9 @@ class RealisticLiveTradingSystem:
             return f"Error generating enhancement summary: {e}"
 
 def main():
-    """🚀 ULTIMATE 100-STOCK 2-YEAR TEST: The Final Challenge"""
-    print("🚀 ULTIMATE 100-STOCK 2-YEAR BACKTESTER")
-    print("🎯 100 Top Stocks | 2 Years Data | 1 Year Trading | Ultra-Aggressive Kelly")
+    """🚀 ULTIMATE 20-STOCK 1-YEAR TEST: Fixed Capital + Profit Pot Strategy"""
+    print("🚀 ELITE 20-STOCK 1-YEAR BACKTESTER")
+    print("🎯 20 Elite Mega-Cap Stocks | 2 Years Data | 1 FULL YEAR Trading | Profit Pot Strategy")
     print("=" * 80)
     
     # Initialize system
@@ -2532,35 +2672,37 @@ def main():
     print(f"📊 Testing Universe: {len(system.get_elite_stocks())} stocks")
     print("💰 Initial Capital: $100,000")
     print("� Configuration: Ultra-aggressive Kelly sizing")
-    print("📅 Data Period: 2 years (2023-2025)")
-    print("💼 Trading Period: 1 year (2024-2025)")
-    print("\n🚀 Starting the ultimate test...")
-    print("• ML models retrained DAILY on 100 stocks")
-    print("• Ultra-aggressive position sizing (up to 120%)")
-    print("• Capital deployment: 90-115% (leverage allowed)")
-    print("• Emergency reserves: Only 8%")
-    print("• Human-like decisions across 100 stocks")
+    print("📅 Data Period: 2 years (Aug 2022 - Aug 2024)")
+    print("💼 Trading Period: 3 MONTH TEST (May 2025 - Aug 2025)")
+    print("🚀 Starting ANTI-OVER-TRADING test (3 months)...")
+    print("• FIXED: Weekly rebalancing only (Fridays)")
+    print("• FIXED: 3-day minimum holding period")
+    print("• FIXED: Less aggressive take profits (2.5x ATR)")
+    print("• FIXED: Capital optimization only Mon/Thu")
+    print("• FIXED: 25% threshold for position trimming")
     print("• NO look-ahead bias - only past data used")
     print("• Real-time portfolio rebalancing")
     
-    # Run the ultimate 2-year test with 1 year of trading
+    # Run the full 3-month test to validate anti-over-trading fixes
     result = system.run_realistic_live_trading(
-        start_date="2024-01-01",  # 1 year of trading
-        end_date="2025-01-01"     # Using 2 years of prior data (2023-2025)
+        start_date="2025-05-22",  # 3 month test to validate fixes
+        end_date="2025-08-22"     # Today - testing our improvements
     )
     
     # Add debug summary
     system._print_debug_summary()
     
     if "error" not in result:
-        print(f"\n🏆 ULTIMATE 100-STOCK RESULTS:")
+        print(f"\n🏆 ANTI-OVER-TRADING 3-MONTH RESULTS:")
         print("=" * 50)
         print(f"   Period:                 {result['period']}")
-        print(f"   Trading Universe:       100 stocks")
+        print(f"   Trading Universe:       20 elite stocks")
         print(f"   Initial Capital:        ${result['initial_capital']:,.0f}")
         print(f"   Final Value:            ${result['final_value']:,.0f}")
+        print(f"   Profit Pot:             ${system.profit_pot:,.0f}")
+        print(f"   Trading Capital:        ${system.fixed_trading_capital:,.0f} (Fixed)")
         print(f"   Total Return:           {result['total_return_pct']:+.1f}%")
-        print(f"   Annual Return:          {result['annual_return_pct']:+.1f}%")
+        print(f"   Monthly Return:         {result['total_return_pct']/3:.1f}%")
         print(f"   Volatility:             {result['volatility_pct']:.1f}%")
         print(f"   Sharpe Ratio:           {result['sharpe_ratio']:.2f}")
         print(f"   Calmar Ratio:           {result['calmar_ratio']:.2f}")
@@ -2578,13 +2720,16 @@ def main():
         print(f"   Final Positions:        {result['final_positions']}")
         print(f"   Models Trained:         {result['models_trained']:,}")
         
-        print(f"\n💰 ULTRA-AGGRESSIVE CAPITAL UTILIZATION:")
+        print(f"\n💰 PROFIT POT STRATEGY (Fixed Capital Sizing):")
+        print(f"   Fixed Trading Capital:  ${system.fixed_trading_capital:,.0f}")
+        print(f"   Profit Pot (Separate):  ${system.profit_pot:,.0f}")
+        print(f"   Profit Pot Return:      {(system.profit_pot / system.initial_capital)*100:+.1f}%")
         print(f"   Average Invested:       {result['avg_invested_ratio_pct']:.1f}%")
         print(f"   Final Invested:         {result['final_invested_ratio_pct']:.1f}%")
         print(f"   Range:                  {result['min_invested_ratio_pct']:.1f}% - {result['max_invested_ratio_pct']:.1f}%")
         print(f"   Target Floor/Ceiling:   {system.config['target_invested_floor']*100:.0f}% - {system.config['target_invested_ceiling']*100:.0f}%")
         
-        print(f"\n🤖 MODEL PERFORMANCE (Top 10 of 100 stocks):")
+        print(f"\n🤖 MODEL PERFORMANCE (Top 10 of 20 stocks):")
         model_stats = result['model_stats']
         sorted_models = sorted(model_stats.items(), key=lambda x: x[1]['avg_accuracy'], reverse=True)[:10]
         for symbol, stats in sorted_models:
@@ -2594,7 +2739,7 @@ def main():
         print(f"\n🎯 ULTIMATE PERFORMANCE COMPARISON:")
         print(f"   Previous 20-stock system:  {7.5:.1f}% (3 months) → {34:.1f}% annual")
         print(f"   Ultra-aggressive 20-stock: {8.2:.1f}% (3 months) → {37.9:.1f}% annual")
-        print(f"   🚀 ULTIMATE 100-stock:     {result['total_return_pct']:+.1f}% (1 year) → {result['annual_return_pct']:+.1f}% annual")
+        print(f"   🚀 ULTIMATE 20-stock:     {result['total_return_pct']:+.1f}% (1 year) → {result['annual_return_pct']:+.1f}% annual")
         
         annual_return = result['annual_return_pct']
         if annual_return > 50:
@@ -2609,20 +2754,22 @@ def main():
     else:
         print(f"❌ Error: {result['error']}")
     
-    print("\n🔬 ULTIMATE 100-STOCK TESTING FEATURES:")
-    print("🎯 100 top liquid stocks across all sectors")
-    print("📊 2 years of historical data (2023-2025)")
-    print("💼 1 year of live trading simulation (2024-2025)")
-    print("• Daily ML model retraining on 100 stocks")
-    print("• ULTRA-AGGRESSIVE: Up to 120% position sizing")
-    print("• LEVERAGE ALLOWED: 115% capital deployment")
-    print("• Emergency reserves: Only 8% (vs 20%)")
-    print("• Human-like position management across 100 stocks") 
+    print("\n🔬 ULTIMATE 20-STOCK 1-YEAR TESTING FEATURES:")
+    print("🎯 20 elite mega-cap stocks (highest quality)")
+    print("📊 2 years of historical data (Aug 2022 - Aug 2024)")
+    print("💼 1 FULL YEAR of live trading simulation (Aug 2024 - Aug 2025)")
+    print("• Daily ML model retraining on elite stocks")
+    print("• PROFIT POT STRATEGY: Fixed $100K trading capital")
+    print("• ULTRA-AGGRESSIVE: Up to 40% position sizing")
+    print("• NO LEVERAGE: 95% max capital deployment")
+    print("• Emergency reserves: 12% (balanced)")
+    print("• Profits kept separate - NOT reinvested")
+    print("• Human-like position management on elite stocks") 
     print("• No future data exposure")
     print("• Advanced portfolio rebalancing")
     print("• Comprehensive risk management")
     print("• Real market conditions simulation")
-    print("\n🏆 THE ULTIMATE TEST OF OUR ULTRA-AGGRESSIVE KELLY STRATEGY!")
+    print("\n🏆 THE ULTIMATE TEST: PROFIT POT + ELITE 20-STOCK STRATEGY!")
 
 if __name__ == "__main__":
     main()

@@ -1,0 +1,16 @@
+{
+  "timestamp": "20250822_113518",
+  "trade_date": "2025-08-21",
+  "executed": false,
+  "sells": [],
+  "buys": [],
+  "meta": {
+    "account_base": 45000.0,
+    "universe_size": 15,
+    "max_buys": 3,
+    "max_sells": 99,
+    "buy_only": false,
+    "sell_only": false,
+    "market_hours_only": false
+  }
+}
