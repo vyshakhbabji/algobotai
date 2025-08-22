@@ -1,0 +1,568 @@
+2025-08-21 02:01:02,249 - UnifiedMLTradingSystem - WARNING - Alpaca credentials not found in environment variables
+2025-08-21 02:01:02,249 - UnifiedMLTradingSystem - INFO - 🔍 Selecting elite stocks using AI screening...
+2025-08-21 02:01:07,129 - yfinance - ERROR - $SQ: possibly delisted; no timezone found
+2025-08-21 02:01:23,979 - UnifiedMLTradingSystem - INFO - ✅ Selected 56 elite stocks
+2025-08-21 02:01:29,196 - UnifiedMLTradingSystem - INFO - 🤖 Training ensemble models for PLTR...
+2025-08-21 02:01:29,501 - UnifiedMLTradingSystem - WARNING -   ⚠️ lightgbm: Low R² = -0.268
+2025-08-21 02:01:29,900 - UnifiedMLTradingSystem - WARNING -   ⚠️ random_forest: Low R² = -0.560
+2025-08-21 02:01:30,249 - UnifiedMLTradingSystem - WARNING -   ⚠️ gradient_boosting: Low R² = -0.773
+2025-08-21 02:01:30,249 - UnifiedMLTradingSystem - WARNING - No successful models for PLTR
+2025-08-21 02:01:30,250 - UnifiedMLTradingSystem - INFO - 🤖 Training ensemble models for NVDA...
+2025-08-21 02:01:30,536 - UnifiedMLTradingSystem - WARNING -   ⚠️ lightgbm: Low R² = -0.866
+2025-08-21 02:01:30,854 - UnifiedMLTradingSystem - WARNING -   ⚠️ random_forest: Low R² = -0.181
+2025-08-21 02:01:31,202 - UnifiedMLTradingSystem - WARNING -   ⚠️ gradient_boosting: Low R² = -0.638
+2025-08-21 02:01:31,202 - UnifiedMLTradingSystem - WARNING - No successful models for NVDA
+2025-08-21 02:01:31,203 - UnifiedMLTradingSystem - INFO - 🤖 Training ensemble models for TSLA...
+2025-08-21 02:01:31,469 - UnifiedMLTradingSystem - WARNING -   ⚠️ lightgbm: Low R² = -0.759
+2025-08-21 02:01:31,797 - UnifiedMLTradingSystem - WARNING -   ⚠️ random_forest: Low R² = -0.532
+2025-08-21 02:01:32,139 - UnifiedMLTradingSystem - WARNING -   ⚠️ gradient_boosting: Low R² = -0.580
+2025-08-21 02:01:32,139 - UnifiedMLTradingSystem - WARNING - No successful models for TSLA
+2025-08-21 02:01:32,140 - UnifiedMLTradingSystem - INFO - 🤖 Training ensemble models for AVGO...
+2025-08-21 02:01:32,408 - UnifiedMLTradingSystem - WARNING -   ⚠️ lightgbm: Low R² = -0.614
+2025-08-21 02:01:32,719 - UnifiedMLTradingSystem - WARNING -   ⚠️ random_forest: Low R² = -1.356
+2025-08-21 02:01:33,059 - UnifiedMLTradingSystem - WARNING -   ⚠️ gradient_boosting: Low R² = -1.055
+2025-08-21 02:01:33,060 - UnifiedMLTradingSystem - WARNING - No successful models for AVGO
+2025-08-21 02:01:33,060 - UnifiedMLTradingSystem - INFO - 🤖 Training ensemble models for AMD...
+2025-08-21 02:01:33,332 - UnifiedMLTradingSystem - WARNING -   ⚠️ lightgbm: Low R² = -0.938
+2025-08-21 02:01:33,641 - UnifiedMLTradingSystem - WARNING -   ⚠️ random_forest: Low R² = -0.459
+2025-08-21 02:01:33,982 - UnifiedMLTradingSystem - WARNING -   ⚠️ gradient_boosting: Low R² = -0.552
+2025-08-21 02:01:33,982 - UnifiedMLTradingSystem - WARNING - No successful models for AMD
+2025-08-21 02:01:33,983 - UnifiedMLTradingSystem - INFO - 🤖 Training ensemble models for INTC...
+2025-08-21 02:01:34,262 - UnifiedMLTradingSystem - WARNING -   ⚠️ lightgbm: Low R² = -0.475
+2025-08-21 02:01:34,565 - UnifiedMLTradingSystem - WARNING -   ⚠️ random_forest: Low R² = -0.470
+2025-08-21 02:01:34,902 - UnifiedMLTradingSystem - WARNING -   ⚠️ gradient_boosting: Low R² = -1.317
+2025-08-21 02:01:34,902 - UnifiedMLTradingSystem - WARNING - No successful models for INTC
+2025-08-21 02:01:34,902 - UnifiedMLTradingSystem - INFO - 🤖 Training ensemble models for MU...
+2025-08-21 02:01:35,177 - UnifiedMLTradingSystem - WARNING -   ⚠️ lightgbm: Low R² = -0.582
+2025-08-21 02:01:35,473 - UnifiedMLTradingSystem - WARNING -   ⚠️ random_forest: Low R² = -0.553
+2025-08-21 02:01:35,836 - UnifiedMLTradingSystem - WARNING -   ⚠️ gradient_boosting: Low R² = -1.035
+2025-08-21 02:01:35,836 - UnifiedMLTradingSystem - WARNING - No successful models for MU
+2025-08-21 02:01:35,836 - UnifiedMLTradingSystem - INFO - 🤖 Training ensemble models for META...
+2025-08-21 02:01:36,103 - UnifiedMLTradingSystem - WARNING -   ⚠️ lightgbm: Low R² = -0.394
+2025-08-21 02:01:36,385 - UnifiedMLTradingSystem - WARNING -   ⚠️ random_forest: Low R² = -0.650
+2025-08-21 02:01:36,723 - UnifiedMLTradingSystem - WARNING -   ⚠️ gradient_boosting: Low R² = -2.312
+2025-08-21 02:01:36,723 - UnifiedMLTradingSystem - WARNING - No successful models for META
+2025-08-21 02:01:36,724 - UnifiedMLTradingSystem - INFO - 🤖 Training ensemble models for LRCX...
+2025-08-21 02:01:36,999 - UnifiedMLTradingSystem - WARNING -   ⚠️ lightgbm: Low R² = -0.955
+2025-08-21 02:01:37,301 - UnifiedMLTradingSystem - WARNING -   ⚠️ random_forest: Low R² = -0.447
+2025-08-21 02:01:37,651 - UnifiedMLTradingSystem - WARNING -   ⚠️ gradient_boosting: Low R² = -0.730
+2025-08-21 02:01:37,651 - UnifiedMLTradingSystem - WARNING - No successful models for LRCX
+2025-08-21 02:01:37,651 - UnifiedMLTradingSystem - INFO - 🤖 Training ensemble models for AAPL...
+2025-08-21 02:01:37,918 - UnifiedMLTradingSystem - WARNING -   ⚠️ lightgbm: Low R² = -0.726
+2025-08-21 02:01:38,212 - UnifiedMLTradingSystem - WARNING -   ⚠️ random_forest: Low R² = -0.556
+2025-08-21 02:01:38,556 - UnifiedMLTradingSystem - WARNING -   ⚠️ gradient_boosting: Low R² = -2.177
+2025-08-21 02:01:38,556 - UnifiedMLTradingSystem - WARNING - No successful models for AAPL
+2025-08-21 02:01:38,557 - UnifiedMLTradingSystem - INFO - 🤖 Training ensemble models for GOOGL...
+2025-08-21 02:01:38,835 - UnifiedMLTradingSystem - WARNING -   ⚠️ lightgbm: Low R² = -0.598
+2025-08-21 02:01:39,124 - UnifiedMLTradingSystem - WARNING -   ⚠️ random_forest: Low R² = -0.541
+2025-08-21 02:01:39,465 - UnifiedMLTradingSystem - WARNING -   ⚠️ gradient_boosting: Low R² = -1.325
+2025-08-21 02:01:39,465 - UnifiedMLTradingSystem - WARNING - No successful models for GOOGL
+2025-08-21 02:01:39,465 - UnifiedMLTradingSystem - INFO - 🤖 Training ensemble models for AMZN...
+2025-08-21 02:01:39,735 - UnifiedMLTradingSystem - WARNING -   ⚠️ lightgbm: Low R² = -0.187
+2025-08-21 02:01:40,023 - UnifiedMLTradingSystem - WARNING -   ⚠️ random_forest: Low R² = -0.210
+2025-08-21 02:01:40,360 - UnifiedMLTradingSystem - WARNING -   ⚠️ gradient_boosting: Low R² = -0.354
+2025-08-21 02:01:40,360 - UnifiedMLTradingSystem - WARNING - No successful models for AMZN
+2025-08-21 02:01:40,361 - UnifiedMLTradingSystem - INFO - 🤖 Training ensemble models for BAC...
+2025-08-21 02:01:40,649 - UnifiedMLTradingSystem - WARNING -   ⚠️ lightgbm: Low R² = -1.134
+2025-08-21 02:01:40,944 - UnifiedMLTradingSystem - WARNING -   ⚠️ random_forest: Low R² = -0.685
+2025-08-21 02:01:41,282 - UnifiedMLTradingSystem - WARNING -   ⚠️ gradient_boosting: Low R² = -2.069
+2025-08-21 02:01:41,282 - UnifiedMLTradingSystem - WARNING - No successful models for BAC
+2025-08-21 02:01:41,283 - UnifiedMLTradingSystem - INFO - 🤖 Training ensemble models for ORCL...
+2025-08-21 02:01:41,565 - UnifiedMLTradingSystem - WARNING -   ⚠️ lightgbm: Low R² = -0.825
+2025-08-21 02:01:41,874 - UnifiedMLTradingSystem - WARNING -   ⚠️ random_forest: Low R² = -1.417
+2025-08-21 02:01:42,218 - UnifiedMLTradingSystem - WARNING -   ⚠️ gradient_boosting: Low R² = -2.216
+2025-08-21 02:01:42,219 - UnifiedMLTradingSystem - WARNING - No successful models for ORCL
+2025-08-21 02:01:42,219 - UnifiedMLTradingSystem - INFO - 🤖 Training ensemble models for RBLX...
+2025-08-21 02:01:42,489 - UnifiedMLTradingSystem - WARNING -   ⚠️ lightgbm: Low R² = -0.556
+2025-08-21 02:01:42,799 - UnifiedMLTradingSystem - WARNING -   ⚠️ random_forest: Low R² = -0.832
+2025-08-21 02:01:43,148 - UnifiedMLTradingSystem - WARNING -   ⚠️ gradient_boosting: Low R² = -1.038
+2025-08-21 02:01:43,148 - UnifiedMLTradingSystem - WARNING - No successful models for RBLX
+2025-08-21 02:01:43,149 - UnifiedMLTradingSystem - INFO - 🤖 Training ensemble models for SHOP...
+2025-08-21 02:01:43,423 - UnifiedMLTradingSystem - WARNING -   ⚠️ lightgbm: Low R² = -1.036
+2025-08-21 02:01:43,753 - UnifiedMLTradingSystem - WARNING -   ⚠️ random_forest: Low R² = -0.584
+2025-08-21 02:01:44,098 - UnifiedMLTradingSystem - WARNING -   ⚠️ gradient_boosting: Low R² = -1.241
+2025-08-21 02:01:44,098 - UnifiedMLTradingSystem - WARNING - No successful models for SHOP
+2025-08-21 02:01:44,099 - UnifiedMLTradingSystem - INFO - 🤖 Training ensemble models for U...
+2025-08-21 02:01:44,363 - UnifiedMLTradingSystem - WARNING -   ⚠️ lightgbm: Low R² = -0.920
+2025-08-21 02:01:44,648 - UnifiedMLTradingSystem - WARNING -   ⚠️ random_forest: Low R² = -0.757
+2025-08-21 02:01:44,983 - UnifiedMLTradingSystem - WARNING -   ⚠️ gradient_boosting: Low R² = -1.112
+2025-08-21 02:01:44,983 - UnifiedMLTradingSystem - WARNING - No successful models for U
+2025-08-21 02:01:44,983 - UnifiedMLTradingSystem - INFO - 🤖 Training ensemble models for NET...
+2025-08-21 02:01:45,246 - UnifiedMLTradingSystem - WARNING -   ⚠️ lightgbm: Low R² = -0.518
+2025-08-21 02:01:45,525 - UnifiedMLTradingSystem - WARNING -   ⚠️ random_forest: Low R² = -0.559
+2025-08-21 02:01:45,857 - UnifiedMLTradingSystem - WARNING -   ⚠️ gradient_boosting: Low R² = -1.019
+2025-08-21 02:01:45,857 - UnifiedMLTradingSystem - WARNING - No successful models for NET
+2025-08-21 02:01:45,858 - UnifiedMLTradingSystem - INFO - 🤖 Training ensemble models for GS...
+2025-08-21 02:01:46,127 - UnifiedMLTradingSystem - WARNING -   ⚠️ lightgbm: Low R² = -0.329
+2025-08-21 02:01:46,404 - UnifiedMLTradingSystem - WARNING -   ⚠️ random_forest: Low R² = -0.193
+2025-08-21 02:01:46,736 - UnifiedMLTradingSystem - WARNING -   ⚠️ gradient_boosting: Low R² = -0.582
+2025-08-21 02:01:46,736 - UnifiedMLTradingSystem - WARNING - No successful models for GS
+2025-08-21 02:01:46,737 - UnifiedMLTradingSystem - INFO - 🤖 Training ensemble models for NKE...
+2025-08-21 02:01:47,005 - UnifiedMLTradingSystem - WARNING -   ⚠️ lightgbm: Low R² = -1.139
+2025-08-21 02:01:47,304 - UnifiedMLTradingSystem - WARNING -   ⚠️ random_forest: Low R² = -0.843
+2025-08-21 02:01:47,638 - UnifiedMLTradingSystem - WARNING -   ⚠️ gradient_boosting: Low R² = -1.977
+2025-08-21 02:01:47,638 - UnifiedMLTradingSystem - WARNING - No successful models for NKE
+2025-08-21 02:01:47,639 - UnifiedMLTradingSystem - INFO - 🤖 Training ensemble models for NFLX...
+2025-08-21 02:01:47,908 - UnifiedMLTradingSystem - WARNING -   ⚠️ lightgbm: Low R² = -0.385
+2025-08-21 02:01:48,204 - UnifiedMLTradingSystem - WARNING -   ⚠️ random_forest: Low R² = -0.181
+2025-08-21 02:01:48,545 - UnifiedMLTradingSystem - WARNING -   ⚠️ gradient_boosting: Low R² = -0.352
+2025-08-21 02:01:48,545 - UnifiedMLTradingSystem - WARNING - No successful models for NFLX
+2025-08-21 02:01:48,546 - UnifiedMLTradingSystem - INFO - 🤖 Training ensemble models for DIS...
+2025-08-21 02:01:48,813 - UnifiedMLTradingSystem - WARNING -   ⚠️ lightgbm: Low R² = -2.026
+2025-08-21 02:01:49,120 - UnifiedMLTradingSystem - WARNING -   ⚠️ random_forest: Low R² = -1.245
+2025-08-21 02:01:49,457 - UnifiedMLTradingSystem - WARNING -   ⚠️ gradient_boosting: Low R² = -2.222
+2025-08-21 02:01:49,457 - UnifiedMLTradingSystem - WARNING - No successful models for DIS
+2025-08-21 02:01:49,458 - UnifiedMLTradingSystem - INFO - 🤖 Training ensemble models for MS...
+2025-08-21 02:01:49,718 - UnifiedMLTradingSystem - WARNING -   ⚠️ lightgbm: Low R² = -1.432
+2025-08-21 02:01:50,001 - UnifiedMLTradingSystem - WARNING -   ⚠️ random_forest: Low R² = -0.822
+2025-08-21 02:01:50,333 - UnifiedMLTradingSystem - WARNING -   ⚠️ gradient_boosting: Low R² = -2.254
+2025-08-21 02:01:50,333 - UnifiedMLTradingSystem - WARNING - No successful models for MS
+2025-08-21 02:01:50,334 - UnifiedMLTradingSystem - INFO - 🤖 Training ensemble models for SBUX...
+2025-08-21 02:01:50,592 - UnifiedMLTradingSystem - WARNING -   ⚠️ lightgbm: Low R² = -1.319
+2025-08-21 02:01:50,883 - UnifiedMLTradingSystem - WARNING -   ⚠️ random_forest: Low R² = -0.973
+2025-08-21 02:01:51,218 - UnifiedMLTradingSystem - WARNING -   ⚠️ gradient_boosting: Low R² = -2.936
+2025-08-21 02:01:51,218 - UnifiedMLTradingSystem - WARNING - No successful models for SBUX
+2025-08-21 02:01:51,219 - UnifiedMLTradingSystem - INFO - 🤖 Training ensemble models for COIN...
+2025-08-21 02:01:51,494 - UnifiedMLTradingSystem - WARNING -   ⚠️ lightgbm: Low R² = -1.378
+2025-08-21 02:01:51,783 - UnifiedMLTradingSystem - WARNING -   ⚠️ random_forest: Low R² = -3.325
+2025-08-21 02:01:52,121 - UnifiedMLTradingSystem - WARNING -   ⚠️ gradient_boosting: Low R² = -4.763
+2025-08-21 02:01:52,121 - UnifiedMLTradingSystem - WARNING - No successful models for COIN
+2025-08-21 02:01:52,122 - UnifiedMLTradingSystem - INFO - 🤖 Training ensemble models for PYPL...
+2025-08-21 02:01:52,384 - UnifiedMLTradingSystem - WARNING -   ⚠️ lightgbm: Low R² = -0.914
+2025-08-21 02:01:52,662 - UnifiedMLTradingSystem - WARNING -   ⚠️ random_forest: Low R² = -0.869
+2025-08-21 02:01:53,003 - UnifiedMLTradingSystem - WARNING -   ⚠️ gradient_boosting: Low R² = -1.270
+2025-08-21 02:01:53,003 - UnifiedMLTradingSystem - WARNING - No successful models for PYPL
+2025-08-21 02:01:53,004 - UnifiedMLTradingSystem - INFO - 🤖 Training ensemble models for QCOM...
+2025-08-21 02:01:53,302 - UnifiedMLTradingSystem - WARNING -   ⚠️ lightgbm: Low R² = -0.658
+2025-08-21 02:01:53,611 - UnifiedMLTradingSystem - WARNING -   ⚠️ random_forest: Low R² = -0.710
+2025-08-21 02:01:53,961 - UnifiedMLTradingSystem - WARNING -   ⚠️ gradient_boosting: Low R² = -1.621
+2025-08-21 02:01:53,961 - UnifiedMLTradingSystem - WARNING - No successful models for QCOM
+2025-08-21 02:01:53,962 - UnifiedMLTradingSystem - INFO - 🤖 Training ensemble models for JPM...
+2025-08-21 02:01:54,235 - UnifiedMLTradingSystem - WARNING -   ⚠️ lightgbm: Low R² = -0.545
+2025-08-21 02:01:54,525 - UnifiedMLTradingSystem - WARNING -   ⚠️ random_forest: Low R² = -0.191
+2025-08-21 02:01:54,863 - UnifiedMLTradingSystem - WARNING -   ⚠️ gradient_boosting: Low R² = -0.898
+2025-08-21 02:01:54,863 - UnifiedMLTradingSystem - WARNING - No successful models for JPM
+2025-08-21 02:01:54,864 - UnifiedMLTradingSystem - INFO - 🤖 Training ensemble models for AMAT...
+2025-08-21 02:01:55,140 - UnifiedMLTradingSystem - WARNING -   ⚠️ lightgbm: Low R² = -0.486
+2025-08-21 02:01:55,438 - UnifiedMLTradingSystem - WARNING -   ⚠️ random_forest: Low R² = -0.505
+2025-08-21 02:01:55,777 - UnifiedMLTradingSystem - WARNING -   ⚠️ gradient_boosting: Low R² = -0.850
+2025-08-21 02:01:55,778 - UnifiedMLTradingSystem - WARNING - No successful models for AMAT
+2025-08-21 02:01:55,778 - UnifiedMLTradingSystem - INFO - 🤖 Training ensemble models for ZS...
+2025-08-21 02:01:56,052 - UnifiedMLTradingSystem - WARNING -   ⚠️ lightgbm: Low R² = -1.217
+2025-08-21 02:01:56,337 - UnifiedMLTradingSystem - WARNING -   ⚠️ random_forest: Low R² = -1.022
+2025-08-21 02:01:56,672 - UnifiedMLTradingSystem - WARNING -   ⚠️ gradient_boosting: Low R² = -1.641
+2025-08-21 02:01:56,672 - UnifiedMLTradingSystem - WARNING - No successful models for ZS
+2025-08-21 02:01:56,673 - UnifiedMLTradingSystem - INFO - 🤖 Training ensemble models for NOW...
+2025-08-21 02:01:56,938 - UnifiedMLTradingSystem - WARNING -   ⚠️ lightgbm: Low R² = -0.400
+2025-08-21 02:01:57,236 - UnifiedMLTradingSystem - WARNING -   ⚠️ random_forest: Low R² = -0.443
+2025-08-21 02:01:57,572 - UnifiedMLTradingSystem - WARNING -   ⚠️ gradient_boosting: Low R² = -2.524
+2025-08-21 02:01:57,573 - UnifiedMLTradingSystem - WARNING - No successful models for NOW
+2025-08-21 02:01:57,573 - UnifiedMLTradingSystem - INFO - 🤖 Training ensemble models for MSFT...
+2025-08-21 02:01:57,845 - UnifiedMLTradingSystem - WARNING -   ⚠️ lightgbm: Low R² = -0.241
+2025-08-21 02:01:58,137 - UnifiedMLTradingSystem - WARNING -   ⚠️ random_forest: Low R² = -0.367
+2025-08-21 02:01:58,475 - UnifiedMLTradingSystem - WARNING -   ⚠️ gradient_boosting: Low R² = -0.585
+2025-08-21 02:01:58,475 - UnifiedMLTradingSystem - WARNING - No successful models for MSFT
+2025-08-21 02:01:58,475 - UnifiedMLTradingSystem - INFO - 🤖 Training ensemble models for SLB...
+2025-08-21 02:01:58,744 - UnifiedMLTradingSystem - WARNING -   ⚠️ lightgbm: Low R² = -0.436
+2025-08-21 02:01:59,022 - UnifiedMLTradingSystem - WARNING -   ⚠️ random_forest: Low R² = -0.157
+2025-08-21 02:01:59,356 - UnifiedMLTradingSystem - WARNING -   ⚠️ gradient_boosting: Low R² = -1.269
+2025-08-21 02:01:59,356 - UnifiedMLTradingSystem - WARNING - No successful models for SLB
+2025-08-21 02:01:59,357 - UnifiedMLTradingSystem - INFO - 🤖 Training ensemble models for GILD...
+2025-08-21 02:01:59,631 - UnifiedMLTradingSystem - WARNING -   ⚠️ lightgbm: Low R² = -0.483
+2025-08-21 02:01:59,921 - UnifiedMLTradingSystem - WARNING -   ⚠️ random_forest: Low R² = -0.181
+2025-08-21 02:02:00,257 - UnifiedMLTradingSystem - WARNING -   ⚠️ gradient_boosting: Low R² = -0.634
+2025-08-21 02:02:00,257 - UnifiedMLTradingSystem - WARNING - No successful models for GILD
+2025-08-21 02:02:00,258 - UnifiedMLTradingSystem - INFO - 🤖 Training ensemble models for MRNA...
+2025-08-21 02:02:00,527 - UnifiedMLTradingSystem - WARNING -   ⚠️ lightgbm: Low R² = -0.606
+2025-08-21 02:02:00,830 - UnifiedMLTradingSystem - WARNING -   ⚠️ random_forest: Low R² = -0.640
+2025-08-21 02:02:01,167 - UnifiedMLTradingSystem - WARNING -   ⚠️ gradient_boosting: Low R² = -0.520
+2025-08-21 02:02:01,167 - UnifiedMLTradingSystem - WARNING - No successful models for MRNA
+2025-08-21 02:02:01,167 - UnifiedMLTradingSystem - INFO - 🤖 Training ensemble models for SNOW...
+2025-08-21 02:02:01,433 - UnifiedMLTradingSystem - WARNING -   ⚠️ lightgbm: Low R² = -2.010
+2025-08-21 02:02:01,715 - UnifiedMLTradingSystem - WARNING -   ⚠️ random_forest: Low R² = -1.273
+2025-08-21 02:02:02,048 - UnifiedMLTradingSystem - WARNING -   ⚠️ gradient_boosting: Low R² = -2.988
+2025-08-21 02:02:02,048 - UnifiedMLTradingSystem - WARNING - No successful models for SNOW
+2025-08-21 02:02:02,049 - UnifiedMLTradingSystem - INFO - 🤖 Training ensemble models for CRM...
+2025-08-21 02:02:02,327 - UnifiedMLTradingSystem - WARNING -   ⚠️ lightgbm: Low R² = -0.783
+2025-08-21 02:02:02,643 - UnifiedMLTradingSystem - WARNING -   ⚠️ random_forest: Low R² = -1.514
+2025-08-21 02:02:02,982 - UnifiedMLTradingSystem - WARNING -   ⚠️ gradient_boosting: Low R² = -2.644
+2025-08-21 02:02:02,982 - UnifiedMLTradingSystem - WARNING - No successful models for CRM
+2025-08-21 02:02:02,983 - UnifiedMLTradingSystem - INFO - 🤖 Training ensemble models for ROKU...
+2025-08-21 02:02:03,248 - UnifiedMLTradingSystem - WARNING -   ⚠️ lightgbm: Low R² = -0.635
+2025-08-21 02:02:03,543 - UnifiedMLTradingSystem - WARNING -   ⚠️ random_forest: Low R² = -0.352
+2025-08-21 02:02:03,878 - UnifiedMLTradingSystem - WARNING -   ⚠️ gradient_boosting: Low R² = -1.004
+2025-08-21 02:02:03,879 - UnifiedMLTradingSystem - WARNING - No successful models for ROKU
+2025-08-21 02:02:03,879 - UnifiedMLTradingSystem - INFO - 🤖 Training ensemble models for ADBE...
+2025-08-21 02:02:04,151 - UnifiedMLTradingSystem - WARNING -   ⚠️ lightgbm: Low R² = -0.628
+2025-08-21 02:02:04,443 - UnifiedMLTradingSystem - WARNING -   ⚠️ random_forest: Low R² = -0.530
+2025-08-21 02:02:04,775 - UnifiedMLTradingSystem - WARNING -   ⚠️ gradient_boosting: Low R² = -0.638
+2025-08-21 02:02:04,775 - UnifiedMLTradingSystem - WARNING - No successful models for ADBE
+2025-08-21 02:02:04,776 - UnifiedMLTradingSystem - INFO - 🤖 Training ensemble models for BNTX...
+2025-08-21 02:02:05,047 - UnifiedMLTradingSystem - WARNING -   ⚠️ lightgbm: Low R² = -2.091
+2025-08-21 02:02:05,356 - UnifiedMLTradingSystem - WARNING -   ⚠️ random_forest: Low R² = -1.231
+2025-08-21 02:02:05,692 - UnifiedMLTradingSystem - WARNING -   ⚠️ gradient_boosting: Low R² = -2.448
+2025-08-21 02:02:05,692 - UnifiedMLTradingSystem - WARNING - No successful models for BNTX
+2025-08-21 02:02:05,693 - UnifiedMLTradingSystem - INFO - 🤖 Training ensemble models for REGN...
+2025-08-21 02:02:05,967 - UnifiedMLTradingSystem - WARNING -   ⚠️ lightgbm: Low R² = -0.928
+2025-08-21 02:02:06,248 - UnifiedMLTradingSystem - WARNING -   ⚠️ random_forest: Low R² = -0.600
+2025-08-21 02:02:06,579 - UnifiedMLTradingSystem - WARNING -   ⚠️ gradient_boosting: Low R² = -0.814
+2025-08-21 02:02:06,579 - UnifiedMLTradingSystem - WARNING - No successful models for REGN
+2025-08-21 02:02:06,580 - UnifiedMLTradingSystem - INFO - 🤖 Training ensemble models for MA...
+2025-08-21 02:02:06,851 - UnifiedMLTradingSystem - WARNING -   ⚠️ lightgbm: Low R² = -1.370
+2025-08-21 02:02:07,141 - UnifiedMLTradingSystem - WARNING -   ⚠️ random_forest: Low R² = -0.872
+2025-08-21 02:02:07,474 - UnifiedMLTradingSystem - WARNING -   ⚠️ gradient_boosting: Low R² = -1.644
+2025-08-21 02:02:07,474 - UnifiedMLTradingSystem - WARNING - No successful models for MA
+2025-08-21 02:02:07,475 - UnifiedMLTradingSystem - INFO - 🤖 Training ensemble models for TGT...
+2025-08-21 02:02:07,745 - UnifiedMLTradingSystem - WARNING -   ⚠️ lightgbm: Low R² = -0.628
+2025-08-21 02:02:08,033 - UnifiedMLTradingSystem - WARNING -   ⚠️ random_forest: Low R² = -0.380
+2025-08-21 02:02:08,370 - UnifiedMLTradingSystem - WARNING -   ⚠️ gradient_boosting: Low R² = -1.042
+2025-08-21 02:02:08,371 - UnifiedMLTradingSystem - WARNING - No successful models for TGT
+2025-08-21 02:02:08,371 - UnifiedMLTradingSystem - INFO - 🤖 Training ensemble models for COP...
+2025-08-21 02:02:08,642 - UnifiedMLTradingSystem - WARNING -   ⚠️ lightgbm: Low R² = -0.740
+2025-08-21 02:02:08,935 - UnifiedMLTradingSystem - WARNING -   ⚠️ random_forest: Low R² = -0.325
+2025-08-21 02:02:09,270 - UnifiedMLTradingSystem - WARNING -   ⚠️ gradient_boosting: Low R² = -1.106
+2025-08-21 02:02:09,270 - UnifiedMLTradingSystem - WARNING - No successful models for COP
+2025-08-21 02:02:09,270 - UnifiedMLTradingSystem - INFO - 🤖 Training ensemble models for DDOG...
+2025-08-21 02:02:09,536 - UnifiedMLTradingSystem - WARNING -   ⚠️ lightgbm: Low R² = -1.022
+2025-08-21 02:02:09,817 - UnifiedMLTradingSystem - WARNING -   ⚠️ random_forest: Low R² = -0.769
+2025-08-21 02:02:10,151 - UnifiedMLTradingSystem - WARNING -   ⚠️ gradient_boosting: Low R² = -2.243
+2025-08-21 02:02:10,152 - UnifiedMLTradingSystem - WARNING - No successful models for DDOG
+2025-08-21 02:02:10,152 - UnifiedMLTradingSystem - INFO - 🤖 Training ensemble models for VRTX...
+2025-08-21 02:02:10,408 - UnifiedMLTradingSystem - WARNING -   ⚠️ lightgbm: Low R² = -0.575
+2025-08-21 02:02:10,703 - UnifiedMLTradingSystem - WARNING -   ⚠️ random_forest: Low R² = -0.821
+2025-08-21 02:02:11,039 - UnifiedMLTradingSystem - WARNING -   ⚠️ gradient_boosting: Low R² = -1.476
+2025-08-21 02:02:11,040 - UnifiedMLTradingSystem - WARNING - No successful models for VRTX
+2025-08-21 02:02:11,040 - UnifiedMLTradingSystem - INFO - 🤖 Training ensemble models for OKTA...
+2025-08-21 02:02:11,313 - UnifiedMLTradingSystem - WARNING -   ⚠️ lightgbm: Low R² = -1.430
+2025-08-21 02:02:11,602 - UnifiedMLTradingSystem - WARNING -   ⚠️ random_forest: Low R² = -1.786
+2025-08-21 02:02:11,935 - UnifiedMLTradingSystem - WARNING -   ⚠️ gradient_boosting: Low R² = -2.781
+2025-08-21 02:02:11,936 - UnifiedMLTradingSystem - WARNING - No successful models for OKTA
+2025-08-21 02:02:11,936 - UnifiedMLTradingSystem - INFO - 🤖 Training ensemble models for XOM...
+2025-08-21 02:02:12,212 - UnifiedMLTradingSystem - WARNING -   ⚠️ lightgbm: Low R² = -0.810
+2025-08-21 02:02:12,492 - UnifiedMLTradingSystem - WARNING -   ⚠️ random_forest: Low R² = -0.694
+2025-08-21 02:02:12,824 - UnifiedMLTradingSystem - WARNING -   ⚠️ gradient_boosting: Low R² = -1.457
+2025-08-21 02:02:12,824 - UnifiedMLTradingSystem - WARNING - No successful models for XOM
+2025-08-21 02:02:12,825 - UnifiedMLTradingSystem - INFO - 🤖 Training ensemble models for COST...
+2025-08-21 02:02:13,090 - UnifiedMLTradingSystem - WARNING -   ⚠️ lightgbm: Low R² = -0.177
+2025-08-21 02:02:13,391 - UnifiedMLTradingSystem - WARNING -   ⚠️ random_forest: Low R² = -0.082
+2025-08-21 02:02:13,737 - UnifiedMLTradingSystem - WARNING -   ⚠️ gradient_boosting: Low R² = -0.545
+2025-08-21 02:02:13,737 - UnifiedMLTradingSystem - WARNING - No successful models for COST
+2025-08-21 02:02:13,738 - UnifiedMLTradingSystem - INFO - 🤖 Training ensemble models for BIIB...
+2025-08-21 02:02:14,006 - UnifiedMLTradingSystem - WARNING -   ⚠️ lightgbm: Low R² = -0.567
+2025-08-21 02:02:14,295 - UnifiedMLTradingSystem - WARNING -   ⚠️ random_forest: Low R² = -0.761
+2025-08-21 02:02:14,647 - UnifiedMLTradingSystem - WARNING -   ⚠️ gradient_boosting: Low R² = -2.466
+2025-08-21 02:02:14,647 - UnifiedMLTradingSystem - WARNING - No successful models for BIIB
+2025-08-21 02:02:14,648 - UnifiedMLTradingSystem - INFO - 🤖 Training ensemble models for V...
+2025-08-21 02:02:14,912 - UnifiedMLTradingSystem - WARNING -   ⚠️ lightgbm: Low R² = -1.577
+2025-08-21 02:02:15,194 - UnifiedMLTradingSystem - WARNING -   ⚠️ random_forest: Low R² = -0.740
+2025-08-21 02:02:15,529 - UnifiedMLTradingSystem - WARNING -   ⚠️ gradient_boosting: Low R² = -1.766
+2025-08-21 02:02:15,530 - UnifiedMLTradingSystem - WARNING - No successful models for V
+2025-08-21 02:02:15,530 - UnifiedMLTradingSystem - INFO - 🤖 Training ensemble models for EOG...
+2025-08-21 02:02:15,804 - UnifiedMLTradingSystem - WARNING -   ⚠️ lightgbm: Low R² = -0.560
+2025-08-21 02:02:16,084 - UnifiedMLTradingSystem - WARNING -   ⚠️ random_forest: Low R² = -0.210
+2025-08-21 02:02:16,421 - UnifiedMLTradingSystem - WARNING -   ⚠️ gradient_boosting: Low R² = -0.481
+2025-08-21 02:02:16,421 - UnifiedMLTradingSystem - WARNING - No successful models for EOG
+2025-08-21 02:02:16,422 - UnifiedMLTradingSystem - INFO - 🤖 Training ensemble models for HD...
+2025-08-21 02:02:16,686 - UnifiedMLTradingSystem - WARNING -   ⚠️ lightgbm: Low R² = -1.051
+2025-08-21 02:02:16,965 - UnifiedMLTradingSystem - WARNING -   ⚠️ random_forest: Low R² = -0.910
+2025-08-21 02:02:17,301 - UnifiedMLTradingSystem - WARNING -   ⚠️ gradient_boosting: Low R² = -1.972
+2025-08-21 02:02:17,301 - UnifiedMLTradingSystem - WARNING - No successful models for HD
+2025-08-21 02:02:17,301 - UnifiedMLTradingSystem - INFO - 🤖 Training ensemble models for WDAY...
+2025-08-21 02:02:17,571 - UnifiedMLTradingSystem - WARNING -   ⚠️ lightgbm: Low R² = -0.609
+2025-08-21 02:02:17,876 - UnifiedMLTradingSystem - WARNING -   ⚠️ random_forest: Low R² = -1.489
+2025-08-21 02:02:18,226 - UnifiedMLTradingSystem - WARNING -   ⚠️ gradient_boosting: Low R² = -2.522
+2025-08-21 02:02:18,226 - UnifiedMLTradingSystem - WARNING - No successful models for WDAY
+2025-08-21 02:02:18,227 - UnifiedMLTradingSystem - INFO - 🤖 Training ensemble models for ZM...
+2025-08-21 02:02:18,495 - UnifiedMLTradingSystem - WARNING -   ⚠️ lightgbm: Low R² = -0.599
+2025-08-21 02:02:18,794 - UnifiedMLTradingSystem - WARNING -   ⚠️ random_forest: Low R² = -0.780
+2025-08-21 02:02:19,132 - UnifiedMLTradingSystem - WARNING -   ⚠️ gradient_boosting: Low R² = -1.477
+2025-08-21 02:02:19,132 - UnifiedMLTradingSystem - WARNING - No successful models for ZM
+2025-08-21 02:02:19,133 - UnifiedMLTradingSystem - INFO - 🤖 Training ensemble models for CVX...
+2025-08-21 02:02:19,407 - UnifiedMLTradingSystem - WARNING -   ⚠️ lightgbm: Low R² = -0.985
+2025-08-21 02:02:19,692 - UnifiedMLTradingSystem - WARNING -   ⚠️ random_forest: Low R² = -0.761
+2025-08-21 02:02:20,025 - UnifiedMLTradingSystem - WARNING -   ⚠️ gradient_boosting: Low R² = -1.425
+2025-08-21 02:02:20,025 - UnifiedMLTradingSystem - WARNING - No successful models for CVX
+2025-08-21 17:36:18,185 - UnifiedMLTradingSystem - WARNING - Alpaca credentials not found in environment variables
+2025-08-21 17:36:18,185 - UnifiedMLTradingSystem - INFO - 🔍 Selecting elite stocks using AI screening...
+2025-08-21 17:36:23,160 - yfinance - ERROR - $SQ: possibly delisted; no timezone found
+2025-08-21 17:36:40,874 - UnifiedMLTradingSystem - INFO - ✅ Selected 56 elite stocks
+2025-08-21 17:36:46,218 - UnifiedMLTradingSystem - INFO - 🤖 Training ensemble models for PLTR...
+2025-08-21 17:36:46,526 - UnifiedMLTradingSystem - WARNING -   ⚠️ lightgbm: Low R² = -0.268
+2025-08-21 17:36:46,855 - UnifiedMLTradingSystem - WARNING -   ⚠️ random_forest: Low R² = -0.560
+2025-08-21 17:36:47,205 - UnifiedMLTradingSystem - WARNING -   ⚠️ gradient_boosting: Low R² = -0.773
+2025-08-21 17:36:47,205 - UnifiedMLTradingSystem - WARNING - No successful models for PLTR
+2025-08-21 17:36:47,206 - UnifiedMLTradingSystem - INFO - 🤖 Training ensemble models for NVDA...
+2025-08-21 17:36:47,484 - UnifiedMLTradingSystem - WARNING -   ⚠️ lightgbm: Low R² = -0.866
+2025-08-21 17:36:47,811 - UnifiedMLTradingSystem - WARNING -   ⚠️ random_forest: Low R² = -0.180
+2025-08-21 17:36:48,150 - UnifiedMLTradingSystem - WARNING -   ⚠️ gradient_boosting: Low R² = -0.663
+2025-08-21 17:36:48,150 - UnifiedMLTradingSystem - WARNING - No successful models for NVDA
+2025-08-21 17:36:48,150 - UnifiedMLTradingSystem - INFO - 🤖 Training ensemble models for TSLA...
+2025-08-21 17:36:48,415 - UnifiedMLTradingSystem - WARNING -   ⚠️ lightgbm: Low R² = -0.759
+2025-08-21 17:36:48,758 - UnifiedMLTradingSystem - WARNING -   ⚠️ random_forest: Low R² = -0.532
+2025-08-21 17:36:49,108 - UnifiedMLTradingSystem - WARNING -   ⚠️ gradient_boosting: Low R² = -0.580
+2025-08-21 17:36:49,108 - UnifiedMLTradingSystem - WARNING - No successful models for TSLA
+2025-08-21 17:36:49,109 - UnifiedMLTradingSystem - INFO - 🤖 Training ensemble models for AVGO...
+2025-08-21 17:36:49,377 - UnifiedMLTradingSystem - WARNING -   ⚠️ lightgbm: Low R² = -0.614
+2025-08-21 17:36:49,703 - UnifiedMLTradingSystem - WARNING -   ⚠️ random_forest: Low R² = -1.357
+2025-08-21 17:36:50,042 - UnifiedMLTradingSystem - WARNING -   ⚠️ gradient_boosting: Low R² = -1.018
+2025-08-21 17:36:50,042 - UnifiedMLTradingSystem - WARNING - No successful models for AVGO
+2025-08-21 17:36:50,043 - UnifiedMLTradingSystem - INFO - 🤖 Training ensemble models for AMD...
+2025-08-21 17:36:50,326 - UnifiedMLTradingSystem - WARNING -   ⚠️ lightgbm: Low R² = -0.938
+2025-08-21 17:36:50,648 - UnifiedMLTradingSystem - WARNING -   ⚠️ random_forest: Low R² = -0.459
+2025-08-21 17:36:50,998 - UnifiedMLTradingSystem - WARNING -   ⚠️ gradient_boosting: Low R² = -0.552
+2025-08-21 17:36:50,998 - UnifiedMLTradingSystem - WARNING - No successful models for AMD
+2025-08-21 17:36:50,999 - UnifiedMLTradingSystem - INFO - 🤖 Training ensemble models for INTC...
+2025-08-21 17:36:51,275 - UnifiedMLTradingSystem - WARNING -   ⚠️ lightgbm: Low R² = -0.475
+2025-08-21 17:36:51,592 - UnifiedMLTradingSystem - WARNING -   ⚠️ random_forest: Low R² = -0.470
+2025-08-21 17:36:51,927 - UnifiedMLTradingSystem - WARNING -   ⚠️ gradient_boosting: Low R² = -1.261
+2025-08-21 17:36:51,927 - UnifiedMLTradingSystem - WARNING - No successful models for INTC
+2025-08-21 17:36:51,927 - UnifiedMLTradingSystem - INFO - 🤖 Training ensemble models for MU...
+2025-08-21 17:36:52,202 - UnifiedMLTradingSystem - WARNING -   ⚠️ lightgbm: Low R² = -0.582
+2025-08-21 17:36:52,516 - UnifiedMLTradingSystem - WARNING -   ⚠️ random_forest: Low R² = -0.550
+2025-08-21 17:36:52,869 - UnifiedMLTradingSystem - WARNING -   ⚠️ gradient_boosting: Low R² = -1.055
+2025-08-21 17:36:52,869 - UnifiedMLTradingSystem - WARNING - No successful models for MU
+2025-08-21 17:36:52,869 - UnifiedMLTradingSystem - INFO - 🤖 Training ensemble models for META...
+2025-08-21 17:36:53,127 - UnifiedMLTradingSystem - WARNING -   ⚠️ lightgbm: Low R² = -0.394
+2025-08-21 17:36:53,427 - UnifiedMLTradingSystem - WARNING -   ⚠️ random_forest: Low R² = -0.635
+2025-08-21 17:36:53,763 - UnifiedMLTradingSystem - WARNING -   ⚠️ gradient_boosting: Low R² = -2.244
+2025-08-21 17:36:53,763 - UnifiedMLTradingSystem - WARNING - No successful models for META
+2025-08-21 17:36:53,764 - UnifiedMLTradingSystem - INFO - 🤖 Training ensemble models for LRCX...
+2025-08-21 17:36:54,038 - UnifiedMLTradingSystem - WARNING -   ⚠️ lightgbm: Low R² = -0.955
+2025-08-21 17:36:54,353 - UnifiedMLTradingSystem - WARNING -   ⚠️ random_forest: Low R² = -0.451
+2025-08-21 17:36:54,691 - UnifiedMLTradingSystem - WARNING -   ⚠️ gradient_boosting: Low R² = -0.728
+2025-08-21 17:36:54,692 - UnifiedMLTradingSystem - WARNING - No successful models for LRCX
+2025-08-21 17:36:54,692 - UnifiedMLTradingSystem - INFO - 🤖 Training ensemble models for GOOGL...
+2025-08-21 17:36:54,964 - UnifiedMLTradingSystem - WARNING -   ⚠️ lightgbm: Low R² = -0.598
+2025-08-21 17:36:55,269 - UnifiedMLTradingSystem - WARNING -   ⚠️ random_forest: Low R² = -0.541
+2025-08-21 17:36:55,607 - UnifiedMLTradingSystem - WARNING -   ⚠️ gradient_boosting: Low R² = -1.338
+2025-08-21 17:36:55,607 - UnifiedMLTradingSystem - WARNING - No successful models for GOOGL
+2025-08-21 17:36:55,608 - UnifiedMLTradingSystem - INFO - 🤖 Training ensemble models for AMZN...
+2025-08-21 17:36:55,874 - UnifiedMLTradingSystem - WARNING -   ⚠️ lightgbm: Low R² = -0.187
+2025-08-21 17:36:56,178 - UnifiedMLTradingSystem - WARNING -   ⚠️ random_forest: Low R² = -0.210
+2025-08-21 17:36:56,509 - UnifiedMLTradingSystem - WARNING -   ⚠️ gradient_boosting: Low R² = -0.354
+2025-08-21 17:36:56,509 - UnifiedMLTradingSystem - WARNING - No successful models for AMZN
+2025-08-21 17:36:56,510 - UnifiedMLTradingSystem - INFO - 🤖 Training ensemble models for BAC...
+2025-08-21 17:36:56,784 - UnifiedMLTradingSystem - WARNING -   ⚠️ lightgbm: Low R² = -1.129
+2025-08-21 17:36:57,093 - UnifiedMLTradingSystem - WARNING -   ⚠️ random_forest: Low R² = -0.686
+2025-08-21 17:36:57,426 - UnifiedMLTradingSystem - WARNING -   ⚠️ gradient_boosting: Low R² = -2.258
+2025-08-21 17:36:57,427 - UnifiedMLTradingSystem - WARNING - No successful models for BAC
+2025-08-21 17:36:57,427 - UnifiedMLTradingSystem - INFO - 🤖 Training ensemble models for ORCL...
+2025-08-21 17:36:57,691 - UnifiedMLTradingSystem - WARNING -   ⚠️ lightgbm: Low R² = -0.825
+2025-08-21 17:36:58,008 - UnifiedMLTradingSystem - WARNING -   ⚠️ random_forest: Low R² = -1.417
+2025-08-21 17:36:58,342 - UnifiedMLTradingSystem - WARNING -   ⚠️ gradient_boosting: Low R² = -2.392
+2025-08-21 17:36:58,342 - UnifiedMLTradingSystem - WARNING - No successful models for ORCL
+2025-08-21 17:36:58,343 - UnifiedMLTradingSystem - INFO - 🤖 Training ensemble models for AAPL...
+2025-08-21 17:36:58,612 - UnifiedMLTradingSystem - WARNING -   ⚠️ lightgbm: Low R² = -0.726
+2025-08-21 17:36:58,923 - UnifiedMLTradingSystem - WARNING -   ⚠️ random_forest: Low R² = -0.557
+2025-08-21 17:36:59,260 - UnifiedMLTradingSystem - WARNING -   ⚠️ gradient_boosting: Low R² = -2.235
+2025-08-21 17:36:59,260 - UnifiedMLTradingSystem - WARNING - No successful models for AAPL
+2025-08-21 17:36:59,260 - UnifiedMLTradingSystem - INFO - 🤖 Training ensemble models for RBLX...
+2025-08-21 17:36:59,527 - UnifiedMLTradingSystem - WARNING -   ⚠️ lightgbm: Low R² = -0.556
+2025-08-21 17:36:59,842 - UnifiedMLTradingSystem - WARNING -   ⚠️ random_forest: Low R² = -0.832
+2025-08-21 17:37:00,179 - UnifiedMLTradingSystem - WARNING -   ⚠️ gradient_boosting: Low R² = -1.038
+2025-08-21 17:37:00,179 - UnifiedMLTradingSystem - WARNING - No successful models for RBLX
+2025-08-21 17:37:00,179 - UnifiedMLTradingSystem - INFO - 🤖 Training ensemble models for SHOP...
+2025-08-21 17:37:00,444 - UnifiedMLTradingSystem - WARNING -   ⚠️ lightgbm: Low R² = -1.036
+2025-08-21 17:37:00,785 - UnifiedMLTradingSystem - WARNING -   ⚠️ random_forest: Low R² = -0.584
+2025-08-21 17:37:01,120 - UnifiedMLTradingSystem - WARNING -   ⚠️ gradient_boosting: Low R² = -1.241
+2025-08-21 17:37:01,120 - UnifiedMLTradingSystem - WARNING - No successful models for SHOP
+2025-08-21 17:37:01,121 - UnifiedMLTradingSystem - INFO - 🤖 Training ensemble models for U...
+2025-08-21 17:37:01,384 - UnifiedMLTradingSystem - WARNING -   ⚠️ lightgbm: Low R² = -0.920
+2025-08-21 17:37:01,685 - UnifiedMLTradingSystem - WARNING -   ⚠️ random_forest: Low R² = -0.757
+2025-08-21 17:37:02,020 - UnifiedMLTradingSystem - WARNING -   ⚠️ gradient_boosting: Low R² = -1.112
+2025-08-21 17:37:02,020 - UnifiedMLTradingSystem - WARNING - No successful models for U
+2025-08-21 17:37:02,021 - UnifiedMLTradingSystem - INFO - 🤖 Training ensemble models for NET...
+2025-08-21 17:37:02,289 - UnifiedMLTradingSystem - WARNING -   ⚠️ lightgbm: Low R² = -0.518
+2025-08-21 17:37:02,700 - UnifiedMLTradingSystem - WARNING -   ⚠️ random_forest: Low R² = -0.559
+2025-08-21 17:37:03,034 - UnifiedMLTradingSystem - WARNING -   ⚠️ gradient_boosting: Low R² = -1.019
+2025-08-21 17:37:03,034 - UnifiedMLTradingSystem - WARNING - No successful models for NET
+2025-08-21 17:37:03,034 - UnifiedMLTradingSystem - INFO - 🤖 Training ensemble models for GS...
+2025-08-21 17:37:03,300 - UnifiedMLTradingSystem - WARNING -   ⚠️ lightgbm: Low R² = -0.329
+2025-08-21 17:37:03,592 - UnifiedMLTradingSystem - WARNING -   ⚠️ random_forest: Low R² = -0.192
+2025-08-21 17:37:03,928 - UnifiedMLTradingSystem - WARNING -   ⚠️ gradient_boosting: Low R² = -0.566
+2025-08-21 17:37:03,928 - UnifiedMLTradingSystem - WARNING - No successful models for GS
+2025-08-21 17:37:03,929 - UnifiedMLTradingSystem - INFO - 🤖 Training ensemble models for NKE...
+2025-08-21 17:37:04,195 - UnifiedMLTradingSystem - WARNING -   ⚠️ lightgbm: Low R² = -1.139
+2025-08-21 17:37:04,508 - UnifiedMLTradingSystem - WARNING -   ⚠️ random_forest: Low R² = -0.843
+2025-08-21 17:37:04,844 - UnifiedMLTradingSystem - WARNING -   ⚠️ gradient_boosting: Low R² = -1.786
+2025-08-21 17:37:04,844 - UnifiedMLTradingSystem - WARNING - No successful models for NKE
+2025-08-21 17:37:04,845 - UnifiedMLTradingSystem - INFO - 🤖 Training ensemble models for NFLX...
+2025-08-21 17:37:05,111 - UnifiedMLTradingSystem - WARNING -   ⚠️ lightgbm: Low R² = -0.385
+2025-08-21 17:37:05,425 - UnifiedMLTradingSystem - WARNING -   ⚠️ random_forest: Low R² = -0.181
+2025-08-21 17:37:05,764 - UnifiedMLTradingSystem - WARNING -   ⚠️ gradient_boosting: Low R² = -0.352
+2025-08-21 17:37:05,764 - UnifiedMLTradingSystem - WARNING - No successful models for NFLX
+2025-08-21 17:37:05,765 - UnifiedMLTradingSystem - INFO - 🤖 Training ensemble models for DIS...
+2025-08-21 17:37:06,026 - UnifiedMLTradingSystem - WARNING -   ⚠️ lightgbm: Low R² = -2.026
+2025-08-21 17:37:06,352 - UnifiedMLTradingSystem - WARNING -   ⚠️ random_forest: Low R² = -1.247
+2025-08-21 17:37:06,694 - UnifiedMLTradingSystem - WARNING -   ⚠️ gradient_boosting: Low R² = -2.215
+2025-08-21 17:37:06,694 - UnifiedMLTradingSystem - WARNING - No successful models for DIS
+2025-08-21 17:37:06,695 - UnifiedMLTradingSystem - INFO - 🤖 Training ensemble models for MS...
+2025-08-21 17:37:06,951 - UnifiedMLTradingSystem - WARNING -   ⚠️ lightgbm: Low R² = -1.432
+2025-08-21 17:37:07,252 - UnifiedMLTradingSystem - WARNING -   ⚠️ random_forest: Low R² = -0.821
+2025-08-21 17:37:07,589 - UnifiedMLTradingSystem - WARNING -   ⚠️ gradient_boosting: Low R² = -2.229
+2025-08-21 17:37:07,589 - UnifiedMLTradingSystem - WARNING - No successful models for MS
+2025-08-21 17:37:07,590 - UnifiedMLTradingSystem - INFO - 🤖 Training ensemble models for SBUX...
+2025-08-21 17:37:07,864 - UnifiedMLTradingSystem - WARNING -   ⚠️ lightgbm: Low R² = -1.319
+2025-08-21 17:37:08,169 - UnifiedMLTradingSystem - WARNING -   ⚠️ random_forest: Low R² = -0.985
+2025-08-21 17:37:08,505 - UnifiedMLTradingSystem - WARNING -   ⚠️ gradient_boosting: Low R² = -2.003
+2025-08-21 17:37:08,505 - UnifiedMLTradingSystem - WARNING - No successful models for SBUX
+2025-08-21 17:37:08,505 - UnifiedMLTradingSystem - INFO - 🤖 Training ensemble models for COIN...
+2025-08-21 17:37:08,776 - UnifiedMLTradingSystem - WARNING -   ⚠️ lightgbm: Low R² = -1.378
+2025-08-21 17:37:09,080 - UnifiedMLTradingSystem - WARNING -   ⚠️ random_forest: Low R² = -3.325
+2025-08-21 17:37:09,420 - UnifiedMLTradingSystem - WARNING -   ⚠️ gradient_boosting: Low R² = -4.763
+2025-08-21 17:37:09,420 - UnifiedMLTradingSystem - WARNING - No successful models for COIN
+2025-08-21 17:37:09,421 - UnifiedMLTradingSystem - INFO - 🤖 Training ensemble models for PYPL...
+2025-08-21 17:37:09,681 - UnifiedMLTradingSystem - WARNING -   ⚠️ lightgbm: Low R² = -0.914
+2025-08-21 17:37:09,974 - UnifiedMLTradingSystem - WARNING -   ⚠️ random_forest: Low R² = -0.869
+2025-08-21 17:37:10,309 - UnifiedMLTradingSystem - WARNING -   ⚠️ gradient_boosting: Low R² = -1.270
+2025-08-21 17:37:10,309 - UnifiedMLTradingSystem - WARNING - No successful models for PYPL
+2025-08-21 17:37:10,310 - UnifiedMLTradingSystem - INFO - 🤖 Training ensemble models for QCOM...
+2025-08-21 17:37:10,581 - UnifiedMLTradingSystem - WARNING -   ⚠️ lightgbm: Low R² = -0.658
+2025-08-21 17:37:10,894 - UnifiedMLTradingSystem - WARNING -   ⚠️ random_forest: Low R² = -0.718
+2025-08-21 17:37:11,233 - UnifiedMLTradingSystem - WARNING -   ⚠️ gradient_boosting: Low R² = -1.658
+2025-08-21 17:37:11,233 - UnifiedMLTradingSystem - WARNING - No successful models for QCOM
+2025-08-21 17:37:11,234 - UnifiedMLTradingSystem - INFO - 🤖 Training ensemble models for JPM...
+2025-08-21 17:37:11,496 - UnifiedMLTradingSystem - WARNING -   ⚠️ lightgbm: Low R² = -0.545
+2025-08-21 17:37:11,797 - UnifiedMLTradingSystem - WARNING -   ⚠️ random_forest: Low R² = -0.190
+2025-08-21 17:37:12,136 - UnifiedMLTradingSystem - WARNING -   ⚠️ gradient_boosting: Low R² = -0.878
+2025-08-21 17:37:12,136 - UnifiedMLTradingSystem - WARNING - No successful models for JPM
+2025-08-21 17:37:12,137 - UnifiedMLTradingSystem - INFO - 🤖 Training ensemble models for AMAT...
+2025-08-21 17:37:12,404 - UnifiedMLTradingSystem - WARNING -   ⚠️ lightgbm: Low R² = -0.486
+2025-08-21 17:37:12,718 - UnifiedMLTradingSystem - WARNING -   ⚠️ random_forest: Low R² = -0.502
+2025-08-21 17:37:13,059 - UnifiedMLTradingSystem - WARNING -   ⚠️ gradient_boosting: Low R² = -0.821
+2025-08-21 17:37:13,059 - UnifiedMLTradingSystem - WARNING - No successful models for AMAT
+2025-08-21 17:37:13,059 - UnifiedMLTradingSystem - INFO - 🤖 Training ensemble models for ZS...
+2025-08-21 17:37:13,326 - UnifiedMLTradingSystem - WARNING -   ⚠️ lightgbm: Low R² = -1.217
+2025-08-21 17:37:13,627 - UnifiedMLTradingSystem - WARNING -   ⚠️ random_forest: Low R² = -1.022
+2025-08-21 17:37:13,963 - UnifiedMLTradingSystem - WARNING -   ⚠️ gradient_boosting: Low R² = -1.641
+2025-08-21 17:37:13,963 - UnifiedMLTradingSystem - WARNING - No successful models for ZS
+2025-08-21 17:37:13,964 - UnifiedMLTradingSystem - INFO - 🤖 Training ensemble models for NOW...
+2025-08-21 17:37:14,225 - UnifiedMLTradingSystem - WARNING -   ⚠️ lightgbm: Low R² = -0.400
+2025-08-21 17:37:14,536 - UnifiedMLTradingSystem - WARNING -   ⚠️ random_forest: Low R² = -0.443
+2025-08-21 17:37:14,873 - UnifiedMLTradingSystem - WARNING -   ⚠️ gradient_boosting: Low R² = -2.524
+2025-08-21 17:37:14,873 - UnifiedMLTradingSystem - WARNING - No successful models for NOW
+2025-08-21 17:37:14,874 - UnifiedMLTradingSystem - INFO - 🤖 Training ensemble models for MSFT...
+2025-08-21 17:37:15,141 - UnifiedMLTradingSystem - WARNING -   ⚠️ lightgbm: Low R² = -0.241
+2025-08-21 17:37:15,448 - UnifiedMLTradingSystem - WARNING -   ⚠️ random_forest: Low R² = -0.367
+2025-08-21 17:37:15,786 - UnifiedMLTradingSystem - WARNING -   ⚠️ gradient_boosting: Low R² = -0.559
+2025-08-21 17:37:15,787 - UnifiedMLTradingSystem - WARNING - No successful models for MSFT
+2025-08-21 17:37:15,787 - UnifiedMLTradingSystem - INFO - 🤖 Training ensemble models for SLB...
+2025-08-21 17:37:16,051 - UnifiedMLTradingSystem - WARNING -   ⚠️ lightgbm: Low R² = -0.436
+2025-08-21 17:37:16,344 - UnifiedMLTradingSystem - WARNING -   ⚠️ random_forest: Low R² = -0.158
+2025-08-21 17:37:16,678 - UnifiedMLTradingSystem - WARNING -   ⚠️ gradient_boosting: Low R² = -1.278
+2025-08-21 17:37:16,678 - UnifiedMLTradingSystem - WARNING - No successful models for SLB
+2025-08-21 17:37:16,679 - UnifiedMLTradingSystem - INFO - 🤖 Training ensemble models for GILD...
+2025-08-21 17:37:16,945 - UnifiedMLTradingSystem - WARNING -   ⚠️ lightgbm: Low R² = -0.483
+2025-08-21 17:37:17,252 - UnifiedMLTradingSystem - WARNING -   ⚠️ random_forest: Low R² = -0.181
+2025-08-21 17:37:17,588 - UnifiedMLTradingSystem - WARNING -   ⚠️ gradient_boosting: Low R² = -0.651
+2025-08-21 17:37:17,588 - UnifiedMLTradingSystem - WARNING - No successful models for GILD
+2025-08-21 17:37:17,589 - UnifiedMLTradingSystem - INFO - 🤖 Training ensemble models for MRNA...
+2025-08-21 17:37:17,852 - UnifiedMLTradingSystem - WARNING -   ⚠️ lightgbm: Low R² = -0.606
+2025-08-21 17:37:18,174 - UnifiedMLTradingSystem - WARNING -   ⚠️ random_forest: Low R² = -0.640
+2025-08-21 17:37:18,510 - UnifiedMLTradingSystem - WARNING -   ⚠️ gradient_boosting: Low R² = -0.520
+2025-08-21 17:37:18,510 - UnifiedMLTradingSystem - WARNING - No successful models for MRNA
+2025-08-21 17:37:18,511 - UnifiedMLTradingSystem - INFO - 🤖 Training ensemble models for SNOW...
+2025-08-21 17:37:18,774 - UnifiedMLTradingSystem - WARNING -   ⚠️ lightgbm: Low R² = -2.010
+2025-08-21 17:37:19,073 - UnifiedMLTradingSystem - WARNING -   ⚠️ random_forest: Low R² = -1.273
+2025-08-21 17:37:19,407 - UnifiedMLTradingSystem - WARNING -   ⚠️ gradient_boosting: Low R² = -2.988
+2025-08-21 17:37:19,407 - UnifiedMLTradingSystem - WARNING - No successful models for SNOW
+2025-08-21 17:37:19,408 - UnifiedMLTradingSystem - INFO - 🤖 Training ensemble models for CRM...
+2025-08-21 17:37:19,679 - UnifiedMLTradingSystem - WARNING -   ⚠️ lightgbm: Low R² = -0.783
+2025-08-21 17:37:20,009 - UnifiedMLTradingSystem - WARNING -   ⚠️ random_forest: Low R² = -1.474
+2025-08-21 17:37:20,351 - UnifiedMLTradingSystem - WARNING -   ⚠️ gradient_boosting: Low R² = -2.843
+2025-08-21 17:37:20,351 - UnifiedMLTradingSystem - WARNING - No successful models for CRM
+2025-08-21 17:37:20,352 - UnifiedMLTradingSystem - INFO - 🤖 Training ensemble models for ROKU...
+2025-08-21 17:37:20,613 - UnifiedMLTradingSystem - WARNING -   ⚠️ lightgbm: Low R² = -0.635
+2025-08-21 17:37:20,922 - UnifiedMLTradingSystem - WARNING -   ⚠️ random_forest: Low R² = -0.352
+2025-08-21 17:37:21,259 - UnifiedMLTradingSystem - WARNING -   ⚠️ gradient_boosting: Low R² = -1.004
+2025-08-21 17:37:21,259 - UnifiedMLTradingSystem - WARNING - No successful models for ROKU
+2025-08-21 17:37:21,259 - UnifiedMLTradingSystem - INFO - 🤖 Training ensemble models for ADBE...
+2025-08-21 17:37:21,521 - UnifiedMLTradingSystem - WARNING -   ⚠️ lightgbm: Low R² = -0.628
+2025-08-21 17:37:21,839 - UnifiedMLTradingSystem - WARNING -   ⚠️ random_forest: Low R² = -0.530
+2025-08-21 17:37:22,182 - UnifiedMLTradingSystem - WARNING -   ⚠️ gradient_boosting: Low R² = -0.638
+2025-08-21 17:37:22,182 - UnifiedMLTradingSystem - WARNING - No successful models for ADBE
+2025-08-21 17:37:22,182 - UnifiedMLTradingSystem - INFO - 🤖 Training ensemble models for BNTX...
+2025-08-21 17:37:22,450 - UnifiedMLTradingSystem - WARNING -   ⚠️ lightgbm: Low R² = -2.091
+2025-08-21 17:37:22,773 - UnifiedMLTradingSystem - WARNING -   ⚠️ random_forest: Low R² = -1.231
+2025-08-21 17:37:23,111 - UnifiedMLTradingSystem - WARNING -   ⚠️ gradient_boosting: Low R² = -2.448
+2025-08-21 17:37:23,111 - UnifiedMLTradingSystem - WARNING - No successful models for BNTX
+2025-08-21 17:37:23,112 - UnifiedMLTradingSystem - INFO - 🤖 Training ensemble models for REGN...
+2025-08-21 17:37:23,383 - UnifiedMLTradingSystem - WARNING -   ⚠️ lightgbm: Low R² = -0.928
+2025-08-21 17:37:23,679 - UnifiedMLTradingSystem - WARNING -   ⚠️ random_forest: Low R² = -0.600
+2025-08-21 17:37:24,013 - UnifiedMLTradingSystem - WARNING -   ⚠️ gradient_boosting: Low R² = -0.840
+2025-08-21 17:37:24,013 - UnifiedMLTradingSystem - WARNING - No successful models for REGN
+2025-08-21 17:37:24,014 - UnifiedMLTradingSystem - INFO - 🤖 Training ensemble models for MA...
+2025-08-21 17:37:24,279 - UnifiedMLTradingSystem - WARNING -   ⚠️ lightgbm: Low R² = -1.370
+2025-08-21 17:37:24,582 - UnifiedMLTradingSystem - WARNING -   ⚠️ random_forest: Low R² = -0.872
+2025-08-21 17:37:24,920 - UnifiedMLTradingSystem - WARNING -   ⚠️ gradient_boosting: Low R² = -1.560
+2025-08-21 17:37:24,920 - UnifiedMLTradingSystem - WARNING - No successful models for MA
+2025-08-21 17:37:24,920 - UnifiedMLTradingSystem - INFO - 🤖 Training ensemble models for TGT...
+2025-08-21 17:37:25,184 - UnifiedMLTradingSystem - WARNING -   ⚠️ lightgbm: Low R² = -0.628
+2025-08-21 17:37:25,489 - UnifiedMLTradingSystem - WARNING -   ⚠️ random_forest: Low R² = -0.379
+2025-08-21 17:37:25,827 - UnifiedMLTradingSystem - WARNING -   ⚠️ gradient_boosting: Low R² = -1.125
+2025-08-21 17:37:25,827 - UnifiedMLTradingSystem - WARNING - No successful models for TGT
+2025-08-21 17:37:25,828 - UnifiedMLTradingSystem - INFO - 🤖 Training ensemble models for COP...
+2025-08-21 17:37:26,092 - UnifiedMLTradingSystem - WARNING -   ⚠️ lightgbm: Low R² = -0.740
+2025-08-21 17:37:26,402 - UnifiedMLTradingSystem - WARNING -   ⚠️ random_forest: Low R² = -0.330
+2025-08-21 17:37:26,742 - UnifiedMLTradingSystem - WARNING -   ⚠️ gradient_boosting: Low R² = -1.077
+2025-08-21 17:37:26,742 - UnifiedMLTradingSystem - WARNING - No successful models for COP
+2025-08-21 17:37:26,743 - UnifiedMLTradingSystem - INFO - 🤖 Training ensemble models for VRTX...
+2025-08-21 17:37:27,004 - UnifiedMLTradingSystem - WARNING -   ⚠️ lightgbm: Low R² = -0.575
+2025-08-21 17:37:27,316 - UnifiedMLTradingSystem - WARNING -   ⚠️ random_forest: Low R² = -0.821
+2025-08-21 17:37:27,654 - UnifiedMLTradingSystem - WARNING -   ⚠️ gradient_boosting: Low R² = -1.476
+2025-08-21 17:37:27,654 - UnifiedMLTradingSystem - WARNING - No successful models for VRTX
+2025-08-21 17:37:27,655 - UnifiedMLTradingSystem - INFO - 🤖 Training ensemble models for OKTA...
+2025-08-21 17:37:27,941 - UnifiedMLTradingSystem - WARNING -   ⚠️ lightgbm: Low R² = -1.430
+2025-08-21 17:37:28,247 - UnifiedMLTradingSystem - WARNING -   ⚠️ random_forest: Low R² = -1.786
+2025-08-21 17:37:28,589 - UnifiedMLTradingSystem - WARNING -   ⚠️ gradient_boosting: Low R² = -2.781
+2025-08-21 17:37:28,589 - UnifiedMLTradingSystem - WARNING - No successful models for OKTA
+2025-08-21 17:37:28,589 - UnifiedMLTradingSystem - INFO - 🤖 Training ensemble models for DDOG...
+2025-08-21 17:37:28,857 - UnifiedMLTradingSystem - WARNING -   ⚠️ lightgbm: Low R² = -1.022
+2025-08-21 17:37:29,156 - UnifiedMLTradingSystem - WARNING -   ⚠️ random_forest: Low R² = -0.769
+2025-08-21 17:37:29,494 - UnifiedMLTradingSystem - WARNING -   ⚠️ gradient_boosting: Low R² = -2.243
+2025-08-21 17:37:29,494 - UnifiedMLTradingSystem - WARNING - No successful models for DDOG
+2025-08-21 17:37:29,495 - UnifiedMLTradingSystem - INFO - 🤖 Training ensemble models for XOM...
+2025-08-21 17:37:29,762 - UnifiedMLTradingSystem - WARNING -   ⚠️ lightgbm: Low R² = -0.810
+2025-08-21 17:37:30,059 - UnifiedMLTradingSystem - WARNING -   ⚠️ random_forest: Low R² = -0.695
+2025-08-21 17:37:30,394 - UnifiedMLTradingSystem - WARNING -   ⚠️ gradient_boosting: Low R² = -1.479
+2025-08-21 17:37:30,394 - UnifiedMLTradingSystem - WARNING - No successful models for XOM
+2025-08-21 17:37:30,395 - UnifiedMLTradingSystem - INFO - 🤖 Training ensemble models for COST...
+2025-08-21 17:37:30,657 - UnifiedMLTradingSystem - WARNING -   ⚠️ lightgbm: Low R² = -0.177
+2025-08-21 17:37:30,979 - UnifiedMLTradingSystem - WARNING -   ⚠️ random_forest: Low R² = -0.082
+2025-08-21 17:37:31,322 - UnifiedMLTradingSystem - WARNING -   ⚠️ gradient_boosting: Low R² = -0.562
+2025-08-21 17:37:31,322 - UnifiedMLTradingSystem - WARNING - No successful models for COST
+2025-08-21 17:37:31,323 - UnifiedMLTradingSystem - INFO - 🤖 Training ensemble models for BIIB...
+2025-08-21 17:37:31,592 - UnifiedMLTradingSystem - WARNING -   ⚠️ lightgbm: Low R² = -0.567
+2025-08-21 17:37:31,895 - UnifiedMLTradingSystem - WARNING -   ⚠️ random_forest: Low R² = -0.761
+2025-08-21 17:37:32,232 - UnifiedMLTradingSystem - WARNING -   ⚠️ gradient_boosting: Low R² = -2.466
+2025-08-21 17:37:32,232 - UnifiedMLTradingSystem - WARNING - No successful models for BIIB
+2025-08-21 17:37:32,233 - UnifiedMLTradingSystem - INFO - 🤖 Training ensemble models for V...
+2025-08-21 17:37:32,507 - UnifiedMLTradingSystem - WARNING -   ⚠️ lightgbm: Low R² = -1.577
+2025-08-21 17:37:32,802 - UnifiedMLTradingSystem - WARNING -   ⚠️ random_forest: Low R² = -0.740
+2025-08-21 17:37:33,138 - UnifiedMLTradingSystem - WARNING -   ⚠️ gradient_boosting: Low R² = -1.606
+2025-08-21 17:37:33,138 - UnifiedMLTradingSystem - WARNING - No successful models for V
+2025-08-21 17:37:33,139 - UnifiedMLTradingSystem - INFO - 🤖 Training ensemble models for EOG...
+2025-08-21 17:37:33,407 - UnifiedMLTradingSystem - WARNING -   ⚠️ lightgbm: Low R² = -0.560
+2025-08-21 17:37:33,703 - UnifiedMLTradingSystem - WARNING -   ⚠️ random_forest: Low R² = -0.210
+2025-08-21 17:37:34,042 - UnifiedMLTradingSystem - WARNING -   ⚠️ gradient_boosting: Low R² = -0.474
+2025-08-21 17:37:34,042 - UnifiedMLTradingSystem - WARNING - No successful models for EOG
+2025-08-21 17:37:34,043 - UnifiedMLTradingSystem - INFO - 🤖 Training ensemble models for HD...
+2025-08-21 17:37:34,301 - UnifiedMLTradingSystem - WARNING -   ⚠️ lightgbm: Low R² = -1.051
+2025-08-21 17:37:34,594 - UnifiedMLTradingSystem - WARNING -   ⚠️ random_forest: Low R² = -0.910
+2025-08-21 17:37:34,929 - UnifiedMLTradingSystem - WARNING -   ⚠️ gradient_boosting: Low R² = -2.023
+2025-08-21 17:37:34,929 - UnifiedMLTradingSystem - WARNING - No successful models for HD
+2025-08-21 17:37:34,930 - UnifiedMLTradingSystem - INFO - 🤖 Training ensemble models for WDAY...
+2025-08-21 17:37:35,192 - UnifiedMLTradingSystem - WARNING -   ⚠️ lightgbm: Low R² = -0.609
+2025-08-21 17:37:35,502 - UnifiedMLTradingSystem - WARNING -   ⚠️ random_forest: Low R² = -1.489
+2025-08-21 17:37:35,839 - UnifiedMLTradingSystem - WARNING -   ⚠️ gradient_boosting: Low R² = -2.522
+2025-08-21 17:37:35,839 - UnifiedMLTradingSystem - WARNING - No successful models for WDAY
+2025-08-21 17:37:35,839 - UnifiedMLTradingSystem - INFO - 🤖 Training ensemble models for ZM...
+2025-08-21 17:37:36,098 - UnifiedMLTradingSystem - WARNING -   ⚠️ lightgbm: Low R² = -0.599
+2025-08-21 17:37:36,403 - UnifiedMLTradingSystem - WARNING -   ⚠️ random_forest: Low R² = -0.780
+2025-08-21 17:37:36,739 - UnifiedMLTradingSystem - WARNING -   ⚠️ gradient_boosting: Low R² = -1.477
+2025-08-21 17:37:36,739 - UnifiedMLTradingSystem - WARNING - No successful models for ZM
+2025-08-21 17:37:36,740 - UnifiedMLTradingSystem - INFO - 🤖 Training ensemble models for CVX...
+2025-08-21 17:37:37,002 - UnifiedMLTradingSystem - WARNING -   ⚠️ lightgbm: Low R² = -0.985
+2025-08-21 17:37:37,303 - UnifiedMLTradingSystem - WARNING -   ⚠️ random_forest: Low R² = -0.761
+2025-08-21 17:37:37,641 - UnifiedMLTradingSystem - WARNING -   ⚠️ gradient_boosting: Low R² = -1.446
+2025-08-21 17:37:37,641 - UnifiedMLTradingSystem - WARNING - No successful models for CVX

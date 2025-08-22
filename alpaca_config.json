@@ -1,4 +1,6 @@
 {
+  "ALPACA_API_KEY": "PKRMXTM54FQT7A54CH6W",
+  "ALPACA_SECRET_KEY": "Yoj18lZnKc6i5lPjFgb8IcHsqoEAqeXNCE4y1qtj",
   "alpaca": {
     "api_key": "PKRMXTM54FQT7A54CH6W",
     "secret_key": "Yoj18lZnKc6i5lPjFgb8IcHsqoEAqeXNCE4y1qtj",

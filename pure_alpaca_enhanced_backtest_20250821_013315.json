@@ -1,0 +1,1529 @@
+{
+  "total_return": -0.017632860225095373,
+  "final_value": 98173.02744000002,
+  "n_trades": 92,
+  "n_buy_trades": 64,
+  "n_symbols_traded": 23,
+  "n_symbols_filtered": 40,
+  "n_models_trained": 30,
+  "avg_model_accuracy": 0.6091954022988505,
+  "trades": [
+    {
+      "date": "2024-09-16",
+      "symbol": "ORCL",
+      "action": "BUY",
+      "shares": 43,
+      "price": 168.51,
+      "value": 7245.929999999999,
+      "strength": 0.6050000000000001,
+      "confidence": 0.5821013641658563,
+      "model_accuracy": 0.5747126436781609
+    },
+    {
+      "date": "2024-09-16",
+      "symbol": "RBLX",
+      "action": "BUY",
+      "shares": 145,
+      "price": 46.24,
+      "value": 6704.8,
+      "strength": 0.6050000000000001,
+      "confidence": 0.5158588111095447,
+      "model_accuracy": 0.5287356321839081
+    },
+    {
+      "date": "2024-09-16",
+      "symbol": "AMD",
+      "action": "BUY",
+      "shares": 27,
+      "price": 152.08,
+      "value": 4106.160000000001,
+      "strength": 0.4112142197839869,
+      "confidence": 0.5560710989199347,
+      "model_accuracy": 0.5747126436781609
+    },
+    {
+      "date": "2024-09-16",
+      "symbol": "COIN",
+      "action": "BUY",
+      "shares": 22,
+      "price": 161.5,
+      "value": 3553.0,
+      "strength": 0.37606422052523747,
+      "confidence": 0.6303211026261875,
+      "model_accuracy": 0.5632183908045977
+    },
+    {
+      "date": "2024-09-17",
+      "symbol": "INTC",
+      "action": "BUY",
+      "shares": 264,
+      "price": 21.47,
+      "value": 5668.08,
+      "strength": 0.6050000000000001,
+      "confidence": 0.5509820825610299,
+      "model_accuracy": 0.5977011494252874
+    },
+    {
+      "date": "2024-09-17",
+      "symbol": "ABNB",
+      "action": "BUY",
+      "shares": 43,
+      "price": 122.12,
+      "value": 5251.16,
+      "strength": 0.6050000000000001,
+      "confidence": 0.43109981124340147,
+      "model_accuracy": 0.5287356321839081
+    },
+    {
+      "date": "2024-09-17",
+      "symbol": "MSFT",
+      "action": "BUY",
+      "shares": 10,
+      "price": 432.62,
+      "value": 4326.2,
+      "strength": 0.55,
+      "confidence": 0.7617294281423834,
+      "model_accuracy": 0.632183908045977
+    },
+    {
+      "date": "2024-09-17",
+      "symbol": "AMZN",
+      "action": "BUY",
+      "shares": 22,
+      "price": 186.88,
+      "value": 4111.36,
+      "strength": 0.55,
+      "confidence": 0.8488750128179411,
+      "model_accuracy": 0.5402298850574713
+    },
+    {
+      "date": "2024-09-18",
+      "symbol": "ORCL",
+      "action": "SELL",
+      "shares": 43,
+      "price": 162.77,
+      "value": 6999.110000000001,
+      "strength": 0.4229880682738594,
+      "confidence": 0.8649403413692969
+    },
+    {
+      "date": "2024-09-18",
+      "symbol": "AMZN",
+      "action": "SELL",
+      "shares": 22,
+      "price": 186.43,
+      "value": 4101.46,
+      "strength": 0.41324815131845516,
+      "confidence": 0.8162407565922759
+    },
+    {
+      "date": "2024-09-19",
+      "symbol": "UBER",
+      "action": "BUY",
+      "shares": 74,
+      "price": 75.28,
+      "value": 5570.72,
+      "strength": 0.6643908619555386,
+      "confidence": 0.296954309777693,
+      "model_accuracy": 0.5632183908045977
+    },
+    {
+      "date": "2024-09-19",
+      "symbol": "CRWD",
+      "action": "BUY",
+      "shares": 18,
+      "price": 277.38,
+      "value": 4992.84,
+      "strength": 0.6481186691106224,
+      "confidence": 0.2155933455531116,
+      "model_accuracy": 0.5632183908045977
+    },
+    {
+      "date": "2024-09-19",
+      "symbol": "MSFT",
+      "action": "SELL",
+      "shares": 10,
+      "price": 436.14,
+      "value": 4361.4,
+      "strength": 0.3888206939825954,
+      "confidence": 0.6941034699129769
+    },
+    {
+      "date": "2024-09-20",
+      "symbol": "GOOG",
+      "action": "BUY",
+      "shares": 31,
+      "price": 164.06,
+      "value": 5085.86,
+      "strength": 0.6674556367057559,
+      "confidence": 0.31227818352877934,
+      "model_accuracy": 0.5632183908045977
+    },
+    {
+      "date": "2024-09-25",
+      "symbol": "CRWD",
+      "action": "SELL",
+      "shares": 18,
+      "price": 286.47,
+      "value": 5156.460000000001,
+      "strength": 0.3701115310748925,
+      "confidence": 0.6005576553744623
+    },
+    {
+      "date": "2024-09-26",
+      "symbol": "COIN",
+      "action": "BUY",
+      "shares": 27,
+      "price": 179.93,
+      "value": 4858.110000000001,
+      "strength": 0.6362563958916901,
+      "confidence": 0.15628197945845002,
+      "model_accuracy": 0.5632183908045977
+    },
+    {
+      "date": "2024-09-27",
+      "symbol": "COIN",
+      "action": "BUY",
+      "shares": 25,
+      "price": 191.23,
+      "value": 4780.75,
+      "strength": 0.6993383006535949,
+      "confidence": 0.4716915032679738,
+      "model_accuracy": 0.5632183908045977
+    },
+    {
+      "date": "2024-09-30",
+      "symbol": "COIN",
+      "action": "BUY",
+      "shares": 22,
+      "price": 178.17,
+      "value": 3919.74,
+      "strength": 0.6050000000000001,
+      "confidence": 0.22376034858387794,
+      "model_accuracy": 0.5632183908045977
+    },
+    {
+      "date": "2024-10-01",
+      "symbol": "RBLX",
+      "action": "SELL",
+      "shares": 145,
+      "price": 43.53,
+      "value": 6311.85,
+      "strength": 0.4187140165132982,
+      "confidence": 0.5935700825664909
+    },
+    {
+      "date": "2024-10-01",
+      "symbol": "GOOG",
+      "action": "SELL",
+      "shares": 31,
+      "price": 167.83,
+      "value": 5202.7300000000005,
+      "strength": 0.3861872012837483,
+      "confidence": 0.6809360064187415
+    },
+    {
+      "date": "2024-10-03",
+      "symbol": "INTC",
+      "action": "SELL",
+      "shares": 264,
+      "price": 22.26,
+      "value": 5876.64,
+      "strength": 0.3600495252964545,
+      "confidence": 0.5502476264822727
+    },
+    {
+      "date": "2024-10-04",
+      "symbol": "AMD",
+      "action": "BUY",
+      "shares": 28,
+      "price": 170.9,
+      "value": 4785.2,
+      "strength": 0.6050000000000001,
+      "confidence": 0.23835584512016073,
+      "model_accuracy": 0.5747126436781609
+    },
+    {
+      "date": "2024-10-04",
+      "symbol": "MS",
+      "action": "BUY",
+      "shares": 39,
+      "price": 104.74,
+      "value": 4084.8599999999997,
+      "strength": 0.55,
+      "confidence": 0.44242193719593104,
+      "model_accuracy": 0.5517241379310345
+    },
+    {
+      "date": "2024-10-04",
+      "symbol": "ABNB",
+      "action": "SELL",
+      "shares": 43,
+      "price": 129.85,
+      "value": 5583.55,
+      "strength": 0.35088061213459976,
+      "confidence": 0.5044030606729987
+    },
+    {
+      "date": "2024-10-07",
+      "symbol": "AMD",
+      "action": "BUY",
+      "shares": 24,
+      "price": 170.97,
+      "value": 4103.28,
+      "strength": 0.55,
+      "confidence": 0.520193491298637,
+      "model_accuracy": 0.5747126436781609
+    },
+    {
+      "date": "2024-10-07",
+      "symbol": "MS",
+      "action": "BUY",
+      "shares": 37,
+      "price": 104.5,
+      "value": 3866.5,
+      "strength": 0.55,
+      "confidence": 0.7252035966112989,
+      "model_accuracy": 0.5517241379310345
+    },
+    {
+      "date": "2024-10-08",
+      "symbol": "ORCL",
+      "action": "BUY",
+      "shares": 21,
+      "price": 172.51,
+      "value": 3622.71,
+      "strength": 0.55,
+      "confidence": 0.44749004557642424,
+      "model_accuracy": 0.5747126436781609
+    },
+    {
+      "date": "2024-10-08",
+      "symbol": "AMD",
+      "action": "BUY",
+      "shares": 20,
+      "price": 172.8,
+      "value": 3456.0,
+      "strength": 0.55,
+      "confidence": 0.41202520538952114,
+      "model_accuracy": 0.5747126436781609
+    },
+    {
+      "date": "2024-10-08",
+      "symbol": "MS",
+      "action": "SELL",
+      "shares": 76,
+      "price": 104.36,
+      "value": 7931.36,
+      "strength": 0.37838318507568447,
+      "confidence": 0.6419159253784221
+    },
+    {
+      "date": "2024-10-09",
+      "symbol": "ZS",
+      "action": "BUY",
+      "shares": 22,
+      "price": 185.97,
+      "value": 4091.34,
+      "strength": 0.6068694221097851,
+      "confidence": 0.009347110548925341,
+      "model_accuracy": 0.6781609195402298
+    },
+    {
+      "date": "2024-10-09",
+      "symbol": "ORCL",
+      "action": "BUY",
+      "shares": 19,
+      "price": 176.39,
+      "value": 3351.41,
+      "strength": 0.55,
+      "confidence": 0.4416193739034998,
+      "model_accuracy": 0.5747126436781609
+    },
+    {
+      "date": "2024-10-09",
+      "symbol": "PYPL",
+      "action": "BUY",
+      "shares": 40,
+      "price": 81.65,
+      "value": 3266.0,
+      "strength": 0.55,
+      "confidence": 0.6377842127842128,
+      "model_accuracy": 0.5747126436781609
+    },
+    {
+      "date": "2024-10-09",
+      "symbol": "AMD",
+      "action": "BUY",
+      "shares": 17,
+      "price": 171.02,
+      "value": 2907.34,
+      "strength": 0.55,
+      "confidence": 0.21027660047784869,
+      "model_accuracy": 0.5747126436781609
+    },
+    {
+      "date": "2024-10-10",
+      "symbol": "NET",
+      "action": "BUY",
+      "shares": 34,
+      "price": 92.46,
+      "value": 3143.64,
+      "strength": 0.6143161375161377,
+      "confidence": 0.046580687580687785,
+      "model_accuracy": 0.5632183908045977
+    },
+    {
+      "date": "2024-10-10",
+      "symbol": "CRWD",
+      "action": "BUY",
+      "shares": 9,
+      "price": 314.92,
+      "value": 2834.28,
+      "strength": 0.6050000000000001,
+      "confidence": 0.2984057761035447,
+      "model_accuracy": 0.5632183908045977
+    },
+    {
+      "date": "2024-10-14",
+      "symbol": "ORCL",
+      "action": "SELL",
+      "shares": 40,
+      "price": 174.64,
+      "value": 6985.599999999999,
+      "strength": 0.3683202510555392,
+      "confidence": 0.5916012552776961
+    },
+    {
+      "date": "2024-10-15",
+      "symbol": "COIN",
+      "action": "BUY",
+      "shares": 16,
+      "price": 196.34,
+      "value": 3141.44,
+      "strength": 0.6076049395901059,
+      "confidence": 0.013024697950529074,
+      "model_accuracy": 0.5632183908045977
+    },
+    {
+      "date": "2024-10-16",
+      "symbol": "COIN",
+      "action": "BUY",
+      "shares": 15,
+      "price": 210.48,
+      "value": 3157.2,
+      "strength": 0.6552470666498253,
+      "confidence": 0.2512353332491264,
+      "model_accuracy": 0.5632183908045977
+    },
+    {
+      "date": "2024-10-16",
+      "symbol": "AMD",
+      "action": "SELL",
+      "shares": 116,
+      "price": 156.13,
+      "value": 18111.079999999998,
+      "strength": 0.4136463738867534,
+      "confidence": 0.5682318694337669
+    },
+    {
+      "date": "2024-10-16",
+      "symbol": "ZS",
+      "action": "SELL",
+      "shares": 22,
+      "price": 191.55,
+      "value": 4214.1,
+      "strength": 0.36075322467140486,
+      "confidence": 0.5537661233570244
+    },
+    {
+      "date": "2024-10-17",
+      "symbol": "MS",
+      "action": "BUY",
+      "shares": 37,
+      "price": 115.96,
+      "value": 4290.5199999999995,
+      "strength": 0.6050000000000001,
+      "confidence": 0.22785714285714276,
+      "model_accuracy": 0.5517241379310345
+    },
+    {
+      "date": "2024-10-17",
+      "symbol": "AXP",
+      "action": "BUY",
+      "shares": 14,
+      "price": 283.42,
+      "value": 3967.88,
+      "strength": 0.6050000000000001,
+      "confidence": 0.03804783262259048,
+      "model_accuracy": 0.5747126436781609
+    },
+    {
+      "date": "2024-10-17",
+      "symbol": "COIN",
+      "action": "BUY",
+      "shares": 17,
+      "price": 204.2,
+      "value": 3471.3999999999996,
+      "strength": 0.5593701171880483,
+      "confidence": 0.04685058594024105,
+      "model_accuracy": 0.5632183908045977
+    },
+    {
+      "date": "2024-10-18",
+      "symbol": "COIN",
+      "action": "BUY",
+      "shares": 16,
+      "price": 220.21,
+      "value": 3523.36,
+      "strength": 0.6299518285545873,
+      "confidence": 0.12475914277293598,
+      "model_accuracy": 0.5632183908045977
+    },
+    {
+      "date": "2024-10-21",
+      "symbol": "COIN",
+      "action": "BUY",
+      "shares": 16,
+      "price": 213.72,
+      "value": 3419.52,
+      "strength": 0.658096839199448,
+      "confidence": 0.5404841959972395,
+      "model_accuracy": 0.5632183908045977
+    },
+    {
+      "date": "2024-10-22",
+      "symbol": "MS",
+      "action": "SELL",
+      "shares": 37,
+      "price": 114.87,
+      "value": 4250.1900000000005,
+      "strength": 0.3883628481738004,
+      "confidence": 0.691814240869002
+    },
+    {
+      "date": "2024-10-22",
+      "symbol": "COIN",
+      "action": "BUY",
+      "shares": 9,
+      "price": 210.72,
+      "value": 1896.48,
+      "strength": 0.3826116357694169,
+      "confidence": 0.6630581788470844,
+      "model_accuracy": 0.5632183908045977
+    },
+    {
+      "date": "2024-10-24",
+      "symbol": "AXP",
+      "action": "SELL",
+      "shares": 14,
+      "price": 267.75,
+      "value": 3748.5,
+      "strength": 0.3885163207746649,
+      "confidence": 0.44258160387332446
+    },
+    {
+      "date": "2024-10-25",
+      "symbol": "NET",
+      "action": "SELL",
+      "shares": 34,
+      "price": 88.76,
+      "value": 3017.84,
+      "strength": 0.3779936462051171,
+      "confidence": 0.6399682310255854
+    },
+    {
+      "date": "2024-10-28",
+      "symbol": "TSLA",
+      "action": "BUY",
+      "shares": 12,
+      "price": 262.51,
+      "value": 3150.12,
+      "strength": 0.55,
+      "confidence": 0.7112260396063781,
+      "model_accuracy": 0.5287356321839081
+    },
+    {
+      "date": "2024-10-28",
+      "symbol": "JPM",
+      "action": "BUY",
+      "shares": 9,
+      "price": 221.8,
+      "value": 1996.2,
+      "strength": 0.35848826426628944,
+      "confidence": 0.2924413213314472,
+      "model_accuracy": 0.632183908045977
+    },
+    {
+      "date": "2024-10-29",
+      "symbol": "COIN",
+      "action": "BUY",
+      "shares": 15,
+      "price": 219.66,
+      "value": 3294.9,
+      "strength": 0.6085661052257755,
+      "confidence": 0.29283052612887706,
+      "model_accuracy": 0.5632183908045977
+    },
+    {
+      "date": "2024-10-29",
+      "symbol": "TSLA",
+      "action": "BUY",
+      "shares": 10,
+      "price": 259.52,
+      "value": 2595.2,
+      "strength": 0.55,
+      "confidence": 0.8675100364806557,
+      "model_accuracy": 0.5287356321839081
+    },
+    {
+      "date": "2024-10-30",
+      "symbol": "ABBV",
+      "action": "BUY",
+      "shares": 14,
+      "price": 196.03,
+      "value": 2744.42,
+      "strength": 0.6185950310559007,
+      "confidence": 0.06797515527950315,
+      "model_accuracy": 0.735632183908046
+    },
+    {
+      "date": "2024-10-30",
+      "symbol": "GOOG",
+      "action": "BUY",
+      "shares": 15,
+      "price": 175.52,
+      "value": 2632.8,
+      "strength": 0.6050000000000001,
+      "confidence": 0.21430786267995572,
+      "model_accuracy": 0.5632183908045977
+    },
+    {
+      "date": "2024-10-31",
+      "symbol": "UBER",
+      "action": "SELL",
+      "shares": 74,
+      "price": 72.05,
+      "value": 5331.7,
+      "strength": 0.6155112781954888,
+      "confidence": 0.05255639097744369
+    },
+    {
+      "date": "2024-10-31",
+      "symbol": "COIN",
+      "action": "SELL",
+      "shares": 200,
+      "price": 179.25,
+      "value": 35850.0,
+      "strength": 0.3942319019915659,
+      "confidence": 0.5961595099578293
+    },
+    {
+      "date": "2024-10-31",
+      "symbol": "GOOG",
+      "action": "SELL",
+      "shares": 15,
+      "price": 172.09,
+      "value": 2581.35,
+      "strength": 0.35613517185712273,
+      "confidence": 0.40567585928561345
+    },
+    {
+      "date": "2024-10-31",
+      "symbol": "TSLA",
+      "action": "SELL",
+      "shares": 22,
+      "price": 249.85,
+      "value": 5496.7,
+      "strength": 0.3530627914581572,
+      "confidence": 0.5153139572907861
+    },
+    {
+      "date": "2024-11-01",
+      "symbol": "RBLX",
+      "action": "BUY",
+      "shares": 117,
+      "price": 51.44,
+      "value": 6018.48,
+      "strength": 0.6050000000000001,
+      "confidence": 0.9122556390977443,
+      "model_accuracy": 0.5287356321839081
+    },
+    {
+      "date": "2024-11-01",
+      "symbol": "ABBV",
+      "action": "BUY",
+      "shares": 25,
+      "price": 198.02,
+      "value": 4950.5,
+      "strength": 0.55,
+      "confidence": 0.04918918918918924,
+      "model_accuracy": 0.735632183908046
+    },
+    {
+      "date": "2024-11-04",
+      "symbol": "RBLX",
+      "action": "BUY",
+      "shares": 104,
+      "price": 50.0,
+      "value": 5200.0,
+      "strength": 0.6050000000000001,
+      "confidence": 0.8357142857142857,
+      "model_accuracy": 0.5287356321839081
+    },
+    {
+      "date": "2024-11-04",
+      "symbol": "ABBV",
+      "action": "BUY",
+      "shares": 22,
+      "price": 195.03,
+      "value": 4290.66,
+      "strength": 0.55,
+      "confidence": 0.3923058778979083,
+      "model_accuracy": 0.735632183908046
+    },
+    {
+      "date": "2024-11-04",
+      "symbol": "PYPL",
+      "action": "SELL",
+      "shares": 40,
+      "price": 78.13,
+      "value": 3125.2,
+      "strength": 0.3559067414558076,
+      "confidence": 0.27953370727903804
+    },
+    {
+      "date": "2024-11-05",
+      "symbol": "AMZN",
+      "action": "BUY",
+      "shares": 21,
+      "price": 199.5,
+      "value": 4189.5,
+      "strength": 0.55,
+      "confidence": 0.909365440704815,
+      "model_accuracy": 0.5402298850574713
+    },
+    {
+      "date": "2024-11-05",
+      "symbol": "RBLX",
+      "action": "BUY",
+      "shares": 79,
+      "price": 51.18,
+      "value": 4043.22,
+      "strength": 0.55,
+      "confidence": 0.9893984962406015,
+      "model_accuracy": 0.5287356321839081
+    },
+    {
+      "date": "2024-11-05",
+      "symbol": "JPM",
+      "action": "SELL",
+      "shares": 9,
+      "price": 217.86,
+      "value": 1960.7400000000002,
+      "strength": 0.3873115051658835,
+      "confidence": 0.4365575258294174
+    },
+    {
+      "date": "2024-11-06",
+      "symbol": "AXP",
+      "action": "BUY",
+      "shares": 17,
+      "price": 292.72,
+      "value": 4976.240000000001,
+      "strength": 0.7191609040841143,
+      "confidence": 0.5708045204205705,
+      "model_accuracy": 0.5747126436781609
+    },
+    {
+      "date": "2024-11-06",
+      "symbol": "AMZN",
+      "action": "BUY",
+      "shares": 19,
+      "price": 207.09,
+      "value": 3934.71,
+      "strength": 0.6050000000000001,
+      "confidence": 0.6819236412061012,
+      "model_accuracy": 0.5402298850574713
+    },
+    {
+      "date": "2024-11-06",
+      "symbol": "TSLA",
+      "action": "BUY",
+      "shares": 12,
+      "price": 288.53,
+      "value": 3462.3599999999997,
+      "strength": 0.6050000000000001,
+      "confidence": 0.6892652552926526,
+      "model_accuracy": 0.5287356321839081
+    },
+    {
+      "date": "2024-11-06",
+      "symbol": "INTC",
+      "action": "BUY",
+      "shares": 136,
+      "price": 25.05,
+      "value": 3406.8,
+      "strength": 0.6050000000000001,
+      "confidence": 0.1717171717171717,
+      "model_accuracy": 0.5977011494252874
+    },
+    {
+      "date": "2024-11-07",
+      "symbol": "ZS",
+      "action": "BUY",
+      "shares": 17,
+      "price": 196.71,
+      "value": 3344.07,
+      "strength": 0.6690186508522428,
+      "confidence": 0.3200932542612134,
+      "model_accuracy": 0.6781609195402298
+    },
+    {
+      "date": "2024-11-07",
+      "symbol": "RBLX",
+      "action": "SELL",
+      "shares": 300,
+      "price": 53.11,
+      "value": 15933.0,
+      "strength": 0.4471524265208476,
+      "confidence": 0.9857621326042378
+    },
+    {
+      "date": "2024-11-08",
+      "symbol": "TSLA",
+      "action": "BUY",
+      "shares": 12,
+      "price": 321.22,
+      "value": 3854.6400000000003,
+      "strength": 0.6050000000000001,
+      "confidence": 0.6492652552926526,
+      "model_accuracy": 0.5287356321839081
+    },
+    {
+      "date": "2024-11-11",
+      "symbol": "TSLA",
+      "action": "BUY",
+      "shares": 10,
+      "price": 350.0,
+      "value": 3500.0,
+      "strength": 0.6050000000000001,
+      "confidence": 0.691689497716895,
+      "model_accuracy": 0.5287356321839081
+    },
+    {
+      "date": "2024-11-11",
+      "symbol": "ABBV",
+      "action": "SELL",
+      "shares": 61,
+      "price": 169.7,
+      "value": 10351.699999999999,
+      "strength": 0.3807688202416309,
+      "confidence": 0.5288441012081544
+    },
+    {
+      "date": "2024-11-12",
+      "symbol": "ZS",
+      "action": "BUY",
+      "shares": 21,
+      "price": 209.04,
+      "value": 4389.84,
+      "strength": 0.6216521327324958,
+      "confidence": 0.08326066366247842,
+      "model_accuracy": 0.6781609195402298
+    },
+    {
+      "date": "2024-11-12",
+      "symbol": "TSLA",
+      "action": "BUY",
+      "shares": 12,
+      "price": 328.49,
+      "value": 3941.88,
+      "strength": 0.6050000000000001,
+      "confidence": 0.78585880796796,
+      "model_accuracy": 0.5287356321839081
+    },
+    {
+      "date": "2024-11-13",
+      "symbol": "SNOW",
+      "action": "BUY",
+      "shares": 30,
+      "price": 130.73,
+      "value": 3921.8999999999996,
+      "strength": 0.6509511225011909,
+      "confidence": 0.2297556125059539,
+      "model_accuracy": 0.5402298850574713
+    },
+    {
+      "date": "2024-11-13",
+      "symbol": "CRWD",
+      "action": "BUY",
+      "shares": 9,
+      "price": 347.88,
+      "value": 3130.92,
+      "strength": 0.6050000000000001,
+      "confidence": 0.4869583343961651,
+      "model_accuracy": 0.5632183908045977
+    },
+    {
+      "date": "2024-11-14",
+      "symbol": "SHOP",
+      "action": "BUY",
+      "shares": 29,
+      "price": 109.08,
+      "value": 3163.32,
+      "strength": 0.6050000000000001,
+      "confidence": 0.2424974200206398,
+      "model_accuracy": 0.5862068965517241
+    },
+    {
+      "date": "2024-11-15",
+      "symbol": "TSLA",
+      "action": "SELL",
+      "shares": 46,
+      "price": 320.72,
+      "value": 14753.12,
+      "strength": 0.39287753136983283,
+      "confidence": 0.714387656849164
+    },
+    {
+      "date": "2024-11-18",
+      "symbol": "CRWD",
+      "action": "SELL",
+      "shares": 18,
+      "price": 342.97,
+      "value": 6173.460000000001,
+      "strength": 0.3603729514199884,
+      "confidence": 0.5518647570999418
+    },
+    {
+      "date": "2024-11-19",
+      "symbol": "SNOW",
+      "action": "BUY",
+      "shares": 33,
+      "price": 130.24,
+      "value": 4297.92,
+      "strength": 0.5855535439341144,
+      "confidence": 0.1777677196705716,
+      "model_accuracy": 0.5402298850574713
+    },
+    {
+      "date": "2024-11-19",
+      "symbol": "TSLA",
+      "action": "BUY",
+      "shares": 10,
+      "price": 346.0,
+      "value": 3460.0,
+      "strength": 0.55,
+      "confidence": 0.7800049446595512,
+      "model_accuracy": 0.5287356321839081
+    },
+    {
+      "date": "2024-11-20",
+      "symbol": "COIN",
+      "action": "BUY",
+      "shares": 11,
+      "price": 320.01,
+      "value": 3520.1099999999997,
+      "strength": 0.569512712215321,
+      "confidence": 0.09756356107660458,
+      "model_accuracy": 0.5632183908045977
+    },
+    {
+      "date": "2024-11-25",
+      "symbol": "TSLA",
+      "action": "SELL",
+      "shares": 10,
+      "price": 338.59,
+      "value": 3385.8999999999996,
+      "strength": 0.3878664943182901,
+      "confidence": 0.6893324715914504
+    },
+    {
+      "date": "2024-11-26",
+      "symbol": "NET",
+      "action": "BUY",
+      "shares": 39,
+      "price": 102.23,
+      "value": 3986.9700000000003,
+      "strength": 0.6319988437721772,
+      "confidence": 0.4099942188608856,
+      "model_accuracy": 0.5632183908045977
+    },
+    {
+      "date": "2024-12-02",
+      "symbol": "SHOP",
+      "action": "SELL",
+      "shares": 29,
+      "price": 112.98,
+      "value": 3276.42,
+      "strength": 0.39703081232493,
+      "confidence": 0.7351540616246499
+    },
+    {
+      "date": "2024-12-02",
+      "symbol": "INTC",
+      "action": "SELL",
+      "shares": 136,
+      "price": 23.93,
+      "value": 3254.48,
+      "strength": 0.3755840868411352,
+      "confidence": 0.22792043420567576
+    },
+    {
+      "date": "2024-12-03",
+      "symbol": "OKTA",
+      "action": "BUY",
+      "shares": 49,
+      "price": 81.71,
+      "value": 4003.7899999999995,
+      "strength": 0.6050000000000001,
+      "confidence": 0.43026759906759904,
+      "model_accuracy": 0.5517241379310345
+    },
+    {
+      "date": "2024-12-03",
+      "symbol": "AAPL",
+      "action": "BUY",
+      "shares": 14,
+      "price": 241.81,
+      "value": 3385.34,
+      "strength": 0.55,
+      "confidence": 0.6274509803921569,
+      "model_accuracy": 0.6206896551724138
+    }
+  ],
+  "daily_performance": [
+    {
+      "date": "2024-09-16",
+      "portfolio_value": 99935.17033000001,
+      "cash": 78325.28033000001,
+      "n_positions": 4
+    },
+    {
+      "date": "2024-09-17",
+      "portfolio_value": 99669.78993000001,
+      "cash": 58910.40993000001,
+      "n_positions": 8
+    },
+    {
+      "date": "2024-09-18",
+      "portfolio_value": 99155.62822000003,
+      "cash": 69977.67822000002,
+      "n_positions": 6
+    },
+    {
+      "date": "2024-09-19",
+      "portfolio_value": 100058.27334000001,
+      "cash": 63730.743340000015,
+      "n_positions": 7
+    },
+    {
+      "date": "2024-09-20",
+      "portfolio_value": 100617.82576,
+      "cash": 58629.62576000002,
+      "n_positions": 8
+    },
+    {
+      "date": "2024-09-23",
+      "portfolio_value": 100555.25576,
+      "cash": 58629.62576000002,
+      "n_positions": 8
+    },
+    {
+      "date": "2024-09-24",
+      "portfolio_value": 101167.10576000002,
+      "cash": 58629.62576000002,
+      "n_positions": 8
+    },
+    {
+      "date": "2024-09-25",
+      "portfolio_value": 101307.18638000001,
+      "cash": 63770.61638000002,
+      "n_positions": 7
+    },
+    {
+      "date": "2024-09-26",
+      "portfolio_value": 101351.63205000001,
+      "cash": 58897.93205000002,
+      "n_positions": 7
+    },
+    {
+      "date": "2024-09-27",
+      "portfolio_value": 101635.90980000001,
+      "cash": 54102.839800000016,
+      "n_positions": 7
+    },
+    {
+      "date": "2024-09-30",
+      "portfolio_value": 100496.54058000002,
+      "cash": 50171.34058000002,
+      "n_positions": 7
+    },
+    {
+      "date": "2024-10-01",
+      "portfolio_value": 98684.71684000001,
+      "cash": 61651.37684000001,
+      "n_positions": 5
+    },
+    {
+      "date": "2024-10-02",
+      "portfolio_value": 98483.63684000002,
+      "cash": 61651.37684000001,
+      "n_positions": 5
+    },
+    {
+      "date": "2024-10-03",
+      "portfolio_value": 98349.96692,
+      "cash": 67510.38692000002,
+      "n_positions": 4
+    },
+    {
+      "date": "2024-10-04",
+      "portfolio_value": 99568.95609000002,
+      "cash": 64180.51609000002,
+      "n_positions": 4
+    },
+    {
+      "date": "2024-10-07",
+      "portfolio_value": 99371.43675000002,
+      "cash": 56186.82675000002,
+      "n_positions": 4
+    },
+    {
+      "date": "2024-10-08",
+      "portfolio_value": 99459.17654000003,
+      "cash": 56994.44654000002,
+      "n_positions": 4
+    },
+    {
+      "date": "2024-10-09",
+      "portfolio_value": 99380.26827000002,
+      "cash": 43337.50827000002,
+      "n_positions": 6
+    },
+    {
+      "date": "2024-10-10",
+      "portfolio_value": 98317.85451000002,
+      "cash": 37341.65451000002,
+      "n_positions": 8
+    },
+    {
+      "date": "2024-10-11",
+      "portfolio_value": 100752.12451000001,
+      "cash": 37341.65451000002,
+      "n_positions": 8
+    },
+    {
+      "date": "2024-10-14",
+      "portfolio_value": 102150.03771000002,
+      "cash": 44306.29771000002,
+      "n_positions": 7
+    },
+    {
+      "date": "2024-10-15",
+      "portfolio_value": 100858.06339000002,
+      "cash": 41155.43339000002,
+      "n_positions": 7
+    },
+    {
+      "date": "2024-10-16",
+      "portfolio_value": 102133.04625000003,
+      "cash": 60246.96625000001,
+      "n_positions": 5
+    },
+    {
+      "date": "2024-10-17",
+      "portfolio_value": 101117.23685000003,
+      "cash": 48481.976850000014,
+      "n_positions": 7
+    },
+    {
+      "date": "2024-10-18",
+      "portfolio_value": 103347.24677000003,
+      "cash": 44948.046770000015,
+      "n_positions": 7
+    },
+    {
+      "date": "2024-10-21",
+      "portfolio_value": 102188.24821,
+      "cash": 41518.26821000002,
+      "n_positions": 7
+    },
+    {
+      "date": "2024-10-22",
+      "portfolio_value": 101589.80820000001,
+      "cash": 43853.53820000002,
+      "n_positions": 6
+    },
+    {
+      "date": "2024-10-23",
+      "portfolio_value": 99235.52820000002,
+      "cash": 43853.53820000002,
+      "n_positions": 6
+    },
+    {
+      "date": "2024-10-24",
+      "portfolio_value": 101126.72270000003,
+      "cash": 47590.79270000002,
+      "n_positions": 5
+    },
+    {
+      "date": "2024-10-25",
+      "portfolio_value": 100249.43918000003,
+      "cash": 50599.57918000002,
+      "n_positions": 4
+    },
+    {
+      "date": "2024-10-28",
+      "portfolio_value": 102367.18022000002,
+      "cash": 45437.82022000002,
+      "n_positions": 6
+    },
+    {
+      "date": "2024-10-29",
+      "portfolio_value": 103015.93992000002,
+      "cash": 39530.04992000003,
+      "n_positions": 6
+    },
+    {
+      "date": "2024-10-30",
+      "portfolio_value": 101288.25826000006,
+      "cash": 34136.69826000003,
+      "n_positions": 8
+    },
+    {
+      "date": "2024-10-31",
+      "portfolio_value": 93833.77901000003,
+      "cash": 83248.66901000003,
+      "n_positions": 4
+    },
+    {
+      "date": "2024-11-01",
+      "portfolio_value": 93779.73207000003,
+      "cash": 72246.78207000003,
+      "n_positions": 5
+    },
+    {
+      "date": "2024-11-04",
+      "portfolio_value": 93425.84449000002,
+      "cash": 65843.47449000002,
+      "n_positions": 4
+    },
+    {
+      "date": "2024-11-05",
+      "portfolio_value": 93821.44411000001,
+      "cash": 59540.91411000002,
+      "n_positions": 4
+    },
+    {
+      "date": "2024-11-06",
+      "portfolio_value": 94532.60378000002,
+      "cash": 43713.46378000001,
+      "n_positions": 7
+    },
+    {
+      "date": "2024-11-07",
+      "portfolio_value": 94832.77257000002,
+      "cash": 56244.56257000002,
+      "n_positions": 7
+    },
+    {
+      "date": "2024-11-08",
+      "portfolio_value": 94963.33865000003,
+      "cash": 52378.35865000002,
+      "n_positions": 7
+    },
+    {
+      "date": "2024-11-11",
+      "portfolio_value": 94182.21355000001,
+      "cash": 59188.503550000016,
+      "n_positions": 6
+    },
+    {
+      "date": "2024-11-12",
+      "portfolio_value": 93483.54839000001,
+      "cash": 50831.788390000016,
+      "n_positions": 6
+    },
+    {
+      "date": "2024-11-13",
+      "portfolio_value": 93909.42993000001,
+      "cash": 43757.80993000002,
+      "n_positions": 7
+    },
+    {
+      "date": "2024-11-14",
+      "portfolio_value": 92786.09997000002,
+      "cash": 40584.99997000002,
+      "n_positions": 8
+    },
+    {
+      "date": "2024-11-15",
+      "portfolio_value": 92188.73061000003,
+      "cash": 55293.86061000002,
+      "n_positions": 7
+    },
+    {
+      "date": "2024-11-18",
+      "portfolio_value": 92310.82023000001,
+      "cash": 61448.80023000002,
+      "n_positions": 6
+    },
+    {
+      "date": "2024-11-19",
+      "portfolio_value": 92421.34647000002,
+      "cash": 53667.60647000003,
+      "n_positions": 7
+    },
+    {
+      "date": "2024-11-20",
+      "portfolio_value": 92093.05614000002,
+      "cash": 50136.93614000003,
+      "n_positions": 8
+    },
+    {
+      "date": "2024-11-21",
+      "portfolio_value": 94740.13614000002,
+      "cash": 50136.93614000003,
+      "n_positions": 8
+    },
+    {
+      "date": "2024-11-22",
+      "portfolio_value": 94977.18614000003,
+      "cash": 50136.93614000003,
+      "n_positions": 8
+    },
+    {
+      "date": "2024-11-25",
+      "portfolio_value": 95547.56844000003,
+      "cash": 53512.678440000025,
+      "n_positions": 7
+    },
+    {
+      "date": "2024-11-26",
+      "portfolio_value": 95496.14753000003,
+      "cash": 49513.74753000002,
+      "n_positions": 8
+    },
+    {
+      "date": "2024-11-27",
+      "portfolio_value": 95380.60753000004,
+      "cash": 49513.74753000002,
+      "n_positions": 8
+    },
+    {
+      "date": "2024-11-28",
+      "portfolio_value": 95380.60753000004,
+      "cash": 49513.74753000002,
+      "n_positions": 8
+    },
+    {
+      "date": "2024-11-29",
+      "portfolio_value": 95603.65753000003,
+      "cash": 49513.74753000002,
+      "n_positions": 8
+    },
+    {
+      "date": "2024-12-02",
+      "portfolio_value": 95758.56483000002,
+      "cash": 56025.05483000002,
+      "n_positions": 6
+    },
+    {
+      "date": "2024-12-03",
+      "portfolio_value": 95760.73744000001,
+      "cash": 48613.75744000002,
+      "n_positions": 8
+    },
+    {
+      "date": "2024-12-04",
+      "portfolio_value": 97601.85744000004,
+      "cash": 48613.75744000002,
+      "n_positions": 8
+    },
+    {
+      "date": "2024-12-05",
+      "portfolio_value": 97165.64244000003,
+      "cash": 48613.75744000002,
+      "n_positions": 8
+    },
+    {
+      "date": "2024-12-06",
+      "portfolio_value": 98173.02744000002,
+      "cash": 48613.75744000002,
+      "n_positions": 8
+    }
+  ],
+  "model_stats": [
+    {
+      "symbol": "AAPL",
+      "accuracy": 0.6206896551724138,
+      "n_validations": 1
+    },
+    {
+      "symbol": "MSFT",
+      "accuracy": 0.632183908045977,
+      "n_validations": 1
+    },
+    {
+      "symbol": "GOOG",
+      "accuracy": 0.5632183908045977,
+      "n_validations": 1
+    },
+    {
+      "symbol": "AMZN",
+      "accuracy": 0.5402298850574713,
+      "n_validations": 1
+    },
+    {
+      "symbol": "TSLA",
+      "accuracy": 0.5287356321839081,
+      "n_validations": 1
+    },
+    {
+      "symbol": "ORCL",
+      "accuracy": 0.5747126436781609,
+      "n_validations": 1
+    },
+    {
+      "symbol": "PYPL",
+      "accuracy": 0.5747126436781609,
+      "n_validations": 1
+    },
+    {
+      "symbol": "INTC",
+      "accuracy": 0.5977011494252874,
+      "n_validations": 1
+    },
+    {
+      "symbol": "AMD",
+      "accuracy": 0.5747126436781609,
+      "n_validations": 1
+    },
+    {
+      "symbol": "QCOM",
+      "accuracy": 0.7126436781609196,
+      "n_validations": 1
+    },
+    {
+      "symbol": "SNOW",
+      "accuracy": 0.5402298850574713,
+      "n_validations": 1
+    },
+    {
+      "symbol": "COIN",
+      "accuracy": 0.5632183908045977,
+      "n_validations": 1
+    },
+    {
+      "symbol": "RBLX",
+      "accuracy": 0.5287356321839081,
+      "n_validations": 1
+    },
+    {
+      "symbol": "NET",
+      "accuracy": 0.5632183908045977,
+      "n_validations": 1
+    },
+    {
+      "symbol": "CRWD",
+      "accuracy": 0.5632183908045977,
+      "n_validations": 1
+    },
+    {
+      "symbol": "ZS",
+      "accuracy": 0.6781609195402298,
+      "n_validations": 1
+    },
+    {
+      "symbol": "OKTA",
+      "accuracy": 0.5517241379310345,
+      "n_validations": 1
+    },
+    {
+      "symbol": "SHOP",
+      "accuracy": 0.5862068965517241,
+      "n_validations": 1
+    },
+    {
+      "symbol": "UBER",
+      "accuracy": 0.5632183908045977,
+      "n_validations": 1
+    },
+    {
+      "symbol": "ABNB",
+      "accuracy": 0.5287356321839081,
+      "n_validations": 1
+    },
+    {
+      "symbol": "JPM",
+      "accuracy": 0.632183908045977,
+      "n_validations": 1
+    },
+    {
+      "symbol": "BAC",
+      "accuracy": 0.5517241379310345,
+      "n_validations": 1
+    },
+    {
+      "symbol": "C",
+      "accuracy": 0.6206896551724138,
+      "n_validations": 1
+    },
+    {
+      "symbol": "MS",
+      "accuracy": 0.5517241379310345,
+      "n_validations": 1
+    },
+    {
+      "symbol": "V",
+      "accuracy": 0.6206896551724138,
+      "n_validations": 1
+    },
+    {
+      "symbol": "AXP",
+      "accuracy": 0.5747126436781609,
+      "n_validations": 1
+    },
+    {
+      "symbol": "PFE",
+      "accuracy": 0.8390804597701149,
+      "n_validations": 1
+    },
+    {
+      "symbol": "ABBV",
+      "accuracy": 0.735632183908046,
+      "n_validations": 1
+    },
+    {
+      "symbol": "DHR",
+      "accuracy": 0.8505747126436781,
+      "n_validations": 1
+    },
+    {
+      "symbol": "ABT",
+      "accuracy": 0.7126436781609196,
+      "n_validations": 1
+    }
+  ],
+  "config": {
+    "min_data_days": 200,
+    "min_avg_volume": 1000000,
+    "min_price": 5.0,
+    "max_price": 500.0,
+    "min_volatility": 0.008,
+    "max_volatility": 0.15,
+    "min_model_accuracy": 0.52,
+    "min_training_samples": 100,
+    "accuracy_lookback_days": 30,
+    "retrain_frequency": 5,
+    "signal_threshold": 0.35,
+    "max_position_size": 0.12,
+    "max_positions": 8,
+    "stop_loss_pct": 0.08,
+    "take_profit_pct": 0.25
+  },
+  "simulation_days": 60,
+  "data_source": "Pure Alpaca"
+}

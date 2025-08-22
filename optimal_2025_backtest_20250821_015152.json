@@ -1,0 +1,1689 @@
+{
+  "total_return": -0.9943526999999999,
+  "final_value": 564.7300000000093,
+  "n_trades": 111,
+  "n_buy_trades": 83,
+  "n_symbols_traded": 10,
+  "n_symbols_filtered": 42,
+  "n_models_trained": 11,
+  "avg_model_accuracy": 0.5939393939393939,
+  "model_stats": [
+    {
+      "symbol": "GOOGL",
+      "accuracy": 0.5666666666666667
+    },
+    {
+      "symbol": "GOOG",
+      "accuracy": 0.6
+    },
+    {
+      "symbol": "PYPL",
+      "accuracy": 0.6
+    },
+    {
+      "symbol": "COIN",
+      "accuracy": 0.6
+    },
+    {
+      "symbol": "SHOP",
+      "accuracy": 0.7
+    },
+    {
+      "symbol": "DASH",
+      "accuracy": 0.5333333333333333
+    },
+    {
+      "symbol": "WFC",
+      "accuracy": 0.5333333333333333
+    },
+    {
+      "symbol": "C",
+      "accuracy": 0.5333333333333333
+    },
+    {
+      "symbol": "MS",
+      "accuracy": 0.5333333333333333
+    },
+    {
+      "symbol": "MA",
+      "accuracy": 0.6
+    },
+    {
+      "symbol": "ABT",
+      "accuracy": 0.7333333333333333
+    }
+  ],
+  "trades": [
+    {
+      "date": "2025-06-02",
+      "symbol": "GOOG",
+      "action": "BUY",
+      "shares": 70,
+      "price": 170.37,
+      "value": 11925.9,
+      "strength": 0.74,
+      "confidence": 0.74,
+      "model_accuracy": 0.6
+    },
+    {
+      "date": "2025-06-02",
+      "symbol": "ABT",
+      "action": "BUY",
+      "shares": 79,
+      "price": 133.57,
+      "value": 10552.029999999999,
+      "strength": 0.54,
+      "confidence": 0.54,
+      "model_accuracy": 0.7333333333333333
+    },
+    {
+      "date": "2025-06-02",
+      "symbol": "GOOGL",
+      "action": "BUY",
+      "shares": 55,
+      "price": 169.03,
+      "value": 9296.65,
+      "strength": 0.68,
+      "confidence": 0.68,
+      "model_accuracy": 0.5666666666666667
+    },
+    {
+      "date": "2025-06-02",
+      "symbol": "PYPL",
+      "action": "BUY",
+      "shares": 115,
+      "price": 70.93,
+      "value": 8156.950000000001,
+      "strength": 0.62,
+      "confidence": 0.62,
+      "model_accuracy": 0.6
+    },
+    {
+      "date": "2025-06-02",
+      "symbol": "C",
+      "action": "BUY",
+      "shares": 95,
+      "price": 75.8,
+      "value": 7201.0,
+      "strength": 0.67,
+      "confidence": 0.67,
+      "model_accuracy": 0.5333333333333333
+    },
+    {
+      "date": "2025-06-02",
+      "symbol": "COIN",
+      "action": "BUY",
+      "shares": 25,
+      "price": 246.72,
+      "value": 6168.0,
+      "strength": 0.52,
+      "confidence": 0.52,
+      "model_accuracy": 0.6
+    },
+    {
+      "date": "2025-06-02",
+      "symbol": "DASH",
+      "action": "BUY",
+      "shares": 26,
+      "price": 212.79,
+      "value": 5532.54,
+      "strength": 0.51,
+      "confidence": 0.51,
+      "model_accuracy": 0.5333333333333333
+    },
+    {
+      "date": "2025-06-03",
+      "symbol": "DASH",
+      "action": "SELL",
+      "shares": 26,
+      "price": 213.7,
+      "value": 5556.2,
+      "strength": 0.5,
+      "confidence": 0.5,
+      "model_accuracy": 0.5333333333333333
+    },
+    {
+      "date": "2025-06-03",
+      "symbol": "GOOG",
+      "action": "BUY",
+      "shares": 33,
+      "price": 167.71,
+      "value": 5534.43,
+      "strength": 0.78,
+      "confidence": 0.78,
+      "model_accuracy": 0.6
+    },
+    {
+      "date": "2025-06-03",
+      "symbol": "C",
+      "action": "BUY",
+      "shares": 64,
+      "price": 76.53,
+      "value": 4897.92,
+      "strength": 0.79,
+      "confidence": 0.79,
+      "model_accuracy": 0.5333333333333333
+    },
+    {
+      "date": "2025-06-04",
+      "symbol": "PYPL",
+      "action": "SELL",
+      "shares": 115,
+      "price": 72.8,
+      "value": 8372.0,
+      "strength": 0.53,
+      "confidence": 0.53,
+      "model_accuracy": 0.6
+    },
+    {
+      "date": "2025-06-04",
+      "symbol": "GOOG",
+      "action": "BUY",
+      "shares": 31,
+      "price": 169.39,
+      "value": 5251.089999999999,
+      "strength": 0.73,
+      "confidence": 0.73,
+      "model_accuracy": 0.6
+    },
+    {
+      "date": "2025-06-04",
+      "symbol": "GOOGL",
+      "action": "BUY",
+      "shares": 28,
+      "price": 168.05,
+      "value": 4705.400000000001,
+      "strength": 0.74,
+      "confidence": 0.74,
+      "model_accuracy": 0.5666666666666667
+    },
+    {
+      "date": "2025-06-04",
+      "symbol": "SHOP",
+      "action": "BUY",
+      "shares": 40,
+      "price": 103.58,
+      "value": 4143.2,
+      "strength": 0.58,
+      "confidence": 0.58,
+      "model_accuracy": 0.7
+    },
+    {
+      "date": "2025-06-05",
+      "symbol": "ABT",
+      "action": "SELL",
+      "shares": 79,
+      "price": 133.94,
+      "value": 10581.26,
+      "strength": 0.56,
+      "confidence": 0.56,
+      "model_accuracy": 0.7333333333333333
+    },
+    {
+      "date": "2025-06-05",
+      "symbol": "GOOG",
+      "action": "BUY",
+      "shares": 29,
+      "price": 169.81,
+      "value": 4924.49,
+      "strength": 0.78,
+      "confidence": 0.78,
+      "model_accuracy": 0.6
+    },
+    {
+      "date": "2025-06-05",
+      "symbol": "SHOP",
+      "action": "BUY",
+      "shares": 41,
+      "price": 105.03,
+      "value": 4306.2300000000005,
+      "strength": 0.66,
+      "confidence": 0.66,
+      "model_accuracy": 0.7
+    },
+    {
+      "date": "2025-06-05",
+      "symbol": "GOOGL",
+      "action": "BUY",
+      "shares": 22,
+      "price": 168.21,
+      "value": 3700.6200000000003,
+      "strength": 0.69,
+      "confidence": 0.69,
+      "model_accuracy": 0.5666666666666667
+    },
+    {
+      "date": "2025-06-06",
+      "symbol": "COIN",
+      "action": "SELL",
+      "shares": 25,
+      "price": 251.27,
+      "value": 6281.75,
+      "strength": 0.57,
+      "confidence": 0.57,
+      "model_accuracy": 0.6
+    },
+    {
+      "date": "2025-06-06",
+      "symbol": "SHOP",
+      "action": "SELL",
+      "shares": 41,
+      "price": 111.41,
+      "value": 4567.8099999999995,
+      "strength": 0.56,
+      "confidence": 0.56,
+      "model_accuracy": 0.7
+    },
+    {
+      "date": "2025-06-06",
+      "symbol": "GOOG",
+      "action": "BUY",
+      "shares": 26,
+      "price": 174.92,
+      "value": 4547.92,
+      "strength": 0.85,
+      "confidence": 0.85,
+      "model_accuracy": 0.6
+    },
+    {
+      "date": "2025-06-06",
+      "symbol": "PYPL",
+      "action": "BUY",
+      "shares": 56,
+      "price": 73.43,
+      "value": 4112.08,
+      "strength": 0.65,
+      "confidence": 0.65,
+      "model_accuracy": 0.6
+    },
+    {
+      "date": "2025-06-06",
+      "symbol": "GOOGL",
+      "action": "BUY",
+      "shares": 21,
+      "price": 173.68,
+      "value": 3647.28,
+      "strength": 0.66,
+      "confidence": 0.66,
+      "model_accuracy": 0.5666666666666667
+    },
+    {
+      "date": "2025-06-06",
+      "symbol": "C",
+      "action": "BUY",
+      "shares": 41,
+      "price": 78.26,
+      "value": 3208.6600000000003,
+      "strength": 0.66,
+      "confidence": 0.66,
+      "model_accuracy": 0.5333333333333333
+    },
+    {
+      "date": "2025-06-09",
+      "symbol": "SHOP",
+      "action": "BUY",
+      "shares": 26,
+      "price": 107.8,
+      "value": 2802.7999999999997,
+      "strength": 0.59,
+      "confidence": 0.59,
+      "model_accuracy": 0.7
+    },
+    {
+      "date": "2025-06-09",
+      "symbol": "C",
+      "action": "BUY",
+      "shares": 31,
+      "price": 78.17,
+      "value": 2423.27,
+      "strength": 0.71,
+      "confidence": 0.71,
+      "model_accuracy": 0.5333333333333333
+    },
+    {
+      "date": "2025-06-09",
+      "symbol": "PYPL",
+      "action": "BUY",
+      "shares": 29,
+      "price": 73.55,
+      "value": 2132.95,
+      "strength": 0.59,
+      "confidence": 0.59,
+      "model_accuracy": 0.6
+    },
+    {
+      "date": "2025-06-09",
+      "symbol": "GOOGL",
+      "action": "BUY",
+      "shares": 11,
+      "price": 176.09,
+      "value": 1936.99,
+      "strength": 0.61,
+      "confidence": 0.61,
+      "model_accuracy": 0.5666666666666667
+    },
+    {
+      "date": "2025-06-10",
+      "symbol": "GOOG",
+      "action": "SELL",
+      "shares": 26,
+      "price": 180.01,
+      "value": 4680.26,
+      "strength": 0.72,
+      "confidence": 0.72,
+      "model_accuracy": 0.6
+    },
+    {
+      "date": "2025-06-10",
+      "symbol": "GOOGL",
+      "action": "SELL",
+      "shares": 11,
+      "price": 178.6,
+      "value": 1964.6,
+      "strength": 0.72,
+      "confidence": 0.72,
+      "model_accuracy": 0.5666666666666667
+    },
+    {
+      "date": "2025-06-10",
+      "symbol": "SHOP",
+      "action": "SELL",
+      "shares": 26,
+      "price": 110.26,
+      "value": 2866.76,
+      "strength": 0.55,
+      "confidence": 0.55,
+      "model_accuracy": 0.7
+    },
+    {
+      "date": "2025-06-10",
+      "symbol": "PYPL",
+      "action": "BUY",
+      "shares": 38,
+      "price": 74.76,
+      "value": 2840.88,
+      "strength": 0.57,
+      "confidence": 0.57,
+      "model_accuracy": 0.6
+    },
+    {
+      "date": "2025-06-10",
+      "symbol": "C",
+      "action": "BUY",
+      "shares": 32,
+      "price": 78.03,
+      "value": 2496.96,
+      "strength": 0.63,
+      "confidence": 0.63,
+      "model_accuracy": 0.5333333333333333
+    },
+    {
+      "date": "2025-06-10",
+      "symbol": "MS",
+      "action": "BUY",
+      "shares": 16,
+      "price": 131.82,
+      "value": 2109.12,
+      "strength": 0.51,
+      "confidence": 0.51,
+      "model_accuracy": 0.5333333333333333
+    },
+    {
+      "date": "2025-06-11",
+      "symbol": "C",
+      "action": "SELL",
+      "shares": 32,
+      "price": 78.38,
+      "value": 2508.16,
+      "strength": 0.53,
+      "confidence": 0.53,
+      "model_accuracy": 0.5333333333333333
+    },
+    {
+      "date": "2025-06-11",
+      "symbol": "SHOP",
+      "action": "BUY",
+      "shares": 19,
+      "price": 114.13,
+      "value": 2168.47,
+      "strength": 0.7,
+      "confidence": 0.7,
+      "model_accuracy": 0.7
+    },
+    {
+      "date": "2025-06-11",
+      "symbol": "PYPL",
+      "action": "BUY",
+      "shares": 26,
+      "price": 74.61,
+      "value": 1939.86,
+      "strength": 0.69,
+      "confidence": 0.69,
+      "model_accuracy": 0.6
+    },
+    {
+      "date": "2025-06-11",
+      "symbol": "GOOG",
+      "action": "BUY",
+      "shares": 9,
+      "price": 178.79,
+      "value": 1609.11,
+      "strength": 0.58,
+      "confidence": 0.58,
+      "model_accuracy": 0.6
+    },
+    {
+      "date": "2025-06-11",
+      "symbol": "MS",
+      "action": "BUY",
+      "shares": 11,
+      "price": 131.81,
+      "value": 1449.91,
+      "strength": 0.57,
+      "confidence": 0.57,
+      "model_accuracy": 0.5333333333333333
+    },
+    {
+      "date": "2025-06-12",
+      "symbol": "SHOP",
+      "action": "SELL",
+      "shares": 19,
+      "price": 109.21,
+      "value": 2074.99,
+      "strength": 0.52,
+      "confidence": 0.52,
+      "model_accuracy": 0.7
+    },
+    {
+      "date": "2025-06-12",
+      "symbol": "PYPL",
+      "action": "BUY",
+      "shares": 22,
+      "price": 74.81,
+      "value": 1645.8200000000002,
+      "strength": 0.62,
+      "confidence": 0.62,
+      "model_accuracy": 0.6
+    },
+    {
+      "date": "2025-06-12",
+      "symbol": "GOOG",
+      "action": "BUY",
+      "shares": 8,
+      "price": 176.97,
+      "value": 1415.76,
+      "strength": 0.58,
+      "confidence": 0.58,
+      "model_accuracy": 0.6
+    },
+    {
+      "date": "2025-06-12",
+      "symbol": "GOOGL",
+      "action": "BUY",
+      "shares": 7,
+      "price": 175.7,
+      "value": 1229.8999999999999,
+      "strength": 0.52,
+      "confidence": 0.52,
+      "model_accuracy": 0.5666666666666667
+    },
+    {
+      "date": "2025-06-12",
+      "symbol": "MS",
+      "action": "BUY",
+      "shares": 8,
+      "price": 131.92,
+      "value": 1055.36,
+      "strength": 0.52,
+      "confidence": 0.52,
+      "model_accuracy": 0.5333333333333333
+    },
+    {
+      "date": "2025-06-13",
+      "symbol": "SHOP",
+      "action": "BUY",
+      "shares": 9,
+      "price": 105.34,
+      "value": 948.0600000000001,
+      "strength": 0.6,
+      "confidence": 0.6,
+      "model_accuracy": 0.7
+    },
+    {
+      "date": "2025-06-13",
+      "symbol": "GOOGL",
+      "action": "BUY",
+      "shares": 5,
+      "price": 174.67,
+      "value": 873.3499999999999,
+      "strength": 0.71,
+      "confidence": 0.71,
+      "model_accuracy": 0.5666666666666667
+    },
+    {
+      "date": "2025-06-13",
+      "symbol": "PYPL",
+      "action": "BUY",
+      "shares": 11,
+      "price": 70.83,
+      "value": 779.13,
+      "strength": 0.66,
+      "confidence": 0.66,
+      "model_accuracy": 0.6
+    },
+    {
+      "date": "2025-06-13",
+      "symbol": "C",
+      "action": "BUY",
+      "shares": 9,
+      "price": 76.36,
+      "value": 687.24,
+      "strength": 0.73,
+      "confidence": 0.73,
+      "model_accuracy": 0.5333333333333333
+    },
+    {
+      "date": "2025-06-16",
+      "symbol": "MS",
+      "action": "SELL",
+      "shares": 8,
+      "price": 130.9,
+      "value": 1047.2,
+      "strength": 0.57,
+      "confidence": 0.57,
+      "model_accuracy": 0.5333333333333333
+    },
+    {
+      "date": "2025-06-16",
+      "symbol": "SHOP",
+      "action": "BUY",
+      "shares": 6,
+      "price": 108.37,
+      "value": 650.22,
+      "strength": 0.65,
+      "confidence": 0.65,
+      "model_accuracy": 0.7
+    },
+    {
+      "date": "2025-06-16",
+      "symbol": "PYPL",
+      "action": "BUY",
+      "shares": 9,
+      "price": 72.26,
+      "value": 650.34,
+      "strength": 0.75,
+      "confidence": 0.75,
+      "model_accuracy": 0.6
+    },
+    {
+      "date": "2025-06-16",
+      "symbol": "GOOGL",
+      "action": "BUY",
+      "shares": 3,
+      "price": 176.77,
+      "value": 530.3100000000001,
+      "strength": 0.78,
+      "confidence": 0.78,
+      "model_accuracy": 0.5666666666666667
+    },
+    {
+      "date": "2025-06-17",
+      "symbol": "PYPL",
+      "action": "BUY",
+      "shares": 7,
+      "price": 70.67,
+      "value": 494.69,
+      "strength": 0.85,
+      "confidence": 0.85,
+      "model_accuracy": 0.6
+    },
+    {
+      "date": "2025-06-17",
+      "symbol": "GOOGL",
+      "action": "BUY",
+      "shares": 2,
+      "price": 175.95,
+      "value": 351.9,
+      "strength": 0.75,
+      "confidence": 0.75,
+      "model_accuracy": 0.5666666666666667
+    },
+    {
+      "date": "2025-06-17",
+      "symbol": "SHOP",
+      "action": "BUY",
+      "shares": 3,
+      "price": 106.53,
+      "value": 319.59000000000003,
+      "strength": 0.58,
+      "confidence": 0.58,
+      "model_accuracy": 0.7
+    },
+    {
+      "date": "2025-06-18",
+      "symbol": "GOOG",
+      "action": "BUY",
+      "shares": 2,
+      "price": 173.98,
+      "value": 347.96,
+      "strength": 0.77,
+      "confidence": 0.77,
+      "model_accuracy": 0.6
+    },
+    {
+      "date": "2025-06-18",
+      "symbol": "GOOGL",
+      "action": "BUY",
+      "shares": 1,
+      "price": 173.32,
+      "value": 173.32,
+      "strength": 0.74,
+      "confidence": 0.74,
+      "model_accuracy": 0.5666666666666667
+    },
+    {
+      "date": "2025-06-18",
+      "symbol": "SHOP",
+      "action": "BUY",
+      "shares": 2,
+      "price": 105.97,
+      "value": 211.94,
+      "strength": 0.57,
+      "confidence": 0.57,
+      "model_accuracy": 0.7
+    },
+    {
+      "date": "2025-06-19",
+      "symbol": "GOOG",
+      "action": "BUY",
+      "shares": 1,
+      "price": 173.98,
+      "value": 173.98,
+      "strength": 0.77,
+      "confidence": 0.77,
+      "model_accuracy": 0.6
+    },
+    {
+      "date": "2025-06-19",
+      "symbol": "GOOGL",
+      "action": "BUY",
+      "shares": 1,
+      "price": 173.32,
+      "value": 173.32,
+      "strength": 0.74,
+      "confidence": 0.74,
+      "model_accuracy": 0.5666666666666667
+    },
+    {
+      "date": "2025-06-19",
+      "symbol": "SHOP",
+      "action": "BUY",
+      "shares": 2,
+      "price": 105.97,
+      "value": 211.94,
+      "strength": 0.57,
+      "confidence": 0.57,
+      "model_accuracy": 0.7
+    },
+    {
+      "date": "2025-06-20",
+      "symbol": "PYPL",
+      "action": "SELL",
+      "shares": 7,
+      "price": 70.05,
+      "value": 490.34999999999997,
+      "strength": 0.59,
+      "confidence": 0.59,
+      "model_accuracy": 0.6
+    },
+    {
+      "date": "2025-06-20",
+      "symbol": "GOOGL",
+      "action": "SELL",
+      "shares": 1,
+      "price": 166.64,
+      "value": 166.64,
+      "strength": 0.54,
+      "confidence": 0.54,
+      "model_accuracy": 0.5666666666666667
+    },
+    {
+      "date": "2025-06-20",
+      "symbol": "SHOP",
+      "action": "SELL",
+      "shares": 2,
+      "price": 106.4,
+      "value": 212.8,
+      "strength": 0.69,
+      "confidence": 0.69,
+      "model_accuracy": 0.7
+    },
+    {
+      "date": "2025-06-20",
+      "symbol": "GOOG",
+      "action": "BUY",
+      "shares": 1,
+      "price": 167.73,
+      "value": 167.73,
+      "strength": 0.53,
+      "confidence": 0.53,
+      "model_accuracy": 0.6
+    },
+    {
+      "date": "2025-06-20",
+      "symbol": "C",
+      "action": "BUY",
+      "shares": 3,
+      "price": 78.45,
+      "value": 235.35000000000002,
+      "strength": 0.51,
+      "confidence": 0.51,
+      "model_accuracy": 0.5333333333333333
+    },
+    {
+      "date": "2025-06-23",
+      "symbol": "GOOG",
+      "action": "BUY",
+      "shares": 1,
+      "price": 166.01,
+      "value": 166.01,
+      "strength": 0.7,
+      "confidence": 0.7,
+      "model_accuracy": 0.6
+    },
+    {
+      "date": "2025-06-23",
+      "symbol": "GOOGL",
+      "action": "BUY",
+      "shares": 1,
+      "price": 165.19,
+      "value": 165.19,
+      "strength": 0.66,
+      "confidence": 0.66,
+      "model_accuracy": 0.5666666666666667
+    },
+    {
+      "date": "2025-06-23",
+      "symbol": "C",
+      "action": "BUY",
+      "shares": 3,
+      "price": 79.36,
+      "value": 238.07999999999998,
+      "strength": 0.52,
+      "confidence": 0.52,
+      "model_accuracy": 0.5333333333333333
+    },
+    {
+      "date": "2025-06-24",
+      "symbol": "GOOG",
+      "action": "BUY",
+      "shares": 1,
+      "price": 167.74,
+      "value": 167.74,
+      "strength": 0.76,
+      "confidence": 0.76,
+      "model_accuracy": 0.6
+    },
+    {
+      "date": "2025-06-24",
+      "symbol": "GOOGL",
+      "action": "BUY",
+      "shares": 1,
+      "price": 166.77,
+      "value": 166.77,
+      "strength": 0.73,
+      "confidence": 0.73,
+      "model_accuracy": 0.5666666666666667
+    },
+    {
+      "date": "2025-06-24",
+      "symbol": "C",
+      "action": "BUY",
+      "shares": 2,
+      "price": 81.14,
+      "value": 162.28,
+      "strength": 0.58,
+      "confidence": 0.58,
+      "model_accuracy": 0.5333333333333333
+    },
+    {
+      "date": "2025-06-24",
+      "symbol": "MS",
+      "action": "BUY",
+      "shares": 1,
+      "price": 135.9,
+      "value": 135.9,
+      "strength": 0.57,
+      "confidence": 0.57,
+      "model_accuracy": 0.5333333333333333
+    },
+    {
+      "date": "2025-06-25",
+      "symbol": "SHOP",
+      "action": "BUY",
+      "shares": 1,
+      "price": 113.89,
+      "value": 113.89,
+      "strength": 0.53,
+      "confidence": 0.53,
+      "model_accuracy": 0.7
+    },
+    {
+      "date": "2025-06-25",
+      "symbol": "C",
+      "action": "BUY",
+      "shares": 1,
+      "price": 82.63,
+      "value": 82.63,
+      "strength": 0.61,
+      "confidence": 0.61,
+      "model_accuracy": 0.5333333333333333
+    },
+    {
+      "date": "2025-06-26",
+      "symbol": "C",
+      "action": "BUY",
+      "shares": 1,
+      "price": 84.37,
+      "value": 84.37,
+      "strength": 0.67,
+      "confidence": 0.67,
+      "model_accuracy": 0.5333333333333333
+    },
+    {
+      "date": "2025-06-27",
+      "symbol": "GOOG",
+      "action": "SELL",
+      "shares": 1,
+      "price": 178.27,
+      "value": 178.27,
+      "strength": 0.59,
+      "confidence": 0.59,
+      "model_accuracy": 0.6
+    },
+    {
+      "date": "2025-06-27",
+      "symbol": "MS",
+      "action": "SELL",
+      "shares": 1,
+      "price": 140.69,
+      "value": 140.69,
+      "strength": 0.5,
+      "confidence": 0.5,
+      "model_accuracy": 0.5333333333333333
+    },
+    {
+      "date": "2025-06-27",
+      "symbol": "SHOP",
+      "action": "SELL",
+      "shares": 1,
+      "price": 113.65,
+      "value": 113.65,
+      "strength": 0.52,
+      "confidence": 0.52,
+      "model_accuracy": 0.7
+    },
+    {
+      "date": "2025-06-27",
+      "symbol": "PYPL",
+      "action": "BUY",
+      "shares": 2,
+      "price": 73.64,
+      "value": 147.28,
+      "strength": 0.6,
+      "confidence": 0.6,
+      "model_accuracy": 0.6
+    },
+    {
+      "date": "2025-06-27",
+      "symbol": "C",
+      "action": "BUY",
+      "shares": 1,
+      "price": 84.38,
+      "value": 84.38,
+      "strength": 0.59,
+      "confidence": 0.59,
+      "model_accuracy": 0.5333333333333333
+    },
+    {
+      "date": "2025-06-27",
+      "symbol": "WFC",
+      "action": "BUY",
+      "shares": 1,
+      "price": 79.5,
+      "value": 79.5,
+      "strength": 0.56,
+      "confidence": 0.56,
+      "model_accuracy": 0.5333333333333333
+    },
+    {
+      "date": "2025-06-30",
+      "symbol": "GOOGL",
+      "action": "SELL",
+      "shares": 1,
+      "price": 176.23,
+      "value": 176.23,
+      "strength": 0.54,
+      "confidence": 0.54,
+      "model_accuracy": 0.5666666666666667
+    },
+    {
+      "date": "2025-06-30",
+      "symbol": "C",
+      "action": "BUY",
+      "shares": 1,
+      "price": 85.12,
+      "value": 85.12,
+      "strength": 0.58,
+      "confidence": 0.58,
+      "model_accuracy": 0.5333333333333333
+    },
+    {
+      "date": "2025-06-30",
+      "symbol": "PYPL",
+      "action": "BUY",
+      "shares": 1,
+      "price": 74.32,
+      "value": 74.32,
+      "strength": 0.51,
+      "confidence": 0.51,
+      "model_accuracy": 0.6
+    },
+    {
+      "date": "2025-06-30",
+      "symbol": "WFC",
+      "action": "BUY",
+      "shares": 1,
+      "price": 80.12,
+      "value": 80.12,
+      "strength": 0.54,
+      "confidence": 0.54,
+      "model_accuracy": 0.5333333333333333
+    },
+    {
+      "date": "2025-07-01",
+      "symbol": "C",
+      "action": "SELL",
+      "shares": 1,
+      "price": 86.27,
+      "value": 86.27,
+      "strength": 0.57,
+      "confidence": 0.57,
+      "model_accuracy": 0.5333333333333333
+    },
+    {
+      "date": "2025-07-01",
+      "symbol": "PYPL",
+      "action": "SELL",
+      "shares": 1,
+      "price": 75.29,
+      "value": 75.29,
+      "strength": 0.7,
+      "confidence": 0.7,
+      "model_accuracy": 0.6
+    },
+    {
+      "date": "2025-07-01",
+      "symbol": "WFC",
+      "action": "SELL",
+      "shares": 1,
+      "price": 81.49,
+      "value": 81.49,
+      "strength": 0.6,
+      "confidence": 0.6,
+      "model_accuracy": 0.5333333333333333
+    },
+    {
+      "date": "2025-07-01",
+      "symbol": "SHOP",
+      "action": "BUY",
+      "shares": 1,
+      "price": 112.67,
+      "value": 112.67,
+      "strength": 0.59,
+      "confidence": 0.59,
+      "model_accuracy": 0.7
+    },
+    {
+      "date": "2025-07-02",
+      "symbol": "SHOP",
+      "action": "SELL",
+      "shares": 1,
+      "price": 114.77,
+      "value": 114.77,
+      "strength": 0.51,
+      "confidence": 0.51,
+      "model_accuracy": 0.7
+    },
+    {
+      "date": "2025-07-03",
+      "symbol": "ABT",
+      "action": "BUY",
+      "shares": 1,
+      "price": 134.44,
+      "value": 134.44,
+      "strength": 0.53,
+      "confidence": 0.53,
+      "model_accuracy": 0.7333333333333333
+    },
+    {
+      "date": "2025-07-07",
+      "symbol": "ABT",
+      "action": "SELL",
+      "shares": 1,
+      "price": 133.7,
+      "value": 133.7,
+      "strength": 0.6,
+      "confidence": 0.6,
+      "model_accuracy": 0.7333333333333333
+    },
+    {
+      "date": "2025-07-07",
+      "symbol": "PYPL",
+      "action": "BUY",
+      "shares": 1,
+      "price": 76.18,
+      "value": 76.18,
+      "strength": 0.65,
+      "confidence": 0.65,
+      "model_accuracy": 0.6
+    },
+    {
+      "date": "2025-07-08",
+      "symbol": "SHOP",
+      "action": "BUY",
+      "shares": 1,
+      "price": 112.48,
+      "value": 112.48,
+      "strength": 0.56,
+      "confidence": 0.56,
+      "model_accuracy": 0.7
+    },
+    {
+      "date": "2025-07-08",
+      "symbol": "PYPL",
+      "action": "BUY",
+      "shares": 1,
+      "price": 75.03,
+      "value": 75.03,
+      "strength": 0.55,
+      "confidence": 0.55,
+      "model_accuracy": 0.6
+    },
+    {
+      "date": "2025-07-09",
+      "symbol": "PYPL",
+      "action": "BUY",
+      "shares": 1,
+      "price": 74.83,
+      "value": 74.83,
+      "strength": 0.63,
+      "confidence": 0.63,
+      "model_accuracy": 0.6
+    },
+    {
+      "date": "2025-07-10",
+      "symbol": "PYPL",
+      "action": "BUY",
+      "shares": 1,
+      "price": 75.7,
+      "value": 75.7,
+      "strength": 0.59,
+      "confidence": 0.59,
+      "model_accuracy": 0.6
+    },
+    {
+      "date": "2025-07-11",
+      "symbol": "PYPL",
+      "action": "BUY",
+      "shares": 1,
+      "price": 71.36,
+      "value": 71.36,
+      "strength": 0.57,
+      "confidence": 0.57,
+      "model_accuracy": 0.6
+    },
+    {
+      "date": "2025-07-14",
+      "symbol": "SHOP",
+      "action": "SELL",
+      "shares": 1,
+      "price": 116.74,
+      "value": 116.74,
+      "strength": 0.5,
+      "confidence": 0.5,
+      "model_accuracy": 0.7
+    },
+    {
+      "date": "2025-07-14",
+      "symbol": "PYPL",
+      "action": "BUY",
+      "shares": 1,
+      "price": 73.89,
+      "value": 73.89,
+      "strength": 0.64,
+      "confidence": 0.64,
+      "model_accuracy": 0.6
+    },
+    {
+      "date": "2025-07-15",
+      "symbol": "PYPL",
+      "action": "BUY",
+      "shares": 1,
+      "price": 72.96,
+      "value": 72.96,
+      "strength": 0.74,
+      "confidence": 0.74,
+      "model_accuracy": 0.6
+    },
+    {
+      "date": "2025-07-16",
+      "symbol": "PYPL",
+      "action": "BUY",
+      "shares": 1,
+      "price": 72.97,
+      "value": 72.97,
+      "strength": 0.73,
+      "confidence": 0.73,
+      "model_accuracy": 0.6
+    },
+    {
+      "date": "2025-07-18",
+      "symbol": "PYPL",
+      "action": "SELL",
+      "shares": 1,
+      "price": 74.17,
+      "value": 74.17,
+      "strength": 0.51,
+      "confidence": 0.51,
+      "model_accuracy": 0.6
+    },
+    {
+      "date": "2025-07-21",
+      "symbol": "PYPL",
+      "action": "BUY",
+      "shares": 1,
+      "price": 74.82,
+      "value": 74.82,
+      "strength": 0.55,
+      "confidence": 0.55,
+      "model_accuracy": 0.6
+    },
+    {
+      "date": "2025-07-24",
+      "symbol": "PYPL",
+      "action": "SELL",
+      "shares": 1,
+      "price": 77.82,
+      "value": 77.82,
+      "strength": 0.58,
+      "confidence": 0.58,
+      "model_accuracy": 0.6
+    },
+    {
+      "date": "2025-07-31",
+      "symbol": "PYPL",
+      "action": "BUY",
+      "shares": 1,
+      "price": 68.76,
+      "value": 68.76,
+      "strength": 0.56,
+      "confidence": 0.56,
+      "model_accuracy": 0.6
+    },
+    {
+      "date": "2025-08-01",
+      "symbol": "PYPL",
+      "action": "BUY",
+      "shares": 1,
+      "price": 67.11,
+      "value": 67.11,
+      "strength": 0.52,
+      "confidence": 0.52,
+      "model_accuracy": 0.6
+    },
+    {
+      "date": "2025-08-04",
+      "symbol": "PYPL",
+      "action": "SELL",
+      "shares": 1,
+      "price": 68.01,
+      "value": 68.01,
+      "strength": 0.56,
+      "confidence": 0.56,
+      "model_accuracy": 0.6
+    },
+    {
+      "date": "2025-08-11",
+      "symbol": "PYPL",
+      "action": "BUY",
+      "shares": 1,
+      "price": 67.08,
+      "value": 67.08,
+      "strength": 0.66,
+      "confidence": 0.66,
+      "model_accuracy": 0.6
+    },
+    {
+      "date": "2025-08-13",
+      "symbol": "PYPL",
+      "action": "SELL",
+      "shares": 1,
+      "price": 70.63,
+      "value": 70.63,
+      "strength": 0.61,
+      "confidence": 0.61,
+      "model_accuracy": 0.6
+    }
+  ],
+  "daily_performance": [
+    {
+      "date": "2025-06-02",
+      "portfolio_value": 100000.0,
+      "cash": 41166.930000000015,
+      "positions": 7,
+      "daily_signals": 11
+    },
+    {
+      "date": "2025-06-03",
+      "portfolio_value": 81101.82000000002,
+      "cash": 36290.78000000001,
+      "positions": 6,
+      "daily_signals": 11
+    },
+    {
+      "date": "2025-06-04",
+      "portfolio_value": 66456.22000000002,
+      "cash": 30563.090000000015,
+      "positions": 6,
+      "daily_signals": 11
+    },
+    {
+      "date": "2025-06-05",
+      "portfolio_value": 52156.23000000002,
+      "cash": 28213.010000000017,
+      "positions": 5,
+      "daily_signals": 11
+    },
+    {
+      "date": "2025-06-06",
+      "portfolio_value": 39062.57000000002,
+      "cash": 23546.630000000016,
+      "positions": 4,
+      "daily_signals": 11
+    },
+    {
+      "date": "2025-06-09",
+      "portfolio_value": 28165.010000000017,
+      "cash": 14250.620000000015,
+      "positions": 5,
+      "daily_signals": 11
+    },
+    {
+      "date": "2025-06-10",
+      "portfolio_value": 23762.240000000013,
+      "cash": 16315.280000000013,
+      "positions": 3,
+      "daily_signals": 11
+    },
+    {
+      "date": "2025-06-11",
+      "portfolio_value": 18823.440000000013,
+      "cash": 11656.090000000011,
+      "positions": 4,
+      "daily_signals": 11
+    },
+    {
+      "date": "2025-06-12",
+      "portfolio_value": 13731.08000000001,
+      "cash": 8384.24000000001,
+      "positions": 4,
+      "daily_signals": 11
+    },
+    {
+      "date": "2025-06-13",
+      "portfolio_value": 10827.20000000001,
+      "cash": 5096.460000000011,
+      "positions": 6,
+      "daily_signals": 11
+    },
+    {
+      "date": "2025-06-16",
+      "portfolio_value": 8269.81000000001,
+      "cash": 4312.79000000001,
+      "positions": 5,
+      "daily_signals": 11
+    },
+    {
+      "date": "2025-06-17",
+      "portfolio_value": 6426.870000000009,
+      "cash": 3146.6100000000097,
+      "positions": 5,
+      "daily_signals": 11
+    },
+    {
+      "date": "2025-06-18",
+      "portfolio_value": 4331.750000000009,
+      "cash": 2413.3900000000094,
+      "positions": 5,
+      "daily_signals": 11
+    },
+    {
+      "date": "2025-06-19",
+      "portfolio_value": 3598.5300000000093,
+      "cash": 1854.1500000000092,
+      "positions": 5,
+      "daily_signals": 11
+    },
+    {
+      "date": "2025-06-20",
+      "portfolio_value": 2723.940000000009,
+      "cash": 2320.860000000009,
+      "positions": 2,
+      "daily_signals": 11
+    },
+    {
+      "date": "2025-06-23",
+      "portfolio_value": 2320.8600000000097,
+      "cash": 1751.5800000000095,
+      "positions": 3,
+      "daily_signals": 11
+    },
+    {
+      "date": "2025-06-24",
+      "portfolio_value": 1751.5800000000095,
+      "cash": 1118.8900000000094,
+      "positions": 4,
+      "daily_signals": 11
+    },
+    {
+      "date": "2025-06-25",
+      "portfolio_value": 1598.7800000000095,
+      "cash": 922.3700000000094,
+      "positions": 5,
+      "daily_signals": 11
+    },
+    {
+      "date": "2025-06-26",
+      "portfolio_value": 1523.1600000000092,
+      "cash": 838.0000000000094,
+      "positions": 5,
+      "daily_signals": 11
+    },
+    {
+      "date": "2025-06-27",
+      "portfolio_value": 1449.1400000000094,
+      "cash": 959.4500000000094,
+      "positions": 4,
+      "daily_signals": 11
+    },
+    {
+      "date": "2025-06-30",
+      "portfolio_value": 1135.6800000000094,
+      "cash": 896.1200000000096,
+      "positions": 3,
+      "daily_signals": 11
+    },
+    {
+      "date": "2025-07-01",
+      "portfolio_value": 1139.1700000000096,
+      "cash": 1026.5000000000095,
+      "positions": 1,
+      "daily_signals": 11
+    },
+    {
+      "date": "2025-07-02",
+      "portfolio_value": 1141.2700000000095,
+      "cash": 1141.2700000000095,
+      "positions": 0,
+      "daily_signals": 11
+    },
+    {
+      "date": "2025-07-03",
+      "portfolio_value": 1141.2700000000095,
+      "cash": 1006.8300000000095,
+      "positions": 1,
+      "daily_signals": 11
+    },
+    {
+      "date": "2025-07-04",
+      "portfolio_value": 1141.2700000000095,
+      "cash": 1006.8300000000095,
+      "positions": 1,
+      "daily_signals": 11
+    },
+    {
+      "date": "2025-07-07",
+      "portfolio_value": 1140.5300000000095,
+      "cash": 1064.3500000000095,
+      "positions": 1,
+      "daily_signals": 11
+    },
+    {
+      "date": "2025-07-08",
+      "portfolio_value": 1064.3500000000095,
+      "cash": 876.8400000000095,
+      "positions": 2,
+      "daily_signals": 11
+    },
+    {
+      "date": "2025-07-09",
+      "portfolio_value": 991.1600000000094,
+      "cash": 802.0100000000094,
+      "positions": 2,
+      "daily_signals": 11
+    },
+    {
+      "date": "2025-07-10",
+      "portfolio_value": 917.1700000000094,
+      "cash": 726.3100000000094,
+      "positions": 2,
+      "daily_signals": 11
+    },
+    {
+      "date": "2025-07-11",
+      "portfolio_value": 838.4200000000094,
+      "cash": 654.9500000000094,
+      "positions": 2,
+      "daily_signals": 11
+    },
+    {
+      "date": "2025-07-14",
+      "portfolio_value": 771.6900000000094,
+      "cash": 697.8000000000094,
+      "positions": 1,
+      "daily_signals": 11
+    },
+    {
+      "date": "2025-07-15",
+      "portfolio_value": 697.8000000000094,
+      "cash": 624.8400000000094,
+      "positions": 1,
+      "daily_signals": 11
+    },
+    {
+      "date": "2025-07-16",
+      "portfolio_value": 624.8400000000094,
+      "cash": 551.8700000000093,
+      "positions": 1,
+      "daily_signals": 11
+    },
+    {
+      "date": "2025-07-17",
+      "portfolio_value": 625.7300000000093,
+      "cash": 551.8700000000093,
+      "positions": 1,
+      "daily_signals": 11
+    },
+    {
+      "date": "2025-07-18",
+      "portfolio_value": 626.0400000000093,
+      "cash": 626.0400000000093,
+      "positions": 0,
+      "daily_signals": 11
+    },
+    {
+      "date": "2025-07-21",
+      "portfolio_value": 626.0400000000093,
+      "cash": 551.2200000000093,
+      "positions": 1,
+      "daily_signals": 11
+    },
+    {
+      "date": "2025-07-22",
+      "portfolio_value": 627.2200000000093,
+      "cash": 551.2200000000093,
+      "positions": 1,
+      "daily_signals": 11
+    },
+    {
+      "date": "2025-07-23",
+      "portfolio_value": 627.8800000000093,
+      "cash": 551.2200000000093,
+      "positions": 1,
+      "daily_signals": 11
+    },
+    {
+      "date": "2025-07-24",
+      "portfolio_value": 629.0400000000093,
+      "cash": 629.0400000000093,
+      "positions": 0,
+      "daily_signals": 11
+    },
+    {
+      "date": "2025-07-25",
+      "portfolio_value": 629.0400000000093,
+      "cash": 629.0400000000093,
+      "positions": 0,
+      "daily_signals": 11
+    },
+    {
+      "date": "2025-07-28",
+      "portfolio_value": 629.0400000000093,
+      "cash": 629.0400000000093,
+      "positions": 0,
+      "daily_signals": 11
+    },
+    {
+      "date": "2025-07-29",
+      "portfolio_value": 629.0400000000093,
+      "cash": 629.0400000000093,
+      "positions": 0,
+      "daily_signals": 11
+    },
+    {
+      "date": "2025-07-30",
+      "portfolio_value": 629.0400000000093,
+      "cash": 629.0400000000093,
+      "positions": 0,
+      "daily_signals": 11
+    },
+    {
+      "date": "2025-07-31",
+      "portfolio_value": 629.0400000000093,
+      "cash": 560.2800000000093,
+      "positions": 1,
+      "daily_signals": 11
+    },
+    {
+      "date": "2025-08-01",
+      "portfolio_value": 560.2800000000093,
+      "cash": 493.1700000000093,
+      "positions": 1,
+      "daily_signals": 11
+    },
+    {
+      "date": "2025-08-04",
+      "portfolio_value": 561.1800000000093,
+      "cash": 561.1800000000093,
+      "positions": 0,
+      "daily_signals": 11
+    },
+    {
+      "date": "2025-08-05",
+      "portfolio_value": 561.1800000000093,
+      "cash": 561.1800000000093,
+      "positions": 0,
+      "daily_signals": 11
+    },
+    {
+      "date": "2025-08-06",
+      "portfolio_value": 561.1800000000093,
+      "cash": 561.1800000000093,
+      "positions": 0,
+      "daily_signals": 11
+    },
+    {
+      "date": "2025-08-07",
+      "portfolio_value": 561.1800000000093,
+      "cash": 561.1800000000093,
+      "positions": 0,
+      "daily_signals": 11
+    },
+    {
+      "date": "2025-08-08",
+      "portfolio_value": 561.1800000000093,
+      "cash": 561.1800000000093,
+      "positions": 0,
+      "daily_signals": 11
+    },
+    {
+      "date": "2025-08-11",
+      "portfolio_value": 561.1800000000093,
+      "cash": 494.1000000000093,
+      "positions": 1,
+      "daily_signals": 11
+    },
+    {
+      "date": "2025-08-12",
+      "portfolio_value": 562.0700000000093,
+      "cash": 494.1000000000093,
+      "positions": 1,
+      "daily_signals": 11
+    },
+    {
+      "date": "2025-08-13",
+      "portfolio_value": 564.7300000000093,
+      "cash": 564.7300000000093,
+      "positions": 0,
+      "daily_signals": 11
+    },
+    {
+      "date": "2025-08-14",
+      "portfolio_value": 564.7300000000093,
+      "cash": 564.7300000000093,
+      "positions": 0,
+      "daily_signals": 11
+    },
+    {
+      "date": "2025-08-15",
+      "portfolio_value": 564.7300000000093,
+      "cash": 564.7300000000093,
+      "positions": 0,
+      "daily_signals": 11
+    },
+    {
+      "date": "2025-08-18",
+      "portfolio_value": 564.7300000000093,
+      "cash": 564.7300000000093,
+      "positions": 0,
+      "daily_signals": 11
+    },
+    {
+      "date": "2025-08-19",
+      "portfolio_value": 564.7300000000093,
+      "cash": 564.7300000000093,
+      "positions": 0,
+      "daily_signals": 11
+    },
+    {
+      "date": "2025-08-20",
+      "portfolio_value": 564.7300000000093,
+      "cash": 564.7300000000093,
+      "positions": 0,
+      "daily_signals": 11
+    }
+  ],
+  "training_days": 355,
+  "trading_days": 58
+}

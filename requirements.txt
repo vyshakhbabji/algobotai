@@ -1,14 +1,9 @@
-# path/filename: /requirements/requirements.txt
-
-# AI Paper Trading Bot Requirements
-streamlit>=1.28.0,<1.40.0
-yfinance>=0.2.18
-pandas>=2.0.0
-numpy>=1.24.0
-plotly>=5.15.0
-scikit-learn>=1.3.0
-requests>=2.31.0
-matplotlib>=3.7.0
-seaborn>=0.12.0
-alpaca-py>=0.7.0
-pytest>=8.0.0
+alpaca-py==0.32.1
+pandas==2.2.2
+numpy==1.24.3
+scikit-learn==1.3.0
+flask==3.0.3
+gunicorn==21.2.0
+schedule==1.2.0
+python-dotenv==1.0.0
+yfinance==0.2.28

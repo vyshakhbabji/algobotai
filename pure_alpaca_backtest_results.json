@@ -1,0 +1,15 @@
+{
+  "backtest_type": "pure_alpaca",
+  "data_source": "alpaca_only",
+  "initial_balance": 50000,
+  "final_value": 56717.813325200004,
+  "total_return": 0.1343562665040001,
+  "volatility": 0.007326705225760529,
+  "sharpe_ratio": 2.5060889178714407,
+  "max_drawdown": -0.10147565069178292,
+  "win_rate": 0.8809523809523809,
+  "total_trades": 88,
+  "period_days": 54,
+  "annualized_return": 1.3445845176715325,
+  "timestamp": "2025-08-21T01:03:57.825702"
+}

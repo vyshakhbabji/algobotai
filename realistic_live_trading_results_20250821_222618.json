@@ -1,0 +1,3751 @@
+{
+  "timestamp": "20250821_222618",
+  "configuration": {
+    "max_position_size": 0.2,
+    "max_position_size_exceptional": 0.3,
+    "exceptional_signal_threshold": 0.9,
+    "min_position_size": 0.02,
+    "stop_loss_pct": 0.08,
+    "take_profit_pct": 0.25,
+    "rebalance_threshold": 0.05,
+    "signal_threshold": 0.4,
+    "max_positions": 12,
+    "partial_sell_threshold": 0.2,
+    "ml_retrain_days": 1,
+    "min_training_days": 100,
+    "max_new_positions_per_day": 5,
+    "commission_bps": 5,
+    "slippage_bps": 2,
+    "min_commission": 1.0,
+    "target_invested_floor": 0.8,
+    "target_invested_ceiling": 0.9,
+    "min_avg_strength_for_ceiling": 0.7,
+    "min_individual_strength_for_extra": 0.5,
+    "cash_reserve_floor": 0.05,
+    "max_utilization_topups_per_day": 5,
+    "min_extra_position_size": 0.01,
+    "max_net_exposure": 0.95,
+    "drawdown_throttle_threshold": 0.1,
+    "drawdown_throttle_sessions": 10,
+    "drawdown_throttle_ceiling": 0.7,
+    "enable_enhancement_logging": true,
+    "enable_state_persistence": true,
+    "auto_save_frequency": 10
+  },
+  "performance_metrics": {
+    "period": "2025-05-22 to 2025-08-20",
+    "days": 90,
+    "initial_capital": 100000.0,
+    "final_value": 103908.04647555295,
+    "total_return": 0.03908046475552954,
+    "total_return_pct": 3.9080464755529536,
+    "annual_return": 0.16821203000986262,
+    "annual_return_pct": 16.821203000986262,
+    "volatility": 0.08539298820591676,
+    "volatility_pct": 8.539298820591675,
+    "sharpe_ratio": 1.6635617673927279,
+    "calmar_ratio": 4.751733923972593,
+    "sortino_ratio": 3.6375378455906993,
+    "max_drawdown": 0.03540013660302601,
+    "max_drawdown_pct": 3.540013660302601,
+    "total_trades": 105,
+    "winning_trades": 0,
+    "losing_trades": 105,
+    "hit_rate": 0.0,
+    "hit_rate_pct": 0.0,
+    "avg_win_pct": 0,
+    "avg_loss_pct": 0,
+    "win_loss_ratio": 0,
+    "ml_enhanced_trades": 79,
+    "risk_triggered_trades": 0,
+    "ml_enhancement_rate": 75.23809523809524,
+    "avg_daily_trades": 4.290322580645161,
+    "avg_daily_ml_enhancements": 2.596774193548387,
+    "avg_ml_multiplier": 0.902605718154539,
+    "avg_regime_boost": 1.2432150432074698,
+    "avg_total_enhancement": 1.120271025106902,
+    "portfolio_exposure": 0.4771505376344086,
+    "portfolio_exposure_pct": 47.715053763440864,
+    "final_positions": 8,
+    "models_trained": 20,
+    "model_stats": {
+      "AAPL": {
+        "avg_accuracy": 0.7892144094322909,
+        "final_accuracy": 0.7970588235294118,
+        "avg_strength_r2": -0.12193465411815922,
+        "final_strength_r2": -0.1419975522223782,
+        "improvement": 0.016571018651363012
+      },
+      "MSFT": {
+        "avg_accuracy": 0.7773960937101299,
+        "final_accuracy": 0.788235294117647,
+        "avg_strength_r2": -0.20029211854503318,
+        "final_strength_r2": -0.18427329085014366,
+        "improvement": 0.013845050215207988
+      },
+      "GOOGL": {
+        "avg_accuracy": 0.7892782036375174,
+        "final_accuracy": 0.788235294117647,
+        "avg_strength_r2": -0.2099262267614029,
+        "final_strength_r2": -0.19750841002270614,
+        "improvement": -0.0013988522238164158
+      },
+      "AMZN": {
+        "avg_accuracy": 0.7375835415208171,
+        "final_accuracy": 0.7323529411764707,
+        "avg_strength_r2": -0.20737523616960188,
+        "final_strength_r2": -0.19009272485901352,
+        "improvement": -0.01764705882352935
+      },
+      "NVDA": {
+        "avg_accuracy": 0.7840059200307217,
+        "final_accuracy": 0.7970588235294118,
+        "avg_strength_r2": -0.1168714766251776,
+        "final_strength_r2": -0.12168299534560889,
+        "improvement": 0.004375896700143489
+      },
+      "TSLA": {
+        "avg_accuracy": 0.7661261200435252,
+        "final_accuracy": 0.7588235294117647,
+        "avg_strength_r2": -0.05957720011806643,
+        "final_strength_r2": -0.04220254823664793,
+        "improvement": -0.01251793400286938
+      },
+      "META": {
+        "avg_accuracy": 0.7638240774192833,
+        "final_accuracy": 0.7647058823529411,
+        "avg_strength_r2": -0.131636249512673,
+        "final_strength_r2": -0.09040618161222858,
+        "improvement": 0.005559540889526482
+      },
+      "NFLX": {
+        "avg_accuracy": 0.7841459265860518,
+        "final_accuracy": 0.7823529411764706,
+        "avg_strength_r2": -0.11259901935663788,
+        "final_strength_r2": -0.10594344571281344,
+        "improvement": -0.001183644189383104
+      },
+      "CRM": {
+        "avg_accuracy": 0.7414278308069729,
+        "final_accuracy": 0.7470588235294118,
+        "avg_strength_r2": -0.07538113485166745,
+        "final_strength_r2": -0.062378217122687984,
+        "improvement": 0.00010760401721665591
+      },
+      "SNOW": {
+        "avg_accuracy": 0.725389489914414,
+        "final_accuracy": 0.7264705882352942,
+        "avg_strength_r2": 0.07164665853656593,
+        "final_strength_r2": 0.09366362421720764,
+        "improvement": 0.010007173601147779
+      },
+      "PLTR": {
+        "avg_accuracy": 0.7965441445789696,
+        "final_accuracy": 0.7941176470588236,
+        "avg_strength_r2": -0.06302400758874512,
+        "final_strength_r2": -0.03557584056387131,
+        "improvement": 0.01667862266857978
+      },
+      "COIN": {
+        "avg_accuracy": 0.7209608058025132,
+        "final_accuracy": 0.7147058823529411,
+        "avg_strength_r2": -0.13659032285863032,
+        "final_strength_r2": -0.14149440422460324,
+        "improvement": -0.017001434720229636
+      },
+      "UBER": {
+        "avg_accuracy": 0.7447643177813179,
+        "final_accuracy": 0.7441176470588236,
+        "avg_strength_r2": -0.10907251301536651,
+        "final_strength_r2": -0.1234280875881939,
+        "improvement": -0.027223816355810615
+      },
+      "DIS": {
+        "avg_accuracy": 0.7710142264993182,
+        "final_accuracy": 0.7735294117647058,
+        "avg_strength_r2": -0.2692440018569799,
+        "final_strength_r2": -0.27166651609838033,
+        "improvement": 0.005236728837876514
+      },
+      "JPM": {
+        "avg_accuracy": 0.7879322192272313,
+        "final_accuracy": 0.7823529411764706,
+        "avg_strength_r2": -0.17529425614513622,
+        "final_strength_r2": -0.18976787581265897,
+        "improvement": -0.004232424677187985
+      },
+      "BAC": {
+        "avg_accuracy": 0.7909417142645175,
+        "final_accuracy": 0.7970588235294118,
+        "avg_strength_r2": -0.17603535871793397,
+        "final_strength_r2": -0.14844600038505917,
+        "improvement": 0.01047345767575325
+      },
+      "JNJ": {
+        "avg_accuracy": 0.7105560197898397,
+        "final_accuracy": 0.7235294117647059,
+        "avg_strength_r2": -0.1470754701204758,
+        "final_strength_r2": -0.13477944988619406,
+        "improvement": 0.016212338593974196
+      },
+      "PG": {
+        "avg_accuracy": 0.7405819451498982,
+        "final_accuracy": 0.7235294117647059,
+        "avg_strength_r2": -0.05430465497293223,
+        "final_strength_r2": -0.07323220760151306,
+        "improvement": -0.017324246771879492
+      },
+      "KO": {
+        "avg_accuracy": 0.8041982246585686,
+        "final_accuracy": 0.8,
+        "avg_strength_r2": -0.09497097463845637,
+        "final_strength_r2": -0.07682531332100972,
+        "improvement": 0.0012195121951219523
+      },
+      "WMT": {
+        "avg_accuracy": 0.7914749320871828,
+        "final_accuracy": 0.7941176470588236,
+        "avg_strength_r2": -0.4343443788827689,
+        "final_strength_r2": -0.45272643082947195,
+        "improvement": 0.004483500717360145
+      }
+    },
+    "avg_invested_ratio": 0.5288716825752008,
+    "avg_invested_ratio_pct": 52.88716825752009,
+    "min_invested_ratio_pct": 0.0,
+    "max_invested_ratio_pct": 74.35729087160881,
+    "final_invested_ratio_pct": 69.78974446173922
+  },
+  "trade_summary": {
+    "total_trades": 105,
+    "total_capital": 31390.88636507933,
+    "final_positions": 8,
+    "models_trained": 20
+  },
+  "daily_performance": [
+    {
+      "date": "2025-05-22T00:00:00",
+      "total_value": 100000.0,
+      "cash": 100000.0,
+      "positions": 0,
+      "daily_trades": 2,
+      "ml_enhancements": 2,
+      "pending_orders": 5,
+      "invested_ratio": 0.0,
+      "invested_ratio_pct": 0.0
+    },
+    {
+      "date": "2025-05-23T00:00:00",
+      "total_value": 100020.65071191132,
+      "cash": 70727.35347070039,
+      "positions": 2,
+      "daily_trades": 2,
+      "ml_enhancements": 0,
+      "pending_orders": 4,
+      "invested_ratio": 0.2928724921574864,
+      "invested_ratio_pct": 29.28724921574864
+    },
+    {
+      "date": "2025-05-27T00:00:00",
+      "total_value": 100857.46531762421,
+      "cash": 70727.35347070039,
+      "positions": 2,
+      "daily_trades": 0,
+      "ml_enhancements": 0,
+      "pending_orders": 4,
+      "invested_ratio": 0.2987395306042733,
+      "invested_ratio_pct": 29.873953060427326
+    },
+    {
+      "date": "2025-05-28T00:00:00",
+      "total_value": 100587.9363713024,
+      "cash": 60590.07409713249,
+      "positions": 3,
+      "daily_trades": 2,
+      "ml_enhancements": 1,
+      "pending_orders": 5,
+      "invested_ratio": 0.39764074815617007,
+      "invested_ratio_pct": 39.76407481561701
+    },
+    {
+      "date": "2025-05-29T00:00:00",
+      "total_value": 100591.11003184685,
+      "cash": 74479.1320045031,
+      "positions": 3,
+      "daily_trades": 4,
+      "ml_enhancements": 2,
+      "pending_orders": 8,
+      "invested_ratio": 0.2595853452564225,
+      "invested_ratio_pct": 25.95853452564225
+    },
+    {
+      "date": "2025-05-30T00:00:00",
+      "total_value": 100751.33351191897,
+      "cash": 76135.60209712405,
+      "positions": 4,
+      "daily_trades": 6,
+      "ml_enhancements": 3,
+      "pending_orders": 10,
+      "invested_ratio": 0.2443216437614978,
+      "invested_ratio_pct": 24.432164376149778
+    },
+    {
+      "date": "2025-06-02T00:00:00",
+      "total_value": 101254.25009553178,
+      "cash": 58513.61192719682,
+      "positions": 2,
+      "daily_trades": 9,
+      "ml_enhancements": 3,
+      "pending_orders": 5,
+      "invested_ratio": 0.4221120410057834,
+      "invested_ratio_pct": 42.21120410057834
+    },
+    {
+      "date": "2025-06-03T00:00:00",
+      "total_value": 101185.99876801713,
+      "cash": 58513.61192719682,
+      "positions": 2,
+      "daily_trades": 4,
+      "ml_enhancements": 4,
+      "pending_orders": 6,
+      "invested_ratio": 0.4217222477454875,
+      "invested_ratio_pct": 42.17222477454875
+    },
+    {
+      "date": "2025-06-04T00:00:00",
+      "total_value": 101674.32820155335,
+      "cash": 81760.65525843811,
+      "positions": 1,
+      "daily_trades": 4,
+      "ml_enhancements": 3,
+      "pending_orders": 5,
+      "invested_ratio": 0.19585743319237392,
+      "invested_ratio_pct": 19.58574331923739
+    },
+    {
+      "date": "2025-06-05T00:00:00",
+      "total_value": 101609.20124116642,
+      "cash": 66301.3718954633,
+      "positions": 2,
+      "daily_trades": 4,
+      "ml_enhancements": 3,
+      "pending_orders": 7,
+      "invested_ratio": 0.34748653580989225,
+      "invested_ratio_pct": 34.74865358098923
+    },
+    {
+      "date": "2025-06-06T00:00:00",
+      "total_value": 101974.8668600629,
+      "cash": 66301.3718954633,
+      "positions": 2,
+      "daily_trades": 1,
+      "ml_enhancements": 1,
+      "pending_orders": 4,
+      "invested_ratio": 0.3498263450890629,
+      "invested_ratio_pct": 34.982634508906294
+    },
+    {
+      "date": "2025-06-09T00:00:00",
+      "total_value": 101889.10327974064,
+      "cash": 66301.3718954633,
+      "positions": 2,
+      "daily_trades": 1,
+      "ml_enhancements": 1,
+      "pending_orders": 4,
+      "invested_ratio": 0.3492790714485905,
+      "invested_ratio_pct": 34.92790714485905
+    },
+    {
+      "date": "2025-06-10T00:00:00",
+      "total_value": 101783.48640650901,
+      "cash": 60911.911318008024,
+      "positions": 3,
+      "daily_trades": 4,
+      "ml_enhancements": 3,
+      "pending_orders": 6,
+      "invested_ratio": 0.4015540883053035,
+      "invested_ratio_pct": 40.15540883053035
+    },
+    {
+      "date": "2025-06-11T00:00:00",
+      "total_value": 101510.61519995797,
+      "cash": 55828.13486853707,
+      "positions": 3,
+      "daily_trades": 2,
+      "ml_enhancements": 1,
+      "pending_orders": 6,
+      "invested_ratio": 0.45002663259831976,
+      "invested_ratio_pct": 45.00266325983198
+    },
+    {
+      "date": "2025-06-12T00:00:00",
+      "total_value": 101730.64131291248,
+      "cash": 60464.21758396962,
+      "positions": 4,
+      "daily_trades": 5,
+      "ml_enhancements": 2,
+      "pending_orders": 9,
+      "invested_ratio": 0.40564399473322693,
+      "invested_ratio_pct": 40.564399473322695
+    },
+    {
+      "date": "2025-06-13T00:00:00",
+      "total_value": 100943.53112304397,
+      "cash": 50710.09439361282,
+      "positions": 5,
+      "daily_trades": 6,
+      "ml_enhancements": 3,
+      "pending_orders": 10,
+      "invested_ratio": 0.49763898855687616,
+      "invested_ratio_pct": 49.763898855687614
+    },
+    {
+      "date": "2025-06-16T00:00:00",
+      "total_value": 101523.1681999692,
+      "cash": 49458.085428667924,
+      "positions": 5,
+      "daily_trades": 9,
+      "ml_enhancements": 3,
+      "pending_orders": 10,
+      "invested_ratio": 0.5128394207394039,
+      "invested_ratio_pct": 51.283942073940395
+    },
+    {
+      "date": "2025-06-17T00:00:00",
+      "total_value": 101194.94379520195,
+      "cash": 49444.13160800713,
+      "positions": 5,
+      "daily_trades": 5,
+      "ml_enhancements": 3,
+      "pending_orders": 10,
+      "invested_ratio": 0.5113972126110171,
+      "invested_ratio_pct": 51.13972126110171
+    },
+    {
+      "date": "2025-06-18T00:00:00",
+      "total_value": 101095.7130751251,
+      "cash": 49430.1014723419,
+      "positions": 5,
+      "daily_trades": 5,
+      "ml_enhancements": 3,
+      "pending_orders": 10,
+      "invested_ratio": 0.5110564041859029,
+      "invested_ratio_pct": 51.10564041859029
+    },
+    {
+      "date": "2025-06-20T00:00:00",
+      "total_value": 101442.50626024854,
+      "cash": 49415.94717821729,
+      "positions": 5,
+      "daily_trades": 6,
+      "ml_enhancements": 4,
+      "pending_orders": 9,
+      "invested_ratio": 0.5128674458077588,
+      "invested_ratio_pct": 51.28674458077588
+    },
+    {
+      "date": "2025-06-23T00:00:00",
+      "total_value": 101999.56663164747,
+      "cash": 49415.94717821729,
+      "positions": 5,
+      "daily_trades": 3,
+      "ml_enhancements": 3,
+      "pending_orders": 10,
+      "invested_ratio": 0.515527871244063,
+      "invested_ratio_pct": 51.552787124406294
+    },
+    {
+      "date": "2025-06-24T00:00:00",
+      "total_value": 104183.97410561377,
+      "cash": 40592.51230599219,
+      "positions": 6,
+      "daily_trades": 7,
+      "ml_enhancements": 4,
+      "pending_orders": 12,
+      "invested_ratio": 0.6103766183382235,
+      "invested_ratio_pct": 61.037661833822355
+    },
+    {
+      "date": "2025-06-25T00:00:00",
+      "total_value": 104197.56751709897,
+      "cash": 36751.87868195493,
+      "positions": 6,
+      "daily_trades": 6,
+      "ml_enhancements": 3,
+      "pending_orders": 10,
+      "invested_ratio": 0.6472865964368708,
+      "invested_ratio_pct": 64.72865964368708
+    },
+    {
+      "date": "2025-06-26T00:00:00",
+      "total_value": 105385.58271485288,
+      "cash": 36751.87868195493,
+      "positions": 6,
+      "daily_trades": 1,
+      "ml_enhancements": 1,
+      "pending_orders": 8,
+      "invested_ratio": 0.6512627464290219,
+      "invested_ratio_pct": 65.12627464290219
+    },
+    {
+      "date": "2025-06-27T00:00:00",
+      "total_value": 104465.13567048032,
+      "cash": 36751.87868195493,
+      "positions": 6,
+      "daily_trades": 5,
+      "ml_enhancements": 5,
+      "pending_orders": 13,
+      "invested_ratio": 0.6481900066843043,
+      "invested_ratio_pct": 64.81900066843042
+    },
+    {
+      "date": "2025-06-30T00:00:00",
+      "total_value": 105030.13443297031,
+      "cash": 45357.34817808751,
+      "positions": 6,
+      "daily_trades": 4,
+      "ml_enhancements": 1,
+      "pending_orders": 9,
+      "invested_ratio": 0.5681491942959064,
+      "invested_ratio_pct": 56.81491942959064
+    },
+    {
+      "date": "2025-07-01T00:00:00",
+      "total_value": 104652.40537407217,
+      "cash": 41896.92723228751,
+      "positions": 7,
+      "daily_trades": 2,
+      "ml_enhancements": 1,
+      "pending_orders": 8,
+      "invested_ratio": 0.5996563377350947,
+      "invested_ratio_pct": 59.965633773509474
+    },
+    {
+      "date": "2025-07-02T00:00:00",
+      "total_value": 105269.0152602416,
+      "cash": 41896.92723228751,
+      "positions": 7,
+      "daily_trades": 0,
+      "ml_enhancements": 0,
+      "pending_orders": 8,
+      "invested_ratio": 0.6020013379177939,
+      "invested_ratio_pct": 60.200133791779386
+    },
+    {
+      "date": "2025-07-03T00:00:00",
+      "total_value": 105815.19721367178,
+      "cash": 41896.92723228751,
+      "positions": 7,
+      "daily_trades": 1,
+      "ml_enhancements": 1,
+      "pending_orders": 9,
+      "invested_ratio": 0.6040556712502707,
+      "invested_ratio_pct": 60.40556712502707
+    },
+    {
+      "date": "2025-07-07T00:00:00",
+      "total_value": 105843.51359238954,
+      "cash": 42281.381085065324,
+      "positions": 7,
+      "daily_trades": 4,
+      "ml_enhancements": 2,
+      "pending_orders": 9,
+      "invested_ratio": 0.6005293130394957,
+      "invested_ratio_pct": 60.05293130394958
+    },
+    {
+      "date": "2025-07-08T00:00:00",
+      "total_value": 105703.38275755799,
+      "cash": 48452.059202565324,
+      "positions": 6,
+      "daily_trades": 1,
+      "ml_enhancements": 0,
+      "pending_orders": 6,
+      "invested_ratio": 0.5416224349820924,
+      "invested_ratio_pct": 54.162243498209236
+    },
+    {
+      "date": "2025-07-09T00:00:00",
+      "total_value": 105476.70463408387,
+      "cash": 48452.059202565324,
+      "positions": 6,
+      "daily_trades": 2,
+      "ml_enhancements": 2,
+      "pending_orders": 10,
+      "invested_ratio": 0.5406373438509146,
+      "invested_ratio_pct": 54.06373438509146
+    },
+    {
+      "date": "2025-07-10T00:00:00",
+      "total_value": 105080.81784543167,
+      "cash": 51141.54339322219,
+      "positions": 6,
+      "daily_trades": 7,
+      "ml_enhancements": 3,
+      "pending_orders": 11,
+      "invested_ratio": 0.5133122824714906,
+      "invested_ratio_pct": 51.33122824714906
+    },
+    {
+      "date": "2025-07-11T00:00:00",
+      "total_value": 104221.04431336196,
+      "cash": 50130.727632453745,
+      "positions": 6,
+      "daily_trades": 9,
+      "ml_enhancements": 3,
+      "pending_orders": 11,
+      "invested_ratio": 0.5189961109799914,
+      "invested_ratio_pct": 51.89961109799914
+    },
+    {
+      "date": "2025-07-14T00:00:00",
+      "total_value": 103903.28326091684,
+      "cash": 53686.65592632211,
+      "positions": 7,
+      "daily_trades": 9,
+      "ml_enhancements": 2,
+      "pending_orders": 11,
+      "invested_ratio": 0.4833016412820487,
+      "invested_ratio_pct": 48.33016412820487
+    },
+    {
+      "date": "2025-07-15T00:00:00",
+      "total_value": 103553.42583878219,
+      "cash": 47960.83188278854,
+      "positions": 7,
+      "daily_trades": 6,
+      "ml_enhancements": 3,
+      "pending_orders": 12,
+      "invested_ratio": 0.5368493944617857,
+      "invested_ratio_pct": 53.68493944617857
+    },
+    {
+      "date": "2025-07-16T00:00:00",
+      "total_value": 103542.53870041549,
+      "cash": 47960.83188278854,
+      "positions": 7,
+      "daily_trades": 3,
+      "ml_enhancements": 3,
+      "pending_orders": 13,
+      "invested_ratio": 0.536800695784021,
+      "invested_ratio_pct": 53.6800695784021
+    },
+    {
+      "date": "2025-07-17T00:00:00",
+      "total_value": 103892.56853677606,
+      "cash": 46761.95113565301,
+      "positions": 7,
+      "daily_trades": 4,
+      "ml_enhancements": 2,
+      "pending_orders": 11,
+      "invested_ratio": 0.5499009044222433,
+      "invested_ratio_pct": 54.99009044222433
+    },
+    {
+      "date": "2025-07-18T00:00:00",
+      "total_value": 104165.4872135903,
+      "cash": 45930.195785977994,
+      "positions": 7,
+      "daily_trades": 4,
+      "ml_enhancements": 2,
+      "pending_orders": 11,
+      "invested_ratio": 0.5590651278594936,
+      "invested_ratio_pct": 55.90651278594936
+    },
+    {
+      "date": "2025-07-21T00:00:00",
+      "total_value": 104082.4706151277,
+      "cash": 41671.71663258377,
+      "positions": 8,
+      "daily_trades": 3,
+      "ml_enhancements": 2,
+      "pending_orders": 12,
+      "invested_ratio": 0.599627906732961,
+      "invested_ratio_pct": 59.9627906732961
+    },
+    {
+      "date": "2025-07-22T00:00:00",
+      "total_value": 104511.29589096381,
+      "cash": 41566.779983676206,
+      "positions": 8,
+      "daily_trades": 3,
+      "ml_enhancements": 1,
+      "pending_orders": 10,
+      "invested_ratio": 0.6022747624616323,
+      "invested_ratio_pct": 60.22747624616323
+    },
+    {
+      "date": "2025-07-23T00:00:00",
+      "total_value": 104515.42918708139,
+      "cash": 45947.31206061655,
+      "positions": 7,
+      "daily_trades": 2,
+      "ml_enhancements": 1,
+      "pending_orders": 10,
+      "invested_ratio": 0.5603777124775386,
+      "invested_ratio_pct": 56.03777124775387
+    },
+    {
+      "date": "2025-07-24T00:00:00",
+      "total_value": 104810.80514693717,
+      "cash": 42411.43818068962,
+      "positions": 8,
+      "daily_trades": 3,
+      "ml_enhancements": 2,
+      "pending_orders": 12,
+      "invested_ratio": 0.5953524245784407,
+      "invested_ratio_pct": 59.53524245784407
+    },
+    {
+      "date": "2025-07-25T00:00:00",
+      "total_value": 105063.43141334012,
+      "cash": 33083.712335276155,
+      "positions": 9,
+      "daily_trades": 6,
+      "ml_enhancements": 4,
+      "pending_orders": 15,
+      "invested_ratio": 0.6851072548247701,
+      "invested_ratio_pct": 68.51072548247701
+    },
+    {
+      "date": "2025-07-28T00:00:00",
+      "total_value": 104819.54499802197,
+      "cash": 37728.0593336543,
+      "positions": 8,
+      "daily_trades": 4,
+      "ml_enhancements": 3,
+      "pending_orders": 12,
+      "invested_ratio": 0.6400665607319107,
+      "invested_ratio_pct": 64.00665607319107
+    },
+    {
+      "date": "2025-07-29T00:00:00",
+      "total_value": 104078.45094513535,
+      "cash": 33008.757662054304,
+      "positions": 8,
+      "daily_trades": 4,
+      "ml_enhancements": 3,
+      "pending_orders": 12,
+      "invested_ratio": 0.6828473390764168,
+      "invested_ratio_pct": 68.28473390764168
+    },
+    {
+      "date": "2025-07-30T00:00:00",
+      "total_value": 103806.42891765336,
+      "cash": 43383.0513541768,
+      "positions": 7,
+      "daily_trades": 3,
+      "ml_enhancements": 2,
+      "pending_orders": 11,
+      "invested_ratio": 0.5820774126755548,
+      "invested_ratio_pct": 58.20774126755548
+    },
+    {
+      "date": "2025-07-31T00:00:00",
+      "total_value": 103370.88461803694,
+      "cash": 41032.88707470199,
+      "positions": 8,
+      "daily_trades": 6,
+      "ml_enhancements": 5,
+      "pending_orders": 14,
+      "invested_ratio": 0.6030517952291737,
+      "invested_ratio_pct": 60.30517952291737
+    },
+    {
+      "date": "2025-08-01T00:00:00",
+      "total_value": 102096.63875267471,
+      "cash": 42430.84886620011,
+      "positions": 8,
+      "daily_trades": 10,
+      "ml_enhancements": 7,
+      "pending_orders": 17,
+      "invested_ratio": 0.5844050363990214,
+      "invested_ratio_pct": 58.44050363990214
+    },
+    {
+      "date": "2025-08-04T00:00:00",
+      "total_value": 102833.77428234508,
+      "cash": 51962.02129162242,
+      "positions": 6,
+      "daily_trades": 10,
+      "ml_enhancements": 4,
+      "pending_orders": 12,
+      "invested_ratio": 0.49469888026327674,
+      "invested_ratio_pct": 49.46988802632767
+    },
+    {
+      "date": "2025-08-05T00:00:00",
+      "total_value": 102173.83211380456,
+      "cash": 40919.1483064315,
+      "positions": 7,
+      "daily_trades": 7,
+      "ml_enhancements": 4,
+      "pending_orders": 12,
+      "invested_ratio": 0.599514401487316,
+      "invested_ratio_pct": 59.951440148731606
+    },
+    {
+      "date": "2025-08-06T00:00:00",
+      "total_value": 103162.16402803795,
+      "cash": 40904.83446871178,
+      "positions": 7,
+      "daily_trades": 7,
+      "ml_enhancements": 5,
+      "pending_orders": 13,
+      "invested_ratio": 0.6034899533748201,
+      "invested_ratio_pct": 60.348995337482016
+    },
+    {
+      "date": "2025-08-07T00:00:00",
+      "total_value": 103328.26542269127,
+      "cash": 40904.83446871178,
+      "positions": 7,
+      "daily_trades": 5,
+      "ml_enhancements": 5,
+      "pending_orders": 13,
+      "invested_ratio": 0.6041273479102754,
+      "invested_ratio_pct": 60.412734791027546
+    },
+    {
+      "date": "2025-08-08T00:00:00",
+      "total_value": 104046.08784138664,
+      "cash": 35834.1971400927,
+      "positions": 7,
+      "daily_trades": 5,
+      "ml_enhancements": 4,
+      "pending_orders": 13,
+      "invested_ratio": 0.6555930368595863,
+      "invested_ratio_pct": 65.55930368595862
+    },
+    {
+      "date": "2025-08-11T00:00:00",
+      "total_value": 103612.66723690522,
+      "cash": 26569.094879727498,
+      "positions": 8,
+      "daily_trades": 4,
+      "ml_enhancements": 3,
+      "pending_orders": 12,
+      "invested_ratio": 0.743572908716088,
+      "invested_ratio_pct": 74.35729087160881
+    },
+    {
+      "date": "2025-08-12T00:00:00",
+      "total_value": 104184.7459996973,
+      "cash": 29493.670804384812,
+      "positions": 8,
+      "daily_trades": 7,
+      "ml_enhancements": 4,
+      "pending_orders": 13,
+      "invested_ratio": 0.7169098938488511,
+      "invested_ratio_pct": 71.6909893848851
+    },
+    {
+      "date": "2025-08-13T00:00:00",
+      "total_value": 104288.60830389296,
+      "cash": 35780.53739630019,
+      "positions": 7,
+      "daily_trades": 3,
+      "ml_enhancements": 2,
+      "pending_orders": 10,
+      "invested_ratio": 0.6569084775583821,
+      "invested_ratio_pct": 65.6908477558382
+    },
+    {
+      "date": "2025-08-14T00:00:00",
+      "total_value": 104515.48048101699,
+      "cash": 35780.53739630019,
+      "positions": 7,
+      "daily_trades": 4,
+      "ml_enhancements": 4,
+      "pending_orders": 12,
+      "invested_ratio": 0.657653227716836,
+      "invested_ratio_pct": 65.7653227716836
+    },
+    {
+      "date": "2025-08-15T00:00:00",
+      "total_value": 104477.76356207168,
+      "cash": 35780.53739630019,
+      "positions": 7,
+      "daily_trades": 3,
+      "ml_enhancements": 3,
+      "pending_orders": 11,
+      "invested_ratio": 0.6575296390696334,
+      "invested_ratio_pct": 65.75296390696333
+    },
+    {
+      "date": "2025-08-18T00:00:00",
+      "total_value": 104717.81966863906,
+      "cash": 35780.53739630019,
+      "positions": 7,
+      "daily_trades": 3,
+      "ml_enhancements": 3,
+      "pending_orders": 12,
+      "invested_ratio": 0.658314721319434,
+      "invested_ratio_pct": 65.8314721319434
+    },
+    {
+      "date": "2025-08-19T00:00:00",
+      "total_value": 104169.92970004026,
+      "cash": 31390.88636507933,
+      "positions": 8,
+      "daily_trades": 3,
+      "ml_enhancements": 2,
+      "pending_orders": 11,
+      "invested_ratio": 0.6986569305031681,
+      "invested_ratio_pct": 69.8656930503168
+    },
+    {
+      "date": "2025-08-20T00:00:00",
+      "total_value": 103908.04647555295,
+      "cash": 31390.88636507933,
+      "positions": 8,
+      "daily_trades": 2,
+      "ml_enhancements": 2,
+      "pending_orders": 11,
+      "invested_ratio": 0.6978974446173922,
+      "invested_ratio_pct": 69.78974446173922
+    }
+  ],
+  "model_evolution": {
+    "AAPL": [
+      {
+        "date": "2025-07-24 00:00:00",
+        "regime_accuracy": 0.7804878048780488,
+        "strength_r2": -0.14232206292574223,
+        "training_samples": 493,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-07-25 00:00:00",
+        "regime_accuracy": 0.7774390243902439,
+        "strength_r2": -0.11292799552769694,
+        "training_samples": 494,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-07-28 00:00:00",
+        "regime_accuracy": 0.7787878787878788,
+        "strength_r2": -0.12294644931384191,
+        "training_samples": 495,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-07-29 00:00:00",
+        "regime_accuracy": 0.7787878787878788,
+        "strength_r2": -0.11194853756880241,
+        "training_samples": 496,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-07-30 00:00:00",
+        "regime_accuracy": 0.7878787878787878,
+        "strength_r2": -0.1330793914968632,
+        "training_samples": 497,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-07-31 00:00:00",
+        "regime_accuracy": 0.7831325301204819,
+        "strength_r2": -0.11311154563941173,
+        "training_samples": 498,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-01 00:00:00",
+        "regime_accuracy": 0.7891566265060241,
+        "strength_r2": -0.13215625938997289,
+        "training_samples": 499,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-04 00:00:00",
+        "regime_accuracy": 0.7921686746987951,
+        "strength_r2": -0.13660405597467573,
+        "training_samples": 500,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-05 00:00:00",
+        "regime_accuracy": 0.7874251497005988,
+        "strength_r2": -0.10706037813880898,
+        "training_samples": 501,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-06 00:00:00",
+        "regime_accuracy": 0.8023952095808383,
+        "strength_r2": -0.10324239002486968,
+        "training_samples": 502,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-07 00:00:00",
+        "regime_accuracy": 0.7964071856287425,
+        "strength_r2": -0.12261744882316006,
+        "training_samples": 503,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-08 00:00:00",
+        "regime_accuracy": 0.7946428571428572,
+        "strength_r2": -0.11295795694553534,
+        "training_samples": 504,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-11 00:00:00",
+        "regime_accuracy": 0.7946428571428572,
+        "strength_r2": -0.12871814099874535,
+        "training_samples": 505,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-12 00:00:00",
+        "regime_accuracy": 0.7916666666666667,
+        "strength_r2": -0.13595373524486887,
+        "training_samples": 506,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-13 00:00:00",
+        "regime_accuracy": 0.7958579881656804,
+        "strength_r2": -0.12868861948593835,
+        "training_samples": 507,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-14 00:00:00",
+        "regime_accuracy": 0.7928994082840237,
+        "strength_r2": -0.1245827369525504,
+        "training_samples": 508,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-15 00:00:00",
+        "regime_accuracy": 0.7869822485207101,
+        "strength_r2": -0.10804515245544533,
+        "training_samples": 509,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-18 00:00:00",
+        "regime_accuracy": 0.7911764705882354,
+        "strength_r2": -0.11613087006470535,
+        "training_samples": 510,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-19 00:00:00",
+        "regime_accuracy": 0.7852941176470588,
+        "strength_r2": -0.10360180316917178,
+        "training_samples": 511,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-20 00:00:00",
+        "regime_accuracy": 0.7970588235294118,
+        "strength_r2": -0.1419975522223782,
+        "training_samples": 512,
+        "models_trained": 2
+      }
+    ],
+    "MSFT": [
+      {
+        "date": "2025-07-24 00:00:00",
+        "regime_accuracy": 0.774390243902439,
+        "strength_r2": -0.21191279809414088,
+        "training_samples": 493,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-07-25 00:00:00",
+        "regime_accuracy": 0.7682926829268293,
+        "strength_r2": -0.2073886559160304,
+        "training_samples": 494,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-07-28 00:00:00",
+        "regime_accuracy": 0.7757575757575758,
+        "strength_r2": -0.18600440885452718,
+        "training_samples": 495,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-07-29 00:00:00",
+        "regime_accuracy": 0.7757575757575758,
+        "strength_r2": -0.22930502829588217,
+        "training_samples": 496,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-07-30 00:00:00",
+        "regime_accuracy": 0.7818181818181817,
+        "strength_r2": -0.2465921029998035,
+        "training_samples": 497,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-07-31 00:00:00",
+        "regime_accuracy": 0.7801204819277108,
+        "strength_r2": -0.2109662747118778,
+        "training_samples": 498,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-01 00:00:00",
+        "regime_accuracy": 0.7710843373493976,
+        "strength_r2": -0.18863043496072984,
+        "training_samples": 499,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-04 00:00:00",
+        "regime_accuracy": 0.7680722891566265,
+        "strength_r2": -0.17577390981163932,
+        "training_samples": 500,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-05 00:00:00",
+        "regime_accuracy": 0.7724550898203593,
+        "strength_r2": -0.16506736636101005,
+        "training_samples": 501,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-06 00:00:00",
+        "regime_accuracy": 0.7754491017964071,
+        "strength_r2": -0.2027890786250235,
+        "training_samples": 502,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-07 00:00:00",
+        "regime_accuracy": 0.7604790419161677,
+        "strength_r2": -0.21130408072442275,
+        "training_samples": 503,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-08 00:00:00",
+        "regime_accuracy": 0.7619047619047619,
+        "strength_r2": -0.2309733086685789,
+        "training_samples": 504,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-11 00:00:00",
+        "regime_accuracy": 0.7827380952380952,
+        "strength_r2": -0.20420550835378426,
+        "training_samples": 505,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-12 00:00:00",
+        "regime_accuracy": 0.7886904761904762,
+        "strength_r2": -0.21261485612112918,
+        "training_samples": 506,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-13 00:00:00",
+        "regime_accuracy": 0.7899408284023668,
+        "strength_r2": -0.1804409310048628,
+        "training_samples": 507,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-14 00:00:00",
+        "regime_accuracy": 0.7869822485207101,
+        "strength_r2": -0.21211131244099257,
+        "training_samples": 508,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-15 00:00:00",
+        "regime_accuracy": 0.7781065088757396,
+        "strength_r2": -0.18474776417251937,
+        "training_samples": 509,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-18 00:00:00",
+        "regime_accuracy": 0.7794117647058824,
+        "strength_r2": -0.19020162071660773,
+        "training_samples": 510,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-19 00:00:00",
+        "regime_accuracy": 0.788235294117647,
+        "strength_r2": -0.1705396392169578,
+        "training_samples": 511,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-20 00:00:00",
+        "regime_accuracy": 0.788235294117647,
+        "strength_r2": -0.18427329085014366,
+        "training_samples": 512,
+        "models_trained": 2
+      }
+    ],
+    "GOOGL": [
+      {
+        "date": "2025-07-24 00:00:00",
+        "regime_accuracy": 0.7896341463414634,
+        "strength_r2": -0.2179466419969075,
+        "training_samples": 493,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-07-25 00:00:00",
+        "regime_accuracy": 0.7896341463414634,
+        "strength_r2": -0.23638157630140977,
+        "training_samples": 494,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-07-28 00:00:00",
+        "regime_accuracy": 0.7909090909090909,
+        "strength_r2": -0.22673682144318041,
+        "training_samples": 495,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-07-29 00:00:00",
+        "regime_accuracy": 0.790909090909091,
+        "strength_r2": -0.23058313349796178,
+        "training_samples": 496,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-07-30 00:00:00",
+        "regime_accuracy": 0.7878787878787878,
+        "strength_r2": -0.26004768568868675,
+        "training_samples": 497,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-07-31 00:00:00",
+        "regime_accuracy": 0.7921686746987951,
+        "strength_r2": -0.25654985230605276,
+        "training_samples": 498,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-01 00:00:00",
+        "regime_accuracy": 0.7921686746987953,
+        "strength_r2": -0.20600181401498263,
+        "training_samples": 499,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-04 00:00:00",
+        "regime_accuracy": 0.7951807228915663,
+        "strength_r2": -0.15496243206400584,
+        "training_samples": 500,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-05 00:00:00",
+        "regime_accuracy": 0.7874251497005988,
+        "strength_r2": -0.18185798511322326,
+        "training_samples": 501,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-06 00:00:00",
+        "regime_accuracy": 0.7874251497005988,
+        "strength_r2": -0.174937904990623,
+        "training_samples": 502,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-07 00:00:00",
+        "regime_accuracy": 0.7874251497005988,
+        "strength_r2": -0.22225939088596602,
+        "training_samples": 503,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-08 00:00:00",
+        "regime_accuracy": 0.7946428571428572,
+        "strength_r2": -0.21771204445540548,
+        "training_samples": 504,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-11 00:00:00",
+        "regime_accuracy": 0.7886904761904763,
+        "strength_r2": -0.21607343283032265,
+        "training_samples": 505,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-12 00:00:00",
+        "regime_accuracy": 0.7946428571428572,
+        "strength_r2": -0.2334808516836866,
+        "training_samples": 506,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-13 00:00:00",
+        "regime_accuracy": 0.7869822485207101,
+        "strength_r2": -0.19783602784422083,
+        "training_samples": 507,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-14 00:00:00",
+        "regime_accuracy": 0.7899408284023669,
+        "strength_r2": -0.22230289132216374,
+        "training_samples": 508,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-15 00:00:00",
+        "regime_accuracy": 0.7840236686390533,
+        "strength_r2": -0.1865691591795573,
+        "training_samples": 509,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-18 00:00:00",
+        "regime_accuracy": 0.7823529411764706,
+        "strength_r2": -0.16848501170846342,
+        "training_samples": 510,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-19 00:00:00",
+        "regime_accuracy": 0.7852941176470588,
+        "strength_r2": -0.19029146787853235,
+        "training_samples": 511,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-20 00:00:00",
+        "regime_accuracy": 0.788235294117647,
+        "strength_r2": -0.19750841002270614,
+        "training_samples": 512,
+        "models_trained": 2
+      }
+    ],
+    "AMZN": [
+      {
+        "date": "2025-07-24 00:00:00",
+        "regime_accuracy": 0.75,
+        "strength_r2": -0.2284000049497239,
+        "training_samples": 493,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-07-25 00:00:00",
+        "regime_accuracy": 0.75,
+        "strength_r2": -0.21856852056782738,
+        "training_samples": 494,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-07-28 00:00:00",
+        "regime_accuracy": 0.7545454545454545,
+        "strength_r2": -0.2356018141217785,
+        "training_samples": 495,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-07-29 00:00:00",
+        "regime_accuracy": 0.7393939393939394,
+        "strength_r2": -0.2642452387167843,
+        "training_samples": 496,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-07-30 00:00:00",
+        "regime_accuracy": 0.7363636363636363,
+        "strength_r2": -0.19454965258919532,
+        "training_samples": 497,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-07-31 00:00:00",
+        "regime_accuracy": 0.7349397590361446,
+        "strength_r2": -0.18837659657462957,
+        "training_samples": 498,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-01 00:00:00",
+        "regime_accuracy": 0.7469879518072289,
+        "strength_r2": -0.1969532675436172,
+        "training_samples": 499,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-04 00:00:00",
+        "regime_accuracy": 0.7409638554216867,
+        "strength_r2": -0.2186506850501635,
+        "training_samples": 500,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-05 00:00:00",
+        "regime_accuracy": 0.7485029940119761,
+        "strength_r2": -0.21398469856711488,
+        "training_samples": 501,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-06 00:00:00",
+        "regime_accuracy": 0.7395209580838323,
+        "strength_r2": -0.2255787679419461,
+        "training_samples": 502,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-07 00:00:00",
+        "regime_accuracy": 0.7335329341317365,
+        "strength_r2": -0.24032189821482253,
+        "training_samples": 503,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-08 00:00:00",
+        "regime_accuracy": 0.7321428571428572,
+        "strength_r2": -0.20100370387200817,
+        "training_samples": 504,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-11 00:00:00",
+        "regime_accuracy": 0.7351190476190477,
+        "strength_r2": -0.17015258241216702,
+        "training_samples": 505,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-12 00:00:00",
+        "regime_accuracy": 0.7291666666666666,
+        "strength_r2": -0.22850405611774915,
+        "training_samples": 506,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-13 00:00:00",
+        "regime_accuracy": 0.7337278106508875,
+        "strength_r2": -0.18435805077262235,
+        "training_samples": 507,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-14 00:00:00",
+        "regime_accuracy": 0.7278106508875739,
+        "strength_r2": -0.18926701618207886,
+        "training_samples": 508,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-15 00:00:00",
+        "regime_accuracy": 0.7218934911242604,
+        "strength_r2": -0.1827000164532444,
+        "training_samples": 509,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-18 00:00:00",
+        "regime_accuracy": 0.7264705882352941,
+        "strength_r2": -0.20671395258298653,
+        "training_samples": 510,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-19 00:00:00",
+        "regime_accuracy": 0.7382352941176471,
+        "strength_r2": -0.16948147530256397,
+        "training_samples": 511,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-20 00:00:00",
+        "regime_accuracy": 0.7323529411764707,
+        "strength_r2": -0.19009272485901352,
+        "training_samples": 512,
+        "models_trained": 2
+      }
+    ],
+    "NVDA": [
+      {
+        "date": "2025-07-24 00:00:00",
+        "regime_accuracy": 0.7926829268292683,
+        "strength_r2": -0.10504097858959305,
+        "training_samples": 493,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-07-25 00:00:00",
+        "regime_accuracy": 0.7682926829268293,
+        "strength_r2": -0.14089563091949187,
+        "training_samples": 494,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-07-28 00:00:00",
+        "regime_accuracy": 0.7848484848484849,
+        "strength_r2": -0.129584841745771,
+        "training_samples": 495,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-07-29 00:00:00",
+        "regime_accuracy": 0.7787878787878788,
+        "strength_r2": -0.13049849352322584,
+        "training_samples": 496,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-07-30 00:00:00",
+        "regime_accuracy": 0.7848484848484849,
+        "strength_r2": -0.09793133978814628,
+        "training_samples": 497,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-07-31 00:00:00",
+        "regime_accuracy": 0.7771084337349398,
+        "strength_r2": -0.1277533628776074,
+        "training_samples": 498,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-01 00:00:00",
+        "regime_accuracy": 0.7831325301204819,
+        "strength_r2": -0.12136298234389353,
+        "training_samples": 499,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-04 00:00:00",
+        "regime_accuracy": 0.786144578313253,
+        "strength_r2": -0.14071088065366055,
+        "training_samples": 500,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-05 00:00:00",
+        "regime_accuracy": 0.7874251497005988,
+        "strength_r2": -0.11410522147835644,
+        "training_samples": 501,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-06 00:00:00",
+        "regime_accuracy": 0.7874251497005988,
+        "strength_r2": -0.09662732799716323,
+        "training_samples": 502,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-07 00:00:00",
+        "regime_accuracy": 0.781437125748503,
+        "strength_r2": -0.10405630719026837,
+        "training_samples": 503,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-08 00:00:00",
+        "regime_accuracy": 0.7886904761904763,
+        "strength_r2": -0.12000240535969031,
+        "training_samples": 504,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-11 00:00:00",
+        "regime_accuracy": 0.7827380952380952,
+        "strength_r2": -0.10291629681620407,
+        "training_samples": 505,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-12 00:00:00",
+        "regime_accuracy": 0.7827380952380952,
+        "strength_r2": -0.13359771130435816,
+        "training_samples": 506,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-13 00:00:00",
+        "regime_accuracy": 0.7840236686390533,
+        "strength_r2": -0.11808600172664963,
+        "training_samples": 507,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-14 00:00:00",
+        "regime_accuracy": 0.7840236686390533,
+        "strength_r2": -0.11995211870676192,
+        "training_samples": 508,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-15 00:00:00",
+        "regime_accuracy": 0.7810650887573964,
+        "strength_r2": -0.12266796892504372,
+        "training_samples": 509,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-18 00:00:00",
+        "regime_accuracy": 0.7852941176470588,
+        "strength_r2": -0.0899015211300529,
+        "training_samples": 510,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-19 00:00:00",
+        "regime_accuracy": 0.7823529411764706,
+        "strength_r2": -0.10005514608200528,
+        "training_samples": 511,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-20 00:00:00",
+        "regime_accuracy": 0.7970588235294118,
+        "strength_r2": -0.12168299534560889,
+        "training_samples": 512,
+        "models_trained": 2
+      }
+    ],
+    "TSLA": [
+      {
+        "date": "2025-07-24 00:00:00",
+        "regime_accuracy": 0.771341463414634,
+        "strength_r2": -0.04469391667338418,
+        "training_samples": 493,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-07-25 00:00:00",
+        "regime_accuracy": 0.7652439024390244,
+        "strength_r2": -0.059095715663880055,
+        "training_samples": 494,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-07-28 00:00:00",
+        "regime_accuracy": 0.7636363636363637,
+        "strength_r2": -0.04967625599522951,
+        "training_samples": 495,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-07-29 00:00:00",
+        "regime_accuracy": 0.7696969696969698,
+        "strength_r2": -0.07057793880545804,
+        "training_samples": 496,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-07-30 00:00:00",
+        "regime_accuracy": 0.7757575757575758,
+        "strength_r2": -0.04127799146293132,
+        "training_samples": 497,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-07-31 00:00:00",
+        "regime_accuracy": 0.7740963855421686,
+        "strength_r2": -0.07043249933740092,
+        "training_samples": 498,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-01 00:00:00",
+        "regime_accuracy": 0.7740963855421688,
+        "strength_r2": -0.06779875171998573,
+        "training_samples": 499,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-04 00:00:00",
+        "regime_accuracy": 0.7740963855421688,
+        "strength_r2": -0.04941884872566471,
+        "training_samples": 500,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-05 00:00:00",
+        "regime_accuracy": 0.7754491017964071,
+        "strength_r2": -0.05942552397351153,
+        "training_samples": 501,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-06 00:00:00",
+        "regime_accuracy": 0.7694610778443114,
+        "strength_r2": -0.0351919651183219,
+        "training_samples": 502,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-07 00:00:00",
+        "regime_accuracy": 0.7634730538922155,
+        "strength_r2": -0.05405954003157731,
+        "training_samples": 503,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-08 00:00:00",
+        "regime_accuracy": 0.7648809523809523,
+        "strength_r2": -0.03934190457484643,
+        "training_samples": 504,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-11 00:00:00",
+        "regime_accuracy": 0.7619047619047619,
+        "strength_r2": -0.05938309513269868,
+        "training_samples": 505,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-12 00:00:00",
+        "regime_accuracy": 0.7589285714285714,
+        "strength_r2": -0.05718822514953548,
+        "training_samples": 506,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-13 00:00:00",
+        "regime_accuracy": 0.7544378698224852,
+        "strength_r2": -0.06322107491975892,
+        "training_samples": 507,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-14 00:00:00",
+        "regime_accuracy": 0.7603550295857988,
+        "strength_r2": -0.057714918262518955,
+        "training_samples": 508,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-15 00:00:00",
+        "regime_accuracy": 0.7633136094674556,
+        "strength_r2": -0.08665399034785337,
+        "training_samples": 509,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-18 00:00:00",
+        "regime_accuracy": 0.7647058823529411,
+        "strength_r2": -0.07966729494050695,
+        "training_samples": 510,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-19 00:00:00",
+        "regime_accuracy": 0.7588235294117647,
+        "strength_r2": -0.10452200328961692,
+        "training_samples": 511,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-20 00:00:00",
+        "regime_accuracy": 0.7588235294117647,
+        "strength_r2": -0.04220254823664793,
+        "training_samples": 512,
+        "models_trained": 2
+      }
+    ],
+    "META": [
+      {
+        "date": "2025-07-24 00:00:00",
+        "regime_accuracy": 0.7591463414634146,
+        "strength_r2": -0.1497650600545899,
+        "training_samples": 493,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-07-25 00:00:00",
+        "regime_accuracy": 0.7682926829268293,
+        "strength_r2": -0.14707702743124473,
+        "training_samples": 494,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-07-28 00:00:00",
+        "regime_accuracy": 0.7636363636363637,
+        "strength_r2": -0.12455592519165992,
+        "training_samples": 495,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-07-29 00:00:00",
+        "regime_accuracy": 0.7636363636363637,
+        "strength_r2": -0.1272361047344177,
+        "training_samples": 496,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-07-30 00:00:00",
+        "regime_accuracy": 0.7515151515151515,
+        "strength_r2": -0.13389228255796004,
+        "training_samples": 497,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-07-31 00:00:00",
+        "regime_accuracy": 0.7530120481927711,
+        "strength_r2": -0.13867660692948103,
+        "training_samples": 498,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-01 00:00:00",
+        "regime_accuracy": 0.7590361445783133,
+        "strength_r2": -0.13890735554866773,
+        "training_samples": 499,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-04 00:00:00",
+        "regime_accuracy": 0.7831325301204819,
+        "strength_r2": -0.12662267341587574,
+        "training_samples": 500,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-05 00:00:00",
+        "regime_accuracy": 0.7634730538922155,
+        "strength_r2": -0.15033939863444679,
+        "training_samples": 501,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-06 00:00:00",
+        "regime_accuracy": 0.7754491017964071,
+        "strength_r2": -0.150089974899539,
+        "training_samples": 502,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-07 00:00:00",
+        "regime_accuracy": 0.7604790419161677,
+        "strength_r2": -0.12632545284317254,
+        "training_samples": 503,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-08 00:00:00",
+        "regime_accuracy": 0.7708333333333333,
+        "strength_r2": -0.13356813476989582,
+        "training_samples": 504,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-11 00:00:00",
+        "regime_accuracy": 0.7648809523809523,
+        "strength_r2": -0.11755838694083409,
+        "training_samples": 505,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-12 00:00:00",
+        "regime_accuracy": 0.7529761904761905,
+        "strength_r2": -0.15094834188566397,
+        "training_samples": 506,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-13 00:00:00",
+        "regime_accuracy": 0.757396449704142,
+        "strength_r2": -0.12673882100992762,
+        "training_samples": 507,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-14 00:00:00",
+        "regime_accuracy": 0.7485207100591715,
+        "strength_r2": -0.17333118054637953,
+        "training_samples": 508,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-15 00:00:00",
+        "regime_accuracy": 0.7810650887573964,
+        "strength_r2": -0.10654541119951466,
+        "training_samples": 509,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-18 00:00:00",
+        "regime_accuracy": 0.7558823529411764,
+        "strength_r2": -0.12168093968540594,
+        "training_samples": 510,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-19 00:00:00",
+        "regime_accuracy": 0.7794117647058824,
+        "strength_r2": -0.09845973036255506,
+        "training_samples": 511,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-20 00:00:00",
+        "regime_accuracy": 0.7647058823529411,
+        "strength_r2": -0.09040618161222858,
+        "training_samples": 512,
+        "models_trained": 2
+      }
+    ],
+    "NFLX": [
+      {
+        "date": "2025-07-24 00:00:00",
+        "regime_accuracy": 0.7835365853658537,
+        "strength_r2": -0.12302365683440863,
+        "training_samples": 493,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-07-25 00:00:00",
+        "regime_accuracy": 0.7835365853658537,
+        "strength_r2": -0.1238238185442041,
+        "training_samples": 494,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-07-28 00:00:00",
+        "regime_accuracy": 0.7848484848484849,
+        "strength_r2": -0.09872924825367246,
+        "training_samples": 495,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-07-29 00:00:00",
+        "regime_accuracy": 0.7818181818181819,
+        "strength_r2": -0.09116784485338181,
+        "training_samples": 496,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-07-30 00:00:00",
+        "regime_accuracy": 0.7787878787878788,
+        "strength_r2": -0.10104678729517591,
+        "training_samples": 497,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-07-31 00:00:00",
+        "regime_accuracy": 0.7801204819277108,
+        "strength_r2": -0.09578591946257531,
+        "training_samples": 498,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-01 00:00:00",
+        "regime_accuracy": 0.7771084337349398,
+        "strength_r2": -0.14468265759997345,
+        "training_samples": 499,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-04 00:00:00",
+        "regime_accuracy": 0.7771084337349398,
+        "strength_r2": -0.141680099914391,
+        "training_samples": 500,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-05 00:00:00",
+        "regime_accuracy": 0.7754491017964071,
+        "strength_r2": -0.10518698847546604,
+        "training_samples": 501,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-06 00:00:00",
+        "regime_accuracy": 0.784431137724551,
+        "strength_r2": -0.10166137380437612,
+        "training_samples": 502,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-07 00:00:00",
+        "regime_accuracy": 0.7904191616766467,
+        "strength_r2": -0.132463104361504,
+        "training_samples": 503,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-08 00:00:00",
+        "regime_accuracy": 0.7827380952380952,
+        "strength_r2": -0.07958956592519306,
+        "training_samples": 504,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-11 00:00:00",
+        "regime_accuracy": 0.7916666666666667,
+        "strength_r2": -0.10303971867514716,
+        "training_samples": 505,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-12 00:00:00",
+        "regime_accuracy": 0.7827380952380952,
+        "strength_r2": -0.14140021244937429,
+        "training_samples": 506,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-13 00:00:00",
+        "regime_accuracy": 0.7810650887573964,
+        "strength_r2": -0.08659420881707591,
+        "training_samples": 507,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-14 00:00:00",
+        "regime_accuracy": 0.7899408284023668,
+        "strength_r2": -0.10015125565763505,
+        "training_samples": 508,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-15 00:00:00",
+        "regime_accuracy": 0.7928994082840237,
+        "strength_r2": -0.12211565078574804,
+        "training_samples": 509,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-18 00:00:00",
+        "regime_accuracy": 0.7970588235294118,
+        "strength_r2": -0.12029633932398076,
+        "training_samples": 510,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-19 00:00:00",
+        "regime_accuracy": 0.7852941176470588,
+        "strength_r2": -0.13359849038666127,
+        "training_samples": 511,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-20 00:00:00",
+        "regime_accuracy": 0.7823529411764706,
+        "strength_r2": -0.10594344571281344,
+        "training_samples": 512,
+        "models_trained": 2
+      }
+    ],
+    "CRM": [
+      {
+        "date": "2025-07-24 00:00:00",
+        "regime_accuracy": 0.7469512195121951,
+        "strength_r2": -0.08737315287009573,
+        "training_samples": 493,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-07-25 00:00:00",
+        "regime_accuracy": 0.7591463414634145,
+        "strength_r2": -0.05857335267270203,
+        "training_samples": 494,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-07-28 00:00:00",
+        "regime_accuracy": 0.7606060606060606,
+        "strength_r2": -0.06898387810949402,
+        "training_samples": 495,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-07-29 00:00:00",
+        "regime_accuracy": 0.7545454545454546,
+        "strength_r2": -0.07715771679160843,
+        "training_samples": 496,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-07-30 00:00:00",
+        "regime_accuracy": 0.7454545454545455,
+        "strength_r2": -0.07210576570479232,
+        "training_samples": 497,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-07-31 00:00:00",
+        "regime_accuracy": 0.75,
+        "strength_r2": -0.08061122868862902,
+        "training_samples": 498,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-01 00:00:00",
+        "regime_accuracy": 0.7319277108433735,
+        "strength_r2": -0.08355774730767473,
+        "training_samples": 499,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-04 00:00:00",
+        "regime_accuracy": 0.7259036144578314,
+        "strength_r2": -0.07698189871285055,
+        "training_samples": 500,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-05 00:00:00",
+        "regime_accuracy": 0.7275449101796407,
+        "strength_r2": -0.06815879468714126,
+        "training_samples": 501,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-06 00:00:00",
+        "regime_accuracy": 0.7305389221556886,
+        "strength_r2": -0.08697885056047361,
+        "training_samples": 502,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-07 00:00:00",
+        "regime_accuracy": 0.7335329341317365,
+        "strength_r2": -0.07787644495963353,
+        "training_samples": 503,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-08 00:00:00",
+        "regime_accuracy": 0.7291666666666667,
+        "strength_r2": -0.09489672689793915,
+        "training_samples": 504,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-11 00:00:00",
+        "regime_accuracy": 0.7321428571428572,
+        "strength_r2": -0.0807038238441885,
+        "training_samples": 505,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-12 00:00:00",
+        "regime_accuracy": 0.7351190476190477,
+        "strength_r2": -0.0713862632633957,
+        "training_samples": 506,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-13 00:00:00",
+        "regime_accuracy": 0.7307692307692308,
+        "strength_r2": -0.0756766950543436,
+        "training_samples": 507,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-14 00:00:00",
+        "regime_accuracy": 0.7366863905325444,
+        "strength_r2": -0.06208944341091338,
+        "training_samples": 508,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-15 00:00:00",
+        "regime_accuracy": 0.7485207100591715,
+        "strength_r2": -0.07233396198756403,
+        "training_samples": 509,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-18 00:00:00",
+        "regime_accuracy": 0.75,
+        "strength_r2": -0.0721554331293528,
+        "training_samples": 510,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-19 00:00:00",
+        "regime_accuracy": 0.7529411764705882,
+        "strength_r2": -0.07764330125786822,
+        "training_samples": 511,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-20 00:00:00",
+        "regime_accuracy": 0.7470588235294118,
+        "strength_r2": -0.062378217122687984,
+        "training_samples": 512,
+        "models_trained": 2
+      }
+    ],
+    "SNOW": [
+      {
+        "date": "2025-07-24 00:00:00",
+        "regime_accuracy": 0.7164634146341464,
+        "strength_r2": 0.021132176871724195,
+        "training_samples": 493,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-07-25 00:00:00",
+        "regime_accuracy": 0.7225609756097561,
+        "strength_r2": 0.025974571363012067,
+        "training_samples": 494,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-07-28 00:00:00",
+        "regime_accuracy": 0.7181818181818183,
+        "strength_r2": 0.03330324771912718,
+        "training_samples": 495,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-07-29 00:00:00",
+        "regime_accuracy": 0.7272727272727273,
+        "strength_r2": 0.059890333579583066,
+        "training_samples": 496,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-07-30 00:00:00",
+        "regime_accuracy": 0.7272727272727273,
+        "strength_r2": 0.06268097577374698,
+        "training_samples": 497,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-07-31 00:00:00",
+        "regime_accuracy": 0.7289156626506024,
+        "strength_r2": 0.05795656323899373,
+        "training_samples": 498,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-01 00:00:00",
+        "regime_accuracy": 0.7259036144578312,
+        "strength_r2": 0.07760669810512605,
+        "training_samples": 499,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-04 00:00:00",
+        "regime_accuracy": 0.7289156626506024,
+        "strength_r2": 0.07214691206348356,
+        "training_samples": 500,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-05 00:00:00",
+        "regime_accuracy": 0.7275449101796407,
+        "strength_r2": 0.07366794945061739,
+        "training_samples": 501,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-06 00:00:00",
+        "regime_accuracy": 0.7245508982035929,
+        "strength_r2": 0.07970082880867002,
+        "training_samples": 502,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-07 00:00:00",
+        "regime_accuracy": 0.7305389221556886,
+        "strength_r2": 0.07035954088192692,
+        "training_samples": 503,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-08 00:00:00",
+        "regime_accuracy": 0.7291666666666666,
+        "strength_r2": 0.07913738092739303,
+        "training_samples": 504,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-11 00:00:00",
+        "regime_accuracy": 0.7291666666666666,
+        "strength_r2": 0.08213130625087728,
+        "training_samples": 505,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-12 00:00:00",
+        "regime_accuracy": 0.7291666666666667,
+        "strength_r2": 0.0942881625025917,
+        "training_samples": 506,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-13 00:00:00",
+        "regime_accuracy": 0.7248520710059172,
+        "strength_r2": 0.08547126478327144,
+        "training_samples": 507,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-14 00:00:00",
+        "regime_accuracy": 0.7248520710059172,
+        "strength_r2": 0.08362363400284123,
+        "training_samples": 508,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-15 00:00:00",
+        "regime_accuracy": 0.7189349112426036,
+        "strength_r2": 0.07989105708605088,
+        "training_samples": 509,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-18 00:00:00",
+        "regime_accuracy": 0.7205882352941176,
+        "strength_r2": 0.10516882998584498,
+        "training_samples": 510,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-19 00:00:00",
+        "regime_accuracy": 0.7264705882352941,
+        "strength_r2": 0.09513811311922932,
+        "training_samples": 511,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-20 00:00:00",
+        "regime_accuracy": 0.7264705882352942,
+        "strength_r2": 0.09366362421720764,
+        "training_samples": 512,
+        "models_trained": 2
+      }
+    ],
+    "PLTR": [
+      {
+        "date": "2025-07-24 00:00:00",
+        "regime_accuracy": 0.7774390243902438,
+        "strength_r2": -0.08690577115555886,
+        "training_samples": 493,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-07-25 00:00:00",
+        "regime_accuracy": 0.8079268292682926,
+        "strength_r2": -0.0765287044411681,
+        "training_samples": 494,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-07-28 00:00:00",
+        "regime_accuracy": 0.8060606060606061,
+        "strength_r2": -0.060787562871021716,
+        "training_samples": 495,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-07-29 00:00:00",
+        "regime_accuracy": 0.803030303030303,
+        "strength_r2": -0.08028379418249432,
+        "training_samples": 496,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-07-30 00:00:00",
+        "regime_accuracy": 0.7787878787878788,
+        "strength_r2": -0.09237589302590699,
+        "training_samples": 497,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-07-31 00:00:00",
+        "regime_accuracy": 0.8012048192771084,
+        "strength_r2": -0.05878051123620642,
+        "training_samples": 498,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-01 00:00:00",
+        "regime_accuracy": 0.7740963855421688,
+        "strength_r2": -0.0743689291453451,
+        "training_samples": 499,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-04 00:00:00",
+        "regime_accuracy": 0.7951807228915663,
+        "strength_r2": -0.08468192934540186,
+        "training_samples": 500,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-05 00:00:00",
+        "regime_accuracy": 0.7664670658682635,
+        "strength_r2": -0.09718099981280692,
+        "training_samples": 501,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-06 00:00:00",
+        "regime_accuracy": 0.8023952095808383,
+        "strength_r2": -0.08593333639970002,
+        "training_samples": 502,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-07 00:00:00",
+        "regime_accuracy": 0.7964071856287425,
+        "strength_r2": -0.06462402290947156,
+        "training_samples": 503,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-08 00:00:00",
+        "regime_accuracy": 0.8005952380952381,
+        "strength_r2": -0.08376295012140078,
+        "training_samples": 504,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-11 00:00:00",
+        "regime_accuracy": 0.7976190476190477,
+        "strength_r2": -0.040379803716681706,
+        "training_samples": 505,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-12 00:00:00",
+        "regime_accuracy": 0.8065476190476191,
+        "strength_r2": -0.05149735809342759,
+        "training_samples": 506,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-13 00:00:00",
+        "regime_accuracy": 0.8047337278106509,
+        "strength_r2": -0.03978304311396341,
+        "training_samples": 507,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-14 00:00:00",
+        "regime_accuracy": 0.8017751479289941,
+        "strength_r2": -0.06181112846520509,
+        "training_samples": 508,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-15 00:00:00",
+        "regime_accuracy": 0.8047337278106509,
+        "strength_r2": -0.04147109701076579,
+        "training_samples": 509,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-18 00:00:00",
+        "regime_accuracy": 0.8058823529411765,
+        "strength_r2": -0.03436090269256875,
+        "training_samples": 510,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-19 00:00:00",
+        "regime_accuracy": 0.8058823529411765,
+        "strength_r2": -0.009386573471936,
+        "training_samples": 511,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-20 00:00:00",
+        "regime_accuracy": 0.7941176470588236,
+        "strength_r2": -0.03557584056387131,
+        "training_samples": 512,
+        "models_trained": 2
+      }
+    ],
+    "COIN": [
+      {
+        "date": "2025-07-24 00:00:00",
+        "regime_accuracy": 0.7317073170731707,
+        "strength_r2": -0.1388924063062309,
+        "training_samples": 493,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-07-25 00:00:00",
+        "regime_accuracy": 0.7225609756097561,
+        "strength_r2": -0.1264048042894006,
+        "training_samples": 494,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-07-28 00:00:00",
+        "regime_accuracy": 0.7272727272727273,
+        "strength_r2": -0.12527967900706194,
+        "training_samples": 495,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-07-29 00:00:00",
+        "regime_accuracy": 0.7303030303030302,
+        "strength_r2": -0.12120901563588293,
+        "training_samples": 496,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-07-30 00:00:00",
+        "regime_accuracy": 0.7181818181818183,
+        "strength_r2": -0.13332581796472676,
+        "training_samples": 497,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-07-31 00:00:00",
+        "regime_accuracy": 0.7168674698795181,
+        "strength_r2": -0.12543117733415943,
+        "training_samples": 498,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-01 00:00:00",
+        "regime_accuracy": 0.7289156626506024,
+        "strength_r2": -0.12230760637076354,
+        "training_samples": 499,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-04 00:00:00",
+        "regime_accuracy": 0.7289156626506024,
+        "strength_r2": -0.15021218259763325,
+        "training_samples": 500,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-05 00:00:00",
+        "regime_accuracy": 0.7245508982035929,
+        "strength_r2": -0.1233876607959149,
+        "training_samples": 501,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-06 00:00:00",
+        "regime_accuracy": 0.7245508982035929,
+        "strength_r2": -0.15552484523067533,
+        "training_samples": 502,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-07 00:00:00",
+        "regime_accuracy": 0.7215568862275449,
+        "strength_r2": -0.1532614629565333,
+        "training_samples": 503,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-08 00:00:00",
+        "regime_accuracy": 0.7261904761904762,
+        "strength_r2": -0.13534424595162498,
+        "training_samples": 504,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-11 00:00:00",
+        "regime_accuracy": 0.7202380952380952,
+        "strength_r2": -0.15965242729069373,
+        "training_samples": 505,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-12 00:00:00",
+        "regime_accuracy": 0.7113095238095237,
+        "strength_r2": -0.1382038492457056,
+        "training_samples": 506,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-13 00:00:00",
+        "regime_accuracy": 0.7100591715976332,
+        "strength_r2": -0.15674774392383262,
+        "training_samples": 507,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-14 00:00:00",
+        "regime_accuracy": 0.7189349112426036,
+        "strength_r2": -0.14031743611283176,
+        "training_samples": 508,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-15 00:00:00",
+        "regime_accuracy": 0.7071005917159763,
+        "strength_r2": -0.13524859486205587,
+        "training_samples": 509,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-18 00:00:00",
+        "regime_accuracy": 0.7205882352941176,
+        "strength_r2": -0.13575251586055226,
+        "training_samples": 510,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-19 00:00:00",
+        "regime_accuracy": 0.7147058823529412,
+        "strength_r2": -0.11380858121172377,
+        "training_samples": 511,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-20 00:00:00",
+        "regime_accuracy": 0.7147058823529411,
+        "strength_r2": -0.14149440422460324,
+        "training_samples": 512,
+        "models_trained": 2
+      }
+    ],
+    "UBER": [
+      {
+        "date": "2025-07-24 00:00:00",
+        "regime_accuracy": 0.7713414634146342,
+        "strength_r2": -0.11551453924874688,
+        "training_samples": 493,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-07-25 00:00:00",
+        "regime_accuracy": 0.7591463414634146,
+        "strength_r2": -0.11929815440606906,
+        "training_samples": 494,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-07-28 00:00:00",
+        "regime_accuracy": 0.7545454545454545,
+        "strength_r2": -0.09908040600336554,
+        "training_samples": 495,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-07-29 00:00:00",
+        "regime_accuracy": 0.7575757575757576,
+        "strength_r2": -0.12882603688187788,
+        "training_samples": 496,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-07-30 00:00:00",
+        "regime_accuracy": 0.7424242424242424,
+        "strength_r2": -0.09802514197265244,
+        "training_samples": 497,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-07-31 00:00:00",
+        "regime_accuracy": 0.7560240963855422,
+        "strength_r2": -0.10602709904551844,
+        "training_samples": 498,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-01 00:00:00",
+        "regime_accuracy": 0.7379518072289157,
+        "strength_r2": -0.0953975811735458,
+        "training_samples": 499,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-04 00:00:00",
+        "regime_accuracy": 0.7439759036144578,
+        "strength_r2": -0.09886251974245441,
+        "training_samples": 500,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-05 00:00:00",
+        "regime_accuracy": 0.7395209580838323,
+        "strength_r2": -0.08849857476150702,
+        "training_samples": 501,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-06 00:00:00",
+        "regime_accuracy": 0.7395209580838323,
+        "strength_r2": -0.0706401350858622,
+        "training_samples": 502,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-07 00:00:00",
+        "regime_accuracy": 0.7365269461077845,
+        "strength_r2": -0.11774609769233979,
+        "training_samples": 503,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-08 00:00:00",
+        "regime_accuracy": 0.7440476190476191,
+        "strength_r2": -0.08908078277911446,
+        "training_samples": 504,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-11 00:00:00",
+        "regime_accuracy": 0.7291666666666667,
+        "strength_r2": -0.09744340409046182,
+        "training_samples": 505,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-12 00:00:00",
+        "regime_accuracy": 0.7380952380952381,
+        "strength_r2": -0.09964499157449214,
+        "training_samples": 506,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-13 00:00:00",
+        "regime_accuracy": 0.7366863905325444,
+        "strength_r2": -0.10179864600776778,
+        "training_samples": 507,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-14 00:00:00",
+        "regime_accuracy": 0.7396449704142012,
+        "strength_r2": -0.13108331449522848,
+        "training_samples": 508,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-15 00:00:00",
+        "regime_accuracy": 0.7455621301775148,
+        "strength_r2": -0.11484916547311941,
+        "training_samples": 509,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-18 00:00:00",
+        "regime_accuracy": 0.7352941176470589,
+        "strength_r2": -0.13991557196007087,
+        "training_samples": 510,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-19 00:00:00",
+        "regime_accuracy": 0.7441176470588236,
+        "strength_r2": -0.14629001032494204,
+        "training_samples": 511,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-20 00:00:00",
+        "regime_accuracy": 0.7441176470588236,
+        "strength_r2": -0.1234280875881939,
+        "training_samples": 512,
+        "models_trained": 2
+      }
+    ],
+    "DIS": [
+      {
+        "date": "2025-07-24 00:00:00",
+        "regime_accuracy": 0.7682926829268293,
+        "strength_r2": -0.29487458225014873,
+        "training_samples": 493,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-07-25 00:00:00",
+        "regime_accuracy": 0.7713414634146342,
+        "strength_r2": -0.23135548421477925,
+        "training_samples": 494,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-07-28 00:00:00",
+        "regime_accuracy": 0.7696969696969697,
+        "strength_r2": -0.25909959414779016,
+        "training_samples": 495,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-07-29 00:00:00",
+        "regime_accuracy": 0.7696969696969698,
+        "strength_r2": -0.27517572150221026,
+        "training_samples": 496,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-07-30 00:00:00",
+        "regime_accuracy": 0.7757575757575758,
+        "strength_r2": -0.2832901638862796,
+        "training_samples": 497,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-07-31 00:00:00",
+        "regime_accuracy": 0.7771084337349398,
+        "strength_r2": -0.3033848496479974,
+        "training_samples": 498,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-01 00:00:00",
+        "regime_accuracy": 0.7710843373493976,
+        "strength_r2": -0.2844299733769763,
+        "training_samples": 499,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-04 00:00:00",
+        "regime_accuracy": 0.7680722891566265,
+        "strength_r2": -0.2813691507112639,
+        "training_samples": 500,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-05 00:00:00",
+        "regime_accuracy": 0.7664670658682635,
+        "strength_r2": -0.2596807217623832,
+        "training_samples": 501,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-06 00:00:00",
+        "regime_accuracy": 0.7754491017964071,
+        "strength_r2": -0.24144836177237183,
+        "training_samples": 502,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-07 00:00:00",
+        "regime_accuracy": 0.7694610778443114,
+        "strength_r2": -0.2850049568180849,
+        "training_samples": 503,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-08 00:00:00",
+        "regime_accuracy": 0.7708333333333334,
+        "strength_r2": -0.2778383806344037,
+        "training_samples": 504,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-11 00:00:00",
+        "regime_accuracy": 0.7678571428571429,
+        "strength_r2": -0.28558873304900845,
+        "training_samples": 505,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-12 00:00:00",
+        "regime_accuracy": 0.7708333333333334,
+        "strength_r2": -0.24990245076758988,
+        "training_samples": 506,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-13 00:00:00",
+        "regime_accuracy": 0.7692307692307692,
+        "strength_r2": -0.2681392649424007,
+        "training_samples": 507,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-14 00:00:00",
+        "regime_accuracy": 0.7781065088757397,
+        "strength_r2": -0.2603489541378752,
+        "training_samples": 508,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-15 00:00:00",
+        "regime_accuracy": 0.7692307692307692,
+        "strength_r2": -0.2530541456785167,
+        "training_samples": 509,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-18 00:00:00",
+        "regime_accuracy": 0.7705882352941176,
+        "strength_r2": -0.2476247156843565,
+        "training_samples": 510,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-19 00:00:00",
+        "regime_accuracy": 0.7676470588235293,
+        "strength_r2": -0.27160331605678023,
+        "training_samples": 511,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-20 00:00:00",
+        "regime_accuracy": 0.7735294117647058,
+        "strength_r2": -0.27166651609838033,
+        "training_samples": 512,
+        "models_trained": 2
+      }
+    ],
+    "JPM": [
+      {
+        "date": "2025-07-24 00:00:00",
+        "regime_accuracy": 0.7865853658536586,
+        "strength_r2": -0.1482586053509065,
+        "training_samples": 493,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-07-25 00:00:00",
+        "regime_accuracy": 0.7835365853658537,
+        "strength_r2": -0.1739618458632427,
+        "training_samples": 494,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-07-28 00:00:00",
+        "regime_accuracy": 0.7818181818181819,
+        "strength_r2": -0.14880287686169036,
+        "training_samples": 495,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-07-29 00:00:00",
+        "regime_accuracy": 0.7848484848484849,
+        "strength_r2": -0.15211604308272608,
+        "training_samples": 496,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-07-30 00:00:00",
+        "regime_accuracy": 0.793939393939394,
+        "strength_r2": -0.20488584337420324,
+        "training_samples": 497,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-07-31 00:00:00",
+        "regime_accuracy": 0.786144578313253,
+        "strength_r2": -0.15817020587344133,
+        "training_samples": 498,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-01 00:00:00",
+        "regime_accuracy": 0.7921686746987953,
+        "strength_r2": -0.19843709791812458,
+        "training_samples": 499,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-04 00:00:00",
+        "regime_accuracy": 0.7951807228915663,
+        "strength_r2": -0.16735996276421883,
+        "training_samples": 500,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-05 00:00:00",
+        "regime_accuracy": 0.7934131736526946,
+        "strength_r2": -0.17590796178591872,
+        "training_samples": 501,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-06 00:00:00",
+        "regime_accuracy": 0.8023952095808383,
+        "strength_r2": -0.12548737056933656,
+        "training_samples": 502,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-07 00:00:00",
+        "regime_accuracy": 0.7904191616766467,
+        "strength_r2": -0.16054614241488152,
+        "training_samples": 503,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-08 00:00:00",
+        "regime_accuracy": 0.7946428571428572,
+        "strength_r2": -0.13793080309809924,
+        "training_samples": 504,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-11 00:00:00",
+        "regime_accuracy": 0.7886904761904763,
+        "strength_r2": -0.2120255166047187,
+        "training_samples": 505,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-12 00:00:00",
+        "regime_accuracy": 0.7857142857142857,
+        "strength_r2": -0.18867435542598354,
+        "training_samples": 506,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-13 00:00:00",
+        "regime_accuracy": 0.7899408284023668,
+        "strength_r2": -0.2154102413873411,
+        "training_samples": 507,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-14 00:00:00",
+        "regime_accuracy": 0.7840236686390533,
+        "strength_r2": -0.20405707822122443,
+        "training_samples": 508,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-15 00:00:00",
+        "regime_accuracy": 0.7810650887573964,
+        "strength_r2": -0.20818699941497854,
+        "training_samples": 509,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-18 00:00:00",
+        "regime_accuracy": 0.7823529411764706,
+        "strength_r2": -0.15717845819855647,
+        "training_samples": 510,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-19 00:00:00",
+        "regime_accuracy": 0.7794117647058822,
+        "strength_r2": -0.17871983888047305,
+        "training_samples": 511,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-20 00:00:00",
+        "regime_accuracy": 0.7823529411764706,
+        "strength_r2": -0.18976787581265897,
+        "training_samples": 512,
+        "models_trained": 2
+      }
+    ],
+    "BAC": [
+      {
+        "date": "2025-07-24 00:00:00",
+        "regime_accuracy": 0.7865853658536586,
+        "strength_r2": -0.21658318777910612,
+        "training_samples": 493,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-07-25 00:00:00",
+        "regime_accuracy": 0.7896341463414634,
+        "strength_r2": -0.1524963582053409,
+        "training_samples": 494,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-07-28 00:00:00",
+        "regime_accuracy": 0.790909090909091,
+        "strength_r2": -0.15952780796866184,
+        "training_samples": 495,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-07-29 00:00:00",
+        "regime_accuracy": 0.7848484848484849,
+        "strength_r2": -0.15778374349121693,
+        "training_samples": 496,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-07-30 00:00:00",
+        "regime_accuracy": 0.7969696969696969,
+        "strength_r2": -0.17133092395773186,
+        "training_samples": 497,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-07-31 00:00:00",
+        "regime_accuracy": 0.7891566265060241,
+        "strength_r2": -0.17292963109123538,
+        "training_samples": 498,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-01 00:00:00",
+        "regime_accuracy": 0.8042168674698795,
+        "strength_r2": -0.14894021476848562,
+        "training_samples": 499,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-04 00:00:00",
+        "regime_accuracy": 0.7981927710843373,
+        "strength_r2": -0.1578014935601294,
+        "training_samples": 500,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-05 00:00:00",
+        "regime_accuracy": 0.7934131736526946,
+        "strength_r2": -0.1783409459323052,
+        "training_samples": 501,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-06 00:00:00",
+        "regime_accuracy": 0.8053892215568862,
+        "strength_r2": -0.1794545612679994,
+        "training_samples": 502,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-07 00:00:00",
+        "regime_accuracy": 0.8023952095808383,
+        "strength_r2": -0.17689600496033508,
+        "training_samples": 503,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-08 00:00:00",
+        "regime_accuracy": 0.8035714285714286,
+        "strength_r2": -0.16498945392936437,
+        "training_samples": 504,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-11 00:00:00",
+        "regime_accuracy": 0.7916666666666666,
+        "strength_r2": -0.20475433343254623,
+        "training_samples": 505,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-12 00:00:00",
+        "regime_accuracy": 0.7857142857142858,
+        "strength_r2": -0.18566864158270657,
+        "training_samples": 506,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-13 00:00:00",
+        "regime_accuracy": 0.7928994082840237,
+        "strength_r2": -0.17988277646718065,
+        "training_samples": 507,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-14 00:00:00",
+        "regime_accuracy": 0.7840236686390533,
+        "strength_r2": -0.2091625446913199,
+        "training_samples": 508,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-15 00:00:00",
+        "regime_accuracy": 0.7721893491124261,
+        "strength_r2": -0.19363466908081728,
+        "training_samples": 509,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-18 00:00:00",
+        "regime_accuracy": 0.7764705882352941,
+        "strength_r2": -0.17949575780287697,
+        "training_samples": 510,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-19 00:00:00",
+        "regime_accuracy": 0.7735294117647059,
+        "strength_r2": -0.1825881240042605,
+        "training_samples": 511,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-20 00:00:00",
+        "regime_accuracy": 0.7970588235294118,
+        "strength_r2": -0.14844600038505917,
+        "training_samples": 512,
+        "models_trained": 2
+      }
+    ],
+    "JNJ": [
+      {
+        "date": "2025-07-24 00:00:00",
+        "regime_accuracy": 0.7073170731707317,
+        "strength_r2": -0.13807537247353163,
+        "training_samples": 493,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-07-25 00:00:00",
+        "regime_accuracy": 0.7073170731707317,
+        "strength_r2": -0.15613706085074253,
+        "training_samples": 494,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-07-28 00:00:00",
+        "regime_accuracy": 0.7090909090909091,
+        "strength_r2": -0.1443969710947446,
+        "training_samples": 495,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-07-29 00:00:00",
+        "regime_accuracy": 0.7090909090909091,
+        "strength_r2": -0.1562467721312153,
+        "training_samples": 496,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-07-30 00:00:00",
+        "regime_accuracy": 0.7090909090909091,
+        "strength_r2": -0.16264944411123317,
+        "training_samples": 497,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-07-31 00:00:00",
+        "regime_accuracy": 0.7078313253012047,
+        "strength_r2": -0.16108122268558767,
+        "training_samples": 498,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-01 00:00:00",
+        "regime_accuracy": 0.7108433734939759,
+        "strength_r2": -0.13867740958898844,
+        "training_samples": 499,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-04 00:00:00",
+        "regime_accuracy": 0.7078313253012047,
+        "strength_r2": -0.12854029109242182,
+        "training_samples": 500,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-05 00:00:00",
+        "regime_accuracy": 0.7095808383233533,
+        "strength_r2": -0.12551909235144065,
+        "training_samples": 501,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-06 00:00:00",
+        "regime_accuracy": 0.7095808383233533,
+        "strength_r2": -0.12119812710412436,
+        "training_samples": 502,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-07 00:00:00",
+        "regime_accuracy": 0.7005988023952097,
+        "strength_r2": -0.15494685323454682,
+        "training_samples": 503,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-08 00:00:00",
+        "regime_accuracy": 0.7113095238095238,
+        "strength_r2": -0.14612739182519718,
+        "training_samples": 504,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-11 00:00:00",
+        "regime_accuracy": 0.7023809523809523,
+        "strength_r2": -0.15094203867669065,
+        "training_samples": 505,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-12 00:00:00",
+        "regime_accuracy": 0.7202380952380952,
+        "strength_r2": -0.15463005531432006,
+        "training_samples": 506,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-13 00:00:00",
+        "regime_accuracy": 0.7011834319526626,
+        "strength_r2": -0.1397456969144406,
+        "training_samples": 507,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-14 00:00:00",
+        "regime_accuracy": 0.7248520710059172,
+        "strength_r2": -0.17038904399761023,
+        "training_samples": 508,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-15 00:00:00",
+        "regime_accuracy": 0.7071005917159763,
+        "strength_r2": -0.13667746570980588,
+        "training_samples": 509,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-18 00:00:00",
+        "regime_accuracy": 0.7205882352941176,
+        "strength_r2": -0.17491558484994485,
+        "training_samples": 510,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-19 00:00:00",
+        "regime_accuracy": 0.7117647058823529,
+        "strength_r2": -0.14583405851673548,
+        "training_samples": 511,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-20 00:00:00",
+        "regime_accuracy": 0.7235294117647059,
+        "strength_r2": -0.13477944988619406,
+        "training_samples": 512,
+        "models_trained": 2
+      }
+    ],
+    "PG": [
+      {
+        "date": "2025-07-24 00:00:00",
+        "regime_accuracy": 0.7408536585365854,
+        "strength_r2": -0.034113117693627903,
+        "training_samples": 493,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-07-25 00:00:00",
+        "regime_accuracy": 0.75,
+        "strength_r2": -0.021654414798110033,
+        "training_samples": 494,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-07-28 00:00:00",
+        "regime_accuracy": 0.7484848484848485,
+        "strength_r2": -0.056565021017652484,
+        "training_samples": 495,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-07-29 00:00:00",
+        "regime_accuracy": 0.7484848484848485,
+        "strength_r2": -0.034341322881553005,
+        "training_samples": 496,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-07-30 00:00:00",
+        "regime_accuracy": 0.7454545454545455,
+        "strength_r2": -0.05282833774095219,
+        "training_samples": 497,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-07-31 00:00:00",
+        "regime_accuracy": 0.7469879518072289,
+        "strength_r2": -0.04833938196194143,
+        "training_samples": 498,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-01 00:00:00",
+        "regime_accuracy": 0.7379518072289156,
+        "strength_r2": -0.055213167856863254,
+        "training_samples": 499,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-04 00:00:00",
+        "regime_accuracy": 0.7620481927710843,
+        "strength_r2": -0.0635778842022876,
+        "training_samples": 500,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-05 00:00:00",
+        "regime_accuracy": 0.7485029940119761,
+        "strength_r2": -0.06144989935020717,
+        "training_samples": 501,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-06 00:00:00",
+        "regime_accuracy": 0.7574850299401197,
+        "strength_r2": -0.06435547207982928,
+        "training_samples": 502,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-07 00:00:00",
+        "regime_accuracy": 0.7305389221556886,
+        "strength_r2": -0.04415076040787558,
+        "training_samples": 503,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-08 00:00:00",
+        "regime_accuracy": 0.75,
+        "strength_r2": -0.06228029459673856,
+        "training_samples": 504,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-11 00:00:00",
+        "regime_accuracy": 0.7321428571428571,
+        "strength_r2": -0.07687085252231096,
+        "training_samples": 505,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-12 00:00:00",
+        "regime_accuracy": 0.7321428571428571,
+        "strength_r2": -0.05245726359508751,
+        "training_samples": 506,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-13 00:00:00",
+        "regime_accuracy": 0.7307692307692308,
+        "strength_r2": -0.06044091883748892,
+        "training_samples": 507,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-14 00:00:00",
+        "regime_accuracy": 0.7337278106508875,
+        "strength_r2": -0.05758879423627006,
+        "training_samples": 508,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-15 00:00:00",
+        "regime_accuracy": 0.7307692307692307,
+        "strength_r2": -0.06780534193897125,
+        "training_samples": 509,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-18 00:00:00",
+        "regime_accuracy": 0.7264705882352941,
+        "strength_r2": -0.049972084786744864,
+        "training_samples": 510,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-19 00:00:00",
+        "regime_accuracy": 0.7352941176470589,
+        "strength_r2": -0.04885656135261951,
+        "training_samples": 511,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-20 00:00:00",
+        "regime_accuracy": 0.7235294117647059,
+        "strength_r2": -0.07323220760151306,
+        "training_samples": 512,
+        "models_trained": 2
+      }
+    ],
+    "KO": [
+      {
+        "date": "2025-07-24 00:00:00",
+        "regime_accuracy": 0.7987804878048781,
+        "strength_r2": -0.10026484255709234,
+        "training_samples": 493,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-07-25 00:00:00",
+        "regime_accuracy": 0.7987804878048781,
+        "strength_r2": -0.08750043712293964,
+        "training_samples": 494,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-07-28 00:00:00",
+        "regime_accuracy": 0.803030303030303,
+        "strength_r2": -0.11049449914654375,
+        "training_samples": 495,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-07-29 00:00:00",
+        "regime_accuracy": 0.8,
+        "strength_r2": -0.10133218102355268,
+        "training_samples": 496,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-07-30 00:00:00",
+        "regime_accuracy": 0.803030303030303,
+        "strength_r2": -0.09074619154265695,
+        "training_samples": 497,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-07-31 00:00:00",
+        "regime_accuracy": 0.8012048192771084,
+        "strength_r2": -0.0966603918812522,
+        "training_samples": 498,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-01 00:00:00",
+        "regime_accuracy": 0.8042168674698795,
+        "strength_r2": -0.0964990310580851,
+        "training_samples": 499,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-04 00:00:00",
+        "regime_accuracy": 0.8042168674698795,
+        "strength_r2": -0.0883034351795221,
+        "training_samples": 500,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-05 00:00:00",
+        "regime_accuracy": 0.7964071856287425,
+        "strength_r2": -0.10313246360066142,
+        "training_samples": 501,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-06 00:00:00",
+        "regime_accuracy": 0.8053892215568862,
+        "strength_r2": -0.09980401228387681,
+        "training_samples": 502,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-07 00:00:00",
+        "regime_accuracy": 0.811377245508982,
+        "strength_r2": -0.10502362843527191,
+        "training_samples": 503,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-08 00:00:00",
+        "regime_accuracy": 0.8125,
+        "strength_r2": -0.10670762194765782,
+        "training_samples": 504,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-11 00:00:00",
+        "regime_accuracy": 0.8065476190476191,
+        "strength_r2": -0.07939710271845346,
+        "training_samples": 505,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-12 00:00:00",
+        "regime_accuracy": 0.8095238095238095,
+        "strength_r2": -0.07773937719796842,
+        "training_samples": 506,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-13 00:00:00",
+        "regime_accuracy": 0.8106508875739644,
+        "strength_r2": -0.09548533697326511,
+        "training_samples": 507,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-14 00:00:00",
+        "regime_accuracy": 0.8047337278106509,
+        "strength_r2": -0.09948782456937577,
+        "training_samples": 508,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-15 00:00:00",
+        "regime_accuracy": 0.8076923076923077,
+        "strength_r2": -0.12355075161460138,
+        "training_samples": 509,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-18 00:00:00",
+        "regime_accuracy": 0.8,
+        "strength_r2": -0.07011301344003107,
+        "training_samples": 510,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-19 00:00:00",
+        "regime_accuracy": 0.8058823529411765,
+        "strength_r2": -0.09035203715530982,
+        "training_samples": 511,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-20 00:00:00",
+        "regime_accuracy": 0.8,
+        "strength_r2": -0.07682531332100972,
+        "training_samples": 512,
+        "models_trained": 2
+      }
+    ],
+    "WMT": [
+      {
+        "date": "2025-07-24 00:00:00",
+        "regime_accuracy": 0.7896341463414634,
+        "strength_r2": -0.5198544512101364,
+        "training_samples": 493,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-07-25 00:00:00",
+        "regime_accuracy": 0.7896341463414634,
+        "strength_r2": -0.509287808725379,
+        "training_samples": 494,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-07-28 00:00:00",
+        "regime_accuracy": 0.7909090909090909,
+        "strength_r2": -0.4881022678803112,
+        "training_samples": 495,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-07-29 00:00:00",
+        "regime_accuracy": 0.7909090909090909,
+        "strength_r2": -0.4655954022358493,
+        "training_samples": 496,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-07-30 00:00:00",
+        "regime_accuracy": 0.7848484848484849,
+        "strength_r2": -0.4520786623933092,
+        "training_samples": 497,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-07-31 00:00:00",
+        "regime_accuracy": 0.7831325301204819,
+        "strength_r2": -0.4602458016618427,
+        "training_samples": 498,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-01 00:00:00",
+        "regime_accuracy": 0.786144578313253,
+        "strength_r2": -0.4445098617730615,
+        "training_samples": 499,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-04 00:00:00",
+        "regime_accuracy": 0.7891566265060241,
+        "strength_r2": -0.3890309657251596,
+        "training_samples": 500,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-05 00:00:00",
+        "regime_accuracy": 0.784431137724551,
+        "strength_r2": -0.41357177618753393,
+        "training_samples": 501,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-06 00:00:00",
+        "regime_accuracy": 0.7904191616766467,
+        "strength_r2": -0.40251687823788085,
+        "training_samples": 502,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-07 00:00:00",
+        "regime_accuracy": 0.7934131736526946,
+        "strength_r2": -0.41954564850327714,
+        "training_samples": 503,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-08 00:00:00",
+        "regime_accuracy": 0.7886904761904762,
+        "strength_r2": -0.38043482493515124,
+        "training_samples": 504,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-11 00:00:00",
+        "regime_accuracy": 0.7916666666666667,
+        "strength_r2": -0.41224034004847987,
+        "training_samples": 505,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-12 00:00:00",
+        "regime_accuracy": 0.8065476190476191,
+        "strength_r2": -0.4050794048933102,
+        "training_samples": 506,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-13 00:00:00",
+        "regime_accuracy": 0.8047337278106509,
+        "strength_r2": -0.43914124130738164,
+        "training_samples": 507,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-14 00:00:00",
+        "regime_accuracy": 0.7988165680473372,
+        "strength_r2": -0.42645666558473594,
+        "training_samples": 508,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-15 00:00:00",
+        "regime_accuracy": 0.7899408284023668,
+        "strength_r2": -0.38448707833272333,
+        "training_samples": 509,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-18 00:00:00",
+        "regime_accuracy": 0.7970588235294118,
+        "strength_r2": -0.4149364920630858,
+        "training_samples": 510,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-19 00:00:00",
+        "regime_accuracy": 0.7852941176470588,
+        "strength_r2": -0.4070455751272971,
+        "training_samples": 511,
+        "models_trained": 2
+      },
+      {
+        "date": "2025-08-20 00:00:00",
+        "regime_accuracy": 0.7941176470588236,
+        "strength_r2": -0.45272643082947195,
+        "training_samples": 512,
+        "models_trained": 2
+      }
+    ]
+  }
+}

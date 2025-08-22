@@ -1,0 +1,12 @@
+{
+  "backtest_type": "alpaca_recent",
+  "initial_balance": 50000,
+  "final_value": 49378.553915,
+  "total_return": -0.012428921700000064,
+  "max_drawdown": -0.013840745789163835,
+  "sharpe_ratio": -4.224338739577217,
+  "trading_days": 42,
+  "total_trades": 4,
+  "win_rate": 0,
+  "timestamp": "2025-08-21T00:56:41.406809"
+}

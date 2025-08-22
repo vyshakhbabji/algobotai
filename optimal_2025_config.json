@@ -1,0 +1,17 @@
+{
+  "training_start": "2024-01-01",
+  "trading_start": "2025-06-02",
+  "trading_end": "2025-08-20",
+  "valid_symbols": [
+    "AAPL",
+    "MSFT",
+    "GOOGL",
+    "AMZN",
+    "NVDA",
+    "TSLA",
+    "META"
+  ],
+  "training_days": 355,
+  "trading_days": 56,
+  "status": "confirmed_working"
+}

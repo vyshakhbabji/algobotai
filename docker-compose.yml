@@ -1,0 +1,44 @@
+version: '3.8'
+
+services:
+  trading-bot:
+    build: .
+    container_name: alpaca-trading-bot
+    restart: unless-stopped
+    environment:
+      - TZ=America/New_York
+      - PYTHONUNBUFFERED=1
+    volumes:
+      - ./logs:/app/logs
+      - ./data:/app/data
+    ports:
+      - "8080:8080"
+    networks:
+      - trading-network
+    healthcheck:
+      test: ["CMD", "python", "-c", "import psutil; exit(0 if psutil.cpu_percent() < 90 else 1)"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 60s
+
+  # Optional: Add a monitoring service
+  monitor:
+    image: grafana/grafana:latest
+    container_name: trading-monitor
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      - GF_SECURITY_ADMIN_PASSWORD=admin123
+    volumes:
+      - grafana-data:/var/lib/grafana
+    networks:
+      - trading-network
+
+networks:
+  trading-network:
+    driver: bridge
+
+volumes:
+  grafana-data:

@@ -1,0 +1,393 @@
+{
+  "total_return": 0.0,
+  "final_value": 100000,
+  "n_trades": 0,
+  "n_buy_trades": 0,
+  "n_symbols_traded": 0,
+  "n_symbols_filtered": 40,
+  "n_models_trained": 0,
+  "avg_model_accuracy": 0,
+  "trades": [],
+  "daily_performance": [
+    {
+      "date": "2024-09-16",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "n_positions": 0
+    },
+    {
+      "date": "2024-09-17",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "n_positions": 0
+    },
+    {
+      "date": "2024-09-18",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "n_positions": 0
+    },
+    {
+      "date": "2024-09-19",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "n_positions": 0
+    },
+    {
+      "date": "2024-09-20",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "n_positions": 0
+    },
+    {
+      "date": "2024-09-23",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "n_positions": 0
+    },
+    {
+      "date": "2024-09-24",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "n_positions": 0
+    },
+    {
+      "date": "2024-09-25",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "n_positions": 0
+    },
+    {
+      "date": "2024-09-26",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "n_positions": 0
+    },
+    {
+      "date": "2024-09-27",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "n_positions": 0
+    },
+    {
+      "date": "2024-09-30",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "n_positions": 0
+    },
+    {
+      "date": "2024-10-01",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "n_positions": 0
+    },
+    {
+      "date": "2024-10-02",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "n_positions": 0
+    },
+    {
+      "date": "2024-10-03",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "n_positions": 0
+    },
+    {
+      "date": "2024-10-04",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "n_positions": 0
+    },
+    {
+      "date": "2024-10-07",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "n_positions": 0
+    },
+    {
+      "date": "2024-10-08",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "n_positions": 0
+    },
+    {
+      "date": "2024-10-09",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "n_positions": 0
+    },
+    {
+      "date": "2024-10-10",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "n_positions": 0
+    },
+    {
+      "date": "2024-10-11",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "n_positions": 0
+    },
+    {
+      "date": "2024-10-14",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "n_positions": 0
+    },
+    {
+      "date": "2024-10-15",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "n_positions": 0
+    },
+    {
+      "date": "2024-10-16",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "n_positions": 0
+    },
+    {
+      "date": "2024-10-17",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "n_positions": 0
+    },
+    {
+      "date": "2024-10-18",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "n_positions": 0
+    },
+    {
+      "date": "2024-10-21",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "n_positions": 0
+    },
+    {
+      "date": "2024-10-22",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "n_positions": 0
+    },
+    {
+      "date": "2024-10-23",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "n_positions": 0
+    },
+    {
+      "date": "2024-10-24",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "n_positions": 0
+    },
+    {
+      "date": "2024-10-25",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "n_positions": 0
+    },
+    {
+      "date": "2024-10-28",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "n_positions": 0
+    },
+    {
+      "date": "2024-10-29",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "n_positions": 0
+    },
+    {
+      "date": "2024-10-30",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "n_positions": 0
+    },
+    {
+      "date": "2024-10-31",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "n_positions": 0
+    },
+    {
+      "date": "2024-11-01",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "n_positions": 0
+    },
+    {
+      "date": "2024-11-04",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "n_positions": 0
+    },
+    {
+      "date": "2024-11-05",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "n_positions": 0
+    },
+    {
+      "date": "2024-11-06",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "n_positions": 0
+    },
+    {
+      "date": "2024-11-07",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "n_positions": 0
+    },
+    {
+      "date": "2024-11-08",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "n_positions": 0
+    },
+    {
+      "date": "2024-11-11",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "n_positions": 0
+    },
+    {
+      "date": "2024-11-12",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "n_positions": 0
+    },
+    {
+      "date": "2024-11-13",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "n_positions": 0
+    },
+    {
+      "date": "2024-11-14",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "n_positions": 0
+    },
+    {
+      "date": "2024-11-15",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "n_positions": 0
+    },
+    {
+      "date": "2024-11-18",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "n_positions": 0
+    },
+    {
+      "date": "2024-11-19",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "n_positions": 0
+    },
+    {
+      "date": "2024-11-20",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "n_positions": 0
+    },
+    {
+      "date": "2024-11-21",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "n_positions": 0
+    },
+    {
+      "date": "2024-11-22",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "n_positions": 0
+    },
+    {
+      "date": "2024-11-25",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "n_positions": 0
+    },
+    {
+      "date": "2024-11-26",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "n_positions": 0
+    },
+    {
+      "date": "2024-11-27",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "n_positions": 0
+    },
+    {
+      "date": "2024-11-28",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "n_positions": 0
+    },
+    {
+      "date": "2024-11-29",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "n_positions": 0
+    },
+    {
+      "date": "2024-12-02",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "n_positions": 0
+    },
+    {
+      "date": "2024-12-03",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "n_positions": 0
+    },
+    {
+      "date": "2024-12-04",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "n_positions": 0
+    },
+    {
+      "date": "2024-12-05",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "n_positions": 0
+    },
+    {
+      "date": "2024-12-06",
+      "portfolio_value": 100000,
+      "cash": 100000,
+      "n_positions": 0
+    }
+  ],
+  "model_stats": [],
+  "config": {
+    "min_data_days": 60,
+    "min_avg_volume": 1000000,
+    "min_price": 5.0,
+    "max_price": 500.0,
+    "min_volatility": 0.008,
+    "max_volatility": 0.15,
+    "min_model_accuracy": 0.52,
+    "min_training_samples": 10,
+    "accuracy_lookback_days": 10,
+    "retrain_frequency": 5,
+    "signal_threshold": 0.35,
+    "max_position_size": 0.12,
+    "max_positions": 8,
+    "stop_loss_pct": 0.08,
+    "take_profit_pct": 0.25
+  },
+  "simulation_days": 60,
+  "data_source": "Pure Alpaca"
+}

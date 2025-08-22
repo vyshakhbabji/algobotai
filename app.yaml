@@ -1,0 +1,17 @@
+runtime: python39
+env: standard
+
+service: trading-bot
+
+automatic_scaling:
+  min_instances: 1
+  max_instances: 2
+  target_cpu_utilization: 0.6
+
+env_variables:
+  TRADING_MODE: "LIVE"
+  PAPER_TRADING: "true"
+
+handlers:
+- url: /.*
+  script: auto

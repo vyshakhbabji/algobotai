@@ -1,0 +1,18 @@
+{
+  "backtest_type": "comprehensive_3month_alpaca",
+  "universe_size": 99,
+  "successful_symbols": 97,
+  "failed_symbols": 2,
+  "initial_balance": 100000,
+  "final_value": 133579.36987500012,
+  "total_return": 0.3357936987500012,
+  "annualized_return": 2.1838863853438215,
+  "volatility": 7.16572859990084,
+  "sharpe_ratio": 3.764699666573555,
+  "max_drawdown": -0.4296887361172325,
+  "win_rate": 0.8905109489051095,
+  "total_trades": 286,
+  "period_days": 83,
+  "paper_trading_ready": true,
+  "timestamp": "2025-08-21T17:42:34.673805"
+}
