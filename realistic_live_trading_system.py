@@ -23,6 +23,7 @@ from datetime import datetime, timedelta
 from pathlib import Path
 import yfinance as yf
 from typing import Dict, List, Tuple, Optional, Any
+from algobot.sizing.position_sizer import kelly_size
 
 # Set random seeds for determinism
 np.random.seed(42)
@@ -65,8 +66,8 @@ class RealisticLiveTradingSystem:
             'exceptional_signal_threshold': 0.80,  # 80% for exceptional (was 0.75)
             'ultra_signal_threshold': 0.92,  # 92% for ultra confidence
             'min_position_size': 0.03,  # Min 3% per stock
-            'stop_loss_pct': 0.03,      # 3% stop loss (tighter - preserve capital)
-            'take_profit_pct': 0.10,    # 10% take profit (more attainable)
+            'stop_loss_mult': 2.0,      # 2x ATR stop loss
+            'take_profit_mult': 3.0,    # 3x ATR take profit
             'rebalance_threshold': 0.10, # 10% threshold for rebalancing
             'signal_threshold': 0.50,    # Slightly lower threshold to capture more opportunities
             'max_positions': 6,         # Max 6 positions (was 8 - more concentrated)
@@ -89,8 +90,7 @@ class RealisticLiveTradingSystem:
             'min_extra_position_size': 0.03,   # Minimum size for extra allocations
 
             # Dynamic trailing stop to protect profits
-            'trailing_stop_trigger': 0.10,  # Start trailing after 10% profit
-            'trailing_stop_pct': 0.05,      # Trail by 5% from the high watermark
+            'trailing_stop_mult': 1.5,  # Trail by 1.5x ATR from the high watermark
             
             # Portfolio-Level Exposure Guards (Enhancement #4)
             'max_net_exposure': 0.95,         # Max portfolio exposure (95%)
@@ -222,42 +222,53 @@ class RealisticLiveTradingSystem:
             self.logger.debug(f"Enhanced slippage calculation error: {e}")
             return base_slippage  # Fallback to base slippage
     
-    def _apply_risk_rules(self, current_date: pd.Timestamp, prices_today: Dict[str, float]) -> int:
-        """Apply stop loss, take profit, and position size limits - queue as pending orders (Enhancement #2)"""
+
+    def _apply_risk_rules(self, current_date: pd.Timestamp, prices_today: Dict[str, float], all_history: Dict) -> int:
+        """Apply ATR-based stop loss, take profit, and trailing stops - queue as pending orders"""
         risk_orders_queued = 0
-        
+
         for symbol, shares in list(self.positions.items()):
-            if shares <= 0 or symbol not in prices_today:
+            if shares <= 0 or symbol not in prices_today or symbol not in all_history:
                 continue
-                
+
             current_price = prices_today[symbol]
             avg_entry = self.position_cost_basis.get(symbol, current_price)
 
-            # Update high watermark for trailing stop logic
             prev_high = self.position_high_watermark.get(symbol, avg_entry)
             if current_price > prev_high:
                 self.position_high_watermark[symbol] = current_price
             high_water = self.position_high_watermark.get(symbol, current_price)
 
-            # Calculate P&L percentage
+            symbol_data = all_history[symbol]
+            if current_date not in symbol_data.index:
+                continue
+            data_up_to_today = symbol_data.loc[:current_date]
+            if len(data_up_to_today) < 15:
+                continue
+            high = data_up_to_today['High']
+            low = data_up_to_today['Low']
+            close = data_up_to_today['Close']
+            prev_close = close.shift(1)
+            tr = pd.concat([high - low, (high - prev_close).abs(), (low - prev_close).abs()], axis=1).max(axis=1)
+            atr = tr.rolling(window=14).mean().iloc[-1]
+            if pd.isna(atr) or atr <= 0:
+                continue
+
+            stop_loss_price = avg_entry - atr * self.config['stop_loss_mult']
+            take_profit_price = avg_entry + atr * self.config['take_profit_mult']
+            trailing_stop_price = high_water - atr * self.config['trailing_stop_mult']
+
             pnl_pct = (current_price - avg_entry) / avg_entry
 
-            # Calculate stop loss and take profit levels
-            stop_loss_price = avg_entry * (1 - self.config['stop_loss_pct'])
-            take_profit_price = avg_entry * (1 + self.config['take_profit_pct'])
-
-            # Check if we need to queue risk exit orders
-            if pnl_pct <= -self.config['stop_loss_pct']:
-                # Stop loss triggered - queue order
+            if current_price <= stop_loss_price:
                 stop_decision = {
                     'action': 'STOP_LOSS',
                     'shares': shares,
                     'reason': f'Stop loss: {pnl_pct:.1%} (exit @ ${stop_loss_price:.2f})',
                     'stop_price': stop_loss_price,
-                    'order_type': 'STOP_LOSS'
+                    'order_type': 'STOP_LOSS',
+                    'atr': atr
                 }
-                
-                # Create risk signal
                 risk_signal = {
                     'strength': 0.0,
                     'price': current_price,
@@ -267,25 +278,24 @@ class RealisticLiveTradingSystem:
                     'total_enhancement': 1.0,
                     'ml_enhanced': False,
                     'risk_exit': True,
-                    'exit_price': stop_loss_price
+                    'exit_price': stop_loss_price,
+                    'atr': atr
                 }
-                
                 if self._queue_pending_order(symbol, stop_decision, risk_signal, current_date):
                     risk_orders_queued += 1
                     self.enhancement_metrics['risk_orders_queued'] += 1
-                    self.logger.info(f"   🛡️ Stop loss queued: {symbol} @ ${stop_loss_price:.2f} (P&L: {pnl_pct:.1%})")
+                    self.logger.info(
+                        f"   🛡️ Stop loss queued: {symbol} @ ${stop_loss_price:.2f} (P&L: {pnl_pct:.1%})")
 
-            if pnl_pct >= self.config['take_profit_pct']:
-                # Take profit triggered - queue order
+            if current_price >= take_profit_price:
                 tp_decision = {
                     'action': 'TAKE_PROFIT',
                     'shares': shares,
                     'reason': f'Take profit: {pnl_pct:.1%} (exit @ ${take_profit_price:.2f})',
                     'take_profit_price': take_profit_price,
-                    'order_type': 'TAKE_PROFIT'
+                    'order_type': 'TAKE_PROFIT',
+                    'atr': atr
                 }
-                
-                # Create risk signal
                 risk_signal = {
                     'strength': 0.0,
                     'price': current_price,
@@ -295,42 +305,41 @@ class RealisticLiveTradingSystem:
                     'total_enhancement': 1.0,
                     'ml_enhanced': False,
                     'risk_exit': True,
-                    'exit_price': take_profit_price
+                    'exit_price': take_profit_price,
+                    'atr': atr
                 }
-                
                 if self._queue_pending_order(symbol, tp_decision, risk_signal, current_date):
                     risk_orders_queued += 1
                     self.enhancement_metrics['risk_orders_queued'] += 1
-                    self.logger.info(f"   🎯 Take profit queued: {symbol} @ ${take_profit_price:.2f} (P&L: {pnl_pct:.1%})")
+                    self.logger.info(
+                        f"   🎯 Take profit queued: {symbol} @ ${take_profit_price:.2f} (P&L: {pnl_pct:.1%})")
 
-            if pnl_pct >= self.config.get('trailing_stop_trigger', 1.0):
-                # Trailing stop logic
-                trailing_stop_price = high_water * (1 - self.config.get('trailing_stop_pct', 0.05))
-                if current_price <= trailing_stop_price:
-                    ts_decision = {
-                        'action': 'TRAILING_STOP',
-                        'shares': shares,
-                        'reason': f'Trailing stop: {pnl_pct:.1%} (exit @ ${trailing_stop_price:.2f})',
-                        'stop_price': trailing_stop_price,
-                        'order_type': 'TRAILING_STOP'
-                    }
-
-                    risk_signal = {
-                        'strength': 0.0,
-                        'price': current_price,
-                        'base_strength': 0.0,
-                        'ml_multiplier': 1.0,
-                        'regime_boost': 1.0,
-                        'total_enhancement': 1.0,
-                        'ml_enhanced': False,
-                        'risk_exit': True,
-                        'exit_price': trailing_stop_price
-                    }
-
-                    if self._queue_pending_order(symbol, ts_decision, risk_signal, current_date):
-                        risk_orders_queued += 1
-                        self.enhancement_metrics['risk_orders_queued'] += 1
-                        self.logger.info(f"   🏁 Trailing stop queued: {symbol} @ ${trailing_stop_price:.2f} (P&L: {pnl_pct:.1%})")
+            if current_price > avg_entry and trailing_stop_price > avg_entry and current_price <= trailing_stop_price:
+                ts_decision = {
+                    'action': 'TRAILING_STOP',
+                    'shares': shares,
+                    'reason': f'Trailing stop: {pnl_pct:.1%} (exit @ ${trailing_stop_price:.2f})',
+                    'stop_price': trailing_stop_price,
+                    'order_type': 'TRAILING_STOP',
+                    'atr': atr
+                }
+                risk_signal = {
+                    'strength': 0.0,
+                    'price': current_price,
+                    'base_strength': 0.0,
+                    'ml_multiplier': 1.0,
+                    'regime_boost': 1.0,
+                    'total_enhancement': 1.0,
+                    'ml_enhanced': False,
+                    'risk_exit': True,
+                    'exit_price': trailing_stop_price,
+                    'atr': atr
+                }
+                if self._queue_pending_order(symbol, ts_decision, risk_signal, current_date):
+                    risk_orders_queued += 1
+                    self.enhancement_metrics['risk_orders_queued'] += 1
+                    self.logger.info(
+                        f"   🏁 Trailing stop queued: {symbol} @ ${trailing_stop_price:.2f} (P&L: {pnl_pct:.1%})")
 
         return risk_orders_queued
     
@@ -683,7 +692,18 @@ class RealisticLiveTradingSystem:
                 'order_date': order_date,
                 'close_price_reference': signal['price']  # Reference price from close
             }
-            
+
+            # Include optional risk parameters (ATR-based exits)
+            for key in ['order_type', 'stop_price', 'take_profit_price', 'trail_price', 'atr']:
+                if key in decision:
+                    order[key] = decision[key]
+            if 'stop_price' in decision:
+                order['exit_price'] = decision['stop_price']
+            elif 'take_profit_price' in decision:
+                order['exit_price'] = decision['take_profit_price']
+            elif 'trail_price' in decision:
+                order['exit_price'] = decision['trail_price']
+
             self.pending_orders.append(order)
             return True
             
@@ -713,7 +733,7 @@ class RealisticLiveTradingSystem:
                         should_execute = True
                         
                         # Enhanced execution logic for risk orders (Enhancement #2)
-                        if order.get('order_type') == 'STOP_LOSS':
+                        if order.get('order_type') in ['STOP_LOSS', 'TRAILING_STOP']:
                             stop_price = order.get('stop_price', open_price)
                             
                             # Gap down beyond stop -> fill at open
@@ -763,7 +783,7 @@ class RealisticLiveTradingSystem:
                                 order_type_display = order.get('order_type', order['action'])
                                 self.logger.info(f"   ❌ Rejected: {order_type_display} {order['shares']} {symbol} @ ${execution_price:.2f}")
                                 orders_to_remove.append(i)
-                        elif order.get('order_type') in ['STOP_LOSS', 'TAKE_PROFIT']:
+                        elif order.get('order_type') in ['STOP_LOSS', 'TAKE_PROFIT', 'TRAILING_STOP']:
                             # Keep risk orders alive if not triggered
                             pass
                         else:
@@ -844,8 +864,14 @@ class RealisticLiveTradingSystem:
                     available_cash = min(needed_value, self.current_capital * 0.8)  # Use max 80% of available cash
                     
                     if available_cash > 100:  # Minimum $100 top-up
-                        topup_shares = int(available_cash / prices_today[symbol])
-                        
+                        topup_shares = kelly_size(
+                            confidence=0.5,
+                            equity=self.current_capital,
+                            price=prices_today[symbol],
+                            cap_fraction=self.config['max_position_size']
+                        )
+                        topup_shares = min(topup_shares, int(available_cash / prices_today[symbol]))
+
                         if topup_shares > 0:
                             topup_decision = {
                                 'action': 'BUY_MORE',
@@ -1013,8 +1039,15 @@ class RealisticLiveTradingSystem:
                 min_value = total_portfolio_value * self.config['min_extra_position_size']
                 if max_additional_value < min_value:
                     continue
+                
+                additional_shares = kelly_size(
+                    confidence=strength,
+                    equity=self.current_capital,
+                    price=price,
+                    cap_fraction=self.config['max_position_size']
+                )
+                additional_shares = min(additional_shares, int(max_additional_value / price))
 
-                additional_shares = int(max_additional_value / price)
                 if additional_shares <= 0:
                     continue
 
@@ -1660,30 +1693,17 @@ class RealisticLiveTradingSystem:
                     else:
                         max_allowed = self.config['max_position_size']
                     
-                    # SMART SCALING: More aggressive scaling for higher confidence
-                    if strength >= 0.92:  # Ultra signals
-                        target_weight = max_allowed * 1.0   # Use FULL ultra limit
-                    elif strength >= 0.85:  # Very strong
-                        target_weight = max_allowed * 0.90  
-                    elif strength >= 0.80:  # Strong
-                        target_weight = max_allowed * 0.80  
-                    elif strength >= 0.70:  # Good
-                        target_weight = max_allowed * 0.65  
-                    elif strength >= 0.60:  # Decent
-                        target_weight = max_allowed * 0.50  
-                    else:  # Weak but acceptable
-                        target_weight = max_allowed * 0.35  
-                    
-                    target_value = portfolio_value * target_weight
-                    
-                    # Enforce minimum position size
+                    shares = kelly_size(
+                        confidence=strength,
+                        equity=self.current_capital,
+                        price=price,
+                        cap_fraction=self.config['max_position_size']
+                    )
                     min_value = portfolio_value * self.config['min_position_size']
-                    if target_value < min_value:
-                        target_value = min_value
-                    
-                    shares = int(target_value / price)
-                    
-                    if shares > 0 and target_value <= self.current_capital:
+                    if shares * price < min_value:
+                        shares = int(min_value / price)
+
+                    if shares > 0 and shares * price <= self.current_capital:
                         decision.update({
                             'action': 'BUY',
                             'shares': shares,
@@ -1698,27 +1718,21 @@ class RealisticLiveTradingSystem:
                         else:
                             max_allowed = self.config['max_position_size']
                         
-                        # MAXIMUM AGGRESSION: Large add-ons to deploy capital
-                        if strength >= 0.8:
-                            additional_weight = min(0.20, max_allowed - position_weight)  # Huge add-on
-                        elif strength >= 0.7:
-                            additional_weight = min(0.15, max_allowed - position_weight)  # Large add-on
-                        elif strength >= 0.6:
-                            additional_weight = min(0.12, max_allowed - position_weight)  # Good add-on
-                        elif strength >= 0.5:
-                            additional_weight = min(0.10, max_allowed - position_weight)  # Medium add-on
-                        else:
-                            additional_weight = min(0.08, max_allowed - position_weight)  # Small but meaningful add-on
-                        
-                        additional_value = portfolio_value * additional_weight
-                        additional_shares = int(additional_value / price)
-                        
-                        # Check if post-trade weight would exceed limits
+                        additional_shares = kelly_size(
+                            confidence=strength,
+                            equity=self.current_capital,
+                            price=price,
+                            cap_fraction=self.config['max_position_size']
+                        )
                         post_trade_shares = current_position + additional_shares
                         post_trade_value = post_trade_shares * price
                         post_trade_weight = post_trade_value / portfolio_value
-                        
-                        if post_trade_weight <= max_allowed and additional_shares > 0 and additional_value <= self.current_capital:
+
+                        if (
+                            post_trade_weight <= max_allowed
+                            and additional_shares > 0
+                            and additional_shares * price <= self.current_capital
+                        ):
                             decision.update({
                                 'action': 'BUY_MORE',
                                 'shares': additional_shares,
@@ -1974,7 +1988,7 @@ class RealisticLiveTradingSystem:
                     self._update_drawdown_throttle(current_portfolio_value)
                     
                     # Apply enhanced risk management rules - queue as pending orders (Enhancement #2)
-                    risk_orders_queued = self._apply_risk_rules(current_date, prices_today)
+                    risk_orders_queued = self._apply_risk_rules(current_date, prices_today, all_history)
                     if risk_orders_queued > 0:
                         self.logger.info(f"   🛡️ Risk management: {risk_orders_queued} orders queued")
                     
