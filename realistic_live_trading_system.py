@@ -23,6 +23,7 @@ from datetime import datetime, timedelta
 from pathlib import Path
 import yfinance as yf
 from typing import Dict, List, Tuple, Optional, Any
+from algobot.sizing.position_sizer import kelly_size
 
 # Set random seeds for determinism
 np.random.seed(42)
@@ -844,8 +845,14 @@ class RealisticLiveTradingSystem:
                     available_cash = min(needed_value, self.current_capital * 0.8)  # Use max 80% of available cash
                     
                     if available_cash > 100:  # Minimum $100 top-up
-                        topup_shares = int(available_cash / prices_today[symbol])
-                        
+                        topup_shares = kelly_size(
+                            confidence=0.5,
+                            equity=self.current_capital,
+                            price=prices_today[symbol],
+                            cap_fraction=self.config['max_position_size']
+                        )
+                        topup_shares = min(topup_shares, int(available_cash / prices_today[symbol]))
+
                         if topup_shares > 0:
                             topup_decision = {
                                 'action': 'BUY_MORE',
@@ -1005,10 +1012,16 @@ class RealisticLiveTradingSystem:
                 if max_additional_value < min_value:
                     continue
                 
-                additional_shares = int(max_additional_value / price)
+                additional_shares = kelly_size(
+                    confidence=strength,
+                    equity=self.current_capital,
+                    price=price,
+                    cap_fraction=self.config['max_position_size']
+                )
+                additional_shares = min(additional_shares, int(max_additional_value / price))
                 if additional_shares <= 0:
                     continue
-                
+
                 actual_value = additional_shares * price
                 
                 # Create utilization order
@@ -1651,30 +1664,17 @@ class RealisticLiveTradingSystem:
                     else:
                         max_allowed = self.config['max_position_size']
                     
-                    # SMART SCALING: More aggressive scaling for higher confidence
-                    if strength >= 0.92:  # Ultra signals
-                        target_weight = max_allowed * 1.0   # Use FULL ultra limit
-                    elif strength >= 0.85:  # Very strong
-                        target_weight = max_allowed * 0.90  
-                    elif strength >= 0.80:  # Strong
-                        target_weight = max_allowed * 0.80  
-                    elif strength >= 0.70:  # Good
-                        target_weight = max_allowed * 0.65  
-                    elif strength >= 0.60:  # Decent
-                        target_weight = max_allowed * 0.50  
-                    else:  # Weak but acceptable
-                        target_weight = max_allowed * 0.35  
-                    
-                    target_value = portfolio_value * target_weight
-                    
-                    # Enforce minimum position size
+                    shares = kelly_size(
+                        confidence=strength,
+                        equity=self.current_capital,
+                        price=price,
+                        cap_fraction=self.config['max_position_size']
+                    )
                     min_value = portfolio_value * self.config['min_position_size']
-                    if target_value < min_value:
-                        target_value = min_value
-                    
-                    shares = int(target_value / price)
-                    
-                    if shares > 0 and target_value <= self.current_capital:
+                    if shares * price < min_value:
+                        shares = int(min_value / price)
+
+                    if shares > 0 and shares * price <= self.current_capital:
                         decision.update({
                             'action': 'BUY',
                             'shares': shares,
@@ -1689,27 +1689,21 @@ class RealisticLiveTradingSystem:
                         else:
                             max_allowed = self.config['max_position_size']
                         
-                        # MAXIMUM AGGRESSION: Large add-ons to deploy capital
-                        if strength >= 0.8:
-                            additional_weight = min(0.20, max_allowed - position_weight)  # Huge add-on
-                        elif strength >= 0.7:
-                            additional_weight = min(0.15, max_allowed - position_weight)  # Large add-on
-                        elif strength >= 0.6:
-                            additional_weight = min(0.12, max_allowed - position_weight)  # Good add-on
-                        elif strength >= 0.5:
-                            additional_weight = min(0.10, max_allowed - position_weight)  # Medium add-on
-                        else:
-                            additional_weight = min(0.08, max_allowed - position_weight)  # Small but meaningful add-on
-                        
-                        additional_value = portfolio_value * additional_weight
-                        additional_shares = int(additional_value / price)
-                        
-                        # Check if post-trade weight would exceed limits
+                        additional_shares = kelly_size(
+                            confidence=strength,
+                            equity=self.current_capital,
+                            price=price,
+                            cap_fraction=self.config['max_position_size']
+                        )
                         post_trade_shares = current_position + additional_shares
                         post_trade_value = post_trade_shares * price
                         post_trade_weight = post_trade_value / portfolio_value
-                        
-                        if post_trade_weight <= max_allowed and additional_shares > 0 and additional_value <= self.current_capital:
+
+                        if (
+                            post_trade_weight <= max_allowed
+                            and additional_shares > 0
+                            and additional_shares * price <= self.current_capital
+                        ):
                             decision.update({
                                 'action': 'BUY_MORE',
                                 'shares': additional_shares,
