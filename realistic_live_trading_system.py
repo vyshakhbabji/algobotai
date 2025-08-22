@@ -861,7 +861,10 @@ class RealisticLiveTradingSystem:
             if max_strength >= ultra_threshold:
                 # ULTRA SIGNAL DETECTED - Use emergency reserves!
                 target_invested = 0.95  # Deploy almost everything for ultra signals
+                self.debug_data['ultra_signals_detected'] += 1
+                self.debug_data['emergency_reserves_triggered'] += 1
                 self.logger.info(f"   🔥 ULTRA SIGNAL ({max_strength:.3f}) - DEPLOYING EMERGENCY RESERVES!")
+                self.logger.info(f"   🔍 DEBUG: Ultra signal #{self.debug_data['ultra_signals_detected']} detected")
             elif avg_strength >= self.config['min_avg_strength_for_ceiling']:
                 target_invested = self.config['target_invested_ceiling']
                 self.logger.debug(f"   🎯 Strong signals (avg: {avg_strength:.3f}) - targeting ceiling: {target_invested:.1%}")
@@ -1061,6 +1064,23 @@ class RealisticLiveTradingSystem:
                     self.positions[symbol] = new_position
                     self.current_capital -= total_cost
                     
+                    # DEBUG: Track execution details
+                    execution_info = {
+                        'symbol': symbol,
+                        'action': action,
+                        'shares': shares,
+                        'signal_strength': order['signal_strength'],
+                        'final_price': final_price,
+                        'total_cost': total_cost,
+                        'current_date': current_date,
+                        'is_ultra_signal': order['signal_strength'] >= self.config.get('ultra_signal_threshold', 0.92)
+                    }
+                    self.debug_data['executed_trades'].append(execution_info)
+                    
+                    if order['signal_strength'] >= self.config.get('ultra_signal_threshold', 0.92):
+                        self.debug_data['ultra_signals_executed'] += 1
+                        self.logger.info(f"   ✅ ULTRA SIGNAL EXECUTED: {action} {shares} {symbol} @ ${final_price:.2f} (strength: {order['signal_strength']:.3f})")
+                    
                     self.trades.append({
                         'date': current_date,
                         'symbol': symbol,
@@ -1173,6 +1193,48 @@ class RealisticLiveTradingSystem:
         
         logger.info(f"🔍 DEBUG MODE: Logging to {log_filename}")
         return logger
+
+    def _print_debug_summary(self):
+        """Print comprehensive debug summary"""
+        print("\n" + "="*80)
+        print("🔍 ULTRA SIGNAL DEBUG ANALYSIS")
+        print("="*80)
+        
+        print(f"Ultra Signals Detected:     {self.debug_data['ultra_signals_detected']}")
+        print(f"Ultra Signals Executed:     {self.debug_data['ultra_signals_executed']}")
+        print(f"Emergency Reserves Triggered: {self.debug_data['emergency_reserves_triggered']}")
+        print(f"Position Limit Violations:  {self.debug_data['position_limit_violations']}")
+        print(f"Total Trades Rejected:      {len(self.debug_data['rejected_trades'])}")
+        print(f"Total Trades Executed:      {len(self.debug_data['executed_trades'])}")
+        
+        ultra_rejection_rate = 0
+        if self.debug_data['ultra_signals_detected'] > 0:
+            ultra_executed = self.debug_data['ultra_signals_executed']
+            ultra_total = self.debug_data['ultra_signals_detected']
+            ultra_rejection_rate = (ultra_total - ultra_executed) / ultra_total * 100
+        
+        print(f"Ultra Signal Success Rate:  {100-ultra_rejection_rate:.1f}%")
+        
+        print("\n📊 REJECTED ULTRA SIGNALS:")
+        ultra_rejections = [t for t in self.debug_data['rejected_trades'] if t['is_ultra_signal']]
+        for i, rejection in enumerate(ultra_rejections[:10], 1):  # Show first 10
+            print(f"  {i}. {rejection['symbol']} - {rejection['new_weight']:.1%} > {rejection['max_allowed']:.1%} "
+                  f"(strength: {rejection['signal_strength']:.3f}) on {rejection['current_date'].strftime('%Y-%m-%d')}")
+        
+        if len(ultra_rejections) > 10:
+            print(f"  ... and {len(ultra_rejections) - 10} more ultra rejections")
+        
+        print("\n✅ EXECUTED ULTRA SIGNALS:")
+        ultra_executions = [t for t in self.debug_data['executed_trades'] if t['is_ultra_signal']]
+        for i, execution in enumerate(ultra_executions[:10], 1):  # Show first 10
+            print(f"  {i}. {execution['action']} {execution['shares']} {execution['symbol']} @ ${execution['final_price']:.2f} "
+                  f"(strength: {execution['signal_strength']:.3f}) on {execution['current_date'].strftime('%Y-%m-%d')}")
+        
+        if len(ultra_executions) > 10:
+            print(f"  ... and {len(ultra_executions) - 10} more ultra executions")
+        
+        print(f"\n💡 ANALYSIS SAVED TO: {self.debug_log_file}")
+        print("="*80)
     
     def get_elite_stocks(self) -> List[str]:
         """Same elite stock selection"""
@@ -2387,6 +2449,9 @@ def main():
         start_date="2025-05-22",
         end_date="2025-08-21"
     )
+    
+    # Add debug summary
+    system._print_debug_summary()
     
     if "error" not in result:
         print(f"\n✅ Realistic Live Trading Results:")
