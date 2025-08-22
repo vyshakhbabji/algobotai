@@ -65,8 +65,8 @@ class RealisticLiveTradingSystem:
             'exceptional_signal_threshold': 0.80,  # 80% for exceptional (was 0.75)
             'ultra_signal_threshold': 0.92,  # 92% for ultra confidence
             'min_position_size': 0.03,  # Min 3% per stock
-            'stop_loss_pct': 0.06,      # 6% stop loss (tighter - preserve capital)
-            'take_profit_pct': 0.20,    # 20% take profit (lock in gains faster)
+            'stop_loss_pct': 0.03,      # 3% stop loss (quick risk control)
+            'take_profit_pct': 0.10,    # 10% take profit (more achievable)
             'rebalance_threshold': 0.10, # 10% threshold for rebalancing
             'signal_threshold': 0.55,    # Higher minimum signal (was 0.25 - QUALITY OVER QUANTITY!)
             'max_positions': 6,         # Max 6 positions (was 8 - more concentrated)

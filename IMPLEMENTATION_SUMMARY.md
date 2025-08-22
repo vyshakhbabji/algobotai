@@ -5,7 +5,7 @@
 ### 1. **Trading System Performance**
 - **Baseline Strategy**: 57.6% annual returns with realistic live trading system
 - **Enhanced ML Models**: Random Forest with technical indicators
-- **Risk Management**: 8% stop loss, 20% take profit, position sizing
+- **Risk Management**: 3% stop loss, 10% take profit, position sizing
 - **Real-time Integration**: Live Alpaca API connection confirmed
 
 ### 2. **Alpaca Integration** 
