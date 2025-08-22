@@ -954,70 +954,79 @@ class RealisticLiveTradingSystem:
             self.logger.debug(f"   💰 Capital utilization: {current_invested_ratio:.1%} → {target_invested:.1%}")
             self.logger.debug(f"   💸 Available for investment: ${available_cash:.0f}")
             
-            # Allocate extra capital to candidates (strongest first)
+            # Allocate extra capital to candidates using strength-based weights
             extra_orders = 0
             remaining_cash = available_cash
-            
+            total_strength = sum(c['strength'] for c in candidates)
+
             for candidate in candidates:
                 if extra_orders >= self.config['max_utilization_topups_per_day']:
                     self.logger.debug(f"   ⚠️ Hit daily top-up limit: {extra_orders}")
                     break
-                
-                if remaining_cash < 100:
+
+                if remaining_cash < 100 or total_strength <= 0:
                     break
-                
+
                 symbol = candidate['symbol']
                 price = candidate['price']
                 strength = candidate['strength']
-                
+
+                # Compute allocation weight based on remaining strengths
+                weight = strength / total_strength if total_strength > 0 else 0
+                total_strength -= strength
+
+                # Initial allocation proportional to strength
+                max_additional_value = remaining_cash * weight
+
                 # Check position limits
                 current_position = self.positions.get(symbol, 0)
                 current_value = current_position * price
                 position_weight = current_value / total_portfolio_value if total_portfolio_value > 0 else 0
-                
+
                 # Determine max allowed weight for this symbol
                 if strength >= self.config['exceptional_signal_threshold']:
                     max_allowed = self.config['max_position_size_exceptional']
                 else:
                     max_allowed = self.config['max_position_size']
-                
+
                 if candidate['has_position']:
                     # Top-up existing position
                     if position_weight >= max_allowed:
                         continue  # Already at max
-                    
+
                     max_additional_weight = max_allowed - position_weight
-                    max_additional_value = min(remaining_cash, total_portfolio_value * max_additional_weight)
-                    
+                    allowed_value = total_portfolio_value * max_additional_weight
+                    max_additional_value = min(max_additional_value, allowed_value)
+
                 else:
                     # New position - enforce daily cap (Enhancement #3)
                     if (len(self.positions) >= self.config['max_positions'] or
                         daily_new_positions >= self.config['max_new_positions_per_day']):
                         self.logger.debug(f"   ⚠️ New position cap hit: {daily_new_positions}/{self.config['max_new_positions_per_day']}")
                         continue  # Hit position limits
-                    
-                    # Use minimum of available cash and max position size
-                    max_additional_value = min(remaining_cash, total_portfolio_value * max_allowed)
+
+                    allowed_value = total_portfolio_value * max_allowed
+                    max_additional_value = min(max_additional_value, allowed_value)
                     daily_new_positions += 1  # Increment counter for new position
-                
+
                 # Calculate shares (minimum position size check)
                 min_value = total_portfolio_value * self.config['min_extra_position_size']
                 if max_additional_value < min_value:
                     continue
-                
+
                 additional_shares = int(max_additional_value / price)
                 if additional_shares <= 0:
                     continue
-                
+
                 actual_value = additional_shares * price
-                
+
                 # Create utilization order
                 utilization_decision = {
                     'action': 'BUY_MORE' if candidate['has_position'] else 'BUY',
                     'shares': additional_shares,
                     'reason': f'Capital utilization (strength: {strength:.3f}, target: {target_invested:.1%})'
                 }
-                
+
                 # Queue the order
                 if self._queue_pending_order(symbol, utilization_decision, candidate['signal'], current_date):
                     remaining_cash -= actual_value
