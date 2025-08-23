@@ -7,6 +7,7 @@ Features:
 4. Supports fixed thresholds OR adaptive percentile-based thresholds.
 5. Optional concurrent downloads for speed.
 6. Writes both a detailed universe_strength.json and a lightweight classification_map.json.
+7. Optionally blends external ML signal scores with strength metrics.
 
 Adaptive Thresholds:
     Set thresholds='auto' (or None) to derive cuts via percentiles:
@@ -27,7 +28,7 @@ from __future__ import annotations
 import pandas as pd, numpy as np, json, time, os
 from pathlib import Path
 import yfinance as yf
-from typing import Iterable, Dict, Any, List, Tuple, Union
+from typing import Iterable, Dict, Any, List, Tuple, Union, Callable
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 # Reuse classification thresholds consistent with strategy defaults
@@ -120,6 +121,25 @@ def _strength_score(close: pd.Series) -> float:
     return float(score)
 
 
+def _load_ml_prediction(symbol: str, path: str) -> float | None:
+    """Load precomputed ML signal from JSON file.
+
+    Expected format: {"signal": float}
+    """
+    try:
+        fname = Path(path) / f"{symbol}.json"
+        if not fname.exists():
+            return None
+        with open(fname) as f:
+            data = json.load(f)
+        for key in ('signal', 'prediction', 'score'):
+            if key in data:
+                return float(data[key])
+    except Exception:
+        pass
+    return None
+
+
 def classify(score: float, thresholds: Tuple[float, float]) -> str:
     strong_cut, skip_cut = thresholds
     if score >= strong_cut:
@@ -147,12 +167,20 @@ def scan_universe(symbols: Iterable[str], start='2024-01-01', end=None,
                   write_json: bool = True, out_path: str = 'universe_strength.json',
                   classification_map_path: str = 'classification_map.json',
                   max_workers: int = 8,
-                  use_local: bool = True) -> Dict[str, Any]:
+                  use_local: bool = True,
+                  use_ml: bool = False,
+                  ml_signals: Dict[str, float] | None = None,
+                  ml_weight: float = 0.5,
+                  ml_path: str | None = None) -> Dict[str, Any]:
     """Scan universe and classify symbols.
 
     thresholds: (strong_cut, skip_cut) OR 'auto'/None for adaptive percentiles.
     strong_pct / skip_pct: percentiles used when thresholds='auto'.
     max_workers: concurrent download threads.
+    use_ml: if True, blend precomputed ML signals with strength scores.
+    ml_signals: optional mapping of symbol -> ML score (0-1 or arbitrary scale).
+    ml_weight: weight of ML signal when combining (0..1).
+    ml_path: directory containing per-symbol JSON predictions if ml_signals not provided.
     """
     if end is None:
         end = pd.Timestamp.today().strftime('%Y-%m-%d')
@@ -163,7 +191,16 @@ def scan_universe(symbols: Iterable[str], start='2024-01-01', end=None,
     def _task(sym):
         close = _download(sym, start, end, use_local=use_local)
         score = _strength_score(close)
-        return sym, close, score
+        ml_signal = None
+        if use_ml:
+            if ml_signals and sym in ml_signals:
+                ml_signal = float(ml_signals[sym])
+            elif ml_path:
+                ml_signal = _load_ml_prediction(sym, ml_path)
+        combined = score
+        if use_ml and ml_signal is not None:
+            combined = (1 - ml_weight) * score + ml_weight * ml_signal
+        return sym, close, score, ml_signal, combined
 
     # Concurrent downloads
     with ThreadPoolExecutor(max_workers=max_workers) as ex:
@@ -171,8 +208,9 @@ def scan_universe(symbols: Iterable[str], start='2024-01-01', end=None,
         for fut in as_completed(futures):
             sym = futures[fut]
             try:
-                sym, close, score = fut.result()
-                download_results[sym] = {'close': close, 'score': score}
+                sym, close, score, ml_signal, combined = fut.result()
+                download_results[sym] = {'close': close, 'score': score,
+                                         'ml_signal': ml_signal, 'combined': combined}
             except Exception as e:
                 download_results[sym] = {'error': str(e)}
 
@@ -193,12 +231,16 @@ def scan_universe(symbols: Iterable[str], start='2024-01-01', end=None,
             continue
         close = data['close']
         score = data['score']
+        ml_signal = data.get('ml_signal')
+        score_used = data['combined'] if use_ml and ml_signal is not None else score
         try:
-            classification = classify(score, thresholds_effective)  # type: ignore
+            classification = classify(score_used, thresholds_effective)  # type: ignore
         except Exception:
             classification = 'default'
         results[sym] = {
             'strength_score': float(score) if isinstance(score,(int,float,np.floating)) else score,
+            'ml_signal': ml_signal,
+            'combined_score': score_used,
             'classification': classification,
             'last_price': float(close.iloc[-1]) if len(close) else None,
             'history_days': int(len(close))
@@ -236,6 +278,9 @@ if __name__ == '__main__':
     parser.add_argument('--workers', type=int, default=8)
     parser.add_argument('--out', default='universe_strength.json')
     parser.add_argument('--class-map', default='classification_map.json')
+    parser.add_argument('--use-ml', action='store_true', help='Blend ML signals with strength score')
+    parser.add_argument('--ml-weight', type=float, default=0.5, help='Weight for ML signal (0-1)')
+    parser.add_argument('--ml-path', default=None, help='Directory with per-symbol ML prediction JSON files')
     args = parser.parse_args()
     default_syms = ['NVDA','AAPL','MSFT','TSLA','META']
     syms = args.symbols or default_syms
@@ -243,7 +288,8 @@ if __name__ == '__main__':
     res = scan_universe(syms, start=args.start, end=args.end, thresholds=thresholds,
                         strong_pct=args.strong_pct, skip_pct=args.skip_pct,
                         out_path=args.out, classification_map_path=args.class_map,
-                        max_workers=args.workers)
+                        max_workers=args.workers, use_ml=args.use_ml,
+                        ml_weight=args.ml_weight, ml_path=args.ml_path)
     print(json.dumps(res['meta'], indent=2))
     # Print quick distribution summary
     scores = [r['strength_score'] for r in res['results'].values() if 'strength_score' in r]
