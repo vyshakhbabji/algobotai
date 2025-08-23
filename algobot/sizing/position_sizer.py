@@ -38,7 +38,7 @@ def kelly_fraction(win_rate: float, avg_win: float, avg_loss: float, fraction: f
         return 0.0
 
 
-def kelly_size(confidence: float, equity: float, price: float, cap_fraction: float = 0.50,
+def kelly_size(confidence: float, equity: float, price: float, cap_fraction: float = 0.15,
                win_rate: Optional[float] = None, avg_win: float = 0.08, avg_loss: float = 0.025,
                frac: float = 0.60) -> int:
     """Return integer shares using (fractional) Kelly sizing with a per-position cap.
@@ -49,7 +49,7 @@ def kelly_size(confidence: float, equity: float, price: float, cap_fraction: flo
         confidence: Proxy for win probability in [0,1] when win_rate not provided.
         equity: Account equity in dollars.
         price: Current asset price.
-        cap_fraction: Hard cap on position as a fraction of equity (e.g., 0.50 = 50% - AGGRESSIVE!).
+        cap_fraction: Hard cap on position as a fraction of equity (default 15% for prudence).
         win_rate: If provided, use as win probability; otherwise use confidence.
         avg_win: Assumed average win (fraction of price) - INCREASED TO 8%.
         avg_loss: Assumed average loss (fraction of price) - INCREASED TO 2.5%.
