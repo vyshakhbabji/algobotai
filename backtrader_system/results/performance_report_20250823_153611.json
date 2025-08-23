@@ -1,0 +1,65 @@
+{
+  "timestamp": "2025-08-23T15:36:11.453263",
+  "summary": {
+    "total_return_pct": 1.1786432975015818e+42,
+    "annualized_return_pct": 1.7022734777160248e+42,
+    "total_return": 1.1786432975015817e+40,
+    "cagr": 1.7022734777160261e+40,
+    "cagr_pct": 1.702273477716026e+42,
+    "max_drawdown": 22316400.057653576,
+    "max_drawdown_pct": 2231640005.7653575,
+    "avg_drawdown": 134886.92500113713,
+    "avg_drawdown_pct": 13488692.500113713,
+    "calmar_ratio": 7.627903574583117e+32,
+    "sortino_ratio": -0.27017131628598834,
+    "volatility": 417.1990607237736,
+    "volatility_pct": 41719.90607237736,
+    "win_rate": 0.396,
+    "win_rate_pct": 39.6,
+    "trading_days": 250,
+    "final_value": 1.1786432975015816e+45,
+    "initial_value": 100000.0
+  },
+  "risk_metrics": {
+    "sharpe_ratio": -0.44063478248449356,
+    "mean_daily_return": -0.7294143549392998,
+    "daily_volatility": 26.281070521067612,
+    "annualized_return": -183.81241744470356,
+    "annualized_volatility": 417.1990607237736,
+    "max_drawdown_pct": 223164000576.53574,
+    "max_drawdown_length": 21
+  },
+  "trade_metrics": {
+    "total_trades": 220,
+    "winning_trades": 6,
+    "losing_trades": 8,
+    "win_rate_pct": 42.857142857142854,
+    "avg_win_pct": 4.771304162675245e+32,
+    "avg_loss_pct": -3.763496279220539e+29,
+    "win_loss_ratio": 1267.7850085887248,
+    "turnover": 34673.48846762186,
+    "total_volume": 1.3545302949601142e+47,
+    "avg_portfolio_value": 1.9532650950667628e+42,
+    "avg_exposure_pct": -16807.71220736071,
+    "min_exposure_pct": -2117122.527278364,
+    "max_exposure_pct": 60.95652551556034,
+    "final_exposure_pct": -11386.537383125156
+  },
+  "ml_metrics": {
+    "avg_regime_accuracy": 0.9974747474747474,
+    "avg_strength_r2": 0.7603122894398908,
+    "symbols_with_models": 2,
+    "symbol_stats": {
+      "AAPL": {
+        "final_regime_accuracy": 1.0,
+        "final_strength_r2": 0.7099974031307106,
+        "training_sessions": 28
+      },
+      "TSLA": {
+        "final_regime_accuracy": 0.9949494949494949,
+        "final_strength_r2": 0.810627175749071,
+        "training_sessions": 28
+      }
+    }
+  }
+}

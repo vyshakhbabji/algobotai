@@ -1,0 +1,6 @@
+2025-08-23 15:52:41,495 - strategies.ml_strategy - INFO - Strategy initialized with 2 symbols
+2025-08-23 15:52:41,498 - strategies.ml_strategy - INFO - 2024-02-29: Strategy Completed!
+2025-08-23 15:52:41,498 - strategies.ml_strategy - INFO - 2024-02-29: Starting Value: $100,000
+2025-08-23 15:52:41,498 - strategies.ml_strategy - INFO - 2024-02-29: Final Value: $100,000
+2025-08-23 15:52:41,498 - strategies.ml_strategy - INFO - 2024-02-29: Total Return: +0.00%
+2025-08-23 15:52:41,498 - strategies.ml_strategy - INFO - 2024-02-29: Total Trades: 0

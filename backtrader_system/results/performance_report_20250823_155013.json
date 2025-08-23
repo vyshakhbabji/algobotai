@@ -1,0 +1,70 @@
+{
+  "timestamp": "2025-08-23T15:50:13.586198",
+  "summary": {
+    "total_return_pct": -1650675070738990.8,
+    "annualized_return_pct": -Infinity,
+    "total_return": -16506750707389.908,
+    "cagr": "(-21050659605076.2-529172203273.5241j)",
+    "cagr_pct": "(-2105065960507620-52917220327352.414j)",
+    "max_drawdown": 223.6502837834248,
+    "max_drawdown_pct": 22365.028378342482,
+    "avg_drawdown": 7.326201328057401,
+    "avg_drawdown_pct": 732.6201328057401,
+    "calmar_ratio": "(-94123107062.36765-2366069894.1296945j)",
+    "sortino_ratio": -1.0212179537314698,
+    "volatility": 103.08563117978247,
+    "volatility_pct": 10308.563117978247,
+    "win_rate": 0.3493975903614458,
+    "win_rate_pct": 34.93975903614458,
+    "trading_days": 249,
+    "final_value": -1.6506750707388908e+18,
+    "initial_value": 100000.0
+  },
+  "risk_metrics": {
+    "sharpe_ratio": -1.5246952652246062,
+    "mean_daily_return": -0.6236276746608818,
+    "daily_volatility": 6.493784377281673,
+    "annualized_return": -157.1541740145422,
+    "annualized_volatility": 103.08563117978247,
+    "max_drawdown_pct": 2236502.8378342483,
+    "max_drawdown_length": 21
+  },
+  "trade_metrics": {
+    "total_trades": 176,
+    "winning_trades": 7,
+    "losing_trades": 3,
+    "win_rate_pct": 70.0,
+    "avg_win_pct": 113725963383.84969,
+    "avg_loss_pct": 0.0,
+    "win_loss_ratio": 0,
+    "turnover": 0,
+    "total_volume": 6.115846159801249e+20,
+    "avg_portfolio_value": -1.4639999334948314e+17,
+    "avg_exposure_pct": -7271.757757749266,
+    "min_exposure_pct": -665258.8984601132,
+    "max_exposure_pct": 45.46720345854916,
+    "final_exposure_pct": 0
+  },
+  "ml_metrics": {
+    "avg_regime_accuracy": 0.9949494949494949,
+    "avg_strength_r2": 0.7494698036275756,
+    "symbols_with_models": 3,
+    "symbol_stats": {
+      "AAPL": {
+        "final_regime_accuracy": 0.98989898989899,
+        "final_strength_r2": 0.7911250630915405,
+        "training_sessions": 28
+      },
+      "MSFT": {
+        "final_regime_accuracy": 1.0,
+        "final_strength_r2": 0.7502437698992108,
+        "training_sessions": 28
+      },
+      "GOOGL": {
+        "final_regime_accuracy": 0.9949494949494949,
+        "final_strength_r2": 0.7070405778919756,
+        "training_sessions": 28
+      }
+    }
+  }
+}

@@ -1,0 +1,60 @@
+2025-08-23 15:35:15,021 - strategies.ml_strategy - INFO - Strategy initialized with 20 symbols
+2025-08-23 15:35:15,391 - strategies.ml_strategy - INFO - 2024-12-24: BUY SIGNAL: ORCL, Strength: 0.700, Size: 8, ML Enhanced: False
+2025-08-23 15:35:15,392 - strategies.ml_strategy - INFO - 2024-12-24: BUY SIGNAL: UNH, Strength: 0.700, Size: 2, ML Enhanced: False
+2025-08-23 15:35:15,392 - strategies.ml_strategy - INFO - 2024-12-24: BUY SIGNAL: PG, Strength: 0.700, Size: 9, ML Enhanced: False
+2025-08-23 15:35:15,392 - strategies.ml_strategy - INFO - 2024-12-24: BUY SIGNAL: XOM, Strength: 0.700, Size: 14, ML Enhanced: False
+2025-08-23 15:35:15,392 - strategies.ml_strategy - INFO - 2024-12-24: BUY SIGNAL: HD, Strength: 0.700, Size: 3, ML Enhanced: False
+2025-08-23 15:35:15,392 - strategies.ml_strategy - INFO - 2024-12-24: BUY SIGNAL: DIS, Strength: 0.700, Size: 13, ML Enhanced: False
+2025-08-23 15:35:15,392 - strategies.ml_strategy - INFO - 2024-12-24: BUY SIGNAL: CRM, Strength: 0.700, Size: 4, ML Enhanced: False
+2025-08-23 15:35:15,392 - strategies.ml_strategy - INFO - 2024-12-24: Portfolio Value: $10,000, Return: +0.0%, Positions: 0
+2025-08-23 15:35:15,393 - strategies.ml_strategy - INFO - 2024-12-26: BUY EXECUTED: ORCL, Price: 169.11, Size: 8, Cost: 1352.91
+2025-08-23 15:35:15,393 - strategies.ml_strategy - INFO - 2024-12-26: BUY EXECUTED: UNH, Price: 499.95, Size: 2, Cost: 999.90
+2025-08-23 15:35:15,393 - strategies.ml_strategy - INFO - 2024-12-26: BUY EXECUTED: PG, Price: 165.12, Size: 9, Cost: 1486.12
+2025-08-23 15:35:15,393 - strategies.ml_strategy - INFO - 2024-12-26: BUY EXECUTED: XOM, Price: 103.65, Size: 14, Cost: 1451.07
+2025-08-23 15:35:15,393 - strategies.ml_strategy - INFO - 2024-12-26: BUY EXECUTED: HD, Price: 387.64, Size: 3, Cost: 1162.91
+2025-08-23 15:35:15,393 - strategies.ml_strategy - INFO - 2024-12-26: BUY EXECUTED: DIS, Price: 111.64, Size: 13, Cost: 1451.37
+2025-08-23 15:35:15,393 - strategies.ml_strategy - INFO - 2024-12-26: BUY EXECUTED: CRM, Price: 343.79, Size: 4, Cost: 1375.18
+2025-08-23 15:35:15,543 - strategies.ml_strategy - INFO - 2024-12-26: BUY SIGNAL: ORCL, Strength: 0.700, Size: 8, ML Enhanced: False
+2025-08-23 15:35:15,544 - strategies.ml_strategy - INFO - 2024-12-26: BUY SIGNAL: BAC, Strength: 0.700, Size: 34, ML Enhanced: False
+2025-08-23 15:35:15,544 - strategies.ml_strategy - INFO - 2024-12-26: BUY SIGNAL: UNH, Strength: 0.700, Size: 2, ML Enhanced: False
+2025-08-23 15:35:15,544 - strategies.ml_strategy - INFO - 2024-12-26: BUY SIGNAL: PG, Strength: 0.700, Size: 9, ML Enhanced: False
+2025-08-23 15:35:15,544 - strategies.ml_strategy - INFO - 2024-12-26: BUY SIGNAL: XOM, Strength: 0.700, Size: 14, ML Enhanced: False
+2025-08-23 15:35:15,544 - strategies.ml_strategy - INFO - 2024-12-26: BUY SIGNAL: HD, Strength: 0.700, Size: 3, ML Enhanced: False
+2025-08-23 15:35:15,544 - strategies.ml_strategy - INFO - 2024-12-26: BUY SIGNAL: DIS, Strength: 0.700, Size: 13, ML Enhanced: False
+2025-08-23 15:35:15,544 - strategies.ml_strategy - INFO - 2024-12-26: BUY SIGNAL: CRM, Strength: 0.700, Size: 4, ML Enhanced: False
+2025-08-23 15:35:15,545 - strategies.ml_strategy - INFO - 2024-12-27: Order Failed: ORCL, Status: Margin
+2025-08-23 15:35:15,545 - strategies.ml_strategy - INFO - 2024-12-27: Order Failed: BAC, Status: Margin
+2025-08-23 15:35:15,545 - strategies.ml_strategy - INFO - 2024-12-27: Order Failed: UNH, Status: Margin
+2025-08-23 15:35:15,545 - strategies.ml_strategy - INFO - 2024-12-27: Order Failed: PG, Status: Margin
+2025-08-23 15:35:15,545 - strategies.ml_strategy - INFO - 2024-12-27: Order Failed: XOM, Status: Margin
+2025-08-23 15:35:15,545 - strategies.ml_strategy - INFO - 2024-12-27: Order Failed: HD, Status: Margin
+2025-08-23 15:35:15,545 - strategies.ml_strategy - INFO - 2024-12-27: Order Failed: DIS, Status: Margin
+2025-08-23 15:35:15,545 - strategies.ml_strategy - INFO - 2024-12-27: Order Failed: CRM, Status: Margin
+2025-08-23 15:35:15,702 - strategies.ml_strategy - INFO - 2024-12-27: BUY SIGNAL: ORCL, Strength: 0.700, Size: 8, ML Enhanced: False
+2025-08-23 15:35:15,702 - strategies.ml_strategy - INFO - 2024-12-27: BUY SIGNAL: BAC, Strength: 0.700, Size: 34, ML Enhanced: False
+2025-08-23 15:35:15,702 - strategies.ml_strategy - INFO - 2024-12-27: BUY SIGNAL: PG, Strength: 0.700, Size: 8, ML Enhanced: False
+2025-08-23 15:35:15,702 - strategies.ml_strategy - INFO - 2024-12-27: BUY SIGNAL: XOM, Strength: 0.700, Size: 14, ML Enhanced: False
+2025-08-23 15:35:15,702 - strategies.ml_strategy - INFO - 2024-12-27: BUY SIGNAL: HD, Strength: 0.700, Size: 3, ML Enhanced: False
+2025-08-23 15:35:15,702 - strategies.ml_strategy - INFO - 2024-12-27: BUY SIGNAL: DIS, Strength: 0.700, Size: 13, ML Enhanced: False
+2025-08-23 15:35:15,702 - strategies.ml_strategy - INFO - 2024-12-27: BUY SIGNAL: CRM, Strength: 0.700, Size: 4, ML Enhanced: False
+2025-08-23 15:35:15,703 - strategies.ml_strategy - INFO - 2024-12-30: Order Failed: ORCL, Status: Margin
+2025-08-23 15:35:15,703 - strategies.ml_strategy - INFO - 2024-12-30: Order Failed: BAC, Status: Margin
+2025-08-23 15:35:15,703 - strategies.ml_strategy - INFO - 2024-12-30: Order Failed: PG, Status: Margin
+2025-08-23 15:35:15,703 - strategies.ml_strategy - INFO - 2024-12-30: Order Failed: XOM, Status: Margin
+2025-08-23 15:35:15,703 - strategies.ml_strategy - INFO - 2024-12-30: Order Failed: HD, Status: Margin
+2025-08-23 15:35:15,703 - strategies.ml_strategy - INFO - 2024-12-30: Order Failed: DIS, Status: Margin
+2025-08-23 15:35:15,703 - strategies.ml_strategy - INFO - 2024-12-30: Order Failed: CRM, Status: Margin
+2025-08-23 15:35:15,878 - strategies.ml_strategy - INFO - 2024-12-30: BUY SIGNAL: MSFT, Strength: 0.700, Size: 3, ML Enhanced: False
+2025-08-23 15:35:15,878 - strategies.ml_strategy - INFO - 2024-12-30: BUY SIGNAL: ORCL, Strength: 0.700, Size: 8, ML Enhanced: False
+2025-08-23 15:35:15,879 - strategies.ml_strategy - INFO - 2024-12-30: BUY SIGNAL: BAC, Strength: 0.700, Size: 34, ML Enhanced: False
+2025-08-23 15:35:15,879 - strategies.ml_strategy - INFO - 2024-12-30: BUY SIGNAL: UNH, Strength: 0.900, Size: 2, ML Enhanced: False
+2025-08-23 15:35:15,879 - strategies.ml_strategy - INFO - 2024-12-30: BUY SIGNAL: JNJ, Strength: 0.900, Size: 10, ML Enhanced: False
+2025-08-23 15:35:15,879 - strategies.ml_strategy - INFO - 2024-12-30: BUY SIGNAL: PG, Strength: 0.700, Size: 9, ML Enhanced: False
+2025-08-23 15:35:15,879 - strategies.ml_strategy - INFO - 2024-12-30: BUY SIGNAL: XOM, Strength: 0.700, Size: 14, ML Enhanced: False
+2025-08-23 15:35:15,879 - strategies.ml_strategy - INFO - 2024-12-30: BUY SIGNAL: HD, Strength: 0.700, Size: 3, ML Enhanced: False
+2025-08-23 15:35:15,879 - strategies.ml_strategy - INFO - 2024-12-30: BUY SIGNAL: DIS, Strength: 0.700, Size: 13, ML Enhanced: False
+2025-08-23 15:35:15,880 - strategies.ml_strategy - INFO - 2024-12-30: Strategy Completed!
+2025-08-23 15:35:15,880 - strategies.ml_strategy - INFO - 2024-12-30: Starting Value: $10,000
+2025-08-23 15:35:15,880 - strategies.ml_strategy - INFO - 2024-12-30: Final Value: $9,887
+2025-08-23 15:35:15,880 - strategies.ml_strategy - INFO - 2024-12-30: Total Return: -1.13%
+2025-08-23 15:35:15,880 - strategies.ml_strategy - INFO - 2024-12-30: Total Trades: 0

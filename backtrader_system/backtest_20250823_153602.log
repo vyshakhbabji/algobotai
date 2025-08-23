@@ -1,0 +1,498 @@
+2025-08-23 15:36:02,604 - strategies.ml_strategy - INFO - Strategy initialized with 2 symbols
+2025-08-23 15:36:02,648 - strategies.ml_strategy - INFO - 2024-03-27: Portfolio Value: $100,000, Return: +0.0%, Positions: 0
+2025-08-23 15:36:02,812 - strategies.ml_strategy - INFO - 2024-04-10: BUY SIGNAL: AAPL, Strength: 0.900, Size: 90, ML Enhanced: False
+2025-08-23 15:36:02,812 - strategies.ml_strategy - INFO - 2024-04-11: BUY EXECUTED: AAPL, Price: 167.14, Size: 90, Cost: 15042.58
+2025-08-23 15:36:02,848 - strategies.ml_strategy - INFO - 2024-04-11: BUY SIGNAL: AAPL, Strength: 0.900, Size: 86, ML Enhanced: False
+2025-08-23 15:36:02,848 - strategies.ml_strategy - INFO - 2024-04-12: BUY EXECUTED: AAPL, Price: 173.02, Size: 86, Cost: 14879.51
+2025-08-23 15:36:02,863 - strategies.ml_strategy - INFO - 2024-04-12: BUY SIGNAL: AAPL, Strength: 0.900, Size: 86, ML Enhanced: False
+2025-08-23 15:36:02,863 - strategies.ml_strategy - INFO - 2024-04-15: BUY EXECUTED: AAPL, Price: 174.11, Size: 86, Cost: 14973.43
+2025-08-23 15:36:02,966 - strategies.ml_strategy - INFO - 2024-04-19: EXIT SIGNAL: AAPL, Strength: 0.800
+2025-08-23 15:36:02,966 - strategies.ml_strategy - INFO - 2024-04-22: SELL EXECUTED: AAPL, Price: 164.34, Size: -262, Value: 44895.52
+2025-08-23 15:36:02,966 - strategies.ml_strategy - INFO - 2024-04-22: TRADE CLOSED: AAPL, PnL: -1838.48
+2025-08-23 15:36:03,002 - strategies.ml_strategy - INFO - 2024-04-23: BUY SIGNAL: TSLA, Strength: 0.900, Size: 101, ML Enhanced: False
+2025-08-23 15:36:03,003 - strategies.ml_strategy - INFO - 2024-04-24: BUY EXECUTED: TSLA, Price: 162.84, Size: 101, Cost: 16446.84
+2025-08-23 15:36:03,058 - strategies.ml_strategy - INFO - 2024-04-25: BUY SIGNAL: TSLA, Strength: 0.900, Size: 87, ML Enhanced: False
+2025-08-23 15:36:03,058 - strategies.ml_strategy - INFO - 2024-04-25: Portfolio Value: $98,851, Return: -1.1%, Positions: 2
+2025-08-23 15:36:03,059 - strategies.ml_strategy - INFO - 2024-04-26: BUY EXECUTED: TSLA, Price: 168.85, Size: 87, Cost: 14689.95
+2025-08-23 15:36:03,094 - strategies.ml_strategy - INFO - 2024-04-29: EXIT SIGNAL: TSLA, Strength: 0.900
+2025-08-23 15:36:03,095 - strategies.ml_strategy - INFO - 2024-04-29: BUY SIGNAL: AAPL, Strength: 0.900, Size: 90, ML Enhanced: False
+2025-08-23 15:36:03,095 - strategies.ml_strategy - INFO - 2024-04-29: BUY SIGNAL: TSLA, Strength: 0.900, Size: 79, ML Enhanced: False
+2025-08-23 15:36:03,095 - strategies.ml_strategy - INFO - 2024-04-30: SELL EXECUTED: TSLA, Price: 186.98, Size: -188, Value: 31136.79
+2025-08-23 15:36:03,095 - strategies.ml_strategy - INFO - 2024-04-30: BUY EXECUTED: AAPL, Price: 172.09, Size: 90, Cost: 15488.47
+2025-08-23 15:36:03,095 - strategies.ml_strategy - INFO - 2024-04-30: BUY EXECUTED: TSLA, Price: 186.98, Size: 79, Cost: 14771.42
+2025-08-23 15:36:03,095 - strategies.ml_strategy - INFO - 2024-04-30: TRADE CLOSED: TSLA, PnL: 4015.45
+2025-08-23 15:36:03,188 - strategies.ml_strategy - INFO - 2024-05-03: BUY SIGNAL: AAPL, Strength: 0.900, Size: 84, ML Enhanced: False
+2025-08-23 15:36:03,189 - strategies.ml_strategy - INFO - 2024-05-06: BUY EXECUTED: AAPL, Price: 181.05, Size: 84, Cost: 15208.19
+2025-08-23 15:36:03,408 - strategies.ml_strategy - INFO - 2024-05-17: BUY SIGNAL: TSLA, Strength: 0.900, Size: 87, ML Enhanced: False
+2025-08-23 15:36:03,408 - strategies.ml_strategy - INFO - 2024-05-20: BUY EXECUTED: TSLA, Price: 177.56, Size: 87, Cost: 15447.72
+2025-08-23 15:36:03,490 - strategies.ml_strategy - INFO - 2024-05-23: Portfolio Value: $102,323, Return: +2.3%, Positions: 2
+2025-08-23 15:36:03,738 - strategies.ml_strategy - INFO - 2024-06-11: EXIT SIGNAL: AAPL, Strength: 0.900
+2025-08-23 15:36:03,738 - strategies.ml_strategy - INFO - 2024-06-11: BUY SIGNAL: AAPL, Strength: 0.900, Size: 76, ML Enhanced: False
+2025-08-23 15:36:03,738 - strategies.ml_strategy - INFO - 2024-06-11: BUY SIGNAL: TSLA, Strength: 0.700, Size: 92, ML Enhanced: False
+2025-08-23 15:36:03,738 - strategies.ml_strategy - INFO - 2024-06-12: SELL EXECUTED: AAPL, Price: 206.17, Size: -698, Value: -77336.80
+2025-08-23 15:36:03,738 - strategies.ml_strategy - INFO - 2024-06-12: BUY EXECUTED: AAPL, Price: 206.17, Size: 76, Cost: -15668.97
+2025-08-23 15:36:03,738 - strategies.ml_strategy - INFO - 2024-06-12: BUY EXECUTED: TSLA, Price: 171.12, Size: 92, Cost: 15743.04
+2025-08-23 15:36:03,739 - strategies.ml_strategy - INFO - 2024-06-12: TRADE CLOSED: AAPL, PnL: 5177.04
+2025-08-23 15:36:03,757 - strategies.ml_strategy - INFO - 2024-06-12: EXIT SIGNAL: AAPL, Strength: 0.900
+2025-08-23 15:36:03,758 - strategies.ml_strategy - INFO - 2024-06-12: BUY SIGNAL: AAPL, Strength: 0.900, Size: 73, ML Enhanced: False
+2025-08-23 15:36:03,758 - strategies.ml_strategy - INFO - 2024-06-13: SELL EXECUTED: AAPL, Price: 213.50, Size: -1472, Value: -314269.20
+2025-08-23 15:36:03,758 - strategies.ml_strategy - INFO - 2024-06-13: BUY EXECUTED: AAPL, Price: 213.50, Size: 73, Cost: -15460.55
+2025-08-23 15:36:03,778 - strategies.ml_strategy - INFO - 2024-06-13: EXIT SIGNAL: AAPL, Strength: 0.900
+2025-08-23 15:36:03,778 - strategies.ml_strategy - INFO - 2024-06-13: BUY SIGNAL: AAPL, Strength: 0.900, Size: 74, ML Enhanced: False
+2025-08-23 15:36:03,778 - strategies.ml_strategy - INFO - 2024-06-14: SELL EXECUTED: AAPL, Price: 212.61, Size: -3017, Value: -641454.20
+2025-08-23 15:36:03,778 - strategies.ml_strategy - INFO - 2024-06-14: BUY EXECUTED: AAPL, Price: 212.61, Size: 74, Cost: -15710.20
+2025-08-23 15:36:03,932 - strategies.ml_strategy - INFO - 2024-06-14: Trained ML models for 2 symbols
+2025-08-23 15:36:03,952 - strategies.ml_strategy - INFO - 2024-06-14: EXIT SIGNAL: AAPL, Strength: 0.000
+2025-08-23 15:36:03,952 - strategies.ml_strategy - INFO - 2024-06-17: SELL EXECUTED: AAPL, Price: 212.14, Size: -6108, Value: -1295726.86
+2025-08-23 15:36:03,972 - strategies.ml_strategy - INFO - 2024-06-17: EXIT SIGNAL: AAPL, Strength: 0.700
+2025-08-23 15:36:03,972 - strategies.ml_strategy - INFO - 2024-06-17: BUY SIGNAL: TSLA, Strength: 0.900, Size: 58, ML Enhanced: False
+2025-08-23 15:36:03,973 - strategies.ml_strategy - INFO - 2024-06-18: SELL EXECUTED: AAPL, Price: 216.33, Size: -12216, Value: -2642706.92
+2025-08-23 15:36:03,973 - strategies.ml_strategy - INFO - 2024-06-18: BUY EXECUTED: TSLA, Price: 186.56, Size: 58, Cost: 10820.48
+2025-08-23 15:36:03,993 - strategies.ml_strategy - INFO - 2024-06-18: EXIT SIGNAL: AAPL, Strength: 0.700
+2025-08-23 15:36:03,993 - strategies.ml_strategy - INFO - 2024-06-20: SELL EXECUTED: AAPL, Price: 212.69, Size: -24432, Value: -5196509.69
+2025-08-23 15:36:04,010 - strategies.ml_strategy - INFO - 2024-06-20: EXIT SIGNAL: AAPL, Strength: 0.000
+2025-08-23 15:36:04,010 - strategies.ml_strategy - INFO - 2024-06-21: SELL EXECUTED: AAPL, Price: 209.17, Size: -48864, Value: -10221043.01
+2025-08-23 15:36:04,027 - strategies.ml_strategy - INFO - 2024-06-21: EXIT SIGNAL: AAPL, Strength: 0.000
+2025-08-23 15:36:04,027 - strategies.ml_strategy - INFO - 2024-06-24: SELL EXECUTED: AAPL, Price: 206.52, Size: -97728, Value: -20182659.01
+2025-08-23 15:36:04,162 - strategies.ml_strategy - INFO - 2024-06-24: Trained ML models for 2 symbols
+2025-08-23 15:36:04,179 - strategies.ml_strategy - INFO - 2024-06-24: EXIT SIGNAL: AAPL, Strength: 0.000
+2025-08-23 15:36:04,179 - strategies.ml_strategy - INFO - 2024-06-24: Portfolio Value: $469,025, Return: +369.0%, Positions: 2
+2025-08-23 15:36:04,179 - strategies.ml_strategy - INFO - 2024-06-25: SELL EXECUTED: AAPL, Price: 207.94, Size: -195456, Value: -40643206.67
+2025-08-23 15:36:04,195 - strategies.ml_strategy - INFO - 2024-06-25: EXIT SIGNAL: AAPL, Strength: 0.000
+2025-08-23 15:36:04,196 - strategies.ml_strategy - INFO - 2024-06-26: SELL EXECUTED: AAPL, Price: 210.28, Size: -390912, Value: -82199741.76
+2025-08-23 15:36:04,212 - strategies.ml_strategy - INFO - 2024-06-26: EXIT SIGNAL: AAPL, Strength: 0.000
+2025-08-23 15:36:04,212 - strategies.ml_strategy - INFO - 2024-06-27: SELL EXECUTED: AAPL, Price: 213.45, Size: -781824, Value: -166879082.40
+2025-08-23 15:36:04,228 - strategies.ml_strategy - INFO - 2024-06-27: EXIT SIGNAL: AAPL, Strength: 0.000
+2025-08-23 15:36:04,228 - strategies.ml_strategy - INFO - 2024-06-28: SELL EXECUTED: AAPL, Price: 214.52, Size: -1563648, Value: -335437142.13
+2025-08-23 15:36:04,245 - strategies.ml_strategy - INFO - 2024-06-28: EXIT SIGNAL: AAPL, Strength: 0.000
+2025-08-23 15:36:04,245 - strategies.ml_strategy - INFO - 2024-06-28: EXIT SIGNAL: TSLA, Strength: 0.900
+2025-08-23 15:36:04,245 - strategies.ml_strategy - INFO - 2024-06-28: BUY SIGNAL: TSLA, Strength: 0.900, Size: 8269, ML Enhanced: False
+2025-08-23 15:36:04,246 - strategies.ml_strategy - INFO - 2024-07-01: SELL EXECUTED: AAPL, Price: 210.86, Size: -3127296, Value: -659432335.04
+2025-08-23 15:36:04,246 - strategies.ml_strategy - INFO - 2024-07-01: SELL EXECUTED: TSLA, Price: 201.02, Size: -692, Value: -18800.86
+2025-08-23 15:36:04,246 - strategies.ml_strategy - INFO - 2024-07-01: BUY EXECUTED: TSLA, Price: 201.02, Size: 8269, Cost: 1511067.37
+2025-08-23 15:36:04,246 - strategies.ml_strategy - INFO - 2024-07-01: TRADE CLOSED: TSLA, PnL: 6739.66
+2025-08-23 15:36:04,246 - strategies.ml_strategy - INFO - 2024-07-01: TRADE CLOSED: TSLA, PnL: 0.00
+2025-08-23 15:36:04,381 - strategies.ml_strategy - INFO - 2024-07-01: Trained ML models for 2 symbols
+2025-08-23 15:36:04,401 - strategies.ml_strategy - INFO - 2024-07-01: EXIT SIGNAL: AAPL, Strength: 0.000
+2025-08-23 15:36:04,401 - strategies.ml_strategy - INFO - 2024-07-02: SELL EXECUTED: AAPL, Price: 214.90, Size: -6254592, Value: -1344111451.82
+2025-08-23 15:36:04,419 - strategies.ml_strategy - INFO - 2024-07-02: EXIT SIGNAL: AAPL, Strength: 0.000
+2025-08-23 15:36:04,419 - strategies.ml_strategy - INFO - 2024-07-02: EXIT SIGNAL: TSLA, Strength: 0.900
+2025-08-23 15:36:04,420 - strategies.ml_strategy - INFO - 2024-07-03: SELL EXECUTED: AAPL, Price: 218.73, Size: -12509184, Value: -2736104649.85
+2025-08-23 15:36:04,420 - strategies.ml_strategy - INFO - 2024-07-03: SELL EXECUTED: TSLA, Price: 234.56, Size: -9653, Value: 1173825.30
+2025-08-23 15:36:04,420 - strategies.ml_strategy - INFO - 2024-07-03: TRADE CLOSED: TSLA, PnL: 264731.17
+2025-08-23 15:36:04,440 - strategies.ml_strategy - INFO - 2024-07-03: EXIT SIGNAL: AAPL, Strength: 0.000
+2025-08-23 15:36:04,440 - strategies.ml_strategy - INFO - 2024-07-03: EXIT SIGNAL: TSLA, Strength: 0.900
+2025-08-23 15:36:04,440 - strategies.ml_strategy - INFO - 2024-07-05: SELL EXECUTED: AAPL, Price: 220.37, Size: -25018368, Value: -5513250898.64
+2025-08-23 15:36:04,440 - strategies.ml_strategy - INFO - 2024-07-05: SELL EXECUTED: TSLA, Price: 249.81, Size: -19306, Value: -4822831.81
+2025-08-23 15:36:04,459 - strategies.ml_strategy - INFO - 2024-07-05: EXIT SIGNAL: AAPL, Strength: 0.000
+2025-08-23 15:36:04,460 - strategies.ml_strategy - INFO - 2024-07-05: EXIT SIGNAL: TSLA, Strength: 0.900
+2025-08-23 15:36:04,460 - strategies.ml_strategy - INFO - 2024-07-08: SELL EXECUTED: AAPL, Price: 225.78, Size: -50036736, Value: -11297128270.15
+2025-08-23 15:36:04,460 - strategies.ml_strategy - INFO - 2024-07-08: SELL EXECUTED: TSLA, Price: 247.71, Size: -38612, Value: -9564578.78
+2025-08-23 15:36:04,480 - strategies.ml_strategy - INFO - 2024-07-08: EXIT SIGNAL: AAPL, Strength: 0.000
+2025-08-23 15:36:04,480 - strategies.ml_strategy - INFO - 2024-07-08: EXIT SIGNAL: TSLA, Strength: 0.900
+2025-08-23 15:36:04,480 - strategies.ml_strategy - INFO - 2024-07-09: SELL EXECUTED: AAPL, Price: 226.61, Size: -100073472, Value: -22677830135.19
+2025-08-23 15:36:04,480 - strategies.ml_strategy - INFO - 2024-07-09: SELL EXECUTED: TSLA, Price: 251.00, Size: -77224, Value: -19383224.00
+2025-08-23 15:36:04,639 - strategies.ml_strategy - INFO - 2024-07-09: Trained ML models for 2 symbols
+2025-08-23 15:36:04,662 - strategies.ml_strategy - INFO - 2024-07-09: EXIT SIGNAL: AAPL, Strength: 0.000
+2025-08-23 15:36:04,662 - strategies.ml_strategy - INFO - 2024-07-09: EXIT SIGNAL: TSLA, Strength: 1.000
+2025-08-23 15:36:04,663 - strategies.ml_strategy - INFO - 2024-07-10: SELL EXECUTED: AAPL, Price: 227.97, Size: -200146944, Value: -45628277147.18
+2025-08-23 15:36:04,663 - strategies.ml_strategy - INFO - 2024-07-10: SELL EXECUTED: TSLA, Price: 262.80, Size: -154448, Value: -40588932.51
+2025-08-23 15:36:04,682 - strategies.ml_strategy - INFO - 2024-07-10: EXIT SIGNAL: AAPL, Strength: 0.000
+2025-08-23 15:36:04,682 - strategies.ml_strategy - INFO - 2024-07-10: EXIT SIGNAL: TSLA, Strength: 0.000
+2025-08-23 15:36:04,682 - strategies.ml_strategy - INFO - 2024-07-11: SELL EXECUTED: AAPL, Price: 230.05, Size: -400293888, Value: -92088325747.37
+2025-08-23 15:36:04,682 - strategies.ml_strategy - INFO - 2024-07-11: SELL EXECUTED: TSLA, Price: 263.30, Size: -308896, Value: -81332313.03
+2025-08-23 15:36:04,702 - strategies.ml_strategy - INFO - 2024-07-11: EXIT SIGNAL: AAPL, Strength: 0.000
+2025-08-23 15:36:04,702 - strategies.ml_strategy - INFO - 2024-07-11: EXIT SIGNAL: TSLA, Strength: 0.700
+2025-08-23 15:36:04,703 - strategies.ml_strategy - INFO - 2024-07-12: SELL EXECUTED: AAPL, Price: 227.60, Size: -800587776, Value: -182210655342.16
+2025-08-23 15:36:04,703 - strategies.ml_strategy - INFO - 2024-07-12: SELL EXECUTED: TSLA, Price: 235.80, Size: -617792, Value: -145675355.49
+2025-08-23 15:36:04,722 - strategies.ml_strategy - INFO - 2024-07-12: EXIT SIGNAL: AAPL, Strength: 0.700
+2025-08-23 15:36:04,722 - strategies.ml_strategy - INFO - 2024-07-12: EXIT SIGNAL: TSLA, Strength: 0.700
+2025-08-23 15:36:04,723 - strategies.ml_strategy - INFO - 2024-07-15: SELL EXECUTED: AAPL, Price: 235.11, Size: -1601175552, Value: -376456188043.98
+2025-08-23 15:36:04,723 - strategies.ml_strategy - INFO - 2024-07-15: SELL EXECUTED: TSLA, Price: 255.97, Size: -1235584, Value: -316272437.99
+2025-08-23 15:36:04,742 - strategies.ml_strategy - INFO - 2024-07-15: EXIT SIGNAL: AAPL, Strength: 0.700
+2025-08-23 15:36:04,742 - strategies.ml_strategy - INFO - 2024-07-15: EXIT SIGNAL: TSLA, Strength: 0.700
+2025-08-23 15:36:04,743 - strategies.ml_strategy - INFO - 2024-07-16: SELL EXECUTED: AAPL, Price: 233.64, Size: -3202351104, Value: -748200328854.51
+2025-08-23 15:36:04,743 - strategies.ml_strategy - INFO - 2024-07-16: SELL EXECUTED: TSLA, Price: 255.31, Size: -2471168, Value: -630913896.05
+2025-08-23 15:36:04,898 - strategies.ml_strategy - INFO - 2024-07-16: Trained ML models for 2 symbols
+2025-08-23 15:36:04,921 - strategies.ml_strategy - INFO - 2024-07-16: EXIT SIGNAL: AAPL, Strength: 0.991
+2025-08-23 15:36:04,921 - strategies.ml_strategy - INFO - 2024-07-16: EXIT SIGNAL: TSLA, Strength: 1.000
+2025-08-23 15:36:04,921 - strategies.ml_strategy - INFO - 2024-07-17: SELL EXECUTED: AAPL, Price: 228.12, Size: -6404702208, Value: -1461060081046.92
+2025-08-23 15:36:04,921 - strategies.ml_strategy - INFO - 2024-07-17: SELL EXECUTED: TSLA, Price: 252.73, Size: -4942336, Value: -1249076556.16
+2025-08-23 15:36:04,937 - strategies.ml_strategy - INFO - 2024-07-17: EXIT SIGNAL: AAPL, Strength: 0.000
+2025-08-23 15:36:04,937 - strategies.ml_strategy - INFO - 2024-07-17: EXIT SIGNAL: TSLA, Strength: 0.000
+2025-08-23 15:36:04,937 - strategies.ml_strategy - INFO - 2024-07-18: SELL EXECUTED: AAPL, Price: 228.95, Size: -12809404416, Value: -2932690634123.92
+2025-08-23 15:36:04,937 - strategies.ml_strategy - INFO - 2024-07-18: SELL EXECUTED: TSLA, Price: 251.09, Size: -9884672, Value: -2481942256.28
+2025-08-23 15:36:04,954 - strategies.ml_strategy - INFO - 2024-07-18: EXIT SIGNAL: AAPL, Strength: 0.000
+2025-08-23 15:36:04,954 - strategies.ml_strategy - INFO - 2024-07-18: EXIT SIGNAL: TSLA, Strength: 0.000
+2025-08-23 15:36:04,954 - strategies.ml_strategy - INFO - 2024-07-19: SELL EXECUTED: AAPL, Price: 223.52, Size: -25618808832, Value: -5726311451596.95
+2025-08-23 15:36:04,954 - strategies.ml_strategy - INFO - 2024-07-19: SELL EXECUTED: TSLA, Price: 247.79, Size: -19769344, Value: -4898645617.03
+2025-08-23 15:36:04,972 - strategies.ml_strategy - INFO - 2024-07-19: EXIT SIGNAL: AAPL, Strength: 0.000
+2025-08-23 15:36:04,972 - strategies.ml_strategy - INFO - 2024-07-19: EXIT SIGNAL: TSLA, Strength: 0.000
+2025-08-23 15:36:04,973 - strategies.ml_strategy - INFO - 2024-07-22: SELL EXECUTED: AAPL, Price: 225.70, Size: -51237617664, Value: -11564183969049.36
+2025-08-23 15:36:04,973 - strategies.ml_strategy - INFO - 2024-07-22: SELL EXECUTED: TSLA, Price: 244.21, Size: -39538688, Value: -9655743261.94
+2025-08-23 15:36:04,990 - strategies.ml_strategy - INFO - 2024-07-22: EXIT SIGNAL: AAPL, Strength: 0.000
+2025-08-23 15:36:04,990 - strategies.ml_strategy - INFO - 2024-07-22: EXIT SIGNAL: TSLA, Strength: 0.000
+2025-08-23 15:36:04,990 - strategies.ml_strategy - INFO - 2024-07-23: SELL EXECUTED: AAPL, Price: 223.07, Size: -102475235328, Value: -22859396313822.93
+2025-08-23 15:36:04,990 - strategies.ml_strategy - INFO - 2024-07-23: SELL EXECUTED: TSLA, Price: 253.60, Size: -79077376, Value: -20054023036.25
+2025-08-23 15:36:05,141 - strategies.ml_strategy - INFO - 2024-07-23: Trained ML models for 2 symbols
+2025-08-23 15:36:05,160 - strategies.ml_strategy - INFO - 2024-07-23: EXIT SIGNAL: AAPL, Strength: 0.000
+2025-08-23 15:36:05,161 - strategies.ml_strategy - INFO - 2024-07-23: EXIT SIGNAL: TSLA, Strength: 0.000
+2025-08-23 15:36:05,161 - strategies.ml_strategy - INFO - 2024-07-23: Portfolio Value: $161,508,447,196, Return: +161508347.2%, Positions: 2
+2025-08-23 15:36:05,161 - strategies.ml_strategy - INFO - 2024-07-24: SELL EXECUTED: AAPL, Price: 222.70, Size: -204950470656, Value: -45643402996869.12
+2025-08-23 15:36:05,161 - strategies.ml_strategy - INFO - 2024-07-24: SELL EXECUTED: TSLA, Price: 225.42, Size: -158154752, Value: -35651243906.25
+2025-08-23 15:36:05,181 - strategies.ml_strategy - INFO - 2024-07-24: EXIT SIGNAL: AAPL, Strength: 0.800
+2025-08-23 15:36:05,181 - strategies.ml_strategy - INFO - 2024-07-24: EXIT SIGNAL: TSLA, Strength: 0.800
+2025-08-23 15:36:05,182 - strategies.ml_strategy - INFO - 2024-07-25: SELL EXECUTED: AAPL, Price: 217.66, Size: -409900941312, Value: -89220617939584.78
+2025-08-23 15:36:05,182 - strategies.ml_strategy - INFO - 2024-07-25: SELL EXECUTED: TSLA, Price: 216.80, Size: -316309504, Value: -68575901432.50
+2025-08-23 15:36:05,202 - strategies.ml_strategy - INFO - 2024-07-25: EXIT SIGNAL: AAPL, Strength: 0.000
+2025-08-23 15:36:05,202 - strategies.ml_strategy - INFO - 2024-07-25: EXIT SIGNAL: TSLA, Strength: 0.800
+2025-08-23 15:36:05,202 - strategies.ml_strategy - INFO - 2024-07-26: SELL EXECUTED: AAPL, Price: 217.44, Size: -819801882624, Value: -178253777124250.12
+2025-08-23 15:36:05,202 - strategies.ml_strategy - INFO - 2024-07-26: SELL EXECUTED: TSLA, Price: 221.19, Size: -632619008, Value: -139928999924.00
+2025-08-23 15:36:05,221 - strategies.ml_strategy - INFO - 2024-07-26: EXIT SIGNAL: AAPL, Strength: 0.000
+2025-08-23 15:36:05,221 - strategies.ml_strategy - INFO - 2024-07-26: EXIT SIGNAL: TSLA, Strength: 0.800
+2025-08-23 15:36:05,222 - strategies.ml_strategy - INFO - 2024-07-29: SELL EXECUTED: AAPL, Price: 215.71, Size: -1639603765248, Value: -353671161933678.88
+2025-08-23 15:36:05,222 - strategies.ml_strategy - INFO - 2024-07-29: SELL EXECUTED: TSLA, Price: 224.90, Size: -1265238016, Value: -284552022076.00
+2025-08-23 15:36:05,242 - strategies.ml_strategy - INFO - 2024-07-29: EXIT SIGNAL: AAPL, Strength: 0.000
+2025-08-23 15:36:05,242 - strategies.ml_strategy - INFO - 2024-07-29: EXIT SIGNAL: TSLA, Strength: 0.000
+2025-08-23 15:36:05,243 - strategies.ml_strategy - INFO - 2024-07-30: SELL EXECUTED: AAPL, Price: 217.92, Size: -3279207530496, Value: -714612664004291.75
+2025-08-23 15:36:05,243 - strategies.ml_strategy - INFO - 2024-07-30: SELL EXECUTED: TSLA, Price: 232.25, Size: -2530476032, Value: -587703058432.00
+2025-08-23 15:36:05,406 - strategies.ml_strategy - INFO - 2024-07-30: Trained ML models for 2 symbols
+2025-08-23 15:36:05,433 - strategies.ml_strategy - INFO - 2024-07-30: EXIT SIGNAL: AAPL, Strength: 0.688
+2025-08-23 15:36:05,433 - strategies.ml_strategy - INFO - 2024-07-30: BUY SIGNAL: AAPL, Strength: 0.688, Size: 46503645, ML Enhanced: True
+2025-08-23 15:36:05,433 - strategies.ml_strategy - INFO - 2024-07-30: BUY SIGNAL: TSLA, Strength: 0.597, Size: 45441348, ML Enhanced: True
+2025-08-23 15:36:05,433 - strategies.ml_strategy - INFO - 2024-07-31: SELL EXECUTED: AAPL, Price: 220.16, Size: -6558415060992, Value: -1443896437477032.00
+2025-08-23 15:36:05,433 - strategies.ml_strategy - INFO - 2024-07-31: BUY EXECUTED: AAPL, Price: 220.16, Size: 46503645, Cost: -10179850215.56
+2025-08-23 15:36:05,434 - strategies.ml_strategy - INFO - 2024-07-31: BUY EXECUTED: TSLA, Price: 227.90, Size: 45441348, Cost: -10379541755.57
+2025-08-23 15:36:05,454 - strategies.ml_strategy - INFO - 2024-07-31: EXIT SIGNAL: AAPL, Strength: 0.000
+2025-08-23 15:36:05,454 - strategies.ml_strategy - INFO - 2024-07-31: EXIT SIGNAL: TSLA, Strength: 0.000
+2025-08-23 15:36:05,454 - strategies.ml_strategy - INFO - 2024-08-01: SELL EXECUTED: AAPL, Price: 223.07, Size: -13116876625629, Value: -2926013216478170.50
+2025-08-23 15:36:05,454 - strategies.ml_strategy - INFO - 2024-08-01: SELL EXECUTED: TSLA, Price: 227.69, Size: -5106393412, Value: -1162674728445.06
+2025-08-23 15:36:05,474 - strategies.ml_strategy - INFO - 2024-08-01: EXIT SIGNAL: AAPL, Strength: 0.700
+2025-08-23 15:36:05,474 - strategies.ml_strategy - INFO - 2024-08-01: EXIT SIGNAL: TSLA, Strength: 0.800
+2025-08-23 15:36:05,474 - strategies.ml_strategy - INFO - 2024-08-01: BUY SIGNAL: AAPL, Strength: 0.700, Size: 68605864932, ML Enhanced: False
+2025-08-23 15:36:05,474 - strategies.ml_strategy - INFO - 2024-08-02: SELL EXECUTED: AAPL, Price: 217.88, Size: -26233753251258, Value: -5715878376388620.00
+2025-08-23 15:36:05,474 - strategies.ml_strategy - INFO - 2024-08-02: SELL EXECUTED: TSLA, Price: 214.88, Size: -10212786824, Value: -2194523682608.24
+2025-08-23 15:36:05,474 - strategies.ml_strategy - INFO - 2024-08-02: BUY EXECUTED: AAPL, Price: 217.88, Size: 68605864932, Cost: -15054561595054.45
+2025-08-23 15:36:05,494 - strategies.ml_strategy - INFO - 2024-08-02: EXIT SIGNAL: AAPL, Strength: 0.900
+2025-08-23 15:36:05,494 - strategies.ml_strategy - INFO - 2024-08-02: EXIT SIGNAL: TSLA, Strength: 0.800
+2025-08-23 15:36:05,494 - strategies.ml_strategy - INFO - 2024-08-02: BUY SIGNAL: AAPL, Strength: 0.900, Size: 26763499016, ML Enhanced: False
+2025-08-23 15:36:05,495 - strategies.ml_strategy - INFO - 2024-08-05: SELL EXECUTED: AAPL, Price: 197.94, Size: -52536112367448, Value: -10398925505097046.00
+2025-08-23 15:36:05,495 - strategies.ml_strategy - INFO - 2024-08-05: SELL EXECUTED: TSLA, Price: 185.22, Size: -20425573648, Value: -3783224776016.12
+2025-08-23 15:36:05,495 - strategies.ml_strategy - INFO - 2024-08-05: BUY EXECUTED: AAPL, Price: 197.94, Size: 26763499016, Cost: -5584819369347.44
+2025-08-23 15:36:05,513 - strategies.ml_strategy - INFO - 2024-08-05: EXIT SIGNAL: AAPL, Strength: 0.800
+2025-08-23 15:36:05,513 - strategies.ml_strategy - INFO - 2024-08-05: EXIT SIGNAL: TSLA, Strength: 0.800
+2025-08-23 15:36:05,513 - strategies.ml_strategy - INFO - 2024-08-06: SELL EXECUTED: AAPL, Price: 204.11, Size: -105098988233912, Value: -21452039181149604.00
+2025-08-23 15:36:05,513 - strategies.ml_strategy - INFO - 2024-08-06: SELL EXECUTED: TSLA, Price: 200.75, Size: -40851147296, Value: -8200867819672.00
+2025-08-23 15:36:05,659 - strategies.ml_strategy - INFO - 2024-08-06: Trained ML models for 2 symbols
+2025-08-23 15:36:05,681 - strategies.ml_strategy - INFO - 2024-08-06: EXIT SIGNAL: AAPL, Strength: 0.622
+2025-08-23 15:36:05,681 - strategies.ml_strategy - INFO - 2024-08-06: EXIT SIGNAL: TSLA, Strength: 1.000
+2025-08-23 15:36:05,681 - strategies.ml_strategy - INFO - 2024-08-07: SELL EXECUTED: AAPL, Price: 205.70, Size: -210197976467824, Value: -43238443909009320.00
+2025-08-23 15:36:05,682 - strategies.ml_strategy - INFO - 2024-08-07: SELL EXECUTED: TSLA, Price: 200.77, Size: -81702294592, Value: -16403370034305.70
+2025-08-23 15:36:05,699 - strategies.ml_strategy - INFO - 2024-08-07: EXIT SIGNAL: AAPL, Strength: 0.700
+2025-08-23 15:36:05,699 - strategies.ml_strategy - INFO - 2024-08-07: EXIT SIGNAL: TSLA, Strength: 0.800
+2025-08-23 15:36:05,699 - strategies.ml_strategy - INFO - 2024-08-08: SELL EXECUTED: AAPL, Price: 211.88, Size: -420395952935648, Value: -89072456098682032.00
+2025-08-23 15:36:05,699 - strategies.ml_strategy - INFO - 2024-08-08: SELL EXECUTED: TSLA, Price: 195.70, Size: -163404589184, Value: -31978277604637.57
+2025-08-23 15:36:05,717 - strategies.ml_strategy - INFO - 2024-08-08: EXIT SIGNAL: AAPL, Strength: 0.000
+2025-08-23 15:36:05,717 - strategies.ml_strategy - INFO - 2024-08-09: SELL EXECUTED: AAPL, Price: 210.87, Size: -840791905871296, Value: -177300634494541952.00
+2025-08-23 15:36:05,736 - strategies.ml_strategy - INFO - 2024-08-09: EXIT SIGNAL: AAPL, Strength: 0.000
+2025-08-23 15:36:05,737 - strategies.ml_strategy - INFO - 2024-08-12: SELL EXECUTED: AAPL, Price: 215.07, Size: -1681583811742592, Value: -361656658165312704.00
+2025-08-23 15:36:05,757 - strategies.ml_strategy - INFO - 2024-08-12: EXIT SIGNAL: AAPL, Strength: 0.000
+2025-08-23 15:36:05,758 - strategies.ml_strategy - INFO - 2024-08-13: SELL EXECUTED: AAPL, Price: 218.00, Size: -3363167623485184, Value: -733155204184764928.00
+2025-08-23 15:36:05,928 - strategies.ml_strategy - INFO - 2024-08-13: Trained ML models for 2 symbols
+2025-08-23 15:36:05,949 - strategies.ml_strategy - INFO - 2024-08-13: EXIT SIGNAL: AAPL, Strength: 0.000
+2025-08-23 15:36:05,950 - strategies.ml_strategy - INFO - 2024-08-14: SELL EXECUTED: AAPL, Price: 219.55, Size: -6726335246970368, Value: -1476754929163067648.00
+2025-08-23 15:36:05,970 - strategies.ml_strategy - INFO - 2024-08-14: EXIT SIGNAL: AAPL, Strength: 0.000
+2025-08-23 15:36:05,970 - strategies.ml_strategy - INFO - 2024-08-15: SELL EXECUTED: AAPL, Price: 223.56, Size: -13452670493940736, Value: -3007472912902313984.00
+2025-08-23 15:36:05,990 - strategies.ml_strategy - INFO - 2024-08-15: EXIT SIGNAL: AAPL, Strength: 0.000
+2025-08-23 15:36:05,991 - strategies.ml_strategy - INFO - 2024-08-16: SELL EXECUTED: AAPL, Price: 222.88, Size: -26905340987881472, Value: -5996735460943543296.00
+2025-08-23 15:36:06,010 - strategies.ml_strategy - INFO - 2024-08-16: EXIT SIGNAL: AAPL, Strength: 0.000
+2025-08-23 15:36:06,011 - strategies.ml_strategy - INFO - 2024-08-19: SELL EXECUTED: AAPL, Price: 224.67, Size: -53810681975762944, Value: -12089880331734571008.00
+2025-08-23 15:36:06,031 - strategies.ml_strategy - INFO - 2024-08-19: EXIT SIGNAL: AAPL, Strength: 0.000
+2025-08-23 15:36:06,031 - strategies.ml_strategy - INFO - 2024-08-20: SELL EXECUTED: AAPL, Price: 224.72, Size: -107621363951525888, Value: -24185117502755495936.00
+2025-08-23 15:36:06,203 - strategies.ml_strategy - INFO - 2024-08-20: Trained ML models for 2 symbols
+2025-08-23 15:36:06,221 - strategies.ml_strategy - INFO - 2024-08-20: EXIT SIGNAL: AAPL, Strength: 0.000
+2025-08-23 15:36:06,221 - strategies.ml_strategy - INFO - 2024-08-20: Portfolio Value: $-349,112,468,274,683,904, Return: -349112468274783.9%, Positions: 2
+2025-08-23 15:36:06,221 - strategies.ml_strategy - INFO - 2024-08-21: SELL EXECUTED: AAPL, Price: 225.47, Size: -215242727903051776, Value: -48530924494607572992.00
+2025-08-23 15:36:06,239 - strategies.ml_strategy - INFO - 2024-08-21: EXIT SIGNAL: AAPL, Strength: 0.000
+2025-08-23 15:36:06,239 - strategies.ml_strategy - INFO - 2024-08-22: SELL EXECUTED: AAPL, Price: 226.73, Size: -430485455806103552, Value: -97606016855755472896.00
+2025-08-23 15:36:06,257 - strategies.ml_strategy - INFO - 2024-08-22: EXIT SIGNAL: AAPL, Strength: 0.000
+2025-08-23 15:36:06,258 - strategies.ml_strategy - INFO - 2024-08-23: SELL EXECUTED: AAPL, Price: 224.61, Size: -860970911612207104, Value: -193386673862215139328.00
+2025-08-23 15:36:06,276 - strategies.ml_strategy - INFO - 2024-08-23: EXIT SIGNAL: AAPL, Strength: 0.700
+2025-08-23 15:36:06,276 - strategies.ml_strategy - INFO - 2024-08-26: SELL EXECUTED: AAPL, Price: 225.71, Size: -1721941823224414208, Value: -388658699312117383168.00
+2025-08-23 15:36:06,294 - strategies.ml_strategy - INFO - 2024-08-26: EXIT SIGNAL: AAPL, Strength: 0.700
+2025-08-23 15:36:06,295 - strategies.ml_strategy - INFO - 2024-08-27: SELL EXECUTED: AAPL, Price: 224.95, Size: -3443883646448828416, Value: -774712193480437792768.00
+2025-08-23 15:36:06,460 - strategies.ml_strategy - INFO - 2024-08-27: Trained ML models for 2 symbols
+2025-08-23 15:36:06,484 - strategies.ml_strategy - INFO - 2024-08-27: EXIT SIGNAL: AAPL, Strength: 0.844
+2025-08-23 15:36:06,484 - strategies.ml_strategy - INFO - 2024-08-28: SELL EXECUTED: AAPL, Price: 226.86, Size: -6887767292897656832, Value: -1562587569879769939968.00
+2025-08-23 15:36:06,504 - strategies.ml_strategy - INFO - 2024-08-28: EXIT SIGNAL: AAPL, Strength: 0.700
+2025-08-23 15:36:06,505 - strategies.ml_strategy - INFO - 2024-08-29: SELL EXECUTED: AAPL, Price: 229.03, Size: -13775534585795313664, Value: -3155066977861412847616.00
+2025-08-23 15:36:06,525 - strategies.ml_strategy - INFO - 2024-08-29: EXIT SIGNAL: AAPL, Strength: 0.700
+2025-08-23 15:36:06,525 - strategies.ml_strategy - INFO - 2024-08-30: SELL EXECUTED: AAPL, Price: 229.12, Size: -27551069171590627328, Value: -6312601612451224485888.00
+2025-08-23 15:36:06,545 - strategies.ml_strategy - INFO - 2024-08-30: EXIT SIGNAL: AAPL, Strength: 0.700
+2025-08-23 15:36:06,546 - strategies.ml_strategy - INFO - 2024-09-03: SELL EXECUTED: AAPL, Price: 227.49, Size: -55102138343181254656, Value: -12535254904103227097088.00
+2025-08-23 15:36:06,566 - strategies.ml_strategy - INFO - 2024-09-03: EXIT SIGNAL: AAPL, Strength: 0.000
+2025-08-23 15:36:06,566 - strategies.ml_strategy - INFO - 2024-09-04: SELL EXECUTED: AAPL, Price: 220.63, Size: -110204276686362509312, Value: -24314718340316370305024.00
+2025-08-23 15:36:06,743 - strategies.ml_strategy - INFO - 2024-09-04: Trained ML models for 2 symbols
+2025-08-23 15:36:06,767 - strategies.ml_strategy - INFO - 2024-09-04: EXIT SIGNAL: AAPL, Strength: 0.652
+2025-08-23 15:36:06,767 - strategies.ml_strategy - INFO - 2024-09-05: SELL EXECUTED: AAPL, Price: 220.60, Size: -220408553372725018624, Value: -48622856999912129691648.00
+2025-08-23 15:36:06,788 - strategies.ml_strategy - INFO - 2024-09-05: EXIT SIGNAL: AAPL, Strength: 0.000
+2025-08-23 15:36:06,788 - strategies.ml_strategy - INFO - 2024-09-05: EXIT SIGNAL: TSLA, Strength: 0.900
+2025-08-23 15:36:06,788 - strategies.ml_strategy - INFO - 2024-09-05: BUY SIGNAL: TSLA, Strength: 0.900, Size: 280463769172164864, ML Enhanced: False
+2025-08-23 15:36:06,789 - strategies.ml_strategy - INFO - 2024-09-06: SELL EXECUTED: AAPL, Price: 222.91, Size: -440817106745450037248, Value: -98263671308120362057728.00
+2025-08-23 15:36:06,789 - strategies.ml_strategy - INFO - 2024-09-06: SELL EXECUTED: TSLA, Price: 232.60, Size: -326809178368, Value: -76015816883081.72
+2025-08-23 15:36:06,789 - strategies.ml_strategy - INFO - 2024-09-06: BUY EXECUTED: TSLA, Price: 232.60, Size: 280463769172164864, Cost: 65235581526394568704.00
+2025-08-23 15:36:06,789 - strategies.ml_strategy - INFO - 2024-09-06: TRADE CLOSED: TSLA, PnL: -11126091300591.22
+2025-08-23 15:36:06,808 - strategies.ml_strategy - INFO - 2024-09-06: EXIT SIGNAL: AAPL, Strength: 0.000
+2025-08-23 15:36:06,808 - strategies.ml_strategy - INFO - 2024-09-06: EXIT SIGNAL: TSLA, Strength: 0.000
+2025-08-23 15:36:06,808 - strategies.ml_strategy - INFO - 2024-09-09: SELL EXECUTED: AAPL, Price: 219.80, Size: -881634213490900074496, Value: -193780624234327792680960.00
+2025-08-23 15:36:06,808 - strategies.ml_strategy - INFO - 2024-09-09: SELL EXECUTED: TSLA, Price: 216.20, Size: -280464422790521600, Value: 65235439805849346048.00
+2025-08-23 15:36:06,808 - strategies.ml_strategy - INFO - 2024-09-09: TRADE CLOSED: TSLA, PnL: -4599597664289730560.00
+2025-08-23 15:36:06,826 - strategies.ml_strategy - INFO - 2024-09-09: EXIT SIGNAL: AAPL, Strength: 0.000
+2025-08-23 15:36:06,826 - strategies.ml_strategy - INFO - 2024-09-10: SELL EXECUTED: AAPL, Price: 217.91, Size: -1763268426981800148992, Value: -384226518586106069385216.00
+2025-08-23 15:36:06,844 - strategies.ml_strategy - INFO - 2024-09-10: EXIT SIGNAL: AAPL, Strength: 0.000
+2025-08-23 15:36:06,844 - strategies.ml_strategy - INFO - 2024-09-11: SELL EXECUTED: AAPL, Price: 220.43, Size: -3526536853963600297984, Value: -777368984675711260295168.00
+2025-08-23 15:36:07,004 - strategies.ml_strategy - INFO - 2024-09-11: Trained ML models for 2 symbols
+2025-08-23 15:36:07,021 - strategies.ml_strategy - INFO - 2024-09-11: EXIT SIGNAL: AAPL, Strength: 0.000
+2025-08-23 15:36:07,021 - strategies.ml_strategy - INFO - 2024-09-12: SELL EXECUTED: AAPL, Price: 221.47, Size: -7053073707927200595968, Value: -1562039181369042165301248.00
+2025-08-23 15:36:07,042 - strategies.ml_strategy - INFO - 2024-09-12: EXIT SIGNAL: AAPL, Strength: 0.000
+2025-08-23 15:36:07,042 - strategies.ml_strategy - INFO - 2024-09-13: SELL EXECUTED: AAPL, Price: 222.54, Size: -14106147415854401191936, Value: -3139242244213556283179008.00
+2025-08-23 15:36:07,063 - strategies.ml_strategy - INFO - 2024-09-13: EXIT SIGNAL: AAPL, Strength: 0.000
+2025-08-23 15:36:07,063 - strategies.ml_strategy - INFO - 2024-09-16: SELL EXECUTED: AAPL, Price: 215.54, Size: -28212294831708802383872, Value: -6080790111723583464013824.00
+2025-08-23 15:36:07,084 - strategies.ml_strategy - INFO - 2024-09-16: EXIT SIGNAL: AAPL, Strength: 0.900
+2025-08-23 15:36:07,084 - strategies.ml_strategy - INFO - 2024-09-16: BUY SIGNAL: AAPL, Strength: 0.900, Size: 124259656247747772416, ML Enhanced: False
+2025-08-23 15:36:07,084 - strategies.ml_strategy - INFO - 2024-09-17: SELL EXECUTED: AAPL, Price: 214.75, Size: -56424589663417604767744, Value: -12117211397052543382061056.00
+2025-08-23 15:36:07,084 - strategies.ml_strategy - INFO - 2024-09-17: BUY EXECUTED: AAPL, Price: 214.75, Size: 124259656247747772416, Cost: -26923279414673914462208.00
+2025-08-23 15:36:07,104 - strategies.ml_strategy - INFO - 2024-09-17: EXIT SIGNAL: AAPL, Strength: 0.700
+2025-08-23 15:36:07,105 - strategies.ml_strategy - INFO - 2024-09-17: BUY SIGNAL: AAPL, Strength: 0.700, Size: 60908026533307613184, ML Enhanced: False
+2025-08-23 15:36:07,105 - strategies.ml_strategy - INFO - 2024-09-18: SELL EXECUTED: AAPL, Price: 216.54, Size: -112973438983082957307904, Value: -24463516463400200154644480.00
+2025-08-23 15:36:07,105 - strategies.ml_strategy - INFO - 2024-09-18: BUY EXECUTED: AAPL, Price: 216.54, Size: 60908026533307613184, Cost: -13193030887213325352960.00
+2025-08-23 15:36:07,293 - strategies.ml_strategy - INFO - 2024-09-18: Trained ML models for 2 symbols
+2025-08-23 15:36:07,314 - strategies.ml_strategy - INFO - 2024-09-18: EXIT SIGNAL: AAPL, Strength: 0.000
+2025-08-23 15:36:07,314 - strategies.ml_strategy - INFO - 2024-09-18: Portfolio Value: $-715,110,602,847,688,289,419,264, Return: -715110602847688327168.0%, Positions: 2
+2025-08-23 15:36:07,315 - strategies.ml_strategy - INFO - 2024-09-19: SELL EXECUTED: AAPL, Price: 223.95, Size: -226007785992699222228992, Value: -50613932414163950038417408.00
+2025-08-23 15:36:07,335 - strategies.ml_strategy - INFO - 2024-09-19: EXIT SIGNAL: AAPL, Strength: 0.000
+2025-08-23 15:36:07,335 - strategies.ml_strategy - INFO - 2024-09-20: SELL EXECUTED: AAPL, Price: 228.90, Size: -452015571985398444457984, Value: -103468476618682883549167616.00
+2025-08-23 15:36:07,355 - strategies.ml_strategy - INFO - 2024-09-20: EXIT SIGNAL: AAPL, Strength: 0.900
+2025-08-23 15:36:07,355 - strategies.ml_strategy - INFO - 2024-09-23: SELL EXECUTED: AAPL, Price: 226.29, Size: -904031143970796888915968, Value: -204570358117047882966106112.00
+2025-08-23 15:36:07,376 - strategies.ml_strategy - INFO - 2024-09-23: EXIT SIGNAL: AAPL, Strength: 0.000
+2025-08-23 15:36:07,376 - strategies.ml_strategy - INFO - 2024-09-24: SELL EXECUTED: AAPL, Price: 227.59, Size: -1808062287941593777831936, Value: -411498335329115146509352960.00
+2025-08-23 15:36:07,396 - strategies.ml_strategy - INFO - 2024-09-24: EXIT SIGNAL: AAPL, Strength: 0.000
+2025-08-23 15:36:07,397 - strategies.ml_strategy - INFO - 2024-09-25: SELL EXECUTED: AAPL, Price: 223.89, Size: -3616124575883187555663872, Value: -809606965504682104518082560.00
+2025-08-23 15:36:07,563 - strategies.ml_strategy - INFO - 2024-09-25: Trained ML models for 2 symbols
+2025-08-23 15:36:07,581 - strategies.ml_strategy - INFO - 2024-09-25: EXIT SIGNAL: AAPL, Strength: 0.000
+2025-08-23 15:36:07,581 - strategies.ml_strategy - INFO - 2024-09-26: SELL EXECUTED: AAPL, Price: 226.25, Size: -7232249151766375111327744, Value: -1636274938618929781921546240.00
+2025-08-23 15:36:07,600 - strategies.ml_strategy - INFO - 2024-09-26: EXIT SIGNAL: AAPL, Strength: 0.000
+2025-08-23 15:36:07,600 - strategies.ml_strategy - INFO - 2024-09-27: SELL EXECUTED: AAPL, Price: 227.40, Size: -14464498303532750222655488, Value: -3289251012963040903401832448.00
+2025-08-23 15:36:07,618 - strategies.ml_strategy - INFO - 2024-09-27: EXIT SIGNAL: AAPL, Strength: 0.000
+2025-08-23 15:36:07,618 - strategies.ml_strategy - INFO - 2024-09-30: SELL EXECUTED: AAPL, Price: 228.97, Size: -28928996607065500445310976, Value: -6623998032505548234945462272.00
+2025-08-23 15:36:07,636 - strategies.ml_strategy - INFO - 2024-09-30: EXIT SIGNAL: AAPL, Strength: 0.000
+2025-08-23 15:36:07,636 - strategies.ml_strategy - INFO - 2024-10-01: SELL EXECUTED: AAPL, Price: 228.46, Size: -57857993214131000890621952, Value: -13218049564967040133504172032.00
+2025-08-23 15:36:07,656 - strategies.ml_strategy - INFO - 2024-10-01: EXIT SIGNAL: AAPL, Strength: 0.000
+2025-08-23 15:36:07,656 - strategies.ml_strategy - INFO - 2024-10-02: SELL EXECUTED: AAPL, Price: 224.84, Size: -115715986428262001781243904, Value: -26017993726611843068677062656.00
+2025-08-23 15:36:07,843 - strategies.ml_strategy - INFO - 2024-10-02: Trained ML models for 2 symbols
+2025-08-23 15:36:07,865 - strategies.ml_strategy - INFO - 2024-10-02: EXIT SIGNAL: AAPL, Strength: 0.000
+2025-08-23 15:36:07,865 - strategies.ml_strategy - INFO - 2024-10-03: SELL EXECUTED: AAPL, Price: 224.10, Size: -231431972856524003562487808, Value: -51863221105693470003161989120.00
+2025-08-23 15:36:07,885 - strategies.ml_strategy - INFO - 2024-10-03: EXIT SIGNAL: AAPL, Strength: 0.000
+2025-08-23 15:36:07,885 - strategies.ml_strategy - INFO - 2024-10-04: SELL EXECUTED: AAPL, Price: 226.84, Size: -462863945713048007124975616, Value: -104998033705741024238554316800.00
+2025-08-23 15:36:07,907 - strategies.ml_strategy - INFO - 2024-10-04: EXIT SIGNAL: AAPL, Strength: 0.000
+2025-08-23 15:36:07,907 - strategies.ml_strategy - INFO - 2024-10-07: SELL EXECUTED: AAPL, Price: 223.46, Size: -925727891426096014249951232, Value: -206863173703953060920022794240.00
+2025-08-23 15:36:07,928 - strategies.ml_strategy - INFO - 2024-10-07: EXIT SIGNAL: AAPL, Strength: 0.000
+2025-08-23 15:36:07,928 - strategies.ml_strategy - INFO - 2024-10-08: SELL EXECUTED: AAPL, Price: 223.26, Size: -1851455782852192028499902464, Value: -413357767403138791033591037952.00
+2025-08-23 15:36:07,949 - strategies.ml_strategy - INFO - 2024-10-08: EXIT SIGNAL: AAPL, Strength: 0.000
+2025-08-23 15:36:07,949 - strategies.ml_strategy - INFO - 2024-10-09: SELL EXECUTED: AAPL, Price: 224.19, Size: -3702911565704384056999804928, Value: -830143292653894953910277242880.00
+2025-08-23 15:36:08,127 - strategies.ml_strategy - INFO - 2024-10-09: Trained ML models for 2 symbols
+2025-08-23 15:36:08,146 - strategies.ml_strategy - INFO - 2024-10-09: EXIT SIGNAL: AAPL, Strength: 0.000
+2025-08-23 15:36:08,146 - strategies.ml_strategy - INFO - 2024-10-10: SELL EXECUTED: AAPL, Price: 226.72, Size: -7405823131408768113999609856, Value: -1679083885042657465051509686272.00
+2025-08-23 15:36:08,164 - strategies.ml_strategy - INFO - 2024-10-10: EXIT SIGNAL: AAPL, Strength: 0.000
+2025-08-23 15:36:08,164 - strategies.ml_strategy - INFO - 2024-10-11: SELL EXECUTED: AAPL, Price: 228.24, Size: -14811646262817536227999219712, Value: -3380577161501801395789097861120.00
+2025-08-23 15:36:08,182 - strategies.ml_strategy - INFO - 2024-10-11: EXIT SIGNAL: AAPL, Strength: 0.000
+2025-08-23 15:36:08,182 - strategies.ml_strategy - INFO - 2024-10-11: EXIT SIGNAL: TSLA, Strength: 0.800
+2025-08-23 15:36:08,182 - strategies.ml_strategy - INFO - 2024-10-14: SELL EXECUTED: AAPL, Price: 227.64, Size: -29623292525635072455998439424, Value: -6743462720037894319029522268160.00
+2025-08-23 15:36:08,182 - strategies.ml_strategy - INFO - 2024-10-14: SELL EXECUTED: TSLA, Price: 220.13, Size: -560928845581043200, Value: -123477269516665421824.00
+2025-08-23 15:36:08,201 - strategies.ml_strategy - INFO - 2024-10-14: EXIT SIGNAL: AAPL, Strength: 0.000
+2025-08-23 15:36:08,201 - strategies.ml_strategy - INFO - 2024-10-14: EXIT SIGNAL: TSLA, Strength: 0.800
+2025-08-23 15:36:08,201 - strategies.ml_strategy - INFO - 2024-10-15: SELL EXECUTED: AAPL, Price: 232.53, Size: -59246585051270144911996878848, Value: -13776478950027728014746773880832.00
+2025-08-23 15:36:08,201 - strategies.ml_strategy - INFO - 2024-10-15: SELL EXECUTED: TSLA, Price: 220.01, Size: -1121857691162086400, Value: -246819904470022291456.00
+2025-08-23 15:36:08,218 - strategies.ml_strategy - INFO - 2024-10-15: EXIT SIGNAL: AAPL, Strength: 0.000
+2025-08-23 15:36:08,219 - strategies.ml_strategy - INFO - 2024-10-15: EXIT SIGNAL: TSLA, Strength: 0.800
+2025-08-23 15:36:08,219 - strategies.ml_strategy - INFO - 2024-10-16: SELL EXECUTED: AAPL, Price: 230.53, Size: -118493170102540289823993757696, Value: -27315887994290473265207615422464.00
+2025-08-23 15:36:08,219 - strategies.ml_strategy - INFO - 2024-10-16: SELL EXECUTED: TSLA, Price: 221.40, Size: -2243715382324172800, Value: -496758571952019931136.00
+2025-08-23 15:36:08,410 - strategies.ml_strategy - INFO - 2024-10-16: Trained ML models for 2 symbols
+2025-08-23 15:36:08,434 - strategies.ml_strategy - INFO - 2024-10-16: EXIT SIGNAL: AAPL, Strength: 0.000
+2025-08-23 15:36:08,434 - strategies.ml_strategy - INFO - 2024-10-16: Portfolio Value: $-146,381,269,659,832,592,227,559,800,832, Return: -146381269659832591402926080.0%, Positions: 2
+2025-08-23 15:36:08,434 - strategies.ml_strategy - INFO - 2024-10-17: SELL EXECUTED: AAPL, Price: 232.35, Size: -236986340205080579647987515392, Value: -55063453595404856102605486555136.00
+2025-08-23 15:36:08,455 - strategies.ml_strategy - INFO - 2024-10-17: EXIT SIGNAL: AAPL, Strength: 0.000
+2025-08-23 15:36:08,455 - strategies.ml_strategy - INFO - 2024-10-17: BUY SIGNAL: TSLA, Strength: 0.700, Size: 27666448549485299294535680, ML Enhanced: False
+2025-08-23 15:36:08,456 - strategies.ml_strategy - INFO - 2024-10-18: SELL EXECUTED: AAPL, Price: 235.09, Size: -473972680410161159295975030784, Value: -111424288485662136017041169055744.00
+2025-08-23 15:36:08,456 - strategies.ml_strategy - INFO - 2024-10-18: BUY EXECUTED: TSLA, Price: 220.71, Size: 27666448549485299294535680, Cost: 6106260311431180045143506944.00
+2025-08-23 15:36:08,456 - strategies.ml_strategy - INFO - 2024-10-18: TRADE CLOSED: TSLA, PnL: 437475124110634112.00
+2025-08-23 15:36:08,476 - strategies.ml_strategy - INFO - 2024-10-18: EXIT SIGNAL: AAPL, Strength: 0.000
+2025-08-23 15:36:08,476 - strategies.ml_strategy - INFO - 2024-10-21: SELL EXECUTED: AAPL, Price: 233.36, Size: -947945360820322318591950061568, Value: -221216237176148728907485967024128.00
+2025-08-23 15:36:08,497 - strategies.ml_strategy - INFO - 2024-10-21: EXIT SIGNAL: AAPL, Strength: 0.000
+2025-08-23 15:36:08,498 - strategies.ml_strategy - INFO - 2024-10-22: SELL EXECUTED: AAPL, Price: 232.81, Size: -1895890721640644637183900123136, Value: -441375749318356005855314036391936.00
+2025-08-23 15:36:08,518 - strategies.ml_strategy - INFO - 2024-10-22: EXIT SIGNAL: AAPL, Strength: 0.000
+2025-08-23 15:36:08,518 - strategies.ml_strategy - INFO - 2024-10-23: SELL EXECUTED: AAPL, Price: 233.00, Size: -3791781443281289274367800246272, Value: -883468532990700820074500972347392.00
+2025-08-23 15:36:08,703 - strategies.ml_strategy - INFO - 2024-10-23: Trained ML models for 2 symbols
+2025-08-23 15:36:08,724 - strategies.ml_strategy - INFO - 2024-10-23: EXIT SIGNAL: AAPL, Strength: 0.000
+2025-08-23 15:36:08,724 - strategies.ml_strategy - INFO - 2024-10-23: BUY SIGNAL: TSLA, Strength: 1.000, Size: 17091102846274496318373101568, ML Enhanced: True
+2025-08-23 15:36:08,724 - strategies.ml_strategy - INFO - 2024-10-24: SELL EXECUTED: AAPL, Price: 228.91, Size: -7583562886562578548735600492544, Value: -1735988368806802620534624849231872.00
+2025-08-23 15:36:08,725 - strategies.ml_strategy - INFO - 2024-10-24: BUY EXECUTED: TSLA, Price: 244.68, Size: 17091102846274496318373101568, Cost: 4181850919247467837377392672768.00
+2025-08-23 15:36:08,743 - strategies.ml_strategy - INFO - 2024-10-24: EXIT SIGNAL: AAPL, Strength: 0.000
+2025-08-23 15:36:08,743 - strategies.ml_strategy - INFO - 2024-10-24: BUY SIGNAL: TSLA, Strength: 0.900, Size: 11934811306068842425670959104, ML Enhanced: False
+2025-08-23 15:36:08,744 - strategies.ml_strategy - INFO - 2024-10-25: SELL EXECUTED: AAPL, Price: 228.68, Size: -15167125773125157097471200985088, Value: -3468353871801886656369166089453568.00
+2025-08-23 15:36:08,744 - strategies.ml_strategy - INFO - 2024-10-25: BUY EXECUTED: TSLA, Price: 256.01, Size: 11934811306068842425670959104, Cost: 3055431159017575780455085506560.00
+2025-08-23 15:36:08,761 - strategies.ml_strategy - INFO - 2024-10-25: EXIT SIGNAL: AAPL, Strength: 0.000
+2025-08-23 15:36:08,761 - strategies.ml_strategy - INFO - 2024-10-28: SELL EXECUTED: AAPL, Price: 232.24, Size: -30334251546250314194942401970176, Value: -7044800956572710498945582365671424.00
+2025-08-23 15:36:08,778 - strategies.ml_strategy - INFO - 2024-10-28: EXIT SIGNAL: AAPL, Strength: 0.000
+2025-08-23 15:36:08,779 - strategies.ml_strategy - INFO - 2024-10-29: SELL EXECUTED: AAPL, Price: 232.02, Size: -60668503092500628389884803940352, Value: -14076316572904844161631236720164864.00
+2025-08-23 15:36:08,795 - strategies.ml_strategy - INFO - 2024-10-29: EXIT SIGNAL: AAPL, Strength: 0.000
+2025-08-23 15:36:08,796 - strategies.ml_strategy - INFO - 2024-10-30: SELL EXECUTED: AAPL, Price: 231.53, Size: -121337006185001256779769607880704, Value: -28093453090761686795306310926598144.00
+2025-08-23 15:36:08,985 - strategies.ml_strategy - INFO - 2024-10-30: Trained ML models for 2 symbols
+2025-08-23 15:36:09,007 - strategies.ml_strategy - INFO - 2024-10-30: EXIT SIGNAL: AAPL, Strength: 0.000
+2025-08-23 15:36:09,007 - strategies.ml_strategy - INFO - 2024-10-31: SELL EXECUTED: AAPL, Price: 228.28, Size: -242674012370002513559539215761408, Value: -55397040738118361831461115538702336.00
+2025-08-23 15:36:09,028 - strategies.ml_strategy - INFO - 2024-10-31: EXIT SIGNAL: AAPL, Strength: 0.800
+2025-08-23 15:36:09,028 - strategies.ml_strategy - INFO - 2024-11-01: SELL EXECUTED: AAPL, Price: 219.95, Size: -485348024740005027119078431522816, Value: -106750541107655075754209611427610624.00
+2025-08-23 15:36:09,050 - strategies.ml_strategy - INFO - 2024-11-01: EXIT SIGNAL: AAPL, Strength: 0.800
+2025-08-23 15:36:09,050 - strategies.ml_strategy - INFO - 2024-11-04: SELL EXECUTED: AAPL, Price: 219.97, Size: -970696049480010054238156863045632, Value: -213520392155741948520443602716852224.00
+2025-08-23 15:36:09,070 - strategies.ml_strategy - INFO - 2024-11-04: EXIT SIGNAL: AAPL, Strength: 0.700
+2025-08-23 15:36:09,071 - strategies.ml_strategy - INFO - 2024-11-04: BUY SIGNAL: AAPL, Strength: 0.700, Size: 1782543898259359518480788357120, ML Enhanced: False
+2025-08-23 15:36:09,071 - strategies.ml_strategy - INFO - 2024-11-05: SELL EXECUTED: AAPL, Price: 220.77, Size: -1941392098960020108476313726091264, Value: -428605998277939741476435241795059712.00
+2025-08-23 15:36:09,071 - strategies.ml_strategy - INFO - 2024-11-05: BUY EXECUTED: AAPL, Price: 220.77, Size: 1782543898259359518480788357120, Cost: -395027800689078149355746023702528.00
+2025-08-23 15:36:09,092 - strategies.ml_strategy - INFO - 2024-11-05: EXIT SIGNAL: AAPL, Strength: 0.700
+2025-08-23 15:36:09,092 - strategies.ml_strategy - INFO - 2024-11-06: SELL EXECUTED: AAPL, Price: 221.58, Size: -3884566741818299576471108240539648, Value: -860737528019337811868907922826199040.00
+2025-08-23 15:36:09,291 - strategies.ml_strategy - INFO - 2024-11-06: Trained ML models for 2 symbols
+2025-08-23 15:36:09,314 - strategies.ml_strategy - INFO - 2024-11-06: EXIT SIGNAL: AAPL, Strength: 0.830
+2025-08-23 15:36:09,314 - strategies.ml_strategy - INFO - 2024-11-06: EXIT SIGNAL: TSLA, Strength: 0.797
+2025-08-23 15:36:09,314 - strategies.ml_strategy - INFO - 2024-11-07: SELL EXECUTED: AAPL, Price: 223.59, Size: -7769133483636599152942216481079296, Value: -1737095932916194658087140147337363456.00
+2025-08-23 15:36:09,314 - strategies.ml_strategy - INFO - 2024-11-07: SELL EXECUTED: TSLA, Price: 288.89, Size: -29053580605380254807986941952, Value: 7243388337012829465774236106752.00
+2025-08-23 15:36:09,314 - strategies.ml_strategy - INFO - 2024-11-07: TRADE CLOSED: TSLA, PnL: 1149900984803629506840812847104.00
+2025-08-23 15:36:09,333 - strategies.ml_strategy - INFO - 2024-11-07: EXIT SIGNAL: AAPL, Strength: 0.000
+2025-08-23 15:36:09,333 - strategies.ml_strategy - INFO - 2024-11-07: EXIT SIGNAL: TSLA, Strength: 0.900
+2025-08-23 15:36:09,333 - strategies.ml_strategy - INFO - 2024-11-08: SELL EXECUTED: AAPL, Price: 226.37, Size: -15538266967273198305884432962158592, Value: -3517341775724081478750543246138540032.00
+2025-08-23 15:36:09,333 - strategies.ml_strategy - INFO - 2024-11-08: SELL EXECUTED: TSLA, Price: 299.14, Size: -58107161210760509615973883904, Value: -17382177055766018618243218931712.00
+2025-08-23 15:36:09,352 - strategies.ml_strategy - INFO - 2024-11-08: EXIT SIGNAL: AAPL, Strength: 0.700
+2025-08-23 15:36:09,352 - strategies.ml_strategy - INFO - 2024-11-08: EXIT SIGNAL: TSLA, Strength: 0.900
+2025-08-23 15:36:09,352 - strategies.ml_strategy - INFO - 2024-11-11: SELL EXECUTED: AAPL, Price: 224.20, Size: -31076533934546396611768865924317184, Value: -6967486606429240577735222893479985152.00
+2025-08-23 15:36:09,352 - strategies.ml_strategy - INFO - 2024-11-11: SELL EXECUTED: TSLA, Price: 346.30, Size: -116214322421521019231947767808, Value: -40245018435940865972620949979136.00
+2025-08-23 15:36:09,370 - strategies.ml_strategy - INFO - 2024-11-11: EXIT SIGNAL: AAPL, Strength: 0.700
+2025-08-23 15:36:09,370 - strategies.ml_strategy - INFO - 2024-11-11: EXIT SIGNAL: TSLA, Strength: 0.900
+2025-08-23 15:36:09,370 - strategies.ml_strategy - INFO - 2024-11-11: BUY SIGNAL: AAPL, Strength: 0.700, Size: 33074089101580649510645440446464, ML Enhanced: False
+2025-08-23 15:36:09,370 - strategies.ml_strategy - INFO - 2024-11-11: BUY SIGNAL: TSLA, Strength: 0.900, Size: 21114198794657910578257695080448, ML Enhanced: False
+2025-08-23 15:36:09,370 - strategies.ml_strategy - INFO - 2024-11-12: SELL EXECUTED: AAPL, Price: 223.76, Size: -62153067869092793223537731848634368, Value: -13907103455437932186862023403838111744.00
+2025-08-23 15:36:09,370 - strategies.ml_strategy - INFO - 2024-11-12: SELL EXECUTED: TSLA, Price: 342.74, Size: -232428644843042038463895535616, Value: -79662591463693244321851137589248.00
+2025-08-23 15:36:09,370 - strategies.ml_strategy - INFO - 2024-11-12: BUY EXECUTED: AAPL, Price: 223.76, Size: 33074089101580649510645440446464, Cost: -7410206905931979345137648671916032.00
+2025-08-23 15:36:09,371 - strategies.ml_strategy - INFO - 2024-11-12: BUY EXECUTED: TSLA, Price: 342.74, Size: 21114198794657910578257695080448, Cost: 6959980966665526455038691214622720.00
+2025-08-23 15:36:09,371 - strategies.ml_strategy - INFO - 2024-11-12: TRADE CLOSED: TSLA, PnL: -2119748106516142579710024482816.00
+2025-08-23 15:36:09,389 - strategies.ml_strategy - INFO - 2024-11-12: EXIT SIGNAL: AAPL, Strength: 0.000
+2025-08-23 15:36:09,389 - strategies.ml_strategy - INFO - 2024-11-12: BUY SIGNAL: TSLA, Strength: 0.900, Size: 28229295703037555776444923117568, ML Enhanced: False
+2025-08-23 15:36:09,390 - strategies.ml_strategy - INFO - 2024-11-13: SELL EXECUTED: AAPL, Price: 223.22, Size: -124339209827287167096586109137715200, Value: -27754699415595665758529992388820074496.00
+2025-08-23 15:36:09,390 - strategies.ml_strategy - INFO - 2024-11-13: BUY EXECUTED: TSLA, Price: 335.85, Size: 28229295703037555776444923117568, Cost: 9480809134163110565494652374351872.00
+2025-08-23 15:36:09,574 - strategies.ml_strategy - INFO - 2024-11-13: Trained ML models for 2 symbols
+2025-08-23 15:36:09,595 - strategies.ml_strategy - INFO - 2024-11-13: EXIT SIGNAL: AAPL, Strength: 0.000
+2025-08-23 15:36:09,595 - strategies.ml_strategy - INFO - 2024-11-13: Portfolio Value: $-199,919,594,680,484,582,480,297,743,775,432,704, Return: -199919594680484556251333513969664.0%, Positions: 2
+2025-08-23 15:36:09,596 - strategies.ml_strategy - INFO - 2024-11-14: SELL EXECUTED: AAPL, Price: 224.22, Size: -248678419654574334193172218275430400, Value: -55759676699615387344487516469031075840.00
+2025-08-23 15:36:09,616 - strategies.ml_strategy - INFO - 2024-11-14: EXIT SIGNAL: AAPL, Strength: 0.000
+2025-08-23 15:36:09,616 - strategies.ml_strategy - INFO - 2024-11-15: SELL EXECUTED: AAPL, Price: 225.60, Size: -497356839309148668386344436550860800, Value: -112203269188272855460542020801125154816.00
+2025-08-23 15:36:09,637 - strategies.ml_strategy - INFO - 2024-11-15: EXIT SIGNAL: AAPL, Strength: 0.000
+2025-08-23 15:36:09,638 - strategies.ml_strategy - INFO - 2024-11-18: SELL EXECUTED: AAPL, Price: 224.45, Size: -994713678618297336772688873101721600, Value: -223266671956593813131547836578839658496.00
+2025-08-23 15:36:09,658 - strategies.ml_strategy - INFO - 2024-11-18: EXIT SIGNAL: AAPL, Strength: 0.000
+2025-08-23 15:36:09,658 - strategies.ml_strategy - INFO - 2024-11-19: SELL EXECUTED: AAPL, Price: 226.18, Size: -1989427357236594673545377746203443200, Value: -449962878371891108341821955143158988800.00
+2025-08-23 15:36:09,680 - strategies.ml_strategy - INFO - 2024-11-19: EXIT SIGNAL: AAPL, Strength: 0.000
+2025-08-23 15:36:09,680 - strategies.ml_strategy - INFO - 2024-11-20: SELL EXECUTED: AAPL, Price: 227.25, Size: -3978854714473189347090755492406886400, Value: -904207721262905375385177221759361875968.00
+2025-08-23 15:36:09,886 - strategies.ml_strategy - INFO - 2024-11-20: Trained ML models for 2 symbols
+2025-08-23 15:36:09,909 - strategies.ml_strategy - INFO - 2024-11-20: EXIT SIGNAL: AAPL, Strength: 0.000
+2025-08-23 15:36:09,909 - strategies.ml_strategy - INFO - 2024-11-21: SELL EXECUTED: AAPL, Price: 228.07, Size: -7957709428946378694181510984813772800, Value: -1814917706368672457187600305859604774912.00
+2025-08-23 15:36:09,927 - strategies.ml_strategy - INFO - 2024-11-21: EXIT SIGNAL: AAPL, Strength: 0.000
+2025-08-23 15:36:09,927 - strategies.ml_strategy - INFO - 2024-11-22: SELL EXECUTED: AAPL, Price: 227.25, Size: -15915418857892757388363021969627545600, Value: -3616831050552525321652754708593519886336.00
+2025-08-23 15:36:09,946 - strategies.ml_strategy - INFO - 2024-11-22: EXIT SIGNAL: AAPL, Strength: 0.000
+2025-08-23 15:36:09,946 - strategies.ml_strategy - INFO - 2024-11-25: SELL EXECUTED: AAPL, Price: 230.64, Size: -31830837715785514776726043939255091200, Value: -7341504155620951651074433727980069978112.00
+2025-08-23 15:36:09,966 - strategies.ml_strategy - INFO - 2024-11-25: EXIT SIGNAL: AAPL, Strength: 0.000
+2025-08-23 15:36:09,966 - strategies.ml_strategy - INFO - 2024-11-26: SELL EXECUTED: AAPL, Price: 232.50, Size: -63661675431571029553452087878510182400, Value: -14801633928258769203789434967079639842816.00
+2025-08-23 15:36:09,985 - strategies.ml_strategy - INFO - 2024-11-26: EXIT SIGNAL: AAPL, Strength: 0.000
+2025-08-23 15:36:09,986 - strategies.ml_strategy - INFO - 2024-11-27: SELL EXECUTED: AAPL, Price: 233.64, Size: -127323350863142059106904175757020364800, Value: -29747904623274967999242486507123855327232.00
+2025-08-23 15:36:10,175 - strategies.ml_strategy - INFO - 2024-11-27: Trained ML models for 2 symbols
+2025-08-23 15:36:10,197 - strategies.ml_strategy - INFO - 2024-11-27: EXIT SIGNAL: AAPL, Strength: 0.000
+2025-08-23 15:36:10,197 - strategies.ml_strategy - INFO - 2024-11-29: SELL EXECUTED: AAPL, Price: 233.98, Size: -254646701726284118213808351514040729600, Value: -59582079533876798712222195807690764058624.00
+2025-08-23 15:36:10,219 - strategies.ml_strategy - INFO - 2024-11-29: EXIT SIGNAL: AAPL, Strength: 0.000
+2025-08-23 15:36:10,220 - strategies.ml_strategy - INFO - 2024-12-02: SELL EXECUTED: AAPL, Price: 236.43, Size: -509293403452568236427616703028081459200, Value: -120412591822723456578113374971574175662080.00
+2025-08-23 15:36:10,242 - strategies.ml_strategy - INFO - 2024-12-02: EXIT SIGNAL: AAPL, Strength: 0.700
+2025-08-23 15:36:10,242 - strategies.ml_strategy - INFO - 2024-12-03: SELL EXECUTED: AAPL, Price: 238.96, Size: -1018586806905136472855233406056162918400, Value: -243403241301879226597077567066621622616064.00
+2025-08-23 15:36:10,264 - strategies.ml_strategy - INFO - 2024-12-03: EXIT SIGNAL: AAPL, Strength: 0.700
+2025-08-23 15:36:10,264 - strategies.ml_strategy - INFO - 2024-12-04: SELL EXECUTED: AAPL, Price: 242.01, Size: -2037173613810272945710466812112325836800, Value: -493018161079889740825563423071877845745664.00
+2025-08-23 15:36:10,287 - strategies.ml_strategy - INFO - 2024-12-04: EXIT SIGNAL: AAPL, Strength: 0.700
+2025-08-23 15:36:10,287 - strategies.ml_strategy - INFO - 2024-12-05: SELL EXECUTED: AAPL, Price: 243.13, Size: -4074347227620545891420933624224651673600, Value: -990583550728386184872060886843207920386048.00
+2025-08-23 15:36:10,496 - strategies.ml_strategy - INFO - 2024-12-05: Trained ML models for 2 symbols
+2025-08-23 15:36:10,521 - strategies.ml_strategy - INFO - 2024-12-05: EXIT SIGNAL: AAPL, Strength: 1.000
+2025-08-23 15:36:10,521 - strategies.ml_strategy - INFO - 2024-12-06: SELL EXECUTED: AAPL, Price: 242.05, Size: -8148694455241091782841867248449303347200, Value: -1972397581864552985170132689844835752869888.00
+2025-08-23 15:36:10,541 - strategies.ml_strategy - INFO - 2024-12-06: EXIT SIGNAL: AAPL, Strength: 0.700
+2025-08-23 15:36:10,541 - strategies.ml_strategy - INFO - 2024-12-06: EXIT SIGNAL: TSLA, Strength: 0.000
+2025-08-23 15:36:10,542 - strategies.ml_strategy - INFO - 2024-12-09: SELL EXECUTED: AAPL, Price: 240.97, Size: -16297388910482183565683734496898606694400, Value: -3927256076600185981309228555341391321890816.00
+2025-08-23 15:36:10,542 - strategies.ml_strategy - INFO - 2024-12-09: SELL EXECUTED: TSLA, Price: 397.61, Size: -49808351787381550431630409269248, Value: 16231520075015651723762566103564288.00
+2025-08-23 15:36:10,542 - strategies.ml_strategy - INFO - 2024-12-09: TRADE CLOSED: TSLA, PnL: 2879658324008965935983364606525440.00
+2025-08-23 15:36:10,560 - strategies.ml_strategy - INFO - 2024-12-09: EXIT SIGNAL: AAPL, Strength: 0.700
+2025-08-23 15:36:10,560 - strategies.ml_strategy - INFO - 2024-12-09: EXIT SIGNAL: TSLA, Strength: 0.000
+2025-08-23 15:36:10,560 - strategies.ml_strategy - INFO - 2024-12-10: SELL EXECUTED: AAPL, Price: 246.02, Size: -32594777820964367131367468993797213388800, Value: -8018858460676087169182079526658544676896768.00
+2025-08-23 15:36:10,560 - strategies.ml_strategy - INFO - 2024-12-10: SELL EXECUTED: TSLA, Price: 392.68, Size: -99616703574763100863260818538496, Value: -39117486430123446470045164910936064.00
+2025-08-23 15:36:10,578 - strategies.ml_strategy - INFO - 2024-12-10: EXIT SIGNAL: AAPL, Strength: 0.700
+2025-08-23 15:36:10,578 - strategies.ml_strategy - INFO - 2024-12-10: EXIT SIGNAL: TSLA, Strength: 0.000
+2025-08-23 15:36:10,578 - strategies.ml_strategy - INFO - 2024-12-11: SELL EXECUTED: AAPL, Price: 247.08, Size: -65189555641928734262734937987594426777600, Value: -16107222746668975040935547917064807833927680.00
+2025-08-23 15:36:10,578 - strategies.ml_strategy - INFO - 2024-12-11: SELL EXECUTED: TSLA, Price: 409.70, Size: -199233407149526201726521637076992, Value: -81625929341209315871822323212353536.00
+2025-08-23 15:36:10,597 - strategies.ml_strategy - INFO - 2024-12-11: EXIT SIGNAL: AAPL, Strength: 0.700
+2025-08-23 15:36:10,597 - strategies.ml_strategy - INFO - 2024-12-11: EXIT SIGNAL: TSLA, Strength: 0.900
+2025-08-23 15:36:10,597 - strategies.ml_strategy - INFO - 2024-12-12: SELL EXECUTED: AAPL, Price: 246.02, Size: -130379111283857468525469875975188853555200, Value: -32075435916845139787222504757395776847478784.00
+2025-08-23 15:36:10,597 - strategies.ml_strategy - INFO - 2024-12-12: SELL EXECUTED: TSLA, Price: 424.84, Size: -398466814299052403453043274153984, Value: -169284639927580367092093086282547200.00
+2025-08-23 15:36:10,787 - strategies.ml_strategy - INFO - 2024-12-12: Trained ML models for 2 symbols
+2025-08-23 15:36:10,811 - strategies.ml_strategy - INFO - 2024-12-12: EXIT SIGNAL: AAPL, Strength: 1.000
+2025-08-23 15:36:10,811 - strategies.ml_strategy - INFO - 2024-12-12: EXIT SIGNAL: TSLA, Strength: 0.000
+2025-08-23 15:36:10,811 - strategies.ml_strategy - INFO - 2024-12-12: Portfolio Value: $-393,637,524,658,905,833,972,506,723,526,154,821,566,464, Return: -393637524658905817047545248921346375680.0%, Positions: 2
+2025-08-23 15:36:10,812 - strategies.ml_strategy - INFO - 2024-12-13: SELL EXECUTED: AAPL, Price: 246.94, Size: -260758222567714937050939751950377707110400, Value: -64392514909267468895420983871799979034017792.00
+2025-08-23 15:36:10,812 - strategies.ml_strategy - INFO - 2024-12-13: SELL EXECUTED: TSLA, Price: 420.00, Size: -796933628598104806906086548307968, Value: -334712124011204009722743891341344768.00
+2025-08-23 15:36:10,833 - strategies.ml_strategy - INFO - 2024-12-13: EXIT SIGNAL: AAPL, Strength: 0.700
+2025-08-23 15:36:10,833 - strategies.ml_strategy - INFO - 2024-12-13: EXIT SIGNAL: TSLA, Strength: 0.000
+2025-08-23 15:36:10,833 - strategies.ml_strategy - INFO - 2024-12-16: SELL EXECUTED: AAPL, Price: 247.11, Size: -521516445135429874101879503900755414220800, Value: -128873377850024610285203816281285361880006656.00
+2025-08-23 15:36:10,833 - strategies.ml_strategy - INFO - 2024-12-16: SELL EXECUTED: TSLA, Price: 441.09, Size: -1593867257196209613812173096615936, Value: -703038902639759972265267348887306240.00
+2025-08-23 15:36:10,855 - strategies.ml_strategy - INFO - 2024-12-16: EXIT SIGNAL: AAPL, Strength: 0.700
+2025-08-23 15:36:10,855 - strategies.ml_strategy - INFO - 2024-12-16: EXIT SIGNAL: TSLA, Strength: 0.900
+2025-08-23 15:36:10,855 - strategies.ml_strategy - INFO - 2024-12-17: SELL EXECUTED: AAPL, Price: 249.20, Size: -1043032890270859748203759007801510828441600, Value: -259918973940639875300469037788752965152014336.00
+2025-08-23 15:36:10,855 - strategies.ml_strategy - INFO - 2024-12-17: SELL EXECUTED: TSLA, Price: 475.90, Size: -3187734514392419227624346193231872, Value: -1517042835942965088037519316538621952.00
+2025-08-23 15:36:10,877 - strategies.ml_strategy - INFO - 2024-12-17: EXIT SIGNAL: AAPL, Strength: 0.700
+2025-08-23 15:36:10,877 - strategies.ml_strategy - INFO - 2024-12-17: EXIT SIGNAL: TSLA, Strength: 0.900
+2025-08-23 15:36:10,877 - strategies.ml_strategy - INFO - 2024-12-18: SELL EXECUTED: AAPL, Price: 251.27, Size: -2086065780541719496407518015603021656883200, Value: -524161626019480700093620802582873664881950720.00
+2025-08-23 15:36:10,877 - strategies.ml_strategy - INFO - 2024-12-18: SELL EXECUTED: TSLA, Price: 466.50, Size: -6375469028784838455248692386463744, Value: -2974156301928127411999581935427911680.00
+2025-08-23 15:36:10,899 - strategies.ml_strategy - INFO - 2024-12-18: EXIT SIGNAL: AAPL, Strength: 0.000
+2025-08-23 15:36:10,899 - strategies.ml_strategy - INFO - 2024-12-18: EXIT SIGNAL: TSLA, Strength: 0.700
+2025-08-23 15:36:10,899 - strategies.ml_strategy - INFO - 2024-12-19: SELL EXECUTED: AAPL, Price: 246.62, Size: -4172131561083438992815036031206043313766400, Value: -1028949900962492462102758454205083537884839936.00
+2025-08-23 15:36:10,899 - strategies.ml_strategy - INFO - 2024-12-19: SELL EXECUTED: TSLA, Price: 451.88, Size: -12750938057569676910497384772927488, Value: -5761893951715025099729860310041886720.00
+2025-08-23 15:36:11,113 - strategies.ml_strategy - INFO - 2024-12-19: Trained ML models for 2 symbols
+2025-08-23 15:36:11,134 - strategies.ml_strategy - INFO - 2024-12-19: EXIT SIGNAL: AAPL, Strength: 0.000
+2025-08-23 15:36:11,135 - strategies.ml_strategy - INFO - 2024-12-19: EXIT SIGNAL: TSLA, Strength: 0.000
+2025-08-23 15:36:11,135 - strategies.ml_strategy - INFO - 2024-12-20: SELL EXECUTED: AAPL, Price: 247.16, Size: -8344263122166877985630072062412086627532800, Value: -2062389655905833029823905645279546433825931264.00
+2025-08-23 15:36:11,135 - strategies.ml_strategy - INFO - 2024-12-20: SELL EXECUTED: TSLA, Price: 425.51, Size: -25501876115139353820994769545854976, Value: -10851303554794706027748425926625460224.00
+2025-08-23 15:36:11,156 - strategies.ml_strategy - INFO - 2024-12-20: EXIT SIGNAL: AAPL, Strength: 0.700
+2025-08-23 15:36:11,156 - strategies.ml_strategy - INFO - 2024-12-20: EXIT SIGNAL: TSLA, Strength: 0.000
+2025-08-23 15:36:11,157 - strategies.ml_strategy - INFO - 2024-12-23: SELL EXECUTED: AAPL, Price: 253.87, Size: -16688526244333755971260144124824173255065600, Value: -4236696190954556970795934990172054549023424512.00
+2025-08-23 15:36:11,157 - strategies.ml_strategy - INFO - 2024-12-23: SELL EXECUTED: TSLA, Price: 431.00, Size: -51003752230278707641989539091709952, Value: -21982617211250122705758164331213619200.00
+2025-08-23 15:36:11,178 - strategies.ml_strategy - INFO - 2024-12-23: EXIT SIGNAL: AAPL, Strength: 0.000
+2025-08-23 15:36:11,178 - strategies.ml_strategy - INFO - 2024-12-23: EXIT SIGNAL: TSLA, Strength: 0.000
+2025-08-23 15:36:11,179 - strategies.ml_strategy - INFO - 2024-12-24: SELL EXECUTED: AAPL, Price: 254.59, Size: -33377052488667511942520288249648346510131200, Value: -8497338005521362458957231416038320530064932864.00
+2025-08-23 15:36:11,179 - strategies.ml_strategy - INFO - 2024-12-24: SELL EXECUTED: TSLA, Price: 435.90, Size: -102007504460557415283979078183419904, Value: -44465070571752583169479037350263652352.00
+2025-08-23 15:36:11,200 - strategies.ml_strategy - INFO - 2024-12-24: EXIT SIGNAL: AAPL, Strength: 0.700
+2025-08-23 15:36:11,200 - strategies.ml_strategy - INFO - 2024-12-24: EXIT SIGNAL: TSLA, Strength: 0.000
+2025-08-23 15:36:11,200 - strategies.ml_strategy - INFO - 2024-12-26: SELL EXECUTED: AAPL, Price: 257.28, Size: -66754104977335023885040576499296693020262400, Value: -17174274416701540817932067443735561547380948992.00
+2025-08-23 15:36:11,200 - strategies.ml_strategy - INFO - 2024-12-26: SELL EXECUTED: TSLA, Price: 465.16, Size: -204015008921114830567958156366839808, Value: -94899622296871058868563647007180193792.00
+2025-08-23 15:36:11,219 - strategies.ml_strategy - INFO - 2024-12-26: EXIT SIGNAL: AAPL, Strength: 0.700
+2025-08-23 15:36:11,219 - strategies.ml_strategy - INFO - 2024-12-26: EXIT SIGNAL: TSLA, Strength: 0.000
+2025-08-23 15:36:11,219 - strategies.ml_strategy - INFO - 2024-12-27: SELL EXECUTED: AAPL, Price: 256.92, Size: -133508209954670047770081152998593386040524800, Value: -34300655496428884635788259118638778170384318464.00
+2025-08-23 15:36:11,219 - strategies.ml_strategy - INFO - 2024-12-27: SELL EXECUTED: TSLA, Price: 449.52, Size: -408030017842229661135916312733679616, Value: -183417649137687426500036104625261117440.00
+2025-08-23 15:36:11,411 - strategies.ml_strategy - INFO - 2024-12-27: Trained ML models for 2 symbols
+2025-08-23 15:36:11,429 - strategies.ml_strategy - INFO - 2024-12-27: EXIT SIGNAL: AAPL, Strength: 0.000
+2025-08-23 15:36:11,429 - strategies.ml_strategy - INFO - 2024-12-27: EXIT SIGNAL: TSLA, Strength: 0.000
+2025-08-23 15:36:11,430 - strategies.ml_strategy - INFO - 2024-12-30: SELL EXECUTED: AAPL, Price: 251.34, Size: -267016419909340095540162305997186772081049600, Value: -67111311333120263982049522717593349898266214400.00
+2025-08-23 15:36:11,430 - strategies.ml_strategy - INFO - 2024-12-30: SELL EXECUTED: TSLA, Price: 419.40, Size: -816060035684459322271832625467359232, Value: -342255573985227117130702834910449631232.00
+2025-08-23 15:36:11,452 - strategies.ml_strategy - INFO - 2024-12-30: EXIT SIGNAL: AAPL, Strength: 0.000
+2025-08-23 15:36:11,452 - strategies.ml_strategy - INFO - 2024-12-30: EXIT SIGNAL: TSLA, Strength: 0.000
+2025-08-23 15:36:11,452 - strategies.ml_strategy - INFO - 2024-12-30: Strategy Completed!
+2025-08-23 15:36:11,452 - strategies.ml_strategy - INFO - 2024-12-30: Starting Value: $100,000
+2025-08-23 15:36:11,452 - strategies.ml_strategy - INFO - 2024-12-30: Final Value: $1,178,643,297,501,581,621,518,868,832,285,191,744,075,595,776
+2025-08-23 15:36:11,452 - strategies.ml_strategy - INFO - 2024-12-30: Total Return: +1178643297501581777499313782243106381365248.00%
+2025-08-23 15:36:11,452 - strategies.ml_strategy - INFO - 2024-12-30: Total Trades: 191

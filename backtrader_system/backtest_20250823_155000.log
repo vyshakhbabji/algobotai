@@ -1,0 +1,427 @@
+2025-08-23 15:50:00,992 - strategies.ml_strategy - INFO - Strategy initialized with 3 symbols
+2025-08-23 15:50:01,057 - strategies.ml_strategy - INFO - 2023-03-29: Portfolio Value: $100,000, Return: +0.0%, Positions: 0
+2025-08-23 15:50:01,218 - strategies.ml_strategy - INFO - 2023-04-05: Portfolio Value: $100,000, Return: +0.0%, Positions: 0
+2025-08-23 15:50:01,245 - strategies.ml_strategy - INFO - 2023-04-06: BUY SIGNAL: GOOGL, Strength: 0.900, Size: 139, ML Enhanced: False
+2025-08-23 15:50:01,245 - strategies.ml_strategy - INFO - 2023-04-10: BUY EXECUTED: GOOGL, Price: 106.34, Size: 139, Cost: 14781.57
+2025-08-23 15:50:01,373 - strategies.ml_strategy - INFO - 2023-04-13: Portfolio Value: $100,055, Return: +0.1%, Positions: 1
+2025-08-23 15:50:01,517 - strategies.ml_strategy - INFO - 2023-04-20: Portfolio Value: $99,759, Return: -0.2%, Positions: 1
+2025-08-23 15:50:01,685 - strategies.ml_strategy - INFO - 2023-04-27: BUY SIGNAL: MSFT, Strength: 0.900, Size: 50, ML Enhanced: False
+2025-08-23 15:50:01,685 - strategies.ml_strategy - INFO - 2023-04-27: Portfolio Value: $100,077, Return: +0.1%, Positions: 1
+2025-08-23 15:50:01,685 - strategies.ml_strategy - INFO - 2023-04-28: BUY EXECUTED: MSFT, Price: 298.21, Size: 50, Cost: 14910.60
+2025-08-23 15:50:01,854 - strategies.ml_strategy - INFO - 2023-05-04: Portfolio Value: $99,737, Return: -0.3%, Positions: 2
+2025-08-23 15:50:01,881 - strategies.ml_strategy - INFO - 2023-05-05: BUY SIGNAL: AAPL, Strength: 0.900, Size: 87, ML Enhanced: False
+2025-08-23 15:50:01,881 - strategies.ml_strategy - INFO - 2023-05-08: BUY EXECUTED: AAPL, Price: 170.34, Size: 87, Cost: 14819.66
+2025-08-23 15:50:02,017 - strategies.ml_strategy - INFO - 2023-05-11: Portfolio Value: $101,711, Return: +1.7%, Positions: 3
+2025-08-23 15:50:02,065 - strategies.ml_strategy - INFO - 2023-05-15: EXIT SIGNAL: MSFT, Strength: 0.900
+2025-08-23 15:50:02,066 - strategies.ml_strategy - INFO - 2023-05-16: SELL EXECUTED: MSFT, Price: 303.92, Size: -50, Value: 14910.60
+2025-08-23 15:50:02,166 - strategies.ml_strategy - INFO - 2023-05-18: Portfolio Value: $102,687, Return: +2.7%, Positions: 3
+2025-08-23 15:50:02,215 - strategies.ml_strategy - INFO - 2023-05-22: EXIT SIGNAL: GOOGL, Strength: 0.000
+2025-08-23 15:50:02,215 - strategies.ml_strategy - INFO - 2023-05-23: SELL EXECUTED: GOOGL, Price: 123.42, Size: -41, Value: 4360.03
+2025-08-23 15:50:02,316 - strategies.ml_strategy - INFO - 2023-05-25: EXIT SIGNAL: GOOGL, Strength: 0.700
+2025-08-23 15:50:02,316 - strategies.ml_strategy - INFO - 2023-05-25: Portfolio Value: $102,625, Return: +2.6%, Positions: 3
+2025-08-23 15:50:02,316 - strategies.ml_strategy - INFO - 2023-05-26: SELL EXECUTED: GOOGL, Price: 122.44, Size: -90, Value: 9570.80
+2025-08-23 15:50:02,340 - strategies.ml_strategy - INFO - 2023-05-26: EXIT SIGNAL: GOOGL, Strength: 0.700
+2025-08-23 15:50:02,340 - strategies.ml_strategy - INFO - 2023-05-30: SELL EXECUTED: GOOGL, Price: 124.89, Size: -135, Value: -15010.42
+2025-08-23 15:50:02,364 - strategies.ml_strategy - INFO - 2023-05-30: EXIT SIGNAL: GOOGL, Strength: 0.700
+2025-08-23 15:50:02,365 - strategies.ml_strategy - INFO - 2023-05-31: SELL EXECUTED: GOOGL, Price: 122.02, Size: -202, Value: -24647.68
+2025-08-23 15:50:02,417 - strategies.ml_strategy - INFO - 2023-06-01: EXIT SIGNAL: GOOGL, Strength: 0.000
+2025-08-23 15:50:02,418 - strategies.ml_strategy - INFO - 2023-06-02: SELL EXECUTED: GOOGL, Price: 123.25, Size: -182, Value: -22431.65
+2025-08-23 15:50:02,479 - strategies.ml_strategy - INFO - 2023-06-02: EXIT SIGNAL: GOOGL, Strength: 0.000
+2025-08-23 15:50:02,479 - strategies.ml_strategy - INFO - 2023-06-02: Portfolio Value: $102,876, Return: +2.9%, Positions: 3
+2025-08-23 15:50:02,479 - strategies.ml_strategy - INFO - 2023-06-05: SELL EXECUTED: GOOGL, Price: 123.27, Size: -236, Value: -29091.89
+2025-08-23 15:50:02,508 - strategies.ml_strategy - INFO - 2023-06-05: EXIT SIGNAL: GOOGL, Strength: 0.000
+2025-08-23 15:50:02,508 - strategies.ml_strategy - INFO - 2023-06-06: SELL EXECUTED: GOOGL, Price: 125.26, Size: -307, Value: -38454.45
+2025-08-23 15:50:02,536 - strategies.ml_strategy - INFO - 2023-06-06: EXIT SIGNAL: GOOGL, Strength: 0.000
+2025-08-23 15:50:02,537 - strategies.ml_strategy - INFO - 2023-06-07: SELL EXECUTED: GOOGL, Price: 126.21, Size: -399, Value: -50359.01
+2025-08-23 15:50:02,652 - strategies.ml_strategy - INFO - 2023-06-09: Portfolio Value: $107,508, Return: +7.5%, Positions: 3
+2025-08-23 15:50:02,680 - strategies.ml_strategy - INFO - 2023-06-12: EXIT SIGNAL: GOOGL, Strength: 0.000
+2025-08-23 15:50:02,681 - strategies.ml_strategy - INFO - 2023-06-13: SELL EXECUTED: GOOGL, Price: 124.23, Size: -519, Value: -64477.93
+2025-08-23 15:50:02,709 - strategies.ml_strategy - INFO - 2023-06-13: EXIT SIGNAL: GOOGL, Strength: 0.000
+2025-08-23 15:50:02,710 - strategies.ml_strategy - INFO - 2023-06-14: SELL EXECUTED: GOOGL, Price: 122.37, Size: -675, Value: -82597.14
+2025-08-23 15:50:02,737 - strategies.ml_strategy - INFO - 2023-06-14: EXIT SIGNAL: GOOGL, Strength: 0.000
+2025-08-23 15:50:02,738 - strategies.ml_strategy - INFO - 2023-06-15: SELL EXECUTED: GOOGL, Price: 122.41, Size: -877, Value: -107349.96
+2025-08-23 15:50:02,766 - strategies.ml_strategy - INFO - 2023-06-15: EXIT SIGNAL: GOOGL, Strength: 0.000
+2025-08-23 15:50:02,766 - strategies.ml_strategy - INFO - 2023-06-16: SELL EXECUTED: GOOGL, Price: 125.18, Size: -1140, Value: -142704.35
+2025-08-23 15:50:02,969 - strategies.ml_strategy - INFO - 2023-06-16: Trained ML models for 3 symbols
+2025-08-23 15:50:02,995 - strategies.ml_strategy - INFO - 2023-06-16: EXIT SIGNAL: GOOGL, Strength: 0.000
+2025-08-23 15:50:02,995 - strategies.ml_strategy - INFO - 2023-06-16: Portfolio Value: $108,612, Return: +8.6%, Positions: 3
+2025-08-23 15:50:02,995 - strategies.ml_strategy - INFO - 2023-06-20: SELL EXECUTED: GOOGL, Price: 122.20, Size: -1482, Value: -181096.16
+2025-08-23 15:50:03,019 - strategies.ml_strategy - INFO - 2023-06-20: EXIT SIGNAL: GOOGL, Strength: 0.000
+2025-08-23 15:50:03,020 - strategies.ml_strategy - INFO - 2023-06-21: SELL EXECUTED: GOOGL, Price: 121.67, Size: -1927, Value: -234458.67
+2025-08-23 15:50:03,044 - strategies.ml_strategy - INFO - 2023-06-21: EXIT SIGNAL: GOOGL, Strength: 0.800
+2025-08-23 15:50:03,044 - strategies.ml_strategy - INFO - 2023-06-22: SELL EXECUTED: GOOGL, Price: 119.28, Size: -4175, Value: -498013.25
+2025-08-23 15:50:03,068 - strategies.ml_strategy - INFO - 2023-06-22: EXIT SIGNAL: GOOGL, Strength: 0.000
+2025-08-23 15:50:03,069 - strategies.ml_strategy - INFO - 2023-06-23: SELL EXECUTED: GOOGL, Price: 120.66, Size: -3757, Value: -453305.99
+2025-08-23 15:50:03,309 - strategies.ml_strategy - INFO - 2023-06-26: Trained ML models for 3 symbols
+2025-08-23 15:50:03,339 - strategies.ml_strategy - INFO - 2023-06-26: Portfolio Value: $164,802, Return: +64.8%, Positions: 3
+2025-08-23 15:50:03,449 - strategies.ml_strategy - INFO - 2023-06-30: BUY SIGNAL: AAPL, Strength: 0.900, Size: 25, ML Enhanced: False
+2025-08-23 15:50:03,449 - strategies.ml_strategy - INFO - 2023-07-03: BUY EXECUTED: AAPL, Price: 191.64, Size: 25, Cost: 4791.04
+2025-08-23 15:50:03,652 - strategies.ml_strategy - INFO - 2023-07-03: Trained ML models for 3 symbols
+2025-08-23 15:50:03,677 - strategies.ml_strategy - INFO - 2023-07-03: Portfolio Value: $140,566, Return: +40.6%, Positions: 3
+2025-08-23 15:50:03,995 - strategies.ml_strategy - INFO - 2023-07-11: Trained ML models for 3 symbols
+2025-08-23 15:50:04,024 - strategies.ml_strategy - INFO - 2023-07-11: Portfolio Value: $183,992, Return: +84.0%, Positions: 3
+2025-08-23 15:50:04,081 - strategies.ml_strategy - INFO - 2023-07-13: EXIT SIGNAL: GOOGL, Strength: 0.000
+2025-08-23 15:50:04,082 - strategies.ml_strategy - INFO - 2023-07-14: SELL EXECUTED: GOOGL, Price: 124.06, Size: -4884, Value: -605889.52
+2025-08-23 15:50:04,110 - strategies.ml_strategy - INFO - 2023-07-14: EXIT SIGNAL: GOOGL, Strength: 0.000
+2025-08-23 15:50:04,110 - strategies.ml_strategy - INFO - 2023-07-17: SELL EXECUTED: GOOGL, Price: 125.19, Size: -6350, Value: -794951.43
+2025-08-23 15:50:04,138 - strategies.ml_strategy - INFO - 2023-07-17: EXIT SIGNAL: GOOGL, Strength: 0.000
+2025-08-23 15:50:04,139 - strategies.ml_strategy - INFO - 2023-07-18: SELL EXECUTED: GOOGL, Price: 123.86, Size: -8255, Value: -1022441.04
+2025-08-23 15:50:04,347 - strategies.ml_strategy - INFO - 2023-07-18: Trained ML models for 3 symbols
+2025-08-23 15:50:04,375 - strategies.ml_strategy - INFO - 2023-07-18: EXIT SIGNAL: MSFT, Strength: 0.797
+2025-08-23 15:50:04,375 - strategies.ml_strategy - INFO - 2023-07-18: EXIT SIGNAL: GOOGL, Strength: 0.000
+2025-08-23 15:50:04,375 - strategies.ml_strategy - INFO - 2023-07-18: Portfolio Value: $103,787, Return: +3.8%, Positions: 3
+2025-08-23 15:50:04,375 - strategies.ml_strategy - INFO - 2023-07-19: SELL EXECUTED: MSFT, Price: 355.63, Size: -30, Value: -10668.79
+2025-08-23 15:50:04,375 - strategies.ml_strategy - INFO - 2023-07-19: SELL EXECUTED: GOOGL, Price: 123.86, Size: -10731, Value: -1329111.44
+2025-08-23 15:50:04,400 - strategies.ml_strategy - INFO - 2023-07-19: EXIT SIGNAL: MSFT, Strength: 0.000
+2025-08-23 15:50:04,400 - strategies.ml_strategy - INFO - 2023-07-20: SELL EXECUTED: MSFT, Price: 347.58, Size: -39, Value: -13555.81
+2025-08-23 15:50:04,705 - strategies.ml_strategy - INFO - 2023-07-25: Trained ML models for 3 symbols
+2025-08-23 15:50:04,734 - strategies.ml_strategy - INFO - 2023-07-25: EXIT SIGNAL: MSFT, Strength: 0.000
+2025-08-23 15:50:04,734 - strategies.ml_strategy - INFO - 2023-07-25: Portfolio Value: $183,697, Return: +83.7%, Positions: 3
+2025-08-23 15:50:04,734 - strategies.ml_strategy - INFO - 2023-07-26: SELL EXECUTED: MSFT, Price: 335.66, Size: -50, Value: -16783.01
+2025-08-23 15:50:04,762 - strategies.ml_strategy - INFO - 2023-07-26: EXIT SIGNAL: MSFT, Strength: 0.800
+2025-08-23 15:50:04,762 - strategies.ml_strategy - INFO - 2023-07-26: EXIT SIGNAL: GOOGL, Strength: 0.900
+2025-08-23 15:50:04,762 - strategies.ml_strategy - INFO - 2023-07-27: SELL EXECUTED: MSFT, Price: 334.72, Size: -109, Value: -36484.10
+2025-08-23 15:50:04,762 - strategies.ml_strategy - INFO - 2023-07-27: SELL EXECUTED: GOOGL, Price: 130.89, Size: -13950, Value: -1825846.34
+2025-08-23 15:50:04,790 - strategies.ml_strategy - INFO - 2023-07-27: EXIT SIGNAL: MSFT, Strength: 0.800
+2025-08-23 15:50:04,790 - strategies.ml_strategy - INFO - 2023-07-27: EXIT SIGNAL: GOOGL, Strength: 0.900
+2025-08-23 15:50:04,791 - strategies.ml_strategy - INFO - 2023-07-28: SELL EXECUTED: MSFT, Price: 328.02, Size: -164, Value: -53795.57
+2025-08-23 15:50:04,791 - strategies.ml_strategy - INFO - 2023-07-28: SELL EXECUTED: GOOGL, Price: 130.00, Size: -18135, Value: -2357555.89
+2025-08-23 15:50:04,819 - strategies.ml_strategy - INFO - 2023-07-28: EXIT SIGNAL: GOOGL, Strength: 0.000
+2025-08-23 15:50:04,820 - strategies.ml_strategy - INFO - 2023-07-31: SELL EXECUTED: GOOGL, Price: 131.94, Size: -23576, Value: -3110587.31
+2025-08-23 15:50:04,847 - strategies.ml_strategy - INFO - 2023-07-31: EXIT SIGNAL: GOOGL, Strength: 0.000
+2025-08-23 15:50:04,848 - strategies.ml_strategy - INFO - 2023-08-01: SELL EXECUTED: GOOGL, Price: 130.00, Size: -30649, Value: -3984380.22
+2025-08-23 15:50:05,059 - strategies.ml_strategy - INFO - 2023-08-01: Trained ML models for 3 symbols
+2025-08-23 15:50:05,085 - strategies.ml_strategy - INFO - 2023-08-01: EXIT SIGNAL: GOOGL, Strength: 0.000
+2025-08-23 15:50:05,085 - strategies.ml_strategy - INFO - 2023-08-01: Portfolio Value: $-257,708, Return: -357.7%, Positions: 3
+2025-08-23 15:50:05,086 - strategies.ml_strategy - INFO - 2023-08-02: SELL EXECUTED: GOOGL, Price: 128.68, Size: -39843, Value: -5126928.22
+2025-08-23 15:50:05,110 - strategies.ml_strategy - INFO - 2023-08-02: EXIT SIGNAL: GOOGL, Strength: 0.000
+2025-08-23 15:50:05,110 - strategies.ml_strategy - INFO - 2023-08-03: SELL EXECUTED: GOOGL, Price: 127.21, Size: -51796, Value: -6588818.58
+2025-08-23 15:50:05,136 - strategies.ml_strategy - INFO - 2023-08-03: EXIT SIGNAL: GOOGL, Strength: 0.000
+2025-08-23 15:50:05,137 - strategies.ml_strategy - INFO - 2023-08-04: SELL EXECUTED: GOOGL, Price: 128.51, Size: -67335, Value: -8653172.06
+2025-08-23 15:50:05,165 - strategies.ml_strategy - INFO - 2023-08-04: EXIT SIGNAL: AAPL, Strength: 0.800
+2025-08-23 15:50:05,165 - strategies.ml_strategy - INFO - 2023-08-04: EXIT SIGNAL: GOOGL, Strength: 0.000
+2025-08-23 15:50:05,166 - strategies.ml_strategy - INFO - 2023-08-07: SELL EXECUTED: AAPL, Price: 180.12, Size: -56, Value: 9805.35
+2025-08-23 15:50:05,166 - strategies.ml_strategy - INFO - 2023-08-07: SELL EXECUTED: GOOGL, Price: 128.39, Size: -87536, Value: -11238746.93
+2025-08-23 15:50:05,194 - strategies.ml_strategy - INFO - 2023-08-07: EXIT SIGNAL: AAPL, Strength: 0.800
+2025-08-23 15:50:05,194 - strategies.ml_strategy - INFO - 2023-08-07: EXIT SIGNAL: GOOGL, Strength: 0.000
+2025-08-23 15:50:05,195 - strategies.ml_strategy - INFO - 2023-08-08: SELL EXECUTED: AAPL, Price: 177.71, Size: -84, Value: 4829.55
+2025-08-23 15:50:05,195 - strategies.ml_strategy - INFO - 2023-08-08: SELL EXECUTED: GOOGL, Price: 129.84, Size: -113796, Value: -14775417.65
+2025-08-23 15:50:05,429 - strategies.ml_strategy - INFO - 2023-08-08: Trained ML models for 3 symbols
+2025-08-23 15:50:05,463 - strategies.ml_strategy - INFO - 2023-08-08: EXIT SIGNAL: GOOGL, Strength: 0.000
+2025-08-23 15:50:05,463 - strategies.ml_strategy - INFO - 2023-08-08: Portfolio Value: $-937,683, Return: -1037.7%, Positions: 3
+2025-08-23 15:50:05,463 - strategies.ml_strategy - INFO - 2023-08-09: SELL EXECUTED: GOOGL, Price: 130.88, Size: -147935, Value: -19361008.03
+2025-08-23 15:50:05,492 - strategies.ml_strategy - INFO - 2023-08-09: EXIT SIGNAL: GOOGL, Strength: 0.000
+2025-08-23 15:50:05,493 - strategies.ml_strategy - INFO - 2023-08-10: SELL EXECUTED: GOOGL, Price: 130.54, Size: -192316, Value: -25104381.09
+2025-08-23 15:50:05,521 - strategies.ml_strategy - INFO - 2023-08-10: EXIT SIGNAL: GOOGL, Strength: 0.000
+2025-08-23 15:50:05,521 - strategies.ml_strategy - INFO - 2023-08-10: BUY SIGNAL: AAPL, Strength: 0.700, Size: 157, ML Enhanced: False
+2025-08-23 15:50:05,522 - strategies.ml_strategy - INFO - 2023-08-11: SELL EXECUTED: GOOGL, Price: 127.89, Size: -250011, Value: -31974656.72
+2025-08-23 15:50:05,522 - strategies.ml_strategy - INFO - 2023-08-11: BUY EXECUTED: AAPL, Price: 175.60, Size: 157, Cost: 17676.60
+2025-08-23 15:50:05,549 - strategies.ml_strategy - INFO - 2023-08-11: EXIT SIGNAL: GOOGL, Strength: 0.000
+2025-08-23 15:50:05,549 - strategies.ml_strategy - INFO - 2023-08-14: SELL EXECUTED: GOOGL, Price: 128.62, Size: -325014, Value: -41802852.58
+2025-08-23 15:50:05,574 - strategies.ml_strategy - INFO - 2023-08-14: EXIT SIGNAL: GOOGL, Strength: 0.000
+2025-08-23 15:50:05,574 - strategies.ml_strategy - INFO - 2023-08-15: SELL EXECUTED: GOOGL, Price: 130.32, Size: -422518, Value: -55061886.57
+2025-08-23 15:50:05,788 - strategies.ml_strategy - INFO - 2023-08-15: Trained ML models for 3 symbols
+2025-08-23 15:50:05,823 - strategies.ml_strategy - INFO - 2023-08-15: EXIT SIGNAL: GOOGL, Strength: 0.000
+2025-08-23 15:50:05,823 - strategies.ml_strategy - INFO - 2023-08-15: BUY SIGNAL: AAPL, Strength: 0.895, Size: 10, ML Enhanced: True
+2025-08-23 15:50:05,823 - strategies.ml_strategy - INFO - 2023-08-15: Portfolio Value: $491,905, Return: +391.9%, Positions: 3
+2025-08-23 15:50:05,824 - strategies.ml_strategy - INFO - 2023-08-16: SELL EXECUTED: GOOGL, Price: 127.93, Size: -549273, Value: -70269999.49
+2025-08-23 15:50:05,824 - strategies.ml_strategy - INFO - 2023-08-16: BUY EXECUTED: AAPL, Price: 175.41, Size: 10, Cost: 1754.12
+2025-08-23 15:50:05,853 - strategies.ml_strategy - INFO - 2023-08-16: EXIT SIGNAL: GOOGL, Strength: 0.000
+2025-08-23 15:50:05,854 - strategies.ml_strategy - INFO - 2023-08-16: BUY SIGNAL: AAPL, Strength: 0.700, Size: 1658, ML Enhanced: False
+2025-08-23 15:50:05,854 - strategies.ml_strategy - INFO - 2023-08-17: SELL EXECUTED: GOOGL, Price: 129.03, Size: -714055, Value: -92131790.59
+2025-08-23 15:50:05,854 - strategies.ml_strategy - INFO - 2023-08-17: BUY EXECUTED: AAPL, Price: 175.42, Size: 1658, Cost: 290849.29
+2025-08-23 15:50:05,882 - strategies.ml_strategy - INFO - 2023-08-17: EXIT SIGNAL: GOOGL, Strength: 0.000
+2025-08-23 15:50:05,883 - strategies.ml_strategy - INFO - 2023-08-18: SELL EXECUTED: GOOGL, Price: 127.74, Size: -928272, Value: -118581057.74
+2025-08-23 15:50:05,912 - strategies.ml_strategy - INFO - 2023-08-18: EXIT SIGNAL: GOOGL, Strength: 0.000
+2025-08-23 15:50:05,912 - strategies.ml_strategy - INFO - 2023-08-18: BUY SIGNAL: AAPL, Strength: 0.700, Size: 4760, ML Enhanced: False
+2025-08-23 15:50:05,912 - strategies.ml_strategy - INFO - 2023-08-18: BUY SIGNAL: MSFT, Strength: 0.700, Size: 3297, ML Enhanced: False
+2025-08-23 15:50:05,912 - strategies.ml_strategy - INFO - 2023-08-21: SELL EXECUTED: GOOGL, Price: 126.42, Size: -1206753, Value: -152559892.76
+2025-08-23 15:50:05,913 - strategies.ml_strategy - INFO - 2023-08-21: BUY EXECUTED: AAPL, Price: 173.37, Size: 4760, Cost: 825250.07
+2025-08-23 15:50:05,913 - strategies.ml_strategy - INFO - 2023-08-21: BUY EXECUTED: MSFT, Price: 313.21, Size: 3297, Cost: 778587.70
+2025-08-23 15:50:05,941 - strategies.ml_strategy - INFO - 2023-08-21: EXIT SIGNAL: GOOGL, Strength: 0.000
+2025-08-23 15:50:05,941 - strategies.ml_strategy - INFO - 2023-08-22: SELL EXECUTED: GOOGL, Price: 127.74, Size: -1568779, Value: -200401911.05
+2025-08-23 15:50:06,184 - strategies.ml_strategy - INFO - 2023-08-22: Trained ML models for 3 symbols
+2025-08-23 15:50:06,212 - strategies.ml_strategy - INFO - 2023-08-22: EXIT SIGNAL: GOOGL, Strength: 0.000
+2025-08-23 15:50:06,212 - strategies.ml_strategy - INFO - 2023-08-22: Portfolio Value: $-1,918,305, Return: -2018.3%, Positions: 3
+2025-08-23 15:50:06,213 - strategies.ml_strategy - INFO - 2023-08-23: SELL EXECUTED: GOOGL, Price: 129.40, Size: -2039413, Value: -263908015.96
+2025-08-23 15:50:06,238 - strategies.ml_strategy - INFO - 2023-08-23: EXIT SIGNAL: GOOGL, Strength: 0.000
+2025-08-23 15:50:06,239 - strategies.ml_strategy - INFO - 2023-08-24: SELL EXECUTED: GOOGL, Price: 133.15, Size: -2651237, Value: -353016024.79
+2025-08-23 15:50:06,264 - strategies.ml_strategy - INFO - 2023-08-24: EXIT SIGNAL: GOOGL, Strength: 0.000
+2025-08-23 15:50:06,265 - strategies.ml_strategy - INFO - 2023-08-25: SELL EXECUTED: GOOGL, Price: 128.77, Size: -3446608, Value: -443811830.07
+2025-08-23 15:50:06,290 - strategies.ml_strategy - INFO - 2023-08-25: EXIT SIGNAL: GOOGL, Strength: 0.000
+2025-08-23 15:50:06,290 - strategies.ml_strategy - INFO - 2023-08-28: SELL EXECUTED: GOOGL, Price: 130.53, Size: -4480590, Value: -584838744.58
+2025-08-23 15:50:06,316 - strategies.ml_strategy - INFO - 2023-08-28: EXIT SIGNAL: GOOGL, Strength: 0.000
+2025-08-23 15:50:06,316 - strategies.ml_strategy - INFO - 2023-08-29: SELL EXECUTED: GOOGL, Price: 131.45, Size: -5824767, Value: -765675232.00
+2025-08-23 15:50:06,550 - strategies.ml_strategy - INFO - 2023-08-29: Trained ML models for 3 symbols
+2025-08-23 15:50:06,582 - strategies.ml_strategy - INFO - 2023-08-29: EXIT SIGNAL: GOOGL, Strength: 1.000
+2025-08-23 15:50:06,582 - strategies.ml_strategy - INFO - 2023-08-29: Portfolio Value: $-95,936,921, Return: -96036.9%, Positions: 3
+2025-08-23 15:50:06,583 - strategies.ml_strategy - INFO - 2023-08-30: SELL EXECUTED: GOOGL, Price: 133.98, Size: -7572198, Value: -1014496569.84
+2025-08-23 15:50:06,611 - strategies.ml_strategy - INFO - 2023-08-30: EXIT SIGNAL: GOOGL, Strength: 0.000
+2025-08-23 15:50:06,611 - strategies.ml_strategy - INFO - 2023-08-31: SELL EXECUTED: GOOGL, Price: 135.20, Size: -9843857, Value: -1330881252.08
+2025-08-23 15:50:06,640 - strategies.ml_strategy - INFO - 2023-08-31: EXIT SIGNAL: GOOGL, Strength: 0.000
+2025-08-23 15:50:06,641 - strategies.ml_strategy - INFO - 2023-09-01: SELL EXECUTED: GOOGL, Price: 136.64, Size: -12797014, Value: -1748590769.43
+2025-08-23 15:50:06,670 - strategies.ml_strategy - INFO - 2023-09-01: EXIT SIGNAL: GOOGL, Strength: 0.000
+2025-08-23 15:50:06,670 - strategies.ml_strategy - INFO - 2023-09-05: SELL EXECUTED: GOOGL, Price: 134.63, Size: -16636118, Value: -2239763023.10
+2025-08-23 15:50:06,699 - strategies.ml_strategy - INFO - 2023-09-05: EXIT SIGNAL: GOOGL, Strength: 0.000
+2025-08-23 15:50:06,700 - strategies.ml_strategy - INFO - 2023-09-06: SELL EXECUTED: GOOGL, Price: 135.21, Size: -21626954, Value: -2924161295.44
+2025-08-23 15:50:06,937 - strategies.ml_strategy - INFO - 2023-09-06: Trained ML models for 3 symbols
+2025-08-23 15:50:06,963 - strategies.ml_strategy - INFO - 2023-09-06: EXIT SIGNAL: GOOGL, Strength: 0.000
+2025-08-23 15:50:06,963 - strategies.ml_strategy - INFO - 2023-09-06: Portfolio Value: $7,679,283, Return: +7579.3%, Positions: 3
+2025-08-23 15:50:06,963 - strategies.ml_strategy - INFO - 2023-09-07: SELL EXECUTED: GOOGL, Price: 132.79, Size: -28115040, Value: -3733496564.95
+2025-08-23 15:50:06,989 - strategies.ml_strategy - INFO - 2023-09-07: EXIT SIGNAL: GOOGL, Strength: 0.000
+2025-08-23 15:50:06,989 - strategies.ml_strategy - INFO - 2023-09-08: SELL EXECUTED: GOOGL, Price: 134.11, Size: -36549552, Value: -4901504464.23
+2025-08-23 15:50:07,014 - strategies.ml_strategy - INFO - 2023-09-08: EXIT SIGNAL: GOOGL, Strength: 0.700
+2025-08-23 15:50:07,015 - strategies.ml_strategy - INFO - 2023-09-11: SELL EXECUTED: GOOGL, Price: 135.73, Size: -79190696, Value: -10748234394.20
+2025-08-23 15:50:07,039 - strategies.ml_strategy - INFO - 2023-09-11: EXIT SIGNAL: GOOGL, Strength: 0.000
+2025-08-23 15:50:07,040 - strategies.ml_strategy - INFO - 2023-09-12: SELL EXECUTED: GOOGL, Price: 135.45, Size: -71271626, Value: -9653575741.76
+2025-08-23 15:50:07,066 - strategies.ml_strategy - INFO - 2023-09-12: EXIT SIGNAL: GOOGL, Strength: 0.000
+2025-08-23 15:50:07,066 - strategies.ml_strategy - INFO - 2023-09-13: SELL EXECUTED: GOOGL, Price: 134.28, Size: -92653114, Value: -12441891138.36
+2025-08-23 15:50:07,317 - strategies.ml_strategy - INFO - 2023-09-13: Trained ML models for 3 symbols
+2025-08-23 15:50:07,347 - strategies.ml_strategy - INFO - 2023-09-13: EXIT SIGNAL: GOOGL, Strength: 0.000
+2025-08-23 15:50:07,347 - strategies.ml_strategy - INFO - 2023-09-13: Portfolio Value: $-569,778,582, Return: -569878.6%, Positions: 3
+2025-08-23 15:50:07,347 - strategies.ml_strategy - INFO - 2023-09-14: SELL EXECUTED: GOOGL, Price: 136.78, Size: -120449048, Value: -16474982687.82
+2025-08-23 15:50:07,377 - strategies.ml_strategy - INFO - 2023-09-14: EXIT SIGNAL: GOOGL, Strength: 0.700
+2025-08-23 15:50:07,377 - strategies.ml_strategy - INFO - 2023-09-15: SELL EXECUTED: GOOGL, Price: 137.16, Size: -260972938, Value: -35794373738.62
+2025-08-23 15:50:07,406 - strategies.ml_strategy - INFO - 2023-09-15: EXIT SIGNAL: GOOGL, Strength: 0.000
+2025-08-23 15:50:07,407 - strategies.ml_strategy - INFO - 2023-09-18: SELL EXECUTED: GOOGL, Price: 135.80, Size: -234875644, Value: -31895077831.37
+2025-08-23 15:50:07,435 - strategies.ml_strategy - INFO - 2023-09-18: EXIT SIGNAL: GOOGL, Strength: 0.000
+2025-08-23 15:50:07,436 - strategies.ml_strategy - INFO - 2023-09-19: SELL EXECUTED: GOOGL, Price: 136.60, Size: -305338337, Value: -41709448070.03
+2025-08-23 15:50:07,465 - strategies.ml_strategy - INFO - 2023-09-19: EXIT SIGNAL: GOOGL, Strength: 0.000
+2025-08-23 15:50:07,465 - strategies.ml_strategy - INFO - 2023-09-20: SELL EXECUTED: GOOGL, Price: 137.26, Size: -396939838, Value: -54482696155.74
+2025-08-23 15:50:07,699 - strategies.ml_strategy - INFO - 2023-09-20: Trained ML models for 3 symbols
+2025-08-23 15:50:07,731 - strategies.ml_strategy - INFO - 2023-09-20: EXIT SIGNAL: MSFT, Strength: 0.788
+2025-08-23 15:50:07,731 - strategies.ml_strategy - INFO - 2023-09-20: EXIT SIGNAL: GOOGL, Strength: 0.000
+2025-08-23 15:50:07,732 - strategies.ml_strategy - INFO - 2023-09-20: BUY SIGNAL: AAPL, Strength: 0.861, Size: 4815353, ML Enhanced: True
+2025-08-23 15:50:07,732 - strategies.ml_strategy - INFO - 2023-09-20: Portfolio Value: $5,586,919,138, Return: +5586819.1%, Positions: 3
+2025-08-23 15:50:07,732 - strategies.ml_strategy - INFO - 2023-09-21: SELL EXECUTED: MSFT, Price: 314.52, Size: -1894, Value: 593219.70
+2025-08-23 15:50:07,732 - strategies.ml_strategy - INFO - 2023-09-21: SELL EXECUTED: GOOGL, Price: 130.66, Size: -516021790, Value: -67421553095.03
+2025-08-23 15:50:07,732 - strategies.ml_strategy - INFO - 2023-09-21: BUY EXECUTED: AAPL, Price: 172.86, Size: 4815353, Cost: 832366923.33
+2025-08-23 15:50:07,757 - strategies.ml_strategy - INFO - 2023-09-21: EXIT SIGNAL: GOOGL, Strength: 0.800
+2025-08-23 15:50:07,757 - strategies.ml_strategy - INFO - 2023-09-21: BUY SIGNAL: AAPL, Strength: 0.700, Size: 5371397, ML Enhanced: False
+2025-08-23 15:50:07,758 - strategies.ml_strategy - INFO - 2023-09-22: SELL EXECUTED: GOOGL, Price: 129.98, Size: -2236094424, Value: -290648558541.63
+2025-08-23 15:50:07,758 - strategies.ml_strategy - INFO - 2023-09-22: BUY EXECUTED: AAPL, Price: 172.98, Size: 5371397, Cost: 929121140.13
+2025-08-23 15:50:07,784 - strategies.ml_strategy - INFO - 2023-09-22: EXIT SIGNAL: GOOGL, Strength: 0.700
+2025-08-23 15:50:07,784 - strategies.ml_strategy - INFO - 2023-09-22: BUY SIGNAL: AAPL, Strength: 0.700, Size: 1175959, ML Enhanced: False
+2025-08-23 15:50:07,784 - strategies.ml_strategy - INFO - 2023-09-25: SELL EXECUTED: GOOGL, Price: 129.06, Size: -1341656654, Value: -173148842831.13
+2025-08-23 15:50:07,785 - strategies.ml_strategy - INFO - 2023-09-25: BUY EXECUTED: AAPL, Price: 172.51, Size: 1175959, Cost: 202864987.80
+2025-08-23 15:50:07,814 - strategies.ml_strategy - INFO - 2023-09-25: EXIT SIGNAL: GOOGL, Strength: 0.000
+2025-08-23 15:50:07,814 - strategies.ml_strategy - INFO - 2023-09-25: BUY SIGNAL: MSFT, Strength: 0.700, Size: 3599362, ML Enhanced: False
+2025-08-23 15:50:07,815 - strategies.ml_strategy - INFO - 2023-09-26: SELL EXECUTED: GOOGL, Price: 129.00, Size: -1744153650, Value: -224989504591.85
+2025-08-23 15:50:07,815 - strategies.ml_strategy - INFO - 2023-09-26: BUY EXECUTED: MSFT, Price: 310.45, Size: 3599362, Cost: 1117427406.24
+2025-08-23 15:50:07,844 - strategies.ml_strategy - INFO - 2023-09-26: EXIT SIGNAL: GOOGL, Strength: 0.000
+2025-08-23 15:50:07,844 - strategies.ml_strategy - INFO - 2023-09-26: BUY SIGNAL: AAPL, Strength: 0.700, Size: 9865553, ML Enhanced: False
+2025-08-23 15:50:07,845 - strategies.ml_strategy - INFO - 2023-09-26: BUY SIGNAL: MSFT, Strength: 0.900, Size: 8154624, ML Enhanced: False
+2025-08-23 15:50:07,845 - strategies.ml_strategy - INFO - 2023-09-27: SELL EXECUTED: GOOGL, Price: 127.80, Size: -2267399745, Value: -289781709209.32
+2025-08-23 15:50:07,845 - strategies.ml_strategy - INFO - 2023-09-27: BUY EXECUTED: AAPL, Price: 170.95, Size: 9865553, Cost: 1686472723.11
+2025-08-23 15:50:07,845 - strategies.ml_strategy - INFO - 2023-09-27: BUY EXECUTED: MSFT, Price: 307.66, Size: 8154624, Cost: 2508880364.38
+2025-08-23 15:50:08,110 - strategies.ml_strategy - INFO - 2023-09-27: Trained ML models for 3 symbols
+2025-08-23 15:50:08,143 - strategies.ml_strategy - INFO - 2023-09-27: EXIT SIGNAL: GOOGL, Strength: 0.000
+2025-08-23 15:50:08,143 - strategies.ml_strategy - INFO - 2023-09-27: Portfolio Value: $4,687,892,544, Return: +4687792.5%, Positions: 3
+2025-08-23 15:50:08,143 - strategies.ml_strategy - INFO - 2023-09-28: SELL EXECUTED: GOOGL, Price: 129.07, Size: -2947619669, Value: -380437329248.93
+2025-08-23 15:50:08,173 - strategies.ml_strategy - INFO - 2023-09-28: EXIT SIGNAL: GOOGL, Strength: 0.000
+2025-08-23 15:50:08,173 - strategies.ml_strategy - INFO - 2023-09-29: SELL EXECUTED: GOOGL, Price: 132.49, Size: -3831905569, Value: -507671737996.18
+2025-08-23 15:50:08,203 - strategies.ml_strategy - INFO - 2023-09-29: EXIT SIGNAL: GOOGL, Strength: 0.000
+2025-08-23 15:50:08,203 - strategies.ml_strategy - INFO - 2023-10-02: SELL EXECUTED: GOOGL, Price: 130.43, Size: -4981477240, Value: -649723127879.67
+2025-08-23 15:50:08,230 - strategies.ml_strategy - INFO - 2023-10-02: EXIT SIGNAL: GOOGL, Strength: 0.000
+2025-08-23 15:50:08,230 - strategies.ml_strategy - INFO - 2023-10-03: SELL EXECUTED: GOOGL, Price: 133.14, Size: -6475920412, Value: -862213926618.77
+2025-08-23 15:50:08,255 - strategies.ml_strategy - INFO - 2023-10-03: EXIT SIGNAL: GOOGL, Strength: 0.000
+2025-08-23 15:50:08,255 - strategies.ml_strategy - INFO - 2023-10-04: SELL EXECUTED: GOOGL, Price: 132.00, Size: -8418696536, Value: -1111254096770.31
+2025-08-23 15:50:08,493 - strategies.ml_strategy - INFO - 2023-10-04: Trained ML models for 3 symbols
+2025-08-23 15:50:08,526 - strategies.ml_strategy - INFO - 2023-10-04: EXIT SIGNAL: GOOGL, Strength: 0.000
+2025-08-23 15:50:08,527 - strategies.ml_strategy - INFO - 2023-10-04: Portfolio Value: $-114,947,435,115, Return: -114947535.1%, Positions: 3
+2025-08-23 15:50:08,527 - strategies.ml_strategy - INFO - 2023-10-05: SELL EXECUTED: GOOGL, Price: 134.26, Size: -10944305496, Value: -1469434498790.98
+2025-08-23 15:50:08,557 - strategies.ml_strategy - INFO - 2023-10-05: EXIT SIGNAL: GOOGL, Strength: 0.000
+2025-08-23 15:50:08,557 - strategies.ml_strategy - INFO - 2023-10-06: SELL EXECUTED: GOOGL, Price: 133.21, Size: -14227597145, Value: -1895273467684.70
+2025-08-23 15:50:08,587 - strategies.ml_strategy - INFO - 2023-10-06: EXIT SIGNAL: GOOGL, Strength: 0.000
+2025-08-23 15:50:08,587 - strategies.ml_strategy - INFO - 2023-10-09: SELL EXECUTED: GOOGL, Price: 136.12, Size: -18495876289, Value: -2517725544454.17
+2025-08-23 15:50:08,616 - strategies.ml_strategy - INFO - 2023-10-09: EXIT SIGNAL: GOOGL, Strength: 0.000
+2025-08-23 15:50:08,617 - strategies.ml_strategy - INFO - 2023-10-10: SELL EXECUTED: GOOGL, Price: 137.67, Size: -24044639175, Value: -3310329295105.17
+2025-08-23 15:50:08,647 - strategies.ml_strategy - INFO - 2023-10-10: EXIT SIGNAL: GOOGL, Strength: 0.000
+2025-08-23 15:50:08,648 - strategies.ml_strategy - INFO - 2023-10-11: SELL EXECUTED: GOOGL, Price: 137.75, Size: -31258030928, Value: -4305914272335.21
+2025-08-23 15:50:08,905 - strategies.ml_strategy - INFO - 2023-10-11: Trained ML models for 3 symbols
+2025-08-23 15:50:08,932 - strategies.ml_strategy - INFO - 2023-10-11: EXIT SIGNAL: GOOGL, Strength: 0.000
+2025-08-23 15:50:08,932 - strategies.ml_strategy - INFO - 2023-10-11: Portfolio Value: $-642,664,818,727, Return: -642664918.7%, Positions: 3
+2025-08-23 15:50:08,932 - strategies.ml_strategy - INFO - 2023-10-12: SELL EXECUTED: GOOGL, Price: 140.21, Size: -40635440206, Value: -5697459599573.39
+2025-08-23 15:50:08,959 - strategies.ml_strategy - INFO - 2023-10-12: EXIT SIGNAL: GOOGL, Strength: 0.000
+2025-08-23 15:50:08,960 - strategies.ml_strategy - INFO - 2023-10-13: SELL EXECUTED: GOOGL, Price: 138.55, Size: -52826072268, Value: -7319003125017.79
+2025-08-23 15:50:08,986 - strategies.ml_strategy - INFO - 2023-10-13: EXIT SIGNAL: GOOGL, Strength: 0.000
+2025-08-23 15:50:08,986 - strategies.ml_strategy - INFO - 2023-10-16: SELL EXECUTED: GOOGL, Price: 137.35, Size: -68673893949, Value: -9432104438660.21
+2025-08-23 15:50:09,012 - strategies.ml_strategy - INFO - 2023-10-16: EXIT SIGNAL: GOOGL, Strength: 0.000
+2025-08-23 15:50:09,012 - strategies.ml_strategy - INFO - 2023-10-17: SELL EXECUTED: GOOGL, Price: 137.80, Size: -89276062133, Value: -12302557490750.36
+2025-08-23 15:50:09,038 - strategies.ml_strategy - INFO - 2023-10-17: EXIT SIGNAL: GOOGL, Strength: 0.000
+2025-08-23 15:50:09,038 - strategies.ml_strategy - INFO - 2023-10-18: SELL EXECUTED: GOOGL, Price: 138.62, Size: -116058880773, Value: -16087925398307.40
+2025-08-23 15:50:09,302 - strategies.ml_strategy - INFO - 2023-10-18: Trained ML models for 3 symbols
+2025-08-23 15:50:09,333 - strategies.ml_strategy - INFO - 2023-10-18: EXIT SIGNAL: GOOGL, Strength: 0.000
+2025-08-23 15:50:09,333 - strategies.ml_strategy - INFO - 2023-10-18: Portfolio Value: $125,604,195,692, Return: +125604095.7%, Positions: 3
+2025-08-23 15:50:09,334 - strategies.ml_strategy - INFO - 2023-10-19: SELL EXECUTED: GOOGL, Price: 137.67, Size: -150876545005, Value: -20771825136805.26
+2025-08-23 15:50:09,363 - strategies.ml_strategy - INFO - 2023-10-19: EXIT SIGNAL: GOOGL, Strength: 0.000
+2025-08-23 15:50:09,363 - strategies.ml_strategy - INFO - 2023-10-20: SELL EXECUTED: GOOGL, Price: 136.51, Size: -196139508507, Value: -26775260920662.40
+2025-08-23 15:50:09,392 - strategies.ml_strategy - INFO - 2023-10-20: EXIT SIGNAL: GOOGL, Strength: 0.000
+2025-08-23 15:50:09,393 - strategies.ml_strategy - INFO - 2023-10-23: SELL EXECUTED: GOOGL, Price: 134.23, Size: -254981361059, Value: -34227413072843.37
+2025-08-23 15:50:09,423 - strategies.ml_strategy - INFO - 2023-10-23: EXIT SIGNAL: GOOGL, Strength: 0.000
+2025-08-23 15:50:09,423 - strategies.ml_strategy - INFO - 2023-10-24: SELL EXECUTED: GOOGL, Price: 137.01, Size: -331475769376, Value: -45414931360667.96
+2025-08-23 15:50:09,452 - strategies.ml_strategy - INFO - 2023-10-24: EXIT SIGNAL: GOOGL, Strength: 0.000
+2025-08-23 15:50:09,453 - strategies.ml_strategy - INFO - 2023-10-25: SELL EXECUTED: GOOGL, Price: 127.40, Size: -430918500189, Value: -54897279865743.25
+2025-08-23 15:50:09,705 - strategies.ml_strategy - INFO - 2023-10-25: Trained ML models for 3 symbols
+2025-08-23 15:50:09,737 - strategies.ml_strategy - INFO - 2023-10-25: EXIT SIGNAL: GOOGL, Strength: 0.838
+2025-08-23 15:50:09,737 - strategies.ml_strategy - INFO - 2023-10-25: BUY SIGNAL: MSFT, Strength: 0.980, Size: 8004547906, ML Enhanced: True
+2025-08-23 15:50:09,737 - strategies.ml_strategy - INFO - 2023-10-25: Portfolio Value: $17,935,811,366,952, Return: +17935811267.0%, Positions: 3
+2025-08-23 15:50:09,738 - strategies.ml_strategy - INFO - 2023-10-26: SELL EXECUTED: GOOGL, Price: 122.54, Size: -1867313500821, Value: -228811472101999.59
+2025-08-23 15:50:09,738 - strategies.ml_strategy - INFO - 2023-10-26: BUY EXECUTED: MSFT, Price: 335.48, Size: 8004547906, Cost: 2685399771806.22
+2025-08-23 15:50:09,764 - strategies.ml_strategy - INFO - 2023-10-26: EXIT SIGNAL: GOOGL, Strength: 0.800
+2025-08-23 15:50:09,764 - strategies.ml_strategy - INFO - 2023-10-26: BUY SIGNAL: AAPL, Strength: 0.900, Size: 23339261001, ML Enhanced: False
+2025-08-23 15:50:09,764 - strategies.ml_strategy - INFO - 2023-10-27: SELL EXECUTED: GOOGL, Price: 122.15, Size: -1867313500821, Value: -228087563157854.50
+2025-08-23 15:50:09,764 - strategies.ml_strategy - INFO - 2023-10-27: BUY EXECUTED: AAPL, Price: 165.29, Size: 23339261001, Cost: 3857770064453.63
+2025-08-23 15:50:09,792 - strategies.ml_strategy - INFO - 2023-10-27: EXIT SIGNAL: GOOGL, Strength: 0.800
+2025-08-23 15:50:09,792 - strategies.ml_strategy - INFO - 2023-10-27: BUY SIGNAL: AAPL, Strength: 0.700, Size: 1306169635, ML Enhanced: False
+2025-08-23 15:50:09,792 - strategies.ml_strategy - INFO - 2023-10-30: SELL EXECUTED: GOOGL, Price: 122.48, Size: -2800970251231, Value: -343050146815699.88
+2025-08-23 15:50:09,793 - strategies.ml_strategy - INFO - 2023-10-30: BUY EXECUTED: AAPL, Price: 167.38, Size: 1306169635, Cost: 218627324376.29
+2025-08-23 15:50:09,822 - strategies.ml_strategy - INFO - 2023-10-30: EXIT SIGNAL: GOOGL, Strength: 0.700
+2025-08-23 15:50:09,823 - strategies.ml_strategy - INFO - 2023-10-31: SELL EXECUTED: GOOGL, Price: 124.31, Size: -2520873226108, Value: -313380942502100.44
+2025-08-23 15:50:09,853 - strategies.ml_strategy - INFO - 2023-10-31: EXIT SIGNAL: GOOGL, Strength: 0.700
+2025-08-23 15:50:09,853 - strategies.ml_strategy - INFO - 2023-11-01: SELL EXECUTED: GOOGL, Price: 123.33, Size: -3277135193940, Value: -404170207816972.88
+2025-08-23 15:50:10,129 - strategies.ml_strategy - INFO - 2023-11-01: Trained ML models for 3 symbols
+2025-08-23 15:50:10,165 - strategies.ml_strategy - INFO - 2023-11-01: EXIT SIGNAL: GOOGL, Strength: 0.876
+2025-08-23 15:50:10,165 - strategies.ml_strategy - INFO - 2023-11-01: Portfolio Value: $-16,958,623,128,218, Return: -16958623228.2%, Positions: 3
+2025-08-23 15:50:10,166 - strategies.ml_strategy - INFO - 2023-11-02: SELL EXECUTED: GOOGL, Price: 127.65, Size: -4260275752122, Value: -543843003021109.44
+2025-08-23 15:50:10,196 - strategies.ml_strategy - INFO - 2023-11-02: EXIT SIGNAL: GOOGL, Strength: 0.700
+2025-08-23 15:50:10,197 - strategies.ml_strategy - INFO - 2023-11-03: SELL EXECUTED: GOOGL, Price: 127.26, Size: -5538358477759, Value: -704793803228764.62
+2025-08-23 15:50:10,226 - strategies.ml_strategy - INFO - 2023-11-03: EXIT SIGNAL: GOOGL, Strength: 0.700
+2025-08-23 15:50:10,227 - strategies.ml_strategy - INFO - 2023-11-06: SELL EXECUTED: GOOGL, Price: 128.28, Size: -7199866021086, Value: -923603511049362.12
+2025-08-23 15:50:10,256 - strategies.ml_strategy - INFO - 2023-11-06: EXIT SIGNAL: GOOGL, Strength: 0.000
+2025-08-23 15:50:10,256 - strategies.ml_strategy - INFO - 2023-11-07: SELL EXECUTED: GOOGL, Price: 129.93, Size: -9359825827412, Value: -1216129325002941.25
+2025-08-23 15:50:10,282 - strategies.ml_strategy - INFO - 2023-11-07: EXIT SIGNAL: GOOGL, Strength: 0.000
+2025-08-23 15:50:10,283 - strategies.ml_strategy - INFO - 2023-11-08: SELL EXECUTED: GOOGL, Price: 130.19, Size: -12167773575636, Value: -1584112984242556.00
+2025-08-23 15:50:10,532 - strategies.ml_strategy - INFO - 2023-11-08: Trained ML models for 3 symbols
+2025-08-23 15:50:10,563 - strategies.ml_strategy - INFO - 2023-11-08: EXIT SIGNAL: GOOGL, Strength: 0.000
+2025-08-23 15:50:10,563 - strategies.ml_strategy - INFO - 2023-11-08: Portfolio Value: $-171,696,553,653,771, Return: -171696553753.8%, Positions: 3
+2025-08-23 15:50:10,563 - strategies.ml_strategy - INFO - 2023-11-09: SELL EXECUTED: GOOGL, Price: 131.17, Size: -15818105648327, Value: -2074913263348815.50
+2025-08-23 15:50:10,593 - strategies.ml_strategy - INFO - 2023-11-09: EXIT SIGNAL: GOOGL, Strength: 0.000
+2025-08-23 15:50:10,593 - strategies.ml_strategy - INFO - 2023-11-10: SELL EXECUTED: GOOGL, Price: 129.32, Size: -20563537342825, Value: -2659367424836821.50
+2025-08-23 15:50:10,624 - strategies.ml_strategy - INFO - 2023-11-10: EXIT SIGNAL: GOOGL, Strength: 0.000
+2025-08-23 15:50:10,624 - strategies.ml_strategy - INFO - 2023-11-13: SELL EXECUTED: GOOGL, Price: 130.99, Size: -26732598545672, Value: -3501819939525417.50
+2025-08-23 15:50:10,653 - strategies.ml_strategy - INFO - 2023-11-13: EXIT SIGNAL: GOOGL, Strength: 0.000
+2025-08-23 15:50:10,653 - strategies.ml_strategy - INFO - 2023-11-14: SELL EXECUTED: GOOGL, Price: 133.39, Size: -34752378109374, Value: -4635620383925275.00
+2025-08-23 15:50:10,683 - strategies.ml_strategy - INFO - 2023-11-14: EXIT SIGNAL: GOOGL, Strength: 0.000
+2025-08-23 15:50:10,684 - strategies.ml_strategy - INFO - 2023-11-15: SELL EXECUTED: GOOGL, Price: 134.07, Size: -45178091542186, Value: -6056843917489374.00
+2025-08-23 15:50:10,963 - strategies.ml_strategy - INFO - 2023-11-15: Trained ML models for 3 symbols
+2025-08-23 15:50:10,997 - strategies.ml_strategy - INFO - 2023-11-15: EXIT SIGNAL: AAPL, Strength: 0.970
+2025-08-23 15:50:10,997 - strategies.ml_strategy - INFO - 2023-11-15: EXIT SIGNAL: MSFT, Strength: 0.907
+2025-08-23 15:50:10,998 - strategies.ml_strategy - INFO - 2023-11-15: EXIT SIGNAL: GOOGL, Strength: 0.930
+2025-08-23 15:50:10,998 - strategies.ml_strategy - INFO - 2023-11-15: Portfolio Value: $-539,991,876,961,348, Return: -539991877061.3%, Positions: 3
+2025-08-23 15:50:10,998 - strategies.ml_strategy - INFO - 2023-11-16: SELL EXECUTED: AAPL, Price: 187.98, Size: -24666665735, Value: 4080049302476.19
+2025-08-23 15:50:10,998 - strategies.ml_strategy - INFO - 2023-11-16: SELL EXECUTED: MSFT, Price: 366.19, Size: -8016307575, Value: 2689024685372.02
+2025-08-23 15:50:10,998 - strategies.ml_strategy - INFO - 2023-11-16: SELL EXECUTED: GOOGL, Price: 134.38, Size: -195771730016141, Value: -26308603014599452.00
+2025-08-23 15:50:11,024 - strategies.ml_strategy - INFO - 2023-11-16: EXIT SIGNAL: GOOGL, Strength: 0.000
+2025-08-23 15:50:11,025 - strategies.ml_strategy - INFO - 2023-11-17: SELL EXECUTED: GOOGL, Price: 135.19, Size: -117463038009684, Value: -15879737737102772.00
+2025-08-23 15:50:11,051 - strategies.ml_strategy - INFO - 2023-11-17: EXIT SIGNAL: GOOGL, Strength: 0.700
+2025-08-23 15:50:11,051 - strategies.ml_strategy - INFO - 2023-11-20: SELL EXECUTED: GOOGL, Price: 132.89, Size: -254503249020983, Value: -33821698506726348.00
+2025-08-23 15:50:11,077 - strategies.ml_strategy - INFO - 2023-11-20: EXIT SIGNAL: GOOGL, Strength: 0.700
+2025-08-23 15:50:11,077 - strategies.ml_strategy - INFO - 2023-11-21: SELL EXECUTED: GOOGL, Price: 135.48, Size: -381754873531474, Value: -51719191441338480.00
+2025-08-23 15:50:11,103 - strategies.ml_strategy - INFO - 2023-11-21: EXIT SIGNAL: GOOGL, Strength: 0.700
+2025-08-23 15:50:11,104 - strategies.ml_strategy - INFO - 2023-11-22: SELL EXECUTED: GOOGL, Price: 136.65, Size: -572632310297211, Value: -78250459666836864.00
+2025-08-23 15:50:11,381 - strategies.ml_strategy - INFO - 2023-11-22: Trained ML models for 3 symbols
+2025-08-23 15:50:11,418 - strategies.ml_strategy - INFO - 2023-11-22: EXIT SIGNAL: AAPL, Strength: 0.955
+2025-08-23 15:50:11,418 - strategies.ml_strategy - INFO - 2023-11-22: EXIT SIGNAL: GOOGL, Strength: 0.844
+2025-08-23 15:50:11,418 - strategies.ml_strategy - INFO - 2023-11-22: Portfolio Value: $-4,958,769,011,117,216, Return: -4958769011217.2%, Positions: 3
+2025-08-23 15:50:11,418 - strategies.ml_strategy - INFO - 2023-11-24: SELL EXECUTED: AAPL, Price: 189.27, Size: -49333331470, Value: -9337200036958.75
+2025-08-23 15:50:11,418 - strategies.ml_strategy - INFO - 2023-11-24: SELL EXECUTED: GOOGL, Price: 137.21, Size: -1717896930891634, Value: -235707681038668096.00
+2025-08-23 15:50:11,448 - strategies.ml_strategy - INFO - 2023-11-24: EXIT SIGNAL: GOOGL, Strength: 0.000
+2025-08-23 15:50:11,449 - strategies.ml_strategy - INFO - 2023-11-27: SELL EXECUTED: GOOGL, Price: 135.22, Size: -1030738158534980, Value: -139375431545056352.00
+2025-08-23 15:50:11,479 - strategies.ml_strategy - INFO - 2023-11-27: EXIT SIGNAL: GOOGL, Strength: 0.000
+2025-08-23 15:50:11,479 - strategies.ml_strategy - INFO - 2023-11-28: SELL EXECUTED: GOOGL, Price: 135.27, Size: -1339959606095474, Value: -181254636225919392.00
+2025-08-23 15:50:11,509 - strategies.ml_strategy - INFO - 2023-11-28: EXIT SIGNAL: GOOGL, Strength: 0.000
+2025-08-23 15:50:11,509 - strategies.ml_strategy - INFO - 2023-11-29: SELL EXECUTED: GOOGL, Price: 136.75, Size: -1741947487924116, Value: -238211079369373760.00
+2025-08-23 15:50:11,539 - strategies.ml_strategy - INFO - 2023-11-29: EXIT SIGNAL: GOOGL, Strength: 0.000
+2025-08-23 15:50:11,540 - strategies.ml_strategy - INFO - 2023-11-30: SELL EXECUTED: GOOGL, Price: 134.24, Size: -2264531734301351, Value: -304001789841892032.00
+2025-08-23 15:50:11,802 - strategies.ml_strategy - INFO - 2023-11-30: Trained ML models for 3 symbols
+2025-08-23 15:50:11,831 - strategies.ml_strategy - INFO - 2023-11-30: EXIT SIGNAL: GOOGL, Strength: 0.000
+2025-08-23 15:50:11,831 - strategies.ml_strategy - INFO - 2023-11-30: Portfolio Value: $36,776,023,393,955,584, Return: +36776023393855.6%, Positions: 3
+2025-08-23 15:50:11,831 - strategies.ml_strategy - INFO - 2023-12-01: SELL EXECUTED: GOOGL, Price: 131.07, Size: -2943891254591756, Value: -385867347876258240.00
+2025-08-23 15:50:11,861 - strategies.ml_strategy - INFO - 2023-12-01: EXIT SIGNAL: GOOGL, Strength: 0.800
+2025-08-23 15:50:11,862 - strategies.ml_strategy - INFO - 2023-12-04: SELL EXECUTED: GOOGL, Price: 129.11, Size: -12756862103230945, Value: -1646983516621582592.00
+2025-08-23 15:50:11,894 - strategies.ml_strategy - INFO - 2023-12-04: EXIT SIGNAL: GOOGL, Strength: 0.800
+2025-08-23 15:50:11,894 - strategies.ml_strategy - INFO - 2023-12-05: SELL EXECUTED: GOOGL, Price: 128.18, Size: -25513724206461890, Value: -3270381301904037376.00
+2025-08-23 15:50:11,924 - strategies.ml_strategy - INFO - 2023-12-05: EXIT SIGNAL: AAPL, Strength: 0.000
+2025-08-23 15:50:11,924 - strategies.ml_strategy - INFO - 2023-12-05: EXIT SIGNAL: GOOGL, Strength: 0.000
+2025-08-23 15:50:11,925 - strategies.ml_strategy - INFO - 2023-12-06: SELL EXECUTED: AAPL, Price: 192.82, Size: -29599998882, Value: -5707398875626.32
+2025-08-23 15:50:11,925 - strategies.ml_strategy - INFO - 2023-12-06: SELL EXECUTED: GOOGL, Price: 130.66, Size: -15308234523877132, Value: -2000118900676935936.00
+2025-08-23 15:50:11,955 - strategies.ml_strategy - INFO - 2023-12-06: EXIT SIGNAL: AAPL, Strength: 0.000
+2025-08-23 15:50:11,955 - strategies.ml_strategy - INFO - 2023-12-06: EXIT SIGNAL: GOOGL, Strength: 0.000
+2025-08-23 15:50:11,955 - strategies.ml_strategy - INFO - 2023-12-07: SELL EXECUTED: AAPL, Price: 192.00, Size: -38479998546, Value: -7388330654263.78
+2025-08-23 15:50:11,956 - strategies.ml_strategy - INFO - 2023-12-07: SELL EXECUTED: GOOGL, Price: 134.23, Size: -19900704881040272, Value: -2671370342758183936.00
+2025-08-23 15:50:12,250 - strategies.ml_strategy - INFO - 2023-12-07: Trained ML models for 3 symbols
+2025-08-23 15:50:12,281 - strategies.ml_strategy - INFO - 2023-12-07: EXIT SIGNAL: AAPL, Strength: 0.000
+2025-08-23 15:50:12,281 - strategies.ml_strategy - INFO - 2023-12-07: EXIT SIGNAL: GOOGL, Strength: 0.000
+2025-08-23 15:50:12,281 - strategies.ml_strategy - INFO - 2023-12-07: Portfolio Value: $-438,683,616,455,837,696, Return: -438683616455937.6%, Positions: 3
+2025-08-23 15:50:12,281 - strategies.ml_strategy - INFO - 2023-12-08: SELL EXECUTED: AAPL, Price: 192.57, Size: -50023998110, Value: -9633103206368.90
+2025-08-23 15:50:12,281 - strategies.ml_strategy - INFO - 2023-12-08: SELL EXECUTED: GOOGL, Price: 133.40, Size: -25870916345352356, Value: -3451178763561796096.00
+2025-08-23 15:50:12,310 - strategies.ml_strategy - INFO - 2023-12-08: EXIT SIGNAL: AAPL, Strength: 0.000
+2025-08-23 15:50:12,310 - strategies.ml_strategy - INFO - 2023-12-08: EXIT SIGNAL: GOOGL, Strength: 0.000
+2025-08-23 15:50:12,310 - strategies.ml_strategy - INFO - 2023-12-11: SELL EXECUTED: AAPL, Price: 191.49, Size: -65031197543, Value: -12452746488009.96
+2025-08-23 15:50:12,311 - strategies.ml_strategy - INFO - 2023-12-11: SELL EXECUTED: GOOGL, Price: 131.59, Size: -33632191248958060, Value: -4425686884341086208.00
+2025-08-23 15:50:12,337 - strategies.ml_strategy - INFO - 2023-12-11: EXIT SIGNAL: AAPL, Strength: 0.000
+2025-08-23 15:50:12,337 - strategies.ml_strategy - INFO - 2023-12-11: EXIT SIGNAL: GOOGL, Strength: 0.000
+2025-08-23 15:50:12,338 - strategies.ml_strategy - INFO - 2023-12-12: SELL EXECUTED: AAPL, Price: 191.46, Size: -84540556806, Value: -16186054067915.64
+2025-08-23 15:50:12,338 - strategies.ml_strategy - INFO - 2023-12-12: SELL EXECUTED: GOOGL, Price: 131.02, Size: -43721848623645480, Value: -5728620522231586816.00
+2025-08-23 15:50:12,364 - strategies.ml_strategy - INFO - 2023-12-12: EXIT SIGNAL: AAPL, Strength: 0.000
+2025-08-23 15:50:12,364 - strategies.ml_strategy - INFO - 2023-12-12: EXIT SIGNAL: GOOGL, Strength: 0.000
+2025-08-23 15:50:12,364 - strategies.ml_strategy - INFO - 2023-12-13: SELL EXECUTED: AAPL, Price: 193.45, Size: -109902723848, Value: -21260918166716.26
+2025-08-23 15:50:12,364 - strategies.ml_strategy - INFO - 2023-12-13: SELL EXECUTED: GOOGL, Price: 132.58, Size: -56838403210739128, Value: -7535910994794133504.00
+2025-08-23 15:50:12,390 - strategies.ml_strategy - INFO - 2023-12-13: EXIT SIGNAL: AAPL, Strength: 0.000
+2025-08-23 15:50:12,390 - strategies.ml_strategy - INFO - 2023-12-13: EXIT SIGNAL: GOOGL, Strength: 0.000
+2025-08-23 15:50:12,391 - strategies.ml_strategy - INFO - 2023-12-14: SELL EXECUTED: AAPL, Price: 196.36, Size: -142873541002, Value: -28054300909775.72
+2025-08-23 15:50:12,391 - strategies.ml_strategy - INFO - 2023-12-14: SELL EXECUTED: GOOGL, Price: 132.58, Size: -73889924173960848, Value: -9796684130901311488.00
+2025-08-23 15:50:12,668 - strategies.ml_strategy - INFO - 2023-12-14: Trained ML models for 3 symbols
+2025-08-23 15:50:12,700 - strategies.ml_strategy - INFO - 2023-12-14: EXIT SIGNAL: AAPL, Strength: 0.000
+2025-08-23 15:50:12,700 - strategies.ml_strategy - INFO - 2023-12-14: EXIT SIGNAL: GOOGL, Strength: 0.000
+2025-08-23 15:50:12,700 - strategies.ml_strategy - INFO - 2023-12-14: Portfolio Value: $227,907,368,755,052,544, Return: +227907368754952.5%, Positions: 3
+2025-08-23 15:50:12,701 - strategies.ml_strategy - INFO - 2023-12-15: SELL EXECUTED: AAPL, Price: 195.87, Size: -185735603303, Value: -36380349165555.41
+2025-08-23 15:50:12,701 - strategies.ml_strategy - INFO - 2023-12-15: SELL EXECUTED: GOOGL, Price: 130.84, Size: -96056901426149104, Value: -12567635964079675392.00
+2025-08-23 15:50:12,731 - strategies.ml_strategy - INFO - 2023-12-15: EXIT SIGNAL: AAPL, Strength: 0.000
+2025-08-23 15:50:12,731 - strategies.ml_strategy - INFO - 2023-12-15: EXIT SIGNAL: GOOGL, Strength: 0.000
+2025-08-23 15:50:12,731 - strategies.ml_strategy - INFO - 2023-12-18: SELL EXECUTED: AAPL, Price: 194.44, Size: -241456284294, Value: -46949666714285.80
+2025-08-23 15:50:12,731 - strategies.ml_strategy - INFO - 2023-12-18: SELL EXECUTED: GOOGL, Price: 131.84, Size: -124873971853993840, Value: -16463299232607594496.00
+2025-08-23 15:50:12,762 - strategies.ml_strategy - INFO - 2023-12-18: EXIT SIGNAL: AAPL, Strength: 0.000
+2025-08-23 15:50:12,762 - strategies.ml_strategy - INFO - 2023-12-18: EXIT SIGNAL: GOOGL, Strength: 0.000
+2025-08-23 15:50:12,762 - strategies.ml_strategy - INFO - 2023-12-19: SELL EXECUTED: AAPL, Price: 194.51, Size: -313893169582, Value: -61056365211997.42
+2025-08-23 15:50:12,762 - strategies.ml_strategy - INFO - 2023-12-19: SELL EXECUTED: GOOGL, Price: 136.02, Size: -162336163410192000, Value: -22081648728342511616.00
+2025-08-23 15:50:12,793 - strategies.ml_strategy - INFO - 2023-12-19: EXIT SIGNAL: AAPL, Strength: 0.000
+2025-08-23 15:50:12,793 - strategies.ml_strategy - INFO - 2023-12-19: EXIT SIGNAL: GOOGL, Strength: 0.000
+2025-08-23 15:50:12,793 - strategies.ml_strategy - INFO - 2023-12-20: SELL EXECUTED: AAPL, Price: 195.25, Size: -408061120456, Value: -79672695351552.19
+2025-08-23 15:50:12,793 - strategies.ml_strategy - INFO - 2023-12-20: SELL EXECUTED: GOOGL, Price: 138.14, Size: -211037012433249600, Value: -29152971097029177344.00
+2025-08-23 15:50:12,823 - strategies.ml_strategy - INFO - 2023-12-20: EXIT SIGNAL: AAPL, Strength: 0.000
+2025-08-23 15:50:12,823 - strategies.ml_strategy - INFO - 2023-12-20: EXIT SIGNAL: GOOGL, Strength: 0.900
+2025-08-23 15:50:12,824 - strategies.ml_strategy - INFO - 2023-12-21: SELL EXECUTED: AAPL, Price: 194.45, Size: -530479456593, Value: -103153677121230.66
+2025-08-23 15:50:12,824 - strategies.ml_strategy - INFO - 2023-12-21: SELL EXECUTED: GOOGL, Price: 138.66, Size: -274348116163224480, Value: -38040676879799697408.00
+2025-08-23 15:50:13,113 - strategies.ml_strategy - INFO - 2023-12-21: Trained ML models for 3 symbols
+2025-08-23 15:50:13,141 - strategies.ml_strategy - INFO - 2023-12-21: EXIT SIGNAL: AAPL, Strength: 0.000
+2025-08-23 15:50:13,141 - strategies.ml_strategy - INFO - 2023-12-21: EXIT SIGNAL: GOOGL, Strength: 0.000
+2025-08-23 15:50:13,141 - strategies.ml_strategy - INFO - 2023-12-21: Portfolio Value: $-5,472,992,484,368,777,216, Return: -5472992484368877.0%, Positions: 3
+2025-08-23 15:50:13,142 - strategies.ml_strategy - INFO - 2023-12-22: SELL EXECUTED: AAPL, Price: 193.54, Size: -689623293571, Value: -133470663130144.33
+2025-08-23 15:50:13,142 - strategies.ml_strategy - INFO - 2023-12-22: SELL EXECUTED: GOOGL, Price: 139.93, Size: -356652551012191808, Value: -49906673492379099136.00
+2025-08-23 15:50:13,168 - strategies.ml_strategy - INFO - 2023-12-22: EXIT SIGNAL: AAPL, Strength: 0.000
+2025-08-23 15:50:13,169 - strategies.ml_strategy - INFO - 2023-12-22: EXIT SIGNAL: GOOGL, Strength: 0.000
+2025-08-23 15:50:13,169 - strategies.ml_strategy - INFO - 2023-12-26: SELL EXECUTED: AAPL, Price: 191.98, Size: -896510281642, Value: -172116183586424.25
+2025-08-23 15:50:13,169 - strategies.ml_strategy - INFO - 2023-12-26: SELL EXECUTED: GOOGL, Price: 140.75, Size: -463648316315849408, Value: -65256594976353443840.00
+2025-08-23 15:50:13,196 - strategies.ml_strategy - INFO - 2023-12-26: EXIT SIGNAL: AAPL, Strength: 0.000
+2025-08-23 15:50:13,196 - strategies.ml_strategy - INFO - 2023-12-26: EXIT SIGNAL: GOOGL, Strength: 0.000
+2025-08-23 15:50:13,196 - strategies.ml_strategy - INFO - 2023-12-27: SELL EXECUTED: AAPL, Price: 190.87, Size: -1165463366135, Value: -222456648461580.81
+2025-08-23 15:50:13,196 - strategies.ml_strategy - INFO - 2023-12-27: SELL EXECUTED: GOOGL, Price: 140.75, Size: -602742811210604160, Value: -84833579873506164736.00
+2025-08-23 15:50:13,224 - strategies.ml_strategy - INFO - 2023-12-27: EXIT SIGNAL: AAPL, Strength: 0.000
+2025-08-23 15:50:13,224 - strategies.ml_strategy - INFO - 2023-12-27: EXIT SIGNAL: GOOGL, Strength: 0.000
+2025-08-23 15:50:13,224 - strategies.ml_strategy - INFO - 2023-12-28: SELL EXECUTED: AAPL, Price: 192.51, Size: -1515102375975, Value: -291672578819116.19
+2025-08-23 15:50:13,224 - strategies.ml_strategy - INFO - 2023-12-28: SELL EXECUTED: GOOGL, Price: 139.94, Size: -783565654573785472, Value: -109652742912538443776.00
+2025-08-23 15:50:13,252 - strategies.ml_strategy - INFO - 2023-12-28: EXIT SIGNAL: AAPL, Strength: 0.000
+2025-08-23 15:50:13,252 - strategies.ml_strategy - INFO - 2023-12-28: EXIT SIGNAL: GOOGL, Strength: 0.000
+2025-08-23 15:50:13,252 - strategies.ml_strategy - INFO - 2023-12-29: SELL EXECUTED: AAPL, Price: 192.27, Size: -1969633088768, Value: -378705577070812.19
+2025-08-23 15:50:13,253 - strategies.ml_strategy - INFO - 2023-12-29: SELL EXECUTED: GOOGL, Price: 138.80, Size: -1018635350945921152, Value: -141384140852835532800.00
+2025-08-23 15:50:13,553 - strategies.ml_strategy - INFO - 2023-12-29: Trained ML models for 3 symbols
+2025-08-23 15:50:13,585 - strategies.ml_strategy - INFO - 2023-12-29: EXIT SIGNAL: AAPL, Strength: 0.000
+2025-08-23 15:50:13,585 - strategies.ml_strategy - INFO - 2023-12-29: EXIT SIGNAL: GOOGL, Strength: 0.000
+2025-08-23 15:50:13,585 - strategies.ml_strategy - INFO - 2023-12-29: Portfolio Value: $-1,650,675,070,738,890,752, Return: -1650675070738990.8%, Positions: 3
+2025-08-23 15:50:13,585 - strategies.ml_strategy - INFO - 2023-12-29: Strategy Completed!
+2025-08-23 15:50:13,585 - strategies.ml_strategy - INFO - 2023-12-29: Starting Value: $100,000
+2025-08-23 15:50:13,585 - strategies.ml_strategy - INFO - 2023-12-29: Final Value: $-1,650,675,070,738,890,752
+2025-08-23 15:50:13,585 - strategies.ml_strategy - INFO - 2023-12-29: Total Return: -1650675070738990.75%
+2025-08-23 15:50:13,585 - strategies.ml_strategy - INFO - 2023-12-29: Total Trades: 0

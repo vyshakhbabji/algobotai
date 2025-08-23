@@ -1,0 +1,15 @@
+2025-08-23 16:02:19,230 - strategies.ml_strategy - INFO - Strategy initialized with 20 symbols
+2025-08-23 16:02:19,569 - strategies.ml_strategy - INFO - 2025-08-18: BUY SIGNAL: UNH, Strength: 0.900, Size: 48, ML Enhanced: False
+2025-08-23 16:02:19,569 - strategies.ml_strategy - INFO - 2025-08-18: BUY SIGNAL: XOM, Strength: 0.700, Size: 140, ML Enhanced: False
+2025-08-23 16:02:19,569 - strategies.ml_strategy - INFO - 2025-08-18: BUY SIGNAL: CRM, Strength: 0.700, Size: 61, ML Enhanced: False
+2025-08-23 16:02:19,570 - strategies.ml_strategy - INFO - 2025-08-18: Portfolio Value: $100,000, Return: +0.0%, Positions: 0
+2025-08-23 16:02:19,571 - strategies.ml_strategy - INFO - 2025-08-19: BUY EXECUTED: UNH, Price: 308.90, Size: 48, Cost: 14827.20
+2025-08-23 16:02:19,571 - strategies.ml_strategy - INFO - 2025-08-19: BUY EXECUTED: XOM, Price: 106.20, Size: 140, Cost: 14868.00
+2025-08-23 16:02:19,571 - strategies.ml_strategy - INFO - 2025-08-19: BUY EXECUTED: CRM, Price: 245.00, Size: 61, Cost: 14945.00
+2025-08-23 16:02:19,909 - strategies.ml_strategy - INFO - 2025-08-20: BUY SIGNAL: MSFT, Strength: 0.900, Size: 29, ML Enhanced: False
+2025-08-23 16:02:19,910 - strategies.ml_strategy - INFO - 2025-08-21: BUY EXECUTED: MSFT, Price: 503.69, Size: 29, Cost: 14607.01
+2025-08-23 16:02:20,057 - strategies.ml_strategy - INFO - 2025-08-21: Strategy Completed!
+2025-08-23 16:02:20,057 - strategies.ml_strategy - INFO - 2025-08-21: Starting Value: $100,000
+2025-08-23 16:02:20,057 - strategies.ml_strategy - INFO - 2025-08-21: Final Value: $100,195
+2025-08-23 16:02:20,057 - strategies.ml_strategy - INFO - 2025-08-21: Total Return: +0.19%
+2025-08-23 16:02:20,057 - strategies.ml_strategy - INFO - 2025-08-21: Total Trades: 0

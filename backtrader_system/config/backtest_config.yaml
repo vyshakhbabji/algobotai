@@ -1,0 +1,92 @@
+# Backtrader Configuration for ML Trading System
+# Based on realistic_live_trading_system.py
+
+# Trading Universe
+universe:
+  type: "elite_stocks"  # Use the get_elite_stocks() method
+  symbols: []  # Will be populated from RealisticLiveTradingSystem.get_elite_stocks()
+
+# Backtest Parameters
+backtest:
+  start_date: "2024-08-23"
+  end_date: "2025-08-22"
+  initial_capital: 100000.0
+  commission_bps: 5  # 5 basis points commission
+  slippage_bps: 2    # 2 basis points slippage
+  
+# Strategy Parameters (from RealisticLiveTradingSystem config)
+strategy:
+  signal_threshold: 0.25
+  max_positions: 15
+  max_position_size: 0.40  # 40% max position size
+  max_symbol_exposure: 0.15  # 15% max per symbol
+  min_training_days: 60
+  
+  # Risk Management
+  max_net_exposure: 0.95  # 95% max capital deployment
+  target_invested_floor: 0.75
+  target_invested_ceiling: 0.95
+  
+  # Position Sizing
+  kelly_multiplier: 0.5  # Kelly fraction multiplier
+  max_position_size_exceptional: 0.60  # For exceptional signals
+  
+  # Profit Taking
+  avg_win: 0.08
+  avg_loss: 0.025
+  
+# ML Model Parameters
+ml_config:
+  feature_columns:
+    - "price_vs_ma5"
+    - "price_vs_ma20" 
+    - "price_vs_ma50"
+    - "rsi_normalized"
+    - "volatility_10d"
+    - "volatility_20d"
+    - "volume_ratio"
+    - "bb_position"
+    - "macd_histogram"
+    - "trend_consistency"
+  
+  # Model types to train daily
+  models:
+    regime: 
+      type: "RandomForestClassifier"
+      params:
+        n_estimators: 50
+        max_depth: 8
+        random_state: 42
+    
+    strength:
+      type: "RandomForestRegressor" 
+      params:
+        n_estimators: 50
+        max_depth: 8
+        random_state: 42
+
+# Output Configuration
+output:
+  results_dir: "./results"
+  save_trades: true
+  save_equity_curve: true
+  save_performance_metrics: true
+  save_plots: true
+  
+  # Plot settings
+  plots:
+    equity_curve: "plot_equity.png"
+    drawdown: "plot_drawdown.png"
+    
+# Analyzers to run
+analyzers:
+  - TimeReturn
+  - DrawDown
+  - TradeAnalyzer
+  - SharpeRatio
+  - CustomMetrics
+
+# Execution Mode
+execution:
+  mode: "backtest"  # backtest, paper, live
+  alpaca_config: null  # For future Alpaca integration

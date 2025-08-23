@@ -1,0 +1,65 @@
+{
+  "timestamp": "2025-08-23T15:52:54.350092",
+  "summary": {
+    "total_return_pct": 4.03884591433743,
+    "annualized_return_pct": 7.023227673587165,
+    "total_return": 0.0403884591433743,
+    "cagr": 0.07023227673587162,
+    "cagr_pct": 7.023227673587162,
+    "max_drawdown": 0.013417774602577542,
+    "max_drawdown_pct": 1.3417774602577541,
+    "avg_drawdown": 0.0007832858432030998,
+    "avg_drawdown_pct": 0.07832858432030998,
+    "calmar_ratio": 5.234271614786261,
+    "sortino_ratio": 1.7289016730604947,
+    "volatility": 0.02896629057128767,
+    "volatility_pct": 2.896629057128767,
+    "win_rate": 0.21232876712328766,
+    "win_rate_pct": 21.232876712328768,
+    "trading_days": 146,
+    "final_value": 104038.84591433743,
+    "initial_value": 100000.0
+  },
+  "risk_metrics": {
+    "sharpe_ratio": 1.6836519861205488,
+    "mean_daily_return": 0.0002728945235014301,
+    "daily_volatility": 0.0018247047918014817,
+    "annualized_return": 0.0687694199223604,
+    "annualized_volatility": 0.02896629057128767,
+    "max_drawdown_pct": 134.1777460257754,
+    "max_drawdown_length": 27
+  },
+  "trade_metrics": {
+    "total_trades": 15,
+    "winning_trades": 2,
+    "losing_trades": 0,
+    "win_rate_pct": 100.0,
+    "avg_win_pct": 2019.4229571687106,
+    "avg_loss_pct": 0.0,
+    "win_loss_ratio": 0,
+    "turnover": 0.30104002834983506,
+    "total_volume": 60880.96711509418,
+    "avg_portfolio_value": 101117.72751420473,
+    "avg_exposure_pct": 8.197316588743487,
+    "min_exposure_pct": 0.0,
+    "max_exposure_pct": 32.49405299516119,
+    "final_exposure_pct": 0.0
+  },
+  "ml_metrics": {
+    "avg_regime_accuracy": 1.0,
+    "avg_strength_r2": 0.8121931964103939,
+    "symbols_with_models": 2,
+    "symbol_stats": {
+      "AAPL": {
+        "final_regime_accuracy": 1.0,
+        "final_strength_r2": 0.8114051986697234,
+        "training_sessions": 7
+      },
+      "MSFT": {
+        "final_regime_accuracy": 1.0,
+        "final_strength_r2": 0.8129811941510645,
+        "training_sessions": 7
+      }
+    }
+  }
+}

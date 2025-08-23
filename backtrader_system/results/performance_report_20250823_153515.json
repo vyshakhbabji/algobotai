@@ -1,0 +1,49 @@
+{
+  "timestamp": "2025-08-23T15:35:15.880890",
+  "summary": {
+    "total_return_pct": -1.1268674761634623,
+    "annualized_return_pct": -4.431850845844845,
+    "total_return": -0.011268674761634623,
+    "cagr": -0.044318508458448425,
+    "cagr_pct": -4.431850845844842,
+    "max_drawdown": 0.014447480616109093,
+    "max_drawdown_pct": 1.4447480616109094,
+    "avg_drawdown": 0.00032791861272100687,
+    "avg_drawdown_pct": 0.03279186127210069,
+    "calmar_ratio": -3.067559641438994,
+    "sortino_ratio": -2.7805816390139095,
+    "volatility": 0.02167794301579069,
+    "volatility_pct": 2.167794301579069,
+    "win_rate": 0.016129032258064516,
+    "win_rate_pct": 1.6129032258064515,
+    "trading_days": 62,
+    "final_value": 9887.313252383654,
+    "initial_value": 10000.0
+  },
+  "risk_metrics": {
+    "sharpe_ratio": -3.0363146721793135,
+    "mean_daily_return": -0.00018183150175207863,
+    "daily_volatility": 0.0013655820513145643,
+    "annualized_return": -0.04582153844152381,
+    "annualized_volatility": 0.02167794301579069,
+    "max_drawdown_pct": 144.47480616109095,
+    "max_drawdown_length": 2
+  },
+  "trade_metrics": {
+    "total_trades": 7,
+    "winning_trades": 0,
+    "losing_trades": 7,
+    "win_rate_pct": 0.0,
+    "avg_win_pct": 0,
+    "avg_loss_pct": 0,
+    "win_loss_ratio": 0,
+    "turnover": 0.4640538437217516,
+    "total_volume": 9279.449107413224,
+    "avg_portfolio_value": 9998.246144231072,
+    "avg_exposure_pct": 4.419722274241254,
+    "min_exposure_pct": 0.0,
+    "max_exposure_pct": 92.86390511456736,
+    "final_exposure_pct": 92.75929517191666
+  },
+  "ml_metrics": {}
+}

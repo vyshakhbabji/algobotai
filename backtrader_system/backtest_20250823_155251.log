@@ -1,0 +1,61 @@
+2025-08-23 15:52:51,424 - strategies.ml_strategy - INFO - Strategy initialized with 2 symbols
+2025-08-23 15:52:51,469 - strategies.ml_strategy - INFO - 2023-08-25: Portfolio Value: $100,000, Return: +0.0%, Positions: 0
+2025-08-23 15:52:51,574 - strategies.ml_strategy - INFO - 2023-09-01: Portfolio Value: $100,000, Return: +0.0%, Positions: 0
+2025-08-23 15:52:51,670 - strategies.ml_strategy - INFO - 2023-09-11: Portfolio Value: $100,000, Return: +0.0%, Positions: 0
+2025-08-23 15:52:51,865 - strategies.ml_strategy - INFO - 2023-09-18: Portfolio Value: $100,000, Return: +0.0%, Positions: 0
+2025-08-23 15:52:51,898 - strategies.ml_strategy - INFO - 2023-09-20: BUY SIGNAL: AAPL, Strength: 0.700, Size: 86, ML Enhanced: False
+2025-08-23 15:52:51,899 - strategies.ml_strategy - INFO - 2023-09-21: BUY EXECUTED: AAPL, Price: 172.86, Size: 86, Cost: 14865.69
+2025-08-23 15:52:51,915 - strategies.ml_strategy - INFO - 2023-09-21: BUY SIGNAL: AAPL, Strength: 0.700, Size: 1, ML Enhanced: False
+2025-08-23 15:52:51,916 - strategies.ml_strategy - INFO - 2023-09-22: BUY EXECUTED: AAPL, Price: 172.98, Size: 1, Cost: 172.98
+2025-08-23 15:52:51,975 - strategies.ml_strategy - INFO - 2023-09-25: BUY SIGNAL: MSFT, Strength: 0.700, Size: 48, ML Enhanced: False
+2025-08-23 15:52:51,975 - strategies.ml_strategy - INFO - 2023-09-25: Portfolio Value: $100,124, Return: +0.1%, Positions: 1
+2025-08-23 15:52:51,976 - strategies.ml_strategy - INFO - 2023-09-26: BUY EXECUTED: MSFT, Price: 310.45, Size: 48, Cost: 14901.67
+2025-08-23 15:52:52,050 - strategies.ml_strategy - INFO - 2023-09-29: BUY SIGNAL: AAPL, Strength: 0.700, Size: 1, ML Enhanced: False
+2025-08-23 15:52:52,050 - strategies.ml_strategy - INFO - 2023-10-02: BUY EXECUTED: AAPL, Price: 169.56, Size: 1, Cost: 169.56
+2025-08-23 15:52:52,090 - strategies.ml_strategy - INFO - 2023-10-02: Portfolio Value: $100,234, Return: +0.2%, Positions: 2
+2025-08-23 15:52:52,205 - strategies.ml_strategy - INFO - 2023-10-09: Portfolio Value: $101,070, Return: +1.1%, Positions: 2
+2025-08-23 15:52:52,324 - strategies.ml_strategy - INFO - 2023-10-16: Portfolio Value: $101,180, Return: +1.2%, Positions: 2
+2025-08-23 15:52:52,431 - strategies.ml_strategy - INFO - 2023-10-23: Portfolio Value: $100,524, Return: +0.5%, Positions: 2
+2025-08-23 15:52:52,480 - strategies.ml_strategy - INFO - 2023-10-26: BUY SIGNAL: AAPL, Strength: 0.900, Size: 2, ML Enhanced: False
+2025-08-23 15:52:52,480 - strategies.ml_strategy - INFO - 2023-10-27: BUY EXECUTED: AAPL, Price: 165.29, Size: 2, Cost: 330.58
+2025-08-23 15:52:52,532 - strategies.ml_strategy - INFO - 2023-10-30: Portfolio Value: $100,672, Return: +0.7%, Positions: 2
+2025-08-23 15:52:52,630 - strategies.ml_strategy - INFO - 2023-11-06: Portfolio Value: $102,378, Return: +2.4%, Positions: 2
+2025-08-23 15:52:52,666 - strategies.ml_strategy - INFO - 2023-11-08: EXIT SIGNAL: MSFT, Strength: 0.000
+2025-08-23 15:52:52,667 - strategies.ml_strategy - INFO - 2023-11-09: SELL EXECUTED: MSFT, Price: 356.92, Size: -14, Value: 4346.32
+2025-08-23 15:52:52,706 - strategies.ml_strategy - INFO - 2023-11-10: EXIT SIGNAL: MSFT, Strength: 0.000
+2025-08-23 15:52:52,706 - strategies.ml_strategy - INFO - 2023-11-13: SELL EXECUTED: MSFT, Price: 362.75, Size: -10, Value: 3104.52
+2025-08-23 15:52:52,855 - strategies.ml_strategy - INFO - 2023-11-13: Trained ML models for 2 symbols
+2025-08-23 15:52:52,875 - strategies.ml_strategy - INFO - 2023-11-13: EXIT SIGNAL: MSFT, Strength: 0.000
+2025-08-23 15:52:52,875 - strategies.ml_strategy - INFO - 2023-11-13: Portfolio Value: $103,326, Return: +3.3%, Positions: 2
+2025-08-23 15:52:52,875 - strategies.ml_strategy - INFO - 2023-11-14: SELL EXECUTED: MSFT, Price: 365.50, Size: -7, Value: 2173.16
+2025-08-23 15:52:52,895 - strategies.ml_strategy - INFO - 2023-11-14: EXIT SIGNAL: MSFT, Strength: 0.000
+2025-08-23 15:52:52,896 - strategies.ml_strategy - INFO - 2023-11-15: SELL EXECUTED: MSFT, Price: 366.51, Size: -5, Value: 1552.26
+2025-08-23 15:52:52,915 - strategies.ml_strategy - INFO - 2023-11-15: EXIT SIGNAL: MSFT, Strength: 0.700
+2025-08-23 15:52:52,915 - strategies.ml_strategy - INFO - 2023-11-16: SELL EXECUTED: MSFT, Price: 366.19, Size: -6, Value: 1862.71
+2025-08-23 15:52:52,934 - strategies.ml_strategy - INFO - 2023-11-16: EXIT SIGNAL: MSFT, Strength: 0.700
+2025-08-23 15:52:52,935 - strategies.ml_strategy - INFO - 2023-11-17: SELL EXECUTED: MSFT, Price: 368.81, Size: -3, Value: 931.35
+2025-08-23 15:52:52,954 - strategies.ml_strategy - INFO - 2023-11-17: EXIT SIGNAL: MSFT, Strength: 0.700
+2025-08-23 15:52:52,955 - strategies.ml_strategy - INFO - 2023-11-20: SELL EXECUTED: MSFT, Price: 366.45, Size: -1, Value: 310.45
+2025-08-23 15:52:53,096 - strategies.ml_strategy - INFO - 2023-11-20: Trained ML models for 2 symbols
+2025-08-23 15:52:53,118 - strategies.ml_strategy - INFO - 2023-11-20: EXIT SIGNAL: AAPL, Strength: 1.000
+2025-08-23 15:52:53,119 - strategies.ml_strategy - INFO - 2023-11-20: EXIT SIGNAL: MSFT, Strength: 0.629
+2025-08-23 15:52:53,119 - strategies.ml_strategy - INFO - 2023-11-20: Portfolio Value: $104,053, Return: +4.1%, Positions: 2
+2025-08-23 15:52:53,119 - strategies.ml_strategy - INFO - 2023-11-21: SELL EXECUTED: AAPL, Price: 189.80, Size: -90, Value: 15538.81
+2025-08-23 15:52:53,119 - strategies.ml_strategy - INFO - 2023-11-21: SELL EXECUTED: MSFT, Price: 370.84, Size: -1, Value: 310.45
+2025-08-23 15:52:53,135 - strategies.ml_strategy - INFO - 2023-11-21: EXIT SIGNAL: MSFT, Strength: 0.000
+2025-08-23 15:52:53,135 - strategies.ml_strategy - INFO - 2023-11-22: SELL EXECUTED: MSFT, Price: 373.14, Size: -1, Value: 310.45
+2025-08-23 15:52:53,323 - strategies.ml_strategy - INFO - 2023-11-28: Trained ML models for 2 symbols
+2025-08-23 15:52:53,342 - strategies.ml_strategy - INFO - 2023-11-28: Portfolio Value: $104,039, Return: +4.0%, Positions: 0
+2025-08-23 15:52:53,570 - strategies.ml_strategy - INFO - 2023-12-05: Trained ML models for 2 symbols
+2025-08-23 15:52:53,591 - strategies.ml_strategy - INFO - 2023-12-05: Portfolio Value: $104,039, Return: +4.0%, Positions: 0
+2025-08-23 15:52:53,806 - strategies.ml_strategy - INFO - 2023-12-12: Trained ML models for 2 symbols
+2025-08-23 15:52:53,823 - strategies.ml_strategy - INFO - 2023-12-12: Portfolio Value: $104,039, Return: +4.0%, Positions: 0
+2025-08-23 15:52:54,042 - strategies.ml_strategy - INFO - 2023-12-19: Trained ML models for 2 symbols
+2025-08-23 15:52:54,063 - strategies.ml_strategy - INFO - 2023-12-19: Portfolio Value: $104,039, Return: +4.0%, Positions: 0
+2025-08-23 15:52:54,291 - strategies.ml_strategy - INFO - 2023-12-27: Trained ML models for 2 symbols
+2025-08-23 15:52:54,311 - strategies.ml_strategy - INFO - 2023-12-27: Portfolio Value: $104,039, Return: +4.0%, Positions: 0
+2025-08-23 15:52:54,349 - strategies.ml_strategy - INFO - 2023-12-29: Strategy Completed!
+2025-08-23 15:52:54,349 - strategies.ml_strategy - INFO - 2023-12-29: Starting Value: $100,000
+2025-08-23 15:52:54,349 - strategies.ml_strategy - INFO - 2023-12-29: Final Value: $104,039
+2025-08-23 15:52:54,349 - strategies.ml_strategy - INFO - 2023-12-29: Total Return: +4.04%
+2025-08-23 15:52:54,349 - strategies.ml_strategy - INFO - 2023-12-29: Total Trades: 0

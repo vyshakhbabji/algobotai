@@ -1,0 +1,1 @@
+2025-08-23 15:34:19,191 - __main__ - ERROR - Backtest failed: MLTradingStrategy.__init__() got an unexpected keyword argument 'max_net_exposure'
