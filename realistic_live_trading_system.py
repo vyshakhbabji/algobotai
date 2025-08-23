@@ -1661,25 +1661,28 @@ class RealisticLiveTradingSystem:
 
                 avg_r2 = 0.0
                 holdout_r2 = 0.0
+                strength_cv_scores = []
                 if len(clean_data) > 20:
                     holdout = min(self.config.get('validation_holdout_days', 10), len(clean_data) // 5)
                     data_for_cv = X_scaled[:-holdout] if holdout > 0 else X_scaled
                     target_for_cv = y_strength[:-holdout] if holdout > 0 else y_strength
                     tscv = TimeSeriesSplit(n_splits=5)
-                    cv_scores = []
+                    strength_cv_scores = []
                     for i, (train_idx, val_idx) in enumerate(tscv.split(data_for_cv)):
-                        model_cv = lgb.LGBMRegressor(n_estimators=50, max_depth=6, learning_rate=0.1,
-                                                    random_state=42, verbose=-1)
+                        model_cv = lgb.LGBMRegressor(
+                            n_estimators=50, max_depth=6, learning_rate=0.1,
+                            random_state=42, verbose=-1
+                        )
                         model_cv.fit(data_for_cv[train_idx], target_for_cv[train_idx])
                         preds = model_cv.predict(data_for_cv[val_idx])
                         score = r2_score(target_for_cv[val_idx], preds)
-                        cv_scores.append(score)
-                        self.logger.debug(f"   Split {i+1} strength R2: {score:.3f}")
-                    avg_r2 = float(np.mean(cv_scores)) if cv_scores else 0.0
+                        strength_cv_scores.append(score)
+                        self.logger.info(f"   Split {i+1} strength R2: {score:.3f}")
+                    avg_r2 = float(np.mean(strength_cv_scores)) if strength_cv_scores else 0.0
                     if holdout > 0:
                         strength_model.fit(data_for_cv, target_for_cv)
                         holdout_r2 = r2_score(y_strength[-holdout:], strength_model.predict(X_scaled[-holdout:]))
-                        self.logger.debug(f"   Holdout strength R2: {holdout_r2:.3f}")
+                        self.logger.info(f"   Holdout strength R2: {holdout_r2:.3f}")
                 strength_model.fit(X_scaled, y_strength)
                 self.daily_models[current_date][symbol]['strength'] = strength_model
                 models_trained += 1
@@ -1699,25 +1702,26 @@ class RealisticLiveTradingSystem:
 
                 avg_accuracy = 0.5
                 holdout_acc = 0.0
+                regime_cv_scores = []
                 if len(clean_data) > 20:
                     holdout = min(self.config.get('validation_holdout_days', 10), len(clean_data) // 5)
                     data_for_cv = X_scaled[:-holdout] if holdout > 0 else X_scaled
                     target_for_cv = y_regime[:-holdout] if holdout > 0 else y_regime
                     tscv = TimeSeriesSplit(n_splits=5)
-                    cv_scores = []
+                    regime_cv_scores = []
                     for i, (train_idx, val_idx) in enumerate(tscv.split(data_for_cv)):
                         model_cv = RandomForestClassifier(n_estimators=50, max_depth=6, random_state=42)
                         model_cv.fit(data_for_cv[train_idx], target_for_cv[train_idx])
                         preds = model_cv.predict(data_for_cv[val_idx])
                         score = accuracy_score(target_for_cv[val_idx], preds)
-                        cv_scores.append(score)
-                        self.logger.debug(f"   Split {i+1} regime accuracy: {score:.3f}")
-                    avg_accuracy = float(np.mean(cv_scores)) if cv_scores else 0.5
+                        regime_cv_scores.append(score)
+                        self.logger.info(f"   Split {i+1} regime accuracy: {score:.3f}")
+                    avg_accuracy = float(np.mean(regime_cv_scores)) if regime_cv_scores else 0.5
                     if holdout > 0:
                         regime_model.fit(data_for_cv, target_for_cv)
                         preds = regime_model.predict(X_scaled[-holdout:])
                         holdout_acc = accuracy_score(y_regime[-holdout:], preds)
-                        self.logger.debug(f"   Holdout regime accuracy: {holdout_acc:.3f}")
+                        self.logger.info(f"   Holdout regime accuracy: {holdout_acc:.3f}")
                 regime_model.fit(X_scaled, y_regime)
                 self.daily_models[current_date][symbol]['regime'] = regime_model
                 models_trained += 1
@@ -1733,6 +1737,8 @@ class RealisticLiveTradingSystem:
                 self.daily_model_performance[current_date][symbol] = {
                     'regime_accuracy': avg_accuracy,
                     'strength_r2': avg_r2,
+                    'regime_cv_scores': regime_cv_scores,
+                    'strength_cv_scores': strength_cv_scores,
                     'regime_holdout_accuracy': holdout_acc,
                     'strength_holdout_r2': holdout_r2,
                     'training_samples': len(clean_data),
@@ -1900,7 +1906,19 @@ class RealisticLiveTradingSystem:
                 'current_position': current_position,
                 'current_weight': position_weight
             }
-            
+
+            max_exposure = self.config.get('max_symbol_exposure', 1.0)
+            if position_weight > max_exposure and current_position > 0:
+                excess_value = current_value - portfolio_value * max_exposure
+                shares_to_trim = max(0, int(excess_value / price))
+                if shares_to_trim > 0:
+                    decision.update({
+                        'action': 'SELL_PARTIAL',
+                        'shares': shares_to_trim,
+                        'reason': f'Exposure cap {max_exposure:.0%} exceeded'
+                    })
+                return decision
+
             avg_win = self.config.get('avg_win', 0.08)
             avg_loss = self.config.get('avg_loss', 0.025)
             expected_ret = (strength * avg_win) - ((1 - strength) * avg_loss)
@@ -1949,10 +1967,14 @@ class RealisticLiveTradingSystem:
                         shares = int(min_value / price)
 
                     if shares > 0 and shares * price <= self.current_capital:
-                        expected_gain = expected_ret * price * shares
-                        est_price, est_commission = self._apply_transaction_costs(price, shares, is_buy=True, symbol=symbol)
-                        total_cost = (est_price - price) * shares + est_commission
-                        if expected_gain <= total_cost:
+                        while shares > 0:
+                            est_price, est_commission = self._apply_transaction_costs(price, shares, is_buy=True, symbol=symbol)
+                            total_cost = (est_price - price) * shares + est_commission
+                            expected_gain = expected_ret * price * shares
+                            if expected_gain > total_cost:
+                                break
+                            shares -= 1
+                        if shares <= 0:
                             decision['reason'] = f'Edge {expected_gain:.2f} <= cost {total_cost:.2f}'
                             return decision
                         decision.update({
@@ -1994,10 +2016,14 @@ class RealisticLiveTradingSystem:
                             and additional_shares > 0
                             and additional_shares * price <= self.current_capital
                         ):
-                            expected_gain = expected_ret * price * additional_shares
-                            est_price, est_commission = self._apply_transaction_costs(price, additional_shares, is_buy=True, symbol=symbol)
-                            total_cost = (est_price - price) * additional_shares + est_commission
-                            if expected_gain <= total_cost:
+                            while additional_shares > 0:
+                                est_price, est_commission = self._apply_transaction_costs(price, additional_shares, is_buy=True, symbol=symbol)
+                                total_cost = (est_price - price) * additional_shares + est_commission
+                                expected_gain = expected_ret * price * additional_shares
+                                if expected_gain > total_cost:
+                                    break
+                                additional_shares -= 1
+                            if additional_shares <= 0:
                                 decision['reason'] = f'Edge {expected_gain:.2f} <= cost {total_cost:.2f}'
                                 return decision
                             decision.update({
@@ -2507,7 +2533,8 @@ class RealisticLiveTradingSystem:
                     'total_trades': len(self.trades),
                     'total_capital': self.current_capital,
                     'final_positions': len(self.positions),
-                    'models_trained': len(self.model_evolution)
+                    'models_trained': len(self.model_evolution),
+                    'max_symbol_exposure': self.config.get('max_symbol_exposure')
                 },
                 'daily_performance': self.daily_performance,
                 'model_evolution': self.model_evolution
@@ -2549,15 +2576,18 @@ class RealisticLiveTradingSystem:
             # Performance metrics
             total_return = (final_value - self.initial_capital) / self.initial_capital
 
-            # Benchmark buy-and-hold return using average of symbols
+            # Benchmark buy-and-hold return per symbol and overall average
             first_prices = self.daily_prices.get(dates[0], {})
             last_prices = self.daily_prices.get(dates[-1], {})
-            bench_returns = []
+            symbol_benchmark_returns = {}
             for sym, start_price in first_prices.items():
                 end_price = last_prices.get(sym)
                 if end_price and start_price > 0:
-                    bench_returns.append((end_price - start_price) / start_price)
-            benchmark_return = float(np.mean(bench_returns)) if bench_returns else 0.0
+                    symbol_benchmark_returns[sym] = (end_price - start_price) / start_price
+            benchmark_return = (
+                float(np.mean(list(symbol_benchmark_returns.values())))
+                if symbol_benchmark_returns else 0.0
+            )
             excess_return = total_return - benchmark_return
             
             # Calculate period length
@@ -2658,6 +2688,7 @@ class RealisticLiveTradingSystem:
                 'benchmark_return_pct': benchmark_return * 100,
                 'excess_return': excess_return,
                 'excess_return_pct': excess_return * 100,
+                'symbol_benchmark_returns': symbol_benchmark_returns,
                 'volatility': volatility,
                 'volatility_pct': volatility * 100,
                 'sharpe_ratio': sharpe_ratio,
