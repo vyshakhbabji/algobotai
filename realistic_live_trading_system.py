@@ -62,52 +62,52 @@ class RealisticLiveTradingSystem:
         self.signal_strength_models = {}  # {date: {symbol: strength_model}}
         self.regime_models = {}  # {date: {symbol: regime_model}}
         
-        # Configuration - FOCUSED: 20 Elite Stocks with Quality Position Sizing
+        # Configuration - ULTRA-AGGRESSIVE: Maximum Profit Extraction System
         self.config = {
-            # FOCUSED TIERED POSITION SIZING - Better allocation with fewer stocks
-            'max_position_size': 0.10,  # 10% for regular signals (tighter exposure)
-            'max_position_size_exceptional': 0.20,  # 20% for exceptional signals
-            'max_position_size_ultra': 0.30,  # 30% for ultra signals (NO LEVERAGE)
-            'exceptional_signal_threshold': 0.75,  # 75% for exceptional
-            'ultra_signal_threshold': 0.88,  # 88% for ultra confidence
-            'min_position_size': 0.03,  # Min 3% per stock (focused allocation)
-            'stop_loss_mult': 1.8,      # 1.8x ATR stop loss
-            'take_profit_mult': 2.5,    # 2.5x ATR take profit (more aggressive)
-            'rebalance_threshold': 0.08, # 8% threshold for rebalancing
-            'signal_threshold': 0.45,    # Signal threshold
-            'max_positions': 8,          # Max 8 positions (40% of 20 stocks)
-            'partial_sell_threshold': 0.25,  # Sell 25% on weak signals
+            # 🚀 ULTRA-AGGRESSIVE POSITION SIZING - Exceptional Profit Mode
+            'max_position_size': 0.35,  # 35% for regular signals (3.5x increase!)
+            'max_position_size_exceptional': 0.45,  # 45% for exceptional signals (2.25x increase!)
+            'max_position_size_ultra': 0.60,  # 60% for ultra signals (2x increase!)
+            'exceptional_signal_threshold': 0.60,  # 60% for exceptional (lower barrier)
+            'ultra_signal_threshold': 0.75,  # 75% for ultra confidence (capture 0.923 signals!)
+            'min_position_size': 0.08,  # Min 8% per stock (concentrated allocation)
+            'stop_loss_mult': 1.0,      # 1.0x ATR stop loss (tighter, faster exits)
+            'take_profit_mult': 4.5,    # 4.5x ATR take profit (MUCH bigger wins!)
+            'rebalance_threshold': 0.05, # 5% threshold for rebalancing (more responsive)
+            'signal_threshold': 0.25,    # 25% signal threshold (catch way more signals!)
+            'max_positions': 15,         # Max 15 positions (almost 2x capacity!)
+            'partial_sell_threshold': 0.15,  # Sell 15% on weak signals (keep more winners)
             'ml_retrain_days': 1,       # Retrain every day (realistic)
             'min_training_days': 100,   # Need 100 days to train
-            'max_new_positions_per_day': 4,  # Focused entries
+            'max_new_positions_per_day': 8,  # 8 entries per day (2x opportunity capture!)
             'commission_bps': 5,        # 0.05% commission
             'slippage_bps': 2,          # 0.02% slippage
             'min_commission': 1.0,      # $1 minimum commission
-            'avg_win': 0.08,            # Assumed avg win for edge estimates
-            'avg_loss': 0.025,          # Assumed avg loss for edge estimates
+            'avg_win': 0.12,            # Increased avg win expectation (aggressive targets)
+            'avg_loss': 0.020,          # Reduced avg loss (tighter stops)
             'validation_holdout_days': 10,  # Days for out-of-sample holdout
 
-            # New exposure cap to prevent concentration risk
-            'max_symbol_exposure': 0.10,  # Hard cap per symbol (≤10%) for auditability
+            # 🎯 ULTRA-AGGRESSIVE EXPOSURE - Remove Conservative Caps
+            'max_symbol_exposure': 0.35,  # 35% max per symbol (3.5x increase - concentrated bets!)
             
-            # FOCUSED Capital Deployment - Better utilization with fewer stocks
-            'target_invested_floor': 0.75,    # Keep 25% cash minimum (focused)
-            'target_invested_ceiling': 0.95,  # Max 95% deployment (NO LEVERAGE)
-            'emergency_cash_reserve': 0.12,   # 12% emergency reserve (balanced)
-            'min_avg_strength_for_ceiling': 0.70,  # Moderate bar for full deployment
-            'min_individual_strength_for_extra': 0.75,  # Higher bar for extra allocation
-            'cash_reserve_floor': 0.08,       # Minimum 8% cash reserve
-            'max_utilization_topups_per_day': 4,  # Moderate top-ups
-            'min_extra_position_size': 0.03,   # Minimum size for extra allocations
+            # 💰 MAXIMUM CAPITAL DEPLOYMENT - Cash is Trash Mode
+            'target_invested_floor': 0.85,    # Keep only 15% cash minimum (aggressive deployment)
+            'target_invested_ceiling': 0.98,  # Max 98% deployment (almost fully invested!)
+            'emergency_cash_reserve': 0.05,   # Only 5% emergency reserve (free up 7% more capital!)
+            'min_avg_strength_for_ceiling': 0.55,  # Lower bar for full deployment (more aggressive)
+            'min_individual_strength_for_extra': 0.65,  # Lower bar for extra allocation
+            'cash_reserve_floor': 0.03,       # Minimum 3% cash reserve (ultra-tight)
+            'max_utilization_topups_per_day': 8,  # 8 top-ups per day (2x responsiveness!)
+            'min_extra_position_size': 0.05,   # Higher minimum for extra allocations
 
-            # Dynamic trailing stop to protect profits
-            'trailing_stop_mult': 1.2,  # Trail by 1.2x ATR from high watermark
+            # 🏃‍♂️ ULTRA-RESPONSIVE TRAILING STOPS
+            'trailing_stop_mult': 0.8,  # Trail by 0.8x ATR (tighter trailing for quick profits)
             
-            # Portfolio-Level Exposure Guards - FOCUSED
-            'max_net_exposure': 0.95,         # Max portfolio exposure (95% - NO LEVERAGE)
-            'drawdown_throttle_threshold': 0.08,  # Lower drawdown tolerance (8%)
-            'drawdown_throttle_sessions': 8,      # Moderate throttle sessions
-            'drawdown_throttle_ceiling': 0.75,    # Moderate ceiling during throttling
+            # 🚀 MAXIMUM PORTFOLIO EXPOSURE - Go Big or Go Home
+            'max_net_exposure': 0.98,         # Max portfolio exposure (98% - nearly no cash!)
+            'drawdown_throttle_threshold': 0.12,  # Higher drawdown tolerance (12% - more risk for more reward)
+            'drawdown_throttle_sessions': 5,      # Shorter throttle sessions (faster recovery)
+            'drawdown_throttle_ceiling': 0.85,    # Higher ceiling during throttling (stay aggressive)
             
             # Enhancement Tracking and Persistence (Enhancement #9)
             'enable_enhancement_logging': True,   # Track all enhancements

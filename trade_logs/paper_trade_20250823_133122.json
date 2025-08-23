@@ -1,0 +1,22 @@
+{
+  "timestamp": "20250823_133122",
+  "trade_date": "2025-08-22",
+  "executed": false,
+  "sells": [],
+  "buys": [
+    {
+      "symbol": "UBER",
+      "qty": 117.0,
+      "side": "buy"
+    }
+  ],
+  "meta": {
+    "account_base": 45000.0,
+    "universe_size": 15,
+    "max_buys": 3,
+    "max_sells": 99,
+    "buy_only": false,
+    "sell_only": false,
+    "market_hours_only": false
+  }
+}
