@@ -236,7 +236,24 @@ class RealisticLiveTradingSystem:
         except Exception as e:
             self.logger.debug(f"Enhanced slippage calculation error: {e}")
             return base_slippage  # Fallback to base slippage
-    
+
+
+    def _calculate_atr(self, symbol_data: pd.DataFrame, window: int = 14) -> Optional[float]:
+        """Compute the Average True Range for risk management"""
+        try:
+            high = symbol_data['High']
+            low = symbol_data['Low']
+            close = symbol_data['Close']
+            prev_close = close.shift(1)
+            tr = pd.concat([high - low, (high - prev_close).abs(), (low - prev_close).abs()], axis=1).max(axis=1)
+            atr = tr.rolling(window).mean().iloc[-1]
+            if pd.isna(atr) or atr <= 0:
+                return None
+            return atr
+        except Exception as e:
+            self.logger.debug(f"ATR calculation error: {e}")
+            return None
+
 
     def _apply_risk_rules(self, current_date: pd.Timestamp, prices_today: Dict[str, float], all_history: Dict) -> int:
         """Apply ATR-based stop loss, take profit, and trailing stops - queue as pending orders"""
@@ -258,15 +275,8 @@ class RealisticLiveTradingSystem:
             if current_date not in symbol_data.index:
                 continue
             data_up_to_today = symbol_data.loc[:current_date]
-            if len(data_up_to_today) < 15:
-                continue
-            high = data_up_to_today['High']
-            low = data_up_to_today['Low']
-            close = data_up_to_today['Close']
-            prev_close = close.shift(1)
-            tr = pd.concat([high - low, (high - prev_close).abs(), (low - prev_close).abs()], axis=1).max(axis=1)
-            atr = tr.rolling(window=14).mean().iloc[-1]
-            if pd.isna(atr) or atr <= 0:
+            atr = self._calculate_atr(data_up_to_today)
+            if atr is None:
                 continue
 
             stop_loss_price = avg_entry - atr * self.config['stop_loss_mult']
@@ -275,61 +285,66 @@ class RealisticLiveTradingSystem:
 
             pnl_pct = (current_price - avg_entry) / avg_entry
 
-            if current_price <= stop_loss_price:
-                stop_decision = {
-                    'action': 'STOP_LOSS',
-                    'shares': shares,
-                    'reason': f'Stop loss: {pnl_pct:.1%} (exit @ ${stop_loss_price:.2f})',
-                    'stop_price': stop_loss_price,
-                    'order_type': 'STOP_LOSS',
-                    'atr': atr
-                }
-                risk_signal = {
-                    'strength': 0.0,
-                    'price': current_price,
-                    'base_strength': 0.0,
-                    'ml_multiplier': 1.0,
-                    'regime_boost': 1.0,
-                    'total_enhancement': 1.0,
-                    'ml_enhanced': False,
-                    'risk_exit': True,
-                    'exit_price': stop_loss_price,
-                    'atr': atr
-                }
-                if self._queue_pending_order(symbol, stop_decision, risk_signal, current_date):
-                    risk_orders_queued += 1
-                    self.enhancement_metrics['risk_orders_queued'] += 1
-                    self.logger.info(
-                        f"   🛡️ Stop loss queued: {symbol} @ ${stop_loss_price:.2f} (P&L: {pnl_pct:.1%})")
+            # Remove existing risk orders for this symbol
+            self.pending_orders = [
+                o for o in self.pending_orders
+                if not (o['symbol'] == symbol and o.get('order_type') in ['STOP_LOSS', 'TAKE_PROFIT', 'TRAILING_STOP'])
+            ]
 
-            if current_price >= take_profit_price:
-                tp_decision = {
-                    'action': 'TAKE_PROFIT',
-                    'shares': shares,
-                    'reason': f'Take profit: {pnl_pct:.1%} (exit @ ${take_profit_price:.2f})',
-                    'take_profit_price': take_profit_price,
-                    'order_type': 'TAKE_PROFIT',
-                    'atr': atr
-                }
-                risk_signal = {
-                    'strength': 0.0,
-                    'price': current_price,
-                    'base_strength': 0.0,
-                    'ml_multiplier': 1.0,
-                    'regime_boost': 1.0,
-                    'total_enhancement': 1.0,
-                    'ml_enhanced': False,
-                    'risk_exit': True,
-                    'exit_price': take_profit_price,
-                    'atr': atr
-                }
-                if self._queue_pending_order(symbol, tp_decision, risk_signal, current_date):
-                    risk_orders_queued += 1
-                    self.enhancement_metrics['risk_orders_queued'] += 1
-                    self.logger.info(
-                        f"   🎯 Take profit queued: {symbol} @ ${take_profit_price:.2f} (P&L: {pnl_pct:.1%})")
+            # Queue stop loss
+            stop_decision = {
+                'action': 'STOP_LOSS',
+                'shares': shares,
+                'reason': f'Stop loss: {pnl_pct:.1%} (exit @ ${stop_loss_price:.2f})',
+                'stop_price': stop_loss_price,
+                'order_type': 'STOP_LOSS',
+                'atr': atr
+            }
+            risk_signal = {
+                'strength': 0.0,
+                'price': current_price,
+                'base_strength': 0.0,
+                'ml_multiplier': 1.0,
+                'regime_boost': 1.0,
+                'total_enhancement': 1.0,
+                'ml_enhanced': False,
+                'risk_exit': True,
+                'exit_price': stop_loss_price,
+                'atr': atr
+            }
+            if self._queue_pending_order(symbol, stop_decision, risk_signal, current_date):
+                risk_orders_queued += 1
+                self.enhancement_metrics['risk_orders_queued'] += 1
+                self.logger.info(f"   🛡️ Stop loss set: {symbol} @ ${stop_loss_price:.2f} (P&L: {pnl_pct:.1%})")
 
-            if current_price > avg_entry and trailing_stop_price > avg_entry and current_price <= trailing_stop_price:
+            # Queue take profit
+            tp_decision = {
+                'action': 'TAKE_PROFIT',
+                'shares': shares,
+                'reason': f'Take profit: {pnl_pct:.1%} (exit @ ${take_profit_price:.2f})',
+                'take_profit_price': take_profit_price,
+                'order_type': 'TAKE_PROFIT',
+                'atr': atr
+            }
+            risk_signal = {
+                'strength': 0.0,
+                'price': current_price,
+                'base_strength': 0.0,
+                'ml_multiplier': 1.0,
+                'regime_boost': 1.0,
+                'total_enhancement': 1.0,
+                'ml_enhanced': False,
+                'risk_exit': True,
+                'exit_price': take_profit_price,
+                'atr': atr
+            }
+            if self._queue_pending_order(symbol, tp_decision, risk_signal, current_date):
+                risk_orders_queued += 1
+                self.enhancement_metrics['risk_orders_queued'] += 1
+                self.logger.info(f"   🎯 Take profit set: {symbol} @ ${take_profit_price:.2f} (P&L: {pnl_pct:.1%})")
+
+            # Queue trailing stop if in profit
+            if high_water > avg_entry and trailing_stop_price > avg_entry:
                 ts_decision = {
                     'action': 'TRAILING_STOP',
                     'shares': shares,
@@ -353,8 +368,7 @@ class RealisticLiveTradingSystem:
                 if self._queue_pending_order(symbol, ts_decision, risk_signal, current_date):
                     risk_orders_queued += 1
                     self.enhancement_metrics['risk_orders_queued'] += 1
-                    self.logger.info(
-                        f"   🏁 Trailing stop queued: {symbol} @ ${trailing_stop_price:.2f} (P&L: {pnl_pct:.1%})")
+                    self.logger.info(f"   🏁 Trailing stop set: {symbol} @ ${trailing_stop_price:.2f} (P&L: {pnl_pct:.1%})")
 
         return risk_orders_queued
     
@@ -2241,6 +2255,63 @@ class RealisticLiveTradingSystem:
                                 if enhanced_signal.get('ml_enhanced', False):
                                     daily_ml_enhancements += 1
                                 self.logger.info(f"   📝 Queued: {decision['action']} {decision['shares']} {symbol} @ ${enhanced_signal['price']:.2f} (close) → execute tomorrow @ open")
+
+                                # Pre-place risk management orders for new positions
+                                if decision['action'] in ['BUY', 'BUY_MORE']:
+                                    atr = self._calculate_atr(symbol_data)
+                                    if atr is not None:
+                                        price_ref = enhanced_signal['price']
+                                        stop_price = price_ref - atr * self.config['stop_loss_mult']
+                                        tp_price = price_ref + atr * self.config['take_profit_mult']
+                                        trail_price = price_ref - atr * self.config['trailing_stop_mult']
+
+                                        risk_signal = {
+                                            'strength': 0.0,
+                                            'price': price_ref,
+                                            'base_strength': 0.0,
+                                            'ml_multiplier': 1.0,
+                                            'regime_boost': 1.0,
+                                            'total_enhancement': 1.0,
+                                            'ml_enhanced': False,
+                                            'risk_exit': True,
+                                            'atr': atr
+                                        }
+
+                                        stop_decision = {
+                                            'action': 'STOP_LOSS',
+                                            'shares': decision['shares'],
+                                            'reason': f'Initial stop loss @ ${stop_price:.2f}',
+                                            'stop_price': stop_price,
+                                            'order_type': 'STOP_LOSS',
+                                            'atr': atr
+                                        }
+                                        rs = risk_signal.copy()
+                                        rs['exit_price'] = stop_price
+                                        self._queue_pending_order(symbol, stop_decision, rs, current_date)
+
+                                        tp_decision = {
+                                            'action': 'TAKE_PROFIT',
+                                            'shares': decision['shares'],
+                                            'reason': f'Initial take profit @ ${tp_price:.2f}',
+                                            'take_profit_price': tp_price,
+                                            'order_type': 'TAKE_PROFIT',
+                                            'atr': atr
+                                        }
+                                        rs_tp = risk_signal.copy()
+                                        rs_tp['exit_price'] = tp_price
+                                        self._queue_pending_order(symbol, tp_decision, rs_tp, current_date)
+
+                                        ts_decision = {
+                                            'action': 'TRAILING_STOP',
+                                            'shares': decision['shares'],
+                                            'reason': f'Initial trailing stop @ ${trail_price:.2f}',
+                                            'stop_price': trail_price,
+                                            'order_type': 'TRAILING_STOP',
+                                            'atr': atr
+                                        }
+                                        rs_ts = risk_signal.copy()
+                                        rs_ts['exit_price'] = trail_price
+                                        self._queue_pending_order(symbol, ts_decision, rs_ts, current_date)
                             
                         except Exception as e:
                             self.logger.error(f"Error processing {symbol} on {current_date.date()}: {e}")
