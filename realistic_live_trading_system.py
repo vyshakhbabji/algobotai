@@ -29,7 +29,7 @@ from algobot.sizing.position_sizer import kelly_size
 np.random.seed(42)
 
 # ML imports
-from sklearn.model_selection import TimeSeriesSplit, cross_val_score
+from sklearn.model_selection import TimeSeriesSplit
 from sklearn.preprocessing import RobustScaler
 from sklearn.ensemble import RandomForestRegressor, RandomForestClassifier
 from sklearn.metrics import r2_score, accuracy_score
@@ -65,9 +65,9 @@ class RealisticLiveTradingSystem:
         # Configuration - FOCUSED: 20 Elite Stocks with Quality Position Sizing
         self.config = {
             # FOCUSED TIERED POSITION SIZING - Better allocation with fewer stocks
-            'max_position_size': 0.20,  # 20% for regular signals (focused approach)
-            'max_position_size_exceptional': 0.30,  # 30% for exceptional signals
-            'max_position_size_ultra': 0.40,  # 40% for ultra signals (NO LEVERAGE)
+            'max_position_size': 0.10,  # 10% for regular signals (tighter exposure)
+            'max_position_size_exceptional': 0.20,  # 20% for exceptional signals
+            'max_position_size_ultra': 0.30,  # 30% for ultra signals (NO LEVERAGE)
             'exceptional_signal_threshold': 0.75,  # 75% for exceptional
             'ultra_signal_threshold': 0.88,  # 88% for ultra confidence
             'min_position_size': 0.03,  # Min 3% per stock (focused allocation)
@@ -83,6 +83,12 @@ class RealisticLiveTradingSystem:
             'commission_bps': 5,        # 0.05% commission
             'slippage_bps': 2,          # 0.02% slippage
             'min_commission': 1.0,      # $1 minimum commission
+            'avg_win': 0.08,            # Assumed avg win for edge estimates
+            'avg_loss': 0.025,          # Assumed avg loss for edge estimates
+            'validation_holdout_days': 10,  # Days for out-of-sample holdout
+
+            # New exposure cap to prevent concentration risk
+            'max_symbol_exposure': 0.10,  # Hard cap per symbol (≤10%) for auditability
             
             # FOCUSED Capital Deployment - Better utilization with fewer stocks
             'target_invested_floor': 0.75,    # Keep 25% cash minimum (focused)
@@ -846,8 +852,9 @@ class RealisticLiveTradingSystem:
             
             # MUCH more conservative rebalancing
             rebalance_threshold = 0.15  # 15% threshold instead of 5%
-            max_trim_threshold = 0.25   # Only trim if >25% overweight 
-            target_weight = self.config['max_position_size']  # 20% target
+            max_trim_threshold = 0.25   # Only trim if >25% overweight
+            target_weight = min(self.config['max_position_size'],
+                                 self.config.get('max_symbol_exposure', 1.0))  # Use tighter per-symbol cap
             
             self.logger.debug(f"   ⚖️ Conservative rebalancing (threshold: {rebalance_threshold:.1%})")
             
@@ -905,7 +912,8 @@ class RealisticLiveTradingSystem:
                             confidence=0.5,
                             equity=self._trading_capital_for_sizing(),
                             price=prices_today[symbol],
-                            cap_fraction=self.config['max_position_size']
+                            cap_fraction=min(self.config['max_position_size'],
+                                              self.config.get('max_symbol_exposure', 1.0))
                         )
                         topup_shares = min(topup_shares, int(available_cash / prices_today[symbol]))
 
@@ -1130,6 +1138,7 @@ class RealisticLiveTradingSystem:
                     max_allowed = self.config['max_position_size_exceptional']
                 else:
                     max_allowed = self.config['max_position_size']
+                max_allowed = min(max_allowed, self.config.get('max_symbol_exposure', 1.0))
 
                 if candidate['has_position']:
                     # Top-up existing position
@@ -1160,7 +1169,7 @@ class RealisticLiveTradingSystem:
                     confidence=strength,
                     equity=self._trading_capital_for_sizing(),
                     price=price,
-                    cap_fraction=self.config['max_position_size']
+                    cap_fraction=max_allowed
                 )
                 additional_shares = min(additional_shares, int(max_additional_value / price))
 
@@ -1221,6 +1230,7 @@ class RealisticLiveTradingSystem:
                     max_allowed = self.config['max_position_size_exceptional']
                 else:
                     max_allowed = self.config['max_position_size']
+                max_allowed = min(max_allowed, self.config.get('max_symbol_exposure', 1.0))
                 
                 if new_weight > max_allowed:
                     # DEBUG: Track rejection details
@@ -1648,16 +1658,28 @@ class RealisticLiveTradingSystem:
                     random_state=42,
                     verbose=-1
                 )
-                
-                # Quick validation
+
+                avg_r2 = 0.0
+                holdout_r2 = 0.0
                 if len(clean_data) > 20:
-                    tscv = TimeSeriesSplit(n_splits=2)
-                    cv_scores = cross_val_score(strength_model, X_scaled, y_strength, cv=tscv, scoring='r2')
-                    avg_r2 = cv_scores.mean()
-                else:
-                    avg_r2 = 0.0
-                
-                # Train on all available data
+                    holdout = min(self.config.get('validation_holdout_days', 10), len(clean_data) // 5)
+                    data_for_cv = X_scaled[:-holdout] if holdout > 0 else X_scaled
+                    target_for_cv = y_strength[:-holdout] if holdout > 0 else y_strength
+                    tscv = TimeSeriesSplit(n_splits=5)
+                    cv_scores = []
+                    for i, (train_idx, val_idx) in enumerate(tscv.split(data_for_cv)):
+                        model_cv = lgb.LGBMRegressor(n_estimators=50, max_depth=6, learning_rate=0.1,
+                                                    random_state=42, verbose=-1)
+                        model_cv.fit(data_for_cv[train_idx], target_for_cv[train_idx])
+                        preds = model_cv.predict(data_for_cv[val_idx])
+                        score = r2_score(target_for_cv[val_idx], preds)
+                        cv_scores.append(score)
+                        self.logger.debug(f"   Split {i+1} strength R2: {score:.3f}")
+                    avg_r2 = float(np.mean(cv_scores)) if cv_scores else 0.0
+                    if holdout > 0:
+                        strength_model.fit(data_for_cv, target_for_cv)
+                        holdout_r2 = r2_score(y_strength[-holdout:], strength_model.predict(X_scaled[-holdout:]))
+                        self.logger.debug(f"   Holdout strength R2: {holdout_r2:.3f}")
                 strength_model.fit(X_scaled, y_strength)
                 self.daily_models[current_date][symbol]['strength'] = strength_model
                 models_trained += 1
@@ -1674,16 +1696,28 @@ class RealisticLiveTradingSystem:
                     max_depth=6,
                     random_state=42
                 )
-                
-                # Quick validation
+
+                avg_accuracy = 0.5
+                holdout_acc = 0.0
                 if len(clean_data) > 20:
-                    tscv = TimeSeriesSplit(n_splits=2)
-                    cv_scores = cross_val_score(regime_model, X_scaled, y_regime, cv=tscv, scoring='accuracy')
-                    avg_accuracy = cv_scores.mean()
-                else:
-                    avg_accuracy = 0.5
-                
-                # Train on all available data
+                    holdout = min(self.config.get('validation_holdout_days', 10), len(clean_data) // 5)
+                    data_for_cv = X_scaled[:-holdout] if holdout > 0 else X_scaled
+                    target_for_cv = y_regime[:-holdout] if holdout > 0 else y_regime
+                    tscv = TimeSeriesSplit(n_splits=5)
+                    cv_scores = []
+                    for i, (train_idx, val_idx) in enumerate(tscv.split(data_for_cv)):
+                        model_cv = RandomForestClassifier(n_estimators=50, max_depth=6, random_state=42)
+                        model_cv.fit(data_for_cv[train_idx], target_for_cv[train_idx])
+                        preds = model_cv.predict(data_for_cv[val_idx])
+                        score = accuracy_score(target_for_cv[val_idx], preds)
+                        cv_scores.append(score)
+                        self.logger.debug(f"   Split {i+1} regime accuracy: {score:.3f}")
+                    avg_accuracy = float(np.mean(cv_scores)) if cv_scores else 0.5
+                    if holdout > 0:
+                        regime_model.fit(data_for_cv, target_for_cv)
+                        preds = regime_model.predict(X_scaled[-holdout:])
+                        holdout_acc = accuracy_score(y_regime[-holdout:], preds)
+                        self.logger.debug(f"   Holdout regime accuracy: {holdout_acc:.3f}")
                 regime_model.fit(X_scaled, y_regime)
                 self.daily_models[current_date][symbol]['regime'] = regime_model
                 models_trained += 1
@@ -1698,7 +1732,9 @@ class RealisticLiveTradingSystem:
                 
                 self.daily_model_performance[current_date][symbol] = {
                     'regime_accuracy': avg_accuracy,
-                    'strength_r2': avg_r2 if 'avg_r2' in locals() else 0.0,
+                    'strength_r2': avg_r2,
+                    'regime_holdout_accuracy': holdout_acc,
+                    'strength_holdout_r2': holdout_r2,
                     'training_samples': len(clean_data),
                     'models_trained': models_trained
                 }
@@ -1706,7 +1742,9 @@ class RealisticLiveTradingSystem:
                 self.model_evolution[symbol].append({
                     'date': current_date,
                     'regime_accuracy': avg_accuracy,
-                    'strength_r2': avg_r2 if 'avg_r2' in locals() else 0.0,
+                    'strength_r2': avg_r2,
+                    'regime_holdout_accuracy': holdout_acc,
+                    'strength_holdout_r2': holdout_r2,
                     'training_samples': len(clean_data),
                     'models_trained': models_trained
                 })
@@ -1863,6 +1901,10 @@ class RealisticLiveTradingSystem:
                 'current_weight': position_weight
             }
             
+            avg_win = self.config.get('avg_win', 0.08)
+            avg_loss = self.config.get('avg_loss', 0.025)
+            expected_ret = (strength * avg_win) - ((1 - strength) * avg_loss)
+
             if action == 'BUY' and strength >= self.config['signal_threshold']:
                 # Check max positions limit
                 if current_position == 0 and len(self.positions) >= self.config['max_positions']:
@@ -1888,6 +1930,7 @@ class RealisticLiveTradingSystem:
                         self.logger.info(f"   🚀 Exceptional signal ({strength:.3f}) - using enhanced position limit {max_allowed:.1%}")
                     else:
                         max_allowed = self.config['max_position_size']
+                    max_allowed = min(max_allowed, self.config.get('max_symbol_exposure', 1.0))
                     
                     shares = kelly_size(
                         confidence=strength,
@@ -1906,19 +1949,26 @@ class RealisticLiveTradingSystem:
                         shares = int(min_value / price)
 
                     if shares > 0 and shares * price <= self.current_capital:
+                        expected_gain = expected_ret * price * shares
+                        est_price, est_commission = self._apply_transaction_costs(price, shares, is_buy=True, symbol=symbol)
+                        total_cost = (est_price - price) * shares + est_commission
+                        if expected_gain <= total_cost:
+                            decision['reason'] = f'Edge {expected_gain:.2f} <= cost {total_cost:.2f}'
+                            return decision
                         decision.update({
                             'action': 'BUY',
                             'shares': shares,
                             'reason': f'New position (strength: {strength:.3f})'
                         })
                 
-                elif position_weight < self.config['max_position_size']:
+                elif position_weight < min(self.config['max_position_size'], self.config.get('max_symbol_exposure', 1.0)):
                     # Add to existing position - MAXIMUM AGGRESSION ADD-ON LOGIC
                     if strength > 0.35:  # Very low threshold for adding (was 0.55 - DEPLOY CAPITAL!)
                         if strength >= self.config['exceptional_signal_threshold']:
                             max_allowed = self.config['max_position_size_exceptional']
                         else:
                             max_allowed = self.config['max_position_size']
+                        max_allowed = min(max_allowed, self.config.get('max_symbol_exposure', 1.0))
                         
                         additional_shares = kelly_size(
                             confidence=strength,
@@ -1944,6 +1994,12 @@ class RealisticLiveTradingSystem:
                             and additional_shares > 0
                             and additional_shares * price <= self.current_capital
                         ):
+                            expected_gain = expected_ret * price * additional_shares
+                            est_price, est_commission = self._apply_transaction_costs(price, additional_shares, is_buy=True, symbol=symbol)
+                            total_cost = (est_price - price) * additional_shares + est_commission
+                            if expected_gain <= total_cost:
+                                decision['reason'] = f'Edge {expected_gain:.2f} <= cost {total_cost:.2f}'
+                                return decision
                             decision.update({
                                 'action': 'BUY_MORE',
                                 'shares': additional_shares,
@@ -2483,15 +2539,26 @@ class RealisticLiveTradingSystem:
             
             # Final portfolio value
             final_value = daily_values[-1]
-            
+
             # Calculate daily returns
             daily_returns = np.array([
                 (daily_values[i] - daily_values[i-1]) / daily_values[i-1]
                 for i in range(1, len(daily_values))
             ])
-            
+
             # Performance metrics
             total_return = (final_value - self.initial_capital) / self.initial_capital
+
+            # Benchmark buy-and-hold return using average of symbols
+            first_prices = self.daily_prices.get(dates[0], {})
+            last_prices = self.daily_prices.get(dates[-1], {})
+            bench_returns = []
+            for sym, start_price in first_prices.items():
+                end_price = last_prices.get(sym)
+                if end_price and start_price > 0:
+                    bench_returns.append((end_price - start_price) / start_price)
+            benchmark_return = float(np.mean(bench_returns)) if bench_returns else 0.0
+            excess_return = total_return - benchmark_return
             
             # Calculate period length
             start_date = dates[0]
@@ -2587,6 +2654,10 @@ class RealisticLiveTradingSystem:
                 'total_return_pct': total_return * 100,
                 'annual_return': annual_return,
                 'annual_return_pct': annual_return * 100,
+                'benchmark_return': benchmark_return,
+                'benchmark_return_pct': benchmark_return * 100,
+                'excess_return': excess_return,
+                'excess_return_pct': excess_return * 100,
                 'volatility': volatility,
                 'volatility_pct': volatility * 100,
                 'sharpe_ratio': sharpe_ratio,
