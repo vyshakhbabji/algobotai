@@ -1482,8 +1482,8 @@ class RealisticLiveTradingSystem:
         """Fetch data up to specific date (no look-ahead bias)"""
         try:
             ticker = yf.Ticker(symbol)
-            # Get data from 2 years before trading period starts
-            start_date = "2023-05-21"  # 2 years of training data
+            # Get data from 2 years before trading period starts (Aug 23, 2022 for training)
+            start_date = "2022-08-23"  # 2 years of training data before 1-year trading period
             end_date = current_date.strftime('%Y-%m-%d')
             
             data = ticker.history(start=start_date, end=end_date)
@@ -2162,11 +2162,11 @@ class RealisticLiveTradingSystem:
             self.logger.error(f"Error executing decision for {symbol} on {current_date.date()}: {e}")
             return False
     
-    def run_realistic_live_trading(self, start_date: str = "2025-05-22", end_date: str = "2025-08-22") -> Dict[str, Any]:
-        """Run realistic live trading simulation: 3 months trading (back from today) with 2 years of data"""
+    def run_realistic_live_trading(self, start_date: str = "2024-08-23", end_date: str = "2025-08-22") -> Dict[str, Any]:
+        """Run realistic live trading simulation: 1 FULL YEAR of trading with 2 years of training data"""
         try:
             self.logger.info(f"🚀 Starting Realistic Live Trading: {start_date} to {end_date}")
-            self.logger.info("📊 Configuration: 3 months back from today, 2+ years data, 100 stocks, profit pot separation")
+            self.logger.info("📊 Configuration: 1 FULL YEAR backtest, 2 years training data, 20 elite stocks, ultra-aggressive")
             self.start_date = pd.to_datetime(start_date)
             self.end_date = pd.to_datetime(end_date)
             
@@ -2847,26 +2847,28 @@ def main():
     print("� Configuration: Ultra-aggressive Kelly sizing")
     print("📅 Data Period: 2 years (Aug 2022 - Aug 2024)")
     print("💼 Trading Period: 3 MONTH TEST (May 2025 - Aug 2025)")
-    print("🚀 Starting ANTI-OVER-TRADING test (3 months)...")
-    print("• FIXED: Weekly rebalancing only (Fridays)")
-    print("• FIXED: 3-day minimum holding period")
-    print("• FIXED: Less aggressive take profits (2.5x ATR)")
-    print("• FIXED: Capital optimization only Mon/Thu")
-    print("• FIXED: 25% threshold for position trimming")
+    print("🚀 Starting ULTRA-AGGRESSIVE 1-YEAR BACKTEST...")
+    print("• ULTRA-AGGRESSIVE: 35-60% position sizes")
+    print("• ULTRA-AGGRESSIVE: 25% signal threshold")
+    print("• ULTRA-AGGRESSIVE: 98% capital deployment")
+    print("• ULTRA-AGGRESSIVE: 15 max positions")
+    print("• ULTRA-AGGRESSIVE: 4.5x take profits")
+    print("• Training: Aug 23, 2022 → Aug 22, 2024 (2 years)")
+    print("• Trading: Aug 23, 2024 → Aug 22, 2025 (1 year)")
     print("• NO look-ahead bias - only past data used")
-    print("• Real-time portfolio rebalancing")
+    print("• Real-time daily ML retraining")
     
-    # Run the full 3-month test to validate anti-over-trading fixes
+    # Run the full 1-year backtest with ultra-aggressive parameters
     result = system.run_realistic_live_trading(
-        start_date="2025-05-22",  # 3 month test to validate fixes
-        end_date="2025-08-22"     # Today - testing our improvements
+        start_date="2024-08-23",  # 1 year ago from today
+        end_date="2025-08-22"     # Yesterday - complete 1-year period
     )
     
     # Add debug summary
     system._print_debug_summary()
     
     if "error" not in result:
-        print(f"\n🏆 ANTI-OVER-TRADING 3-MONTH RESULTS:")
+        print(f"\n🏆 ULTRA-AGGRESSIVE 1-YEAR BACKTEST RESULTS:")
         print("=" * 50)
         print(f"   Period:                 {result['period']}")
         print(f"   Trading Universe:       20 elite stocks")
