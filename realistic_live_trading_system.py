@@ -86,9 +86,10 @@ class RealisticLiveTradingSystem:
             'avg_win': 0.12,            # Increased avg win expectation (aggressive targets)
             'avg_loss': 0.020,          # Reduced avg loss (tighter stops)
             'validation_holdout_days': 10,  # Days for out-of-sample holdout
+            'cv_splits': 6,            # Walk-forward CV splits for per-stock models
 
-            # 🎯 ULTRA-AGGRESSIVE EXPOSURE - Remove Conservative Caps
-            'max_symbol_exposure': 0.35,  # 35% max per symbol (3.5x increase - concentrated bets!)
+            # 🎯 EXPOSURE CONTROL - Hard per-symbol cap for risk management
+            'max_symbol_exposure': 0.10,  # 10% max per symbol to limit concentration
             
             # 💰 MAXIMUM CAPITAL DEPLOYMENT - Cash is Trash Mode
             'target_invested_floor': 0.85,    # Keep only 15% cash minimum (aggressive deployment)
@@ -1558,6 +1559,31 @@ class RealisticLiveTradingSystem:
             df['trend_5d'] = np.where(df['Close'] > df['Close'].shift(5), 1, -1)
             df['trend_10d'] = np.where(df['Close'] > df['Close'].shift(10), 1, -1)
             df['trend_consistency'] = (df['trend_5d'] + df['trend_10d']) / 2
+
+            # --- Additional richer features ---
+            # Average True Range for volatility-adjusted measures
+            high_low = df['High'] - df['Low']
+            high_close = (df['High'] - df['Close'].shift()).abs()
+            low_close = (df['Low'] - df['Close'].shift()).abs()
+            tr = pd.concat([high_low, high_close, low_close], axis=1).max(axis=1)
+            df['atr_14'] = tr.rolling(14).mean()
+
+            # Multi-timeframe momentum (14-day and 30-day)
+            df['momentum_14'] = df['Close'].pct_change(14)
+            df['momentum_30'] = df['Close'].pct_change(30)
+
+            # Normalize key indicator outputs with rolling z-score
+            indicator_cols = [
+                'price_vs_ma5', 'price_vs_ma20', 'price_vs_ma50',
+                'rsi_normalized', 'volatility_10d', 'volatility_20d',
+                'volume_ratio', 'bb_position', 'macd_histogram',
+                'trend_consistency', 'atr_14', 'momentum_14', 'momentum_30'
+            ]
+            for col in indicator_cols:
+                roll_mean = df[col].rolling(20).mean()
+                roll_std = df[col].rolling(20).std().replace(0, np.nan)
+                df[col] = ((df[col] - roll_mean) / roll_std).shift(1)
+                df[col] = df[col].fillna(0)
             
             return df
             
@@ -1666,7 +1692,7 @@ class RealisticLiveTradingSystem:
                     holdout = min(self.config.get('validation_holdout_days', 10), len(clean_data) // 5)
                     data_for_cv = X_scaled[:-holdout] if holdout > 0 else X_scaled
                     target_for_cv = y_strength[:-holdout] if holdout > 0 else y_strength
-                    tscv = TimeSeriesSplit(n_splits=5)
+                    tscv = TimeSeriesSplit(n_splits=self.config.get('cv_splits', 5))
                     strength_cv_scores = []
                     for i, (train_idx, val_idx) in enumerate(tscv.split(data_for_cv)):
                         model_cv = lgb.LGBMRegressor(
@@ -1707,7 +1733,7 @@ class RealisticLiveTradingSystem:
                     holdout = min(self.config.get('validation_holdout_days', 10), len(clean_data) // 5)
                     data_for_cv = X_scaled[:-holdout] if holdout > 0 else X_scaled
                     target_for_cv = y_regime[:-holdout] if holdout > 0 else y_regime
-                    tscv = TimeSeriesSplit(n_splits=5)
+                    tscv = TimeSeriesSplit(n_splits=self.config.get('cv_splits', 5))
                     regime_cv_scores = []
                     for i, (train_idx, val_idx) in enumerate(tscv.split(data_for_cv)):
                         model_cv = RandomForestClassifier(n_estimators=50, max_depth=6, random_state=42)

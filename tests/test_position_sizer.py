@@ -18,11 +18,12 @@ def test_kelly_integration():
     prices_today = {'AAPL': 100}
     signal = {'signal': 'BUY', 'strength': 0.6, 'price': 100}
     decision = system.make_human_like_decision('AAPL', signal, prices_today)
+    cap = min(system.config['max_position_size'], system.config['max_symbol_exposure'])
     expected = kelly_size(
         confidence=0.6,
         equity=system.current_capital,
         price=100,
-        cap_fraction=system.config['max_position_size'],
+        cap_fraction=cap,
     )
     assert decision['shares'] == expected
     assert decision['action'] == 'BUY'
