@@ -89,7 +89,8 @@ class EliteMLTradingStrategy(bt.Strategy):
         ('trailing_stop_pct', 0.12), # Trailing stop percentage
         ('max_portfolio_heat', 0.30), # Maximum portfolio risk
         ('config', {}),              # ML configuration
-        ('rebalance_frequency', 5),  # Rebalance every N days
+        ('rebalance_frequency', 1),  # Rebalance every N days (default daily)
+        ('training_data_length', 730),  # Bars required for training
         ('volatility_filter', 0.05), # Max volatility for entry
         ('volume_filter', 0.8),      # Min volume ratio for entry
     )
@@ -118,7 +119,7 @@ class EliteMLTradingStrategy(bt.Strategy):
         
         # Training flags
         self.models_trained = False
-        self.training_data_length = 500  # Need 2+ years for training
+        self.training_data_length = self.params.training_data_length
         
         # Last rebalance date
         self.last_rebalance = None
@@ -216,7 +217,7 @@ class EliteMLTradingStrategy(bt.Strategy):
             self.logger.info(f"🧠 Training ML models for {len(symbols_ready)} symbols...")
             
             models_trained = 0
-            for symbol in symbols_ready[:10]:  # Train on first 10 symbols to save time
+            for symbol in symbols_ready:
                 try:
                     # Convert to DataFrame
                     df = pd.DataFrame(self.market_data[symbol])
