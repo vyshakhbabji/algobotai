@@ -72,6 +72,11 @@ def main():
                        help='End date (YYYY-MM-DD)')
     parser.add_argument('--training-split', type=float, default=0.6,
                        help='Training data percentage (default: 0.6)')
+    parser.add_argument('--rebalance-frequency', type=int, default=1,
+                       help='Rebalance frequency in days (default: 1)')
+    parser.add_argument('--training-data-length', type=int, default=None,
+                       help='Number of bars required for training each symbol. '
+                            'Defaults to max(training split days, 730)')
     
     args = parser.parse_args()
     
@@ -107,12 +112,18 @@ def main():
         end_date = pd.to_datetime(args.end_date)
         total_days = (end_date - start_date).days
         training_days = int(total_days * args.training_split)
-        
+
         training_end = start_date + timedelta(days=training_days)
-        
+
+        if args.training_data_length is not None:
+            training_data_length = args.training_data_length
+        else:
+            training_data_length = max(training_days, 730)
+
         logger.info(f"📊 Data Periods:")
         logger.info(f"   Training: {start_date.date()} to {training_end.date()}")
         logger.info(f"   Testing: {training_end.date()} to {end_date.date()}")
+        logger.info(f"   Training data length: {training_data_length} bars")
         
         # Download data for symbols
         logger.info(f"📈 Downloading data for {len(args.symbols)} symbols...")
@@ -255,7 +266,8 @@ def main():
             'trailing_stop_pct': 0.12,     # 12% trailing stop
             'max_portfolio_heat': 0.30,    # Maximum 30% portfolio risk
             'config': config,
-            'rebalance_frequency': 5,      # Rebalance every 5 days
+            'rebalance_frequency': args.rebalance_frequency,
+            'training_data_length': training_data_length,
             'volatility_filter': 0.05,     # Max 5% volatility for entry
             'volume_filter': 0.8,          # Min 80% volume ratio
         }
