@@ -75,6 +75,8 @@ class MLTradingStrategy(bt.Strategy):
         # Track performance
         self.trade_log = []
         self.daily_values = []
+        self.ml_metrics = {}  # Store ML performance metrics
+        self.current_signals = {}  # Store current signals for trade logging
         
         # Data storage for ML training
         self.symbol_data = {}  # {symbol: DataFrame}
@@ -101,15 +103,61 @@ class MLTradingStrategy(bt.Strategy):
         self.logger.info(f'{dt.isoformat()}: {txt}')
     
     def notify_order(self, order):
-        """Track order execution"""
+        """Track order execution with enhanced logging"""
         if order.status in [order.Completed]:
+            symbol = order.data._name
+            current_date = self.datas[0].datetime.datetime(0)
+            
+            # Get signal information for this trade
+            signal_info = self.current_signals.get(symbol, {})
+            signal_strength = signal_info.get('strength', 0)
+            ml_enhanced = signal_info.get('ml_enhanced', False)
+            signal_features = signal_info.get('features', {})
+            
             if order.isbuy():
-                self.log(f'BUY EXECUTED: {order.data._name}, Price: {order.executed.price:.2f}, '
+                self.log(f'BUY EXECUTED: {symbol}, Price: {order.executed.price:.2f}, '
                         f'Size: {order.executed.size}, Cost: {order.executed.value:.2f}')
                 
+                # Log detailed trade info for analysis
+                self.trade_log.append({
+                    'date': current_date,
+                    'symbol': symbol,
+                    'action': 'BUY',
+                    'price': order.executed.price,
+                    'size': order.executed.size,
+                    'value': order.executed.value,
+                    'signal_strength': signal_strength,
+                    'ml_enhanced': ml_enhanced,
+                    'signal_features': signal_features,
+                    'pnl': 0,  # Will be updated on exit
+                    'fees': order.executed.comm or 0
+                })
+                
             elif order.issell():
-                self.log(f'SELL EXECUTED: {order.data._name}, Price: {order.executed.price:.2f}, '
+                self.log(f'SELL EXECUTED: {symbol}, Price: {order.executed.price:.2f}, '
                         f'Size: {order.executed.size}, Value: {order.executed.value:.2f}')
+                
+                # Calculate P&L for completed trades
+                position = self.getposition(order.data)
+                if len(self.trade_log) > 0:
+                    # Find corresponding buy order(s) and update P&L
+                    for i in range(len(self.trade_log) - 1, -1, -1):
+                        if (self.trade_log[i]['symbol'] == symbol and 
+                            self.trade_log[i]['action'] == 'BUY' and 
+                            self.trade_log[i]['pnl'] == 0):
+                            
+                            # Calculate P&L for this trade
+                            buy_price = self.trade_log[i]['price']
+                            sell_price = order.executed.price
+                            trade_size = min(abs(order.executed.size), self.trade_log[i]['size'])
+                            
+                            pnl = (sell_price - buy_price) * trade_size
+                            pnl -= (order.executed.comm or 0) + self.trade_log[i]['fees']
+                            
+                            self.trade_log[i]['pnl'] = pnl
+                            self.trade_log[i]['exit_date'] = current_date
+                            self.trade_log[i]['exit_price'] = sell_price
+                            break
         
         elif order.status in [order.Canceled, order.Margin, order.Rejected]:
             self.log(f'Order Failed: {order.data._name}, Status: {order.getstatusname()}')
@@ -322,8 +370,8 @@ class MLTradingStrategy(bt.Strategy):
             if len(self.datas[0]) < 60:
                 return
             
-            # ONLY START TRADING ON MAY 22, 2025 (after 2 years of training)
-            trading_start_date = datetime(2025, 5, 22)
+            # ONLY START TRADING ON AUG 22, 2024 (after 2 years of training)
+            trading_start_date = datetime(2024, 8, 22)
             if current_date < trading_start_date:
                 # During training period - train models weekly to speed up backtest
                 if len(self.datas[0]) % 25 == 0:  # Train every 25 days (~monthly)
@@ -341,6 +389,8 @@ class MLTradingStrategy(bt.Strategy):
                 if len(data_df) >= 50:  # Minimum data required
                     signal = self.signal_generator.generate_signal(symbol, data_df, current_date)
                     signals[symbol] = signal
+                    # Store signals for trade logging
+                    self.current_signals[symbol] = signal
             
             # 1. Process exit signals first (CRITICAL - prevents position accumulation)
             for symbol, signal in signals.items():
@@ -399,3 +449,17 @@ class MLTradingStrategy(bt.Strategy):
             
         except Exception as e:
             self.logger.error(f"Error in stop(): {e}")
+
+    def get_trade_stats(self):
+        """Return comprehensive trade statistics for analysis"""
+        return {
+            'trade_log': self.trade_log,
+            'signal_history': getattr(self, 'signal_history', []),
+            'ml_performance': self.ml_performance,
+            'total_trades': len([t for t in self.trade_log if t.get('pnl', 0) != 0]),
+            'winning_trades': len([t for t in self.trade_log if t.get('pnl', 0) > 0]),
+            'losing_trades': len([t for t in self.trade_log if t.get('pnl', 0) < 0]),
+            'total_pnl': sum([t.get('pnl', 0) for t in self.trade_log]),
+            'avg_win': np.mean([t['pnl'] for t in self.trade_log if t.get('pnl', 0) > 0]) if any(t.get('pnl', 0) > 0 for t in self.trade_log) else 0,
+            'avg_loss': np.mean([t['pnl'] for t in self.trade_log if t.get('pnl', 0) < 0]) if any(t.get('pnl', 0) < 0 for t in self.trade_log) else 0
+        }

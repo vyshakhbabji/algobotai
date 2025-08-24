@@ -1,0 +1,155 @@
+{
+  "timestamp": "2025-08-23T16:31:21.487861",
+  "summary": {
+    "total_return_pct": -10.422093710510483,
+    "annualized_return_pct": -10.54079904637374,
+    "total_return": -0.10422093710510483,
+    "cagr": -0.10540799046373739,
+    "cagr_pct": -10.540799046373738,
+    "max_drawdown": 0.23763359830099656,
+    "max_drawdown_pct": 23.763359830099656,
+    "avg_drawdown": 0.07949280723786142,
+    "avg_drawdown_pct": 7.949280723786142,
+    "calmar_ratio": -0.4435735990927649,
+    "sortino_ratio": -0.551648455623013,
+    "volatility": 0.1731164641618629,
+    "volatility_pct": 17.311646416186292,
+    "win_rate": 0.4032258064516129,
+    "win_rate_pct": 40.32258064516129,
+    "trading_days": 248,
+    "final_value": 895779.0628948952,
+    "initial_value": 1000000.0
+  },
+  "risk_metrics": {
+    "sharpe_ratio": -0.6743075247273569,
+    "mean_daily_return": -0.0003838644503235673,
+    "daily_volatility": 0.010905312191026547,
+    "annualized_return": -0.09673384148153896,
+    "annualized_volatility": 0.1731164641618629,
+    "max_drawdown_pct": 2376.3359830099657,
+    "max_drawdown_length": 177
+  },
+  "trade_metrics": {
+    "total_trades": 287,
+    "winning_trades": 14,
+    "losing_trades": 37,
+    "win_rate_pct": 27.450980392156865,
+    "avg_win_pct": 15199.469989119973,
+    "avg_loss_pct": -11927.356226870772,
+    "win_loss_ratio": 1.2743368857280841,
+    "turnover": 8.116903353276602,
+    "total_volume": 15249084.380226785,
+    "avg_portfolio_value": 939341.2559280437,
+    "avg_exposure_pct": 67.8430159437832,
+    "min_exposure_pct": 0.0,
+    "max_exposure_pct": 99.8678342749799,
+    "final_exposure_pct": 89.09416005375678
+  },
+  "ml_metrics": {
+    "avg_regime_accuracy": 0.9932642487046632,
+    "avg_strength_r2": 0.8094482422185489,
+    "symbols_with_models": 20,
+    "symbol_stats": {
+      "AAPL": {
+        "final_regime_accuracy": 0.9896373056994818,
+        "final_strength_r2": 0.7612974500909917,
+        "training_sessions": 27
+      },
+      "MSFT": {
+        "final_regime_accuracy": 1.0,
+        "final_strength_r2": 0.8478924256133429,
+        "training_sessions": 27
+      },
+      "GOOGL": {
+        "final_regime_accuracy": 0.9896373056994818,
+        "final_strength_r2": 0.8074118075261252,
+        "training_sessions": 27
+      },
+      "AMZN": {
+        "final_regime_accuracy": 1.0,
+        "final_strength_r2": 0.8150401627521343,
+        "training_sessions": 27
+      },
+      "META": {
+        "final_regime_accuracy": 0.9896373056994818,
+        "final_strength_r2": 0.7995025470035293,
+        "training_sessions": 27
+      },
+      "TSLA": {
+        "final_regime_accuracy": 0.9948186528497409,
+        "final_strength_r2": 0.8273468926980514,
+        "training_sessions": 27
+      },
+      "NVDA": {
+        "final_regime_accuracy": 0.9792746113989638,
+        "final_strength_r2": 0.7854133172137578,
+        "training_sessions": 27
+      },
+      "ORCL": {
+        "final_regime_accuracy": 1.0,
+        "final_strength_r2": 0.8058548610465582,
+        "training_sessions": 27
+      },
+      "JPM": {
+        "final_regime_accuracy": 1.0,
+        "final_strength_r2": 0.84089666769856,
+        "training_sessions": 27
+      },
+      "BAC": {
+        "final_regime_accuracy": 0.9948186528497409,
+        "final_strength_r2": 0.8018345511676795,
+        "training_sessions": 27
+      },
+      "V": {
+        "final_regime_accuracy": 0.9948186528497409,
+        "final_strength_r2": 0.8134685872690065,
+        "training_sessions": 27
+      },
+      "MA": {
+        "final_regime_accuracy": 0.9844559585492227,
+        "final_strength_r2": 0.8368161631500921,
+        "training_sessions": 27
+      },
+      "UNH": {
+        "final_regime_accuracy": 1.0,
+        "final_strength_r2": 0.8183142715622556,
+        "training_sessions": 27
+      },
+      "JNJ": {
+        "final_regime_accuracy": 0.9948186528497409,
+        "final_strength_r2": 0.7485880650574974,
+        "training_sessions": 27
+      },
+      "PG": {
+        "final_regime_accuracy": 0.9948186528497409,
+        "final_strength_r2": 0.8269301383621152,
+        "training_sessions": 27
+      },
+      "KO": {
+        "final_regime_accuracy": 0.9896373056994818,
+        "final_strength_r2": 0.8611278498248007,
+        "training_sessions": 27
+      },
+      "XOM": {
+        "final_regime_accuracy": 0.9948186528497409,
+        "final_strength_r2": 0.7710474500140814,
+        "training_sessions": 27
+      },
+      "HD": {
+        "final_regime_accuracy": 0.9844559585492227,
+        "final_strength_r2": 0.809104535277691,
+        "training_sessions": 27
+      },
+      "DIS": {
+        "final_regime_accuracy": 0.9896373056994818,
+        "final_strength_r2": 0.8366818731519255,
+        "training_sessions": 27
+      },
+      "CRM": {
+        "final_regime_accuracy": 1.0,
+        "final_strength_r2": 0.7743952278907833,
+        "training_sessions": 27
+      }
+    }
+  }
+}

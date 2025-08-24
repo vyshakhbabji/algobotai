@@ -1,0 +1,32 @@
+2025-08-23 18:45:20,307 - __main__ - INFO - ============================================================
+2025-08-23 18:45:20,307 - __main__ - INFO - 🚀 ELITE ML TRADING SYSTEM - MAXIMUM ACCURACY & PROFIT
+2025-08-23 18:45:20,308 - __main__ - INFO - ============================================================
+2025-08-23 18:45:20,308 - __main__ - INFO - 🎯 Elite Features:
+2025-08-23 18:45:20,308 - __main__ - INFO -    • XGBoost + LightGBM + Neural Network Ensemble
+2025-08-23 18:45:20,308 - __main__ - INFO -    • 100+ Advanced Technical Features
+2025-08-23 18:45:20,308 - __main__ - INFO -    • Multi-horizon Predictions (1d, 3d, 5d, 10d, 20d)
+2025-08-23 18:45:20,308 - __main__ - INFO -    • Risk-adjusted Kelly Position Sizing
+2025-08-23 18:45:20,308 - __main__ - INFO -    • Regime-aware Trading
+2025-08-23 18:45:20,308 - __main__ - INFO -    • Advanced Risk Management
+2025-08-23 18:45:20,308 - __main__ - INFO -    • Market Context Integration (VIX, SPY)
+2025-08-23 18:45:20,308 - __main__ - INFO - ============================================================
+2025-08-23 18:45:20,310 - __main__ - INFO - 📊 Data Periods:
+2025-08-23 18:45:20,310 - __main__ - INFO -    Training: 2022-08-22 to 2024-08-22
+2025-08-23 18:45:20,310 - __main__ - INFO -    Testing: 2024-08-22 to 2025-08-22
+2025-08-23 18:45:20,311 - __main__ - INFO - 📈 Downloading data for 3 symbols...
+2025-08-23 18:45:20,311 - __main__ - INFO -    Downloading AAPL...
+2025-08-23 18:45:20,644 - __main__ - INFO -    ✅ AAPL: 753 bars
+2025-08-23 18:45:20,644 - __main__ - INFO -    Downloading MSFT...
+2025-08-23 18:45:20,775 - __main__ - INFO -    ✅ MSFT: 753 bars
+2025-08-23 18:45:20,775 - __main__ - INFO -    Downloading GOOGL...
+2025-08-23 18:45:20,855 - __main__ - INFO -    ✅ GOOGL: 753 bars
+2025-08-23 18:45:20,856 - __main__ - INFO - ✅ Successfully downloaded 3 symbols
+2025-08-23 18:45:20,856 - __main__ - INFO - 🚀 Starting ELITE backtest...
+2025-08-23 18:45:20,856 - __main__ - INFO -    Symbols: 3
+2025-08-23 18:45:20,856 - __main__ - INFO -    Period: 2022-08-22 to 2025-08-22
+2025-08-23 18:45:20,856 - __main__ - INFO -    Capital: $1,000,000
+2025-08-23 18:45:20,856 - __main__ - INFO -    Training Split: 67%
+2025-08-23 18:45:20,857 - __main__ - INFO - ⚙️  Running elite backtest...
+2025-08-23 18:45:21,242 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Market context data loaded (VIX, SPY)
+2025-08-23 18:45:21,242 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - 🚀 Enhanced ML Signal Generator initialized
+2025-08-23 18:45:21,242 - __main__ - ERROR - Elite backtest failed: 'EnhancedMLSignalGenerator' object has no attribute 'load_market_context_data'

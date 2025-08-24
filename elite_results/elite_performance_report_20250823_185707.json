@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-08-23T18:57:07.393127",
+  "backtest_type": "ELITE_ML",
+  "configuration": {
+    "initial_capital": 1000000.0,
+    "symbols_count": 20,
+    "training_split": 0.667,
+    "start_date": "2022-08-22",
+    "end_date": "2025-08-22"
+  },
+  "performance_metrics": {
+    "final_value": 1000000.0,
+    "total_return_pct": 0.0,
+    "sharpe_ratio": 0,
+    "calmar_ratio": 0,
+    "max_drawdown_pct": 0,
+    "vwr": 0,
+    "sqn": 0
+  },
+  "trading_metrics": {
+    "total_trades": 0,
+    "won_trades": 0,
+    "lost_trades": 0,
+    "win_rate_pct": 0
+  },
+  "ml_metrics": {},
+  "elite_features": [
+    "XGBoost + LightGBM + Neural Network Ensemble",
+    "100+ Advanced Technical Features",
+    "Multi-horizon Predictions",
+    "Risk-adjusted Kelly Position Sizing",
+    "Regime-aware Trading",
+    "Market Context Integration (VIX, SPY)",
+    "Advanced Risk Management",
+    "Pattern Recognition",
+    "Statistical Feature Engineering"
+  ]
+}

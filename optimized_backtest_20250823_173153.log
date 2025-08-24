@@ -1,0 +1,20 @@
+2025-08-23 17:31:53,444 - __main__ - INFO - ==================================================
+2025-08-23 17:31:53,444 - __main__ - INFO - OPTIMIZED BACKTRADER ML SYSTEM
+2025-08-23 17:31:53,444 - __main__ - INFO - ==================================================
+2025-08-23 17:31:53,444 - __main__ - INFO - 🎯 Key Improvements:
+2025-08-23 17:31:53,444 - __main__ - INFO -    • Conservative Kelly sizing (12% max position)
+2025-08-23 17:31:53,444 - __main__ - INFO -    • 8% stop-loss protection
+2025-08-23 17:31:53,444 - __main__ - INFO -    • 25% portfolio heat limit
+2025-08-23 17:31:53,444 - __main__ - INFO -    • Higher signal threshold (0.35)
+2025-08-23 17:31:53,444 - __main__ - INFO -    • Minimum 3-day hold periods
+2025-08-23 17:31:53,444 - __main__ - INFO -    • Maximum 8 trades per day
+2025-08-23 17:31:53,444 - __main__ - INFO - ==================================================
+2025-08-23 17:31:53,444 - __main__ - INFO - 📊 Downloading data for 3 symbols...
+2025-08-23 17:31:53,444 - __main__ - INFO -    Downloading AAPL...
+2025-08-23 17:31:53,776 - __main__ - INFO -    ✅ AAPL: 753 bars
+2025-08-23 17:31:53,776 - __main__ - INFO -    Downloading MSFT...
+2025-08-23 17:31:53,902 - __main__ - INFO -    ✅ MSFT: 753 bars
+2025-08-23 17:31:53,902 - __main__ - INFO -    Downloading GOOGL...
+2025-08-23 17:31:53,992 - __main__ - INFO -    ✅ GOOGL: 753 bars
+2025-08-23 17:31:53,992 - __main__ - INFO - ✅ Successfully downloaded 3 symbols
+2025-08-23 17:31:53,992 - root - ERROR - Backtest failed: Insufficient data: only 3 symbols available

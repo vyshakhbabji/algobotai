@@ -1,0 +1,321 @@
+2025-08-23 17:57:15,146 - __main__ - INFO - ==================================================
+2025-08-23 17:57:15,146 - __main__ - INFO - OPTIMIZED BACKTRADER ML SYSTEM
+2025-08-23 17:57:15,146 - __main__ - INFO - ==================================================
+2025-08-23 17:57:15,146 - __main__ - INFO - 🎯 Key Improvements:
+2025-08-23 17:57:15,146 - __main__ - INFO -    • Conservative Kelly sizing (12% max position)
+2025-08-23 17:57:15,146 - __main__ - INFO -    • 8% stop-loss protection
+2025-08-23 17:57:15,146 - __main__ - INFO -    • 25% portfolio heat limit
+2025-08-23 17:57:15,146 - __main__ - INFO -    • Higher signal threshold (0.35)
+2025-08-23 17:57:15,147 - __main__ - INFO -    • Minimum 3-day hold periods
+2025-08-23 17:57:15,147 - __main__ - INFO -    • Maximum 8 trades per day
+2025-08-23 17:57:15,147 - __main__ - INFO - ==================================================
+2025-08-23 17:57:15,147 - __main__ - INFO - 📊 Downloading data for 20 symbols...
+2025-08-23 17:57:15,147 - __main__ - INFO -    Downloading AAPL...
+2025-08-23 17:57:15,458 - __main__ - INFO -    ✅ AAPL: 753 bars
+2025-08-23 17:57:15,458 - __main__ - INFO -    Downloading MSFT...
+2025-08-23 17:57:15,567 - __main__ - INFO -    ✅ MSFT: 753 bars
+2025-08-23 17:57:15,567 - __main__ - INFO -    Downloading GOOGL...
+2025-08-23 17:57:15,666 - __main__ - INFO -    ✅ GOOGL: 753 bars
+2025-08-23 17:57:15,666 - __main__ - INFO -    Downloading AMZN...
+2025-08-23 17:57:15,732 - __main__ - INFO -    ✅ AMZN: 753 bars
+2025-08-23 17:57:15,732 - __main__ - INFO -    Downloading META...
+2025-08-23 17:57:15,801 - __main__ - INFO -    ✅ META: 753 bars
+2025-08-23 17:57:15,801 - __main__ - INFO -    Downloading TSLA...
+2025-08-23 17:57:15,879 - __main__ - INFO -    ✅ TSLA: 753 bars
+2025-08-23 17:57:15,879 - __main__ - INFO -    Downloading NVDA...
+2025-08-23 17:57:16,053 - __main__ - INFO -    ✅ NVDA: 753 bars
+2025-08-23 17:57:16,053 - __main__ - INFO -    Downloading ORCL...
+2025-08-23 17:57:16,168 - __main__ - INFO -    ✅ ORCL: 753 bars
+2025-08-23 17:57:16,168 - __main__ - INFO -    Downloading JPM...
+2025-08-23 17:57:16,295 - __main__ - INFO -    ✅ JPM: 753 bars
+2025-08-23 17:57:16,296 - __main__ - INFO -    Downloading BAC...
+2025-08-23 17:57:16,443 - __main__ - INFO -    ✅ BAC: 753 bars
+2025-08-23 17:57:16,443 - __main__ - INFO -    Downloading V...
+2025-08-23 17:57:16,635 - __main__ - INFO -    ✅ V: 753 bars
+2025-08-23 17:57:16,635 - __main__ - INFO -    Downloading MA...
+2025-08-23 17:57:16,820 - __main__ - INFO -    ✅ MA: 753 bars
+2025-08-23 17:57:16,820 - __main__ - INFO -    Downloading UNH...
+2025-08-23 17:57:16,972 - __main__ - INFO -    ✅ UNH: 753 bars
+2025-08-23 17:57:16,972 - __main__ - INFO -    Downloading JNJ...
+2025-08-23 17:57:17,110 - __main__ - INFO -    ✅ JNJ: 753 bars
+2025-08-23 17:57:17,110 - __main__ - INFO -    Downloading PG...
+2025-08-23 17:57:17,283 - __main__ - INFO -    ✅ PG: 753 bars
+2025-08-23 17:57:17,284 - __main__ - INFO -    Downloading KO...
+2025-08-23 17:57:17,460 - __main__ - INFO -    ✅ KO: 753 bars
+2025-08-23 17:57:17,461 - __main__ - INFO -    Downloading XOM...
+2025-08-23 17:57:17,659 - __main__ - INFO -    ✅ XOM: 753 bars
+2025-08-23 17:57:17,659 - __main__ - INFO -    Downloading HD...
+2025-08-23 17:57:17,784 - __main__ - INFO -    ✅ HD: 753 bars
+2025-08-23 17:57:17,784 - __main__ - INFO -    Downloading DIS...
+2025-08-23 17:57:18,008 - __main__ - INFO -    ✅ DIS: 753 bars
+2025-08-23 17:57:18,008 - __main__ - INFO -    Downloading CRM...
+2025-08-23 17:57:18,101 - __main__ - INFO -    ✅ CRM: 753 bars
+2025-08-23 17:57:18,101 - __main__ - INFO - ✅ Successfully downloaded 20 symbols
+2025-08-23 17:57:18,101 - __main__ - INFO - 🚀 Starting OPTIMIZED backtest...
+2025-08-23 17:57:18,101 - __main__ - INFO -    Symbols: 20
+2025-08-23 17:57:18,101 - __main__ - INFO -    Period: 2022-08-22 to 2025-08-22
+2025-08-23 17:57:18,101 - __main__ - INFO -    Capital: $1,000,000
+2025-08-23 17:57:18,104 - __main__ - INFO - ⚙️  Running optimized backtest...
+2025-08-23 17:57:18,934 - backtrader_system.strategies.optimized_ml_strategy - INFO - OPTIMIZED Strategy initialized with 20 symbols
+2025-08-23 17:57:18,934 - backtrader_system.strategies.optimized_ml_strategy - INFO - Key improvements: Conservative sizing (max 20.0%), Stop loss (10.0%), Higher signal threshold (0.05)
+2025-08-23 17:57:23,014 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2024-08-22: Models not trained yet, cannot trade
+2025-08-23 17:57:23,026 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2024-08-23: Models not trained yet, cannot trade
+2025-08-23 17:57:23,039 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2024-08-26: Models not trained yet, cannot trade
+2025-08-23 17:57:23,053 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2024-08-27: Models not trained yet, cannot trade
+2025-08-23 17:57:23,066 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2024-08-28: Models not trained yet, cannot trade
+2025-08-23 17:57:23,081 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2024-08-29: Models not trained yet, cannot trade
+2025-08-23 17:57:23,094 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2024-08-30: Models not trained yet, cannot trade
+2025-08-23 17:57:23,107 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2024-09-03: Models not trained yet, cannot trade
+2025-08-23 17:57:23,119 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2024-09-04: Models not trained yet, cannot trade
+2025-08-23 17:57:23,134 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2024-09-05: Models not trained yet, cannot trade
+2025-08-23 17:57:23,147 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2024-09-06: Models not trained yet, cannot trade
+2025-08-23 17:57:23,161 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2024-09-09: Models not trained yet, cannot trade
+2025-08-23 17:57:23,174 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2024-09-10: Models not trained yet, cannot trade
+2025-08-23 17:57:23,187 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2024-09-11: Models not trained yet, cannot trade
+2025-08-23 17:57:23,200 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2024-09-12: Models not trained yet, cannot trade
+2025-08-23 17:57:23,215 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2024-09-13: Models not trained yet, cannot trade
+2025-08-23 17:57:23,227 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2024-09-16: Models not trained yet, cannot trade
+2025-08-23 17:57:23,241 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2024-09-17: Models not trained yet, cannot trade
+2025-08-23 17:57:23,254 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2024-09-18: Models not trained yet, cannot trade
+2025-08-23 17:57:23,268 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2024-09-19: Models not trained yet, cannot trade
+2025-08-23 17:57:23,280 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2024-09-20: Models not trained yet, cannot trade
+2025-08-23 17:57:23,294 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2024-09-23: Models not trained yet, cannot trade
+2025-08-23 17:57:23,308 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2024-09-24: Models not trained yet, cannot trade
+2025-08-23 17:57:23,322 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2024-09-25: Models not trained yet, cannot trade
+2025-08-23 17:57:23,335 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2024-09-26: Models not trained yet, cannot trade
+2025-08-23 17:57:23,349 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2024-09-27: Models not trained yet, cannot trade
+2025-08-23 17:57:23,363 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2024-09-30: Models not trained yet, cannot trade
+2025-08-23 17:57:23,376 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2024-10-01: Models not trained yet, cannot trade
+2025-08-23 17:57:23,389 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2024-10-02: Models not trained yet, cannot trade
+2025-08-23 17:57:23,403 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2024-10-03: Models not trained yet, cannot trade
+2025-08-23 17:57:23,416 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2024-10-04: Models not trained yet, cannot trade
+2025-08-23 17:57:23,430 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2024-10-07: Models not trained yet, cannot trade
+2025-08-23 17:57:23,444 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2024-10-08: Models not trained yet, cannot trade
+2025-08-23 17:57:23,457 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2024-10-09: Models not trained yet, cannot trade
+2025-08-23 17:57:23,471 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2024-10-10: Models not trained yet, cannot trade
+2025-08-23 17:57:23,483 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2024-10-11: Models not trained yet, cannot trade
+2025-08-23 17:57:23,496 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2024-10-14: Models not trained yet, cannot trade
+2025-08-23 17:57:23,509 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2024-10-15: Models not trained yet, cannot trade
+2025-08-23 17:57:23,523 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2024-10-16: Models not trained yet, cannot trade
+2025-08-23 17:57:23,535 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2024-10-17: Models not trained yet, cannot trade
+2025-08-23 17:57:23,548 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2024-10-18: Models not trained yet, cannot trade
+2025-08-23 17:57:23,562 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2024-10-21: Models not trained yet, cannot trade
+2025-08-23 17:57:23,576 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2024-10-22: Models not trained yet, cannot trade
+2025-08-23 17:57:23,589 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2024-10-23: Models not trained yet, cannot trade
+2025-08-23 17:57:23,602 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2024-10-24: Models not trained yet, cannot trade
+2025-08-23 17:57:23,615 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2024-10-25: Models not trained yet, cannot trade
+2025-08-23 17:57:23,628 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2024-10-28: Models not trained yet, cannot trade
+2025-08-23 17:57:23,643 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2024-10-29: Models not trained yet, cannot trade
+2025-08-23 17:57:23,657 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2024-10-30: Models not trained yet, cannot trade
+2025-08-23 17:57:23,671 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2024-10-31: Models not trained yet, cannot trade
+2025-08-23 17:57:23,684 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2024-11-01: Models not trained yet, cannot trade
+2025-08-23 17:57:23,700 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2024-11-04: Models not trained yet, cannot trade
+2025-08-23 17:57:23,714 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2024-11-05: Models not trained yet, cannot trade
+2025-08-23 17:57:23,728 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2024-11-06: Models not trained yet, cannot trade
+2025-08-23 17:57:23,742 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2024-11-07: Models not trained yet, cannot trade
+2025-08-23 17:57:23,756 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2024-11-08: Models not trained yet, cannot trade
+2025-08-23 17:57:23,769 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2024-11-11: Models not trained yet, cannot trade
+2025-08-23 17:57:23,782 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2024-11-12: Models not trained yet, cannot trade
+2025-08-23 17:57:23,796 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2024-11-13: Models not trained yet, cannot trade
+2025-08-23 17:57:23,809 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2024-11-14: Models not trained yet, cannot trade
+2025-08-23 17:57:23,823 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2024-11-15: Models not trained yet, cannot trade
+2025-08-23 17:57:23,835 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2024-11-18: Models not trained yet, cannot trade
+2025-08-23 17:57:23,849 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2024-11-19: Models not trained yet, cannot trade
+2025-08-23 17:57:23,862 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2024-11-20: Models not trained yet, cannot trade
+2025-08-23 17:57:23,876 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2024-11-21: Models not trained yet, cannot trade
+2025-08-23 17:57:23,889 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2024-11-22: Models not trained yet, cannot trade
+2025-08-23 17:57:23,903 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2024-11-25: Models not trained yet, cannot trade
+2025-08-23 17:57:23,916 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2024-11-26: Models not trained yet, cannot trade
+2025-08-23 17:57:23,930 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2024-11-27: Models not trained yet, cannot trade
+2025-08-23 17:57:23,943 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2024-11-29: Models not trained yet, cannot trade
+2025-08-23 17:57:23,956 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2024-12-02: Models not trained yet, cannot trade
+2025-08-23 17:57:23,969 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2024-12-03: Models not trained yet, cannot trade
+2025-08-23 17:57:23,982 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2024-12-04: Models not trained yet, cannot trade
+2025-08-23 17:57:23,996 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2024-12-05: Models not trained yet, cannot trade
+2025-08-23 17:57:24,010 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2024-12-06: Models not trained yet, cannot trade
+2025-08-23 17:57:24,024 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2024-12-09: Models not trained yet, cannot trade
+2025-08-23 17:57:24,037 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2024-12-10: Models not trained yet, cannot trade
+2025-08-23 17:57:24,050 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2024-12-11: Models not trained yet, cannot trade
+2025-08-23 17:57:24,062 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2024-12-12: Models not trained yet, cannot trade
+2025-08-23 17:57:24,076 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2024-12-13: Models not trained yet, cannot trade
+2025-08-23 17:57:24,089 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2024-12-16: Models not trained yet, cannot trade
+2025-08-23 17:57:24,102 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2024-12-17: Models not trained yet, cannot trade
+2025-08-23 17:57:24,115 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2024-12-18: Models not trained yet, cannot trade
+2025-08-23 17:57:24,129 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2024-12-19: Models not trained yet, cannot trade
+2025-08-23 17:57:24,143 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2024-12-20: Models not trained yet, cannot trade
+2025-08-23 17:57:24,156 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2024-12-23: Models not trained yet, cannot trade
+2025-08-23 17:57:24,169 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2024-12-24: Models not trained yet, cannot trade
+2025-08-23 17:57:24,182 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2024-12-26: Models not trained yet, cannot trade
+2025-08-23 17:57:24,194 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2024-12-27: Models not trained yet, cannot trade
+2025-08-23 17:57:24,208 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2024-12-30: Models not trained yet, cannot trade
+2025-08-23 17:57:24,221 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2024-12-31: Models not trained yet, cannot trade
+2025-08-23 17:57:24,235 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-01-02: Models not trained yet, cannot trade
+2025-08-23 17:57:24,249 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-01-03: Models not trained yet, cannot trade
+2025-08-23 17:57:24,261 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-01-06: Models not trained yet, cannot trade
+2025-08-23 17:57:24,275 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-01-07: Models not trained yet, cannot trade
+2025-08-23 17:57:24,288 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-01-08: Models not trained yet, cannot trade
+2025-08-23 17:57:24,302 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-01-10: Models not trained yet, cannot trade
+2025-08-23 17:57:24,315 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-01-13: Models not trained yet, cannot trade
+2025-08-23 17:57:24,329 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-01-14: Models not trained yet, cannot trade
+2025-08-23 17:57:24,344 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-01-15: Models not trained yet, cannot trade
+2025-08-23 17:57:24,358 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-01-16: Models not trained yet, cannot trade
+2025-08-23 17:57:24,372 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-01-17: Models not trained yet, cannot trade
+2025-08-23 17:57:24,385 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-01-21: Models not trained yet, cannot trade
+2025-08-23 17:57:24,400 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-01-22: Models not trained yet, cannot trade
+2025-08-23 17:57:24,414 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-01-23: Models not trained yet, cannot trade
+2025-08-23 17:57:24,428 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-01-24: Models not trained yet, cannot trade
+2025-08-23 17:57:24,443 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-01-27: Models not trained yet, cannot trade
+2025-08-23 17:57:24,456 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-01-28: Models not trained yet, cannot trade
+2025-08-23 17:57:24,469 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-01-29: Models not trained yet, cannot trade
+2025-08-23 17:57:24,483 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-01-30: Models not trained yet, cannot trade
+2025-08-23 17:57:24,496 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-01-31: Models not trained yet, cannot trade
+2025-08-23 17:57:24,511 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-02-03: Models not trained yet, cannot trade
+2025-08-23 17:57:24,525 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-02-04: Models not trained yet, cannot trade
+2025-08-23 17:57:24,540 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-02-05: Models not trained yet, cannot trade
+2025-08-23 17:57:24,554 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-02-06: Models not trained yet, cannot trade
+2025-08-23 17:57:24,568 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-02-07: Models not trained yet, cannot trade
+2025-08-23 17:57:24,581 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-02-10: Models not trained yet, cannot trade
+2025-08-23 17:57:24,595 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-02-11: Models not trained yet, cannot trade
+2025-08-23 17:57:24,609 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-02-12: Models not trained yet, cannot trade
+2025-08-23 17:57:24,624 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-02-13: Models not trained yet, cannot trade
+2025-08-23 17:57:24,637 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-02-14: Models not trained yet, cannot trade
+2025-08-23 17:57:24,651 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-02-18: Models not trained yet, cannot trade
+2025-08-23 17:57:24,665 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-02-19: Models not trained yet, cannot trade
+2025-08-23 17:57:24,678 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-02-20: Models not trained yet, cannot trade
+2025-08-23 17:57:24,693 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-02-21: Models not trained yet, cannot trade
+2025-08-23 17:57:24,705 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-02-24: Models not trained yet, cannot trade
+2025-08-23 17:57:24,719 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-02-25: Models not trained yet, cannot trade
+2025-08-23 17:57:24,732 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-02-26: Models not trained yet, cannot trade
+2025-08-23 17:57:24,746 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-02-27: Models not trained yet, cannot trade
+2025-08-23 17:57:24,758 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-02-28: Models not trained yet, cannot trade
+2025-08-23 17:57:24,772 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-03-03: Models not trained yet, cannot trade
+2025-08-23 17:57:24,784 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-03-04: Models not trained yet, cannot trade
+2025-08-23 17:57:24,798 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-03-05: Models not trained yet, cannot trade
+2025-08-23 17:57:24,811 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-03-06: Models not trained yet, cannot trade
+2025-08-23 17:57:24,825 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-03-07: Models not trained yet, cannot trade
+2025-08-23 17:57:24,839 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-03-10: Models not trained yet, cannot trade
+2025-08-23 17:57:24,851 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-03-11: Models not trained yet, cannot trade
+2025-08-23 17:57:24,864 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-03-12: Models not trained yet, cannot trade
+2025-08-23 17:57:24,879 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-03-13: Models not trained yet, cannot trade
+2025-08-23 17:57:24,891 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-03-14: Models not trained yet, cannot trade
+2025-08-23 17:57:24,904 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-03-17: Models not trained yet, cannot trade
+2025-08-23 17:57:24,917 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-03-18: Models not trained yet, cannot trade
+2025-08-23 17:57:24,932 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-03-19: Models not trained yet, cannot trade
+2025-08-23 17:57:24,945 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-03-20: Models not trained yet, cannot trade
+2025-08-23 17:57:24,958 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-03-21: Models not trained yet, cannot trade
+2025-08-23 17:57:24,973 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-03-24: Models not trained yet, cannot trade
+2025-08-23 17:57:24,986 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-03-25: Models not trained yet, cannot trade
+2025-08-23 17:57:25,001 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-03-26: Models not trained yet, cannot trade
+2025-08-23 17:57:25,014 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-03-27: Models not trained yet, cannot trade
+2025-08-23 17:57:25,028 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-03-28: Models not trained yet, cannot trade
+2025-08-23 17:57:25,042 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-03-31: Models not trained yet, cannot trade
+2025-08-23 17:57:25,055 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-04-01: Models not trained yet, cannot trade
+2025-08-23 17:57:25,068 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-04-02: Models not trained yet, cannot trade
+2025-08-23 17:57:25,083 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-04-03: Models not trained yet, cannot trade
+2025-08-23 17:57:25,096 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-04-04: Models not trained yet, cannot trade
+2025-08-23 17:57:25,110 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-04-07: Models not trained yet, cannot trade
+2025-08-23 17:57:25,124 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-04-08: Models not trained yet, cannot trade
+2025-08-23 17:57:25,138 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-04-09: Models not trained yet, cannot trade
+2025-08-23 17:57:25,151 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-04-10: Models not trained yet, cannot trade
+2025-08-23 17:57:25,165 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-04-11: Models not trained yet, cannot trade
+2025-08-23 17:57:25,178 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-04-14: Models not trained yet, cannot trade
+2025-08-23 17:57:25,192 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-04-15: Models not trained yet, cannot trade
+2025-08-23 17:57:25,205 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-04-16: Models not trained yet, cannot trade
+2025-08-23 17:57:25,219 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-04-17: Models not trained yet, cannot trade
+2025-08-23 17:57:25,232 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-04-21: Models not trained yet, cannot trade
+2025-08-23 17:57:25,246 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-04-22: Models not trained yet, cannot trade
+2025-08-23 17:57:25,260 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-04-23: Models not trained yet, cannot trade
+2025-08-23 17:57:25,273 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-04-24: Models not trained yet, cannot trade
+2025-08-23 17:57:25,287 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-04-25: Models not trained yet, cannot trade
+2025-08-23 17:57:25,300 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-04-28: Models not trained yet, cannot trade
+2025-08-23 17:57:25,315 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-04-29: Models not trained yet, cannot trade
+2025-08-23 17:57:25,328 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-04-30: Models not trained yet, cannot trade
+2025-08-23 17:57:25,342 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-05-01: Models not trained yet, cannot trade
+2025-08-23 17:57:25,355 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-05-02: Models not trained yet, cannot trade
+2025-08-23 17:57:25,368 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-05-05: Models not trained yet, cannot trade
+2025-08-23 17:57:25,381 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-05-06: Models not trained yet, cannot trade
+2025-08-23 17:57:25,395 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-05-07: Models not trained yet, cannot trade
+2025-08-23 17:57:25,408 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-05-08: Models not trained yet, cannot trade
+2025-08-23 17:57:25,422 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-05-09: Models not trained yet, cannot trade
+2025-08-23 17:57:25,436 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-05-12: Models not trained yet, cannot trade
+2025-08-23 17:57:25,450 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-05-13: Models not trained yet, cannot trade
+2025-08-23 17:57:25,463 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-05-14: Models not trained yet, cannot trade
+2025-08-23 17:57:25,477 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-05-15: Models not trained yet, cannot trade
+2025-08-23 17:57:25,490 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-05-16: Models not trained yet, cannot trade
+2025-08-23 17:57:25,503 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-05-19: Models not trained yet, cannot trade
+2025-08-23 17:57:25,517 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-05-20: Models not trained yet, cannot trade
+2025-08-23 17:57:25,531 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-05-21: Models not trained yet, cannot trade
+2025-08-23 17:57:25,545 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-05-22: Models not trained yet, cannot trade
+2025-08-23 17:57:25,559 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-05-23: Models not trained yet, cannot trade
+2025-08-23 17:57:25,572 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-05-27: Models not trained yet, cannot trade
+2025-08-23 17:57:25,584 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-05-28: Models not trained yet, cannot trade
+2025-08-23 17:57:25,598 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-05-29: Models not trained yet, cannot trade
+2025-08-23 17:57:25,611 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-05-30: Models not trained yet, cannot trade
+2025-08-23 17:57:25,626 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-06-02: Models not trained yet, cannot trade
+2025-08-23 17:57:25,640 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-06-03: Models not trained yet, cannot trade
+2025-08-23 17:57:25,654 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-06-04: Models not trained yet, cannot trade
+2025-08-23 17:57:25,667 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-06-05: Models not trained yet, cannot trade
+2025-08-23 17:57:25,681 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-06-06: Models not trained yet, cannot trade
+2025-08-23 17:57:25,696 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-06-09: Models not trained yet, cannot trade
+2025-08-23 17:57:25,709 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-06-10: Models not trained yet, cannot trade
+2025-08-23 17:57:25,723 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-06-11: Models not trained yet, cannot trade
+2025-08-23 17:57:25,737 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-06-12: Models not trained yet, cannot trade
+2025-08-23 17:57:25,751 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-06-13: Models not trained yet, cannot trade
+2025-08-23 17:57:25,765 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-06-16: Models not trained yet, cannot trade
+2025-08-23 17:57:25,778 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-06-17: Models not trained yet, cannot trade
+2025-08-23 17:57:25,792 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-06-18: Models not trained yet, cannot trade
+2025-08-23 17:57:25,805 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-06-20: Models not trained yet, cannot trade
+2025-08-23 17:57:25,816 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-06-23: Models not trained yet, cannot trade
+2025-08-23 17:57:25,828 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-06-24: Models not trained yet, cannot trade
+2025-08-23 17:57:25,842 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-06-25: Models not trained yet, cannot trade
+2025-08-23 17:57:25,855 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-06-26: Models not trained yet, cannot trade
+2025-08-23 17:57:25,868 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-06-27: Models not trained yet, cannot trade
+2025-08-23 17:57:25,881 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-06-30: Models not trained yet, cannot trade
+2025-08-23 17:57:25,895 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-07-01: Models not trained yet, cannot trade
+2025-08-23 17:57:25,908 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-07-02: Models not trained yet, cannot trade
+2025-08-23 17:57:25,923 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-07-03: Models not trained yet, cannot trade
+2025-08-23 17:57:25,937 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-07-07: Models not trained yet, cannot trade
+2025-08-23 17:57:25,950 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-07-08: Models not trained yet, cannot trade
+2025-08-23 17:57:25,963 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-07-09: Models not trained yet, cannot trade
+2025-08-23 17:57:25,976 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-07-10: Models not trained yet, cannot trade
+2025-08-23 17:57:25,990 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-07-11: Models not trained yet, cannot trade
+2025-08-23 17:57:26,004 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-07-14: Models not trained yet, cannot trade
+2025-08-23 17:57:26,016 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-07-15: Models not trained yet, cannot trade
+2025-08-23 17:57:26,031 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-07-16: Models not trained yet, cannot trade
+2025-08-23 17:57:26,044 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-07-17: Models not trained yet, cannot trade
+2025-08-23 17:57:26,058 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-07-18: Models not trained yet, cannot trade
+2025-08-23 17:57:26,071 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-07-21: Models not trained yet, cannot trade
+2025-08-23 17:57:26,084 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-07-22: Models not trained yet, cannot trade
+2025-08-23 17:57:26,097 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-07-23: Models not trained yet, cannot trade
+2025-08-23 17:57:26,111 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-07-24: Models not trained yet, cannot trade
+2025-08-23 17:57:26,123 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-07-25: Models not trained yet, cannot trade
+2025-08-23 17:57:26,135 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-07-28: Models not trained yet, cannot trade
+2025-08-23 17:57:26,148 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-07-29: Models not trained yet, cannot trade
+2025-08-23 17:57:26,162 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-07-30: Models not trained yet, cannot trade
+2025-08-23 17:57:26,175 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-07-31: Models not trained yet, cannot trade
+2025-08-23 17:57:26,188 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-08-01: Models not trained yet, cannot trade
+2025-08-23 17:57:26,202 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-08-04: Models not trained yet, cannot trade
+2025-08-23 17:57:26,217 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-08-05: Models not trained yet, cannot trade
+2025-08-23 17:57:26,229 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-08-06: Models not trained yet, cannot trade
+2025-08-23 17:57:26,243 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-08-07: Models not trained yet, cannot trade
+2025-08-23 17:57:26,257 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-08-08: Models not trained yet, cannot trade
+2025-08-23 17:57:26,270 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-08-11: Models not trained yet, cannot trade
+2025-08-23 17:57:26,282 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-08-12: Models not trained yet, cannot trade
+2025-08-23 17:57:26,296 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-08-13: Models not trained yet, cannot trade
+2025-08-23 17:57:26,308 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-08-14: Models not trained yet, cannot trade
+2025-08-23 17:57:26,322 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-08-15: Models not trained yet, cannot trade
+2025-08-23 17:57:26,335 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-08-18: Models not trained yet, cannot trade
+2025-08-23 17:57:26,348 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-08-19: Models not trained yet, cannot trade
+2025-08-23 17:57:26,363 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-08-20: Models not trained yet, cannot trade
+2025-08-23 17:57:26,376 - backtrader_system.strategies.optimized_ml_strategy - WARNING - 2025-08-21: Models not trained yet, cannot trade
+2025-08-23 17:57:26,376 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2025-08-21: Strategy Completed!
+2025-08-23 17:57:26,376 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2025-08-21: Starting Value: $1,000,000
+2025-08-23 17:57:26,376 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2025-08-21: Final Value: $1,000,000
+2025-08-23 17:57:26,376 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2025-08-21: Total Return: 0.00%
+2025-08-23 17:57:26,376 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2025-08-21: Total Trades: 0
+2025-08-23 17:57:26,376 - __main__ - INFO - ✅ Backtest completed!
+2025-08-23 17:57:26,376 - __main__ - INFO - 📊 Final Portfolio Value: $1,000,000
+2025-08-23 17:57:26,377 - __main__ - INFO - 📈 Total Return: 0.00%
+2025-08-23 17:57:26,378 - __main__ - INFO - 📊 Performance report: results/optimized_performance_report_20250823_175726.json
+2025-08-23 17:57:26,378 - __main__ - INFO - 🎯 GENERATING OPTIMIZED PERFORMANCE ANALYSIS...
+2025-08-23 17:57:26,380 - __main__ - INFO - 📈 Equity curve saved: results/optimized_equity_curve_20250823_175726.csv

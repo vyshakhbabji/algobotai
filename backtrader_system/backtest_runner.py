@@ -34,6 +34,7 @@ from analyzers.custom_analyzers import (
     SharpeAnalyzer, CustomMetricsAnalyzer, 
     TurnoverAnalyzer, ExposureAnalyzer
 )
+from analyzers.performance_plotter import PerformancePlotter
 
 
 def setup_logging(level=logging.INFO):
@@ -506,6 +507,11 @@ def main():
         if config['output'].get('save_plots', True):
             save_drawdown_plot(analyzers, output_dir)
         
+        # Generate comprehensive performance analysis
+        print("\n🎯 GENERATING COMPREHENSIVE PERFORMANCE ANALYSIS...")
+        plotter = PerformancePlotter(strategy, analyzers, output_dir)
+        plotter.generate_full_analysis()
+
         # Print summary
         print(f"\n🏆 BACKTEST RESULTS SUMMARY")
         print(f"=" * 50)

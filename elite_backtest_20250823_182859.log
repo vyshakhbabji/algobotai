@@ -1,0 +1,85 @@
+2025-08-23 18:28:59,264 - __main__ - INFO - ============================================================
+2025-08-23 18:28:59,264 - __main__ - INFO - 🚀 ELITE ML TRADING SYSTEM - MAXIMUM ACCURACY & PROFIT
+2025-08-23 18:28:59,264 - __main__ - INFO - ============================================================
+2025-08-23 18:28:59,264 - __main__ - INFO - 🎯 Elite Features:
+2025-08-23 18:28:59,264 - __main__ - INFO -    • XGBoost + LightGBM + Neural Network Ensemble
+2025-08-23 18:28:59,264 - __main__ - INFO -    • 100+ Advanced Technical Features
+2025-08-23 18:28:59,264 - __main__ - INFO -    • Multi-horizon Predictions (1d, 3d, 5d, 10d, 20d)
+2025-08-23 18:28:59,264 - __main__ - INFO -    • Risk-adjusted Kelly Position Sizing
+2025-08-23 18:28:59,264 - __main__ - INFO -    • Regime-aware Trading
+2025-08-23 18:28:59,264 - __main__ - INFO -    • Advanced Risk Management
+2025-08-23 18:28:59,264 - __main__ - INFO -    • Market Context Integration (VIX, SPY)
+2025-08-23 18:28:59,264 - __main__ - INFO - ============================================================
+2025-08-23 18:28:59,266 - __main__ - INFO - 📊 Data Periods:
+2025-08-23 18:28:59,267 - __main__ - INFO -    Training: 2022-08-22 to 2024-08-22
+2025-08-23 18:28:59,267 - __main__ - INFO -    Testing: 2024-08-22 to 2025-08-22
+2025-08-23 18:28:59,267 - __main__ - INFO - 📈 Downloading data for 3 symbols...
+2025-08-23 18:28:59,267 - __main__ - INFO -    Downloading AAPL...
+2025-08-23 18:28:59,552 - __main__ - INFO -    ✅ AAPL: 753 bars
+2025-08-23 18:28:59,552 - __main__ - INFO -    Downloading MSFT...
+2025-08-23 18:28:59,665 - __main__ - INFO -    ✅ MSFT: 753 bars
+2025-08-23 18:28:59,665 - __main__ - INFO -    Downloading GOOGL...
+2025-08-23 18:28:59,771 - __main__ - INFO -    ✅ GOOGL: 753 bars
+2025-08-23 18:28:59,771 - __main__ - INFO - ✅ Successfully downloaded 3 symbols
+2025-08-23 18:28:59,771 - __main__ - INFO - 🚀 Starting ELITE backtest...
+2025-08-23 18:28:59,771 - __main__ - INFO -    Symbols: 3
+2025-08-23 18:28:59,771 - __main__ - INFO -    Period: 2022-08-22 to 2025-08-22
+2025-08-23 18:28:59,771 - __main__ - INFO -    Capital: $1,000,000
+2025-08-23 18:28:59,771 - __main__ - INFO -    Training Split: 67%
+2025-08-23 18:28:59,773 - __main__ - INFO - ⚙️  Running elite backtest...
+2025-08-23 18:28:59,913 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - 🚀 Enhanced ML Signal Generator initialized
+2025-08-23 18:29:00,154 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Market context data loaded (VIX, SPY)
+2025-08-23 18:29:00,154 - backtrader_system.strategies.elite_ml_strategy - INFO - 🚀 Elite ML Trading Strategy initialized
+2025-08-23 18:29:00,154 - backtrader_system.strategies.elite_ml_strategy - INFO - 📊 Monitoring 3 symbols
+2025-08-23 18:29:00,154 - backtrader_system.strategies.elite_ml_strategy - INFO - 🎯 Signal threshold: 0.15
+2025-08-23 18:29:00,155 - backtrader_system.strategies.elite_ml_strategy - INFO - 💰 Max position size: 15.0%
+2025-08-23 18:29:00,157 - backtrader_system.strategies.elite_ml_strategy - INFO - 🎬 Elite ML Strategy starting...
+2025-08-23 18:29:00,205 - backtrader_system.strategies.elite_ml_strategy - INFO - 🧠 Training ML models for 3 symbols...
+2025-08-23 18:29:01,066 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 105 advanced features for AAPL
+2025-08-23 18:29:01,089 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error training ensemble models for AAPL: The estimator XGBRegressor should be a regressor.
+2025-08-23 18:29:01,890 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 105 advanced features for MSFT
+2025-08-23 18:29:01,913 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error training ensemble models for MSFT: The estimator XGBRegressor should be a regressor.
+2025-08-23 18:29:02,712 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 105 advanced features for GOOGL
+2025-08-23 18:29:02,735 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error training ensemble models for GOOGL: The estimator XGBRegressor should be a regressor.
+2025-08-23 18:29:02,735 - backtrader_system.strategies.elite_ml_strategy - WARNING - ⚠️ Only trained 0 models, need at least 3
+2025-08-23 18:29:02,736 - backtrader_system.strategies.elite_ml_strategy - INFO - 🧠 Training ML models for 3 symbols...
+2025-08-23 18:29:03,534 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 105 advanced features for AAPL
+2025-08-23 18:29:03,557 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error training ensemble models for AAPL: The estimator XGBRegressor should be a regressor.
+2025-08-23 18:29:04,357 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 105 advanced features for MSFT
+2025-08-23 18:29:04,379 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error training ensemble models for MSFT: The estimator XGBRegressor should be a regressor.
+2025-08-23 18:29:05,179 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 105 advanced features for GOOGL
+2025-08-23 18:29:05,202 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error training ensemble models for GOOGL: The estimator XGBRegressor should be a regressor.
+2025-08-23 18:29:05,203 - backtrader_system.strategies.elite_ml_strategy - WARNING - ⚠️ Only trained 0 models, need at least 3
+2025-08-23 18:29:05,203 - backtrader_system.strategies.elite_ml_strategy - INFO - 🧠 Training ML models for 3 symbols...
+2025-08-23 18:29:06,001 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 105 advanced features for AAPL
+2025-08-23 18:29:06,023 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error training ensemble models for AAPL: The estimator XGBRegressor should be a regressor.
+2025-08-23 18:29:06,856 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 105 advanced features for MSFT
+2025-08-23 18:29:06,879 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error training ensemble models for MSFT: The estimator XGBRegressor should be a regressor.
+2025-08-23 18:29:07,695 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 105 advanced features for GOOGL
+2025-08-23 18:29:07,717 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error training ensemble models for GOOGL: The estimator XGBRegressor should be a regressor.
+2025-08-23 18:29:07,718 - backtrader_system.strategies.elite_ml_strategy - WARNING - ⚠️ Only trained 0 models, need at least 3
+2025-08-23 18:29:07,718 - backtrader_system.strategies.elite_ml_strategy - INFO - 🧠 Training ML models for 3 symbols...
+2025-08-23 18:29:08,529 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 105 advanced features for AAPL
+2025-08-23 18:29:08,551 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error training ensemble models for AAPL: The estimator XGBRegressor should be a regressor.
+2025-08-23 18:29:09,355 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 105 advanced features for MSFT
+2025-08-23 18:29:09,377 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error training ensemble models for MSFT: The estimator XGBRegressor should be a regressor.
+2025-08-23 18:29:10,190 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 105 advanced features for GOOGL
+2025-08-23 18:29:10,213 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error training ensemble models for GOOGL: The estimator XGBRegressor should be a regressor.
+2025-08-23 18:29:10,213 - backtrader_system.strategies.elite_ml_strategy - WARNING - ⚠️ Only trained 0 models, need at least 3
+2025-08-23 18:29:10,214 - backtrader_system.strategies.elite_ml_strategy - INFO - 🧠 Training ML models for 3 symbols...
+2025-08-23 18:29:11,040 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 105 advanced features for AAPL
+2025-08-23 18:29:11,063 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error training ensemble models for AAPL: The estimator XGBRegressor should be a regressor.
+2025-08-23 18:29:11,881 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 105 advanced features for MSFT
+2025-08-23 18:29:11,904 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error training ensemble models for MSFT: The estimator XGBRegressor should be a regressor.
+2025-08-23 18:29:12,744 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 105 advanced features for GOOGL
+2025-08-23 18:29:12,766 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error training ensemble models for GOOGL: The estimator XGBRegressor should be a regressor.
+2025-08-23 18:29:12,767 - backtrader_system.strategies.elite_ml_strategy - WARNING - ⚠️ Only trained 0 models, need at least 3
+2025-08-23 18:29:12,767 - backtrader_system.strategies.elite_ml_strategy - INFO - 🧠 Training ML models for 3 symbols...
+2025-08-23 18:29:13,587 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 105 advanced features for AAPL
+2025-08-23 18:29:13,610 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error training ensemble models for AAPL: The estimator XGBRegressor should be a regressor.
+2025-08-23 18:29:14,424 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 105 advanced features for MSFT
+2025-08-23 18:29:14,447 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error training ensemble models for MSFT: The estimator XGBRegressor should be a regressor.
+2025-08-23 18:29:15,265 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 105 advanced features for GOOGL
+2025-08-23 18:29:15,288 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error training ensemble models for GOOGL: The estimator XGBRegressor should be a regressor.
+2025-08-23 18:29:15,289 - backtrader_system.strategies.elite_ml_strategy - WARNING - ⚠️ Only trained 0 models, need at least 3
+2025-08-23 18:29:15,289 - backtrader_system.strategies.elite_ml_strategy - INFO - 🧠 Training ML models for 3 symbols...

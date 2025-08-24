@@ -1,0 +1,1361 @@
+2025-08-23 16:30:09,500 - strategies.ml_strategy - INFO - Strategy initialized with 20 symbols
+2025-08-23 16:30:09,838 - strategies.ml_strategy - INFO - 2024-11-15: BUY SIGNAL: JNJ, Strength: 0.900, Size: 998, ML Enhanced: False
+2025-08-23 16:30:09,838 - strategies.ml_strategy - INFO - 2024-11-15: BUY SIGNAL: KO, Strength: 0.900, Size: 2483, ML Enhanced: False
+2025-08-23 16:30:09,838 - strategies.ml_strategy - INFO - 2024-11-15: BUY SIGNAL: DIS, Strength: 0.900, Size: 1314, ML Enhanced: False
+2025-08-23 16:30:09,838 - strategies.ml_strategy - INFO - 2024-11-15: Portfolio Value: $1,000,000, Return: +0.0%, Positions: 0
+2025-08-23 16:30:09,839 - strategies.ml_strategy - INFO - 2024-11-18: BUY EXECUTED: JNJ, Price: 148.90, Size: 998, Cost: 148599.02
+2025-08-23 16:30:09,839 - strategies.ml_strategy - INFO - 2024-11-18: BUY EXECUTED: KO, Price: 60.50, Size: 2483, Cost: 150232.84
+2025-08-23 16:30:09,839 - strategies.ml_strategy - INFO - 2024-11-18: BUY EXECUTED: DIS, Price: 112.35, Size: 1314, Cost: 147629.13
+2025-08-23 16:30:09,986 - strategies.ml_strategy - INFO - 2024-11-18: BUY SIGNAL: META, Strength: 0.700, Size: 271, ML Enhanced: False
+2025-08-23 16:30:09,986 - strategies.ml_strategy - INFO - 2024-11-18: BUY SIGNAL: KO, Strength: 0.700, Size: 1, ML Enhanced: False
+2025-08-23 16:30:09,986 - strategies.ml_strategy - INFO - 2024-11-18: BUY SIGNAL: DIS, Strength: 0.900, Size: 21, ML Enhanced: False
+2025-08-23 16:30:09,987 - strategies.ml_strategy - INFO - 2024-11-19: BUY EXECUTED: META, Price: 550.50, Size: 271, Cost: 149185.90
+2025-08-23 16:30:09,987 - strategies.ml_strategy - INFO - 2024-11-19: BUY EXECUTED: KO, Price: 60.55, Size: 1, Cost: 60.55
+2025-08-23 16:30:09,987 - strategies.ml_strategy - INFO - 2024-11-19: BUY EXECUTED: DIS, Price: 111.08, Size: 21, Cost: 2332.72
+2025-08-23 16:30:10,132 - strategies.ml_strategy - INFO - 2024-11-19: BUY SIGNAL: JNJ, Strength: 0.700, Size: 9, ML Enhanced: False
+2025-08-23 16:30:10,133 - strategies.ml_strategy - INFO - 2024-11-20: BUY EXECUTED: JNJ, Price: 149.33, Size: 9, Cost: 1343.94
+2025-08-23 16:30:10,277 - strategies.ml_strategy - INFO - 2024-11-20: BUY SIGNAL: JNJ, Strength: 0.900, Size: 4, ML Enhanced: False
+2025-08-23 16:30:10,278 - strategies.ml_strategy - INFO - 2024-11-21: BUY EXECUTED: JNJ, Price: 149.90, Size: 4, Cost: 599.61
+2025-08-23 16:30:10,423 - strategies.ml_strategy - INFO - 2024-11-21: BUY SIGNAL: ORCL, Strength: 0.900, Size: 795, ML Enhanced: False
+2025-08-23 16:30:10,424 - strategies.ml_strategy - INFO - 2024-11-21: BUY SIGNAL: CRM, Strength: 0.900, Size: 454, ML Enhanced: False
+2025-08-23 16:30:10,424 - strategies.ml_strategy - INFO - 2024-11-22: BUY EXECUTED: ORCL, Price: 191.43, Size: 795, Cost: 152187.56
+2025-08-23 16:30:10,424 - strategies.ml_strategy - INFO - 2024-11-22: BUY EXECUTED: CRM, Price: 337.50, Size: 454, Cost: 153223.81
+2025-08-23 16:30:10,742 - strategies.ml_strategy - INFO - 2024-11-22: BUY SIGNAL: PG, Strength: 0.900, Size: 878, ML Enhanced: False
+2025-08-23 16:30:10,742 - strategies.ml_strategy - INFO - 2024-11-22: BUY SIGNAL: HD, Strength: 0.900, Size: 368, ML Enhanced: False
+2025-08-23 16:30:10,742 - strategies.ml_strategy - INFO - 2024-11-22: Portfolio Value: $1,013,008, Return: +1.3%, Positions: 6
+2025-08-23 16:30:10,743 - strategies.ml_strategy - INFO - 2024-11-25: Order Failed: PG, Status: Margin
+2025-08-23 16:30:10,743 - strategies.ml_strategy - INFO - 2024-11-25: Order Failed: HD, Status: Margin
+2025-08-23 16:30:10,889 - strategies.ml_strategy - INFO - 2024-11-25: BUY SIGNAL: PG, Strength: 0.900, Size: 872, ML Enhanced: False
+2025-08-23 16:30:10,890 - strategies.ml_strategy - INFO - 2024-11-26: Order Failed: PG, Status: Margin
+2025-08-23 16:30:11,179 - strategies.ml_strategy - INFO - 2024-11-27: BUY SIGNAL: GOOGL, Strength: 0.700, Size: 896, ML Enhanced: False
+2025-08-23 16:30:11,179 - strategies.ml_strategy - INFO - 2024-11-27: BUY SIGNAL: NVDA, Strength: 0.700, Size: 1117, ML Enhanced: False
+2025-08-23 16:30:11,180 - strategies.ml_strategy - INFO - 2024-11-29: Order Failed: GOOGL, Status: Margin
+2025-08-23 16:30:11,180 - strategies.ml_strategy - INFO - 2024-11-29: Order Failed: NVDA, Status: Margin
+2025-08-23 16:30:11,659 - strategies.ml_strategy - INFO - 2024-12-02: EXIT SIGNAL: ORCL, Strength: 0.800
+2025-08-23 16:30:11,659 - strategies.ml_strategy - INFO - 2024-12-02: Portfolio Value: $1,011,935, Return: +1.2%, Positions: 6
+2025-08-23 16:30:11,659 - strategies.ml_strategy - INFO - 2024-12-03: SELL EXECUTED: ORCL, Price: 179.71, Size: -397, Value: 75998.06
+2025-08-23 16:30:11,955 - strategies.ml_strategy - INFO - 2024-12-04: BUY SIGNAL: XOM, Strength: 0.900, Size: 1387, ML Enhanced: False
+2025-08-23 16:30:11,956 - strategies.ml_strategy - INFO - 2024-12-05: BUY EXECUTED: XOM, Price: 111.62, Size: 1387, Cost: 154812.54
+2025-08-23 16:30:12,250 - strategies.ml_strategy - INFO - 2024-12-06: BUY SIGNAL: XOM, Strength: 0.700, Size: 8, ML Enhanced: False
+2025-08-23 16:30:12,251 - strategies.ml_strategy - INFO - 2024-12-09: BUY EXECUTED: XOM, Price: 111.55, Size: 8, Cost: 892.39
+2025-08-23 16:30:12,574 - strategies.ml_strategy - INFO - 2024-12-09: BUY SIGNAL: JNJ, Strength: 0.700, Size: 25, ML Enhanced: False
+2025-08-23 16:30:12,574 - strategies.ml_strategy - INFO - 2024-12-09: Portfolio Value: $1,016,627, Return: +1.7%, Positions: 7
+2025-08-23 16:30:12,574 - strategies.ml_strategy - INFO - 2024-12-10: BUY EXECUTED: JNJ, Price: 147.48, Size: 25, Cost: 3686.88
+2025-08-23 16:30:12,721 - strategies.ml_strategy - INFO - 2024-12-10: EXIT SIGNAL: ORCL, Strength: 0.800
+2025-08-23 16:30:12,721 - strategies.ml_strategy - INFO - 2024-12-10: BUY SIGNAL: GOOGL, Strength: 0.900, Size: 821, ML Enhanced: False
+2025-08-23 16:30:12,722 - strategies.ml_strategy - INFO - 2024-12-11: Order Failed: GOOGL, Status: Margin
+2025-08-23 16:30:12,722 - strategies.ml_strategy - INFO - 2024-12-11: SELL EXECUTED: ORCL, Price: 176.55, Size: -199, Value: 38094.75
+2025-08-23 16:30:12,869 - strategies.ml_strategy - INFO - 2024-12-11: EXIT SIGNAL: ORCL, Strength: 0.800
+2025-08-23 16:30:12,869 - strategies.ml_strategy - INFO - 2024-12-11: BUY SIGNAL: GOOGL, Strength: 0.900, Size: 780, ML Enhanced: False
+2025-08-23 16:30:12,869 - strategies.ml_strategy - INFO - 2024-12-11: BUY SIGNAL: TSLA, Strength: 0.900, Size: 358, ML Enhanced: False
+2025-08-23 16:30:12,869 - strategies.ml_strategy - INFO - 2024-12-11: BUY SIGNAL: JNJ, Strength: 0.900, Size: 18, ML Enhanced: False
+2025-08-23 16:30:12,869 - strategies.ml_strategy - INFO - 2024-12-11: BUY SIGNAL: XOM, Strength: 0.900, Size: 1, ML Enhanced: False
+2025-08-23 16:30:12,870 - strategies.ml_strategy - INFO - 2024-12-12: Order Failed: GOOGL, Status: Margin
+2025-08-23 16:30:12,870 - strategies.ml_strategy - INFO - 2024-12-12: Order Failed: TSLA, Status: Margin
+2025-08-23 16:30:12,870 - strategies.ml_strategy - INFO - 2024-12-12: Order Failed: JNJ, Status: Margin
+2025-08-23 16:30:12,870 - strategies.ml_strategy - INFO - 2024-12-12: Order Failed: XOM, Status: Margin
+2025-08-23 16:30:12,870 - strategies.ml_strategy - INFO - 2024-12-12: SELL EXECUTED: ORCL, Price: 176.55, Size: -99, Value: 18951.66
+2025-08-23 16:30:13,016 - strategies.ml_strategy - INFO - 2024-12-12: EXIT SIGNAL: ORCL, Strength: 0.800
+2025-08-23 16:30:13,016 - strategies.ml_strategy - INFO - 2024-12-12: BUY SIGNAL: JNJ, Strength: 0.700, Size: 25, ML Enhanced: False
+2025-08-23 16:30:13,016 - strategies.ml_strategy - INFO - 2024-12-12: BUY SIGNAL: XOM, Strength: 0.700, Size: 7, ML Enhanced: False
+2025-08-23 16:30:13,017 - strategies.ml_strategy - INFO - 2024-12-13: SELL EXECUTED: ORCL, Price: 173.58, Size: -50, Value: 9571.54
+2025-08-23 16:30:13,017 - strategies.ml_strategy - INFO - 2024-12-13: BUY EXECUTED: JNJ, Price: 143.28, Size: 25, Cost: 3581.88
+2025-08-23 16:30:13,017 - strategies.ml_strategy - INFO - 2024-12-13: BUY EXECUTED: XOM, Price: 108.88, Size: 7, Cost: 762.18
+2025-08-23 16:30:13,166 - strategies.ml_strategy - INFO - 2024-12-13: EXIT SIGNAL: ORCL, Strength: 0.800
+2025-08-23 16:30:13,166 - strategies.ml_strategy - INFO - 2024-12-13: BUY SIGNAL: JPM, Strength: 0.900, Size: 640, ML Enhanced: False
+2025-08-23 16:30:13,166 - strategies.ml_strategy - INFO - 2024-12-16: Order Failed: JPM, Status: Margin
+2025-08-23 16:30:13,166 - strategies.ml_strategy - INFO - 2024-12-16: SELL EXECUTED: ORCL, Price: 172.43, Size: -25, Value: 4785.77
+2025-08-23 16:30:13,538 - strategies.ml_strategy - INFO - 2024-12-16: EXIT SIGNAL: ORCL, Strength: 0.700
+2025-08-23 16:30:13,538 - strategies.ml_strategy - INFO - 2024-12-16: BUY SIGNAL: GOOGL, Strength: 0.900, Size: 766, ML Enhanced: False
+2025-08-23 16:30:13,538 - strategies.ml_strategy - INFO - 2024-12-16: BUY SIGNAL: TSLA, Strength: 0.900, Size: 324, ML Enhanced: False
+2025-08-23 16:30:13,538 - strategies.ml_strategy - INFO - 2024-12-16: BUY SIGNAL: ORCL, Strength: 0.700, Size: 860, ML Enhanced: False
+2025-08-23 16:30:13,539 - strategies.ml_strategy - INFO - 2024-12-16: BUY SIGNAL: JPM, Strength: 0.700, Size: 637, ML Enhanced: False
+2025-08-23 16:30:13,539 - strategies.ml_strategy - INFO - 2024-12-16: BUY SIGNAL: BAC, Strength: 0.700, Size: 3346, ML Enhanced: False
+2025-08-23 16:30:13,539 - strategies.ml_strategy - INFO - 2024-12-16: BUY SIGNAL: JNJ, Strength: 0.700, Size: 1, ML Enhanced: False
+2025-08-23 16:30:13,539 - strategies.ml_strategy - INFO - 2024-12-16: BUY SIGNAL: PG, Strength: 0.700, Size: 895, ML Enhanced: False
+2025-08-23 16:30:13,539 - strategies.ml_strategy - INFO - 2024-12-16: BUY SIGNAL: XOM, Strength: 0.900, Size: 22, ML Enhanced: False
+2025-08-23 16:30:13,539 - strategies.ml_strategy - INFO - 2024-12-16: BUY SIGNAL: HD, Strength: 0.700, Size: 370, ML Enhanced: False
+2025-08-23 16:30:13,539 - strategies.ml_strategy - INFO - 2024-12-16: BUY SIGNAL: DIS, Strength: 0.900, Size: 11, ML Enhanced: False
+2025-08-23 16:30:13,539 - strategies.ml_strategy - INFO - 2024-12-16: Portfolio Value: $1,002,113, Return: +0.2%, Positions: 7
+2025-08-23 16:30:13,540 - strategies.ml_strategy - INFO - 2024-12-17: Order Failed: GOOGL, Status: Margin
+2025-08-23 16:30:13,540 - strategies.ml_strategy - INFO - 2024-12-17: Order Failed: TSLA, Status: Margin
+2025-08-23 16:30:13,540 - strategies.ml_strategy - INFO - 2024-12-17: Order Failed: ORCL, Status: Margin
+2025-08-23 16:30:13,540 - strategies.ml_strategy - INFO - 2024-12-17: Order Failed: JPM, Status: Margin
+2025-08-23 16:30:13,540 - strategies.ml_strategy - INFO - 2024-12-17: Order Failed: BAC, Status: Margin
+2025-08-23 16:30:13,540 - strategies.ml_strategy - INFO - 2024-12-17: Order Failed: JNJ, Status: Margin
+2025-08-23 16:30:13,540 - strategies.ml_strategy - INFO - 2024-12-17: Order Failed: PG, Status: Margin
+2025-08-23 16:30:13,540 - strategies.ml_strategy - INFO - 2024-12-17: Order Failed: XOM, Status: Margin
+2025-08-23 16:30:13,540 - strategies.ml_strategy - INFO - 2024-12-17: Order Failed: HD, Status: Margin
+2025-08-23 16:30:13,540 - strategies.ml_strategy - INFO - 2024-12-17: Order Failed: DIS, Status: Margin
+2025-08-23 16:30:13,540 - strategies.ml_strategy - INFO - 2024-12-17: SELL EXECUTED: ORCL, Price: 169.36, Size: -25, Value: 4785.77
+2025-08-23 16:30:13,693 - strategies.ml_strategy - INFO - 2024-12-17: BUY SIGNAL: TSLA, Strength: 0.900, Size: 313, ML Enhanced: False
+2025-08-23 16:30:13,693 - strategies.ml_strategy - INFO - 2024-12-17: BUY SIGNAL: ORCL, Strength: 0.700, Size: 894, ML Enhanced: False
+2025-08-23 16:30:13,693 - strategies.ml_strategy - INFO - 2024-12-17: BUY SIGNAL: JPM, Strength: 0.700, Size: 641, ML Enhanced: False
+2025-08-23 16:30:13,693 - strategies.ml_strategy - INFO - 2024-12-17: BUY SIGNAL: BAC, Strength: 0.700, Size: 3381, ML Enhanced: False
+2025-08-23 16:30:13,693 - strategies.ml_strategy - INFO - 2024-12-17: BUY SIGNAL: PG, Strength: 0.700, Size: 900, ML Enhanced: False
+2025-08-23 16:30:13,693 - strategies.ml_strategy - INFO - 2024-12-17: BUY SIGNAL: XOM, Strength: 0.700, Size: 29, ML Enhanced: False
+2025-08-23 16:30:13,693 - strategies.ml_strategy - INFO - 2024-12-17: BUY SIGNAL: HD, Strength: 0.700, Size: 373, ML Enhanced: False
+2025-08-23 16:30:13,694 - strategies.ml_strategy - INFO - 2024-12-18: Order Failed: TSLA, Status: Margin
+2025-08-23 16:30:13,694 - strategies.ml_strategy - INFO - 2024-12-18: Order Failed: ORCL, Status: Margin
+2025-08-23 16:30:13,694 - strategies.ml_strategy - INFO - 2024-12-18: Order Failed: JPM, Status: Margin
+2025-08-23 16:30:13,694 - strategies.ml_strategy - INFO - 2024-12-18: Order Failed: BAC, Status: Margin
+2025-08-23 16:30:13,694 - strategies.ml_strategy - INFO - 2024-12-18: Order Failed: PG, Status: Margin
+2025-08-23 16:30:13,694 - strategies.ml_strategy - INFO - 2024-12-18: Order Failed: XOM, Status: Margin
+2025-08-23 16:30:13,694 - strategies.ml_strategy - INFO - 2024-12-18: Order Failed: HD, Status: Margin
+2025-08-23 16:30:13,846 - strategies.ml_strategy - INFO - 2024-12-18: EXIT SIGNAL: CRM, Strength: 0.800
+2025-08-23 16:30:13,846 - strategies.ml_strategy - INFO - 2024-12-18: BUY SIGNAL: UNH, Strength: 0.900, Size: 298, ML Enhanced: False
+2025-08-23 16:30:13,846 - strategies.ml_strategy - INFO - 2024-12-18: BUY SIGNAL: PG, Strength: 0.700, Size: 889, ML Enhanced: False
+2025-08-23 16:30:13,846 - strategies.ml_strategy - INFO - 2024-12-18: BUY SIGNAL: XOM, Strength: 0.700, Size: 23, ML Enhanced: False
+2025-08-23 16:30:13,847 - strategies.ml_strategy - INFO - 2024-12-19: Order Failed: PG, Status: Margin
+2025-08-23 16:30:13,847 - strategies.ml_strategy - INFO - 2024-12-19: Order Failed: XOM, Status: Margin
+2025-08-23 16:30:13,847 - strategies.ml_strategy - INFO - 2024-12-19: SELL EXECUTED: CRM, Price: 340.62, Size: -227, Value: 76611.91
+2025-08-23 16:30:13,847 - strategies.ml_strategy - INFO - 2024-12-19: BUY EXECUTED: UNH, Price: 494.50, Size: 298, Cost: 147361.39
+2025-08-23 16:30:13,999 - strategies.ml_strategy - INFO - 2024-12-19: EXIT SIGNAL: XOM, Strength: 0.900
+2025-08-23 16:30:14,000 - strategies.ml_strategy - INFO - 2024-12-19: EXIT SIGNAL: CRM, Strength: 0.800
+2025-08-23 16:30:14,000 - strategies.ml_strategy - INFO - 2024-12-19: BUY SIGNAL: ORCL, Strength: 0.700, Size: 875, ML Enhanced: False
+2025-08-23 16:30:14,000 - strategies.ml_strategy - INFO - 2024-12-19: BUY SIGNAL: JPM, Strength: 0.900, Size: 639, ML Enhanced: False
+2025-08-23 16:30:14,000 - strategies.ml_strategy - INFO - 2024-12-19: BUY SIGNAL: BAC, Strength: 0.700, Size: 3421, ML Enhanced: False
+2025-08-23 16:30:14,000 - strategies.ml_strategy - INFO - 2024-12-19: BUY SIGNAL: UNH, Strength: 0.700, Size: 5, ML Enhanced: False
+2025-08-23 16:30:14,000 - strategies.ml_strategy - INFO - 2024-12-19: BUY SIGNAL: PG, Strength: 0.900, Size: 883, ML Enhanced: False
+2025-08-23 16:30:14,000 - strategies.ml_strategy - INFO - 2024-12-19: BUY SIGNAL: XOM, Strength: 0.900, Size: 26, ML Enhanced: False
+2025-08-23 16:30:14,001 - strategies.ml_strategy - INFO - 2024-12-20: Order Failed: JPM, Status: Margin
+2025-08-23 16:30:14,001 - strategies.ml_strategy - INFO - 2024-12-20: Order Failed: BAC, Status: Margin
+2025-08-23 16:30:14,001 - strategies.ml_strategy - INFO - 2024-12-20: Order Failed: UNH, Status: Margin
+2025-08-23 16:30:14,001 - strategies.ml_strategy - INFO - 2024-12-20: Order Failed: PG, Status: Margin
+2025-08-23 16:30:14,001 - strategies.ml_strategy - INFO - 2024-12-20: Order Failed: XOM, Status: Margin
+2025-08-23 16:30:14,001 - strategies.ml_strategy - INFO - 2024-12-20: SELL EXECUTED: XOM, Price: 102.61, Size: -1402, Value: 156467.10
+2025-08-23 16:30:14,001 - strategies.ml_strategy - INFO - 2024-12-20: SELL EXECUTED: CRM, Price: 331.69, Size: -113, Value: 38137.20
+2025-08-23 16:30:14,001 - strategies.ml_strategy - INFO - 2024-12-20: BUY EXECUTED: ORCL, Price: 166.37, Size: 875, Cost: 145570.53
+2025-08-23 16:30:14,160 - strategies.ml_strategy - INFO - 2024-12-20: EXIT SIGNAL: META, Strength: 0.800
+2025-08-23 16:30:14,160 - strategies.ml_strategy - INFO - 2024-12-20: BUY SIGNAL: BAC, Strength: 0.900, Size: 3374, ML Enhanced: False
+2025-08-23 16:30:14,160 - strategies.ml_strategy - INFO - 2024-12-20: BUY SIGNAL: PG, Strength: 0.900, Size: 893, ML Enhanced: False
+2025-08-23 16:30:14,160 - strategies.ml_strategy - INFO - 2024-12-20: BUY SIGNAL: XOM, Strength: 0.900, Size: 1429, ML Enhanced: False
+2025-08-23 16:30:14,160 - strategies.ml_strategy - INFO - 2024-12-20: BUY SIGNAL: HD, Strength: 0.900, Size: 379, ML Enhanced: False
+2025-08-23 16:30:14,161 - strategies.ml_strategy - INFO - 2024-12-23: Order Failed: BAC, Status: Margin
+2025-08-23 16:30:14,161 - strategies.ml_strategy - INFO - 2024-12-23: Order Failed: PG, Status: Margin
+2025-08-23 16:30:14,161 - strategies.ml_strategy - INFO - 2024-12-23: Order Failed: XOM, Status: Margin
+2025-08-23 16:30:14,161 - strategies.ml_strategy - INFO - 2024-12-23: Order Failed: HD, Status: Margin
+2025-08-23 16:30:14,161 - strategies.ml_strategy - INFO - 2024-12-23: SELL EXECUTED: META, Price: 588.62, Size: -135, Value: 74317.70
+2025-08-23 16:30:14,491 - strategies.ml_strategy - INFO - 2024-12-23: BUY SIGNAL: ORCL, Strength: 0.700, Size: 5, ML Enhanced: False
+2025-08-23 16:30:14,491 - strategies.ml_strategy - INFO - 2024-12-23: BUY SIGNAL: BAC, Strength: 0.700, Size: 3408, ML Enhanced: False
+2025-08-23 16:30:14,491 - strategies.ml_strategy - INFO - 2024-12-23: BUY SIGNAL: PG, Strength: 0.700, Size: 895, ML Enhanced: False
+2025-08-23 16:30:14,491 - strategies.ml_strategy - INFO - 2024-12-23: BUY SIGNAL: XOM, Strength: 0.700, Size: 1428, ML Enhanced: False
+2025-08-23 16:30:14,491 - strategies.ml_strategy - INFO - 2024-12-23: BUY SIGNAL: HD, Strength: 0.700, Size: 381, ML Enhanced: False
+2025-08-23 16:30:14,491 - strategies.ml_strategy - INFO - 2024-12-23: Portfolio Value: $985,138, Return: -1.5%, Positions: 7
+2025-08-23 16:30:14,492 - strategies.ml_strategy - INFO - 2024-12-24: Order Failed: BAC, Status: Margin
+2025-08-23 16:30:14,492 - strategies.ml_strategy - INFO - 2024-12-24: Order Failed: PG, Status: Margin
+2025-08-23 16:30:14,492 - strategies.ml_strategy - INFO - 2024-12-24: Order Failed: XOM, Status: Margin
+2025-08-23 16:30:14,492 - strategies.ml_strategy - INFO - 2024-12-24: Order Failed: HD, Status: Margin
+2025-08-23 16:30:14,492 - strategies.ml_strategy - INFO - 2024-12-24: BUY EXECUTED: ORCL, Price: 168.32, Size: 5, Cost: 841.60
+2025-08-23 16:30:14,640 - strategies.ml_strategy - INFO - 2024-12-24: BUY SIGNAL: PG, Strength: 0.700, Size: 897, ML Enhanced: False
+2025-08-23 16:30:14,640 - strategies.ml_strategy - INFO - 2024-12-24: BUY SIGNAL: XOM, Strength: 0.700, Size: 1436, ML Enhanced: False
+2025-08-23 16:30:14,640 - strategies.ml_strategy - INFO - 2024-12-24: BUY SIGNAL: HD, Strength: 0.700, Size: 380, ML Enhanced: False
+2025-08-23 16:30:14,640 - strategies.ml_strategy - INFO - 2024-12-24: BUY SIGNAL: CRM, Strength: 0.700, Size: 319, ML Enhanced: False
+2025-08-23 16:30:14,640 - strategies.ml_strategy - INFO - 2024-12-26: Order Failed: PG, Status: Margin
+2025-08-23 16:30:14,640 - strategies.ml_strategy - INFO - 2024-12-26: Order Failed: XOM, Status: Margin
+2025-08-23 16:30:14,641 - strategies.ml_strategy - INFO - 2024-12-26: Order Failed: HD, Status: Margin
+2025-08-23 16:30:14,641 - strategies.ml_strategy - INFO - 2024-12-26: Order Failed: CRM, Status: Margin
+2025-08-23 16:30:14,790 - strategies.ml_strategy - INFO - 2024-12-26: BUY SIGNAL: BAC, Strength: 0.700, Size: 3379, ML Enhanced: False
+2025-08-23 16:30:14,790 - strategies.ml_strategy - INFO - 2024-12-26: BUY SIGNAL: PG, Strength: 0.700, Size: 890, ML Enhanced: False
+2025-08-23 16:30:14,790 - strategies.ml_strategy - INFO - 2024-12-26: BUY SIGNAL: XOM, Strength: 0.700, Size: 1435, ML Enhanced: False
+2025-08-23 16:30:14,790 - strategies.ml_strategy - INFO - 2024-12-26: BUY SIGNAL: HD, Strength: 0.700, Size: 381, ML Enhanced: False
+2025-08-23 16:30:14,790 - strategies.ml_strategy - INFO - 2024-12-26: BUY SIGNAL: CRM, Strength: 0.700, Size: 322, ML Enhanced: False
+2025-08-23 16:30:14,791 - strategies.ml_strategy - INFO - 2024-12-27: Order Failed: BAC, Status: Margin
+2025-08-23 16:30:14,791 - strategies.ml_strategy - INFO - 2024-12-27: Order Failed: PG, Status: Margin
+2025-08-23 16:30:14,791 - strategies.ml_strategy - INFO - 2024-12-27: Order Failed: XOM, Status: Margin
+2025-08-23 16:30:14,791 - strategies.ml_strategy - INFO - 2024-12-27: Order Failed: HD, Status: Margin
+2025-08-23 16:30:14,791 - strategies.ml_strategy - INFO - 2024-12-27: Order Failed: CRM, Status: Margin
+2025-08-23 16:30:14,940 - strategies.ml_strategy - INFO - 2024-12-27: BUY SIGNAL: ORCL, Strength: 0.700, Size: 2, ML Enhanced: False
+2025-08-23 16:30:14,941 - strategies.ml_strategy - INFO - 2024-12-27: BUY SIGNAL: BAC, Strength: 0.700, Size: 3375, ML Enhanced: False
+2025-08-23 16:30:14,941 - strategies.ml_strategy - INFO - 2024-12-27: BUY SIGNAL: PG, Strength: 0.700, Size: 888, ML Enhanced: False
+2025-08-23 16:30:14,941 - strategies.ml_strategy - INFO - 2024-12-27: BUY SIGNAL: XOM, Strength: 0.700, Size: 1427, ML Enhanced: False
+2025-08-23 16:30:14,941 - strategies.ml_strategy - INFO - 2024-12-27: BUY SIGNAL: HD, Strength: 0.700, Size: 381, ML Enhanced: False
+2025-08-23 16:30:14,941 - strategies.ml_strategy - INFO - 2024-12-27: BUY SIGNAL: CRM, Strength: 0.700, Size: 324, ML Enhanced: False
+2025-08-23 16:30:14,941 - strategies.ml_strategy - INFO - 2024-12-30: Order Failed: BAC, Status: Margin
+2025-08-23 16:30:14,941 - strategies.ml_strategy - INFO - 2024-12-30: Order Failed: PG, Status: Margin
+2025-08-23 16:30:14,941 - strategies.ml_strategy - INFO - 2024-12-30: Order Failed: XOM, Status: Margin
+2025-08-23 16:30:14,942 - strategies.ml_strategy - INFO - 2024-12-30: Order Failed: HD, Status: Margin
+2025-08-23 16:30:14,942 - strategies.ml_strategy - INFO - 2024-12-30: Order Failed: CRM, Status: Margin
+2025-08-23 16:30:14,942 - strategies.ml_strategy - INFO - 2024-12-30: BUY EXECUTED: ORCL, Price: 165.16, Size: 2, Cost: 330.31
+2025-08-23 16:30:15,091 - strategies.ml_strategy - INFO - 2024-12-30: BUY SIGNAL: MSFT, Strength: 0.700, Size: 347, ML Enhanced: False
+2025-08-23 16:30:15,091 - strategies.ml_strategy - INFO - 2024-12-30: BUY SIGNAL: ORCL, Strength: 0.700, Size: 4, ML Enhanced: False
+2025-08-23 16:30:15,091 - strategies.ml_strategy - INFO - 2024-12-30: BUY SIGNAL: BAC, Strength: 0.700, Size: 3381, ML Enhanced: False
+2025-08-23 16:30:15,091 - strategies.ml_strategy - INFO - 2024-12-30: BUY SIGNAL: PG, Strength: 0.700, Size: 894, ML Enhanced: False
+2025-08-23 16:30:15,091 - strategies.ml_strategy - INFO - 2024-12-30: BUY SIGNAL: XOM, Strength: 0.700, Size: 1425, ML Enhanced: False
+2025-08-23 16:30:15,091 - strategies.ml_strategy - INFO - 2024-12-30: BUY SIGNAL: HD, Strength: 0.700, Size: 381, ML Enhanced: False
+2025-08-23 16:30:15,092 - strategies.ml_strategy - INFO - 2024-12-31: Order Failed: MSFT, Status: Margin
+2025-08-23 16:30:15,092 - strategies.ml_strategy - INFO - 2024-12-31: Order Failed: ORCL, Status: Margin
+2025-08-23 16:30:15,092 - strategies.ml_strategy - INFO - 2024-12-31: Order Failed: BAC, Status: Margin
+2025-08-23 16:30:15,092 - strategies.ml_strategy - INFO - 2024-12-31: Order Failed: PG, Status: Margin
+2025-08-23 16:30:15,092 - strategies.ml_strategy - INFO - 2024-12-31: Order Failed: XOM, Status: Margin
+2025-08-23 16:30:15,092 - strategies.ml_strategy - INFO - 2024-12-31: Order Failed: HD, Status: Margin
+2025-08-23 16:30:15,417 - strategies.ml_strategy - INFO - 2024-12-31: EXIT SIGNAL: META, Strength: 0.800
+2025-08-23 16:30:15,418 - strategies.ml_strategy - INFO - 2024-12-31: BUY SIGNAL: MSFT, Strength: 0.700, Size: 350, ML Enhanced: False
+2025-08-23 16:30:15,418 - strategies.ml_strategy - INFO - 2024-12-31: BUY SIGNAL: ORCL, Strength: 0.700, Size: 6, ML Enhanced: False
+2025-08-23 16:30:15,418 - strategies.ml_strategy - INFO - 2024-12-31: BUY SIGNAL: BAC, Strength: 0.700, Size: 3381, ML Enhanced: False
+2025-08-23 16:30:15,418 - strategies.ml_strategy - INFO - 2024-12-31: BUY SIGNAL: PG, Strength: 0.700, Size: 892, ML Enhanced: False
+2025-08-23 16:30:15,418 - strategies.ml_strategy - INFO - 2024-12-31: BUY SIGNAL: XOM, Strength: 0.900, Size: 1402, ML Enhanced: False
+2025-08-23 16:30:15,418 - strategies.ml_strategy - INFO - 2024-12-31: BUY SIGNAL: HD, Strength: 0.700, Size: 382, ML Enhanced: False
+2025-08-23 16:30:15,418 - strategies.ml_strategy - INFO - 2024-12-31: Portfolio Value: $978,852, Return: -2.1%, Positions: 7
+2025-08-23 16:30:15,419 - strategies.ml_strategy - INFO - 2025-01-02: Order Failed: BAC, Status: Margin
+2025-08-23 16:30:15,419 - strategies.ml_strategy - INFO - 2025-01-02: Order Failed: PG, Status: Margin
+2025-08-23 16:30:15,419 - strategies.ml_strategy - INFO - 2025-01-02: Order Failed: XOM, Status: Margin
+2025-08-23 16:30:15,419 - strategies.ml_strategy - INFO - 2025-01-02: Order Failed: HD, Status: Margin
+2025-08-23 16:30:15,419 - strategies.ml_strategy - INFO - 2025-01-02: SELL EXECUTED: META, Price: 588.74, Size: -68, Value: 37434.10
+2025-08-23 16:30:15,419 - strategies.ml_strategy - INFO - 2025-01-02: BUY EXECUTED: MSFT, Price: 423.20, Size: 350, Cost: 148121.59
+2025-08-23 16:30:15,419 - strategies.ml_strategy - INFO - 2025-01-02: BUY EXECUTED: ORCL, Price: 167.15, Size: 6, Cost: 1002.90
+2025-08-23 16:30:15,569 - strategies.ml_strategy - INFO - 2025-01-02: BUY SIGNAL: BAC, Strength: 0.700, Size: 3338, ML Enhanced: False
+2025-08-23 16:30:15,569 - strategies.ml_strategy - INFO - 2025-01-02: BUY SIGNAL: PG, Strength: 0.700, Size: 897, ML Enhanced: False
+2025-08-23 16:30:15,569 - strategies.ml_strategy - INFO - 2025-01-02: BUY SIGNAL: XOM, Strength: 0.900, Size: 1398, ML Enhanced: False
+2025-08-23 16:30:15,569 - strategies.ml_strategy - INFO - 2025-01-02: BUY SIGNAL: HD, Strength: 0.700, Size: 380, ML Enhanced: False
+2025-08-23 16:30:15,569 - strategies.ml_strategy - INFO - 2025-01-02: BUY SIGNAL: CRM, Strength: 0.700, Size: 329, ML Enhanced: False
+2025-08-23 16:30:15,570 - strategies.ml_strategy - INFO - 2025-01-03: Order Failed: BAC, Status: Margin
+2025-08-23 16:30:15,570 - strategies.ml_strategy - INFO - 2025-01-03: Order Failed: PG, Status: Margin
+2025-08-23 16:30:15,570 - strategies.ml_strategy - INFO - 2025-01-03: Order Failed: XOM, Status: Margin
+2025-08-23 16:30:15,570 - strategies.ml_strategy - INFO - 2025-01-03: Order Failed: HD, Status: Margin
+2025-08-23 16:30:15,570 - strategies.ml_strategy - INFO - 2025-01-03: Order Failed: CRM, Status: Margin
+2025-08-23 16:30:15,719 - strategies.ml_strategy - INFO - 2025-01-03: BUY SIGNAL: ORCL, Strength: 0.700, Size: 2, ML Enhanced: False
+2025-08-23 16:30:15,720 - strategies.ml_strategy - INFO - 2025-01-03: BUY SIGNAL: PG, Strength: 0.700, Size: 906, ML Enhanced: False
+2025-08-23 16:30:15,720 - strategies.ml_strategy - INFO - 2025-01-03: BUY SIGNAL: XOM, Strength: 0.900, Size: 1399, ML Enhanced: False
+2025-08-23 16:30:15,720 - strategies.ml_strategy - INFO - 2025-01-03: BUY SIGNAL: HD, Strength: 0.700, Size: 382, ML Enhanced: False
+2025-08-23 16:30:15,720 - strategies.ml_strategy - INFO - 2025-01-03: BUY SIGNAL: CRM, Strength: 0.700, Size: 328, ML Enhanced: False
+2025-08-23 16:30:15,720 - strategies.ml_strategy - INFO - 2025-01-06: Order Failed: PG, Status: Margin
+2025-08-23 16:30:15,720 - strategies.ml_strategy - INFO - 2025-01-06: Order Failed: XOM, Status: Margin
+2025-08-23 16:30:15,720 - strategies.ml_strategy - INFO - 2025-01-06: Order Failed: HD, Status: Margin
+2025-08-23 16:30:15,720 - strategies.ml_strategy - INFO - 2025-01-06: Order Failed: CRM, Status: Margin
+2025-08-23 16:30:15,720 - strategies.ml_strategy - INFO - 2025-01-06: BUY EXECUTED: ORCL, Price: 165.95, Size: 2, Cost: 331.90
+2025-08-23 16:30:15,873 - strategies.ml_strategy - INFO - 2025-01-06: BUY SIGNAL: NVDA, Strength: 0.900, Size: 982, ML Enhanced: False
+2025-08-23 16:30:15,873 - strategies.ml_strategy - INFO - 2025-01-06: BUY SIGNAL: ORCL, Strength: 0.700, Size: 3, ML Enhanced: False
+2025-08-23 16:30:15,874 - strategies.ml_strategy - INFO - 2025-01-06: BUY SIGNAL: MA, Strength: 0.700, Size: 288, ML Enhanced: False
+2025-08-23 16:30:15,874 - strategies.ml_strategy - INFO - 2025-01-06: BUY SIGNAL: PG, Strength: 0.900, Size: 931, ML Enhanced: False
+2025-08-23 16:30:15,874 - strategies.ml_strategy - INFO - 2025-01-06: BUY SIGNAL: XOM, Strength: 0.900, Size: 1400, ML Enhanced: False
+2025-08-23 16:30:15,874 - strategies.ml_strategy - INFO - 2025-01-06: BUY SIGNAL: HD, Strength: 0.700, Size: 381, ML Enhanced: False
+2025-08-23 16:30:15,874 - strategies.ml_strategy - INFO - 2025-01-06: BUY SIGNAL: CRM, Strength: 0.700, Size: 331, ML Enhanced: False
+2025-08-23 16:30:15,875 - strategies.ml_strategy - INFO - 2025-01-07: Order Failed: NVDA, Status: Margin
+2025-08-23 16:30:15,875 - strategies.ml_strategy - INFO - 2025-01-07: Order Failed: ORCL, Status: Margin
+2025-08-23 16:30:15,875 - strategies.ml_strategy - INFO - 2025-01-07: Order Failed: MA, Status: Margin
+2025-08-23 16:30:15,875 - strategies.ml_strategy - INFO - 2025-01-07: Order Failed: PG, Status: Margin
+2025-08-23 16:30:15,875 - strategies.ml_strategy - INFO - 2025-01-07: Order Failed: XOM, Status: Margin
+2025-08-23 16:30:15,875 - strategies.ml_strategy - INFO - 2025-01-07: Order Failed: HD, Status: Margin
+2025-08-23 16:30:15,875 - strategies.ml_strategy - INFO - 2025-01-07: Order Failed: CRM, Status: Margin
+2025-08-23 16:30:16,035 - strategies.ml_strategy - INFO - 2025-01-07: BUY SIGNAL: ORCL, Strength: 0.700, Size: 20, ML Enhanced: False
+2025-08-23 16:30:16,035 - strategies.ml_strategy - INFO - 2025-01-07: BUY SIGNAL: BAC, Strength: 0.900, Size: 3215, ML Enhanced: False
+2025-08-23 16:30:16,035 - strategies.ml_strategy - INFO - 2025-01-07: BUY SIGNAL: MA, Strength: 0.700, Size: 287, ML Enhanced: False
+2025-08-23 16:30:16,035 - strategies.ml_strategy - INFO - 2025-01-07: BUY SIGNAL: PG, Strength: 0.900, Size: 924, ML Enhanced: False
+2025-08-23 16:30:16,035 - strategies.ml_strategy - INFO - 2025-01-07: BUY SIGNAL: HD, Strength: 0.700, Size: 385, ML Enhanced: False
+2025-08-23 16:30:16,035 - strategies.ml_strategy - INFO - 2025-01-07: BUY SIGNAL: CRM, Strength: 0.700, Size: 337, ML Enhanced: False
+2025-08-23 16:30:16,036 - strategies.ml_strategy - INFO - 2025-01-08: Order Failed: BAC, Status: Margin
+2025-08-23 16:30:16,036 - strategies.ml_strategy - INFO - 2025-01-08: Order Failed: MA, Status: Margin
+2025-08-23 16:30:16,036 - strategies.ml_strategy - INFO - 2025-01-08: Order Failed: PG, Status: Margin
+2025-08-23 16:30:16,036 - strategies.ml_strategy - INFO - 2025-01-08: Order Failed: HD, Status: Margin
+2025-08-23 16:30:16,036 - strategies.ml_strategy - INFO - 2025-01-08: Order Failed: CRM, Status: Margin
+2025-08-23 16:30:16,036 - strategies.ml_strategy - INFO - 2025-01-08: BUY EXECUTED: ORCL, Price: 160.86, Size: 20, Cost: 3217.23
+2025-08-23 16:30:16,378 - strategies.ml_strategy - INFO - 2025-01-08: BUY SIGNAL: TSLA, Strength: 0.700, Size: 370, ML Enhanced: False
+2025-08-23 16:30:16,378 - strategies.ml_strategy - INFO - 2025-01-08: BUY SIGNAL: PG, Strength: 0.700, Size: 920, ML Enhanced: False
+2025-08-23 16:30:16,378 - strategies.ml_strategy - INFO - 2025-01-08: BUY SIGNAL: HD, Strength: 0.700, Size: 382, ML Enhanced: False
+2025-08-23 16:30:16,378 - strategies.ml_strategy - INFO - 2025-01-08: BUY SIGNAL: DIS, Strength: 0.700, Size: 4, ML Enhanced: False
+2025-08-23 16:30:16,378 - strategies.ml_strategy - INFO - 2025-01-08: BUY SIGNAL: CRM, Strength: 0.700, Size: 335, ML Enhanced: False
+2025-08-23 16:30:16,379 - strategies.ml_strategy - INFO - 2025-01-08: Portfolio Value: $976,073, Return: -2.4%, Positions: 8
+2025-08-23 16:30:16,379 - strategies.ml_strategy - INFO - 2025-01-10: Order Failed: TSLA, Status: Margin
+2025-08-23 16:30:16,379 - strategies.ml_strategy - INFO - 2025-01-10: Order Failed: PG, Status: Margin
+2025-08-23 16:30:16,379 - strategies.ml_strategy - INFO - 2025-01-10: Order Failed: HD, Status: Margin
+2025-08-23 16:30:16,379 - strategies.ml_strategy - INFO - 2025-01-10: Order Failed: DIS, Status: Margin
+2025-08-23 16:30:16,379 - strategies.ml_strategy - INFO - 2025-01-10: Order Failed: CRM, Status: Margin
+2025-08-23 16:30:16,535 - strategies.ml_strategy - INFO - 2025-01-10: EXIT SIGNAL: ORCL, Strength: 0.800
+2025-08-23 16:30:16,535 - strategies.ml_strategy - INFO - 2025-01-10: BUY SIGNAL: PG, Strength: 0.900, Size: 927, ML Enhanced: False
+2025-08-23 16:30:16,535 - strategies.ml_strategy - INFO - 2025-01-10: BUY SIGNAL: CRM, Strength: 0.700, Size: 341, ML Enhanced: False
+2025-08-23 16:30:16,535 - strategies.ml_strategy - INFO - 2025-01-13: Order Failed: PG, Status: Margin
+2025-08-23 16:30:16,535 - strategies.ml_strategy - INFO - 2025-01-13: Order Failed: CRM, Status: Margin
+2025-08-23 16:30:16,535 - strategies.ml_strategy - INFO - 2025-01-13: SELL EXECUTED: ORCL, Price: 152.86, Size: -455, Value: 75647.24
+2025-08-23 16:30:16,690 - strategies.ml_strategy - INFO - 2025-01-13: EXIT SIGNAL: ORCL, Strength: 0.800
+2025-08-23 16:30:16,690 - strategies.ml_strategy - INFO - 2025-01-13: BUY SIGNAL: AAPL, Strength: 0.700, Size: 622, ML Enhanced: False
+2025-08-23 16:30:16,690 - strategies.ml_strategy - INFO - 2025-01-13: BUY SIGNAL: V, Strength: 0.900, Size: 476, ML Enhanced: False
+2025-08-23 16:30:16,690 - strategies.ml_strategy - INFO - 2025-01-13: BUY SIGNAL: MA, Strength: 0.700, Size: 288, ML Enhanced: False
+2025-08-23 16:30:16,690 - strategies.ml_strategy - INFO - 2025-01-13: BUY SIGNAL: PG, Strength: 0.700, Size: 932, ML Enhanced: False
+2025-08-23 16:30:16,690 - strategies.ml_strategy - INFO - 2025-01-13: BUY SIGNAL: DIS, Strength: 0.700, Size: 15, ML Enhanced: False
+2025-08-23 16:30:16,690 - strategies.ml_strategy - INFO - 2025-01-13: BUY SIGNAL: CRM, Strength: 0.700, Size: 343, ML Enhanced: False
+2025-08-23 16:30:16,691 - strategies.ml_strategy - INFO - 2025-01-14: Order Failed: AAPL, Status: Margin
+2025-08-23 16:30:16,691 - strategies.ml_strategy - INFO - 2025-01-14: Order Failed: V, Status: Margin
+2025-08-23 16:30:16,691 - strategies.ml_strategy - INFO - 2025-01-14: Order Failed: MA, Status: Margin
+2025-08-23 16:30:16,691 - strategies.ml_strategy - INFO - 2025-01-14: Order Failed: PG, Status: Margin
+2025-08-23 16:30:16,691 - strategies.ml_strategy - INFO - 2025-01-14: Order Failed: DIS, Status: Margin
+2025-08-23 16:30:16,691 - strategies.ml_strategy - INFO - 2025-01-14: Order Failed: CRM, Status: Margin
+2025-08-23 16:30:16,691 - strategies.ml_strategy - INFO - 2025-01-14: SELL EXECUTED: ORCL, Price: 155.53, Size: -227, Value: 37740.49
+2025-08-23 16:30:16,847 - strategies.ml_strategy - INFO - 2025-01-14: EXIT SIGNAL: META, Strength: 0.800
+2025-08-23 16:30:16,848 - strategies.ml_strategy - INFO - 2025-01-14: BUY SIGNAL: AAPL, Strength: 0.700, Size: 626, ML Enhanced: False
+2025-08-23 16:30:16,848 - strategies.ml_strategy - INFO - 2025-01-14: BUY SIGNAL: MSFT, Strength: 0.700, Size: 2, ML Enhanced: False
+2025-08-23 16:30:16,848 - strategies.ml_strategy - INFO - 2025-01-14: BUY SIGNAL: ORCL, Strength: 0.700, Size: 709, ML Enhanced: False
+2025-08-23 16:30:16,848 - strategies.ml_strategy - INFO - 2025-01-14: BUY SIGNAL: V, Strength: 0.700, Size: 473, ML Enhanced: False
+2025-08-23 16:30:16,848 - strategies.ml_strategy - INFO - 2025-01-14: BUY SIGNAL: MA, Strength: 0.700, Size: 287, ML Enhanced: False
+2025-08-23 16:30:16,848 - strategies.ml_strategy - INFO - 2025-01-14: BUY SIGNAL: PG, Strength: 0.700, Size: 929, ML Enhanced: False
+2025-08-23 16:30:16,848 - strategies.ml_strategy - INFO - 2025-01-14: BUY SIGNAL: DIS, Strength: 0.700, Size: 18, ML Enhanced: False
+2025-08-23 16:30:16,848 - strategies.ml_strategy - INFO - 2025-01-14: BUY SIGNAL: CRM, Strength: 0.700, Size: 337, ML Enhanced: False
+2025-08-23 16:30:16,849 - strategies.ml_strategy - INFO - 2025-01-15: Order Failed: AAPL, Status: Margin
+2025-08-23 16:30:16,849 - strategies.ml_strategy - INFO - 2025-01-15: Order Failed: MSFT, Status: Margin
+2025-08-23 16:30:16,849 - strategies.ml_strategy - INFO - 2025-01-15: Order Failed: ORCL, Status: Margin
+2025-08-23 16:30:16,849 - strategies.ml_strategy - INFO - 2025-01-15: Order Failed: V, Status: Margin
+2025-08-23 16:30:16,849 - strategies.ml_strategy - INFO - 2025-01-15: Order Failed: MA, Status: Margin
+2025-08-23 16:30:16,849 - strategies.ml_strategy - INFO - 2025-01-15: Order Failed: PG, Status: Margin
+2025-08-23 16:30:16,849 - strategies.ml_strategy - INFO - 2025-01-15: Order Failed: DIS, Status: Margin
+2025-08-23 16:30:16,849 - strategies.ml_strategy - INFO - 2025-01-15: Order Failed: CRM, Status: Margin
+2025-08-23 16:30:16,849 - strategies.ml_strategy - INFO - 2025-01-15: SELL EXECUTED: META, Price: 609.20, Size: -34, Value: 18717.05
+2025-08-23 16:30:17,007 - strategies.ml_strategy - INFO - 2025-01-15: BUY SIGNAL: AAPL, Strength: 0.700, Size: 617, ML Enhanced: False
+2025-08-23 16:30:17,007 - strategies.ml_strategy - INFO - 2025-01-15: BUY SIGNAL: ORCL, Strength: 0.900, Size: 702, ML Enhanced: False
+2025-08-23 16:30:17,007 - strategies.ml_strategy - INFO - 2025-01-15: BUY SIGNAL: JPM, Strength: 0.900, Size: 586, ML Enhanced: False
+2025-08-23 16:30:17,007 - strategies.ml_strategy - INFO - 2025-01-15: BUY SIGNAL: BAC, Strength: 0.900, Size: 3146, ML Enhanced: False
+2025-08-23 16:30:17,007 - strategies.ml_strategy - INFO - 2025-01-15: BUY SIGNAL: PG, Strength: 0.700, Size: 934, ML Enhanced: False
+2025-08-23 16:30:17,007 - strategies.ml_strategy - INFO - 2025-01-15: BUY SIGNAL: HD, Strength: 0.900, Size: 365, ML Enhanced: False
+2025-08-23 16:30:17,008 - strategies.ml_strategy - INFO - 2025-01-15: BUY SIGNAL: DIS, Strength: 0.700, Size: 24, ML Enhanced: False
+2025-08-23 16:30:17,008 - strategies.ml_strategy - INFO - 2025-01-15: BUY SIGNAL: CRM, Strength: 0.700, Size: 343, ML Enhanced: False
+2025-08-23 16:30:17,008 - strategies.ml_strategy - INFO - 2025-01-16: Order Failed: AAPL, Status: Margin
+2025-08-23 16:30:17,008 - strategies.ml_strategy - INFO - 2025-01-16: Order Failed: ORCL, Status: Margin
+2025-08-23 16:30:17,008 - strategies.ml_strategy - INFO - 2025-01-16: Order Failed: JPM, Status: Margin
+2025-08-23 16:30:17,008 - strategies.ml_strategy - INFO - 2025-01-16: Order Failed: BAC, Status: Margin
+2025-08-23 16:30:17,008 - strategies.ml_strategy - INFO - 2025-01-16: Order Failed: PG, Status: Margin
+2025-08-23 16:30:17,008 - strategies.ml_strategy - INFO - 2025-01-16: Order Failed: HD, Status: Margin
+2025-08-23 16:30:17,008 - strategies.ml_strategy - INFO - 2025-01-16: Order Failed: DIS, Status: Margin
+2025-08-23 16:30:17,008 - strategies.ml_strategy - INFO - 2025-01-16: Order Failed: CRM, Status: Margin
+2025-08-23 16:30:17,344 - strategies.ml_strategy - INFO - 2025-01-16: BUY SIGNAL: AAPL, Strength: 0.900, Size: 638, ML Enhanced: False
+2025-08-23 16:30:17,344 - strategies.ml_strategy - INFO - 2025-01-16: BUY SIGNAL: ORCL, Strength: 0.900, Size: 686, ML Enhanced: False
+2025-08-23 16:30:17,344 - strategies.ml_strategy - INFO - 2025-01-16: BUY SIGNAL: JPM, Strength: 0.900, Size: 577, ML Enhanced: False
+2025-08-23 16:30:17,345 - strategies.ml_strategy - INFO - 2025-01-16: BUY SIGNAL: PG, Strength: 0.700, Size: 921, ML Enhanced: False
+2025-08-23 16:30:17,345 - strategies.ml_strategy - INFO - 2025-01-16: BUY SIGNAL: DIS, Strength: 0.700, Size: 34, ML Enhanced: False
+2025-08-23 16:30:17,345 - strategies.ml_strategy - INFO - 2025-01-16: BUY SIGNAL: CRM, Strength: 0.700, Size: 340, ML Enhanced: False
+2025-08-23 16:30:17,345 - strategies.ml_strategy - INFO - 2025-01-16: Portfolio Value: $967,583, Return: -3.2%, Positions: 8
+2025-08-23 16:30:17,345 - strategies.ml_strategy - INFO - 2025-01-17: Order Failed: AAPL, Status: Margin
+2025-08-23 16:30:17,345 - strategies.ml_strategy - INFO - 2025-01-17: Order Failed: ORCL, Status: Margin
+2025-08-23 16:30:17,345 - strategies.ml_strategy - INFO - 2025-01-17: Order Failed: JPM, Status: Margin
+2025-08-23 16:30:17,345 - strategies.ml_strategy - INFO - 2025-01-17: Order Failed: PG, Status: Margin
+2025-08-23 16:30:17,345 - strategies.ml_strategy - INFO - 2025-01-17: Order Failed: DIS, Status: Margin
+2025-08-23 16:30:17,345 - strategies.ml_strategy - INFO - 2025-01-17: Order Failed: CRM, Status: Margin
+2025-08-23 16:30:17,513 - strategies.ml_strategy - INFO - 2025-01-17: BUY SIGNAL: AAPL, Strength: 0.900, Size: 635, ML Enhanced: False
+2025-08-23 16:30:17,513 - strategies.ml_strategy - INFO - 2025-01-17: BUY SIGNAL: ORCL, Strength: 0.900, Size: 681, ML Enhanced: False
+2025-08-23 16:30:17,513 - strategies.ml_strategy - INFO - 2025-01-17: BUY SIGNAL: JPM, Strength: 0.900, Size: 568, ML Enhanced: False
+2025-08-23 16:30:17,513 - strategies.ml_strategy - INFO - 2025-01-17: BUY SIGNAL: PG, Strength: 0.700, Size: 921, ML Enhanced: False
+2025-08-23 16:30:17,513 - strategies.ml_strategy - INFO - 2025-01-17: BUY SIGNAL: DIS, Strength: 0.700, Size: 31, ML Enhanced: False
+2025-08-23 16:30:17,513 - strategies.ml_strategy - INFO - 2025-01-17: BUY SIGNAL: CRM, Strength: 0.700, Size: 336, ML Enhanced: False
+2025-08-23 16:30:17,514 - strategies.ml_strategy - INFO - 2025-01-21: Order Failed: AAPL, Status: Margin
+2025-08-23 16:30:17,514 - strategies.ml_strategy - INFO - 2025-01-21: Order Failed: ORCL, Status: Margin
+2025-08-23 16:30:17,514 - strategies.ml_strategy - INFO - 2025-01-21: Order Failed: JPM, Status: Margin
+2025-08-23 16:30:17,514 - strategies.ml_strategy - INFO - 2025-01-21: Order Failed: PG, Status: Margin
+2025-08-23 16:30:17,514 - strategies.ml_strategy - INFO - 2025-01-21: Order Failed: DIS, Status: Margin
+2025-08-23 16:30:17,514 - strategies.ml_strategy - INFO - 2025-01-21: Order Failed: CRM, Status: Margin
+2025-08-23 16:30:17,677 - strategies.ml_strategy - INFO - 2025-01-21: BUY SIGNAL: ORCL, Strength: 0.900, Size: 629, ML Enhanced: False
+2025-08-23 16:30:17,677 - strategies.ml_strategy - INFO - 2025-01-21: BUY SIGNAL: JPM, Strength: 0.900, Size: 565, ML Enhanced: False
+2025-08-23 16:30:17,677 - strategies.ml_strategy - INFO - 2025-01-21: BUY SIGNAL: PG, Strength: 0.900, Size: 927, ML Enhanced: False
+2025-08-23 16:30:17,677 - strategies.ml_strategy - INFO - 2025-01-22: Order Failed: JPM, Status: Margin
+2025-08-23 16:30:17,677 - strategies.ml_strategy - INFO - 2025-01-22: Order Failed: PG, Status: Margin
+2025-08-23 16:30:17,677 - strategies.ml_strategy - INFO - 2025-01-22: BUY EXECUTED: ORCL, Price: 190.42, Size: 629, Cost: 119774.11
+2025-08-23 16:30:17,834 - strategies.ml_strategy - INFO - 2025-01-22: BUY SIGNAL: AAPL, Strength: 0.700, Size: 659, ML Enhanced: False
+2025-08-23 16:30:17,834 - strategies.ml_strategy - INFO - 2025-01-22: BUY SIGNAL: AMZN, Strength: 0.900, Size: 625, ML Enhanced: False
+2025-08-23 16:30:17,835 - strategies.ml_strategy - INFO - 2025-01-23: Order Failed: AAPL, Status: Margin
+2025-08-23 16:30:17,835 - strategies.ml_strategy - INFO - 2025-01-23: Order Failed: AMZN, Status: Margin
+2025-08-23 16:30:17,985 - strategies.ml_strategy - INFO - 2025-01-23: EXIT SIGNAL: META, Strength: 0.000
+2025-08-23 16:30:17,985 - strategies.ml_strategy - INFO - 2025-01-23: BUY SIGNAL: AAPL, Strength: 0.900, Size: 665, ML Enhanced: False
+2025-08-23 16:30:17,986 - strategies.ml_strategy - INFO - 2025-01-24: Order Failed: AAPL, Status: Margin
+2025-08-23 16:30:17,986 - strategies.ml_strategy - INFO - 2025-01-24: SELL EXECUTED: META, Price: 635.35, Size: -10, Value: 5505.01
+2025-08-23 16:30:18,310 - strategies.ml_strategy - INFO - 2025-01-24: EXIT SIGNAL: META, Strength: 0.900
+2025-08-23 16:30:18,311 - strategies.ml_strategy - INFO - 2025-01-24: BUY SIGNAL: AAPL, Strength: 0.700, Size: 668, ML Enhanced: False
+2025-08-23 16:30:18,311 - strategies.ml_strategy - INFO - 2025-01-24: BUY SIGNAL: META, Strength: 0.900, Size: 205, ML Enhanced: False
+2025-08-23 16:30:18,311 - strategies.ml_strategy - INFO - 2025-01-24: Portfolio Value: $989,739, Return: -1.0%, Positions: 8
+2025-08-23 16:30:18,311 - strategies.ml_strategy - INFO - 2025-01-27: Order Failed: AAPL, Status: Margin
+2025-08-23 16:30:18,311 - strategies.ml_strategy - INFO - 2025-01-27: Order Failed: META, Status: Margin
+2025-08-23 16:30:18,311 - strategies.ml_strategy - INFO - 2025-01-27: SELL EXECUTED: META, Price: 625.57, Size: -7, Value: 3853.51
+2025-08-23 16:30:18,464 - strategies.ml_strategy - INFO - 2025-01-27: EXIT SIGNAL: META, Strength: 0.900
+2025-08-23 16:30:18,464 - strategies.ml_strategy - INFO - 2025-01-27: EXIT SIGNAL: ORCL, Strength: 0.000
+2025-08-23 16:30:18,464 - strategies.ml_strategy - INFO - 2025-01-27: BUY SIGNAL: META, Strength: 0.900, Size: 206, ML Enhanced: False
+2025-08-23 16:30:18,464 - strategies.ml_strategy - INFO - 2025-01-27: BUY SIGNAL: MA, Strength: 0.900, Size: 269, ML Enhanced: False
+2025-08-23 16:30:18,464 - strategies.ml_strategy - INFO - 2025-01-27: BUY SIGNAL: PG, Strength: 0.900, Size: 879, ML Enhanced: False
+2025-08-23 16:30:18,464 - strategies.ml_strategy - INFO - 2025-01-27: BUY SIGNAL: HD, Strength: 0.900, Size: 351, ML Enhanced: False
+2025-08-23 16:30:18,465 - strategies.ml_strategy - INFO - 2025-01-27: BUY SIGNAL: CRM, Strength: 0.900, Size: 311, ML Enhanced: False
+2025-08-23 16:30:18,465 - strategies.ml_strategy - INFO - 2025-01-28: Order Failed: MA, Status: Margin
+2025-08-23 16:30:18,465 - strategies.ml_strategy - INFO - 2025-01-28: Order Failed: PG, Status: Margin
+2025-08-23 16:30:18,465 - strategies.ml_strategy - INFO - 2025-01-28: Order Failed: HD, Status: Margin
+2025-08-23 16:30:18,465 - strategies.ml_strategy - INFO - 2025-01-28: Order Failed: CRM, Status: Margin
+2025-08-23 16:30:18,465 - strategies.ml_strategy - INFO - 2025-01-28: SELL EXECUTED: META, Price: 664.90, Size: -5, Value: 2752.51
+2025-08-23 16:30:18,465 - strategies.ml_strategy - INFO - 2025-01-28: SELL EXECUTED: ORCL, Price: 162.06, Size: -857, Value: 157680.85
+2025-08-23 16:30:18,465 - strategies.ml_strategy - INFO - 2025-01-28: BUY EXECUTED: META, Price: 664.90, Size: 206, Cost: 136968.67
+2025-08-23 16:30:18,617 - strategies.ml_strategy - INFO - 2025-01-28: BUY SIGNAL: META, Strength: 0.900, Size: 1, ML Enhanced: False
+2025-08-23 16:30:18,617 - strategies.ml_strategy - INFO - 2025-01-28: BUY SIGNAL: CRM, Strength: 0.900, Size: 298, ML Enhanced: False
+2025-08-23 16:30:18,618 - strategies.ml_strategy - INFO - 2025-01-29: Order Failed: CRM, Status: Margin
+2025-08-23 16:30:18,618 - strategies.ml_strategy - INFO - 2025-01-29: BUY EXECUTED: META, Price: 673.88, Size: 1, Cost: 673.88
+2025-08-23 16:30:18,914 - strategies.ml_strategy - INFO - 2025-01-30: BUY SIGNAL: V, Strength: 0.900, Size: 432, ML Enhanced: False
+2025-08-23 16:30:18,914 - strategies.ml_strategy - INFO - 2025-01-30: BUY SIGNAL: MA, Strength: 0.900, Size: 261, ML Enhanced: False
+2025-08-23 16:30:18,915 - strategies.ml_strategy - INFO - 2025-01-31: Order Failed: V, Status: Margin
+2025-08-23 16:30:18,915 - strategies.ml_strategy - INFO - 2025-01-31: Order Failed: MA, Status: Margin
+2025-08-23 16:30:19,240 - strategies.ml_strategy - INFO - 2025-01-31: EXIT SIGNAL: MSFT, Strength: 0.800
+2025-08-23 16:30:19,240 - strategies.ml_strategy - INFO - 2025-01-31: BUY SIGNAL: GOOGL, Strength: 0.900, Size: 723, ML Enhanced: False
+2025-08-23 16:30:19,240 - strategies.ml_strategy - INFO - 2025-01-31: Portfolio Value: $981,575, Return: -1.8%, Positions: 7
+2025-08-23 16:30:19,241 - strategies.ml_strategy - INFO - 2025-02-03: Order Failed: GOOGL, Status: Margin
+2025-08-23 16:30:19,241 - strategies.ml_strategy - INFO - 2025-02-03: SELL EXECUTED: MSFT, Price: 409.35, Size: -175, Value: 74060.79
+2025-08-23 16:30:19,392 - strategies.ml_strategy - INFO - 2025-02-03: EXIT SIGNAL: MSFT, Strength: 0.800
+2025-08-23 16:30:19,393 - strategies.ml_strategy - INFO - 2025-02-04: SELL EXECUTED: MSFT, Price: 410.43, Size: -87, Value: 36818.80
+2025-08-23 16:30:19,545 - strategies.ml_strategy - INFO - 2025-02-04: BUY SIGNAL: GOOGL, Strength: 0.900, Size: 717, ML Enhanced: False
+2025-08-23 16:30:19,545 - strategies.ml_strategy - INFO - 2025-02-05: Order Failed: GOOGL, Status: Margin
+2025-08-23 16:30:21,094 - strategies.ml_strategy - INFO - 2025-02-07: Trained ML models for 20 symbols
+2025-08-23 16:30:21,264 - strategies.ml_strategy - INFO - 2025-02-07: EXIT SIGNAL: META, Strength: 1.000
+2025-08-23 16:30:21,264 - strategies.ml_strategy - INFO - 2025-02-07: EXIT SIGNAL: CRM, Strength: 0.758
+2025-08-23 16:30:21,264 - strategies.ml_strategy - INFO - 2025-02-07: Portfolio Value: $978,400, Return: -2.2%, Positions: 7
+2025-08-23 16:30:21,265 - strategies.ml_strategy - INFO - 2025-02-10: SELL EXECUTED: META, Price: 717.37, Size: -219, Value: 144248.56
+2025-08-23 16:30:21,265 - strategies.ml_strategy - INFO - 2025-02-10: SELL EXECUTED: CRM, Price: 326.89, Size: -57, Value: 19237.35
+2025-08-23 16:30:21,417 - strategies.ml_strategy - INFO - 2025-02-10: EXIT SIGNAL: CRM, Strength: 0.800
+2025-08-23 16:30:21,418 - strategies.ml_strategy - INFO - 2025-02-11: SELL EXECUTED: CRM, Price: 323.00, Size: -28, Value: 9449.93
+2025-08-23 16:30:21,574 - strategies.ml_strategy - INFO - 2025-02-11: EXIT SIGNAL: CRM, Strength: 0.800
+2025-08-23 16:30:21,575 - strategies.ml_strategy - INFO - 2025-02-11: BUY SIGNAL: MSFT, Strength: 0.700, Size: 275, ML Enhanced: False
+2025-08-23 16:30:21,575 - strategies.ml_strategy - INFO - 2025-02-12: SELL EXECUTED: CRM, Price: 318.54, Size: -14, Value: 4724.96
+2025-08-23 16:30:21,575 - strategies.ml_strategy - INFO - 2025-02-12: BUY EXECUTED: MSFT, Price: 404.98, Size: 275, Cost: 111370.77
+2025-08-23 16:30:21,733 - strategies.ml_strategy - INFO - 2025-02-12: BUY SIGNAL: MSFT, Strength: 0.700, Size: 2, ML Enhanced: False
+2025-08-23 16:30:21,733 - strategies.ml_strategy - INFO - 2025-02-13: BUY EXECUTED: MSFT, Price: 404.78, Size: 2, Cost: 809.55
+2025-08-23 16:30:21,888 - strategies.ml_strategy - INFO - 2025-02-13: BUY SIGNAL: MSFT, Strength: 0.700, Size: 1, ML Enhanced: False
+2025-08-23 16:30:21,888 - strategies.ml_strategy - INFO - 2025-02-13: BUY SIGNAL: TSLA, Strength: 0.700, Size: 420, ML Enhanced: False
+2025-08-23 16:30:21,889 - strategies.ml_strategy - INFO - 2025-02-14: BUY EXECUTED: MSFT, Price: 405.56, Size: 1, Cost: 405.56
+2025-08-23 16:30:21,889 - strategies.ml_strategy - INFO - 2025-02-14: BUY EXECUTED: TSLA, Price: 360.62, Size: 420, Cost: 151460.40
+2025-08-23 16:30:23,109 - strategies.ml_strategy - INFO - 2025-02-14: Trained ML models for 20 symbols
+2025-08-23 16:30:23,271 - strategies.ml_strategy - INFO - 2025-02-14: Portfolio Value: $991,065, Return: -0.9%, Positions: 7
+2025-08-23 16:30:23,427 - strategies.ml_strategy - INFO - 2025-02-18: EXIT SIGNAL: UNH, Strength: 0.800
+2025-08-23 16:30:23,427 - strategies.ml_strategy - INFO - 2025-02-18: BUY SIGNAL: CRM, Strength: 0.700, Size: 434, ML Enhanced: False
+2025-08-23 16:30:23,427 - strategies.ml_strategy - INFO - 2025-02-19: Order Failed: CRM, Status: Margin
+2025-08-23 16:30:23,427 - strategies.ml_strategy - INFO - 2025-02-19: SELL EXECUTED: UNH, Price: 495.68, Size: -149, Value: 73680.69
+2025-08-23 16:30:23,582 - strategies.ml_strategy - INFO - 2025-02-19: BUY SIGNAL: HD, Strength: 0.900, Size: 383, ML Enhanced: False
+2025-08-23 16:30:23,582 - strategies.ml_strategy - INFO - 2025-02-19: BUY SIGNAL: CRM, Strength: 0.700, Size: 447, ML Enhanced: False
+2025-08-23 16:30:23,583 - strategies.ml_strategy - INFO - 2025-02-20: Order Failed: HD, Status: Margin
+2025-08-23 16:30:23,583 - strategies.ml_strategy - INFO - 2025-02-20: Order Failed: CRM, Status: Margin
+2025-08-23 16:30:23,736 - strategies.ml_strategy - INFO - 2025-02-20: BUY SIGNAL: GOOGL, Strength: 0.700, Size: 810, ML Enhanced: False
+2025-08-23 16:30:23,736 - strategies.ml_strategy - INFO - 2025-02-20: BUY SIGNAL: TSLA, Strength: 0.700, Size: 1, ML Enhanced: False
+2025-08-23 16:30:23,736 - strategies.ml_strategy - INFO - 2025-02-20: BUY SIGNAL: UNH, Strength: 0.700, Size: 151, ML Enhanced: False
+2025-08-23 16:30:23,737 - strategies.ml_strategy - INFO - 2025-02-20: BUY SIGNAL: HD, Strength: 0.700, Size: 383, ML Enhanced: False
+2025-08-23 16:30:23,737 - strategies.ml_strategy - INFO - 2025-02-20: BUY SIGNAL: CRM, Strength: 0.700, Size: 455, ML Enhanced: False
+2025-08-23 16:30:23,737 - strategies.ml_strategy - INFO - 2025-02-21: Order Failed: GOOGL, Status: Margin
+2025-08-23 16:30:23,737 - strategies.ml_strategy - INFO - 2025-02-21: Order Failed: TSLA, Status: Margin
+2025-08-23 16:30:23,737 - strategies.ml_strategy - INFO - 2025-02-21: Order Failed: UNH, Status: Margin
+2025-08-23 16:30:23,737 - strategies.ml_strategy - INFO - 2025-02-21: Order Failed: HD, Status: Margin
+2025-08-23 16:30:23,737 - strategies.ml_strategy - INFO - 2025-02-21: Order Failed: CRM, Status: Margin
+2025-08-23 16:30:23,890 - strategies.ml_strategy - INFO - 2025-02-21: EXIT SIGNAL: TSLA, Strength: 0.800
+2025-08-23 16:30:23,891 - strategies.ml_strategy - INFO - 2025-02-21: EXIT SIGNAL: UNH, Strength: 0.800
+2025-08-23 16:30:23,891 - strategies.ml_strategy - INFO - 2025-02-21: EXIT SIGNAL: KO, Strength: 0.900
+2025-08-23 16:30:23,891 - strategies.ml_strategy - INFO - 2025-02-21: EXIT SIGNAL: CRM, Strength: 0.800
+2025-08-23 16:30:23,891 - strategies.ml_strategy - INFO - 2025-02-21: BUY SIGNAL: GOOGL, Strength: 0.700, Size: 822, ML Enhanced: False
+2025-08-23 16:30:23,891 - strategies.ml_strategy - INFO - 2025-02-21: BUY SIGNAL: PG, Strength: 0.900, Size: 877, ML Enhanced: False
+2025-08-23 16:30:23,892 - strategies.ml_strategy - INFO - 2025-02-24: Order Failed: PG, Status: Margin
+2025-08-23 16:30:23,892 - strategies.ml_strategy - INFO - 2025-02-24: SELL EXECUTED: TSLA, Price: 338.14, Size: -210, Value: 75730.20
+2025-08-23 16:30:23,892 - strategies.ml_strategy - INFO - 2025-02-24: SELL EXECUTED: UNH, Price: 461.42, Size: -74, Value: 36593.10
+2025-08-23 16:30:23,892 - strategies.ml_strategy - INFO - 2025-02-24: SELL EXECUTED: KO, Price: 69.82, Size: -745, Value: 45075.92
+2025-08-23 16:30:23,892 - strategies.ml_strategy - INFO - 2025-02-24: SELL EXECUTED: CRM, Price: 310.53, Size: -7, Value: 2362.48
+2025-08-23 16:30:23,892 - strategies.ml_strategy - INFO - 2025-02-24: BUY EXECUTED: GOOGL, Price: 181.56, Size: 822, Cost: 149243.03
+2025-08-23 16:30:25,139 - strategies.ml_strategy - INFO - 2025-02-24: Trained ML models for 20 symbols
+2025-08-23 16:30:25,321 - strategies.ml_strategy - INFO - 2025-02-24: EXIT SIGNAL: TSLA, Strength: 0.862
+2025-08-23 16:30:25,321 - strategies.ml_strategy - INFO - 2025-02-24: EXIT SIGNAL: UNH, Strength: 1.000
+2025-08-23 16:30:25,321 - strategies.ml_strategy - INFO - 2025-02-24: EXIT SIGNAL: KO, Strength: 1.000
+2025-08-23 16:30:25,321 - strategies.ml_strategy - INFO - 2025-02-24: EXIT SIGNAL: CRM, Strength: 1.000
+2025-08-23 16:30:25,321 - strategies.ml_strategy - INFO - 2025-02-24: BUY SIGNAL: HD, Strength: 0.900, Size: 389, ML Enhanced: True
+2025-08-23 16:30:25,321 - strategies.ml_strategy - INFO - 2025-02-24: Portfolio Value: $980,778, Return: -1.9%, Positions: 8
+2025-08-23 16:30:25,322 - strategies.ml_strategy - INFO - 2025-02-25: SELL EXECUTED: TSLA, Price: 327.02, Size: -210, Value: 75730.20
+2025-08-23 16:30:25,322 - strategies.ml_strategy - INFO - 2025-02-25: SELL EXECUTED: UNH, Price: 455.58, Size: -75, Value: 37087.60
+2025-08-23 16:30:25,322 - strategies.ml_strategy - INFO - 2025-02-25: SELL EXECUTED: KO, Price: 69.84, Size: -1739, Value: 105217.48
+2025-08-23 16:30:25,322 - strategies.ml_strategy - INFO - 2025-02-25: SELL EXECUTED: CRM, Price: 305.29, Size: -8, Value: 2699.98
+2025-08-23 16:30:25,322 - strategies.ml_strategy - INFO - 2025-02-25: BUY EXECUTED: HD, Price: 380.21, Size: 389, Cost: 147901.44
+2025-08-23 16:30:25,478 - strategies.ml_strategy - INFO - 2025-02-25: EXIT SIGNAL: MSFT, Strength: 0.800
+2025-08-23 16:30:25,479 - strategies.ml_strategy - INFO - 2025-02-25: BUY SIGNAL: GOOGL, Strength: 0.900, Size: 17, ML Enhanced: False
+2025-08-23 16:30:25,479 - strategies.ml_strategy - INFO - 2025-02-25: BUY SIGNAL: AMZN, Strength: 0.900, Size: 690, ML Enhanced: False
+2025-08-23 16:30:25,479 - strategies.ml_strategy - INFO - 2025-02-25: BUY SIGNAL: BAC, Strength: 0.700, Size: 3385, ML Enhanced: False
+2025-08-23 16:30:25,479 - strategies.ml_strategy - INFO - 2025-02-25: BUY SIGNAL: UNH, Strength: 0.900, Size: 315, ML Enhanced: False
+2025-08-23 16:30:25,479 - strategies.ml_strategy - INFO - 2025-02-25: BUY SIGNAL: CRM, Strength: 0.700, Size: 481, ML Enhanced: False
+2025-08-23 16:30:25,480 - strategies.ml_strategy - INFO - 2025-02-26: Order Failed: BAC, Status: Margin
+2025-08-23 16:30:25,480 - strategies.ml_strategy - INFO - 2025-02-26: Order Failed: UNH, Status: Margin
+2025-08-23 16:30:25,480 - strategies.ml_strategy - INFO - 2025-02-26: Order Failed: CRM, Status: Margin
+2025-08-23 16:30:25,480 - strategies.ml_strategy - INFO - 2025-02-26: SELL EXECUTED: MSFT, Price: 396.63, Size: -183, Value: 74913.94
+2025-08-23 16:30:25,480 - strategies.ml_strategy - INFO - 2025-02-26: BUY EXECUTED: GOOGL, Price: 174.66, Size: 17, Cost: 2969.17
+2025-08-23 16:30:25,480 - strategies.ml_strategy - INFO - 2025-02-26: BUY EXECUTED: AMZN, Price: 214.94, Size: 690, Cost: 148308.60
+2025-08-23 16:30:25,632 - strategies.ml_strategy - INFO - 2025-02-26: EXIT SIGNAL: GOOGL, Strength: 0.800
+2025-08-23 16:30:25,632 - strategies.ml_strategy - INFO - 2025-02-26: BUY SIGNAL: BAC, Strength: 0.700, Size: 3368, ML Enhanced: False
+2025-08-23 16:30:25,632 - strategies.ml_strategy - INFO - 2025-02-26: BUY SIGNAL: UNH, Strength: 0.700, Size: 318, ML Enhanced: False
+2025-08-23 16:30:25,632 - strategies.ml_strategy - INFO - 2025-02-26: BUY SIGNAL: CRM, Strength: 0.900, Size: 477, ML Enhanced: False
+2025-08-23 16:30:25,633 - strategies.ml_strategy - INFO - 2025-02-27: Order Failed: UNH, Status: Margin
+2025-08-23 16:30:25,633 - strategies.ml_strategy - INFO - 2025-02-27: Order Failed: CRM, Status: Margin
+2025-08-23 16:30:25,633 - strategies.ml_strategy - INFO - 2025-02-27: SELL EXECUTED: GOOGL, Price: 173.58, Size: -419, Value: 76015.39
+2025-08-23 16:30:25,633 - strategies.ml_strategy - INFO - 2025-02-27: BUY EXECUTED: BAC, Price: 43.56, Size: 3368, Cost: 146699.38
+2025-08-23 16:30:25,787 - strategies.ml_strategy - INFO - 2025-02-27: EXIT SIGNAL: GOOGL, Strength: 0.800
+2025-08-23 16:30:25,787 - strategies.ml_strategy - INFO - 2025-02-27: BUY SIGNAL: MSFT, Strength: 0.700, Size: 188, ML Enhanced: False
+2025-08-23 16:30:25,787 - strategies.ml_strategy - INFO - 2025-02-27: BUY SIGNAL: AMZN, Strength: 0.700, Size: 5, ML Enhanced: False
+2025-08-23 16:30:25,788 - strategies.ml_strategy - INFO - 2025-02-27: BUY SIGNAL: META, Strength: 0.700, Size: 220, ML Enhanced: False
+2025-08-23 16:30:25,788 - strategies.ml_strategy - INFO - 2025-02-27: BUY SIGNAL: JPM, Strength: 0.700, Size: 566, ML Enhanced: False
+2025-08-23 16:30:25,788 - strategies.ml_strategy - INFO - 2025-02-27: BUY SIGNAL: UNH, Strength: 0.700, Size: 313, ML Enhanced: False
+2025-08-23 16:30:25,788 - strategies.ml_strategy - INFO - 2025-02-28: Order Failed: META, Status: Margin
+2025-08-23 16:30:25,788 - strategies.ml_strategy - INFO - 2025-02-28: Order Failed: JPM, Status: Margin
+2025-08-23 16:30:25,788 - strategies.ml_strategy - INFO - 2025-02-28: Order Failed: UNH, Status: Margin
+2025-08-23 16:30:25,788 - strategies.ml_strategy - INFO - 2025-02-28: SELL EXECUTED: GOOGL, Price: 168.28, Size: -210, Value: 38098.41
+2025-08-23 16:30:25,788 - strategies.ml_strategy - INFO - 2025-02-28: BUY EXECUTED: MSFT, Price: 391.30, Size: 188, Cost: 73563.87
+2025-08-23 16:30:25,788 - strategies.ml_strategy - INFO - 2025-02-28: BUY EXECUTED: AMZN, Price: 208.65, Size: 5, Cost: 1043.25
+2025-08-23 16:30:25,945 - strategies.ml_strategy - INFO - 2025-02-28: BUY SIGNAL: GOOGL, Strength: 0.900, Size: 660, ML Enhanced: False
+2025-08-23 16:30:25,945 - strategies.ml_strategy - INFO - 2025-02-28: BUY SIGNAL: AMZN, Strength: 0.900, Size: 1, ML Enhanced: False
+2025-08-23 16:30:25,945 - strategies.ml_strategy - INFO - 2025-02-28: BUY SIGNAL: META, Strength: 0.700, Size: 221, ML Enhanced: False
+2025-08-23 16:30:25,945 - strategies.ml_strategy - INFO - 2025-02-28: BUY SIGNAL: TSLA, Strength: 0.900, Size: 504, ML Enhanced: False
+2025-08-23 16:30:25,945 - strategies.ml_strategy - INFO - 2025-02-28: BUY SIGNAL: UNH, Strength: 0.700, Size: 315, ML Enhanced: False
+2025-08-23 16:30:25,945 - strategies.ml_strategy - INFO - 2025-02-28: BUY SIGNAL: CRM, Strength: 0.900, Size: 498, ML Enhanced: False
+2025-08-23 16:30:25,946 - strategies.ml_strategy - INFO - 2025-03-03: Order Failed: GOOGL, Status: Margin
+2025-08-23 16:30:25,946 - strategies.ml_strategy - INFO - 2025-03-03: Order Failed: AMZN, Status: Margin
+2025-08-23 16:30:25,946 - strategies.ml_strategy - INFO - 2025-03-03: Order Failed: META, Status: Margin
+2025-08-23 16:30:25,946 - strategies.ml_strategy - INFO - 2025-03-03: Order Failed: TSLA, Status: Margin
+2025-08-23 16:30:25,946 - strategies.ml_strategy - INFO - 2025-03-03: Order Failed: UNH, Status: Margin
+2025-08-23 16:30:25,946 - strategies.ml_strategy - INFO - 2025-03-03: Order Failed: CRM, Status: Margin
+2025-08-23 16:30:27,194 - strategies.ml_strategy - INFO - 2025-03-03: Trained ML models for 20 symbols
+2025-08-23 16:30:27,380 - strategies.ml_strategy - INFO - 2025-03-03: EXIT SIGNAL: GOOGL, Strength: 0.518
+2025-08-23 16:30:27,380 - strategies.ml_strategy - INFO - 2025-03-03: EXIT SIGNAL: JNJ, Strength: 0.998
+2025-08-23 16:30:27,380 - strategies.ml_strategy - INFO - 2025-03-03: BUY SIGNAL: MSFT, Strength: 0.954, Size: 6, ML Enhanced: True
+2025-08-23 16:30:27,380 - strategies.ml_strategy - INFO - 2025-03-03: BUY SIGNAL: GOOGL, Strength: 0.518, Size: 666, ML Enhanced: True
+2025-08-23 16:30:27,380 - strategies.ml_strategy - INFO - 2025-03-03: BUY SIGNAL: AMZN, Strength: 1.000, Size: 17, ML Enhanced: True
+2025-08-23 16:30:27,380 - strategies.ml_strategy - INFO - 2025-03-03: BUY SIGNAL: META, Strength: 0.965, Size: 223, ML Enhanced: True
+2025-08-23 16:30:27,380 - strategies.ml_strategy - INFO - 2025-03-03: BUY SIGNAL: TSLA, Strength: 0.919, Size: 513, ML Enhanced: True
+2025-08-23 16:30:27,381 - strategies.ml_strategy - INFO - 2025-03-03: BUY SIGNAL: ORCL, Strength: 0.863, Size: 906, ML Enhanced: True
+2025-08-23 16:30:27,381 - strategies.ml_strategy - INFO - 2025-03-03: BUY SIGNAL: UNH, Strength: 1.000, Size: 316, ML Enhanced: True
+2025-08-23 16:30:27,381 - strategies.ml_strategy - INFO - 2025-03-03: BUY SIGNAL: CRM, Strength: 1.000, Size: 500, ML Enhanced: True
+2025-08-23 16:30:27,381 - strategies.ml_strategy - INFO - 2025-03-03: Portfolio Value: $974,026, Return: -2.6%, Positions: 7
+2025-08-23 16:30:27,382 - strategies.ml_strategy - INFO - 2025-03-04: Order Failed: META, Status: Margin
+2025-08-23 16:30:27,382 - strategies.ml_strategy - INFO - 2025-03-04: Order Failed: TSLA, Status: Margin
+2025-08-23 16:30:27,382 - strategies.ml_strategy - INFO - 2025-03-04: Order Failed: ORCL, Status: Margin
+2025-08-23 16:30:27,382 - strategies.ml_strategy - INFO - 2025-03-04: Order Failed: UNH, Status: Margin
+2025-08-23 16:30:27,382 - strategies.ml_strategy - INFO - 2025-03-04: Order Failed: CRM, Status: Margin
+2025-08-23 16:30:27,382 - strategies.ml_strategy - INFO - 2025-03-04: SELL EXECUTED: GOOGL, Price: 165.85, Size: -210, Value: 38098.41
+2025-08-23 16:30:27,382 - strategies.ml_strategy - INFO - 2025-03-04: SELL EXECUTED: JNJ, Price: 166.65, Size: -1061, Value: 157811.32
+2025-08-23 16:30:27,382 - strategies.ml_strategy - INFO - 2025-03-04: BUY EXECUTED: MSFT, Price: 382.07, Size: 6, Cost: 2292.42
+2025-08-23 16:30:27,382 - strategies.ml_strategy - INFO - 2025-03-04: BUY EXECUTED: GOOGL, Price: 165.85, Size: 666, Cost: 110454.77
+2025-08-23 16:30:27,382 - strategies.ml_strategy - INFO - 2025-03-04: BUY EXECUTED: AMZN, Price: 200.11, Size: 17, Cost: 3401.87
+2025-08-23 16:30:27,537 - strategies.ml_strategy - INFO - 2025-03-04: EXIT SIGNAL: BAC, Strength: 0.800
+2025-08-23 16:30:27,537 - strategies.ml_strategy - INFO - 2025-03-04: BUY SIGNAL: GOOGL, Strength: 0.900, Size: 177, ML Enhanced: False
+2025-08-23 16:30:27,537 - strategies.ml_strategy - INFO - 2025-03-04: BUY SIGNAL: META, Strength: 0.900, Size: 225, ML Enhanced: False
+2025-08-23 16:30:27,537 - strategies.ml_strategy - INFO - 2025-03-04: BUY SIGNAL: UNH, Strength: 0.700, Size: 306, ML Enhanced: False
+2025-08-23 16:30:27,537 - strategies.ml_strategy - INFO - 2025-03-04: BUY SIGNAL: CRM, Strength: 0.900, Size: 502, ML Enhanced: False
+2025-08-23 16:30:27,538 - strategies.ml_strategy - INFO - 2025-03-05: Order Failed: UNH, Status: Margin
+2025-08-23 16:30:27,538 - strategies.ml_strategy - INFO - 2025-03-05: Order Failed: CRM, Status: Margin
+2025-08-23 16:30:27,538 - strategies.ml_strategy - INFO - 2025-03-05: SELL EXECUTED: BAC, Price: 42.13, Size: -1684, Value: 73349.69
+2025-08-23 16:30:27,538 - strategies.ml_strategy - INFO - 2025-03-05: BUY EXECUTED: GOOGL, Price: 170.12, Size: 177, Cost: 30110.87
+2025-08-23 16:30:27,538 - strategies.ml_strategy - INFO - 2025-03-05: BUY EXECUTED: META, Price: 639.94, Size: 225, Cost: 143986.02
+2025-08-23 16:30:27,692 - strategies.ml_strategy - INFO - 2025-03-05: EXIT SIGNAL: BAC, Strength: 0.800
+2025-08-23 16:30:27,692 - strategies.ml_strategy - INFO - 2025-03-05: BUY SIGNAL: GOOGL, Strength: 0.700, Size: 3, ML Enhanced: False
+2025-08-23 16:30:27,692 - strategies.ml_strategy - INFO - 2025-03-05: BUY SIGNAL: TSLA, Strength: 0.700, Size: 523, ML Enhanced: False
+2025-08-23 16:30:27,692 - strategies.ml_strategy - INFO - 2025-03-05: BUY SIGNAL: JPM, Strength: 0.700, Size: 587, ML Enhanced: False
+2025-08-23 16:30:27,692 - strategies.ml_strategy - INFO - 2025-03-05: BUY SIGNAL: UNH, Strength: 0.700, Size: 310, ML Enhanced: False
+2025-08-23 16:30:27,692 - strategies.ml_strategy - INFO - 2025-03-05: BUY SIGNAL: CRM, Strength: 0.700, Size: 501, ML Enhanced: False
+2025-08-23 16:30:27,693 - strategies.ml_strategy - INFO - 2025-03-06: Order Failed: TSLA, Status: Margin
+2025-08-23 16:30:27,693 - strategies.ml_strategy - INFO - 2025-03-06: Order Failed: JPM, Status: Margin
+2025-08-23 16:30:27,693 - strategies.ml_strategy - INFO - 2025-03-06: Order Failed: UNH, Status: Margin
+2025-08-23 16:30:27,693 - strategies.ml_strategy - INFO - 2025-03-06: Order Failed: CRM, Status: Margin
+2025-08-23 16:30:27,693 - strategies.ml_strategy - INFO - 2025-03-06: SELL EXECUTED: BAC, Price: 41.09, Size: -842, Value: 36674.85
+2025-08-23 16:30:27,693 - strategies.ml_strategy - INFO - 2025-03-06: BUY EXECUTED: GOOGL, Price: 170.13, Size: 3, Cost: 510.38
+2025-08-23 16:30:27,847 - strategies.ml_strategy - INFO - 2025-03-06: EXIT SIGNAL: META, Strength: 0.800
+2025-08-23 16:30:27,847 - strategies.ml_strategy - INFO - 2025-03-06: EXIT SIGNAL: BAC, Strength: 0.800
+2025-08-23 16:30:27,847 - strategies.ml_strategy - INFO - 2025-03-06: EXIT SIGNAL: DIS, Strength: 0.800
+2025-08-23 16:30:27,847 - strategies.ml_strategy - INFO - 2025-03-06: BUY SIGNAL: CRM, Strength: 0.900, Size: 500, ML Enhanced: False
+2025-08-23 16:30:27,848 - strategies.ml_strategy - INFO - 2025-03-07: SELL EXECUTED: META, Price: 624.33, Size: -112, Value: 71673.04
+2025-08-23 16:30:27,848 - strategies.ml_strategy - INFO - 2025-03-07: SELL EXECUTED: BAC, Price: 41.07, Size: -421, Value: 18337.42
+2025-08-23 16:30:27,848 - strategies.ml_strategy - INFO - 2025-03-07: SELL EXECUTED: DIS, Price: 104.55, Size: -667, Value: 74924.76
+2025-08-23 16:30:27,848 - strategies.ml_strategy - INFO - 2025-03-07: BUY EXECUTED: CRM, Price: 282.29, Size: 500, Cost: 141144.06
+2025-08-23 16:30:28,002 - strategies.ml_strategy - INFO - 2025-03-07: EXIT SIGNAL: DIS, Strength: 0.800
+2025-08-23 16:30:28,003 - strategies.ml_strategy - INFO - 2025-03-07: BUY SIGNAL: AMZN, Strength: 0.900, Size: 1, ML Enhanced: False
+2025-08-23 16:30:28,003 - strategies.ml_strategy - INFO - 2025-03-07: BUY SIGNAL: META, Strength: 0.900, Size: 114, ML Enhanced: False
+2025-08-23 16:30:28,003 - strategies.ml_strategy - INFO - 2025-03-07: BUY SIGNAL: NVDA, Strength: 0.900, Size: 1261, ML Enhanced: False
+2025-08-23 16:30:28,003 - strategies.ml_strategy - INFO - 2025-03-07: BUY SIGNAL: BAC, Strength: 0.900, Size: 3032, ML Enhanced: False
+2025-08-23 16:30:28,003 - strategies.ml_strategy - INFO - 2025-03-07: BUY SIGNAL: CRM, Strength: 0.700, Size: 4, ML Enhanced: False
+2025-08-23 16:30:28,004 - strategies.ml_strategy - INFO - 2025-03-10: Order Failed: NVDA, Status: Margin
+2025-08-23 16:30:28,004 - strategies.ml_strategy - INFO - 2025-03-10: Order Failed: BAC, Status: Margin
+2025-08-23 16:30:28,004 - strategies.ml_strategy - INFO - 2025-03-10: Order Failed: CRM, Status: Margin
+2025-08-23 16:30:28,004 - strategies.ml_strategy - INFO - 2025-03-10: SELL EXECUTED: DIS, Price: 103.99, Size: -334, Value: 37518.55
+2025-08-23 16:30:28,004 - strategies.ml_strategy - INFO - 2025-03-10: BUY EXECUTED: AMZN, Price: 195.60, Size: 1, Cost: 195.60
+2025-08-23 16:30:28,004 - strategies.ml_strategy - INFO - 2025-03-10: BUY EXECUTED: META, Price: 607.06, Size: 114, Cost: 69205.11
+2025-08-23 16:30:29,270 - strategies.ml_strategy - INFO - 2025-03-10: Trained ML models for 20 symbols
+2025-08-23 16:30:29,469 - strategies.ml_strategy - INFO - 2025-03-10: EXIT SIGNAL: MSFT, Strength: 1.000
+2025-08-23 16:30:29,469 - strategies.ml_strategy - INFO - 2025-03-10: EXIT SIGNAL: GOOGL, Strength: 1.000
+2025-08-23 16:30:29,469 - strategies.ml_strategy - INFO - 2025-03-10: EXIT SIGNAL: AMZN, Strength: 0.837
+2025-08-23 16:30:29,469 - strategies.ml_strategy - INFO - 2025-03-10: EXIT SIGNAL: BAC, Strength: 1.000
+2025-08-23 16:30:29,469 - strategies.ml_strategy - INFO - 2025-03-10: EXIT SIGNAL: DIS, Strength: 0.959
+2025-08-23 16:30:29,469 - strategies.ml_strategy - INFO - 2025-03-10: EXIT SIGNAL: CRM, Strength: 1.000
+2025-08-23 16:30:29,469 - strategies.ml_strategy - INFO - 2025-03-10: BUY SIGNAL: V, Strength: 0.859, Size: 405, ML Enhanced: True
+2025-08-23 16:30:29,469 - strategies.ml_strategy - INFO - 2025-03-10: BUY SIGNAL: MA, Strength: 1.000, Size: 257, ML Enhanced: True
+2025-08-23 16:30:29,469 - strategies.ml_strategy - INFO - 2025-03-10: Portfolio Value: $920,890, Return: -7.9%, Positions: 8
+2025-08-23 16:30:29,470 - strategies.ml_strategy - INFO - 2025-03-11: SELL EXECUTED: MSFT, Price: 377.68, Size: -377, Value: 150770.23
+2025-08-23 16:30:29,470 - strategies.ml_strategy - INFO - 2025-03-11: SELL EXECUTED: GOOGL, Price: 164.71, Size: -846, Value: 141076.02
+2025-08-23 16:30:29,470 - strategies.ml_strategy - INFO - 2025-03-11: SELL EXECUTED: AMZN, Price: 193.90, Size: -356, Value: 76367.40
+2025-08-23 16:30:29,470 - strategies.ml_strategy - INFO - 2025-03-11: SELL EXECUTED: BAC, Price: 39.47, Size: -421, Value: 18337.42
+2025-08-23 16:30:29,470 - strategies.ml_strategy - INFO - 2025-03-11: SELL EXECUTED: DIS, Price: 99.37, Size: -334, Value: 37518.55
+2025-08-23 16:30:29,470 - strategies.ml_strategy - INFO - 2025-03-11: SELL EXECUTED: CRM, Price: 272.86, Size: -500, Value: 141144.06
+2025-08-23 16:30:29,470 - strategies.ml_strategy - INFO - 2025-03-11: BUY EXECUTED: V, Price: 337.26, Size: 405, Cost: 136588.48
+2025-08-23 16:30:29,470 - strategies.ml_strategy - INFO - 2025-03-11: BUY EXECUTED: MA, Price: 535.62, Size: 257, Cost: 137655.52
+2025-08-23 16:30:29,628 - strategies.ml_strategy - INFO - 2025-03-11: EXIT SIGNAL: AMZN, Strength: 0.900
+2025-08-23 16:30:29,628 - strategies.ml_strategy - INFO - 2025-03-11: EXIT SIGNAL: V, Strength: 0.800
+2025-08-23 16:30:29,628 - strategies.ml_strategy - INFO - 2025-03-11: EXIT SIGNAL: MA, Strength: 0.800
+2025-08-23 16:30:29,628 - strategies.ml_strategy - INFO - 2025-03-11: BUY SIGNAL: MSFT, Strength: 0.900, Size: 361, ML Enhanced: False
+2025-08-23 16:30:29,628 - strategies.ml_strategy - INFO - 2025-03-11: BUY SIGNAL: AMZN, Strength: 0.900, Size: 339, ML Enhanced: False
+2025-08-23 16:30:29,628 - strategies.ml_strategy - INFO - 2025-03-11: BUY SIGNAL: NVDA, Strength: 0.900, Size: 1259, ML Enhanced: False
+2025-08-23 16:30:29,628 - strategies.ml_strategy - INFO - 2025-03-11: BUY SIGNAL: BAC, Strength: 0.700, Size: 3477, ML Enhanced: False
+2025-08-23 16:30:29,628 - strategies.ml_strategy - INFO - 2025-03-11: BUY SIGNAL: CRM, Strength: 0.700, Size: 495, ML Enhanced: False
+2025-08-23 16:30:29,629 - strategies.ml_strategy - INFO - 2025-03-12: Order Failed: CRM, Status: Margin
+2025-08-23 16:30:29,629 - strategies.ml_strategy - INFO - 2025-03-12: SELL EXECUTED: AMZN, Price: 200.72, Size: -357, Value: 76581.92
+2025-08-23 16:30:29,629 - strategies.ml_strategy - INFO - 2025-03-12: SELL EXECUTED: V, Price: 334.82, Size: -202, Value: 68125.61
+2025-08-23 16:30:29,629 - strategies.ml_strategy - INFO - 2025-03-12: SELL EXECUTED: MA, Price: 528.95, Size: -128, Value: 68559.95
+2025-08-23 16:30:29,629 - strategies.ml_strategy - INFO - 2025-03-12: BUY EXECUTED: MSFT, Price: 381.62, Size: 361, Cost: 137765.15
+2025-08-23 16:30:29,629 - strategies.ml_strategy - INFO - 2025-03-12: BUY EXECUTED: AMZN, Price: 200.72, Size: 339, Cost: 68044.08
+2025-08-23 16:30:29,629 - strategies.ml_strategy - INFO - 2025-03-12: BUY EXECUTED: NVDA, Price: 114.11, Size: 1259, Cost: 143667.11
+2025-08-23 16:30:29,629 - strategies.ml_strategy - INFO - 2025-03-12: BUY EXECUTED: BAC, Price: 40.07, Size: 3477, Cost: 139336.77
+2025-08-23 16:30:29,784 - strategies.ml_strategy - INFO - 2025-03-12: BUY SIGNAL: GOOGL, Strength: 0.700, Size: 824, ML Enhanced: False
+2025-08-23 16:30:29,784 - strategies.ml_strategy - INFO - 2025-03-12: BUY SIGNAL: AMZN, Strength: 0.700, Size: 352, ML Enhanced: False
+2025-08-23 16:30:29,784 - strategies.ml_strategy - INFO - 2025-03-12: BUY SIGNAL: TSLA, Strength: 0.900, Size: 554, ML Enhanced: False
+2025-08-23 16:30:29,784 - strategies.ml_strategy - INFO - 2025-03-12: BUY SIGNAL: ORCL, Strength: 0.900, Size: 917, ML Enhanced: False
+2025-08-23 16:30:29,784 - strategies.ml_strategy - INFO - 2025-03-12: BUY SIGNAL: V, Strength: 0.700, Size: 211, ML Enhanced: False
+2025-08-23 16:30:29,784 - strategies.ml_strategy - INFO - 2025-03-12: BUY SIGNAL: MA, Strength: 0.700, Size: 134, ML Enhanced: False
+2025-08-23 16:30:29,784 - strategies.ml_strategy - INFO - 2025-03-12: BUY SIGNAL: CRM, Strength: 0.700, Size: 485, ML Enhanced: False
+2025-08-23 16:30:29,785 - strategies.ml_strategy - INFO - 2025-03-13: Order Failed: GOOGL, Status: Margin
+2025-08-23 16:30:29,785 - strategies.ml_strategy - INFO - 2025-03-13: Order Failed: AMZN, Status: Margin
+2025-08-23 16:30:29,785 - strategies.ml_strategy - INFO - 2025-03-13: Order Failed: TSLA, Status: Margin
+2025-08-23 16:30:29,785 - strategies.ml_strategy - INFO - 2025-03-13: Order Failed: ORCL, Status: Margin
+2025-08-23 16:30:29,785 - strategies.ml_strategy - INFO - 2025-03-13: Order Failed: V, Status: Margin
+2025-08-23 16:30:29,785 - strategies.ml_strategy - INFO - 2025-03-13: Order Failed: MA, Status: Margin
+2025-08-23 16:30:29,785 - strategies.ml_strategy - INFO - 2025-03-13: Order Failed: CRM, Status: Margin
+2025-08-23 16:30:29,943 - strategies.ml_strategy - INFO - 2025-03-13: EXIT SIGNAL: HD, Strength: 0.800
+2025-08-23 16:30:29,943 - strategies.ml_strategy - INFO - 2025-03-13: BUY SIGNAL: GOOGL, Strength: 0.700, Size: 829, ML Enhanced: False
+2025-08-23 16:30:29,943 - strategies.ml_strategy - INFO - 2025-03-13: BUY SIGNAL: AMZN, Strength: 0.700, Size: 356, ML Enhanced: False
+2025-08-23 16:30:29,943 - strategies.ml_strategy - INFO - 2025-03-13: BUY SIGNAL: META, Strength: 0.700, Size: 1, ML Enhanced: False
+2025-08-23 16:30:29,943 - strategies.ml_strategy - INFO - 2025-03-13: BUY SIGNAL: TSLA, Strength: 0.700, Size: 560, ML Enhanced: False
+2025-08-23 16:30:29,943 - strategies.ml_strategy - INFO - 2025-03-13: BUY SIGNAL: ORCL, Strength: 0.900, Size: 918, ML Enhanced: False
+2025-08-23 16:30:29,944 - strategies.ml_strategy - INFO - 2025-03-13: BUY SIGNAL: JPM, Strength: 0.900, Size: 605, ML Enhanced: False
+2025-08-23 16:30:29,944 - strategies.ml_strategy - INFO - 2025-03-13: BUY SIGNAL: V, Strength: 0.700, Size: 208, ML Enhanced: False
+2025-08-23 16:30:29,944 - strategies.ml_strategy - INFO - 2025-03-13: BUY SIGNAL: MA, Strength: 0.700, Size: 131, ML Enhanced: False
+2025-08-23 16:30:29,944 - strategies.ml_strategy - INFO - 2025-03-13: BUY SIGNAL: CRM, Strength: 0.700, Size: 497, ML Enhanced: False
+2025-08-23 16:30:29,944 - strategies.ml_strategy - INFO - 2025-03-14: Order Failed: GOOGL, Status: Margin
+2025-08-23 16:30:29,944 - strategies.ml_strategy - INFO - 2025-03-14: Order Failed: AMZN, Status: Margin
+2025-08-23 16:30:29,944 - strategies.ml_strategy - INFO - 2025-03-14: Order Failed: META, Status: Margin
+2025-08-23 16:30:29,944 - strategies.ml_strategy - INFO - 2025-03-14: Order Failed: TSLA, Status: Margin
+2025-08-23 16:30:29,945 - strategies.ml_strategy - INFO - 2025-03-14: Order Failed: ORCL, Status: Margin
+2025-08-23 16:30:29,945 - strategies.ml_strategy - INFO - 2025-03-14: Order Failed: JPM, Status: Margin
+2025-08-23 16:30:29,945 - strategies.ml_strategy - INFO - 2025-03-14: Order Failed: V, Status: Margin
+2025-08-23 16:30:29,945 - strategies.ml_strategy - INFO - 2025-03-14: Order Failed: MA, Status: Margin
+2025-08-23 16:30:29,945 - strategies.ml_strategy - INFO - 2025-03-14: Order Failed: CRM, Status: Margin
+2025-08-23 16:30:29,945 - strategies.ml_strategy - INFO - 2025-03-14: SELL EXECUTED: HD, Price: 348.48, Size: -194, Value: 73760.62
+2025-08-23 16:30:30,100 - strategies.ml_strategy - INFO - 2025-03-14: EXIT SIGNAL: HD, Strength: 0.900
+2025-08-23 16:30:30,100 - strategies.ml_strategy - INFO - 2025-03-14: BUY SIGNAL: AAPL, Strength: 0.700, Size: 649, ML Enhanced: False
+2025-08-23 16:30:30,100 - strategies.ml_strategy - INFO - 2025-03-14: BUY SIGNAL: GOOGL, Strength: 0.700, Size: 837, ML Enhanced: False
+2025-08-23 16:30:30,100 - strategies.ml_strategy - INFO - 2025-03-14: BUY SIGNAL: TSLA, Strength: 0.700, Size: 553, ML Enhanced: False
+2025-08-23 16:30:30,100 - strategies.ml_strategy - INFO - 2025-03-14: BUY SIGNAL: ORCL, Strength: 0.700, Size: 932, ML Enhanced: False
+2025-08-23 16:30:30,100 - strategies.ml_strategy - INFO - 2025-03-14: BUY SIGNAL: JPM, Strength: 0.700, Size: 602, ML Enhanced: False
+2025-08-23 16:30:30,100 - strategies.ml_strategy - INFO - 2025-03-14: BUY SIGNAL: V, Strength: 0.700, Size: 215, ML Enhanced: False
+2025-08-23 16:30:30,100 - strategies.ml_strategy - INFO - 2025-03-14: BUY SIGNAL: MA, Strength: 0.700, Size: 134, ML Enhanced: False
+2025-08-23 16:30:30,100 - strategies.ml_strategy - INFO - 2025-03-14: BUY SIGNAL: HD, Strength: 0.900, Size: 201, ML Enhanced: False
+2025-08-23 16:30:30,101 - strategies.ml_strategy - INFO - 2025-03-14: BUY SIGNAL: DIS, Strength: 0.700, Size: 1409, ML Enhanced: False
+2025-08-23 16:30:30,101 - strategies.ml_strategy - INFO - 2025-03-14: BUY SIGNAL: CRM, Strength: 0.700, Size: 497, ML Enhanced: False
+2025-08-23 16:30:30,101 - strategies.ml_strategy - INFO - 2025-03-17: Order Failed: GOOGL, Status: Margin
+2025-08-23 16:30:30,101 - strategies.ml_strategy - INFO - 2025-03-17: Order Failed: TSLA, Status: Margin
+2025-08-23 16:30:30,101 - strategies.ml_strategy - INFO - 2025-03-17: Order Failed: ORCL, Status: Margin
+2025-08-23 16:30:30,101 - strategies.ml_strategy - INFO - 2025-03-17: Order Failed: JPM, Status: Margin
+2025-08-23 16:30:30,101 - strategies.ml_strategy - INFO - 2025-03-17: Order Failed: V, Status: Margin
+2025-08-23 16:30:30,101 - strategies.ml_strategy - INFO - 2025-03-17: Order Failed: MA, Status: Margin
+2025-08-23 16:30:30,102 - strategies.ml_strategy - INFO - 2025-03-17: Order Failed: HD, Status: Margin
+2025-08-23 16:30:30,102 - strategies.ml_strategy - INFO - 2025-03-17: Order Failed: DIS, Status: Margin
+2025-08-23 16:30:30,102 - strategies.ml_strategy - INFO - 2025-03-17: Order Failed: CRM, Status: Margin
+2025-08-23 16:30:30,102 - strategies.ml_strategy - INFO - 2025-03-17: SELL EXECUTED: HD, Price: 349.59, Size: -195, Value: 74140.82
+2025-08-23 16:30:30,102 - strategies.ml_strategy - INFO - 2025-03-17: BUY EXECUTED: AAPL, Price: 212.79, Size: 649, Cost: 138100.16
+2025-08-23 16:30:31,385 - strategies.ml_strategy - INFO - 2025-03-17: Trained ML models for 20 symbols
+2025-08-23 16:30:31,566 - strategies.ml_strategy - INFO - 2025-03-17: BUY SIGNAL: AMZN, Strength: 0.713, Size: 367, ML Enhanced: True
+2025-08-23 16:30:31,566 - strategies.ml_strategy - INFO - 2025-03-17: BUY SIGNAL: TSLA, Strength: 0.851, Size: 581, ML Enhanced: True
+2025-08-23 16:30:31,566 - strategies.ml_strategy - INFO - 2025-03-17: BUY SIGNAL: JPM, Strength: 0.989, Size: 597, ML Enhanced: True
+2025-08-23 16:30:31,566 - strategies.ml_strategy - INFO - 2025-03-17: BUY SIGNAL: V, Strength: 0.829, Size: 211, ML Enhanced: True
+2025-08-23 16:30:31,567 - strategies.ml_strategy - INFO - 2025-03-17: BUY SIGNAL: MA, Strength: 0.976, Size: 131, ML Enhanced: True
+2025-08-23 16:30:31,567 - strategies.ml_strategy - INFO - 2025-03-17: BUY SIGNAL: HD, Strength: 0.961, Size: 393, ML Enhanced: True
+2025-08-23 16:30:31,567 - strategies.ml_strategy - INFO - 2025-03-17: BUY SIGNAL: DIS, Strength: 0.756, Size: 1398, ML Enhanced: True
+2025-08-23 16:30:31,567 - strategies.ml_strategy - INFO - 2025-03-17: Portfolio Value: $922,277, Return: -7.8%, Positions: 8
+2025-08-23 16:30:31,567 - strategies.ml_strategy - INFO - 2025-03-18: Order Failed: AMZN, Status: Margin
+2025-08-23 16:30:31,567 - strategies.ml_strategy - INFO - 2025-03-18: Order Failed: TSLA, Status: Margin
+2025-08-23 16:30:31,567 - strategies.ml_strategy - INFO - 2025-03-18: Order Failed: JPM, Status: Margin
+2025-08-23 16:30:31,567 - strategies.ml_strategy - INFO - 2025-03-18: Order Failed: V, Status: Margin
+2025-08-23 16:30:31,567 - strategies.ml_strategy - INFO - 2025-03-18: Order Failed: MA, Status: Margin
+2025-08-23 16:30:31,567 - strategies.ml_strategy - INFO - 2025-03-18: Order Failed: HD, Status: Margin
+2025-08-23 16:30:31,568 - strategies.ml_strategy - INFO - 2025-03-18: Order Failed: DIS, Status: Margin
+2025-08-23 16:30:31,724 - strategies.ml_strategy - INFO - 2025-03-18: EXIT SIGNAL: META, Strength: 0.800
+2025-08-23 16:30:31,724 - strategies.ml_strategy - INFO - 2025-03-18: BUY SIGNAL: AMZN, Strength: 0.700, Size: 368, ML Enhanced: False
+2025-08-23 16:30:31,724 - strategies.ml_strategy - INFO - 2025-03-18: BUY SIGNAL: ORCL, Strength: 0.700, Size: 917, ML Enhanced: False
+2025-08-23 16:30:31,724 - strategies.ml_strategy - INFO - 2025-03-18: BUY SIGNAL: JPM, Strength: 0.700, Size: 586, ML Enhanced: False
+2025-08-23 16:30:31,724 - strategies.ml_strategy - INFO - 2025-03-18: BUY SIGNAL: MA, Strength: 0.700, Size: 128, ML Enhanced: False
+2025-08-23 16:30:31,724 - strategies.ml_strategy - INFO - 2025-03-18: BUY SIGNAL: HD, Strength: 0.700, Size: 392, ML Enhanced: False
+2025-08-23 16:30:31,724 - strategies.ml_strategy - INFO - 2025-03-18: BUY SIGNAL: DIS, Strength: 0.700, Size: 1378, ML Enhanced: False
+2025-08-23 16:30:31,724 - strategies.ml_strategy - INFO - 2025-03-18: BUY SIGNAL: CRM, Strength: 0.700, Size: 490, ML Enhanced: False
+2025-08-23 16:30:31,725 - strategies.ml_strategy - INFO - 2025-03-19: Order Failed: ORCL, Status: Margin
+2025-08-23 16:30:31,725 - strategies.ml_strategy - INFO - 2025-03-19: Order Failed: JPM, Status: Margin
+2025-08-23 16:30:31,725 - strategies.ml_strategy - INFO - 2025-03-19: Order Failed: MA, Status: Margin
+2025-08-23 16:30:31,725 - strategies.ml_strategy - INFO - 2025-03-19: Order Failed: HD, Status: Margin
+2025-08-23 16:30:31,725 - strategies.ml_strategy - INFO - 2025-03-19: Order Failed: DIS, Status: Margin
+2025-08-23 16:30:31,725 - strategies.ml_strategy - INFO - 2025-03-19: Order Failed: CRM, Status: Margin
+2025-08-23 16:30:31,725 - strategies.ml_strategy - INFO - 2025-03-19: SELL EXECUTED: META, Price: 583.83, Size: -113, Value: 70447.33
+2025-08-23 16:30:31,725 - strategies.ml_strategy - INFO - 2025-03-19: BUY EXECUTED: AMZN, Price: 193.38, Size: 368, Cost: 71163.84
+2025-08-23 16:30:31,880 - strategies.ml_strategy - INFO - 2025-03-19: BUY SIGNAL: META, Strength: 0.900, Size: 122, ML Enhanced: False
+2025-08-23 16:30:31,881 - strategies.ml_strategy - INFO - 2025-03-19: BUY SIGNAL: JPM, Strength: 0.700, Size: 583, ML Enhanced: False
+2025-08-23 16:30:31,881 - strategies.ml_strategy - INFO - 2025-03-19: BUY SIGNAL: MA, Strength: 0.700, Size: 129, ML Enhanced: False
+2025-08-23 16:30:31,881 - strategies.ml_strategy - INFO - 2025-03-19: BUY SIGNAL: HD, Strength: 0.700, Size: 393, ML Enhanced: False
+2025-08-23 16:30:31,881 - strategies.ml_strategy - INFO - 2025-03-19: BUY SIGNAL: DIS, Strength: 0.700, Size: 1382, ML Enhanced: False
+2025-08-23 16:30:31,881 - strategies.ml_strategy - INFO - 2025-03-20: Order Failed: META, Status: Margin
+2025-08-23 16:30:31,881 - strategies.ml_strategy - INFO - 2025-03-20: Order Failed: JPM, Status: Margin
+2025-08-23 16:30:31,881 - strategies.ml_strategy - INFO - 2025-03-20: Order Failed: MA, Status: Margin
+2025-08-23 16:30:31,881 - strategies.ml_strategy - INFO - 2025-03-20: Order Failed: HD, Status: Margin
+2025-08-23 16:30:31,881 - strategies.ml_strategy - INFO - 2025-03-20: Order Failed: DIS, Status: Margin
+2025-08-23 16:30:32,036 - strategies.ml_strategy - INFO - 2025-03-20: BUY SIGNAL: AMZN, Strength: 0.700, Size: 1, ML Enhanced: False
+2025-08-23 16:30:32,036 - strategies.ml_strategy - INFO - 2025-03-20: BUY SIGNAL: META, Strength: 0.900, Size: 122, ML Enhanced: False
+2025-08-23 16:30:32,037 - strategies.ml_strategy - INFO - 2025-03-20: BUY SIGNAL: TSLA, Strength: 0.900, Size: 584, ML Enhanced: False
+2025-08-23 16:30:32,037 - strategies.ml_strategy - INFO - 2025-03-20: BUY SIGNAL: JPM, Strength: 0.700, Size: 584, ML Enhanced: False
+2025-08-23 16:30:32,037 - strategies.ml_strategy - INFO - 2025-03-20: BUY SIGNAL: V, Strength: 0.700, Size: 205, ML Enhanced: False
+2025-08-23 16:30:32,037 - strategies.ml_strategy - INFO - 2025-03-20: BUY SIGNAL: MA, Strength: 0.700, Size: 129, ML Enhanced: False
+2025-08-23 16:30:32,037 - strategies.ml_strategy - INFO - 2025-03-20: BUY SIGNAL: HD, Strength: 0.700, Size: 391, ML Enhanced: False
+2025-08-23 16:30:32,037 - strategies.ml_strategy - INFO - 2025-03-20: BUY SIGNAL: DIS, Strength: 0.700, Size: 1403, ML Enhanced: False
+2025-08-23 16:30:32,038 - strategies.ml_strategy - INFO - 2025-03-21: Order Failed: META, Status: Margin
+2025-08-23 16:30:32,038 - strategies.ml_strategy - INFO - 2025-03-21: Order Failed: TSLA, Status: Margin
+2025-08-23 16:30:32,038 - strategies.ml_strategy - INFO - 2025-03-21: Order Failed: JPM, Status: Margin
+2025-08-23 16:30:32,038 - strategies.ml_strategy - INFO - 2025-03-21: Order Failed: V, Status: Margin
+2025-08-23 16:30:32,038 - strategies.ml_strategy - INFO - 2025-03-21: Order Failed: MA, Status: Margin
+2025-08-23 16:30:32,038 - strategies.ml_strategy - INFO - 2025-03-21: Order Failed: HD, Status: Margin
+2025-08-23 16:30:32,038 - strategies.ml_strategy - INFO - 2025-03-21: Order Failed: DIS, Status: Margin
+2025-08-23 16:30:32,038 - strategies.ml_strategy - INFO - 2025-03-21: BUY EXECUTED: AMZN, Price: 192.90, Size: 1, Cost: 192.90
+2025-08-23 16:30:32,195 - strategies.ml_strategy - INFO - 2025-03-21: BUY SIGNAL: JPM, Strength: 0.900, Size: 581, ML Enhanced: False
+2025-08-23 16:30:32,195 - strategies.ml_strategy - INFO - 2025-03-21: BUY SIGNAL: V, Strength: 0.900, Size: 212, ML Enhanced: False
+2025-08-23 16:30:32,195 - strategies.ml_strategy - INFO - 2025-03-21: BUY SIGNAL: MA, Strength: 0.900, Size: 130, ML Enhanced: False
+2025-08-23 16:30:32,195 - strategies.ml_strategy - INFO - 2025-03-21: BUY SIGNAL: PG, Strength: 0.900, Size: 843, ML Enhanced: False
+2025-08-23 16:30:32,195 - strategies.ml_strategy - INFO - 2025-03-21: BUY SIGNAL: KO, Strength: 0.900, Size: 2036, ML Enhanced: False
+2025-08-23 16:30:32,195 - strategies.ml_strategy - INFO - 2025-03-21: BUY SIGNAL: HD, Strength: 0.900, Size: 397, ML Enhanced: False
+2025-08-23 16:30:32,195 - strategies.ml_strategy - INFO - 2025-03-21: BUY SIGNAL: DIS, Strength: 0.900, Size: 1402, ML Enhanced: False
+2025-08-23 16:30:32,196 - strategies.ml_strategy - INFO - 2025-03-24: Order Failed: JPM, Status: Margin
+2025-08-23 16:30:32,196 - strategies.ml_strategy - INFO - 2025-03-24: Order Failed: V, Status: Margin
+2025-08-23 16:30:32,196 - strategies.ml_strategy - INFO - 2025-03-24: Order Failed: MA, Status: Margin
+2025-08-23 16:30:32,196 - strategies.ml_strategy - INFO - 2025-03-24: Order Failed: PG, Status: Margin
+2025-08-23 16:30:32,196 - strategies.ml_strategy - INFO - 2025-03-24: Order Failed: KO, Status: Margin
+2025-08-23 16:30:32,196 - strategies.ml_strategy - INFO - 2025-03-24: Order Failed: HD, Status: Margin
+2025-08-23 16:30:32,196 - strategies.ml_strategy - INFO - 2025-03-24: Order Failed: DIS, Status: Margin
+2025-08-23 16:30:33,499 - strategies.ml_strategy - INFO - 2025-03-24: Trained ML models for 20 symbols
+2025-08-23 16:30:33,672 - strategies.ml_strategy - INFO - 2025-03-24: BUY SIGNAL: TSLA, Strength: 0.773, Size: 509, ML Enhanced: True
+2025-08-23 16:30:33,672 - strategies.ml_strategy - INFO - 2025-03-24: BUY SIGNAL: PG, Strength: 0.912, Size: 866, ML Enhanced: True
+2025-08-23 16:30:33,672 - strategies.ml_strategy - INFO - 2025-03-24: BUY SIGNAL: DIS, Strength: 0.654, Size: 1420, ML Enhanced: True
+2025-08-23 16:30:33,672 - strategies.ml_strategy - INFO - 2025-03-24: Portfolio Value: $944,986, Return: -5.5%, Positions: 8
+2025-08-23 16:30:33,673 - strategies.ml_strategy - INFO - 2025-03-25: Order Failed: TSLA, Status: Margin
+2025-08-23 16:30:33,673 - strategies.ml_strategy - INFO - 2025-03-25: Order Failed: PG, Status: Margin
+2025-08-23 16:30:33,673 - strategies.ml_strategy - INFO - 2025-03-25: Order Failed: DIS, Status: Margin
+2025-08-23 16:30:33,830 - strategies.ml_strategy - INFO - 2025-03-25: BUY SIGNAL: TSLA, Strength: 0.900, Size: 494, ML Enhanced: False
+2025-08-23 16:30:33,831 - strategies.ml_strategy - INFO - 2025-03-25: BUY SIGNAL: PG, Strength: 0.700, Size: 886, ML Enhanced: False
+2025-08-23 16:30:33,831 - strategies.ml_strategy - INFO - 2025-03-25: BUY SIGNAL: HD, Strength: 0.900, Size: 397, ML Enhanced: False
+2025-08-23 16:30:33,831 - strategies.ml_strategy - INFO - 2025-03-25: BUY SIGNAL: DIS, Strength: 0.900, Size: 1409, ML Enhanced: False
+2025-08-23 16:30:33,831 - strategies.ml_strategy - INFO - 2025-03-26: Order Failed: TSLA, Status: Margin
+2025-08-23 16:30:33,831 - strategies.ml_strategy - INFO - 2025-03-26: Order Failed: PG, Status: Margin
+2025-08-23 16:30:33,831 - strategies.ml_strategy - INFO - 2025-03-26: Order Failed: HD, Status: Margin
+2025-08-23 16:30:33,831 - strategies.ml_strategy - INFO - 2025-03-26: Order Failed: DIS, Status: Margin
+2025-08-23 16:30:33,988 - strategies.ml_strategy - INFO - 2025-03-26: BUY SIGNAL: TSLA, Strength: 0.900, Size: 513, ML Enhanced: False
+2025-08-23 16:30:33,989 - strategies.ml_strategy - INFO - 2025-03-26: BUY SIGNAL: JNJ, Strength: 0.700, Size: 872, ML Enhanced: False
+2025-08-23 16:30:33,989 - strategies.ml_strategy - INFO - 2025-03-26: BUY SIGNAL: PG, Strength: 0.700, Size: 850, ML Enhanced: False
+2025-08-23 16:30:33,989 - strategies.ml_strategy - INFO - 2025-03-27: Order Failed: TSLA, Status: Margin
+2025-08-23 16:30:33,989 - strategies.ml_strategy - INFO - 2025-03-27: Order Failed: JNJ, Status: Margin
+2025-08-23 16:30:33,989 - strategies.ml_strategy - INFO - 2025-03-27: Order Failed: PG, Status: Margin
+2025-08-23 16:30:34,300 - strategies.ml_strategy - INFO - 2025-03-28: EXIT SIGNAL: NVDA, Strength: 0.800
+2025-08-23 16:30:34,300 - strategies.ml_strategy - INFO - 2025-03-28: BUY SIGNAL: PG, Strength: 0.700, Size: 817, ML Enhanced: False
+2025-08-23 16:30:34,300 - strategies.ml_strategy - INFO - 2025-03-31: Order Failed: PG, Status: Margin
+2025-08-23 16:30:34,301 - strategies.ml_strategy - INFO - 2025-03-31: SELL EXECUTED: NVDA, Price: 105.12, Size: -629, Value: 71776.50
+2025-08-23 16:30:35,617 - strategies.ml_strategy - INFO - 2025-03-31: Trained ML models for 20 symbols
+2025-08-23 16:30:35,791 - strategies.ml_strategy - INFO - 2025-03-31: EXIT SIGNAL: META, Strength: 0.785
+2025-08-23 16:30:35,791 - strategies.ml_strategy - INFO - 2025-03-31: EXIT SIGNAL: NVDA, Strength: 0.929
+2025-08-23 16:30:35,791 - strategies.ml_strategy - INFO - 2025-03-31: Portfolio Value: $904,277, Return: -9.6%, Positions: 8
+2025-08-23 16:30:35,792 - strategies.ml_strategy - INFO - 2025-04-01: SELL EXECUTED: META, Price: 570.40, Size: -57, Value: 35535.38
+2025-08-23 16:30:35,792 - strategies.ml_strategy - INFO - 2025-04-01: SELL EXECUTED: NVDA, Price: 108.51, Size: -630, Value: 71890.61
+2025-08-23 16:30:36,102 - strategies.ml_strategy - INFO - 2025-04-02: BUY SIGNAL: TSLA, Strength: 0.900, Size: 483, ML Enhanced: False
+2025-08-23 16:30:36,104 - strategies.ml_strategy - INFO - 2025-04-03: BUY EXECUTED: TSLA, Price: 265.29, Size: 483, Cost: 128135.07
+2025-08-23 16:30:36,262 - strategies.ml_strategy - INFO - 2025-04-03: EXIT SIGNAL: AAPL, Strength: 0.800
+2025-08-23 16:30:36,262 - strategies.ml_strategy - INFO - 2025-04-03: EXIT SIGNAL: AMZN, Strength: 0.800
+2025-08-23 16:30:36,262 - strategies.ml_strategy - INFO - 2025-04-03: EXIT SIGNAL: META, Strength: 0.800
+2025-08-23 16:30:36,262 - strategies.ml_strategy - INFO - 2025-04-03: EXIT SIGNAL: BAC, Strength: 0.800
+2025-08-23 16:30:36,262 - strategies.ml_strategy - INFO - 2025-04-03: BUY SIGNAL: GOOGL, Strength: 0.900, Size: 857, ML Enhanced: False
+2025-08-23 16:30:36,262 - strategies.ml_strategy - INFO - 2025-04-03: BUY SIGNAL: UNH, Strength: 0.900, Size: 240, ML Enhanced: False
+2025-08-23 16:30:36,262 - strategies.ml_strategy - INFO - 2025-04-03: BUY SIGNAL: KO, Strength: 0.900, Size: 1776, ML Enhanced: False
+2025-08-23 16:30:36,263 - strategies.ml_strategy - INFO - 2025-04-04: Order Failed: UNH, Status: Margin
+2025-08-23 16:30:36,263 - strategies.ml_strategy - INFO - 2025-04-04: Order Failed: KO, Status: Margin
+2025-08-23 16:30:36,263 - strategies.ml_strategy - INFO - 2025-04-04: SELL EXECUTED: AAPL, Price: 193.42, Size: -324, Value: 68943.68
+2025-08-23 16:30:36,263 - strategies.ml_strategy - INFO - 2025-04-04: SELL EXECUTED: AMZN, Price: 167.15, Size: -354, Value: 69700.41
+2025-08-23 16:30:36,263 - strategies.ml_strategy - INFO - 2025-04-04: SELL EXECUTED: META, Price: 506.23, Size: -28, Value: 17455.98
+2025-08-23 16:30:36,263 - strategies.ml_strategy - INFO - 2025-04-04: SELL EXECUTED: BAC, Price: 35.08, Size: -1738, Value: 69648.35
+2025-08-23 16:30:36,263 - strategies.ml_strategy - INFO - 2025-04-04: BUY EXECUTED: GOOGL, Price: 147.83, Size: 857, Cost: 126691.19
+2025-08-23 16:30:36,419 - strategies.ml_strategy - INFO - 2025-04-04: EXIT SIGNAL: AAPL, Strength: 0.800
+2025-08-23 16:30:36,419 - strategies.ml_strategy - INFO - 2025-04-04: EXIT SIGNAL: MSFT, Strength: 0.800
+2025-08-23 16:30:36,419 - strategies.ml_strategy - INFO - 2025-04-04: EXIT SIGNAL: GOOGL, Strength: 0.800
+2025-08-23 16:30:36,420 - strategies.ml_strategy - INFO - 2025-04-04: EXIT SIGNAL: AMZN, Strength: 0.800
+2025-08-23 16:30:36,420 - strategies.ml_strategy - INFO - 2025-04-04: EXIT SIGNAL: META, Strength: 0.800
+2025-08-23 16:30:36,420 - strategies.ml_strategy - INFO - 2025-04-04: EXIT SIGNAL: TSLA, Strength: 0.000
+2025-08-23 16:30:36,420 - strategies.ml_strategy - INFO - 2025-04-04: EXIT SIGNAL: BAC, Strength: 0.800
+2025-08-23 16:30:36,420 - strategies.ml_strategy - INFO - 2025-04-04: EXIT SIGNAL: V, Strength: 0.800
+2025-08-23 16:30:36,420 - strategies.ml_strategy - INFO - 2025-04-04: EXIT SIGNAL: MA, Strength: 0.800
+2025-08-23 16:30:36,421 - strategies.ml_strategy - INFO - 2025-04-07: SELL EXECUTED: AAPL, Price: 176.77, Size: -162, Value: 34471.84
+2025-08-23 16:30:36,421 - strategies.ml_strategy - INFO - 2025-04-07: SELL EXECUTED: MSFT, Price: 349.66, Size: -180, Value: 68691.77
+2025-08-23 16:30:36,421 - strategies.ml_strategy - INFO - 2025-04-07: SELL EXECUTED: GOOGL, Price: 141.38, Size: -428, Value: 63271.68
+2025-08-23 16:30:36,421 - strategies.ml_strategy - INFO - 2025-04-07: SELL EXECUTED: AMZN, Price: 162.00, Size: -177, Value: 34850.21
+2025-08-23 16:30:36,421 - strategies.ml_strategy - INFO - 2025-04-07: SELL EXECUTED: META, Price: 484.73, Size: -14, Value: 8727.99
+2025-08-23 16:30:36,421 - strategies.ml_strategy - INFO - 2025-04-07: SELL EXECUTED: TSLA, Price: 223.78, Size: -483, Value: 128135.07
+2025-08-23 16:30:36,421 - strategies.ml_strategy - INFO - 2025-04-07: SELL EXECUTED: BAC, Price: 34.77, Size: -869, Value: 34824.17
+2025-08-23 16:30:36,421 - strategies.ml_strategy - INFO - 2025-04-07: SELL EXECUTED: V, Price: 301.04, Size: -101, Value: 34062.81
+2025-08-23 16:30:36,421 - strategies.ml_strategy - INFO - 2025-04-07: SELL EXECUTED: MA, Price: 477.10, Size: -64, Value: 34279.97
+2025-08-23 16:30:37,754 - strategies.ml_strategy - INFO - 2025-04-07: Trained ML models for 20 symbols
+2025-08-23 16:30:37,955 - strategies.ml_strategy - INFO - 2025-04-07: EXIT SIGNAL: AAPL, Strength: 0.856
+2025-08-23 16:30:37,955 - strategies.ml_strategy - INFO - 2025-04-07: EXIT SIGNAL: MSFT, Strength: 0.752
+2025-08-23 16:30:37,955 - strategies.ml_strategy - INFO - 2025-04-07: EXIT SIGNAL: GOOGL, Strength: 0.964
+2025-08-23 16:30:37,956 - strategies.ml_strategy - INFO - 2025-04-07: EXIT SIGNAL: AMZN, Strength: 0.602
+2025-08-23 16:30:37,956 - strategies.ml_strategy - INFO - 2025-04-07: EXIT SIGNAL: META, Strength: 0.603
+2025-08-23 16:30:37,956 - strategies.ml_strategy - INFO - 2025-04-07: EXIT SIGNAL: BAC, Strength: 0.766
+2025-08-23 16:30:37,956 - strategies.ml_strategy - INFO - 2025-04-07: EXIT SIGNAL: MA, Strength: 0.732
+2025-08-23 16:30:37,956 - strategies.ml_strategy - INFO - 2025-04-07: BUY SIGNAL: JNJ, Strength: 0.640, Size: 793, ML Enhanced: True
+2025-08-23 16:30:37,956 - strategies.ml_strategy - INFO - 2025-04-07: Portfolio Value: $790,170, Return: -21.0%, Positions: 8
+2025-08-23 16:30:37,957 - strategies.ml_strategy - INFO - 2025-04-08: SELL EXECUTED: AAPL, Price: 186.24, Size: -163, Value: 34684.63
+2025-08-23 16:30:37,957 - strategies.ml_strategy - INFO - 2025-04-08: SELL EXECUTED: MSFT, Price: 366.98, Size: -90, Value: 34345.88
+2025-08-23 16:30:37,957 - strategies.ml_strategy - INFO - 2025-04-08: SELL EXECUTED: GOOGL, Price: 151.04, Size: -429, Value: 63419.51
+2025-08-23 16:30:37,957 - strategies.ml_strategy - INFO - 2025-04-08: SELL EXECUTED: AMZN, Price: 185.23, Size: -177, Value: 34850.21
+2025-08-23 16:30:37,957 - strategies.ml_strategy - INFO - 2025-04-08: SELL EXECUTED: META, Price: 542.83, Size: -15, Value: 9351.42
+2025-08-23 16:30:37,957 - strategies.ml_strategy - INFO - 2025-04-08: SELL EXECUTED: BAC, Price: 36.64, Size: -435, Value: 17432.12
+2025-08-23 16:30:37,957 - strategies.ml_strategy - INFO - 2025-04-08: SELL EXECUTED: MA, Price: 499.53, Size: -65, Value: 34815.60
+2025-08-23 16:30:37,957 - strategies.ml_strategy - INFO - 2025-04-08: BUY EXECUTED: JNJ, Price: 152.28, Size: 793, Cost: 120761.59
+2025-08-23 16:30:38,112 - strategies.ml_strategy - INFO - 2025-04-08: EXIT SIGNAL: BAC, Strength: 0.800
+2025-08-23 16:30:38,113 - strategies.ml_strategy - INFO - 2025-04-08: EXIT SIGNAL: V, Strength: 0.800
+2025-08-23 16:30:38,113 - strategies.ml_strategy - INFO - 2025-04-08: BUY SIGNAL: MSFT, Strength: 0.900, Size: 245, ML Enhanced: False
+2025-08-23 16:30:38,113 - strategies.ml_strategy - INFO - 2025-04-08: BUY SIGNAL: GOOGL, Strength: 0.900, Size: 823, ML Enhanced: False
+2025-08-23 16:30:38,113 - strategies.ml_strategy - INFO - 2025-04-08: BUY SIGNAL: JPM, Strength: 0.900, Size: 551, ML Enhanced: False
+2025-08-23 16:30:38,113 - strategies.ml_strategy - INFO - 2025-04-08: BUY SIGNAL: UNH, Strength: 0.900, Size: 216, ML Enhanced: False
+2025-08-23 16:30:38,113 - strategies.ml_strategy - INFO - 2025-04-08: BUY SIGNAL: JNJ, Strength: 0.700, Size: 7, ML Enhanced: False
+2025-08-23 16:30:38,113 - strategies.ml_strategy - INFO - 2025-04-08: BUY SIGNAL: CRM, Strength: 0.900, Size: 489, ML Enhanced: False
+2025-08-23 16:30:38,114 - strategies.ml_strategy - INFO - 2025-04-09: SELL EXECUTED: BAC, Price: 33.85, Size: -217, Value: 8696.02
+2025-08-23 16:30:38,114 - strategies.ml_strategy - INFO - 2025-04-09: SELL EXECUTED: V, Price: 304.60, Size: -51, Value: 17200.03
+2025-08-23 16:30:38,114 - strategies.ml_strategy - INFO - 2025-04-09: BUY EXECUTED: MSFT, Price: 352.31, Size: 245, Cost: 86316.68
+2025-08-23 16:30:38,114 - strategies.ml_strategy - INFO - 2025-04-09: BUY EXECUTED: GOOGL, Price: 144.25, Size: 823, Cost: 118713.94
+2025-08-23 16:30:38,114 - strategies.ml_strategy - INFO - 2025-04-09: BUY EXECUTED: JPM, Price: 211.48, Size: 551, Cost: 116526.12
+2025-08-23 16:30:38,114 - strategies.ml_strategy - INFO - 2025-04-09: BUY EXECUTED: UNH, Price: 556.19, Size: 216, Cost: 120137.41
+2025-08-23 16:30:38,114 - strategies.ml_strategy - INFO - 2025-04-09: BUY EXECUTED: JNJ, Price: 140.99, Size: 7, Cost: 986.94
+2025-08-23 16:30:38,114 - strategies.ml_strategy - INFO - 2025-04-09: BUY EXECUTED: CRM, Price: 240.14, Size: 489, Cost: 117429.09
+2025-08-23 16:30:38,270 - strategies.ml_strategy - INFO - 2025-04-09: BUY SIGNAL: TSLA, Strength: 0.900, Size: 466, ML Enhanced: False
+2025-08-23 16:30:38,270 - strategies.ml_strategy - INFO - 2025-04-09: BUY SIGNAL: BAC, Strength: 0.900, Size: 3223, ML Enhanced: False
+2025-08-23 16:30:38,270 - strategies.ml_strategy - INFO - 2025-04-09: BUY SIGNAL: UNH, Strength: 0.900, Size: 5, ML Enhanced: False
+2025-08-23 16:30:38,270 - strategies.ml_strategy - INFO - 2025-04-09: BUY SIGNAL: JNJ, Strength: 0.900, Size: 49, ML Enhanced: False
+2025-08-23 16:30:38,270 - strategies.ml_strategy - INFO - 2025-04-09: BUY SIGNAL: XOM, Strength: 0.900, Size: 1223, ML Enhanced: False
+2025-08-23 16:30:38,271 - strategies.ml_strategy - INFO - 2025-04-10: Order Failed: TSLA, Status: Margin
+2025-08-23 16:30:38,271 - strategies.ml_strategy - INFO - 2025-04-10: Order Failed: BAC, Status: Margin
+2025-08-23 16:30:38,271 - strategies.ml_strategy - INFO - 2025-04-10: Order Failed: UNH, Status: Margin
+2025-08-23 16:30:38,271 - strategies.ml_strategy - INFO - 2025-04-10: Order Failed: JNJ, Status: Margin
+2025-08-23 16:30:38,271 - strategies.ml_strategy - INFO - 2025-04-10: Order Failed: XOM, Status: Margin
+2025-08-23 16:30:38,428 - strategies.ml_strategy - INFO - 2025-04-10: EXIT SIGNAL: BAC, Strength: 0.900
+2025-08-23 16:30:38,428 - strategies.ml_strategy - INFO - 2025-04-10: BUY SIGNAL: BAC, Strength: 0.900, Size: 3282, ML Enhanced: False
+2025-08-23 16:30:38,428 - strategies.ml_strategy - INFO - 2025-04-10: BUY SIGNAL: JNJ, Strength: 0.900, Size: 46, ML Enhanced: False
+2025-08-23 16:30:38,428 - strategies.ml_strategy - INFO - 2025-04-10: BUY SIGNAL: XOM, Strength: 0.900, Size: 1271, ML Enhanced: False
+2025-08-23 16:30:38,428 - strategies.ml_strategy - INFO - 2025-04-10: BUY SIGNAL: DIS, Strength: 0.900, Size: 1469, ML Enhanced: False
+2025-08-23 16:30:38,429 - strategies.ml_strategy - INFO - 2025-04-11: Order Failed: BAC, Status: Margin
+2025-08-23 16:30:38,429 - strategies.ml_strategy - INFO - 2025-04-11: Order Failed: JNJ, Status: Margin
+2025-08-23 16:30:38,429 - strategies.ml_strategy - INFO - 2025-04-11: Order Failed: XOM, Status: Margin
+2025-08-23 16:30:38,429 - strategies.ml_strategy - INFO - 2025-04-11: Order Failed: DIS, Status: Margin
+2025-08-23 16:30:38,429 - strategies.ml_strategy - INFO - 2025-04-11: SELL EXECUTED: BAC, Price: 34.99, Size: -218, Value: 8736.10
+2025-08-23 16:30:38,587 - strategies.ml_strategy - INFO - 2025-04-11: BUY SIGNAL: ORCL, Strength: 0.700, Size: 961, ML Enhanced: False
+2025-08-23 16:30:38,587 - strategies.ml_strategy - INFO - 2025-04-11: BUY SIGNAL: BAC, Strength: 0.700, Size: 3551, ML Enhanced: False
+2025-08-23 16:30:38,587 - strategies.ml_strategy - INFO - 2025-04-11: BUY SIGNAL: XOM, Strength: 0.700, Size: 1253, ML Enhanced: False
+2025-08-23 16:30:38,587 - strategies.ml_strategy - INFO - 2025-04-11: BUY SIGNAL: DIS, Strength: 0.700, Size: 1501, ML Enhanced: False
+2025-08-23 16:30:38,587 - strategies.ml_strategy - INFO - 2025-04-11: BUY SIGNAL: CRM, Strength: 0.900, Size: 9, ML Enhanced: False
+2025-08-23 16:30:38,588 - strategies.ml_strategy - INFO - 2025-04-14: Order Failed: ORCL, Status: Margin
+2025-08-23 16:30:38,588 - strategies.ml_strategy - INFO - 2025-04-14: Order Failed: BAC, Status: Margin
+2025-08-23 16:30:38,588 - strategies.ml_strategy - INFO - 2025-04-14: Order Failed: XOM, Status: Margin
+2025-08-23 16:30:38,588 - strategies.ml_strategy - INFO - 2025-04-14: Order Failed: DIS, Status: Margin
+2025-08-23 16:30:38,588 - strategies.ml_strategy - INFO - 2025-04-14: Order Failed: CRM, Status: Margin
+2025-08-23 16:30:39,946 - strategies.ml_strategy - INFO - 2025-04-14: Trained ML models for 20 symbols
+2025-08-23 16:30:40,120 - strategies.ml_strategy - INFO - 2025-04-14: BUY SIGNAL: META, Strength: 0.773, Size: 238, ML Enhanced: True
+2025-08-23 16:30:40,121 - strategies.ml_strategy - INFO - 2025-04-14: BUY SIGNAL: BAC, Strength: 0.781, Size: 3481, ML Enhanced: True
+2025-08-23 16:30:40,121 - strategies.ml_strategy - INFO - 2025-04-14: BUY SIGNAL: XOM, Strength: 1.000, Size: 1250, ML Enhanced: True
+2025-08-23 16:30:40,121 - strategies.ml_strategy - INFO - 2025-04-14: BUY SIGNAL: DIS, Strength: 0.997, Size: 1505, ML Enhanced: True
+2025-08-23 16:30:40,121 - strategies.ml_strategy - INFO - 2025-04-14: BUY SIGNAL: CRM, Strength: 0.524, Size: 10, ML Enhanced: True
+2025-08-23 16:30:40,121 - strategies.ml_strategy - INFO - 2025-04-14: Portfolio Value: $846,164, Return: -15.4%, Positions: 7
+2025-08-23 16:30:40,121 - strategies.ml_strategy - INFO - 2025-04-15: Order Failed: META, Status: Margin
+2025-08-23 16:30:40,122 - strategies.ml_strategy - INFO - 2025-04-15: Order Failed: BAC, Status: Margin
+2025-08-23 16:30:40,122 - strategies.ml_strategy - INFO - 2025-04-15: Order Failed: XOM, Status: Margin
+2025-08-23 16:30:40,122 - strategies.ml_strategy - INFO - 2025-04-15: Order Failed: DIS, Status: Margin
+2025-08-23 16:30:40,122 - strategies.ml_strategy - INFO - 2025-04-15: Order Failed: CRM, Status: Margin
+2025-08-23 16:30:40,281 - strategies.ml_strategy - INFO - 2025-04-15: BUY SIGNAL: XOM, Strength: 0.700, Size: 1246, ML Enhanced: False
+2025-08-23 16:30:40,282 - strategies.ml_strategy - INFO - 2025-04-15: BUY SIGNAL: DIS, Strength: 0.700, Size: 1490, ML Enhanced: False
+2025-08-23 16:30:40,282 - strategies.ml_strategy - INFO - 2025-04-15: BUY SIGNAL: CRM, Strength: 0.900, Size: 6, ML Enhanced: False
+2025-08-23 16:30:40,282 - strategies.ml_strategy - INFO - 2025-04-16: Order Failed: XOM, Status: Margin
+2025-08-23 16:30:40,282 - strategies.ml_strategy - INFO - 2025-04-16: Order Failed: DIS, Status: Margin
+2025-08-23 16:30:40,282 - strategies.ml_strategy - INFO - 2025-04-16: Order Failed: CRM, Status: Margin
+2025-08-23 16:30:40,440 - strategies.ml_strategy - INFO - 2025-04-16: BUY SIGNAL: XOM, Strength: 0.700, Size: 1217, ML Enhanced: False
+2025-08-23 16:30:40,440 - strategies.ml_strategy - INFO - 2025-04-16: BUY SIGNAL: DIS, Strength: 0.700, Size: 1510, ML Enhanced: False
+2025-08-23 16:30:40,441 - strategies.ml_strategy - INFO - 2025-04-16: BUY SIGNAL: CRM, Strength: 0.900, Size: 10, ML Enhanced: False
+2025-08-23 16:30:40,441 - strategies.ml_strategy - INFO - 2025-04-17: Order Failed: XOM, Status: Margin
+2025-08-23 16:30:40,441 - strategies.ml_strategy - INFO - 2025-04-17: Order Failed: DIS, Status: Margin
+2025-08-23 16:30:40,441 - strategies.ml_strategy - INFO - 2025-04-17: Order Failed: CRM, Status: Margin
+2025-08-23 16:30:40,599 - strategies.ml_strategy - INFO - 2025-04-17: EXIT SIGNAL: UNH, Strength: 0.800
+2025-08-23 16:30:40,599 - strategies.ml_strategy - INFO - 2025-04-17: BUY SIGNAL: DIS, Strength: 0.700, Size: 1423, ML Enhanced: False
+2025-08-23 16:30:40,600 - strategies.ml_strategy - INFO - 2025-04-21: Order Failed: DIS, Status: Margin
+2025-08-23 16:30:40,600 - strategies.ml_strategy - INFO - 2025-04-21: SELL EXECUTED: UNH, Price: 446.59, Size: -108, Value: 60068.71
+2025-08-23 16:30:40,759 - strategies.ml_strategy - INFO - 2025-04-21: EXIT SIGNAL: MSFT, Strength: 0.800
+2025-08-23 16:30:40,759 - strategies.ml_strategy - INFO - 2025-04-21: EXIT SIGNAL: V, Strength: 0.800
+2025-08-23 16:30:40,759 - strategies.ml_strategy - INFO - 2025-04-21: EXIT SIGNAL: UNH, Strength: 0.800
+2025-08-23 16:30:40,759 - strategies.ml_strategy - INFO - 2025-04-21: EXIT SIGNAL: CRM, Strength: 0.800
+2025-08-23 16:30:40,760 - strategies.ml_strategy - INFO - 2025-04-21: BUY SIGNAL: XOM, Strength: 0.700, Size: 1137, ML Enhanced: False
+2025-08-23 16:30:40,760 - strategies.ml_strategy - INFO - 2025-04-21: BUY SIGNAL: DIS, Strength: 0.700, Size: 1406, ML Enhanced: False
+2025-08-23 16:30:40,760 - strategies.ml_strategy - INFO - 2025-04-22: SELL EXECUTED: MSFT, Price: 362.12, Size: -168, Value: 60522.09
+2025-08-23 16:30:40,760 - strategies.ml_strategy - INFO - 2025-04-22: SELL EXECUTED: V, Price: 322.76, Size: -25, Value: 8431.39
+2025-08-23 16:30:40,760 - strategies.ml_strategy - INFO - 2025-04-22: SELL EXECUTED: UNH, Price: 421.65, Size: -54, Value: 30034.35
+2025-08-23 16:30:40,760 - strategies.ml_strategy - INFO - 2025-04-22: SELL EXECUTED: CRM, Price: 237.85, Size: -244, Value: 58594.47
+2025-08-23 16:30:40,760 - strategies.ml_strategy - INFO - 2025-04-22: BUY EXECUTED: XOM, Price: 104.20, Size: 1137, Cost: 118477.35
+2025-08-23 16:30:40,761 - strategies.ml_strategy - INFO - 2025-04-22: BUY EXECUTED: DIS, Price: 84.65, Size: 1406, Cost: 119016.53
+2025-08-23 16:30:42,132 - strategies.ml_strategy - INFO - 2025-04-22: Trained ML models for 20 symbols
+2025-08-23 16:30:42,298 - strategies.ml_strategy - INFO - 2025-04-22: EXIT SIGNAL: UNH, Strength: 1.000
+2025-08-23 16:30:42,298 - strategies.ml_strategy - INFO - 2025-04-22: Portfolio Value: $800,093, Return: -20.0%, Positions: 9
+2025-08-23 16:30:42,298 - strategies.ml_strategy - INFO - 2025-04-23: SELL EXECUTED: UNH, Price: 424.06, Size: -54, Value: 30034.35
+2025-08-23 16:30:42,615 - strategies.ml_strategy - INFO - 2025-04-24: EXIT SIGNAL: JPM, Strength: 0.000
+2025-08-23 16:30:42,615 - strategies.ml_strategy - INFO - 2025-04-24: BUY SIGNAL: UNH, Strength: 0.700, Size: 293, ML Enhanced: False
+2025-08-23 16:30:42,616 - strategies.ml_strategy - INFO - 2025-04-25: Order Failed: UNH, Status: Margin
+2025-08-23 16:30:42,616 - strategies.ml_strategy - INFO - 2025-04-25: SELL EXECUTED: JPM, Price: 243.48, Size: -165, Value: 34894.39
+2025-08-23 16:30:42,773 - strategies.ml_strategy - INFO - 2025-04-25: BUY SIGNAL: UNH, Strength: 0.700, Size: 298, ML Enhanced: False
+2025-08-23 16:30:42,774 - strategies.ml_strategy - INFO - 2025-04-28: Order Failed: UNH, Status: Margin
+2025-08-23 16:30:42,934 - strategies.ml_strategy - INFO - 2025-04-28: BUY SIGNAL: UNH, Strength: 0.700, Size: 297, ML Enhanced: False
+2025-08-23 16:30:42,934 - strategies.ml_strategy - INFO - 2025-04-29: Order Failed: UNH, Status: Margin
+2025-08-23 16:30:44,439 - strategies.ml_strategy - INFO - 2025-04-29: Trained ML models for 20 symbols
+2025-08-23 16:30:44,613 - strategies.ml_strategy - INFO - 2025-04-29: EXIT SIGNAL: JPM, Strength: 0.000
+2025-08-23 16:30:44,613 - strategies.ml_strategy - INFO - 2025-04-29: BUY SIGNAL: UNH, Strength: 0.656, Size: 305, ML Enhanced: True
+2025-08-23 16:30:44,613 - strategies.ml_strategy - INFO - 2025-04-29: Portfolio Value: $828,656, Return: -17.1%, Positions: 8
+2025-08-23 16:30:44,614 - strategies.ml_strategy - INFO - 2025-04-30: Order Failed: UNH, Status: Margin
+2025-08-23 16:30:44,614 - strategies.ml_strategy - INFO - 2025-04-30: SELL EXECUTED: JPM, Price: 240.05, Size: -115, Value: 24320.33
+2025-08-23 16:30:44,773 - strategies.ml_strategy - INFO - 2025-04-30: EXIT SIGNAL: JPM, Strength: 0.000
+2025-08-23 16:30:44,773 - strategies.ml_strategy - INFO - 2025-04-30: BUY SIGNAL: UNH, Strength: 0.700, Size: 302, ML Enhanced: False
+2025-08-23 16:30:44,774 - strategies.ml_strategy - INFO - 2025-05-01: SELL EXECUTED: JPM, Price: 241.68, Size: -81, Value: 17129.97
+2025-08-23 16:30:44,774 - strategies.ml_strategy - INFO - 2025-05-01: BUY EXECUTED: UNH, Price: 408.42, Size: 302, Cost: 123343.05
+2025-08-23 16:30:44,936 - strategies.ml_strategy - INFO - 2025-05-01: EXIT SIGNAL: MSFT, Strength: 0.900
+2025-08-23 16:30:44,936 - strategies.ml_strategy - INFO - 2025-05-01: EXIT SIGNAL: JPM, Strength: 0.000
+2025-08-23 16:30:44,936 - strategies.ml_strategy - INFO - 2025-05-01: BUY SIGNAL: MSFT, Strength: 0.900, Size: 124, ML Enhanced: False
+2025-08-23 16:30:44,936 - strategies.ml_strategy - INFO - 2025-05-01: BUY SIGNAL: META, Strength: 0.900, Size: 217, ML Enhanced: False
+2025-08-23 16:30:44,936 - strategies.ml_strategy - INFO - 2025-05-01: BUY SIGNAL: UNH, Strength: 0.700, Size: 9, ML Enhanced: False
+2025-08-23 16:30:44,937 - strategies.ml_strategy - INFO - 2025-05-02: Order Failed: MSFT, Status: Margin
+2025-08-23 16:30:44,937 - strategies.ml_strategy - INFO - 2025-05-02: Order Failed: META, Status: Margin
+2025-08-23 16:30:44,937 - strategies.ml_strategy - INFO - 2025-05-02: Order Failed: UNH, Status: Margin
+2025-08-23 16:30:44,937 - strategies.ml_strategy - INFO - 2025-05-02: SELL EXECUTED: MSFT, Price: 430.24, Size: -50, Value: 18012.53
+2025-08-23 16:30:44,937 - strategies.ml_strategy - INFO - 2025-05-02: SELL EXECUTED: JPM, Price: 250.06, Size: -57, Value: 12054.43
+2025-08-23 16:30:45,095 - strategies.ml_strategy - INFO - 2025-05-02: EXIT SIGNAL: MSFT, Strength: 0.000
+2025-08-23 16:30:45,095 - strategies.ml_strategy - INFO - 2025-05-02: EXIT SIGNAL: JPM, Strength: 0.000
+2025-08-23 16:30:45,096 - strategies.ml_strategy - INFO - 2025-05-02: BUY SIGNAL: UNH, Strength: 0.700, Size: 14, ML Enhanced: False
+2025-08-23 16:30:45,096 - strategies.ml_strategy - INFO - 2025-05-05: SELL EXECUTED: MSFT, Price: 431.37, Size: -35, Value: 12608.77
+2025-08-23 16:30:45,096 - strategies.ml_strategy - INFO - 2025-05-05: SELL EXECUTED: JPM, Price: 249.98, Size: -39, Value: 8247.77
+2025-08-23 16:30:45,096 - strategies.ml_strategy - INFO - 2025-05-05: BUY EXECUTED: UNH, Price: 396.31, Size: 14, Cost: 5548.29
+2025-08-23 16:30:45,256 - strategies.ml_strategy - INFO - 2025-05-05: EXIT SIGNAL: MSFT, Strength: 0.000
+2025-08-23 16:30:45,257 - strategies.ml_strategy - INFO - 2025-05-05: EXIT SIGNAL: JPM, Strength: 0.000
+2025-08-23 16:30:45,257 - strategies.ml_strategy - INFO - 2025-05-05: EXIT SIGNAL: XOM, Strength: 0.800
+2025-08-23 16:30:45,257 - strategies.ml_strategy - INFO - 2025-05-05: BUY SIGNAL: PG, Strength: 0.700, Size: 792, ML Enhanced: False
+2025-08-23 16:30:45,257 - strategies.ml_strategy - INFO - 2025-05-06: SELL EXECUTED: MSFT, Price: 430.70, Size: -24, Value: 8646.01
+2025-08-23 16:30:45,257 - strategies.ml_strategy - INFO - 2025-05-06: SELL EXECUTED: JPM, Price: 248.80, Size: -28, Value: 5921.47
+2025-08-23 16:30:45,257 - strategies.ml_strategy - INFO - 2025-05-06: SELL EXECUTED: XOM, Price: 101.99, Size: -568, Value: 59186.57
+2025-08-23 16:30:45,258 - strategies.ml_strategy - INFO - 2025-05-06: BUY EXECUTED: PG, Price: 156.97, Size: 792, Cost: 124317.52
+2025-08-23 16:30:46,668 - strategies.ml_strategy - INFO - 2025-05-06: Trained ML models for 20 symbols
+2025-08-23 16:30:46,836 - strategies.ml_strategy - INFO - 2025-05-06: EXIT SIGNAL: MSFT, Strength: 0.000
+2025-08-23 16:30:46,836 - strategies.ml_strategy - INFO - 2025-05-06: EXIT SIGNAL: JPM, Strength: 0.000
+2025-08-23 16:30:46,837 - strategies.ml_strategy - INFO - 2025-05-06: BUY SIGNAL: UNH, Strength: 0.794, Size: 2, ML Enhanced: True
+2025-08-23 16:30:46,837 - strategies.ml_strategy - INFO - 2025-05-06: Portfolio Value: $831,070, Return: -16.9%, Positions: 10
+2025-08-23 16:30:46,837 - strategies.ml_strategy - INFO - 2025-05-07: SELL EXECUTED: MSFT, Price: 432.33, Size: -17, Value: 6124.26
+2025-08-23 16:30:46,837 - strategies.ml_strategy - INFO - 2025-05-07: SELL EXECUTED: JPM, Price: 248.65, Size: -19, Value: 4018.14
+2025-08-23 16:30:46,837 - strategies.ml_strategy - INFO - 2025-05-07: BUY EXECUTED: UNH, Price: 392.56, Size: 2, Cost: 785.13
+2025-08-23 16:30:46,998 - strategies.ml_strategy - INFO - 2025-05-07: EXIT SIGNAL: MSFT, Strength: 0.700
+2025-08-23 16:30:46,998 - strategies.ml_strategy - INFO - 2025-05-07: EXIT SIGNAL: JPM, Strength: 0.700
+2025-08-23 16:30:46,998 - strategies.ml_strategy - INFO - 2025-05-07: EXIT SIGNAL: DIS, Strength: 0.900
+2025-08-23 16:30:46,998 - strategies.ml_strategy - INFO - 2025-05-07: EXIT SIGNAL: CRM, Strength: 0.000
+2025-08-23 16:30:46,998 - strategies.ml_strategy - INFO - 2025-05-07: BUY SIGNAL: UNH, Strength: 0.700, Size: 5, ML Enhanced: False
+2025-08-23 16:30:46,999 - strategies.ml_strategy - INFO - 2025-05-08: SELL EXECUTED: MSFT, Price: 436.41, Size: -21, Value: 7565.26
+2025-08-23 16:30:46,999 - strategies.ml_strategy - INFO - 2025-05-08: SELL EXECUTED: JPM, Price: 250.36, Size: -23, Value: 4864.07
+2025-08-23 16:30:46,999 - strategies.ml_strategy - INFO - 2025-05-08: SELL EXECUTED: DIS, Price: 103.53, Size: -421, Value: 35637.24
+2025-08-23 16:30:46,999 - strategies.ml_strategy - INFO - 2025-05-08: SELL EXECUTED: CRM, Price: 278.77, Size: -73, Value: 17530.31
+2025-08-23 16:30:46,999 - strategies.ml_strategy - INFO - 2025-05-08: BUY EXECUTED: UNH, Price: 387.25, Size: 5, Cost: 1936.25
+2025-08-23 16:30:47,159 - strategies.ml_strategy - INFO - 2025-05-08: EXIT SIGNAL: MSFT, Strength: 0.700
+2025-08-23 16:30:47,160 - strategies.ml_strategy - INFO - 2025-05-08: EXIT SIGNAL: JPM, Strength: 0.700
+2025-08-23 16:30:47,160 - strategies.ml_strategy - INFO - 2025-05-08: EXIT SIGNAL: DIS, Strength: 0.900
+2025-08-23 16:30:47,160 - strategies.ml_strategy - INFO - 2025-05-08: EXIT SIGNAL: CRM, Strength: 0.700
+2025-08-23 16:30:47,160 - strategies.ml_strategy - INFO - 2025-05-08: BUY SIGNAL: UNH, Strength: 0.700, Size: 6, ML Enhanced: False
+2025-08-23 16:30:47,160 - strategies.ml_strategy - INFO - 2025-05-08: BUY SIGNAL: PG, Strength: 0.700, Size: 9, ML Enhanced: False
+2025-08-23 16:30:47,160 - strategies.ml_strategy - INFO - 2025-05-08: BUY SIGNAL: DIS, Strength: 0.900, Size: 221, ML Enhanced: False
+2025-08-23 16:30:47,161 - strategies.ml_strategy - INFO - 2025-05-09: SELL EXECUTED: MSFT, Price: 438.47, Size: -10, Value: 3602.51
+2025-08-23 16:30:47,161 - strategies.ml_strategy - INFO - 2025-05-09: SELL EXECUTED: JPM, Price: 253.28, Size: -12, Value: 2537.77
+2025-08-23 16:30:47,161 - strategies.ml_strategy - INFO - 2025-05-09: SELL EXECUTED: DIS, Price: 104.81, Size: -295, Value: 24971.46
+2025-08-23 16:30:47,161 - strategies.ml_strategy - INFO - 2025-05-09: SELL EXECUTED: CRM, Price: 281.17, Size: -86, Value: 20652.15
+2025-08-23 16:30:47,161 - strategies.ml_strategy - INFO - 2025-05-09: BUY EXECUTED: UNH, Price: 382.95, Size: 6, Cost: 2297.71
+2025-08-23 16:30:47,161 - strategies.ml_strategy - INFO - 2025-05-09: BUY EXECUTED: PG, Price: 156.95, Size: 9, Cost: 1412.52
+2025-08-23 16:30:47,161 - strategies.ml_strategy - INFO - 2025-05-09: BUY EXECUTED: DIS, Price: 104.81, Size: 221, Cost: 23163.68
+2025-08-23 16:30:47,324 - strategies.ml_strategy - INFO - 2025-05-09: EXIT SIGNAL: MSFT, Strength: 0.700
+2025-08-23 16:30:47,324 - strategies.ml_strategy - INFO - 2025-05-09: EXIT SIGNAL: GOOGL, Strength: 0.800
+2025-08-23 16:30:47,324 - strategies.ml_strategy - INFO - 2025-05-09: EXIT SIGNAL: JPM, Strength: 0.700
+2025-08-23 16:30:47,324 - strategies.ml_strategy - INFO - 2025-05-09: EXIT SIGNAL: DIS, Strength: 0.000
+2025-08-23 16:30:47,324 - strategies.ml_strategy - INFO - 2025-05-09: BUY SIGNAL: UNH, Strength: 0.700, Size: 3, ML Enhanced: False
+2025-08-23 16:30:47,324 - strategies.ml_strategy - INFO - 2025-05-09: BUY SIGNAL: PG, Strength: 0.700, Size: 1, ML Enhanced: False
+2025-08-23 16:30:47,325 - strategies.ml_strategy - INFO - 2025-05-12: SELL EXECUTED: MSFT, Price: 444.39, Size: -5, Value: 1801.25
+2025-08-23 16:30:47,325 - strategies.ml_strategy - INFO - 2025-05-12: SELL EXECUTED: GOOGL, Price: 157.30, Size: -411, Value: 59284.85
+2025-08-23 16:30:47,325 - strategies.ml_strategy - INFO - 2025-05-12: SELL EXECUTED: JPM, Price: 261.64, Size: -6, Value: 1268.89
+2025-08-23 16:30:47,325 - strategies.ml_strategy - INFO - 2025-05-12: SELL EXECUTED: DIS, Price: 109.40, Size: -273, Value: 24444.59
+2025-08-23 16:30:47,325 - strategies.ml_strategy - INFO - 2025-05-12: BUY EXECUTED: UNH, Price: 378.31, Size: 3, Cost: 1134.94
+2025-08-23 16:30:47,325 - strategies.ml_strategy - INFO - 2025-05-12: BUY EXECUTED: PG, Price: 156.36, Size: 1, Cost: 156.36
+2025-08-23 16:30:47,489 - strategies.ml_strategy - INFO - 2025-05-12: EXIT SIGNAL: MSFT, Strength: 0.000
+2025-08-23 16:30:47,489 - strategies.ml_strategy - INFO - 2025-05-12: EXIT SIGNAL: JPM, Strength: 0.000
+2025-08-23 16:30:47,490 - strategies.ml_strategy - INFO - 2025-05-12: EXIT SIGNAL: DIS, Strength: 0.900
+2025-08-23 16:30:47,490 - strategies.ml_strategy - INFO - 2025-05-12: EXIT SIGNAL: CRM, Strength: 0.000
+2025-08-23 16:30:47,490 - strategies.ml_strategy - INFO - 2025-05-12: BUY SIGNAL: AMZN, Strength: 0.900, Size: 611, ML Enhanced: False
+2025-08-23 16:30:47,490 - strategies.ml_strategy - INFO - 2025-05-12: BUY SIGNAL: META, Strength: 0.900, Size: 199, ML Enhanced: False
+2025-08-23 16:30:47,490 - strategies.ml_strategy - INFO - 2025-05-12: BUY SIGNAL: UNH, Strength: 0.700, Size: 7, ML Enhanced: False
+2025-08-23 16:30:47,490 - strategies.ml_strategy - INFO - 2025-05-12: BUY SIGNAL: KO, Strength: 0.900, Size: 1848, ML Enhanced: False
+2025-08-23 16:30:47,490 - strategies.ml_strategy - INFO - 2025-05-12: BUY SIGNAL: HD, Strength: 0.900, Size: 340, ML Enhanced: False
+2025-08-23 16:30:47,490 - strategies.ml_strategy - INFO - 2025-05-12: BUY SIGNAL: DIS, Strength: 0.900, Size: 521, ML Enhanced: False
+2025-08-23 16:30:47,491 - strategies.ml_strategy - INFO - 2025-05-13: Order Failed: KO, Status: Margin
+2025-08-23 16:30:47,491 - strategies.ml_strategy - INFO - 2025-05-13: Order Failed: HD, Status: Margin
+2025-08-23 16:30:47,491 - strategies.ml_strategy - INFO - 2025-05-13: Order Failed: DIS, Status: Margin
+2025-08-23 16:30:47,491 - strategies.ml_strategy - INFO - 2025-05-13: SELL EXECUTED: MSFT, Price: 446.23, Size: -1, Value: 360.25
+2025-08-23 16:30:47,491 - strategies.ml_strategy - INFO - 2025-05-13: SELL EXECUTED: JPM, Price: 259.78, Size: -1, Value: 211.48
+2025-08-23 16:30:47,491 - strategies.ml_strategy - INFO - 2025-05-13: SELL EXECUTED: DIS, Price: 109.78, Size: -191, Value: 17102.26
+2025-08-23 16:30:47,491 - strategies.ml_strategy - INFO - 2025-05-13: SELL EXECUTED: CRM, Price: 290.54, Size: -25, Value: 6003.53
+2025-08-23 16:30:47,491 - strategies.ml_strategy - INFO - 2025-05-13: BUY EXECUTED: AMZN, Price: 211.08, Size: 611, Cost: 128969.88
+2025-08-23 16:30:47,491 - strategies.ml_strategy - INFO - 2025-05-13: BUY EXECUTED: META, Price: 645.04, Size: 199, Cost: 128363.69
+2025-08-23 16:30:47,491 - strategies.ml_strategy - INFO - 2025-05-13: BUY EXECUTED: UNH, Price: 333.37, Size: 7, Cost: 2333.61
+2025-08-23 16:30:48,926 - strategies.ml_strategy - INFO - 2025-05-13: Trained ML models for 20 symbols
+2025-08-23 16:30:49,115 - strategies.ml_strategy - INFO - 2025-05-13: EXIT SIGNAL: MSFT, Strength: 0.928
+2025-08-23 16:30:49,115 - strategies.ml_strategy - INFO - 2025-05-13: EXIT SIGNAL: JPM, Strength: 0.000
+2025-08-23 16:30:49,115 - strategies.ml_strategy - INFO - 2025-05-13: EXIT SIGNAL: V, Strength: 1.000
+2025-08-23 16:30:49,115 - strategies.ml_strategy - INFO - 2025-05-13: EXIT SIGNAL: UNH, Strength: 0.568
+2025-08-23 16:30:49,115 - strategies.ml_strategy - INFO - 2025-05-13: EXIT SIGNAL: DIS, Strength: 0.000
+2025-08-23 16:30:49,115 - strategies.ml_strategy - INFO - 2025-05-13: EXIT SIGNAL: CRM, Strength: 1.000
+2025-08-23 16:30:49,116 - strategies.ml_strategy - INFO - 2025-05-13: BUY SIGNAL: TSLA, Strength: 1.000, Size: 370, ML Enhanced: True
+2025-08-23 16:30:49,116 - strategies.ml_strategy - INFO - 2025-05-13: BUY SIGNAL: NVDA, Strength: 0.678, Size: 952, ML Enhanced: True
+2025-08-23 16:30:49,116 - strategies.ml_strategy - INFO - 2025-05-13: BUY SIGNAL: ORCL, Strength: 0.641, Size: 764, ML Enhanced: True
+2025-08-23 16:30:49,116 - strategies.ml_strategy - INFO - 2025-05-13: BUY SIGNAL: KO, Strength: 0.727, Size: 1807, ML Enhanced: True
+2025-08-23 16:30:49,116 - strategies.ml_strategy - INFO - 2025-05-13: BUY SIGNAL: CRM, Strength: 1.000, Size: 367, ML Enhanced: True
+2025-08-23 16:30:49,116 - strategies.ml_strategy - INFO - 2025-05-13: Portfolio Value: $825,280, Return: -17.5%, Positions: 12
+2025-08-23 16:30:49,117 - strategies.ml_strategy - INFO - 2025-05-14: Order Failed: NVDA, Status: Margin
+2025-08-23 16:30:49,117 - strategies.ml_strategy - INFO - 2025-05-14: Order Failed: ORCL, Status: Margin
+2025-08-23 16:30:49,117 - strategies.ml_strategy - INFO - 2025-05-14: Order Failed: KO, Status: Margin
+2025-08-23 16:30:49,117 - strategies.ml_strategy - INFO - 2025-05-14: Order Failed: CRM, Status: Margin
+2025-08-23 16:30:49,117 - strategies.ml_strategy - INFO - 2025-05-14: SELL EXECUTED: MSFT, Price: 446.58, Size: -5, Value: 1801.25
+2025-08-23 16:30:49,117 - strategies.ml_strategy - INFO - 2025-05-14: SELL EXECUTED: JPM, Price: 261.74, Size: -1, Value: 211.48
+2025-08-23 16:30:49,117 - strategies.ml_strategy - INFO - 2025-05-14: SELL EXECUTED: V, Price: 356.04, Size: -26, Value: 8768.64
+2025-08-23 16:30:49,117 - strategies.ml_strategy - INFO - 2025-05-14: SELL EXECUTED: UNH, Price: 319.18, Size: -339, Value: 137378.99
+2025-08-23 16:30:49,117 - strategies.ml_strategy - INFO - 2025-05-14: SELL EXECUTED: DIS, Price: 110.91, Size: -134, Value: 11998.44
+2025-08-23 16:30:49,117 - strategies.ml_strategy - INFO - 2025-05-14: SELL EXECUTED: CRM, Price: 293.04, Size: -18, Value: 4322.54
+2025-08-23 16:30:49,117 - strategies.ml_strategy - INFO - 2025-05-14: BUY EXECUTED: TSLA, Price: 342.50, Size: 370, Cost: 126725.00
+2025-08-23 16:30:49,276 - strategies.ml_strategy - INFO - 2025-05-14: EXIT SIGNAL: JPM, Strength: 0.000
+2025-08-23 16:30:49,276 - strategies.ml_strategy - INFO - 2025-05-14: EXIT SIGNAL: JNJ, Strength: 0.800
+2025-08-23 16:30:49,276 - strategies.ml_strategy - INFO - 2025-05-14: EXIT SIGNAL: DIS, Strength: 0.900
+2025-08-23 16:30:49,276 - strategies.ml_strategy - INFO - 2025-05-14: EXIT SIGNAL: CRM, Strength: 0.900
+2025-08-23 16:30:49,277 - strategies.ml_strategy - INFO - 2025-05-14: BUY SIGNAL: GOOGL, Strength: 0.900, Size: 342, ML Enhanced: False
+2025-08-23 16:30:49,277 - strategies.ml_strategy - INFO - 2025-05-14: BUY SIGNAL: NVDA, Strength: 0.900, Size: 920, ML Enhanced: False
+2025-08-23 16:30:49,277 - strategies.ml_strategy - INFO - 2025-05-14: BUY SIGNAL: KO, Strength: 0.700, Size: 1814, ML Enhanced: False
+2025-08-23 16:30:49,277 - strategies.ml_strategy - INFO - 2025-05-14: BUY SIGNAL: DIS, Strength: 0.900, Size: 795, ML Enhanced: False
+2025-08-23 16:30:49,277 - strategies.ml_strategy - INFO - 2025-05-14: BUY SIGNAL: CRM, Strength: 0.900, Size: 386, ML Enhanced: False
+2025-08-23 16:30:49,278 - strategies.ml_strategy - INFO - 2025-05-15: Order Failed: NVDA, Status: Margin
+2025-08-23 16:30:49,278 - strategies.ml_strategy - INFO - 2025-05-15: Order Failed: KO, Status: Margin
+2025-08-23 16:30:49,278 - strategies.ml_strategy - INFO - 2025-05-15: Order Failed: DIS, Status: Margin
+2025-08-23 16:30:49,278 - strategies.ml_strategy - INFO - 2025-05-15: Order Failed: CRM, Status: Margin
+2025-08-23 16:30:49,278 - strategies.ml_strategy - INFO - 2025-05-15: SELL EXECUTED: JPM, Price: 265.69, Size: -1, Value: 211.48
+2025-08-23 16:30:49,278 - strategies.ml_strategy - INFO - 2025-05-15: SELL EXECUTED: JNJ, Price: 146.74, Size: -400, Value: 60874.26
+2025-08-23 16:30:49,278 - strategies.ml_strategy - INFO - 2025-05-15: SELL EXECUTED: DIS, Price: 111.75, Size: -93, Value: 8327.28
+2025-08-23 16:30:49,278 - strategies.ml_strategy - INFO - 2025-05-15: SELL EXECUTED: CRM, Price: 289.11, Size: -12, Value: 2881.70
+2025-08-23 16:30:49,278 - strategies.ml_strategy - INFO - 2025-05-15: BUY EXECUTED: GOOGL, Price: 165.64, Size: 342, Cost: 56648.70
+2025-08-23 16:30:49,437 - strategies.ml_strategy - INFO - 2025-05-15: EXIT SIGNAL: JPM, Strength: 0.000
+2025-08-23 16:30:49,438 - strategies.ml_strategy - INFO - 2025-05-15: EXIT SIGNAL: DIS, Strength: 0.700
+2025-08-23 16:30:49,438 - strategies.ml_strategy - INFO - 2025-05-15: EXIT SIGNAL: CRM, Strength: 0.700
+2025-08-23 16:30:49,438 - strategies.ml_strategy - INFO - 2025-05-16: SELL EXECUTED: JPM, Price: 266.22, Size: -1, Value: 211.48
+2025-08-23 16:30:49,438 - strategies.ml_strategy - INFO - 2025-05-16: SELL EXECUTED: DIS, Price: 111.44, Size: -110, Value: 9849.47
+2025-08-23 16:30:49,439 - strategies.ml_strategy - INFO - 2025-05-16: SELL EXECUTED: CRM, Price: 290.63, Size: -15, Value: 3602.12
+2025-08-23 16:30:49,598 - strategies.ml_strategy - INFO - 2025-05-16: EXIT SIGNAL: JPM, Strength: 0.700
+2025-08-23 16:30:49,598 - strategies.ml_strategy - INFO - 2025-05-16: EXIT SIGNAL: DIS, Strength: 0.700
+2025-08-23 16:30:49,598 - strategies.ml_strategy - INFO - 2025-05-16: EXIT SIGNAL: CRM, Strength: 0.700
+2025-08-23 16:30:49,599 - strategies.ml_strategy - INFO - 2025-05-19: SELL EXECUTED: JPM, Price: 264.28, Size: -1, Value: 211.48
+2025-08-23 16:30:49,599 - strategies.ml_strategy - INFO - 2025-05-19: SELL EXECUTED: DIS, Price: 111.64, Size: -55, Value: 4924.73
+2025-08-23 16:30:49,599 - strategies.ml_strategy - INFO - 2025-05-19: SELL EXECUTED: CRM, Price: 287.64, Size: -8, Value: 1921.13
+2025-08-23 16:30:49,758 - strategies.ml_strategy - INFO - 2025-05-19: EXIT SIGNAL: JPM, Strength: 0.700
+2025-08-23 16:30:49,758 - strategies.ml_strategy - INFO - 2025-05-19: EXIT SIGNAL: DIS, Strength: 0.700
+2025-08-23 16:30:49,758 - strategies.ml_strategy - INFO - 2025-05-19: EXIT SIGNAL: CRM, Strength: 0.000
+2025-08-23 16:30:49,758 - strategies.ml_strategy - INFO - 2025-05-19: BUY SIGNAL: UNH, Strength: 0.900, Size: 397, ML Enhanced: False
+2025-08-23 16:30:49,759 - strategies.ml_strategy - INFO - 2025-05-20: Order Failed: UNH, Status: Margin
+2025-08-23 16:30:49,759 - strategies.ml_strategy - INFO - 2025-05-20: SELL EXECUTED: JPM, Price: 261.26, Size: -1, Value: 211.48
+2025-08-23 16:30:49,759 - strategies.ml_strategy - INFO - 2025-05-20: SELL EXECUTED: DIS, Price: 111.96, Size: -27, Value: 2417.60
+2025-08-23 16:30:49,759 - strategies.ml_strategy - INFO - 2025-05-20: SELL EXECUTED: CRM, Price: 287.63, Size: -2, Value: 480.28
+2025-08-23 16:30:51,210 - strategies.ml_strategy - INFO - 2025-05-20: Trained ML models for 20 symbols
+2025-08-23 16:30:51,397 - strategies.ml_strategy - INFO - 2025-05-20: EXIT SIGNAL: META, Strength: 0.945
+2025-08-23 16:30:51,397 - strategies.ml_strategy - INFO - 2025-05-20: EXIT SIGNAL: TSLA, Strength: 1.000
+2025-08-23 16:30:51,397 - strategies.ml_strategy - INFO - 2025-05-20: EXIT SIGNAL: DIS, Strength: 0.836
+2025-08-23 16:30:51,397 - strategies.ml_strategy - INFO - 2025-05-20: EXIT SIGNAL: CRM, Strength: 0.000
+2025-08-23 16:30:51,398 - strategies.ml_strategy - INFO - 2025-05-20: BUY SIGNAL: UNH, Strength: 0.716, Size: 388, ML Enhanced: True
+2025-08-23 16:30:51,398 - strategies.ml_strategy - INFO - 2025-05-20: Portfolio Value: $827,684, Return: -17.2%, Positions: 9
+2025-08-23 16:30:51,398 - strategies.ml_strategy - INFO - 2025-05-21: SELL EXECUTED: META, Price: 631.30, Size: -199, Value: 128363.69
+2025-08-23 16:30:51,398 - strategies.ml_strategy - INFO - 2025-05-21: SELL EXECUTED: TSLA, Price: 344.43, Size: -370, Value: 126725.00
+2025-08-23 16:30:51,398 - strategies.ml_strategy - INFO - 2025-05-21: SELL EXECUTED: DIS, Price: 111.22, Size: -28, Value: 2507.14
+2025-08-23 16:30:51,398 - strategies.ml_strategy - INFO - 2025-05-21: SELL EXECUTED: CRM, Price: 283.96, Size: -1, Value: 240.14
+2025-08-23 16:30:51,398 - strategies.ml_strategy - INFO - 2025-05-21: BUY EXECUTED: UNH, Price: 298.88, Size: 388, Cost: 115964.78
+2025-08-23 16:30:51,562 - strategies.ml_strategy - INFO - 2025-05-21: EXIT SIGNAL: XOM, Strength: 0.800
+2025-08-23 16:30:51,562 - strategies.ml_strategy - INFO - 2025-05-21: EXIT SIGNAL: CRM, Strength: 0.000
+2025-08-23 16:30:51,563 - strategies.ml_strategy - INFO - 2025-05-21: BUY SIGNAL: UNH, Strength: 0.900, Size: 24, ML Enhanced: False
+2025-08-23 16:30:51,563 - strategies.ml_strategy - INFO - 2025-05-22: SELL EXECUTED: XOM, Price: 102.11, Size: -284, Value: 29593.29
+2025-08-23 16:30:51,563 - strategies.ml_strategy - INFO - 2025-05-22: SELL EXECUTED: CRM, Price: 282.05, Size: -1, Value: 240.14
+2025-08-23 16:30:51,563 - strategies.ml_strategy - INFO - 2025-05-22: BUY EXECUTED: UNH, Price: 291.82, Size: 24, Cost: 7003.64
+2025-08-23 16:30:51,723 - strategies.ml_strategy - INFO - 2025-05-22: EXIT SIGNAL: XOM, Strength: 0.800
+2025-08-23 16:30:51,723 - strategies.ml_strategy - INFO - 2025-05-22: EXIT SIGNAL: CRM, Strength: 0.000
+2025-08-23 16:30:51,723 - strategies.ml_strategy - INFO - 2025-05-22: BUY SIGNAL: UNH, Strength: 0.700, Size: 9, ML Enhanced: False
+2025-08-23 16:30:51,724 - strategies.ml_strategy - INFO - 2025-05-23: SELL EXECUTED: XOM, Price: 101.65, Size: -142, Value: 14796.64
+2025-08-23 16:30:51,724 - strategies.ml_strategy - INFO - 2025-05-23: SELL EXECUTED: CRM, Price: 278.56, Size: -1, Value: 240.14
+2025-08-23 16:30:51,724 - strategies.ml_strategy - INFO - 2025-05-23: BUY EXECUTED: UNH, Price: 294.01, Size: 9, Cost: 2646.12
+2025-08-23 16:30:51,884 - strategies.ml_strategy - INFO - 2025-05-23: EXIT SIGNAL: UNH, Strength: 0.800
+2025-08-23 16:30:51,884 - strategies.ml_strategy - INFO - 2025-05-23: EXIT SIGNAL: CRM, Strength: 0.800
+2025-08-23 16:30:51,884 - strategies.ml_strategy - INFO - 2025-05-27: SELL EXECUTED: UNH, Price: 297.39, Size: -210, Value: 62658.08
+2025-08-23 16:30:51,884 - strategies.ml_strategy - INFO - 2025-05-27: SELL EXECUTED: CRM, Price: 272.74, Size: -1, Value: 240.14
+2025-08-23 16:30:52,045 - strategies.ml_strategy - INFO - 2025-05-27: EXIT SIGNAL: CRM, Strength: 0.000
+2025-08-23 16:30:52,046 - strategies.ml_strategy - INFO - 2025-05-27: BUY SIGNAL: UNH, Strength: 0.700, Size: 216, ML Enhanced: False
+2025-08-23 16:30:52,046 - strategies.ml_strategy - INFO - 2025-05-28: SELL EXECUTED: CRM, Price: 277.27, Size: -1, Value: 240.14
+2025-08-23 16:30:52,046 - strategies.ml_strategy - INFO - 2025-05-28: BUY EXECUTED: UNH, Price: 291.93, Size: 216, Cost: 63056.37
+2025-08-23 16:30:53,514 - strategies.ml_strategy - INFO - 2025-05-28: Trained ML models for 20 symbols
+2025-08-23 16:30:53,683 - strategies.ml_strategy - INFO - 2025-05-28: EXIT SIGNAL: GOOGL, Strength: 0.935
+2025-08-23 16:30:53,683 - strategies.ml_strategy - INFO - 2025-05-28: Portfolio Value: $833,524, Return: -16.6%, Positions: 7
+2025-08-23 16:30:53,684 - strategies.ml_strategy - INFO - 2025-05-29: SELL EXECUTED: GOOGL, Price: 173.79, Size: -754, Value: 116077.79
+2025-08-23 16:30:53,843 - strategies.ml_strategy - INFO - 2025-05-29: EXIT SIGNAL: CRM, Strength: 0.800
+2025-08-23 16:30:53,843 - strategies.ml_strategy - INFO - 2025-05-29: BUY SIGNAL: NVDA, Strength: 0.900, Size: 901, ML Enhanced: False
+2025-08-23 16:30:53,844 - strategies.ml_strategy - INFO - 2025-05-30: SELL EXECUTED: CRM, Price: 267.66, Size: -1, Value: 240.14
+2025-08-23 16:30:53,844 - strategies.ml_strategy - INFO - 2025-05-30: BUY EXECUTED: NVDA, Price: 138.71, Size: 901, Cost: 124978.04
+2025-08-23 16:30:54,004 - strategies.ml_strategy - INFO - 2025-05-30: BUY SIGNAL: ORCL, Strength: 0.900, Size: 759, ML Enhanced: False
+2025-08-23 16:30:54,004 - strategies.ml_strategy - INFO - 2025-05-30: BUY SIGNAL: XOM, Strength: 0.900, Size: 1094, ML Enhanced: False
+2025-08-23 16:30:54,005 - strategies.ml_strategy - INFO - 2025-06-02: BUY EXECUTED: ORCL, Price: 163.82, Size: 759, Cost: 124340.82
+2025-08-23 16:30:54,005 - strategies.ml_strategy - INFO - 2025-06-02: BUY EXECUTED: XOM, Price: 102.79, Size: 1094, Cost: 112456.05
+2025-08-23 16:30:54,165 - strategies.ml_strategy - INFO - 2025-06-02: BUY SIGNAL: AAPL, Strength: 0.700, Size: 625, ML Enhanced: False
+2025-08-23 16:30:54,165 - strategies.ml_strategy - INFO - 2025-06-02: BUY SIGNAL: META, Strength: 0.900, Size: 187, ML Enhanced: False
+2025-08-23 16:30:54,165 - strategies.ml_strategy - INFO - 2025-06-02: BUY SIGNAL: CRM, Strength: 0.700, Size: 482, ML Enhanced: False
+2025-08-23 16:30:54,166 - strategies.ml_strategy - INFO - 2025-06-03: Order Failed: AAPL, Status: Margin
+2025-08-23 16:30:54,166 - strategies.ml_strategy - INFO - 2025-06-03: Order Failed: META, Status: Margin
+2025-08-23 16:30:54,166 - strategies.ml_strategy - INFO - 2025-06-03: Order Failed: CRM, Status: Margin
+2025-08-23 16:30:54,327 - strategies.ml_strategy - INFO - 2025-06-03: BUY SIGNAL: AAPL, Strength: 0.700, Size: 622, ML Enhanced: False
+2025-08-23 16:30:54,327 - strategies.ml_strategy - INFO - 2025-06-03: BUY SIGNAL: CRM, Strength: 0.700, Size: 478, ML Enhanced: False
+2025-08-23 16:30:54,327 - strategies.ml_strategy - INFO - 2025-06-04: Order Failed: AAPL, Status: Margin
+2025-08-23 16:30:54,327 - strategies.ml_strategy - INFO - 2025-06-04: Order Failed: CRM, Status: Margin
+2025-08-23 16:30:55,811 - strategies.ml_strategy - INFO - 2025-06-04: Trained ML models for 20 symbols
+2025-08-23 16:30:55,983 - strategies.ml_strategy - INFO - 2025-06-04: EXIT SIGNAL: JNJ, Strength: 0.758
+2025-08-23 16:30:55,983 - strategies.ml_strategy - INFO - 2025-06-04: BUY SIGNAL: AAPL, Strength: 0.821, Size: 622, ML Enhanced: True
+2025-08-23 16:30:55,983 - strategies.ml_strategy - INFO - 2025-06-04: BUY SIGNAL: XOM, Strength: 0.888, Size: 6, ML Enhanced: True
+2025-08-23 16:30:55,983 - strategies.ml_strategy - INFO - 2025-06-04: BUY SIGNAL: CRM, Strength: 1.000, Size: 479, ML Enhanced: True
+2025-08-23 16:30:55,984 - strategies.ml_strategy - INFO - 2025-06-04: Portfolio Value: $840,509, Return: -15.9%, Positions: 7
+2025-08-23 16:30:55,984 - strategies.ml_strategy - INFO - 2025-06-05: Order Failed: AAPL, Status: Margin
+2025-08-23 16:30:55,984 - strategies.ml_strategy - INFO - 2025-06-05: Order Failed: XOM, Status: Margin
+2025-08-23 16:30:55,984 - strategies.ml_strategy - INFO - 2025-06-05: Order Failed: CRM, Status: Margin
+2025-08-23 16:30:55,984 - strategies.ml_strategy - INFO - 2025-06-05: SELL EXECUTED: JNJ, Price: 153.68, Size: -200, Value: 30437.13
+2025-08-23 16:30:56,145 - strategies.ml_strategy - INFO - 2025-06-05: BUY SIGNAL: AAPL, Strength: 0.700, Size: 626, ML Enhanced: False
+2025-08-23 16:30:56,145 - strategies.ml_strategy - INFO - 2025-06-05: BUY SIGNAL: XOM, Strength: 0.700, Size: 6, ML Enhanced: False
+2025-08-23 16:30:56,145 - strategies.ml_strategy - INFO - 2025-06-05: BUY SIGNAL: CRM, Strength: 0.700, Size: 470, ML Enhanced: False
+2025-08-23 16:30:56,146 - strategies.ml_strategy - INFO - 2025-06-06: Order Failed: AAPL, Status: Margin
+2025-08-23 16:30:56,146 - strategies.ml_strategy - INFO - 2025-06-06: Order Failed: XOM, Status: Margin
+2025-08-23 16:30:56,146 - strategies.ml_strategy - INFO - 2025-06-06: Order Failed: CRM, Status: Margin
+2025-08-23 16:30:56,464 - strategies.ml_strategy - INFO - 2025-06-09: BUY SIGNAL: HD, Strength: 0.700, Size: 351, ML Enhanced: False
+2025-08-23 16:30:56,465 - strategies.ml_strategy - INFO - 2025-06-10: Order Failed: HD, Status: Margin
+2025-08-23 16:30:56,627 - strategies.ml_strategy - INFO - 2025-06-10: BUY SIGNAL: GOOGL, Strength: 0.900, Size: 723, ML Enhanced: False
+2025-08-23 16:30:56,627 - strategies.ml_strategy - INFO - 2025-06-10: BUY SIGNAL: UNH, Strength: 0.900, Size: 1, ML Enhanced: False
+2025-08-23 16:30:56,627 - strategies.ml_strategy - INFO - 2025-06-10: BUY SIGNAL: CRM, Strength: 0.700, Size: 482, ML Enhanced: False
+2025-08-23 16:30:56,628 - strategies.ml_strategy - INFO - 2025-06-11: Order Failed: GOOGL, Status: Margin
+2025-08-23 16:30:56,628 - strategies.ml_strategy - INFO - 2025-06-11: Order Failed: UNH, Status: Margin
+2025-08-23 16:30:56,628 - strategies.ml_strategy - INFO - 2025-06-11: Order Failed: CRM, Status: Margin
+2025-08-23 16:30:58,123 - strategies.ml_strategy - INFO - 2025-06-11: Trained ML models for 20 symbols
+2025-08-23 16:30:58,294 - strategies.ml_strategy - INFO - 2025-06-11: EXIT SIGNAL: ORCL, Strength: 0.948
+2025-08-23 16:30:58,294 - strategies.ml_strategy - INFO - 2025-06-11: Portfolio Value: $861,590, Return: -13.8%, Positions: 7
+2025-08-23 16:30:58,295 - strategies.ml_strategy - INFO - 2025-06-12: SELL EXECUTED: ORCL, Price: 189.56, Size: -759, Value: 124340.82
+2025-08-23 16:30:58,459 - strategies.ml_strategy - INFO - 2025-06-12: BUY SIGNAL: ORCL, Strength: 0.900, Size: 660, ML Enhanced: False
+2025-08-23 16:30:58,460 - strategies.ml_strategy - INFO - 2025-06-12: BUY SIGNAL: CRM, Strength: 0.700, Size: 494, ML Enhanced: False
+2025-08-23 16:30:58,460 - strategies.ml_strategy - INFO - 2025-06-13: Order Failed: CRM, Status: Margin
+2025-08-23 16:30:58,460 - strategies.ml_strategy - INFO - 2025-06-13: BUY EXECUTED: ORCL, Price: 201.15, Size: 660, Cost: 132760.70
+2025-08-23 16:30:58,781 - strategies.ml_strategy - INFO - 2025-06-16: BUY SIGNAL: PG, Strength: 0.700, Size: 27, ML Enhanced: False
+2025-08-23 16:30:58,781 - strategies.ml_strategy - INFO - 2025-06-16: BUY SIGNAL: HD, Strength: 0.700, Size: 375, ML Enhanced: False
+2025-08-23 16:30:58,782 - strategies.ml_strategy - INFO - 2025-06-17: Order Failed: HD, Status: Margin
+2025-08-23 16:30:58,782 - strategies.ml_strategy - INFO - 2025-06-17: BUY EXECUTED: PG, Price: 158.97, Size: 27, Cost: 4292.27
+2025-08-23 16:30:58,945 - strategies.ml_strategy - INFO - 2025-06-17: BUY SIGNAL: PG, Strength: 0.700, Size: 10, ML Enhanced: False
+2025-08-23 16:30:58,945 - strategies.ml_strategy - INFO - 2025-06-17: BUY SIGNAL: HD, Strength: 0.900, Size: 378, ML Enhanced: False
+2025-08-23 16:30:58,946 - strategies.ml_strategy - INFO - 2025-06-18: Order Failed: HD, Status: Margin
+2025-08-23 16:30:58,946 - strategies.ml_strategy - INFO - 2025-06-18: BUY EXECUTED: PG, Price: 157.47, Size: 10, Cost: 1574.73
+2025-08-23 16:31:00,476 - strategies.ml_strategy - INFO - 2025-06-18: Trained ML models for 20 symbols
+2025-08-23 16:31:00,659 - strategies.ml_strategy - INFO - 2025-06-18: EXIT SIGNAL: ORCL, Strength: 0.985
+2025-08-23 16:31:00,659 - strategies.ml_strategy - INFO - 2025-06-18: EXIT SIGNAL: XOM, Strength: 1.000
+2025-08-23 16:31:00,660 - strategies.ml_strategy - INFO - 2025-06-18: BUY SIGNAL: PG, Strength: 1.000, Size: 1, ML Enhanced: True
+2025-08-23 16:31:00,660 - strategies.ml_strategy - INFO - 2025-06-18: BUY SIGNAL: HD, Strength: 0.836, Size: 380, ML Enhanced: True
+2025-08-23 16:31:00,660 - strategies.ml_strategy - INFO - 2025-06-18: Portfolio Value: $879,856, Return: -12.0%, Positions: 7
+2025-08-23 16:31:00,660 - strategies.ml_strategy - INFO - 2025-06-20: SELL EXECUTED: ORCL, Price: 212.90, Size: -660, Value: 132760.70
+2025-08-23 16:31:00,660 - strategies.ml_strategy - INFO - 2025-06-20: SELL EXECUTED: XOM, Price: 112.40, Size: -1237, Value: 127356.90
+2025-08-23 16:31:00,660 - strategies.ml_strategy - INFO - 2025-06-20: BUY EXECUTED: PG, Price: 156.96, Size: 1, Cost: 156.96
+2025-08-23 16:31:00,660 - strategies.ml_strategy - INFO - 2025-06-20: BUY EXECUTED: HD, Price: 347.49, Size: 380, Cost: 132046.20
+2025-08-23 16:31:00,824 - strategies.ml_strategy - INFO - 2025-06-20: BUY SIGNAL: V, Strength: 0.900, Size: 389, ML Enhanced: False
+2025-08-23 16:31:00,824 - strategies.ml_strategy - INFO - 2025-06-20: BUY SIGNAL: JNJ, Strength: 0.900, Size: 678, ML Enhanced: False
+2025-08-23 16:31:00,824 - strategies.ml_strategy - INFO - 2025-06-20: BUY SIGNAL: KO, Strength: 0.900, Size: 1912, ML Enhanced: False
+2025-08-23 16:31:00,825 - strategies.ml_strategy - INFO - 2025-06-23: Order Failed: JNJ, Status: Margin
+2025-08-23 16:31:00,825 - strategies.ml_strategy - INFO - 2025-06-23: Order Failed: KO, Status: Margin
+2025-08-23 16:31:00,825 - strategies.ml_strategy - INFO - 2025-06-23: BUY EXECUTED: V, Price: 336.91, Size: 389, Cost: 131056.90
+2025-08-23 16:31:00,990 - strategies.ml_strategy - INFO - 2025-06-23: BUY SIGNAL: MA, Strength: 0.900, Size: 244, ML Enhanced: False
+2025-08-23 16:31:00,991 - strategies.ml_strategy - INFO - 2025-06-24: Order Failed: MA, Status: Margin
+2025-08-23 16:31:01,152 - strategies.ml_strategy - INFO - 2025-06-24: BUY SIGNAL: PG, Strength: 0.700, Size: 3, ML Enhanced: False
+2025-08-23 16:31:01,153 - strategies.ml_strategy - INFO - 2025-06-25: BUY EXECUTED: PG, Price: 158.73, Size: 3, Cost: 476.20
+2025-08-23 16:31:01,314 - strategies.ml_strategy - INFO - 2025-06-25: BUY SIGNAL: PG, Strength: 0.700, Size: 8, ML Enhanced: False
+2025-08-23 16:31:01,315 - strategies.ml_strategy - INFO - 2025-06-26: BUY EXECUTED: PG, Price: 158.47, Size: 8, Cost: 1267.73
+2025-08-23 16:31:02,856 - strategies.ml_strategy - INFO - 2025-06-26: Trained ML models for 20 symbols
+2025-08-23 16:31:03,032 - strategies.ml_strategy - INFO - 2025-06-26: BUY SIGNAL: MA, Strength: 0.927, Size: 247, ML Enhanced: True
+2025-08-23 16:31:03,032 - strategies.ml_strategy - INFO - 2025-06-26: Portfolio Value: $901,136, Return: -9.9%, Positions: 7
+2025-08-23 16:31:03,033 - strategies.ml_strategy - INFO - 2025-06-27: Order Failed: MA, Status: Margin
+2025-08-23 16:31:03,196 - strategies.ml_strategy - INFO - 2025-06-27: BUY SIGNAL: AMZN, Strength: 0.900, Size: 3, ML Enhanced: False
+2025-08-23 16:31:03,196 - strategies.ml_strategy - INFO - 2025-06-27: BUY SIGNAL: META, Strength: 0.900, Size: 186, ML Enhanced: False
+2025-08-23 16:31:03,196 - strategies.ml_strategy - INFO - 2025-06-27: BUY SIGNAL: MA, Strength: 0.700, Size: 249, ML Enhanced: False
+2025-08-23 16:31:03,197 - strategies.ml_strategy - INFO - 2025-06-30: Order Failed: META, Status: Margin
+2025-08-23 16:31:03,197 - strategies.ml_strategy - INFO - 2025-06-30: Order Failed: MA, Status: Margin
+2025-08-23 16:31:03,197 - strategies.ml_strategy - INFO - 2025-06-30: BUY EXECUTED: AMZN, Price: 223.52, Size: 3, Cost: 670.56
+2025-08-23 16:31:03,361 - strategies.ml_strategy - INFO - 2025-06-30: BUY SIGNAL: ORCL, Strength: 0.900, Size: 628, ML Enhanced: False
+2025-08-23 16:31:03,361 - strategies.ml_strategy - INFO - 2025-06-30: BUY SIGNAL: DIS, Strength: 0.900, Size: 1106, ML Enhanced: False
+2025-08-23 16:31:03,361 - strategies.ml_strategy - INFO - 2025-07-01: Order Failed: ORCL, Status: Margin
+2025-08-23 16:31:03,361 - strategies.ml_strategy - INFO - 2025-07-01: Order Failed: DIS, Status: Margin
+2025-08-23 16:31:03,527 - strategies.ml_strategy - INFO - 2025-07-01: BUY SIGNAL: AAPL, Strength: 0.900, Size: 666, ML Enhanced: False
+2025-08-23 16:31:03,527 - strategies.ml_strategy - INFO - 2025-07-02: Order Failed: AAPL, Status: Margin
+2025-08-23 16:31:05,244 - strategies.ml_strategy - INFO - 2025-07-03: Trained ML models for 20 symbols
+2025-08-23 16:31:05,412 - strategies.ml_strategy - INFO - 2025-07-03: Portfolio Value: $922,153, Return: -7.8%, Positions: 7
+2025-08-23 16:31:05,737 - strategies.ml_strategy - INFO - 2025-07-08: EXIT SIGNAL: NVDA, Strength: 0.000
+2025-08-23 16:31:05,738 - strategies.ml_strategy - INFO - 2025-07-09: SELL EXECUTED: NVDA, Price: 161.22, Size: -270, Value: 37451.80
+2025-08-23 16:31:05,900 - strategies.ml_strategy - INFO - 2025-07-09: EXIT SIGNAL: NVDA, Strength: 0.000
+2025-08-23 16:31:05,900 - strategies.ml_strategy - INFO - 2025-07-10: SELL EXECUTED: NVDA, Price: 164.32, Size: -189, Value: 26216.26
+2025-08-23 16:31:06,063 - strategies.ml_strategy - INFO - 2025-07-10: EXIT SIGNAL: NVDA, Strength: 0.700
+2025-08-23 16:31:06,063 - strategies.ml_strategy - INFO - 2025-07-11: SELL EXECUTED: NVDA, Price: 163.72, Size: -221, Value: 30654.99
+2025-08-23 16:31:07,636 - strategies.ml_strategy - INFO - 2025-07-11: Trained ML models for 20 symbols
+2025-08-23 16:31:07,810 - strategies.ml_strategy - INFO - 2025-07-11: EXIT SIGNAL: NVDA, Strength: 1.000
+2025-08-23 16:31:07,810 - strategies.ml_strategy - INFO - 2025-07-11: EXIT SIGNAL: JNJ, Strength: 0.922
+2025-08-23 16:31:07,810 - strategies.ml_strategy - INFO - 2025-07-11: Portfolio Value: $916,963, Return: -8.3%, Positions: 7
+2025-08-23 16:31:07,811 - strategies.ml_strategy - INFO - 2025-07-14: SELL EXECUTED: NVDA, Price: 165.37, Size: -221, Value: 30654.99
+2025-08-23 16:31:07,811 - strategies.ml_strategy - INFO - 2025-07-14: SELL EXECUTED: JNJ, Price: 156.87, Size: -200, Value: 30437.13
+2025-08-23 16:31:07,975 - strategies.ml_strategy - INFO - 2025-07-14: BUY SIGNAL: PG, Strength: 0.700, Size: 46, ML Enhanced: False
+2025-08-23 16:31:07,976 - strategies.ml_strategy - INFO - 2025-07-15: BUY EXECUTED: PG, Price: 152.52, Size: 46, Cost: 7015.78
+2025-08-23 16:31:08,141 - strategies.ml_strategy - INFO - 2025-07-15: EXIT SIGNAL: HD, Strength: 0.800
+2025-08-23 16:31:08,141 - strategies.ml_strategy - INFO - 2025-07-15: BUY SIGNAL: NVDA, Strength: 0.900, Size: 794, ML Enhanced: False
+2025-08-23 16:31:08,141 - strategies.ml_strategy - INFO - 2025-07-15: BUY SIGNAL: CRM, Strength: 0.700, Size: 526, ML Enhanced: False
+2025-08-23 16:31:08,142 - strategies.ml_strategy - INFO - 2025-07-16: SELL EXECUTED: HD, Price: 359.86, Size: -190, Value: 66023.10
+2025-08-23 16:31:08,142 - strategies.ml_strategy - INFO - 2025-07-16: BUY EXECUTED: NVDA, Price: 171.06, Size: 794, Cost: 135821.64
+2025-08-23 16:31:08,142 - strategies.ml_strategy - INFO - 2025-07-16: BUY EXECUTED: CRM, Price: 258.93, Size: 526, Cost: 136197.18
+2025-08-23 16:31:08,306 - strategies.ml_strategy - INFO - 2025-07-16: EXIT SIGNAL: HD, Strength: 0.800
+2025-08-23 16:31:08,306 - strategies.ml_strategy - INFO - 2025-07-16: BUY SIGNAL: JNJ, Strength: 0.900, Size: 823, ML Enhanced: False
+2025-08-23 16:31:08,306 - strategies.ml_strategy - INFO - 2025-07-17: Order Failed: JNJ, Status: Margin
+2025-08-23 16:31:08,307 - strategies.ml_strategy - INFO - 2025-07-17: SELL EXECUTED: HD, Price: 356.54, Size: -95, Value: 33011.55
+2025-08-23 16:31:08,472 - strategies.ml_strategy - INFO - 2025-07-17: EXIT SIGNAL: UNH, Strength: 0.800
+2025-08-23 16:31:08,472 - strategies.ml_strategy - INFO - 2025-07-17: BUY SIGNAL: JNJ, Strength: 0.900, Size: 834, ML Enhanced: False
+2025-08-23 16:31:08,473 - strategies.ml_strategy - INFO - 2025-07-18: Order Failed: JNJ, Status: Margin
+2025-08-23 16:31:08,473 - strategies.ml_strategy - INFO - 2025-07-18: SELL EXECUTED: UNH, Price: 287.89, Size: -213, Value: 62858.86
+2025-08-23 16:31:10,068 - strategies.ml_strategy - INFO - 2025-07-18: Trained ML models for 20 symbols
+2025-08-23 16:31:10,244 - strategies.ml_strategy - INFO - 2025-07-18: EXIT SIGNAL: NVDA, Strength: 0.931
+2025-08-23 16:31:10,244 - strategies.ml_strategy - INFO - 2025-07-18: BUY SIGNAL: META, Strength: 0.919, Size: 193, ML Enhanced: True
+2025-08-23 16:31:10,244 - strategies.ml_strategy - INFO - 2025-07-18: BUY SIGNAL: UNH, Strength: 0.912, Size: 267, ML Enhanced: True
+2025-08-23 16:31:10,244 - strategies.ml_strategy - INFO - 2025-07-18: Portfolio Value: $907,890, Return: -9.2%, Positions: 7
+2025-08-23 16:31:10,245 - strategies.ml_strategy - INFO - 2025-07-21: SELL EXECUTED: NVDA, Price: 172.75, Size: -794, Value: 135821.64
+2025-08-23 16:31:10,245 - strategies.ml_strategy - INFO - 2025-07-21: BUY EXECUTED: META, Price: 706.80, Size: 193, Cost: 136412.40
+2025-08-23 16:31:10,245 - strategies.ml_strategy - INFO - 2025-07-21: BUY EXECUTED: UNH, Price: 284.64, Size: 267, Cost: 75998.88
+2025-08-23 16:31:10,410 - strategies.ml_strategy - INFO - 2025-07-21: BUY SIGNAL: UNH, Strength: 0.700, Size: 3, ML Enhanced: False
+2025-08-23 16:31:10,411 - strategies.ml_strategy - INFO - 2025-07-22: BUY EXECUTED: UNH, Price: 282.63, Size: 3, Cost: 847.89
+2025-08-23 16:31:10,738 - strategies.ml_strategy - INFO - 2025-07-23: BUY SIGNAL: JNJ, Strength: 0.900, Size: 819, ML Enhanced: False
+2025-08-23 16:31:10,739 - strategies.ml_strategy - INFO - 2025-07-24: Order Failed: JNJ, Status: Margin
+2025-08-23 16:31:10,900 - strategies.ml_strategy - INFO - 2025-07-24: BUY SIGNAL: UNH, Strength: 0.900, Size: 11, ML Enhanced: False
+2025-08-23 16:31:10,900 - strategies.ml_strategy - INFO - 2025-07-24: BUY SIGNAL: KO, Strength: 0.700, Size: 1997, ML Enhanced: False
+2025-08-23 16:31:10,901 - strategies.ml_strategy - INFO - 2025-07-25: Order Failed: KO, Status: Margin
+2025-08-23 16:31:10,901 - strategies.ml_strategy - INFO - 2025-07-25: BUY EXECUTED: UNH, Price: 281.00, Size: 11, Cost: 3091.00
+2025-08-23 16:31:12,660 - strategies.ml_strategy - INFO - 2025-07-25: Trained ML models for 20 symbols
+2025-08-23 16:31:12,853 - strategies.ml_strategy - INFO - 2025-07-25: BUY SIGNAL: KO, Strength: 0.922, Size: 1999, ML Enhanced: True
+2025-08-23 16:31:12,853 - strategies.ml_strategy - INFO - 2025-07-25: Portfolio Value: $922,105, Return: -7.8%, Positions: 7
+2025-08-23 16:31:12,853 - strategies.ml_strategy - INFO - 2025-07-28: Order Failed: KO, Status: Margin
+2025-08-23 16:31:13,032 - strategies.ml_strategy - INFO - 2025-07-28: BUY SIGNAL: KO, Strength: 0.700, Size: 2034, ML Enhanced: False
+2025-08-23 16:31:13,033 - strategies.ml_strategy - INFO - 2025-07-29: Order Failed: KO, Status: Margin
+2025-08-23 16:31:13,209 - strategies.ml_strategy - INFO - 2025-07-29: EXIT SIGNAL: UNH, Strength: 0.800
+2025-08-23 16:31:13,210 - strategies.ml_strategy - INFO - 2025-07-30: SELL EXECUTED: UNH, Price: 264.80, Size: -247, Value: 71401.34
+2025-08-23 16:31:13,388 - strategies.ml_strategy - INFO - 2025-07-30: BUY SIGNAL: META, Strength: 0.900, Size: 1, ML Enhanced: False
+2025-08-23 16:31:13,388 - strategies.ml_strategy - INFO - 2025-07-30: BUY SIGNAL: UNH, Strength: 0.900, Size: 259, ML Enhanced: False
+2025-08-23 16:31:13,389 - strategies.ml_strategy - INFO - 2025-07-31: BUY EXECUTED: META, Price: 775.20, Size: 1, Cost: 775.20
+2025-08-23 16:31:13,389 - strategies.ml_strategy - INFO - 2025-07-31: BUY EXECUTED: UNH, Price: 261.40, Size: 259, Cost: 67702.60
+2025-08-23 16:31:13,570 - strategies.ml_strategy - INFO - 2025-07-31: EXIT SIGNAL: UNH, Strength: 0.800
+2025-08-23 16:31:13,570 - strategies.ml_strategy - INFO - 2025-07-31: EXIT SIGNAL: PG, Strength: 0.800
+2025-08-23 16:31:13,570 - strategies.ml_strategy - INFO - 2025-07-31: BUY SIGNAL: MSFT, Strength: 0.900, Size: 254, ML Enhanced: False
+2025-08-23 16:31:13,571 - strategies.ml_strategy - INFO - 2025-08-01: SELL EXECUTED: UNH, Price: 250.61, Size: -253, Value: 69559.04
+2025-08-23 16:31:13,571 - strategies.ml_strategy - INFO - 2025-08-01: SELL EXECUTED: PG, Price: 151.78, Size: -448, Value: 70256.62
+2025-08-23 16:31:13,571 - strategies.ml_strategy - INFO - 2025-08-01: BUY EXECUTED: MSFT, Price: 534.12, Size: 254, Cost: 135666.98
+2025-08-23 16:31:15,269 - strategies.ml_strategy - INFO - 2025-08-01: Trained ML models for 20 symbols
+2025-08-23 16:31:15,464 - strategies.ml_strategy - INFO - 2025-08-01: EXIT SIGNAL: AMZN, Strength: 0.795
+2025-08-23 16:31:15,464 - strategies.ml_strategy - INFO - 2025-08-01: EXIT SIGNAL: UNH, Strength: 1.000
+2025-08-23 16:31:15,464 - strategies.ml_strategy - INFO - 2025-08-01: EXIT SIGNAL: CRM, Strength: 0.934
+2025-08-23 16:31:15,464 - strategies.ml_strategy - INFO - 2025-08-01: Portfolio Value: $875,404, Return: -12.5%, Positions: 8
+2025-08-23 16:31:15,465 - strategies.ml_strategy - INFO - 2025-08-04: SELL EXECUTED: AMZN, Price: 217.40, Size: -307, Value: 64820.22
+2025-08-23 16:31:15,465 - strategies.ml_strategy - INFO - 2025-08-04: SELL EXECUTED: UNH, Price: 238.24, Size: -254, Value: 69833.97
+2025-08-23 16:31:15,465 - strategies.ml_strategy - INFO - 2025-08-04: SELL EXECUTED: CRM, Price: 251.00, Size: -526, Value: 136197.18
+2025-08-23 16:31:15,638 - strategies.ml_strategy - INFO - 2025-08-04: EXIT SIGNAL: AMZN, Strength: 0.800
+2025-08-23 16:31:15,638 - strategies.ml_strategy - INFO - 2025-08-04: BUY SIGNAL: AAPL, Strength: 0.900, Size: 653, ML Enhanced: False
+2025-08-23 16:31:15,638 - strategies.ml_strategy - INFO - 2025-08-04: BUY SIGNAL: XOM, Strength: 0.900, Size: 1248, ML Enhanced: False
+2025-08-23 16:31:15,639 - strategies.ml_strategy - INFO - 2025-08-05: SELL EXECUTED: AMZN, Price: 213.05, Size: -153, Value: 32304.54
+2025-08-23 16:31:15,639 - strategies.ml_strategy - INFO - 2025-08-05: BUY EXECUTED: AAPL, Price: 203.17, Size: 653, Cost: 132669.62
+2025-08-23 16:31:15,639 - strategies.ml_strategy - INFO - 2025-08-05: BUY EXECUTED: XOM, Price: 106.23, Size: 1248, Cost: 132576.88
+2025-08-23 16:31:15,815 - strategies.ml_strategy - INFO - 2025-08-05: EXIT SIGNAL: AMZN, Strength: 0.800
+2025-08-23 16:31:15,815 - strategies.ml_strategy - INFO - 2025-08-05: BUY SIGNAL: V, Strength: 0.700, Size: 2, ML Enhanced: False
+2025-08-23 16:31:15,815 - strategies.ml_strategy - INFO - 2025-08-05: BUY SIGNAL: UNH, Strength: 0.900, Size: 525, ML Enhanced: False
+2025-08-23 16:31:15,815 - strategies.ml_strategy - INFO - 2025-08-06: Order Failed: UNH, Status: Margin
+2025-08-23 16:31:15,815 - strategies.ml_strategy - INFO - 2025-08-06: SELL EXECUTED: AMZN, Price: 214.70, Size: -77, Value: 16257.84
+2025-08-23 16:31:15,816 - strategies.ml_strategy - INFO - 2025-08-06: BUY EXECUTED: V, Price: 337.71, Size: 2, Cost: 675.41
+2025-08-23 16:31:15,989 - strategies.ml_strategy - INFO - 2025-08-06: BUY SIGNAL: BAC, Strength: 0.700, Size: 2935, ML Enhanced: False
+2025-08-23 16:31:15,989 - strategies.ml_strategy - INFO - 2025-08-06: BUY SIGNAL: UNH, Strength: 0.700, Size: 542, ML Enhanced: False
+2025-08-23 16:31:15,989 - strategies.ml_strategy - INFO - 2025-08-06: BUY SIGNAL: XOM, Strength: 0.700, Size: 15, ML Enhanced: False
+2025-08-23 16:31:15,989 - strategies.ml_strategy - INFO - 2025-08-06: BUY SIGNAL: DIS, Strength: 0.900, Size: 1157, ML Enhanced: False
+2025-08-23 16:31:15,990 - strategies.ml_strategy - INFO - 2025-08-07: Order Failed: BAC, Status: Margin
+2025-08-23 16:31:15,990 - strategies.ml_strategy - INFO - 2025-08-07: Order Failed: UNH, Status: Margin
+2025-08-23 16:31:15,990 - strategies.ml_strategy - INFO - 2025-08-07: Order Failed: XOM, Status: Margin
+2025-08-23 16:31:15,990 - strategies.ml_strategy - INFO - 2025-08-07: Order Failed: DIS, Status: Margin
+2025-08-23 16:31:16,161 - strategies.ml_strategy - INFO - 2025-08-07: BUY SIGNAL: BAC, Strength: 0.700, Size: 2961, ML Enhanced: False
+2025-08-23 16:31:16,162 - strategies.ml_strategy - INFO - 2025-08-07: BUY SIGNAL: V, Strength: 0.900, Size: 10, ML Enhanced: False
+2025-08-23 16:31:16,162 - strategies.ml_strategy - INFO - 2025-08-07: BUY SIGNAL: UNH, Strength: 0.700, Size: 543, ML Enhanced: False
+2025-08-23 16:31:16,162 - strategies.ml_strategy - INFO - 2025-08-07: BUY SIGNAL: CRM, Strength: 0.900, Size: 552, ML Enhanced: False
+2025-08-23 16:31:16,162 - strategies.ml_strategy - INFO - 2025-08-08: Order Failed: BAC, Status: Margin
+2025-08-23 16:31:16,162 - strategies.ml_strategy - INFO - 2025-08-08: Order Failed: V, Status: Margin
+2025-08-23 16:31:16,162 - strategies.ml_strategy - INFO - 2025-08-08: Order Failed: UNH, Status: Margin
+2025-08-23 16:31:16,162 - strategies.ml_strategy - INFO - 2025-08-08: Order Failed: CRM, Status: Margin
+2025-08-23 16:31:17,929 - strategies.ml_strategy - INFO - 2025-08-08: Trained ML models for 20 symbols
+2025-08-23 16:31:18,107 - strategies.ml_strategy - INFO - 2025-08-08: BUY SIGNAL: DIS, Strength: 0.998, Size: 1197, ML Enhanced: True
+2025-08-23 16:31:18,107 - strategies.ml_strategy - INFO - 2025-08-08: BUY SIGNAL: CRM, Strength: 1.000, Size: 559, ML Enhanced: True
+2025-08-23 16:31:18,107 - strategies.ml_strategy - INFO - 2025-08-08: Portfolio Value: $897,789, Return: -10.2%, Positions: 8
+2025-08-23 16:31:18,108 - strategies.ml_strategy - INFO - 2025-08-11: Order Failed: DIS, Status: Margin
+2025-08-23 16:31:18,108 - strategies.ml_strategy - INFO - 2025-08-11: Order Failed: CRM, Status: Margin
+2025-08-23 16:31:18,281 - strategies.ml_strategy - INFO - 2025-08-11: BUY SIGNAL: V, Strength: 0.700, Size: 9, ML Enhanced: False
+2025-08-23 16:31:18,282 - strategies.ml_strategy - INFO - 2025-08-11: BUY SIGNAL: UNH, Strength: 0.700, Size: 531, ML Enhanced: False
+2025-08-23 16:31:18,282 - strategies.ml_strategy - INFO - 2025-08-11: BUY SIGNAL: DIS, Strength: 0.700, Size: 1192, ML Enhanced: False
+2025-08-23 16:31:18,282 - strategies.ml_strategy - INFO - 2025-08-12: Order Failed: UNH, Status: Margin
+2025-08-23 16:31:18,282 - strategies.ml_strategy - INFO - 2025-08-12: Order Failed: DIS, Status: Margin
+2025-08-23 16:31:18,282 - strategies.ml_strategy - INFO - 2025-08-12: BUY EXECUTED: V, Price: 335.20, Size: 9, Cost: 3016.80
+2025-08-23 16:31:18,454 - strategies.ml_strategy - INFO - 2025-08-12: BUY SIGNAL: V, Strength: 0.700, Size: 3, ML Enhanced: False
+2025-08-23 16:31:18,454 - strategies.ml_strategy - INFO - 2025-08-12: BUY SIGNAL: DIS, Strength: 0.700, Size: 1193, ML Enhanced: False
+2025-08-23 16:31:18,455 - strategies.ml_strategy - INFO - 2025-08-13: Order Failed: DIS, Status: Margin
+2025-08-23 16:31:18,455 - strategies.ml_strategy - INFO - 2025-08-13: BUY EXECUTED: V, Price: 336.98, Size: 3, Cost: 1010.94
+2025-08-23 16:31:18,627 - strategies.ml_strategy - INFO - 2025-08-13: EXIT SIGNAL: HD, Strength: 0.900
+2025-08-23 16:31:18,628 - strategies.ml_strategy - INFO - 2025-08-13: BUY SIGNAL: HD, Strength: 0.900, Size: 239, ML Enhanced: False
+2025-08-23 16:31:18,628 - strategies.ml_strategy - INFO - 2025-08-13: BUY SIGNAL: CRM, Strength: 0.900, Size: 575, ML Enhanced: False
+2025-08-23 16:31:18,628 - strategies.ml_strategy - INFO - 2025-08-14: Order Failed: HD, Status: Margin
+2025-08-23 16:31:18,628 - strategies.ml_strategy - INFO - 2025-08-14: Order Failed: CRM, Status: Margin
+2025-08-23 16:31:18,628 - strategies.ml_strategy - INFO - 2025-08-14: SELL EXECUTED: HD, Price: 401.20, Size: -28, Value: 9729.72
+2025-08-23 16:31:18,800 - strategies.ml_strategy - INFO - 2025-08-14: EXIT SIGNAL: HD, Strength: 0.000
+2025-08-23 16:31:18,801 - strategies.ml_strategy - INFO - 2025-08-14: BUY SIGNAL: UNH, Strength: 0.900, Size: 502, ML Enhanced: False
+2025-08-23 16:31:18,801 - strategies.ml_strategy - INFO - 2025-08-14: BUY SIGNAL: PG, Strength: 0.900, Size: 438, ML Enhanced: False
+2025-08-23 16:31:18,801 - strategies.ml_strategy - INFO - 2025-08-14: BUY SIGNAL: CRM, Strength: 0.700, Size: 584, ML Enhanced: False
+2025-08-23 16:31:18,801 - strategies.ml_strategy - INFO - 2025-08-15: Order Failed: UNH, Status: Margin
+2025-08-23 16:31:18,801 - strategies.ml_strategy - INFO - 2025-08-15: Order Failed: PG, Status: Margin
+2025-08-23 16:31:18,801 - strategies.ml_strategy - INFO - 2025-08-15: Order Failed: CRM, Status: Margin
+2025-08-23 16:31:18,801 - strategies.ml_strategy - INFO - 2025-08-15: SELL EXECUTED: HD, Price: 402.21, Size: -20, Value: 6949.80
+2025-08-23 16:31:20,599 - strategies.ml_strategy - INFO - 2025-08-15: Trained ML models for 20 symbols
+2025-08-23 16:31:20,784 - strategies.ml_strategy - INFO - 2025-08-15: BUY SIGNAL: UNH, Strength: 0.827, Size: 448, ML Enhanced: True
+2025-08-23 16:31:20,784 - strategies.ml_strategy - INFO - 2025-08-15: BUY SIGNAL: XOM, Strength: 0.765, Size: 31, ML Enhanced: True
+2025-08-23 16:31:20,784 - strategies.ml_strategy - INFO - 2025-08-15: BUY SIGNAL: CRM, Strength: 0.727, Size: 562, ML Enhanced: True
+2025-08-23 16:31:20,784 - strategies.ml_strategy - INFO - 2025-08-15: Portfolio Value: $908,439, Return: -9.2%, Positions: 8
+2025-08-23 16:31:20,784 - strategies.ml_strategy - INFO - 2025-08-18: Order Failed: UNH, Status: Margin
+2025-08-23 16:31:20,784 - strategies.ml_strategy - INFO - 2025-08-18: Order Failed: XOM, Status: Margin
+2025-08-23 16:31:20,784 - strategies.ml_strategy - INFO - 2025-08-18: Order Failed: CRM, Status: Margin
+2025-08-23 16:31:20,957 - strategies.ml_strategy - INFO - 2025-08-18: BUY SIGNAL: UNH, Strength: 0.900, Size: 439, ML Enhanced: False
+2025-08-23 16:31:20,957 - strategies.ml_strategy - INFO - 2025-08-18: BUY SIGNAL: XOM, Strength: 0.700, Size: 22, ML Enhanced: False
+2025-08-23 16:31:20,957 - strategies.ml_strategy - INFO - 2025-08-18: BUY SIGNAL: CRM, Strength: 0.700, Size: 555, ML Enhanced: False
+2025-08-23 16:31:20,958 - strategies.ml_strategy - INFO - 2025-08-19: Order Failed: UNH, Status: Margin
+2025-08-23 16:31:20,958 - strategies.ml_strategy - INFO - 2025-08-19: Order Failed: XOM, Status: Margin
+2025-08-23 16:31:20,958 - strategies.ml_strategy - INFO - 2025-08-19: Order Failed: CRM, Status: Margin
+2025-08-23 16:31:21,134 - strategies.ml_strategy - INFO - 2025-08-19: EXIT SIGNAL: HD, Strength: 0.000
+2025-08-23 16:31:21,134 - strategies.ml_strategy - INFO - 2025-08-19: BUY SIGNAL: XOM, Strength: 0.900, Size: 9, ML Enhanced: False
+2025-08-23 16:31:21,134 - strategies.ml_strategy - INFO - 2025-08-19: BUY SIGNAL: CRM, Strength: 0.900, Size: 549, ML Enhanced: False
+2025-08-23 16:31:21,135 - strategies.ml_strategy - INFO - 2025-08-20: Order Failed: CRM, Status: Margin
+2025-08-23 16:31:21,135 - strategies.ml_strategy - INFO - 2025-08-20: SELL EXECUTED: HD, Price: 409.68, Size: -14, Value: 4864.86
+2025-08-23 16:31:21,135 - strategies.ml_strategy - INFO - 2025-08-20: BUY EXECUTED: XOM, Price: 107.88, Size: 9, Cost: 970.92
+2025-08-23 16:31:21,309 - strategies.ml_strategy - INFO - 2025-08-20: EXIT SIGNAL: HD, Strength: 0.000
+2025-08-23 16:31:21,309 - strategies.ml_strategy - INFO - 2025-08-20: BUY SIGNAL: MSFT, Strength: 0.900, Size: 12, ML Enhanced: False
+2025-08-23 16:31:21,309 - strategies.ml_strategy - INFO - 2025-08-21: SELL EXECUTED: HD, Price: 399.91, Size: -9, Value: 3127.41
+2025-08-23 16:31:21,310 - strategies.ml_strategy - INFO - 2025-08-21: BUY EXECUTED: MSFT, Price: 503.69, Size: 12, Cost: 6044.28
+2025-08-23 16:31:21,486 - strategies.ml_strategy - INFO - 2025-08-21: EXIT SIGNAL: AMZN, Strength: 0.800
+2025-08-23 16:31:21,486 - strategies.ml_strategy - INFO - 2025-08-21: EXIT SIGNAL: META, Strength: 0.800
+2025-08-23 16:31:21,487 - strategies.ml_strategy - INFO - 2025-08-21: Strategy Completed!
+2025-08-23 16:31:21,487 - strategies.ml_strategy - INFO - 2025-08-21: Starting Value: $1,000,000
+2025-08-23 16:31:21,487 - strategies.ml_strategy - INFO - 2025-08-21: Final Value: $895,779
+2025-08-23 16:31:21,487 - strategies.ml_strategy - INFO - 2025-08-21: Total Return: -10.42%
+2025-08-23 16:31:21,487 - strategies.ml_strategy - INFO - 2025-08-21: Total Trades: 114

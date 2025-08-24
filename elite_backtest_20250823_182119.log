@@ -1,0 +1,119 @@
+2025-08-23 18:21:19,702 - __main__ - INFO - ============================================================
+2025-08-23 18:21:19,702 - __main__ - INFO - 🚀 ELITE ML TRADING SYSTEM - MAXIMUM ACCURACY & PROFIT
+2025-08-23 18:21:19,702 - __main__ - INFO - ============================================================
+2025-08-23 18:21:19,702 - __main__ - INFO - 🎯 Elite Features:
+2025-08-23 18:21:19,702 - __main__ - INFO -    • XGBoost + LightGBM + Neural Network Ensemble
+2025-08-23 18:21:19,702 - __main__ - INFO -    • 100+ Advanced Technical Features
+2025-08-23 18:21:19,702 - __main__ - INFO -    • Multi-horizon Predictions (1d, 3d, 5d, 10d, 20d)
+2025-08-23 18:21:19,702 - __main__ - INFO -    • Risk-adjusted Kelly Position Sizing
+2025-08-23 18:21:19,702 - __main__ - INFO -    • Regime-aware Trading
+2025-08-23 18:21:19,702 - __main__ - INFO -    • Advanced Risk Management
+2025-08-23 18:21:19,702 - __main__ - INFO -    • Market Context Integration (VIX, SPY)
+2025-08-23 18:21:19,702 - __main__ - INFO - ============================================================
+2025-08-23 18:21:19,707 - __main__ - INFO - 📊 Data Periods:
+2025-08-23 18:21:19,707 - __main__ - INFO -    Training: 2022-08-22 to 2024-08-22
+2025-08-23 18:21:19,707 - __main__ - INFO -    Testing: 2024-08-22 to 2025-08-22
+2025-08-23 18:21:19,707 - __main__ - INFO - 📈 Downloading data for 4 symbols...
+2025-08-23 18:21:19,708 - __main__ - INFO -    Downloading AAPL...
+2025-08-23 18:21:20,053 - __main__ - INFO -    ✅ AAPL: 753 bars
+2025-08-23 18:21:20,053 - __main__ - INFO -    Downloading MSFT...
+2025-08-23 18:21:20,179 - __main__ - INFO -    ✅ MSFT: 753 bars
+2025-08-23 18:21:20,179 - __main__ - INFO -    Downloading GOOGL...
+2025-08-23 18:21:20,284 - __main__ - INFO -    ✅ GOOGL: 753 bars
+2025-08-23 18:21:20,284 - __main__ - INFO -    Downloading AMZN...
+2025-08-23 18:21:20,357 - __main__ - INFO -    ✅ AMZN: 753 bars
+2025-08-23 18:21:20,357 - __main__ - INFO - ✅ Successfully downloaded 4 symbols
+2025-08-23 18:21:20,357 - __main__ - INFO - 🚀 Starting ELITE backtest...
+2025-08-23 18:21:20,357 - __main__ - INFO -    Symbols: 4
+2025-08-23 18:21:20,357 - __main__ - INFO -    Period: 2022-08-22 to 2025-08-22
+2025-08-23 18:21:20,357 - __main__ - INFO -    Capital: $1,000,000
+2025-08-23 18:21:20,357 - __main__ - INFO -    Training Split: 67%
+2025-08-23 18:21:20,358 - __main__ - INFO - ⚙️  Running elite backtest...
+2025-08-23 18:21:20,533 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - 🚀 Enhanced ML Signal Generator initialized
+2025-08-23 18:21:20,824 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Market context data loaded (VIX, SPY)
+2025-08-23 18:21:20,825 - backtrader_system.strategies.elite_ml_strategy - INFO - 🚀 Elite ML Trading Strategy initialized
+2025-08-23 18:21:20,825 - backtrader_system.strategies.elite_ml_strategy - INFO - 📊 Monitoring 4 symbols
+2025-08-23 18:21:20,825 - backtrader_system.strategies.elite_ml_strategy - INFO - 🎯 Signal threshold: 0.15
+2025-08-23 18:21:20,825 - backtrader_system.strategies.elite_ml_strategy - INFO - 💰 Max position size: 15.0%
+2025-08-23 18:21:20,828 - backtrader_system.strategies.elite_ml_strategy - INFO - 🎬 Elite ML Strategy starting...
+2025-08-23 18:21:20,888 - backtrader_system.strategies.elite_ml_strategy - INFO - 🧠 Training ML models for 4 symbols...
+2025-08-23 18:21:21,739 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 105 advanced features for AAPL
+2025-08-23 18:21:21,743 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for AAPL: 0 < 100
+2025-08-23 18:21:22,600 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 105 advanced features for MSFT
+2025-08-23 18:21:22,604 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for MSFT: 0 < 100
+2025-08-23 18:21:23,402 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 105 advanced features for GOOGL
+2025-08-23 18:21:23,405 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for GOOGL: 0 < 100
+2025-08-23 18:21:24,203 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 105 advanced features for AMZN
+2025-08-23 18:21:24,207 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for AMZN: 0 < 100
+2025-08-23 18:21:24,207 - backtrader_system.strategies.elite_ml_strategy - WARNING - ⚠️ Only trained 0 models, need at least 3
+2025-08-23 18:21:24,207 - backtrader_system.strategies.elite_ml_strategy - INFO - 🧠 Training ML models for 4 symbols...
+2025-08-23 18:21:25,137 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 105 advanced features for AAPL
+2025-08-23 18:21:25,152 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for AAPL: 0 < 100
+2025-08-23 18:21:25,983 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 105 advanced features for MSFT
+2025-08-23 18:21:25,986 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for MSFT: 0 < 100
+2025-08-23 18:21:26,780 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 105 advanced features for GOOGL
+2025-08-23 18:21:26,784 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for GOOGL: 0 < 100
+2025-08-23 18:21:27,580 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 105 advanced features for AMZN
+2025-08-23 18:21:27,584 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for AMZN: 0 < 100
+2025-08-23 18:21:27,584 - backtrader_system.strategies.elite_ml_strategy - WARNING - ⚠️ Only trained 0 models, need at least 3
+2025-08-23 18:21:27,584 - backtrader_system.strategies.elite_ml_strategy - INFO - 🧠 Training ML models for 4 symbols...
+2025-08-23 18:21:28,382 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 105 advanced features for AAPL
+2025-08-23 18:21:28,385 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for AAPL: 0 < 100
+2025-08-23 18:21:29,186 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 105 advanced features for MSFT
+2025-08-23 18:21:29,190 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for MSFT: 0 < 100
+2025-08-23 18:21:29,988 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 105 advanced features for GOOGL
+2025-08-23 18:21:29,992 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for GOOGL: 0 < 100
+2025-08-23 18:21:30,790 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 105 advanced features for AMZN
+2025-08-23 18:21:30,793 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for AMZN: 0 < 100
+2025-08-23 18:21:30,793 - backtrader_system.strategies.elite_ml_strategy - WARNING - ⚠️ Only trained 0 models, need at least 3
+2025-08-23 18:21:30,794 - backtrader_system.strategies.elite_ml_strategy - INFO - 🧠 Training ML models for 4 symbols...
+2025-08-23 18:21:31,593 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 105 advanced features for AAPL
+2025-08-23 18:21:31,596 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for AAPL: 0 < 100
+2025-08-23 18:21:32,396 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 105 advanced features for MSFT
+2025-08-23 18:21:32,400 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for MSFT: 0 < 100
+2025-08-23 18:21:33,202 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 105 advanced features for GOOGL
+2025-08-23 18:21:33,206 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for GOOGL: 0 < 100
+2025-08-23 18:21:34,008 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 105 advanced features for AMZN
+2025-08-23 18:21:34,011 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for AMZN: 0 < 100
+2025-08-23 18:21:34,011 - backtrader_system.strategies.elite_ml_strategy - WARNING - ⚠️ Only trained 0 models, need at least 3
+2025-08-23 18:21:34,012 - backtrader_system.strategies.elite_ml_strategy - INFO - 🧠 Training ML models for 4 symbols...
+2025-08-23 18:21:34,811 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 105 advanced features for AAPL
+2025-08-23 18:21:34,815 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for AAPL: 0 < 100
+2025-08-23 18:21:35,615 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 105 advanced features for MSFT
+2025-08-23 18:21:35,618 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for MSFT: 0 < 100
+2025-08-23 18:21:36,420 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 105 advanced features for GOOGL
+2025-08-23 18:21:36,423 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for GOOGL: 0 < 100
+2025-08-23 18:21:37,223 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 105 advanced features for AMZN
+2025-08-23 18:21:37,227 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for AMZN: 0 < 100
+2025-08-23 18:21:37,227 - backtrader_system.strategies.elite_ml_strategy - WARNING - ⚠️ Only trained 0 models, need at least 3
+2025-08-23 18:21:37,227 - backtrader_system.strategies.elite_ml_strategy - INFO - 🧠 Training ML models for 4 symbols...
+2025-08-23 18:21:38,030 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 105 advanced features for AAPL
+2025-08-23 18:21:38,034 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for AAPL: 0 < 100
+2025-08-23 18:21:38,839 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 105 advanced features for MSFT
+2025-08-23 18:21:38,842 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for MSFT: 0 < 100
+2025-08-23 18:21:39,646 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 105 advanced features for GOOGL
+2025-08-23 18:21:39,650 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for GOOGL: 0 < 100
+2025-08-23 18:21:40,485 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 105 advanced features for AMZN
+2025-08-23 18:21:40,489 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for AMZN: 0 < 100
+2025-08-23 18:21:40,489 - backtrader_system.strategies.elite_ml_strategy - WARNING - ⚠️ Only trained 0 models, need at least 3
+2025-08-23 18:21:40,489 - backtrader_system.strategies.elite_ml_strategy - INFO - 🧠 Training ML models for 4 symbols...
+2025-08-23 18:21:41,292 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 105 advanced features for AAPL
+2025-08-23 18:21:41,296 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for AAPL: 0 < 100
+2025-08-23 18:21:42,098 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 105 advanced features for MSFT
+2025-08-23 18:21:42,102 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for MSFT: 0 < 100
+2025-08-23 18:21:42,908 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 105 advanced features for GOOGL
+2025-08-23 18:21:42,912 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for GOOGL: 0 < 100
+2025-08-23 18:21:43,736 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 105 advanced features for AMZN
+2025-08-23 18:21:43,739 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for AMZN: 0 < 100
+2025-08-23 18:21:43,739 - backtrader_system.strategies.elite_ml_strategy - WARNING - ⚠️ Only trained 0 models, need at least 3
+2025-08-23 18:21:43,739 - backtrader_system.strategies.elite_ml_strategy - INFO - 🧠 Training ML models for 4 symbols...
+2025-08-23 18:21:44,581 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 105 advanced features for AAPL
+2025-08-23 18:21:44,585 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for AAPL: 0 < 100
+2025-08-23 18:21:45,432 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 105 advanced features for MSFT
+2025-08-23 18:21:45,436 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for MSFT: 0 < 100
+2025-08-23 18:21:46,271 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 105 advanced features for GOOGL
+2025-08-23 18:21:46,275 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for GOOGL: 0 < 100
+2025-08-23 18:21:47,122 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 105 advanced features for AMZN
+2025-08-23 18:21:47,126 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for AMZN: 0 < 100
+2025-08-23 18:21:47,127 - backtrader_system.strategies.elite_ml_strategy - WARNING - ⚠️ Only trained 0 models, need at least 3
+2025-08-23 18:21:47,127 - backtrader_system.strategies.elite_ml_strategy - INFO - 🧠 Training ML models for 4 symbols...

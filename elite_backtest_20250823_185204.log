@@ -1,0 +1,1354 @@
+2025-08-23 18:52:04,154 - __main__ - INFO - ============================================================
+2025-08-23 18:52:04,154 - __main__ - INFO - 🚀 ELITE ML TRADING SYSTEM - MAXIMUM ACCURACY & PROFIT
+2025-08-23 18:52:04,154 - __main__ - INFO - ============================================================
+2025-08-23 18:52:04,154 - __main__ - INFO - 🎯 Elite Features:
+2025-08-23 18:52:04,154 - __main__ - INFO -    • XGBoost + LightGBM + Neural Network Ensemble
+2025-08-23 18:52:04,154 - __main__ - INFO -    • 100+ Advanced Technical Features
+2025-08-23 18:52:04,154 - __main__ - INFO -    • Multi-horizon Predictions (1d, 3d, 5d, 10d, 20d)
+2025-08-23 18:52:04,154 - __main__ - INFO -    • Risk-adjusted Kelly Position Sizing
+2025-08-23 18:52:04,154 - __main__ - INFO -    • Regime-aware Trading
+2025-08-23 18:52:04,154 - __main__ - INFO -    • Advanced Risk Management
+2025-08-23 18:52:04,154 - __main__ - INFO -    • Market Context Integration (VIX, SPY)
+2025-08-23 18:52:04,154 - __main__ - INFO - ============================================================
+2025-08-23 18:52:04,157 - __main__ - INFO - 📊 Data Periods:
+2025-08-23 18:52:04,157 - __main__ - INFO -    Training: 2022-08-22 to 2024-08-22
+2025-08-23 18:52:04,157 - __main__ - INFO -    Testing: 2024-08-22 to 2025-08-22
+2025-08-23 18:52:04,157 - __main__ - INFO - 📈 Downloading data for 20 symbols...
+2025-08-23 18:52:04,157 - __main__ - INFO -    Downloading AAPL...
+2025-08-23 18:52:04,449 - __main__ - INFO -    ✅ AAPL: 753 bars
+2025-08-23 18:52:04,449 - __main__ - INFO -    Downloading MSFT...
+2025-08-23 18:52:04,551 - __main__ - INFO -    ✅ MSFT: 753 bars
+2025-08-23 18:52:04,551 - __main__ - INFO -    Downloading GOOGL...
+2025-08-23 18:52:04,633 - __main__ - INFO -    ✅ GOOGL: 753 bars
+2025-08-23 18:52:04,633 - __main__ - INFO -    Downloading AMZN...
+2025-08-23 18:52:04,743 - __main__ - INFO -    ✅ AMZN: 753 bars
+2025-08-23 18:52:04,743 - __main__ - INFO -    Downloading META...
+2025-08-23 18:52:04,841 - __main__ - INFO -    ✅ META: 753 bars
+2025-08-23 18:52:04,841 - __main__ - INFO -    Downloading TSLA...
+2025-08-23 18:52:04,908 - __main__ - INFO -    ✅ TSLA: 753 bars
+2025-08-23 18:52:04,908 - __main__ - INFO -    Downloading NVDA...
+2025-08-23 18:52:05,024 - __main__ - INFO -    ✅ NVDA: 753 bars
+2025-08-23 18:52:05,024 - __main__ - INFO -    Downloading ORCL...
+2025-08-23 18:52:05,117 - __main__ - INFO -    ✅ ORCL: 753 bars
+2025-08-23 18:52:05,118 - __main__ - INFO -    Downloading JPM...
+2025-08-23 18:52:05,251 - __main__ - INFO -    ✅ JPM: 753 bars
+2025-08-23 18:52:05,251 - __main__ - INFO -    Downloading BAC...
+2025-08-23 18:52:05,437 - __main__ - INFO -    ✅ BAC: 753 bars
+2025-08-23 18:52:05,437 - __main__ - INFO -    Downloading V...
+2025-08-23 18:52:05,523 - __main__ - INFO -    ✅ V: 753 bars
+2025-08-23 18:52:05,523 - __main__ - INFO -    Downloading MA...
+2025-08-23 18:52:05,704 - __main__ - INFO -    ✅ MA: 753 bars
+2025-08-23 18:52:05,704 - __main__ - INFO -    Downloading UNH...
+2025-08-23 18:52:05,864 - __main__ - INFO -    ✅ UNH: 753 bars
+2025-08-23 18:52:05,865 - __main__ - INFO -    Downloading JNJ...
+2025-08-23 18:52:06,105 - __main__ - INFO -    ✅ JNJ: 753 bars
+2025-08-23 18:52:06,105 - __main__ - INFO -    Downloading PG...
+2025-08-23 18:52:06,393 - __main__ - INFO -    ✅ PG: 753 bars
+2025-08-23 18:52:06,394 - __main__ - INFO -    Downloading KO...
+2025-08-23 18:52:06,593 - __main__ - INFO -    ✅ KO: 753 bars
+2025-08-23 18:52:06,593 - __main__ - INFO -    Downloading XOM...
+2025-08-23 18:52:06,862 - __main__ - INFO -    ✅ XOM: 753 bars
+2025-08-23 18:52:06,862 - __main__ - INFO -    Downloading HD...
+2025-08-23 18:52:07,014 - __main__ - INFO -    ✅ HD: 753 bars
+2025-08-23 18:52:07,014 - __main__ - INFO -    Downloading DIS...
+2025-08-23 18:52:07,222 - __main__ - INFO -    ✅ DIS: 753 bars
+2025-08-23 18:52:07,222 - __main__ - INFO -    Downloading CRM...
+2025-08-23 18:52:07,330 - __main__ - INFO -    ✅ CRM: 753 bars
+2025-08-23 18:52:07,330 - __main__ - INFO - ✅ Successfully downloaded 20 symbols
+2025-08-23 18:52:07,330 - __main__ - INFO - 🚀 Starting ELITE backtest...
+2025-08-23 18:52:07,330 - __main__ - INFO -    Symbols: 20
+2025-08-23 18:52:07,330 - __main__ - INFO -    Period: 2022-08-22 to 2025-08-22
+2025-08-23 18:52:07,330 - __main__ - INFO -    Capital: $1,000,000
+2025-08-23 18:52:07,331 - __main__ - INFO -    Training Split: 67%
+2025-08-23 18:52:07,338 - __main__ - INFO - ⚙️  Running elite backtest...
+2025-08-23 18:52:08,530 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Market context data loaded (VIX, SPY)
+2025-08-23 18:52:08,530 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - 🚀 Enhanced ML Signal Generator initialized
+2025-08-23 18:52:08,530 - backtrader_system.strategies.elite_ml_strategy - INFO - 🚀 Elite ML Trading Strategy initialized
+2025-08-23 18:52:08,530 - backtrader_system.strategies.elite_ml_strategy - INFO - 📊 Monitoring 20 symbols
+2025-08-23 18:52:08,530 - backtrader_system.strategies.elite_ml_strategy - INFO - 🎯 Signal threshold: 0.15
+2025-08-23 18:52:08,530 - backtrader_system.strategies.elite_ml_strategy - INFO - 💰 Max position size: 15.0%
+2025-08-23 18:52:08,535 - backtrader_system.strategies.elite_ml_strategy - INFO - 🎬 Elite ML Strategy starting...
+2025-08-23 18:52:08,695 - backtrader_system.strategies.elite_ml_strategy - INFO - 🧠 Training ML models for 20 symbols...
+2025-08-23 18:52:09,014 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AAPL
+2025-08-23 18:52:12,985 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Trained ensemble models for AAPL:
+2025-08-23 18:52:12,985 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO -    Strength R²: -0.934, MSE: 0.0888
+2025-08-23 18:52:12,985 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO -    Direction Accuracy: 0.330
+2025-08-23 18:52:12,985 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO -    Features: 89, Samples: 400
+2025-08-23 18:52:13,311 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for MSFT
+2025-08-23 18:52:17,665 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Trained ensemble models for MSFT:
+2025-08-23 18:52:17,665 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO -    Strength R²: -0.301, MSE: 0.0488
+2025-08-23 18:52:17,665 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO -    Direction Accuracy: 0.490
+2025-08-23 18:52:17,665 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO -    Features: 89, Samples: 400
+2025-08-23 18:52:17,991 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for GOOGL
+2025-08-23 18:52:22,264 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Trained ensemble models for GOOGL:
+2025-08-23 18:52:22,265 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO -    Strength R²: -0.251, MSE: 0.0357
+2025-08-23 18:52:22,265 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO -    Direction Accuracy: 0.420
+2025-08-23 18:52:22,265 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO -    Features: 89, Samples: 400
+2025-08-23 18:52:22,591 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AMZN
+2025-08-23 18:52:26,915 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Trained ensemble models for AMZN:
+2025-08-23 18:52:26,915 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO -    Strength R²: -0.032, MSE: 0.0416
+2025-08-23 18:52:26,915 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO -    Direction Accuracy: 0.500
+2025-08-23 18:52:26,915 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO -    Features: 89, Samples: 400
+2025-08-23 18:52:27,241 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for META
+2025-08-23 18:52:31,427 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Trained ensemble models for META:
+2025-08-23 18:52:31,427 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO -    Strength R²: -4.018, MSE: 0.2215
+2025-08-23 18:52:31,427 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO -    Direction Accuracy: 0.490
+2025-08-23 18:52:31,427 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO -    Features: 89, Samples: 400
+2025-08-23 18:52:31,753 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for TSLA
+2025-08-23 18:52:36,073 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Trained ensemble models for TSLA:
+2025-08-23 18:52:36,073 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO -    Strength R²: -0.634, MSE: 0.0620
+2025-08-23 18:52:36,073 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO -    Direction Accuracy: 0.530
+2025-08-23 18:52:36,073 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO -    Features: 89, Samples: 400
+2025-08-23 18:52:36,399 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for NVDA
+2025-08-23 18:52:40,669 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Trained ensemble models for NVDA:
+2025-08-23 18:52:40,669 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO -    Strength R²: -0.518, MSE: 0.0362
+2025-08-23 18:52:40,669 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO -    Direction Accuracy: 0.610
+2025-08-23 18:52:40,669 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO -    Features: 89, Samples: 400
+2025-08-23 18:52:40,995 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for ORCL
+2025-08-23 18:52:45,310 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Trained ensemble models for ORCL:
+2025-08-23 18:52:45,311 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO -    Strength R²: -0.731, MSE: 0.0539
+2025-08-23 18:52:45,311 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO -    Direction Accuracy: 0.490
+2025-08-23 18:52:45,312 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO -    Features: 89, Samples: 400
+2025-08-23 18:52:45,638 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for JPM
+2025-08-23 18:52:49,975 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Trained ensemble models for JPM:
+2025-08-23 18:52:49,975 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO -    Strength R²: -0.555, MSE: 0.0409
+2025-08-23 18:52:49,975 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO -    Direction Accuracy: 0.420
+2025-08-23 18:52:49,975 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO -    Features: 89, Samples: 400
+2025-08-23 18:52:50,301 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for BAC
+2025-08-23 18:52:54,637 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Trained ensemble models for BAC:
+2025-08-23 18:52:54,637 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO -    Strength R²: -0.729, MSE: 0.0579
+2025-08-23 18:52:54,637 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO -    Direction Accuracy: 0.260
+2025-08-23 18:52:54,637 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO -    Features: 89, Samples: 400
+2025-08-23 18:52:54,638 - backtrader_system.strategies.elite_ml_strategy - INFO - ✅ Successfully trained 10 ML models
+2025-08-23 18:52:54,961 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AAPL
+2025-08-23 18:52:54,964 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:52:55,287 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for MSFT
+2025-08-23 18:52:55,290 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:52:55,615 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for GOOGL
+2025-08-23 18:52:55,618 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:52:55,942 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AMZN
+2025-08-23 18:52:55,945 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:52:56,268 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for META
+2025-08-23 18:52:56,272 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:52:56,597 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for TSLA
+2025-08-23 18:52:56,600 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:52:56,924 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for NVDA
+2025-08-23 18:52:56,927 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:52:57,250 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for ORCL
+2025-08-23 18:52:57,253 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:52:57,576 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for JPM
+2025-08-23 18:52:57,579 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:52:57,903 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for BAC
+2025-08-23 18:52:57,905 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:52:58,237 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AAPL
+2025-08-23 18:52:58,240 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:52:58,568 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for MSFT
+2025-08-23 18:52:58,571 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:52:58,896 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for GOOGL
+2025-08-23 18:52:58,899 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:52:59,225 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AMZN
+2025-08-23 18:52:59,227 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:52:59,554 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for META
+2025-08-23 18:52:59,557 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:52:59,883 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for TSLA
+2025-08-23 18:52:59,886 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:00,213 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for NVDA
+2025-08-23 18:53:00,216 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:00,543 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for ORCL
+2025-08-23 18:53:00,546 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:00,871 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for JPM
+2025-08-23 18:53:00,874 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:01,201 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for BAC
+2025-08-23 18:53:01,203 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:01,538 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AAPL
+2025-08-23 18:53:01,541 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:01,899 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for MSFT
+2025-08-23 18:53:01,902 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:02,229 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for GOOGL
+2025-08-23 18:53:02,232 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:02,561 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AMZN
+2025-08-23 18:53:02,563 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:02,890 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for META
+2025-08-23 18:53:02,893 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:03,222 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for TSLA
+2025-08-23 18:53:03,224 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:03,553 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for NVDA
+2025-08-23 18:53:03,555 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:03,885 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for ORCL
+2025-08-23 18:53:03,888 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:04,215 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for JPM
+2025-08-23 18:53:04,218 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:04,546 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for BAC
+2025-08-23 18:53:04,549 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:04,885 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AAPL
+2025-08-23 18:53:04,887 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:05,218 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for MSFT
+2025-08-23 18:53:05,221 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:05,553 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for GOOGL
+2025-08-23 18:53:05,556 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:05,885 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AMZN
+2025-08-23 18:53:05,888 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:06,218 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for META
+2025-08-23 18:53:06,221 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:06,552 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for TSLA
+2025-08-23 18:53:06,555 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:06,884 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for NVDA
+2025-08-23 18:53:06,887 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:07,216 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for ORCL
+2025-08-23 18:53:07,219 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:07,550 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for JPM
+2025-08-23 18:53:07,553 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:07,881 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for BAC
+2025-08-23 18:53:07,884 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:08,225 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AAPL
+2025-08-23 18:53:08,228 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:08,563 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for MSFT
+2025-08-23 18:53:08,565 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:08,898 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for GOOGL
+2025-08-23 18:53:08,900 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:09,234 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AMZN
+2025-08-23 18:53:09,237 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:09,571 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for META
+2025-08-23 18:53:09,574 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:09,906 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for TSLA
+2025-08-23 18:53:09,909 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:10,242 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for NVDA
+2025-08-23 18:53:10,245 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:10,580 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for ORCL
+2025-08-23 18:53:10,583 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:10,915 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for JPM
+2025-08-23 18:53:10,918 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:11,251 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for BAC
+2025-08-23 18:53:11,254 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:11,598 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AAPL
+2025-08-23 18:53:11,601 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:11,935 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for MSFT
+2025-08-23 18:53:11,938 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:12,274 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for GOOGL
+2025-08-23 18:53:12,277 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:12,613 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AMZN
+2025-08-23 18:53:12,616 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:12,952 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for META
+2025-08-23 18:53:12,955 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:13,291 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for TSLA
+2025-08-23 18:53:13,294 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:13,630 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for NVDA
+2025-08-23 18:53:13,970 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for ORCL
+2025-08-23 18:53:13,973 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:14,309 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for JPM
+2025-08-23 18:53:14,311 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:14,648 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for BAC
+2025-08-23 18:53:14,651 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:14,996 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AAPL
+2025-08-23 18:53:15,000 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:15,340 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for MSFT
+2025-08-23 18:53:15,343 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:15,683 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for GOOGL
+2025-08-23 18:53:15,686 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:16,026 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AMZN
+2025-08-23 18:53:16,028 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:16,367 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for META
+2025-08-23 18:53:16,370 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:16,710 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for TSLA
+2025-08-23 18:53:16,713 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:17,053 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for NVDA
+2025-08-23 18:53:17,056 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:17,424 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for ORCL
+2025-08-23 18:53:17,427 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:17,766 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for JPM
+2025-08-23 18:53:17,769 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:18,111 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for BAC
+2025-08-23 18:53:18,114 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:18,463 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AAPL
+2025-08-23 18:53:18,466 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:18,808 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for MSFT
+2025-08-23 18:53:18,811 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:19,154 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for GOOGL
+2025-08-23 18:53:19,158 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:19,500 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AMZN
+2025-08-23 18:53:19,503 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:19,889 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for META
+2025-08-23 18:53:19,892 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:20,236 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for TSLA
+2025-08-23 18:53:20,239 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:20,583 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for NVDA
+2025-08-23 18:53:20,585 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:20,928 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for ORCL
+2025-08-23 18:53:20,930 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:21,272 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for JPM
+2025-08-23 18:53:21,275 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:21,619 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for BAC
+2025-08-23 18:53:21,622 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:21,975 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AAPL
+2025-08-23 18:53:21,978 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:22,325 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for MSFT
+2025-08-23 18:53:22,328 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:22,673 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for GOOGL
+2025-08-23 18:53:22,676 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:23,024 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AMZN
+2025-08-23 18:53:23,027 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:23,373 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for META
+2025-08-23 18:53:23,376 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:23,722 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for TSLA
+2025-08-23 18:53:23,724 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:24,071 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for NVDA
+2025-08-23 18:53:24,074 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:24,419 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for ORCL
+2025-08-23 18:53:24,422 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:24,766 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for JPM
+2025-08-23 18:53:24,770 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:25,116 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for BAC
+2025-08-23 18:53:25,118 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:25,472 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AAPL
+2025-08-23 18:53:25,475 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:25,824 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for MSFT
+2025-08-23 18:53:25,826 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:26,174 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for GOOGL
+2025-08-23 18:53:26,176 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:26,523 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AMZN
+2025-08-23 18:53:26,526 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:26,874 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for META
+2025-08-23 18:53:26,877 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:27,225 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for TSLA
+2025-08-23 18:53:27,228 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:27,576 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for NVDA
+2025-08-23 18:53:27,578 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:27,925 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for ORCL
+2025-08-23 18:53:27,928 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:28,276 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for JPM
+2025-08-23 18:53:28,279 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:28,628 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for BAC
+2025-08-23 18:53:28,631 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:28,989 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AAPL
+2025-08-23 18:53:28,992 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:29,343 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for MSFT
+2025-08-23 18:53:29,345 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:29,697 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for GOOGL
+2025-08-23 18:53:29,700 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:30,053 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AMZN
+2025-08-23 18:53:30,056 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:30,406 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for META
+2025-08-23 18:53:30,409 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:30,762 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for TSLA
+2025-08-23 18:53:30,765 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:31,118 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for NVDA
+2025-08-23 18:53:31,121 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:31,472 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for ORCL
+2025-08-23 18:53:31,475 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:31,827 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for JPM
+2025-08-23 18:53:31,830 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:32,181 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for BAC
+2025-08-23 18:53:32,183 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:32,544 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AAPL
+2025-08-23 18:53:32,546 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:32,899 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for MSFT
+2025-08-23 18:53:32,902 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:33,259 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for GOOGL
+2025-08-23 18:53:33,262 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:33,617 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AMZN
+2025-08-23 18:53:33,620 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:33,973 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for META
+2025-08-23 18:53:33,976 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:34,329 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for TSLA
+2025-08-23 18:53:34,331 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:34,685 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for NVDA
+2025-08-23 18:53:34,688 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:35,042 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for ORCL
+2025-08-23 18:53:35,045 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:35,398 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for JPM
+2025-08-23 18:53:35,400 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:35,754 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for BAC
+2025-08-23 18:53:35,757 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:36,123 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AAPL
+2025-08-23 18:53:36,126 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:36,483 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for MSFT
+2025-08-23 18:53:36,486 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:36,874 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for GOOGL
+2025-08-23 18:53:36,877 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:37,234 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AMZN
+2025-08-23 18:53:37,237 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:37,594 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for META
+2025-08-23 18:53:37,597 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:37,954 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for TSLA
+2025-08-23 18:53:37,957 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:38,313 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for NVDA
+2025-08-23 18:53:38,316 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:38,674 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for ORCL
+2025-08-23 18:53:38,677 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:39,035 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for JPM
+2025-08-23 18:53:39,038 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:39,395 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for BAC
+2025-08-23 18:53:39,398 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:39,764 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AAPL
+2025-08-23 18:53:39,767 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:40,129 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for MSFT
+2025-08-23 18:53:40,132 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:40,491 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for GOOGL
+2025-08-23 18:53:40,494 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:40,853 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AMZN
+2025-08-23 18:53:40,856 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:41,216 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for META
+2025-08-23 18:53:41,219 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:41,579 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for TSLA
+2025-08-23 18:53:41,582 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:41,942 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for NVDA
+2025-08-23 18:53:41,944 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:42,304 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for ORCL
+2025-08-23 18:53:42,307 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:42,667 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for JPM
+2025-08-23 18:53:42,671 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:43,031 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for BAC
+2025-08-23 18:53:43,034 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:43,404 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AAPL
+2025-08-23 18:53:43,407 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:43,770 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for MSFT
+2025-08-23 18:53:43,773 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:44,137 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for GOOGL
+2025-08-23 18:53:44,140 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:44,503 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AMZN
+2025-08-23 18:53:44,506 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:44,869 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for META
+2025-08-23 18:53:44,872 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:45,234 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for TSLA
+2025-08-23 18:53:45,237 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:45,601 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for NVDA
+2025-08-23 18:53:45,604 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:45,968 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for ORCL
+2025-08-23 18:53:45,971 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:46,334 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for JPM
+2025-08-23 18:53:46,337 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:46,700 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for BAC
+2025-08-23 18:53:46,702 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:47,076 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AAPL
+2025-08-23 18:53:47,078 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:47,443 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for MSFT
+2025-08-23 18:53:47,445 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:47,811 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for GOOGL
+2025-08-23 18:53:47,814 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:48,183 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AMZN
+2025-08-23 18:53:48,185 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:48,553 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for META
+2025-08-23 18:53:48,556 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:48,920 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for TSLA
+2025-08-23 18:53:48,922 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:49,289 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for NVDA
+2025-08-23 18:53:49,291 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:49,658 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for ORCL
+2025-08-23 18:53:49,661 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:50,027 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for JPM
+2025-08-23 18:53:50,030 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:50,395 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for BAC
+2025-08-23 18:53:50,398 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:50,774 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AAPL
+2025-08-23 18:53:50,777 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:51,147 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for MSFT
+2025-08-23 18:53:51,150 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:51,519 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for GOOGL
+2025-08-23 18:53:51,522 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:51,891 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AMZN
+2025-08-23 18:53:51,893 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:52,262 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for META
+2025-08-23 18:53:52,265 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:52,635 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for TSLA
+2025-08-23 18:53:52,638 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:53,007 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for NVDA
+2025-08-23 18:53:53,009 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:53,378 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for ORCL
+2025-08-23 18:53:53,380 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:53,749 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for JPM
+2025-08-23 18:53:53,751 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:54,122 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for BAC
+2025-08-23 18:53:54,126 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:54,505 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AAPL
+2025-08-23 18:53:54,508 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:54,880 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for MSFT
+2025-08-23 18:53:54,883 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:55,255 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for GOOGL
+2025-08-23 18:53:55,258 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:55,630 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AMZN
+2025-08-23 18:53:55,633 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:56,038 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for META
+2025-08-23 18:53:56,041 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:56,412 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for TSLA
+2025-08-23 18:53:56,415 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:56,787 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for NVDA
+2025-08-23 18:53:56,790 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:57,163 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for ORCL
+2025-08-23 18:53:57,166 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:57,538 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for JPM
+2025-08-23 18:53:57,541 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:57,913 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for BAC
+2025-08-23 18:53:57,916 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:58,300 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AAPL
+2025-08-23 18:53:58,303 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:58,678 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for MSFT
+2025-08-23 18:53:58,680 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:59,056 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for GOOGL
+2025-08-23 18:53:59,059 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:59,434 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AMZN
+2025-08-23 18:53:59,438 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:53:59,812 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for META
+2025-08-23 18:53:59,815 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:00,194 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for TSLA
+2025-08-23 18:54:00,197 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:00,573 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for NVDA
+2025-08-23 18:54:00,576 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:00,951 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for ORCL
+2025-08-23 18:54:00,954 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:01,329 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for JPM
+2025-08-23 18:54:01,332 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:01,707 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for BAC
+2025-08-23 18:54:01,710 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:02,096 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AAPL
+2025-08-23 18:54:02,099 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:02,476 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for MSFT
+2025-08-23 18:54:02,479 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:02,857 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for GOOGL
+2025-08-23 18:54:02,859 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:03,238 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AMZN
+2025-08-23 18:54:03,241 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:03,621 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for META
+2025-08-23 18:54:03,624 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:04,002 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for TSLA
+2025-08-23 18:54:04,005 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:04,383 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for NVDA
+2025-08-23 18:54:04,385 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:04,764 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for ORCL
+2025-08-23 18:54:04,767 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:05,145 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for JPM
+2025-08-23 18:54:05,148 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:05,525 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for BAC
+2025-08-23 18:54:05,528 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:05,917 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AAPL
+2025-08-23 18:54:05,919 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:06,301 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for MSFT
+2025-08-23 18:54:06,304 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:06,685 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for GOOGL
+2025-08-23 18:54:06,688 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:07,069 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AMZN
+2025-08-23 18:54:07,072 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:07,452 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for META
+2025-08-23 18:54:07,455 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:07,837 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for TSLA
+2025-08-23 18:54:07,840 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:08,222 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for NVDA
+2025-08-23 18:54:08,225 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:08,606 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for ORCL
+2025-08-23 18:54:08,609 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:08,990 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for JPM
+2025-08-23 18:54:08,992 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:09,372 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for BAC
+2025-08-23 18:54:09,375 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:09,766 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AAPL
+2025-08-23 18:54:09,769 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:10,154 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for MSFT
+2025-08-23 18:54:10,157 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:10,541 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for GOOGL
+2025-08-23 18:54:10,543 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:10,928 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AMZN
+2025-08-23 18:54:10,931 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:11,314 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for META
+2025-08-23 18:54:11,316 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:11,703 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for TSLA
+2025-08-23 18:54:11,705 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:12,090 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for NVDA
+2025-08-23 18:54:12,092 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:12,476 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for ORCL
+2025-08-23 18:54:12,479 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:12,863 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for JPM
+2025-08-23 18:54:12,865 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:13,253 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for BAC
+2025-08-23 18:54:13,255 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:13,651 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AAPL
+2025-08-23 18:54:13,654 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:14,041 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for MSFT
+2025-08-23 18:54:14,044 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:14,430 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for GOOGL
+2025-08-23 18:54:14,433 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:14,821 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AMZN
+2025-08-23 18:54:14,823 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:15,211 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for META
+2025-08-23 18:54:15,213 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:15,601 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for TSLA
+2025-08-23 18:54:15,604 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:15,991 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for NVDA
+2025-08-23 18:54:15,994 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:16,380 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for ORCL
+2025-08-23 18:54:16,382 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:16,770 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for JPM
+2025-08-23 18:54:16,773 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:17,161 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for BAC
+2025-08-23 18:54:17,163 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:17,560 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AAPL
+2025-08-23 18:54:17,562 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:17,952 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for MSFT
+2025-08-23 18:54:17,954 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:18,344 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for GOOGL
+2025-08-23 18:54:18,347 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:18,738 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AMZN
+2025-08-23 18:54:18,740 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:19,131 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for META
+2025-08-23 18:54:19,134 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:19,524 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for TSLA
+2025-08-23 18:54:19,527 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:19,993 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for NVDA
+2025-08-23 18:54:19,996 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:20,418 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for ORCL
+2025-08-23 18:54:20,421 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:20,811 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for JPM
+2025-08-23 18:54:20,814 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:21,205 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for BAC
+2025-08-23 18:54:21,207 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:21,609 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AAPL
+2025-08-23 18:54:21,611 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:22,004 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for MSFT
+2025-08-23 18:54:22,007 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:22,400 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for GOOGL
+2025-08-23 18:54:22,403 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:22,796 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AMZN
+2025-08-23 18:54:22,799 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:23,196 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for META
+2025-08-23 18:54:23,199 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:23,593 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for TSLA
+2025-08-23 18:54:23,596 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:23,988 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for NVDA
+2025-08-23 18:54:23,991 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:24,384 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for ORCL
+2025-08-23 18:54:24,387 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:24,781 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for JPM
+2025-08-23 18:54:24,784 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:25,177 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for BAC
+2025-08-23 18:54:25,180 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:25,584 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AAPL
+2025-08-23 18:54:25,587 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:25,983 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for MSFT
+2025-08-23 18:54:25,985 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:26,381 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for GOOGL
+2025-08-23 18:54:26,384 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:26,780 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AMZN
+2025-08-23 18:54:26,783 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:27,179 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for META
+2025-08-23 18:54:27,182 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:27,579 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for TSLA
+2025-08-23 18:54:27,582 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:27,976 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for NVDA
+2025-08-23 18:54:28,375 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for ORCL
+2025-08-23 18:54:28,377 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:28,774 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for JPM
+2025-08-23 18:54:28,777 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:29,174 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for BAC
+2025-08-23 18:54:29,176 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:29,583 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AAPL
+2025-08-23 18:54:29,586 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:29,985 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for MSFT
+2025-08-23 18:54:29,988 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:30,386 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for GOOGL
+2025-08-23 18:54:30,389 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:30,790 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AMZN
+2025-08-23 18:54:30,793 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:31,192 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for META
+2025-08-23 18:54:31,194 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:31,593 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for TSLA
+2025-08-23 18:54:31,596 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:31,995 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for NVDA
+2025-08-23 18:54:31,997 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:32,394 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for ORCL
+2025-08-23 18:54:32,397 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:32,795 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for JPM
+2025-08-23 18:54:32,798 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:33,199 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for BAC
+2025-08-23 18:54:33,203 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:33,610 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AAPL
+2025-08-23 18:54:33,613 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:34,014 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for MSFT
+2025-08-23 18:54:34,017 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:34,418 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for GOOGL
+2025-08-23 18:54:34,420 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:34,821 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AMZN
+2025-08-23 18:54:34,824 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:35,226 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for META
+2025-08-23 18:54:35,228 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:35,629 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for TSLA
+2025-08-23 18:54:35,632 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:36,034 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for NVDA
+2025-08-23 18:54:36,037 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:36,438 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for ORCL
+2025-08-23 18:54:36,441 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:36,842 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for JPM
+2025-08-23 18:54:36,845 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:37,245 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for BAC
+2025-08-23 18:54:37,248 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:37,660 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AAPL
+2025-08-23 18:54:37,664 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:38,067 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for MSFT
+2025-08-23 18:54:38,070 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:38,474 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for GOOGL
+2025-08-23 18:54:38,477 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:38,881 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AMZN
+2025-08-23 18:54:38,884 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:39,288 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for META
+2025-08-23 18:54:39,291 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:39,697 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for TSLA
+2025-08-23 18:54:39,700 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:40,106 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for NVDA
+2025-08-23 18:54:40,109 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:40,513 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for ORCL
+2025-08-23 18:54:40,516 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:40,919 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for JPM
+2025-08-23 18:54:40,922 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:41,326 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for BAC
+2025-08-23 18:54:41,329 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:41,775 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AAPL
+2025-08-23 18:54:41,778 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:42,187 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for MSFT
+2025-08-23 18:54:42,190 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:42,597 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for GOOGL
+2025-08-23 18:54:42,600 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:43,006 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AMZN
+2025-08-23 18:54:43,009 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:43,416 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for META
+2025-08-23 18:54:43,419 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:43,825 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for TSLA
+2025-08-23 18:54:43,828 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:44,236 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for NVDA
+2025-08-23 18:54:44,239 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:44,718 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for ORCL
+2025-08-23 18:54:44,721 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:45,129 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for JPM
+2025-08-23 18:54:45,132 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:45,539 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for BAC
+2025-08-23 18:54:45,541 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:45,959 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AAPL
+2025-08-23 18:54:45,961 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:46,370 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for MSFT
+2025-08-23 18:54:46,373 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:46,783 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for GOOGL
+2025-08-23 18:54:46,786 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:47,197 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AMZN
+2025-08-23 18:54:47,200 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:47,611 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for META
+2025-08-23 18:54:47,614 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:48,023 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for TSLA
+2025-08-23 18:54:48,026 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:48,435 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for NVDA
+2025-08-23 18:54:48,438 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:48,847 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for ORCL
+2025-08-23 18:54:48,850 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:49,259 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for JPM
+2025-08-23 18:54:49,261 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:49,672 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for BAC
+2025-08-23 18:54:49,675 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:50,095 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AAPL
+2025-08-23 18:54:50,099 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:50,510 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for MSFT
+2025-08-23 18:54:50,513 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:50,925 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for GOOGL
+2025-08-23 18:54:50,928 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:51,339 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AMZN
+2025-08-23 18:54:51,342 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:51,755 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for META
+2025-08-23 18:54:51,757 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:52,171 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for TSLA
+2025-08-23 18:54:52,174 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:52,586 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for NVDA
+2025-08-23 18:54:52,589 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:53,001 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for ORCL
+2025-08-23 18:54:53,004 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:53,416 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for JPM
+2025-08-23 18:54:53,419 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:53,831 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for BAC
+2025-08-23 18:54:53,834 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:54,256 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AAPL
+2025-08-23 18:54:54,258 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:54,674 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for MSFT
+2025-08-23 18:54:54,676 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:55,091 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for GOOGL
+2025-08-23 18:54:55,094 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:55,507 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AMZN
+2025-08-23 18:54:55,510 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:55,925 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for META
+2025-08-23 18:54:55,928 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:56,343 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for TSLA
+2025-08-23 18:54:56,346 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:56,760 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for NVDA
+2025-08-23 18:54:56,763 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:57,178 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for ORCL
+2025-08-23 18:54:57,181 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:57,596 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for JPM
+2025-08-23 18:54:57,600 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:58,015 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for BAC
+2025-08-23 18:54:58,018 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:58,445 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AAPL
+2025-08-23 18:54:58,448 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:58,867 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for MSFT
+2025-08-23 18:54:58,870 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:59,288 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for GOOGL
+2025-08-23 18:54:59,291 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:54:59,709 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AMZN
+2025-08-23 18:54:59,712 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:00,133 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for META
+2025-08-23 18:55:00,136 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:00,555 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for TSLA
+2025-08-23 18:55:00,558 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:00,975 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for NVDA
+2025-08-23 18:55:00,978 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:01,395 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for ORCL
+2025-08-23 18:55:01,398 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:01,820 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for JPM
+2025-08-23 18:55:01,824 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:02,274 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for BAC
+2025-08-23 18:55:02,276 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:02,707 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AAPL
+2025-08-23 18:55:02,709 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:03,132 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for MSFT
+2025-08-23 18:55:03,135 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:03,558 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for GOOGL
+2025-08-23 18:55:03,560 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:03,983 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AMZN
+2025-08-23 18:55:03,986 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:04,407 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for META
+2025-08-23 18:55:04,410 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:04,832 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for TSLA
+2025-08-23 18:55:04,835 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:05,257 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for NVDA
+2025-08-23 18:55:05,260 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:05,683 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for ORCL
+2025-08-23 18:55:05,686 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:06,107 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for JPM
+2025-08-23 18:55:06,110 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:06,531 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for BAC
+2025-08-23 18:55:06,534 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:06,964 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AAPL
+2025-08-23 18:55:06,967 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:07,391 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for MSFT
+2025-08-23 18:55:07,393 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:07,818 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for GOOGL
+2025-08-23 18:55:07,820 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:08,247 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AMZN
+2025-08-23 18:55:08,250 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:08,675 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for META
+2025-08-23 18:55:08,678 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:09,103 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for TSLA
+2025-08-23 18:55:09,106 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:09,529 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for NVDA
+2025-08-23 18:55:09,532 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:09,953 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for ORCL
+2025-08-23 18:55:09,956 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:10,379 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for JPM
+2025-08-23 18:55:10,382 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:10,805 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for BAC
+2025-08-23 18:55:10,808 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:11,243 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AAPL
+2025-08-23 18:55:11,246 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:11,673 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for MSFT
+2025-08-23 18:55:11,676 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:12,102 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for GOOGL
+2025-08-23 18:55:12,106 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:12,530 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AMZN
+2025-08-23 18:55:12,533 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:12,959 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for META
+2025-08-23 18:55:12,962 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:13,388 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for TSLA
+2025-08-23 18:55:13,391 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:13,816 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for NVDA
+2025-08-23 18:55:13,819 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:14,245 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for ORCL
+2025-08-23 18:55:14,247 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:14,673 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for JPM
+2025-08-23 18:55:14,676 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:15,103 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for BAC
+2025-08-23 18:55:15,106 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:15,543 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AAPL
+2025-08-23 18:55:15,545 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:15,973 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for MSFT
+2025-08-23 18:55:15,976 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:16,406 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for GOOGL
+2025-08-23 18:55:16,409 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:16,836 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AMZN
+2025-08-23 18:55:16,839 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:17,269 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for META
+2025-08-23 18:55:17,272 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:17,701 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for TSLA
+2025-08-23 18:55:17,704 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:18,134 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for NVDA
+2025-08-23 18:55:18,137 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:18,567 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for ORCL
+2025-08-23 18:55:18,570 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:18,999 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for JPM
+2025-08-23 18:55:19,002 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:19,430 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for BAC
+2025-08-23 18:55:19,433 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:19,921 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AAPL
+2025-08-23 18:55:19,925 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:20,357 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for MSFT
+2025-08-23 18:55:20,360 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:20,792 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for GOOGL
+2025-08-23 18:55:20,794 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:21,229 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AMZN
+2025-08-23 18:55:21,232 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:21,665 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for META
+2025-08-23 18:55:21,668 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:22,102 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for TSLA
+2025-08-23 18:55:22,105 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:22,539 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for NVDA
+2025-08-23 18:55:22,542 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:22,976 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for ORCL
+2025-08-23 18:55:22,979 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:23,412 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for JPM
+2025-08-23 18:55:23,415 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:23,880 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for BAC
+2025-08-23 18:55:23,883 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:24,328 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AAPL
+2025-08-23 18:55:24,330 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:24,768 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for MSFT
+2025-08-23 18:55:24,771 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:25,207 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for GOOGL
+2025-08-23 18:55:25,210 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:25,646 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AMZN
+2025-08-23 18:55:25,649 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:26,085 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for META
+2025-08-23 18:55:26,088 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:26,524 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for TSLA
+2025-08-23 18:55:26,527 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:26,963 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for NVDA
+2025-08-23 18:55:26,966 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:27,401 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for ORCL
+2025-08-23 18:55:27,404 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:27,839 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for JPM
+2025-08-23 18:55:27,842 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:28,280 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for BAC
+2025-08-23 18:55:28,283 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:28,732 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AAPL
+2025-08-23 18:55:28,735 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:29,173 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for MSFT
+2025-08-23 18:55:29,176 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:29,616 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for GOOGL
+2025-08-23 18:55:29,619 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:30,058 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AMZN
+2025-08-23 18:55:30,062 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:30,501 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for META
+2025-08-23 18:55:30,503 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:30,941 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for TSLA
+2025-08-23 18:55:30,944 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:31,382 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for NVDA
+2025-08-23 18:55:31,385 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:31,822 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for ORCL
+2025-08-23 18:55:31,825 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:32,263 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for JPM
+2025-08-23 18:55:32,266 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:32,705 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for BAC
+2025-08-23 18:55:32,708 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:33,158 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AAPL
+2025-08-23 18:55:33,161 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:33,604 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for MSFT
+2025-08-23 18:55:33,607 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:34,047 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for GOOGL
+2025-08-23 18:55:34,050 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:34,491 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AMZN
+2025-08-23 18:55:34,494 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:34,936 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for META
+2025-08-23 18:55:34,939 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:35,380 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for TSLA
+2025-08-23 18:55:35,384 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:35,824 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for NVDA
+2025-08-23 18:55:35,827 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:36,268 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for ORCL
+2025-08-23 18:55:36,271 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:36,712 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for JPM
+2025-08-23 18:55:36,714 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:37,156 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for BAC
+2025-08-23 18:55:37,159 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:37,611 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AAPL
+2025-08-23 18:55:37,613 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:38,058 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for MSFT
+2025-08-23 18:55:38,061 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:38,505 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for GOOGL
+2025-08-23 18:55:38,508 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:38,951 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AMZN
+2025-08-23 18:55:38,954 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:39,398 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for META
+2025-08-23 18:55:39,401 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:39,845 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for TSLA
+2025-08-23 18:55:39,849 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:40,293 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for NVDA
+2025-08-23 18:55:40,296 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:40,743 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for ORCL
+2025-08-23 18:55:40,746 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:41,191 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for JPM
+2025-08-23 18:55:41,194 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:41,638 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for BAC
+2025-08-23 18:55:41,641 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:42,096 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AAPL
+2025-08-23 18:55:42,099 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:42,545 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for MSFT
+2025-08-23 18:55:42,548 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:42,993 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for GOOGL
+2025-08-23 18:55:42,996 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:43,443 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AMZN
+2025-08-23 18:55:43,446 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:43,891 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for META
+2025-08-23 18:55:43,894 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:44,344 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for TSLA
+2025-08-23 18:55:44,347 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:44,800 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for NVDA
+2025-08-23 18:55:44,803 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:45,259 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for ORCL
+2025-08-23 18:55:45,262 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:45,719 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for JPM
+2025-08-23 18:55:45,722 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:46,181 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for BAC
+2025-08-23 18:55:46,184 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:46,643 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AAPL
+2025-08-23 18:55:46,646 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:47,100 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for MSFT
+2025-08-23 18:55:47,102 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:47,553 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for GOOGL
+2025-08-23 18:55:47,556 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:48,005 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AMZN
+2025-08-23 18:55:48,007 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:48,459 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for META
+2025-08-23 18:55:48,462 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:48,910 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for TSLA
+2025-08-23 18:55:48,913 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:49,362 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for NVDA
+2025-08-23 18:55:49,366 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:49,816 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for ORCL
+2025-08-23 18:55:49,819 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:50,269 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for JPM
+2025-08-23 18:55:50,271 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:50,722 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for BAC
+2025-08-23 18:55:50,725 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:51,186 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AAPL
+2025-08-23 18:55:51,189 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:51,643 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for MSFT
+2025-08-23 18:55:51,646 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:52,100 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for GOOGL
+2025-08-23 18:55:52,103 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:52,556 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AMZN
+2025-08-23 18:55:52,558 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:53,012 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for META
+2025-08-23 18:55:53,015 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:53,468 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for TSLA
+2025-08-23 18:55:53,471 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:53,954 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for NVDA
+2025-08-23 18:55:53,957 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:54,409 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for ORCL
+2025-08-23 18:55:54,412 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:54,865 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for JPM
+2025-08-23 18:55:54,868 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:55,321 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for BAC
+2025-08-23 18:55:55,324 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:55,789 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AAPL
+2025-08-23 18:55:55,792 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:56,249 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for MSFT
+2025-08-23 18:55:56,251 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:56,708 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for GOOGL
+2025-08-23 18:55:56,711 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:57,168 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AMZN
+2025-08-23 18:55:57,171 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:57,628 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for META
+2025-08-23 18:55:57,630 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:58,087 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for TSLA
+2025-08-23 18:55:58,090 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:58,549 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for NVDA
+2025-08-23 18:55:58,552 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:59,007 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for ORCL
+2025-08-23 18:55:59,010 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:59,464 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for JPM
+2025-08-23 18:55:59,467 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:55:59,922 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for BAC
+2025-08-23 18:55:59,925 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:00,395 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AAPL
+2025-08-23 18:56:00,398 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:00,856 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for MSFT
+2025-08-23 18:56:00,859 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:01,318 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for GOOGL
+2025-08-23 18:56:01,321 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:01,779 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AMZN
+2025-08-23 18:56:01,782 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:02,240 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for META
+2025-08-23 18:56:02,243 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:02,702 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for TSLA
+2025-08-23 18:56:02,705 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:03,164 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for NVDA
+2025-08-23 18:56:03,166 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:03,626 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for ORCL
+2025-08-23 18:56:03,629 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:04,088 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for JPM
+2025-08-23 18:56:04,091 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:04,548 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for BAC
+2025-08-23 18:56:04,551 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:05,022 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AAPL
+2025-08-23 18:56:05,025 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:05,485 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for MSFT
+2025-08-23 18:56:05,489 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:05,949 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for GOOGL
+2025-08-23 18:56:05,952 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:06,412 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AMZN
+2025-08-23 18:56:06,416 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:06,877 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for META
+2025-08-23 18:56:06,880 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:07,341 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for TSLA
+2025-08-23 18:56:07,344 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:07,806 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for NVDA
+2025-08-23 18:56:07,809 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:08,274 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for ORCL
+2025-08-23 18:56:08,277 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:08,740 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for JPM
+2025-08-23 18:56:08,743 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:09,207 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for BAC
+2025-08-23 18:56:09,210 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:09,682 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AAPL
+2025-08-23 18:56:09,685 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:10,149 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for MSFT
+2025-08-23 18:56:10,152 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:10,615 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for GOOGL
+2025-08-23 18:56:10,618 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:11,083 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AMZN
+2025-08-23 18:56:11,085 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:11,549 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for META
+2025-08-23 18:56:11,552 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:12,014 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for TSLA
+2025-08-23 18:56:12,017 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:12,480 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for NVDA
+2025-08-23 18:56:12,483 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:12,945 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for ORCL
+2025-08-23 18:56:12,948 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:13,412 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for JPM
+2025-08-23 18:56:13,415 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:13,878 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for BAC
+2025-08-23 18:56:13,881 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:14,355 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AAPL
+2025-08-23 18:56:14,358 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:14,825 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for MSFT
+2025-08-23 18:56:14,827 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:15,297 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for GOOGL
+2025-08-23 18:56:15,303 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:15,770 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AMZN
+2025-08-23 18:56:15,773 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:16,273 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for META
+2025-08-23 18:56:16,276 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:16,744 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for TSLA
+2025-08-23 18:56:16,747 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:17,214 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for NVDA
+2025-08-23 18:56:17,217 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:17,685 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for ORCL
+2025-08-23 18:56:17,688 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:18,156 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for JPM
+2025-08-23 18:56:18,159 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:18,629 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for BAC
+2025-08-23 18:56:18,632 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:19,111 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AAPL
+2025-08-23 18:56:19,114 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:19,583 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for MSFT
+2025-08-23 18:56:19,586 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:20,095 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for GOOGL
+2025-08-23 18:56:20,098 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:20,569 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AMZN
+2025-08-23 18:56:20,572 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:21,043 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for META
+2025-08-23 18:56:21,046 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:21,514 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for TSLA
+2025-08-23 18:56:21,518 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:21,988 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for NVDA
+2025-08-23 18:56:21,991 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:22,462 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for ORCL
+2025-08-23 18:56:22,464 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:22,935 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for JPM
+2025-08-23 18:56:22,938 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:23,410 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for BAC
+2025-08-23 18:56:23,413 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:23,892 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AAPL
+2025-08-23 18:56:23,895 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:24,367 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for MSFT
+2025-08-23 18:56:24,370 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:24,842 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for GOOGL
+2025-08-23 18:56:24,845 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:25,319 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AMZN
+2025-08-23 18:56:25,322 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:25,793 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for META
+2025-08-23 18:56:25,796 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:26,269 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for TSLA
+2025-08-23 18:56:26,272 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:26,746 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for NVDA
+2025-08-23 18:56:26,749 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:27,221 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for ORCL
+2025-08-23 18:56:27,224 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:27,697 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for JPM
+2025-08-23 18:56:27,700 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:28,174 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for BAC
+2025-08-23 18:56:28,177 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:28,664 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AAPL
+2025-08-23 18:56:28,667 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:29,143 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for MSFT
+2025-08-23 18:56:29,146 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:29,624 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for GOOGL
+2025-08-23 18:56:29,626 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:30,103 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AMZN
+2025-08-23 18:56:30,106 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:30,582 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for META
+2025-08-23 18:56:30,585 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:31,061 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for TSLA
+2025-08-23 18:56:31,064 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:31,539 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for NVDA
+2025-08-23 18:56:31,541 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:32,018 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for ORCL
+2025-08-23 18:56:32,020 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:32,493 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for JPM
+2025-08-23 18:56:32,496 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:32,971 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for BAC
+2025-08-23 18:56:32,974 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:33,461 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AAPL
+2025-08-23 18:56:33,464 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:33,939 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for MSFT
+2025-08-23 18:56:33,942 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:34,420 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for GOOGL
+2025-08-23 18:56:34,423 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:34,900 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AMZN
+2025-08-23 18:56:34,903 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:35,379 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for META
+2025-08-23 18:56:35,382 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:35,859 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for TSLA
+2025-08-23 18:56:35,861 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:36,338 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for NVDA
+2025-08-23 18:56:36,341 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:36,819 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for ORCL
+2025-08-23 18:56:36,822 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:37,299 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for JPM
+2025-08-23 18:56:37,302 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:37,782 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for BAC
+2025-08-23 18:56:37,785 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:38,275 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AAPL
+2025-08-23 18:56:38,277 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:38,760 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for MSFT
+2025-08-23 18:56:38,763 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:39,244 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for GOOGL
+2025-08-23 18:56:39,247 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:39,729 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AMZN
+2025-08-23 18:56:39,732 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:40,213 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for META
+2025-08-23 18:56:40,216 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:40,699 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for TSLA
+2025-08-23 18:56:40,702 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:41,216 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for NVDA
+2025-08-23 18:56:41,219 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:41,701 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for ORCL
+2025-08-23 18:56:41,704 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:42,185 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for JPM
+2025-08-23 18:56:42,188 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:42,676 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for BAC
+2025-08-23 18:56:42,679 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:43,173 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AAPL
+2025-08-23 18:56:43,176 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:43,664 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for MSFT
+2025-08-23 18:56:43,667 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:44,152 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for GOOGL
+2025-08-23 18:56:44,154 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:44,641 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AMZN
+2025-08-23 18:56:44,644 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:45,129 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for META
+2025-08-23 18:56:45,132 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:45,619 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for TSLA
+2025-08-23 18:56:45,621 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:46,106 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for NVDA
+2025-08-23 18:56:46,108 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:46,594 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for ORCL
+2025-08-23 18:56:46,597 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:47,080 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for JPM
+2025-08-23 18:56:47,083 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:47,567 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for BAC
+2025-08-23 18:56:47,569 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:48,063 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AAPL
+2025-08-23 18:56:48,066 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:48,555 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for MSFT
+2025-08-23 18:56:48,557 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:49,044 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for GOOGL
+2025-08-23 18:56:49,047 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:49,534 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AMZN
+2025-08-23 18:56:49,537 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:50,023 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for META
+2025-08-23 18:56:50,025 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:50,512 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for TSLA
+2025-08-23 18:56:50,514 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:51,001 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for NVDA
+2025-08-23 18:56:51,003 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:51,489 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for ORCL
+2025-08-23 18:56:51,492 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:51,978 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for JPM
+2025-08-23 18:56:51,981 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:52,464 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for BAC
+2025-08-23 18:56:52,467 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:52,963 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AAPL
+2025-08-23 18:56:52,966 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:53,455 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for MSFT
+2025-08-23 18:56:53,458 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:53,947 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for GOOGL
+2025-08-23 18:56:53,950 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:54,438 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AMZN
+2025-08-23 18:56:54,441 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:54,930 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for META
+2025-08-23 18:56:54,933 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:55,420 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for TSLA
+2025-08-23 18:56:55,423 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:55,912 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for NVDA
+2025-08-23 18:56:55,914 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:56,403 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for ORCL
+2025-08-23 18:56:56,406 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:56,894 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for JPM
+2025-08-23 18:56:56,896 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:57,385 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for BAC
+2025-08-23 18:56:57,388 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:57,888 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AAPL
+2025-08-23 18:56:57,890 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:58,385 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for MSFT
+2025-08-23 18:56:58,388 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:58,883 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for GOOGL
+2025-08-23 18:56:58,886 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:59,377 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AMZN
+2025-08-23 18:56:59,380 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:56:59,873 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for META
+2025-08-23 18:56:59,876 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:57:00,372 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for TSLA
+2025-08-23 18:57:00,375 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:57:00,868 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for NVDA
+2025-08-23 18:57:00,871 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:57:01,363 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for ORCL
+2025-08-23 18:57:01,366 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:57:01,858 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for JPM
+2025-08-23 18:57:01,861 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:57:02,354 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for BAC
+2025-08-23 18:57:02,356 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:57:02,861 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AAPL
+2025-08-23 18:57:02,864 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:57:03,360 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for MSFT
+2025-08-23 18:57:03,363 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:57:03,858 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for GOOGL
+2025-08-23 18:57:03,860 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:57:04,356 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AMZN
+2025-08-23 18:57:04,359 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:57:04,854 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for META
+2025-08-23 18:57:04,857 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:57:05,352 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for TSLA
+2025-08-23 18:57:05,354 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:57:05,848 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for NVDA
+2025-08-23 18:57:05,851 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:57:06,346 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for ORCL
+2025-08-23 18:57:06,349 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:57:06,844 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for JPM
+2025-08-23 18:57:06,847 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:57:07,375 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for BAC
+2025-08-23 18:57:07,378 - backtrader_system.strategies.elite_ml_strategy - ERROR - Error in entry filters: 'volatility'
+2025-08-23 18:57:07,387 - backtrader_system.strategies.elite_ml_strategy - INFO - 🏁 Elite ML Strategy stopping...
+2025-08-23 18:57:07,387 - backtrader_system.strategies.elite_ml_strategy - INFO - 📊 Final Performance:
+2025-08-23 18:57:07,387 - backtrader_system.strategies.elite_ml_strategy - INFO -    Final Value: $1,000,000.00
+2025-08-23 18:57:07,387 - backtrader_system.strategies.elite_ml_strategy - INFO -    Total Trades: 0
+2025-08-23 18:57:07,387 - backtrader_system.strategies.elite_ml_strategy - INFO -    Win Rate: 0.0%
+2025-08-23 18:57:07,387 - backtrader_system.strategies.elite_ml_strategy - INFO -    Trades Won: 0, Lost: 0
+2025-08-23 18:57:07,387 - backtrader_system.strategies.elite_ml_strategy - INFO - 🧠 ML Models Summary:
+2025-08-23 18:57:07,387 - backtrader_system.strategies.elite_ml_strategy - INFO -    Models Trained: 10
+2025-08-23 18:57:07,388 - __main__ - INFO - ✅ Elite backtest completed!
+2025-08-23 18:57:07,388 - __main__ - INFO - 📊 Final Portfolio Value: $1,000,000
+2025-08-23 18:57:07,388 - __main__ - INFO - 📈 Total Return: 0.00%
+2025-08-23 18:57:07,393 - __main__ - INFO - 📈 Equity curve saved: elite_results/elite_equity_curve_20250823_185707.csv
+2025-08-23 18:57:07,393 - __main__ - INFO - 📊 Performance report: elite_results/elite_performance_report_20250823_185707.json
+2025-08-23 18:57:07,393 - __main__ - ERROR - Elite backtest failed: unsupported format string passed to NoneType.__format__

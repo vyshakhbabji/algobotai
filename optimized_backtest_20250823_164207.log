@@ -1,0 +1,118 @@
+2025-08-23 16:42:07,595 - __main__ - INFO - ==================================================
+2025-08-23 16:42:07,595 - __main__ - INFO - OPTIMIZED BACKTRADER ML SYSTEM
+2025-08-23 16:42:07,595 - __main__ - INFO - ==================================================
+2025-08-23 16:42:07,595 - __main__ - INFO - 🎯 Key Improvements:
+2025-08-23 16:42:07,595 - __main__ - INFO -    • Conservative Kelly sizing (12% max position)
+2025-08-23 16:42:07,595 - __main__ - INFO -    • 8% stop-loss protection
+2025-08-23 16:42:07,595 - __main__ - INFO -    • 25% portfolio heat limit
+2025-08-23 16:42:07,595 - __main__ - INFO -    • Higher signal threshold (0.35)
+2025-08-23 16:42:07,595 - __main__ - INFO -    • Minimum 3-day hold periods
+2025-08-23 16:42:07,595 - __main__ - INFO -    • Maximum 8 trades per day
+2025-08-23 16:42:07,596 - __main__ - INFO - ==================================================
+2025-08-23 16:42:07,596 - __main__ - INFO - 📊 Downloading data for 20 symbols...
+2025-08-23 16:42:07,596 - __main__ - INFO -    Downloading AAPL...
+2025-08-23 16:42:07,959 - __main__ - INFO -    ✅ AAPL: 753 bars
+2025-08-23 16:42:07,959 - __main__ - INFO -    Downloading MSFT...
+2025-08-23 16:42:08,092 - __main__ - INFO -    ✅ MSFT: 753 bars
+2025-08-23 16:42:08,092 - __main__ - INFO -    Downloading GOOGL...
+2025-08-23 16:42:08,164 - __main__ - INFO -    ✅ GOOGL: 753 bars
+2025-08-23 16:42:08,164 - __main__ - INFO -    Downloading AMZN...
+2025-08-23 16:42:08,237 - __main__ - INFO -    ✅ AMZN: 753 bars
+2025-08-23 16:42:08,237 - __main__ - INFO -    Downloading META...
+2025-08-23 16:42:08,320 - __main__ - INFO -    ✅ META: 753 bars
+2025-08-23 16:42:08,320 - __main__ - INFO -    Downloading TSLA...
+2025-08-23 16:42:08,411 - __main__ - INFO -    ✅ TSLA: 753 bars
+2025-08-23 16:42:08,411 - __main__ - INFO -    Downloading NVDA...
+2025-08-23 16:42:08,524 - __main__ - INFO -    ✅ NVDA: 753 bars
+2025-08-23 16:42:08,524 - __main__ - INFO -    Downloading ORCL...
+2025-08-23 16:42:08,620 - __main__ - INFO -    ✅ ORCL: 753 bars
+2025-08-23 16:42:08,620 - __main__ - INFO -    Downloading JPM...
+2025-08-23 16:42:08,761 - __main__ - INFO -    ✅ JPM: 753 bars
+2025-08-23 16:42:08,761 - __main__ - INFO -    Downloading BAC...
+2025-08-23 16:42:08,954 - __main__ - INFO -    ✅ BAC: 753 bars
+2025-08-23 16:42:08,955 - __main__ - INFO -    Downloading V...
+2025-08-23 16:42:09,053 - __main__ - INFO -    ✅ V: 753 bars
+2025-08-23 16:42:09,054 - __main__ - INFO -    Downloading MA...
+2025-08-23 16:42:09,159 - __main__ - INFO -    ✅ MA: 753 bars
+2025-08-23 16:42:09,159 - __main__ - INFO -    Downloading UNH...
+2025-08-23 16:42:09,285 - __main__ - INFO -    ✅ UNH: 753 bars
+2025-08-23 16:42:09,285 - __main__ - INFO -    Downloading JNJ...
+2025-08-23 16:42:09,497 - __main__ - INFO -    ✅ JNJ: 753 bars
+2025-08-23 16:42:09,498 - __main__ - INFO -    Downloading PG...
+2025-08-23 16:42:09,697 - __main__ - INFO -    ✅ PG: 753 bars
+2025-08-23 16:42:09,698 - __main__ - INFO -    Downloading KO...
+2025-08-23 16:42:09,886 - __main__ - INFO -    ✅ KO: 753 bars
+2025-08-23 16:42:09,886 - __main__ - INFO -    Downloading XOM...
+2025-08-23 16:42:10,146 - __main__ - INFO -    ✅ XOM: 753 bars
+2025-08-23 16:42:10,147 - __main__ - INFO -    Downloading HD...
+2025-08-23 16:42:10,295 - __main__ - INFO -    ✅ HD: 753 bars
+2025-08-23 16:42:10,295 - __main__ - INFO -    Downloading DIS...
+2025-08-23 16:42:10,488 - __main__ - INFO -    ✅ DIS: 753 bars
+2025-08-23 16:42:10,488 - __main__ - INFO -    Downloading CRM...
+2025-08-23 16:42:10,580 - __main__ - INFO -    ✅ CRM: 753 bars
+2025-08-23 16:42:10,580 - __main__ - INFO - ✅ Successfully downloaded 20 symbols
+2025-08-23 16:42:10,580 - __main__ - INFO - 🚀 Starting OPTIMIZED backtest...
+2025-08-23 16:42:10,580 - __main__ - INFO -    Symbols: 20
+2025-08-23 16:42:10,580 - __main__ - INFO -    Period: 2022-08-22 to 2025-08-22
+2025-08-23 16:42:10,580 - __main__ - INFO -    Capital: $1,000,000
+2025-08-23 16:42:10,582 - __main__ - INFO - ⚙️  Running optimized backtest...
+2025-08-23 16:42:11,417 - backtrader_system.strategies.optimized_ml_strategy - INFO - OPTIMIZED Strategy initialized with 20 symbols
+2025-08-23 16:42:11,417 - backtrader_system.strategies.optimized_ml_strategy - INFO - Key improvements: Conservative sizing (max 25.0%), Stop loss (8.0%), Higher signal threshold (0.35)
+2025-08-23 16:42:15,339 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2024-08-22: Training ML models for 20 symbols
+2025-08-23 16:42:17,980 - backtrader_system.strategies.optimized_ml_strategy - INFO - Successfully trained models for 20/20 symbols
+2025-08-23 16:42:18,123 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2024-08-22: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:42:18,162 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2024-08-27: Training ML models for 20 symbols
+2025-08-23 16:42:20,848 - backtrader_system.strategies.optimized_ml_strategy - INFO - Successfully trained models for 20/20 symbols
+2025-08-23 16:42:21,012 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2024-08-27: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:42:21,064 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2024-09-03: Training ML models for 20 symbols
+2025-08-23 16:42:23,716 - backtrader_system.strategies.optimized_ml_strategy - INFO - Successfully trained models for 20/20 symbols
+2025-08-23 16:42:23,882 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2024-09-03: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:42:23,933 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2024-09-09: Training ML models for 20 symbols
+2025-08-23 16:42:26,594 - backtrader_system.strategies.optimized_ml_strategy - INFO - Successfully trained models for 20/20 symbols
+2025-08-23 16:42:26,757 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2024-09-09: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:42:26,822 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2024-09-16: Training ML models for 20 symbols
+2025-08-23 16:42:29,473 - backtrader_system.strategies.optimized_ml_strategy - INFO - Successfully trained models for 20/20 symbols
+2025-08-23 16:42:29,628 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2024-09-16: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:42:29,694 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2024-09-23: Training ML models for 20 symbols
+2025-08-23 16:42:32,353 - backtrader_system.strategies.optimized_ml_strategy - INFO - Successfully trained models for 20/20 symbols
+2025-08-23 16:42:32,504 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2024-09-23: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:42:32,572 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2024-09-30: Training ML models for 20 symbols
+2025-08-23 16:42:35,268 - backtrader_system.strategies.optimized_ml_strategy - INFO - Successfully trained models for 20/20 symbols
+2025-08-23 16:42:35,436 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2024-09-30: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:42:35,505 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2024-10-07: Training ML models for 20 symbols
+2025-08-23 16:42:38,260 - backtrader_system.strategies.optimized_ml_strategy - INFO - Successfully trained models for 20/20 symbols
+2025-08-23 16:42:38,422 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2024-10-07: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:42:38,487 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2024-10-14: Training ML models for 20 symbols
+2025-08-23 16:42:41,103 - backtrader_system.strategies.optimized_ml_strategy - INFO - Successfully trained models for 20/20 symbols
+2025-08-23 16:42:41,253 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2024-10-14: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:42:41,319 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2024-10-21: Training ML models for 20 symbols
+2025-08-23 16:42:43,935 - backtrader_system.strategies.optimized_ml_strategy - INFO - Successfully trained models for 20/20 symbols
+2025-08-23 16:42:44,086 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2024-10-21: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:42:44,151 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2024-10-28: Training ML models for 20 symbols
+2025-08-23 16:42:46,765 - backtrader_system.strategies.optimized_ml_strategy - INFO - Successfully trained models for 20/20 symbols
+2025-08-23 16:42:46,920 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2024-10-28: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:42:46,985 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2024-11-04: Training ML models for 20 symbols
+2025-08-23 16:42:49,604 - backtrader_system.strategies.optimized_ml_strategy - INFO - Successfully trained models for 20/20 symbols
+2025-08-23 16:42:49,764 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2024-11-04: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:42:49,829 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2024-11-11: Training ML models for 20 symbols
+2025-08-23 16:42:52,444 - backtrader_system.strategies.optimized_ml_strategy - INFO - Successfully trained models for 20/20 symbols
+2025-08-23 16:42:52,602 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2024-11-11: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:42:52,667 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2024-11-18: Training ML models for 20 symbols
+2025-08-23 16:42:55,328 - backtrader_system.strategies.optimized_ml_strategy - INFO - Successfully trained models for 20/20 symbols
+2025-08-23 16:42:55,490 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2024-11-18: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:42:55,553 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2024-11-25: Training ML models for 20 symbols
+2025-08-23 16:42:58,202 - backtrader_system.strategies.optimized_ml_strategy - INFO - Successfully trained models for 20/20 symbols
+2025-08-23 16:42:58,368 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2024-11-25: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:42:58,423 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2024-12-02: Training ML models for 20 symbols
+2025-08-23 16:43:01,071 - backtrader_system.strategies.optimized_ml_strategy - INFO - Successfully trained models for 20/20 symbols
+2025-08-23 16:43:01,225 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2024-12-02: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:43:01,290 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2024-12-09: Training ML models for 20 symbols
+2025-08-23 16:43:03,902 - backtrader_system.strategies.optimized_ml_strategy - INFO - Successfully trained models for 20/20 symbols
+2025-08-23 16:43:04,060 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2024-12-09: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:43:04,124 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2024-12-16: Training ML models for 20 symbols
+2025-08-23 16:43:06,737 - backtrader_system.strategies.optimized_ml_strategy - INFO - Successfully trained models for 20/20 symbols
+2025-08-23 16:43:06,916 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2024-12-16: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:43:06,980 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2024-12-23: Training ML models for 20 symbols
+2025-08-23 16:43:09,600 - backtrader_system.strategies.optimized_ml_strategy - INFO - Successfully trained models for 20/20 symbols
+2025-08-23 16:43:09,760 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2024-12-23: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:43:09,813 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2024-12-30: Training ML models for 20 symbols

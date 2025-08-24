@@ -1,0 +1,22 @@
+2025-08-23 18:26:11,665 - __main__ - INFO - ============================================================
+2025-08-23 18:26:11,665 - __main__ - INFO - 🚀 ELITE ML TRADING SYSTEM - MAXIMUM ACCURACY & PROFIT
+2025-08-23 18:26:11,665 - __main__ - INFO - ============================================================
+2025-08-23 18:26:11,665 - __main__ - INFO - 🎯 Elite Features:
+2025-08-23 18:26:11,665 - __main__ - INFO -    • XGBoost + LightGBM + Neural Network Ensemble
+2025-08-23 18:26:11,665 - __main__ - INFO -    • 100+ Advanced Technical Features
+2025-08-23 18:26:11,665 - __main__ - INFO -    • Multi-horizon Predictions (1d, 3d, 5d, 10d, 20d)
+2025-08-23 18:26:11,665 - __main__ - INFO -    • Risk-adjusted Kelly Position Sizing
+2025-08-23 18:26:11,665 - __main__ - INFO -    • Regime-aware Trading
+2025-08-23 18:26:11,666 - __main__ - INFO -    • Advanced Risk Management
+2025-08-23 18:26:11,666 - __main__ - INFO -    • Market Context Integration (VIX, SPY)
+2025-08-23 18:26:11,666 - __main__ - INFO - ============================================================
+2025-08-23 18:26:11,667 - __main__ - INFO - 📊 Data Periods:
+2025-08-23 18:26:11,667 - __main__ - INFO -    Training: 2022-08-22 to 2024-08-22
+2025-08-23 18:26:11,667 - __main__ - INFO -    Testing: 2024-08-22 to 2025-08-22
+2025-08-23 18:26:11,667 - __main__ - INFO - 📈 Downloading data for 2 symbols...
+2025-08-23 18:26:11,667 - __main__ - INFO -    Downloading AAPL...
+2025-08-23 18:26:11,995 - __main__ - INFO -    ✅ AAPL: 753 bars
+2025-08-23 18:26:11,995 - __main__ - INFO -    Downloading MSFT...
+2025-08-23 18:26:12,102 - __main__ - INFO -    ✅ MSFT: 753 bars
+2025-08-23 18:26:12,102 - __main__ - INFO - ✅ Successfully downloaded 2 symbols
+2025-08-23 18:26:12,102 - __main__ - ERROR - Elite backtest failed: Insufficient data: only 2 symbols available, need at least 3

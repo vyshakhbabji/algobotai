@@ -1,0 +1,700 @@
+2025-08-23 18:15:50,060 - __main__ - INFO - ============================================================
+2025-08-23 18:15:50,060 - __main__ - INFO - 🚀 ELITE ML TRADING SYSTEM - MAXIMUM ACCURACY & PROFIT
+2025-08-23 18:15:50,060 - __main__ - INFO - ============================================================
+2025-08-23 18:15:50,060 - __main__ - INFO - 🎯 Elite Features:
+2025-08-23 18:15:50,060 - __main__ - INFO -    • XGBoost + LightGBM + Neural Network Ensemble
+2025-08-23 18:15:50,060 - __main__ - INFO -    • 100+ Advanced Technical Features
+2025-08-23 18:15:50,060 - __main__ - INFO -    • Multi-horizon Predictions (1d, 3d, 5d, 10d, 20d)
+2025-08-23 18:15:50,060 - __main__ - INFO -    • Risk-adjusted Kelly Position Sizing
+2025-08-23 18:15:50,060 - __main__ - INFO -    • Regime-aware Trading
+2025-08-23 18:15:50,060 - __main__ - INFO -    • Advanced Risk Management
+2025-08-23 18:15:50,060 - __main__ - INFO -    • Market Context Integration (VIX, SPY)
+2025-08-23 18:15:50,060 - __main__ - INFO - ============================================================
+2025-08-23 18:15:50,061 - __main__ - INFO - 📊 Data Periods:
+2025-08-23 18:15:50,061 - __main__ - INFO -    Training: 2022-08-22 to 2024-08-22
+2025-08-23 18:15:50,061 - __main__ - INFO -    Testing: 2024-08-22 to 2025-08-22
+2025-08-23 18:15:50,061 - __main__ - INFO - 📈 Downloading data for 20 symbols...
+2025-08-23 18:15:50,061 - __main__ - INFO -    Downloading AAPL...
+2025-08-23 18:15:50,474 - __main__ - INFO -    ✅ AAPL: 753 bars
+2025-08-23 18:15:50,474 - __main__ - INFO -    Downloading MSFT...
+2025-08-23 18:15:50,583 - __main__ - INFO -    ✅ MSFT: 753 bars
+2025-08-23 18:15:50,584 - __main__ - INFO -    Downloading GOOGL...
+2025-08-23 18:15:50,670 - __main__ - INFO -    ✅ GOOGL: 753 bars
+2025-08-23 18:15:50,670 - __main__ - INFO -    Downloading AMZN...
+2025-08-23 18:15:50,739 - __main__ - INFO -    ✅ AMZN: 753 bars
+2025-08-23 18:15:50,739 - __main__ - INFO -    Downloading META...
+2025-08-23 18:15:50,832 - __main__ - INFO -    ✅ META: 753 bars
+2025-08-23 18:15:50,833 - __main__ - INFO -    Downloading TSLA...
+2025-08-23 18:15:50,897 - __main__ - INFO -    ✅ TSLA: 753 bars
+2025-08-23 18:15:50,897 - __main__ - INFO -    Downloading NVDA...
+2025-08-23 18:15:50,978 - __main__ - INFO -    ✅ NVDA: 753 bars
+2025-08-23 18:15:50,978 - __main__ - INFO -    Downloading ORCL...
+2025-08-23 18:15:51,103 - __main__ - INFO -    ✅ ORCL: 753 bars
+2025-08-23 18:15:51,103 - __main__ - INFO -    Downloading JPM...
+2025-08-23 18:15:51,232 - __main__ - INFO -    ✅ JPM: 753 bars
+2025-08-23 18:15:51,232 - __main__ - INFO -    Downloading BAC...
+2025-08-23 18:15:51,373 - __main__ - INFO -    ✅ BAC: 753 bars
+2025-08-23 18:15:51,374 - __main__ - INFO -    Downloading V...
+2025-08-23 18:15:51,499 - __main__ - INFO -    ✅ V: 753 bars
+2025-08-23 18:15:51,499 - __main__ - INFO -    Downloading MA...
+2025-08-23 18:15:51,609 - __main__ - INFO -    ✅ MA: 753 bars
+2025-08-23 18:15:51,609 - __main__ - INFO -    Downloading UNH...
+2025-08-23 18:15:51,758 - __main__ - INFO -    ✅ UNH: 753 bars
+2025-08-23 18:15:51,758 - __main__ - INFO -    Downloading JNJ...
+2025-08-23 18:15:51,954 - __main__ - INFO -    ✅ JNJ: 753 bars
+2025-08-23 18:15:51,954 - __main__ - INFO -    Downloading PG...
+2025-08-23 18:15:52,205 - __main__ - INFO -    ✅ PG: 753 bars
+2025-08-23 18:15:52,205 - __main__ - INFO -    Downloading KO...
+2025-08-23 18:15:52,377 - __main__ - INFO -    ✅ KO: 753 bars
+2025-08-23 18:15:52,377 - __main__ - INFO -    Downloading XOM...
+2025-08-23 18:15:52,617 - __main__ - INFO -    ✅ XOM: 753 bars
+2025-08-23 18:15:52,618 - __main__ - INFO -    Downloading HD...
+2025-08-23 18:15:52,757 - __main__ - INFO -    ✅ HD: 753 bars
+2025-08-23 18:15:52,757 - __main__ - INFO -    Downloading DIS...
+2025-08-23 18:15:52,944 - __main__ - INFO -    ✅ DIS: 753 bars
+2025-08-23 18:15:52,944 - __main__ - INFO -    Downloading CRM...
+2025-08-23 18:15:53,024 - __main__ - INFO -    ✅ CRM: 753 bars
+2025-08-23 18:15:53,024 - __main__ - INFO - ✅ Successfully downloaded 20 symbols
+2025-08-23 18:15:53,024 - __main__ - INFO - 🚀 Starting ELITE backtest...
+2025-08-23 18:15:53,024 - __main__ - INFO -    Symbols: 20
+2025-08-23 18:15:53,024 - __main__ - INFO -    Period: 2022-08-22 to 2025-08-22
+2025-08-23 18:15:53,024 - __main__ - INFO -    Capital: $1,000,000
+2025-08-23 18:15:53,024 - __main__ - INFO -    Training Split: 67%
+2025-08-23 18:15:53,030 - __main__ - INFO - ⚙️  Running elite backtest...
+2025-08-23 18:15:53,921 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - 🚀 Enhanced ML Signal Generator initialized
+2025-08-23 18:15:54,193 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Market context data loaded (VIX, SPY)
+2025-08-23 18:15:54,193 - backtrader_system.strategies.elite_ml_strategy - INFO - 🚀 Elite ML Trading Strategy initialized
+2025-08-23 18:15:54,194 - backtrader_system.strategies.elite_ml_strategy - INFO - 📊 Monitoring 20 symbols
+2025-08-23 18:15:54,194 - backtrader_system.strategies.elite_ml_strategy - INFO - 🎯 Signal threshold: 0.15
+2025-08-23 18:15:54,194 - backtrader_system.strategies.elite_ml_strategy - INFO - 💰 Max position size: 15.0%
+2025-08-23 18:15:54,202 - backtrader_system.strategies.elite_ml_strategy - INFO - 🎬 Elite ML Strategy starting...
+2025-08-23 18:15:54,371 - backtrader_system.strategies.elite_ml_strategy - INFO - 🧠 Training ML models for 20 symbols...
+2025-08-23 18:15:54,399 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for AAPL: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:54,403 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for AAPL: 0 < 200
+2025-08-23 18:15:54,430 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for MSFT: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:54,434 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for MSFT: 0 < 200
+2025-08-23 18:15:54,460 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for GOOGL: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:54,464 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for GOOGL: 0 < 200
+2025-08-23 18:15:54,490 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for AMZN: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:54,494 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for AMZN: 0 < 200
+2025-08-23 18:15:54,521 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for META: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:54,525 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for META: 0 < 200
+2025-08-23 18:15:54,551 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for TSLA: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:54,555 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for TSLA: 0 < 200
+2025-08-23 18:15:54,581 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for NVDA: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:54,585 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for NVDA: 0 < 200
+2025-08-23 18:15:54,611 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for ORCL: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:54,616 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for ORCL: 0 < 200
+2025-08-23 18:15:54,642 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for JPM: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:54,646 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for JPM: 0 < 200
+2025-08-23 18:15:54,673 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for BAC: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:54,676 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for BAC: 0 < 200
+2025-08-23 18:15:54,677 - backtrader_system.strategies.elite_ml_strategy - WARNING - ⚠️ Only trained 0 models, need at least 3
+2025-08-23 18:15:54,677 - backtrader_system.strategies.elite_ml_strategy - INFO - 🧠 Training ML models for 20 symbols...
+2025-08-23 18:15:54,704 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for AAPL: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:54,707 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for AAPL: 0 < 200
+2025-08-23 18:15:54,734 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for MSFT: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:54,738 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for MSFT: 0 < 200
+2025-08-23 18:15:54,764 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for GOOGL: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:54,768 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for GOOGL: 0 < 200
+2025-08-23 18:15:54,794 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for AMZN: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:54,799 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for AMZN: 0 < 200
+2025-08-23 18:15:54,825 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for META: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:54,829 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for META: 0 < 200
+2025-08-23 18:15:54,855 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for TSLA: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:54,859 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for TSLA: 0 < 200
+2025-08-23 18:15:54,885 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for NVDA: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:54,890 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for NVDA: 0 < 200
+2025-08-23 18:15:54,916 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for ORCL: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:54,920 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for ORCL: 0 < 200
+2025-08-23 18:15:54,946 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for JPM: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:54,950 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for JPM: 0 < 200
+2025-08-23 18:15:54,976 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for BAC: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:54,980 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for BAC: 0 < 200
+2025-08-23 18:15:54,980 - backtrader_system.strategies.elite_ml_strategy - WARNING - ⚠️ Only trained 0 models, need at least 3
+2025-08-23 18:15:54,981 - backtrader_system.strategies.elite_ml_strategy - INFO - 🧠 Training ML models for 20 symbols...
+2025-08-23 18:15:55,008 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for AAPL: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:55,012 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for AAPL: 0 < 200
+2025-08-23 18:15:55,038 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for MSFT: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:55,042 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for MSFT: 0 < 200
+2025-08-23 18:15:55,068 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for GOOGL: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:55,072 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for GOOGL: 0 < 200
+2025-08-23 18:15:55,098 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for AMZN: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:55,102 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for AMZN: 0 < 200
+2025-08-23 18:15:55,128 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for META: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:55,132 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for META: 0 < 200
+2025-08-23 18:15:55,159 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for TSLA: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:55,162 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for TSLA: 0 < 200
+2025-08-23 18:15:55,189 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for NVDA: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:55,193 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for NVDA: 0 < 200
+2025-08-23 18:15:55,220 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for ORCL: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:55,224 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for ORCL: 0 < 200
+2025-08-23 18:15:55,250 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for JPM: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:55,254 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for JPM: 0 < 200
+2025-08-23 18:15:55,280 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for BAC: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:55,284 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for BAC: 0 < 200
+2025-08-23 18:15:55,285 - backtrader_system.strategies.elite_ml_strategy - WARNING - ⚠️ Only trained 0 models, need at least 3
+2025-08-23 18:15:55,285 - backtrader_system.strategies.elite_ml_strategy - INFO - 🧠 Training ML models for 20 symbols...
+2025-08-23 18:15:55,312 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for AAPL: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:55,316 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for AAPL: 0 < 200
+2025-08-23 18:15:55,343 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for MSFT: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:55,347 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for MSFT: 0 < 200
+2025-08-23 18:15:55,373 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for GOOGL: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:55,377 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for GOOGL: 0 < 200
+2025-08-23 18:15:55,403 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for AMZN: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:55,407 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for AMZN: 0 < 200
+2025-08-23 18:15:55,434 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for META: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:55,438 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for META: 0 < 200
+2025-08-23 18:15:55,464 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for TSLA: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:55,468 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for TSLA: 0 < 200
+2025-08-23 18:15:55,495 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for NVDA: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:55,499 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for NVDA: 0 < 200
+2025-08-23 18:15:55,525 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for ORCL: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:55,529 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for ORCL: 0 < 200
+2025-08-23 18:15:55,555 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for JPM: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:55,559 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for JPM: 0 < 200
+2025-08-23 18:15:55,586 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for BAC: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:55,590 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for BAC: 0 < 200
+2025-08-23 18:15:55,590 - backtrader_system.strategies.elite_ml_strategy - WARNING - ⚠️ Only trained 0 models, need at least 3
+2025-08-23 18:15:55,591 - backtrader_system.strategies.elite_ml_strategy - INFO - 🧠 Training ML models for 20 symbols...
+2025-08-23 18:15:55,617 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for AAPL: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:55,621 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for AAPL: 0 < 200
+2025-08-23 18:15:55,648 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for MSFT: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:55,652 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for MSFT: 0 < 200
+2025-08-23 18:15:55,678 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for GOOGL: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:55,682 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for GOOGL: 0 < 200
+2025-08-23 18:15:55,709 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for AMZN: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:55,712 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for AMZN: 0 < 200
+2025-08-23 18:15:55,739 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for META: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:55,743 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for META: 0 < 200
+2025-08-23 18:15:55,769 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for TSLA: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:55,773 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for TSLA: 0 < 200
+2025-08-23 18:15:55,799 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for NVDA: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:55,803 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for NVDA: 0 < 200
+2025-08-23 18:15:55,830 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for ORCL: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:55,834 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for ORCL: 0 < 200
+2025-08-23 18:15:55,861 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for JPM: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:55,864 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for JPM: 0 < 200
+2025-08-23 18:15:55,891 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for BAC: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:55,895 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for BAC: 0 < 200
+2025-08-23 18:15:55,895 - backtrader_system.strategies.elite_ml_strategy - WARNING - ⚠️ Only trained 0 models, need at least 3
+2025-08-23 18:15:55,896 - backtrader_system.strategies.elite_ml_strategy - INFO - 🧠 Training ML models for 20 symbols...
+2025-08-23 18:15:55,922 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for AAPL: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:55,926 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for AAPL: 0 < 200
+2025-08-23 18:15:55,952 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for MSFT: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:55,957 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for MSFT: 0 < 200
+2025-08-23 18:15:55,983 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for GOOGL: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:55,987 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for GOOGL: 0 < 200
+2025-08-23 18:15:56,013 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for AMZN: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:56,017 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for AMZN: 0 < 200
+2025-08-23 18:15:56,044 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for META: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:56,048 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for META: 0 < 200
+2025-08-23 18:15:56,075 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for TSLA: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:56,079 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for TSLA: 0 < 200
+2025-08-23 18:15:56,105 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for NVDA: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:56,109 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for NVDA: 0 < 200
+2025-08-23 18:15:56,135 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for ORCL: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:56,139 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for ORCL: 0 < 200
+2025-08-23 18:15:56,166 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for JPM: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:56,170 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for JPM: 0 < 200
+2025-08-23 18:15:56,196 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for BAC: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:56,200 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for BAC: 0 < 200
+2025-08-23 18:15:56,200 - backtrader_system.strategies.elite_ml_strategy - WARNING - ⚠️ Only trained 0 models, need at least 3
+2025-08-23 18:15:56,201 - backtrader_system.strategies.elite_ml_strategy - INFO - 🧠 Training ML models for 20 symbols...
+2025-08-23 18:15:56,228 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for AAPL: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:56,232 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for AAPL: 0 < 200
+2025-08-23 18:15:56,258 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for MSFT: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:56,262 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for MSFT: 0 < 200
+2025-08-23 18:15:56,289 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for GOOGL: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:56,292 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for GOOGL: 0 < 200
+2025-08-23 18:15:56,319 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for AMZN: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:56,323 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for AMZN: 0 < 200
+2025-08-23 18:15:56,349 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for META: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:56,353 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for META: 0 < 200
+2025-08-23 18:15:56,380 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for TSLA: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:56,383 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for TSLA: 0 < 200
+2025-08-23 18:15:56,410 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for NVDA: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:56,414 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for NVDA: 0 < 200
+2025-08-23 18:15:56,440 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for ORCL: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:56,444 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for ORCL: 0 < 200
+2025-08-23 18:15:56,471 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for JPM: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:56,475 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for JPM: 0 < 200
+2025-08-23 18:15:56,501 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for BAC: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:56,506 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for BAC: 0 < 200
+2025-08-23 18:15:56,506 - backtrader_system.strategies.elite_ml_strategy - WARNING - ⚠️ Only trained 0 models, need at least 3
+2025-08-23 18:15:56,506 - backtrader_system.strategies.elite_ml_strategy - INFO - 🧠 Training ML models for 20 symbols...
+2025-08-23 18:15:56,533 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for AAPL: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:56,537 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for AAPL: 0 < 200
+2025-08-23 18:15:56,564 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for MSFT: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:56,567 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for MSFT: 0 < 200
+2025-08-23 18:15:56,594 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for GOOGL: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:56,598 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for GOOGL: 0 < 200
+2025-08-23 18:15:56,625 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for AMZN: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:56,629 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for AMZN: 0 < 200
+2025-08-23 18:15:56,655 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for META: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:56,659 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for META: 0 < 200
+2025-08-23 18:15:56,686 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for TSLA: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:56,690 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for TSLA: 0 < 200
+2025-08-23 18:15:56,716 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for NVDA: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:56,721 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for NVDA: 0 < 200
+2025-08-23 18:15:56,747 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for ORCL: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:56,751 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for ORCL: 0 < 200
+2025-08-23 18:15:56,778 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for JPM: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:56,782 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for JPM: 0 < 200
+2025-08-23 18:15:56,808 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for BAC: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:56,812 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for BAC: 0 < 200
+2025-08-23 18:15:56,812 - backtrader_system.strategies.elite_ml_strategy - WARNING - ⚠️ Only trained 0 models, need at least 3
+2025-08-23 18:15:56,813 - backtrader_system.strategies.elite_ml_strategy - INFO - 🧠 Training ML models for 20 symbols...
+2025-08-23 18:15:56,839 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for AAPL: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:56,843 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for AAPL: 0 < 200
+2025-08-23 18:15:56,869 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for MSFT: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:56,874 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for MSFT: 0 < 200
+2025-08-23 18:15:56,900 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for GOOGL: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:56,904 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for GOOGL: 0 < 200
+2025-08-23 18:15:56,931 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for AMZN: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:56,935 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for AMZN: 0 < 200
+2025-08-23 18:15:56,961 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for META: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:56,965 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for META: 0 < 200
+2025-08-23 18:15:56,992 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for TSLA: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:56,996 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for TSLA: 0 < 200
+2025-08-23 18:15:57,022 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for NVDA: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:57,026 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for NVDA: 0 < 200
+2025-08-23 18:15:57,052 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for ORCL: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:57,057 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for ORCL: 0 < 200
+2025-08-23 18:15:57,083 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for JPM: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:57,087 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for JPM: 0 < 200
+2025-08-23 18:15:57,114 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for BAC: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:57,118 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for BAC: 0 < 200
+2025-08-23 18:15:57,118 - backtrader_system.strategies.elite_ml_strategy - WARNING - ⚠️ Only trained 0 models, need at least 3
+2025-08-23 18:15:57,118 - backtrader_system.strategies.elite_ml_strategy - INFO - 🧠 Training ML models for 20 symbols...
+2025-08-23 18:15:57,145 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for AAPL: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:57,149 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for AAPL: 0 < 200
+2025-08-23 18:15:57,176 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for MSFT: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:57,180 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for MSFT: 0 < 200
+2025-08-23 18:15:57,206 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for GOOGL: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:57,210 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for GOOGL: 0 < 200
+2025-08-23 18:15:57,237 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for AMZN: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:57,241 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for AMZN: 0 < 200
+2025-08-23 18:15:57,267 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for META: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:57,272 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for META: 0 < 200
+2025-08-23 18:15:57,298 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for TSLA: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:57,302 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for TSLA: 0 < 200
+2025-08-23 18:15:57,329 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for NVDA: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:57,333 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for NVDA: 0 < 200
+2025-08-23 18:15:57,360 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for ORCL: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:57,364 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for ORCL: 0 < 200
+2025-08-23 18:15:57,391 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for JPM: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:57,394 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for JPM: 0 < 200
+2025-08-23 18:15:57,421 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for BAC: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:57,425 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for BAC: 0 < 200
+2025-08-23 18:15:57,425 - backtrader_system.strategies.elite_ml_strategy - WARNING - ⚠️ Only trained 0 models, need at least 3
+2025-08-23 18:15:57,426 - backtrader_system.strategies.elite_ml_strategy - INFO - 🧠 Training ML models for 20 symbols...
+2025-08-23 18:15:57,452 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for AAPL: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:57,456 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for AAPL: 0 < 200
+2025-08-23 18:15:57,483 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for MSFT: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:57,487 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for MSFT: 0 < 200
+2025-08-23 18:15:57,513 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for GOOGL: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:57,517 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for GOOGL: 0 < 200
+2025-08-23 18:15:57,544 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for AMZN: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:57,547 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for AMZN: 0 < 200
+2025-08-23 18:15:57,574 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for META: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:57,578 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for META: 0 < 200
+2025-08-23 18:15:57,605 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for TSLA: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:57,609 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for TSLA: 0 < 200
+2025-08-23 18:15:57,636 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for NVDA: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:57,640 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for NVDA: 0 < 200
+2025-08-23 18:15:57,667 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for ORCL: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:57,671 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for ORCL: 0 < 200
+2025-08-23 18:15:57,698 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for JPM: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:57,702 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for JPM: 0 < 200
+2025-08-23 18:15:57,728 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for BAC: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:57,732 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for BAC: 0 < 200
+2025-08-23 18:15:57,732 - backtrader_system.strategies.elite_ml_strategy - WARNING - ⚠️ Only trained 0 models, need at least 3
+2025-08-23 18:15:57,733 - backtrader_system.strategies.elite_ml_strategy - INFO - 🧠 Training ML models for 20 symbols...
+2025-08-23 18:15:57,759 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for AAPL: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:57,763 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for AAPL: 0 < 200
+2025-08-23 18:15:57,790 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for MSFT: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:57,794 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for MSFT: 0 < 200
+2025-08-23 18:15:57,821 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for GOOGL: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:57,825 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for GOOGL: 0 < 200
+2025-08-23 18:15:57,853 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for AMZN: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:57,857 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for AMZN: 0 < 200
+2025-08-23 18:15:57,894 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for META: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:57,898 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for META: 0 < 200
+2025-08-23 18:15:57,929 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for TSLA: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:57,932 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for TSLA: 0 < 200
+2025-08-23 18:15:57,977 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for NVDA: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:57,982 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for NVDA: 0 < 200
+2025-08-23 18:15:58,009 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for ORCL: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:58,013 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for ORCL: 0 < 200
+2025-08-23 18:15:58,040 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for JPM: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:58,044 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for JPM: 0 < 200
+2025-08-23 18:15:58,070 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for BAC: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:58,074 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for BAC: 0 < 200
+2025-08-23 18:15:58,074 - backtrader_system.strategies.elite_ml_strategy - WARNING - ⚠️ Only trained 0 models, need at least 3
+2025-08-23 18:15:58,074 - backtrader_system.strategies.elite_ml_strategy - INFO - 🧠 Training ML models for 20 symbols...
+2025-08-23 18:15:58,101 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for AAPL: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:58,106 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for AAPL: 0 < 200
+2025-08-23 18:15:58,132 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for MSFT: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:58,137 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for MSFT: 0 < 200
+2025-08-23 18:15:58,163 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for GOOGL: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:58,167 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for GOOGL: 0 < 200
+2025-08-23 18:15:58,194 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for AMZN: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:58,198 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for AMZN: 0 < 200
+2025-08-23 18:15:58,225 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for META: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:58,228 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for META: 0 < 200
+2025-08-23 18:15:58,256 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for TSLA: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:58,259 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for TSLA: 0 < 200
+2025-08-23 18:15:58,286 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for NVDA: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:58,290 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for NVDA: 0 < 200
+2025-08-23 18:15:58,316 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for ORCL: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:58,321 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for ORCL: 0 < 200
+2025-08-23 18:15:58,347 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for JPM: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:58,351 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for JPM: 0 < 200
+2025-08-23 18:15:58,378 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for BAC: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:58,382 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for BAC: 0 < 200
+2025-08-23 18:15:58,382 - backtrader_system.strategies.elite_ml_strategy - WARNING - ⚠️ Only trained 0 models, need at least 3
+2025-08-23 18:15:58,383 - backtrader_system.strategies.elite_ml_strategy - INFO - 🧠 Training ML models for 20 symbols...
+2025-08-23 18:15:58,410 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for AAPL: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:58,414 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for AAPL: 0 < 200
+2025-08-23 18:15:58,441 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for MSFT: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:58,444 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for MSFT: 0 < 200
+2025-08-23 18:15:58,472 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for GOOGL: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:58,475 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for GOOGL: 0 < 200
+2025-08-23 18:15:58,502 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for AMZN: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:58,506 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for AMZN: 0 < 200
+2025-08-23 18:15:58,533 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for META: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:58,537 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for META: 0 < 200
+2025-08-23 18:15:58,563 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for TSLA: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:58,567 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for TSLA: 0 < 200
+2025-08-23 18:15:58,594 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for NVDA: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:58,598 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for NVDA: 0 < 200
+2025-08-23 18:15:58,626 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for ORCL: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:58,630 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for ORCL: 0 < 200
+2025-08-23 18:15:58,657 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for JPM: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:58,661 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for JPM: 0 < 200
+2025-08-23 18:15:58,687 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for BAC: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:58,691 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for BAC: 0 < 200
+2025-08-23 18:15:58,692 - backtrader_system.strategies.elite_ml_strategy - WARNING - ⚠️ Only trained 0 models, need at least 3
+2025-08-23 18:15:58,692 - backtrader_system.strategies.elite_ml_strategy - INFO - 🧠 Training ML models for 20 symbols...
+2025-08-23 18:15:58,719 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for AAPL: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:58,723 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for AAPL: 0 < 200
+2025-08-23 18:15:58,750 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for MSFT: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:58,754 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for MSFT: 0 < 200
+2025-08-23 18:15:58,781 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for GOOGL: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:58,785 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for GOOGL: 0 < 200
+2025-08-23 18:15:58,812 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for AMZN: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:58,815 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for AMZN: 0 < 200
+2025-08-23 18:15:58,843 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for META: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:58,846 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for META: 0 < 200
+2025-08-23 18:15:58,873 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for TSLA: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:58,877 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for TSLA: 0 < 200
+2025-08-23 18:15:58,904 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for NVDA: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:58,908 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for NVDA: 0 < 200
+2025-08-23 18:15:58,934 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for ORCL: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:58,938 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for ORCL: 0 < 200
+2025-08-23 18:15:58,965 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for JPM: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:58,969 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for JPM: 0 < 200
+2025-08-23 18:15:58,995 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for BAC: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:59,000 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for BAC: 0 < 200
+2025-08-23 18:15:59,000 - backtrader_system.strategies.elite_ml_strategy - WARNING - ⚠️ Only trained 0 models, need at least 3
+2025-08-23 18:15:59,000 - backtrader_system.strategies.elite_ml_strategy - INFO - 🧠 Training ML models for 20 symbols...
+2025-08-23 18:15:59,027 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for AAPL: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:59,031 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for AAPL: 0 < 200
+2025-08-23 18:15:59,059 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for MSFT: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:59,062 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for MSFT: 0 < 200
+2025-08-23 18:15:59,089 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for GOOGL: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:59,093 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for GOOGL: 0 < 200
+2025-08-23 18:15:59,120 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for AMZN: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:59,124 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for AMZN: 0 < 200
+2025-08-23 18:15:59,151 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for META: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:59,155 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for META: 0 < 200
+2025-08-23 18:15:59,182 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for TSLA: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:59,186 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for TSLA: 0 < 200
+2025-08-23 18:15:59,212 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for NVDA: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:59,216 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for NVDA: 0 < 200
+2025-08-23 18:15:59,243 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for ORCL: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:59,247 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for ORCL: 0 < 200
+2025-08-23 18:15:59,273 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for JPM: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:59,277 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for JPM: 0 < 200
+2025-08-23 18:15:59,304 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for BAC: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:59,308 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for BAC: 0 < 200
+2025-08-23 18:15:59,308 - backtrader_system.strategies.elite_ml_strategy - WARNING - ⚠️ Only trained 0 models, need at least 3
+2025-08-23 18:15:59,309 - backtrader_system.strategies.elite_ml_strategy - INFO - 🧠 Training ML models for 20 symbols...
+2025-08-23 18:15:59,336 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for AAPL: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:59,340 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for AAPL: 0 < 200
+2025-08-23 18:15:59,367 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for MSFT: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:59,371 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for MSFT: 0 < 200
+2025-08-23 18:15:59,398 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for GOOGL: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:59,402 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for GOOGL: 0 < 200
+2025-08-23 18:15:59,429 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for AMZN: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:59,433 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for AMZN: 0 < 200
+2025-08-23 18:15:59,461 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for META: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:59,464 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for META: 0 < 200
+2025-08-23 18:15:59,491 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for TSLA: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:59,495 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for TSLA: 0 < 200
+2025-08-23 18:15:59,522 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for NVDA: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:59,526 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for NVDA: 0 < 200
+2025-08-23 18:15:59,553 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for ORCL: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:59,557 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for ORCL: 0 < 200
+2025-08-23 18:15:59,583 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for JPM: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:59,587 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for JPM: 0 < 200
+2025-08-23 18:15:59,614 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for BAC: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:59,618 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for BAC: 0 < 200
+2025-08-23 18:15:59,618 - backtrader_system.strategies.elite_ml_strategy - WARNING - ⚠️ Only trained 0 models, need at least 3
+2025-08-23 18:15:59,619 - backtrader_system.strategies.elite_ml_strategy - INFO - 🧠 Training ML models for 20 symbols...
+2025-08-23 18:15:59,646 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for AAPL: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:59,650 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for AAPL: 0 < 200
+2025-08-23 18:15:59,677 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for MSFT: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:59,681 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for MSFT: 0 < 200
+2025-08-23 18:15:59,707 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for GOOGL: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:59,711 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for GOOGL: 0 < 200
+2025-08-23 18:15:59,739 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for AMZN: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:59,742 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for AMZN: 0 < 200
+2025-08-23 18:15:59,769 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for META: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:59,773 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for META: 0 < 200
+2025-08-23 18:15:59,800 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for TSLA: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:59,804 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for TSLA: 0 < 200
+2025-08-23 18:15:59,831 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for NVDA: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:59,835 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for NVDA: 0 < 200
+2025-08-23 18:15:59,862 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for ORCL: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:59,866 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for ORCL: 0 < 200
+2025-08-23 18:15:59,893 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for JPM: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:59,897 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for JPM: 0 < 200
+2025-08-23 18:15:59,924 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for BAC: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:59,928 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for BAC: 0 < 200
+2025-08-23 18:15:59,928 - backtrader_system.strategies.elite_ml_strategy - WARNING - ⚠️ Only trained 0 models, need at least 3
+2025-08-23 18:15:59,928 - backtrader_system.strategies.elite_ml_strategy - INFO - 🧠 Training ML models for 20 symbols...
+2025-08-23 18:15:59,956 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for AAPL: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:59,960 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for AAPL: 0 < 200
+2025-08-23 18:15:59,986 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for MSFT: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:15:59,990 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for MSFT: 0 < 200
+2025-08-23 18:16:00,017 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for GOOGL: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:16:00,021 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for GOOGL: 0 < 200
+2025-08-23 18:16:00,048 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for AMZN: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:16:00,052 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for AMZN: 0 < 200
+2025-08-23 18:16:00,080 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for META: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:16:00,084 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for META: 0 < 200
+2025-08-23 18:16:00,111 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for TSLA: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:16:00,115 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for TSLA: 0 < 200
+2025-08-23 18:16:00,142 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for NVDA: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:16:00,146 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for NVDA: 0 < 200
+2025-08-23 18:16:00,174 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for ORCL: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:16:00,177 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for ORCL: 0 < 200
+2025-08-23 18:16:00,205 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for JPM: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:16:00,209 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for JPM: 0 < 200
+2025-08-23 18:16:00,237 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for BAC: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:16:00,240 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for BAC: 0 < 200
+2025-08-23 18:16:00,240 - backtrader_system.strategies.elite_ml_strategy - WARNING - ⚠️ Only trained 0 models, need at least 3
+2025-08-23 18:16:00,241 - backtrader_system.strategies.elite_ml_strategy - INFO - 🧠 Training ML models for 20 symbols...
+2025-08-23 18:16:00,268 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for AAPL: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:16:00,272 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for AAPL: 0 < 200
+2025-08-23 18:16:00,299 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for MSFT: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:16:00,303 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for MSFT: 0 < 200
+2025-08-23 18:16:00,331 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for GOOGL: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:16:00,335 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for GOOGL: 0 < 200
+2025-08-23 18:16:00,362 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for AMZN: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:16:00,366 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for AMZN: 0 < 200
+2025-08-23 18:16:00,393 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for META: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:16:00,397 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for META: 0 < 200
+2025-08-23 18:16:00,425 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for TSLA: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:16:00,429 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for TSLA: 0 < 200
+2025-08-23 18:16:00,456 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for NVDA: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:16:00,460 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for NVDA: 0 < 200
+2025-08-23 18:16:00,487 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for ORCL: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:16:00,491 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for ORCL: 0 < 200
+2025-08-23 18:16:00,518 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for JPM: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:16:00,523 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for JPM: 0 < 200
+2025-08-23 18:16:00,550 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for BAC: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:16:00,555 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for BAC: 0 < 200
+2025-08-23 18:16:00,555 - backtrader_system.strategies.elite_ml_strategy - WARNING - ⚠️ Only trained 0 models, need at least 3
+2025-08-23 18:16:00,555 - backtrader_system.strategies.elite_ml_strategy - INFO - 🧠 Training ML models for 20 symbols...
+2025-08-23 18:16:00,582 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for AAPL: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:16:00,586 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for AAPL: 0 < 200
+2025-08-23 18:16:00,614 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for MSFT: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:16:00,618 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for MSFT: 0 < 200
+2025-08-23 18:16:00,645 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for GOOGL: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:16:00,650 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for GOOGL: 0 < 200
+2025-08-23 18:16:00,677 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for AMZN: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:16:00,681 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for AMZN: 0 < 200
+2025-08-23 18:16:00,708 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for META: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:16:00,712 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for META: 0 < 200
+2025-08-23 18:16:00,741 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for TSLA: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:16:00,745 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for TSLA: 0 < 200
+2025-08-23 18:16:00,774 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for NVDA: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:16:00,777 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for NVDA: 0 < 200
+2025-08-23 18:16:00,805 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for ORCL: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:16:00,810 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for ORCL: 0 < 200
+2025-08-23 18:16:00,837 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for JPM: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:16:00,841 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for JPM: 0 < 200
+2025-08-23 18:16:00,868 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for BAC: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:16:00,872 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for BAC: 0 < 200
+2025-08-23 18:16:00,873 - backtrader_system.strategies.elite_ml_strategy - WARNING - ⚠️ Only trained 0 models, need at least 3
+2025-08-23 18:16:00,873 - backtrader_system.strategies.elite_ml_strategy - INFO - 🧠 Training ML models for 20 symbols...
+2025-08-23 18:16:00,900 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for AAPL: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:16:00,905 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for AAPL: 0 < 200
+2025-08-23 18:16:00,932 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for MSFT: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:16:00,936 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for MSFT: 0 < 200
+2025-08-23 18:16:00,964 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for GOOGL: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:16:00,968 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for GOOGL: 0 < 200
+2025-08-23 18:16:00,995 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for AMZN: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:16:00,999 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for AMZN: 0 < 200
+2025-08-23 18:16:01,027 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for META: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:16:01,031 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for META: 0 < 200
+2025-08-23 18:16:01,058 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for TSLA: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:16:01,062 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for TSLA: 0 < 200
+2025-08-23 18:16:01,089 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for NVDA: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:16:01,093 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for NVDA: 0 < 200
+2025-08-23 18:16:01,120 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for ORCL: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:16:01,124 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for ORCL: 0 < 200
+2025-08-23 18:16:01,151 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for JPM: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:16:01,156 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for JPM: 0 < 200
+2025-08-23 18:16:01,183 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for BAC: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:16:01,187 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for BAC: 0 < 200
+2025-08-23 18:16:01,188 - backtrader_system.strategies.elite_ml_strategy - WARNING - ⚠️ Only trained 0 models, need at least 3
+2025-08-23 18:16:01,188 - backtrader_system.strategies.elite_ml_strategy - INFO - 🧠 Training ML models for 20 symbols...
+2025-08-23 18:16:01,215 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for AAPL: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:16:01,219 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for AAPL: 0 < 200
+2025-08-23 18:16:01,247 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for MSFT: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:16:01,251 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for MSFT: 0 < 200
+2025-08-23 18:16:01,278 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for GOOGL: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:16:01,282 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for GOOGL: 0 < 200
+2025-08-23 18:16:01,309 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for AMZN: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:16:01,313 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for AMZN: 0 < 200
+2025-08-23 18:16:01,341 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for META: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:16:01,344 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for META: 0 < 200
+2025-08-23 18:16:01,372 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for TSLA: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:16:01,375 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for TSLA: 0 < 200
+2025-08-23 18:16:01,403 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for NVDA: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:16:01,407 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for NVDA: 0 < 200
+2025-08-23 18:16:01,434 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for ORCL: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:16:01,438 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for ORCL: 0 < 200
+2025-08-23 18:16:01,465 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for JPM: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:16:01,470 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for JPM: 0 < 200
+2025-08-23 18:16:01,498 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for BAC: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:16:01,501 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for BAC: 0 < 200
+2025-08-23 18:16:01,502 - backtrader_system.strategies.elite_ml_strategy - WARNING - ⚠️ Only trained 0 models, need at least 3
+2025-08-23 18:16:01,502 - backtrader_system.strategies.elite_ml_strategy - INFO - 🧠 Training ML models for 20 symbols...
+2025-08-23 18:16:01,530 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for AAPL: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:16:01,534 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for AAPL: 0 < 200
+2025-08-23 18:16:01,561 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for MSFT: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:16:01,565 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for MSFT: 0 < 200
+2025-08-23 18:16:01,592 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for GOOGL: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:16:01,596 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for GOOGL: 0 < 200
+2025-08-23 18:16:01,624 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for AMZN: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:16:01,627 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for AMZN: 0 < 200
+2025-08-23 18:16:01,656 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for META: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:16:01,660 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for META: 0 < 200
+2025-08-23 18:16:01,688 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for TSLA: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:16:01,692 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for TSLA: 0 < 200
+2025-08-23 18:16:01,720 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for NVDA: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:16:01,724 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for NVDA: 0 < 200
+2025-08-23 18:16:01,751 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for ORCL: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:16:01,755 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for ORCL: 0 < 200
+2025-08-23 18:16:01,783 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for JPM: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:16:01,787 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for JPM: 0 < 200
+2025-08-23 18:16:01,814 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for BAC: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:16:01,818 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for BAC: 0 < 200
+2025-08-23 18:16:01,819 - backtrader_system.strategies.elite_ml_strategy - WARNING - ⚠️ Only trained 0 models, need at least 3
+2025-08-23 18:16:01,819 - backtrader_system.strategies.elite_ml_strategy - INFO - 🧠 Training ML models for 20 symbols...
+2025-08-23 18:16:01,846 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for AAPL: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:16:01,851 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for AAPL: 0 < 200
+2025-08-23 18:16:01,878 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for MSFT: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:16:01,882 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for MSFT: 0 < 200
+2025-08-23 18:16:01,910 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for GOOGL: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:16:01,914 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for GOOGL: 0 < 200
+2025-08-23 18:16:01,942 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for AMZN: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:16:01,946 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for AMZN: 0 < 200
+2025-08-23 18:16:01,973 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for META: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:16:01,977 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for META: 0 < 200
+2025-08-23 18:16:02,004 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for TSLA: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:16:02,009 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for TSLA: 0 < 200
+2025-08-23 18:16:02,037 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for NVDA: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:16:02,041 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for NVDA: 0 < 200
+2025-08-23 18:16:02,069 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for ORCL: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:16:02,073 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for ORCL: 0 < 200
+2025-08-23 18:16:02,101 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for JPM: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:16:02,106 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for JPM: 0 < 200
+2025-08-23 18:16:02,133 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for BAC: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:16:02,137 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for BAC: 0 < 200
+2025-08-23 18:16:02,137 - backtrader_system.strategies.elite_ml_strategy - WARNING - ⚠️ Only trained 0 models, need at least 3
+2025-08-23 18:16:02,138 - backtrader_system.strategies.elite_ml_strategy - INFO - 🧠 Training ML models for 20 symbols...
+2025-08-23 18:16:02,166 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for AAPL: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:16:02,170 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for AAPL: 0 < 200
+2025-08-23 18:16:02,198 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for MSFT: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:16:02,203 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for MSFT: 0 < 200
+2025-08-23 18:16:02,231 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for GOOGL: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:16:02,235 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for GOOGL: 0 < 200
+2025-08-23 18:16:02,263 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for AMZN: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:16:02,267 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for AMZN: 0 < 200
+2025-08-23 18:16:02,295 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for META: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:16:02,299 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for META: 0 < 200
+2025-08-23 18:16:02,326 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for TSLA: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:16:02,330 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for TSLA: 0 < 200
+2025-08-23 18:16:02,358 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for NVDA: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:16:02,362 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for NVDA: 0 < 200
+2025-08-23 18:16:02,391 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for ORCL: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:16:02,396 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for ORCL: 0 < 200
+2025-08-23 18:16:02,424 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for JPM: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:16:02,428 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for JPM: 0 < 200
+2025-08-23 18:16:02,456 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for BAC: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:16:02,459 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for BAC: 0 < 200
+2025-08-23 18:16:02,460 - backtrader_system.strategies.elite_ml_strategy - WARNING - ⚠️ Only trained 0 models, need at least 3
+2025-08-23 18:16:02,460 - backtrader_system.strategies.elite_ml_strategy - INFO - 🧠 Training ML models for 20 symbols...
+2025-08-23 18:16:02,488 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for AAPL: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:16:02,492 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for AAPL: 0 < 200
+2025-08-23 18:16:02,519 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for MSFT: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:16:02,523 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for MSFT: 0 < 200
+2025-08-23 18:16:02,550 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for GOOGL: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:16:02,554 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for GOOGL: 0 < 200
+2025-08-23 18:16:02,582 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for AMZN: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:16:02,585 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for AMZN: 0 < 200
+2025-08-23 18:16:02,614 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for META: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:16:02,618 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for META: 0 < 200
+2025-08-23 18:16:02,645 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for TSLA: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:16:02,649 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for TSLA: 0 < 200
+2025-08-23 18:16:02,677 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for NVDA: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:16:02,681 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for NVDA: 0 < 200
+2025-08-23 18:16:02,708 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for ORCL: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:16:02,712 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for ORCL: 0 < 200
+2025-08-23 18:16:02,739 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for JPM: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:16:02,743 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for JPM: 0 < 200
+2025-08-23 18:16:02,771 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for BAC: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:16:02,774 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for BAC: 0 < 200
+2025-08-23 18:16:02,774 - backtrader_system.strategies.elite_ml_strategy - WARNING - ⚠️ Only trained 0 models, need at least 3
+2025-08-23 18:16:02,775 - backtrader_system.strategies.elite_ml_strategy - INFO - 🧠 Training ML models for 20 symbols...
+2025-08-23 18:16:02,803 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for AAPL: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:16:02,806 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for AAPL: 0 < 200
+2025-08-23 18:16:02,833 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for MSFT: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:16:02,838 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for MSFT: 0 < 200
+2025-08-23 18:16:02,866 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for GOOGL: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:16:02,871 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for GOOGL: 0 < 200
+2025-08-23 18:16:02,898 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for AMZN: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:16:02,902 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for AMZN: 0 < 200
+2025-08-23 18:16:02,930 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for META: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:16:02,934 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for META: 0 < 200
+2025-08-23 18:16:02,962 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for TSLA: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:16:02,966 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for TSLA: 0 < 200
+2025-08-23 18:16:02,994 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for NVDA: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:16:02,998 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for NVDA: 0 < 200
+2025-08-23 18:16:03,026 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for ORCL: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:16:03,030 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for ORCL: 0 < 200
+2025-08-23 18:16:03,059 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for JPM: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:16:03,063 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for JPM: 0 < 200
+2025-08-23 18:16:03,091 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for BAC: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:16:03,095 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for BAC: 0 < 200
+2025-08-23 18:16:03,095 - backtrader_system.strategies.elite_ml_strategy - WARNING - ⚠️ Only trained 0 models, need at least 3
+2025-08-23 18:16:03,096 - backtrader_system.strategies.elite_ml_strategy - INFO - 🧠 Training ML models for 20 symbols...
+2025-08-23 18:16:03,124 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for AAPL: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:16:03,128 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for AAPL: 0 < 200
+2025-08-23 18:16:03,157 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for MSFT: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:16:03,161 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for MSFT: 0 < 200
+2025-08-23 18:16:03,189 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for GOOGL: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:16:03,194 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for GOOGL: 0 < 200
+2025-08-23 18:16:03,221 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for AMZN: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:16:03,225 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for AMZN: 0 < 200
+2025-08-23 18:16:03,252 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for META: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:16:03,257 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for META: 0 < 200
+2025-08-23 18:16:03,284 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for TSLA: module 'talib' has no attribute 'KELTNER'
+2025-08-23 18:16:03,288 - backtrader_system.strategies.enhanced_ml_signal_generator - WARNING - Insufficient data for TSLA: 0 < 200
+2025-08-23 18:16:03,315 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for NVDA: module 'talib' has no attribute 'KELTNER'

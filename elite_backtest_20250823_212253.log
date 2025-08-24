@@ -1,0 +1,305 @@
+2025-08-23 21:22:53,023 - __main__ - INFO - ============================================================
+2025-08-23 21:22:53,023 - __main__ - INFO - 🚀 ELITE ML TRADING SYSTEM - MAXIMUM ACCURACY & PROFIT
+2025-08-23 21:22:53,023 - __main__ - INFO - ============================================================
+2025-08-23 21:22:53,023 - __main__ - INFO - 🎯 Elite Features:
+2025-08-23 21:22:53,023 - __main__ - INFO -    • XGBoost + LightGBM + Neural Network Ensemble
+2025-08-23 21:22:53,023 - __main__ - INFO -    • 100+ Advanced Technical Features
+2025-08-23 21:22:53,023 - __main__ - INFO -    • Multi-horizon Predictions (1d, 3d, 5d, 10d, 20d)
+2025-08-23 21:22:53,024 - __main__ - INFO -    • Risk-adjusted Kelly Position Sizing
+2025-08-23 21:22:53,024 - __main__ - INFO -    • Regime-aware Trading
+2025-08-23 21:22:53,024 - __main__ - INFO -    • Advanced Risk Management
+2025-08-23 21:22:53,024 - __main__ - INFO -    • Market Context Integration (VIX, SPY)
+2025-08-23 21:22:53,024 - __main__ - INFO - ============================================================
+2025-08-23 21:22:53,026 - __main__ - INFO - 📊 Data Periods:
+2025-08-23 21:22:53,026 - __main__ - INFO -    Training: 2022-08-22 to 2024-08-22
+2025-08-23 21:22:53,026 - __main__ - INFO -    Testing: 2024-08-22 to 2025-08-22
+2025-08-23 21:22:53,026 - __main__ - INFO - 📈 Downloading data for 20 symbols...
+2025-08-23 21:22:53,026 - __main__ - INFO -    Downloading AAPL...
+2025-08-23 21:22:53,348 - __main__ - INFO -    ✅ AAPL: 753 bars
+2025-08-23 21:22:53,348 - __main__ - INFO -    Downloading MSFT...
+2025-08-23 21:22:53,476 - __main__ - INFO -    ✅ MSFT: 753 bars
+2025-08-23 21:22:53,476 - __main__ - INFO -    Downloading GOOGL...
+2025-08-23 21:22:53,553 - __main__ - INFO -    ✅ GOOGL: 753 bars
+2025-08-23 21:22:53,553 - __main__ - INFO -    Downloading AMZN...
+2025-08-23 21:22:53,620 - __main__ - INFO -    ✅ AMZN: 753 bars
+2025-08-23 21:22:53,620 - __main__ - INFO -    Downloading META...
+2025-08-23 21:22:53,686 - __main__ - INFO -    ✅ META: 753 bars
+2025-08-23 21:22:53,687 - __main__ - INFO -    Downloading TSLA...
+2025-08-23 21:22:53,758 - __main__ - INFO -    ✅ TSLA: 753 bars
+2025-08-23 21:22:53,759 - __main__ - INFO -    Downloading NVDA...
+2025-08-23 21:22:53,862 - __main__ - INFO -    ✅ NVDA: 753 bars
+2025-08-23 21:22:53,862 - __main__ - INFO -    Downloading ORCL...
+2025-08-23 21:22:53,954 - __main__ - INFO -    ✅ ORCL: 753 bars
+2025-08-23 21:22:53,954 - __main__ - INFO -    Downloading JPM...
+2025-08-23 21:22:54,089 - __main__ - INFO -    ✅ JPM: 753 bars
+2025-08-23 21:22:54,090 - __main__ - INFO -    Downloading BAC...
+2025-08-23 21:22:54,202 - __main__ - INFO -    ✅ BAC: 753 bars
+2025-08-23 21:22:54,202 - __main__ - INFO -    Downloading V...
+2025-08-23 21:22:54,288 - __main__ - INFO -    ✅ V: 753 bars
+2025-08-23 21:22:54,288 - __main__ - INFO -    Downloading MA...
+2025-08-23 21:22:54,376 - __main__ - INFO -    ✅ MA: 753 bars
+2025-08-23 21:22:54,376 - __main__ - INFO -    Downloading UNH...
+2025-08-23 21:22:54,483 - __main__ - INFO -    ✅ UNH: 753 bars
+2025-08-23 21:22:54,483 - __main__ - INFO -    Downloading JNJ...
+2025-08-23 21:22:54,632 - __main__ - INFO -    ✅ JNJ: 753 bars
+2025-08-23 21:22:54,632 - __main__ - INFO -    Downloading PG...
+2025-08-23 21:22:54,826 - __main__ - INFO -    ✅ PG: 753 bars
+2025-08-23 21:22:54,826 - __main__ - INFO -    Downloading KO...
+2025-08-23 21:22:55,092 - __main__ - INFO -    ✅ KO: 753 bars
+2025-08-23 21:22:55,093 - __main__ - INFO -    Downloading XOM...
+2025-08-23 21:22:55,306 - __main__ - INFO -    ✅ XOM: 753 bars
+2025-08-23 21:22:55,306 - __main__ - INFO -    Downloading HD...
+2025-08-23 21:22:55,455 - __main__ - INFO -    ✅ HD: 753 bars
+2025-08-23 21:22:55,455 - __main__ - INFO -    Downloading DIS...
+2025-08-23 21:22:55,649 - __main__ - INFO -    ✅ DIS: 753 bars
+2025-08-23 21:22:55,650 - __main__ - INFO -    Downloading CRM...
+2025-08-23 21:22:55,724 - __main__ - INFO -    ✅ CRM: 753 bars
+2025-08-23 21:22:55,724 - __main__ - INFO - ✅ Successfully downloaded 20 symbols
+2025-08-23 21:22:55,724 - __main__ - INFO - 🚀 Starting ELITE backtest...
+2025-08-23 21:22:55,724 - __main__ - INFO -    Symbols: 20
+2025-08-23 21:22:55,724 - __main__ - INFO -    Period: 2022-08-22 to 2025-08-22
+2025-08-23 21:22:55,724 - __main__ - INFO -    Capital: $1,000,000
+2025-08-23 21:22:55,724 - __main__ - INFO -    Training Split: 67%
+2025-08-23 21:22:55,731 - __main__ - INFO - ⚙️  Running elite backtest...
+2025-08-23 21:22:56,853 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Market context data loaded (VIX, SPY)
+2025-08-23 21:22:56,853 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - 🚀 Enhanced ML Signal Generator initialized
+2025-08-23 21:22:56,853 - backtrader_system.strategies.elite_ml_strategy - INFO - 🚀 Elite ML Trading Strategy initialized
+2025-08-23 21:22:56,853 - backtrader_system.strategies.elite_ml_strategy - INFO - 📊 Monitoring 20 symbols
+2025-08-23 21:22:56,853 - backtrader_system.strategies.elite_ml_strategy - INFO - 🎯 Signal threshold: 0.15
+2025-08-23 21:22:56,853 - backtrader_system.strategies.elite_ml_strategy - INFO - 💰 Max position size: 15.0%
+2025-08-23 21:22:56,857 - backtrader_system.strategies.elite_ml_strategy - INFO - 🎬 Elite ML Strategy starting...
+2025-08-23 21:22:57,015 - backtrader_system.strategies.elite_ml_strategy - INFO - 🧠 Training ML models for 20 symbols...
+2025-08-23 21:22:57,327 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AAPL
+2025-08-23 21:23:01,487 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Trained ensemble models for AAPL:
+2025-08-23 21:23:01,487 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO -    Strength R²: -0.991, MSE: 0.0914
+2025-08-23 21:23:01,487 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO -    Direction Accuracy: 0.300
+2025-08-23 21:23:01,487 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO -    Features: 89, Samples: 400
+2025-08-23 21:23:01,808 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for MSFT
+2025-08-23 21:23:06,084 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Trained ensemble models for MSFT:
+2025-08-23 21:23:06,084 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO -    Strength R²: -0.294, MSE: 0.0486
+2025-08-23 21:23:06,084 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO -    Direction Accuracy: 0.470
+2025-08-23 21:23:06,084 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO -    Features: 89, Samples: 400
+2025-08-23 21:23:06,406 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for GOOGL
+2025-08-23 21:23:10,675 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Trained ensemble models for GOOGL:
+2025-08-23 21:23:10,675 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO -    Strength R²: -0.238, MSE: 0.0353
+2025-08-23 21:23:10,675 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO -    Direction Accuracy: 0.470
+2025-08-23 21:23:10,675 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO -    Features: 89, Samples: 400
+2025-08-23 21:23:10,995 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AMZN
+2025-08-23 21:23:15,263 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Trained ensemble models for AMZN:
+2025-08-23 21:23:15,263 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO -    Strength R²: -0.011, MSE: 0.0408
+2025-08-23 21:23:15,263 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO -    Direction Accuracy: 0.510
+2025-08-23 21:23:15,263 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO -    Features: 89, Samples: 400
+2025-08-23 21:23:15,586 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for META
+2025-08-23 21:23:19,796 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Trained ensemble models for META:
+2025-08-23 21:23:19,797 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO -    Strength R²: -3.776, MSE: 0.2108
+2025-08-23 21:23:19,797 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO -    Direction Accuracy: 0.510
+2025-08-23 21:23:19,797 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO -    Features: 89, Samples: 400
+2025-08-23 21:23:20,141 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for TSLA
+2025-08-23 21:23:24,136 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Trained ensemble models for TSLA:
+2025-08-23 21:23:24,137 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO -    Strength R²: -0.629, MSE: 0.0618
+2025-08-23 21:23:24,137 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO -    Direction Accuracy: 0.530
+2025-08-23 21:23:24,137 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO -    Features: 89, Samples: 400
+2025-08-23 21:23:24,459 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for NVDA
+2025-08-23 21:23:28,656 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Trained ensemble models for NVDA:
+2025-08-23 21:23:28,656 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO -    Strength R²: -0.485, MSE: 0.0354
+2025-08-23 21:23:28,656 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO -    Direction Accuracy: 0.610
+2025-08-23 21:23:28,656 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO -    Features: 89, Samples: 400
+2025-08-23 21:23:28,977 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for ORCL
+2025-08-23 21:23:33,360 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Trained ensemble models for ORCL:
+2025-08-23 21:23:33,360 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO -    Strength R²: -0.763, MSE: 0.0549
+2025-08-23 21:23:33,360 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO -    Direction Accuracy: 0.490
+2025-08-23 21:23:33,360 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO -    Features: 89, Samples: 400
+2025-08-23 21:23:33,680 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for JPM
+2025-08-23 21:23:37,917 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Trained ensemble models for JPM:
+2025-08-23 21:23:37,917 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO -    Strength R²: -0.500, MSE: 0.0395
+2025-08-23 21:23:37,917 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO -    Direction Accuracy: 0.430
+2025-08-23 21:23:37,917 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO -    Features: 89, Samples: 400
+2025-08-23 21:23:38,238 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for BAC
+2025-08-23 21:23:42,557 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Trained ensemble models for BAC:
+2025-08-23 21:23:42,557 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO -    Strength R²: -0.737, MSE: 0.0582
+2025-08-23 21:23:42,557 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO -    Direction Accuracy: 0.260
+2025-08-23 21:23:42,557 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO -    Features: 89, Samples: 400
+2025-08-23 21:23:42,558 - backtrader_system.strategies.elite_ml_strategy - INFO - ✅ Successfully trained 10 ML models
+2025-08-23 21:23:42,880 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AAPL
+2025-08-23 21:23:43,203 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for MSFT
+2025-08-23 21:23:43,525 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for GOOGL
+2025-08-23 21:23:43,848 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AMZN
+2025-08-23 21:23:44,171 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for META
+2025-08-23 21:23:44,493 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for TSLA
+2025-08-23 21:23:44,816 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for NVDA
+2025-08-23 21:23:45,138 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for ORCL
+2025-08-23 21:23:45,464 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for JPM
+2025-08-23 21:23:45,787 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for BAC
+2025-08-23 21:23:45,795 - backtrader_system.strategies.elite_ml_strategy - INFO - 💼 BUY 238 META @ $502.50 - ML Signal - Conf: 1.00
+2025-08-23 21:23:45,795 - backtrader_system.strategies.elite_ml_strategy - INFO - 💼 SELL 3091 BAC @ $38.82 - ML Signal - Conf: 0.99
+2025-08-23 21:23:45,795 - backtrader_system.strategies.elite_ml_strategy - INFO - 💼 BUY 606 TSLA @ $197.88 - ML Signal - Conf: 0.91
+2025-08-23 21:23:45,795 - backtrader_system.strategies.elite_ml_strategy - INFO - 📈 Entered 3 new positions on 2024-06-28
+2025-08-23 21:23:45,797 - backtrader_system.strategies.elite_ml_strategy - INFO - 💼 CLOSE 606 TSLA @ $251.52 - Profit target: 25.0%
+2025-08-23 21:23:46,119 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AAPL
+2025-08-23 21:23:46,445 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for MSFT
+2025-08-23 21:23:46,769 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for GOOGL
+2025-08-23 21:23:47,095 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AMZN
+2025-08-23 21:23:47,421 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for TSLA
+2025-08-23 21:23:47,745 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for NVDA
+2025-08-23 21:23:48,068 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for ORCL
+2025-08-23 21:23:48,394 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for JPM
+2025-08-23 21:23:48,403 - backtrader_system.strategies.elite_ml_strategy - INFO - 💼 BUY 616 JPM @ $200.66 - ML Signal - Conf: 0.91
+2025-08-23 21:23:48,403 - backtrader_system.strategies.elite_ml_strategy - INFO - 💼 SELL 658 GOOGL @ $188.12 - ML Signal - Conf: 0.94
+2025-08-23 21:23:48,403 - backtrader_system.strategies.elite_ml_strategy - INFO - 📈 Entered 2 new positions on 2024-07-08
+2025-08-23 21:23:48,406 - backtrader_system.strategies.elite_ml_strategy - INFO - 💼 CLOSE 3091 BAC @ $43.07 - Stop loss: 8.0%
+2025-08-23 21:23:48,406 - backtrader_system.strategies.elite_ml_strategy - INFO - 💼 CLOSE 238 META @ $460.41 - Stop loss: 8.0%
+2025-08-23 21:23:48,735 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AAPL
+2025-08-23 21:23:49,066 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for MSFT
+2025-08-23 21:23:49,398 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AMZN
+2025-08-23 21:23:49,762 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for META
+2025-08-23 21:23:50,094 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for TSLA
+2025-08-23 21:23:50,427 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for NVDA
+2025-08-23 21:23:50,758 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for ORCL
+2025-08-23 21:23:51,089 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for BAC
+2025-08-23 21:23:51,097 - backtrader_system.strategies.elite_ml_strategy - INFO - 💼 SELL 2958 BAC @ $41.29 - ML Signal - Conf: 0.92
+2025-08-23 21:23:51,097 - backtrader_system.strategies.elite_ml_strategy - INFO - 💼 SELL 548 AAPL @ $222.66 - ML Signal - Conf: 0.98
+2025-08-23 21:23:51,097 - backtrader_system.strategies.elite_ml_strategy - INFO - 💼 BUY 669 AMZN @ $182.55 - ML Signal - Conf: 0.93
+2025-08-23 21:23:51,097 - backtrader_system.strategies.elite_ml_strategy - INFO - 📈 Entered 3 new positions on 2024-07-22
+2025-08-23 21:23:51,101 - backtrader_system.strategies.elite_ml_strategy - INFO - 💼 CLOSE 669 AMZN @ $167.90 - Stop loss: 8.0%
+2025-08-23 21:23:51,115 - backtrader_system.strategies.elite_ml_strategy - INFO - 💼 CLOSE 2958 BAC @ $40.15 - Trailing stop: 12.0%
+2025-08-23 21:23:51,118 - backtrader_system.strategies.elite_ml_strategy - INFO - 💼 CLOSE 548 AAPL @ $231.92 - Trailing stop: 12.0%
+2025-08-23 21:23:51,119 - backtrader_system.strategies.elite_ml_strategy - INFO - 💼 CLOSE 658 GOOGL @ $166.41 - Trailing stop: 12.0%
+2025-08-23 21:23:51,489 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AAPL
+2025-08-23 21:23:51,866 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for MSFT
+2025-08-23 21:23:52,237 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for GOOGL
+2025-08-23 21:23:52,606 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AMZN
+2025-08-23 21:23:52,975 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for META
+2025-08-23 21:23:53,346 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for TSLA
+2025-08-23 21:23:53,717 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for NVDA
+2025-08-23 21:23:54,089 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for ORCL
+2025-08-23 21:23:54,458 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for BAC
+2025-08-23 21:23:54,467 - backtrader_system.strategies.elite_ml_strategy - INFO - 💼 BUY 207 META @ $583.34 - ML Signal - Conf: 0.99
+2025-08-23 21:23:54,467 - backtrader_system.strategies.elite_ml_strategy - INFO - 💼 BUY 669 AMZN @ $180.80 - ML Signal - Conf: 0.97
+2025-08-23 21:23:54,467 - backtrader_system.strategies.elite_ml_strategy - INFO - 💼 BUY 565 GOOGL @ $162.41 - ML Signal - Conf: 0.64
+2025-08-23 21:23:54,467 - backtrader_system.strategies.elite_ml_strategy - INFO - 📈 Entered 3 new positions on 2024-10-07
+2025-08-23 21:23:54,484 - backtrader_system.strategies.elite_ml_strategy - INFO - 💼 CLOSE 669 AMZN @ $227.03 - Profit target: 25.0%
+2025-08-23 21:23:54,494 - backtrader_system.strategies.elite_ml_strategy - INFO - 💼 CLOSE 616 JPM @ $251.50 - Profit target: 25.0%
+2025-08-23 21:23:54,899 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AAPL
+2025-08-23 21:23:55,303 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for MSFT
+2025-08-23 21:23:55,707 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AMZN
+2025-08-23 21:23:56,110 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for TSLA
+2025-08-23 21:23:56,515 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for NVDA
+2025-08-23 21:23:56,921 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for ORCL
+2025-08-23 21:23:57,326 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for JPM
+2025-08-23 21:23:57,732 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for BAC
+2025-08-23 21:23:57,741 - backtrader_system.strategies.elite_ml_strategy - INFO - 💼 SELL 308 TSLA @ $424.07 - ML Signal - Conf: 0.99
+2025-08-23 21:23:57,741 - backtrader_system.strategies.elite_ml_strategy - INFO - 💼 SELL 503 JPM @ $260.17 - ML Signal - Conf: 0.86
+2025-08-23 21:23:57,741 - backtrader_system.strategies.elite_ml_strategy - INFO - 💼 SELL 2840 BAC @ $46.10 - ML Signal - Conf: 0.97
+2025-08-23 21:23:57,741 - backtrader_system.strategies.elite_ml_strategy - INFO - 📈 Entered 3 new positions on 2025-01-21
+2025-08-23 21:23:57,745 - backtrader_system.strategies.elite_ml_strategy - INFO - 💼 CLOSE 565 GOOGL @ $203.54 - Profit target: 25.0%
+2025-08-23 21:23:57,749 - backtrader_system.strategies.elite_ml_strategy - INFO - 💼 CLOSE 207 META @ $735.45 - Profit target: 25.0%
+2025-08-23 21:23:57,752 - backtrader_system.strategies.elite_ml_strategy - INFO - 💼 CLOSE 308 TSLA @ $302.80 - Profit target: 25.0%
+2025-08-23 21:23:58,171 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AAPL
+2025-08-23 21:23:58,591 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for MSFT
+2025-08-23 21:23:59,011 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for GOOGL
+2025-08-23 21:23:59,434 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AMZN
+2025-08-23 21:23:59,854 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for META
+2025-08-23 21:24:00,276 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for TSLA
+2025-08-23 21:24:00,696 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for NVDA
+2025-08-23 21:24:01,116 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for ORCL
+2025-08-23 21:24:01,125 - backtrader_system.strategies.elite_ml_strategy - INFO - 💼 BUY 832 GOOGL @ $166.62 - ML Signal - Conf: 1.00
+2025-08-23 21:24:01,125 - backtrader_system.strategies.elite_ml_strategy - INFO - 💼 SELL 584 AAPL @ $237.45 - ML Signal - Conf: 0.97
+2025-08-23 21:24:01,125 - backtrader_system.strategies.elite_ml_strategy - INFO - 💼 BUY 676 AMZN @ $205.02 - ML Signal - Conf: 0.98
+2025-08-23 21:24:01,125 - backtrader_system.strategies.elite_ml_strategy - INFO - 📈 Entered 3 new positions on 2025-03-03
+2025-08-23 21:24:01,135 - backtrader_system.strategies.elite_ml_strategy - INFO - 💼 CLOSE 832 GOOGL @ $150.54 - Stop loss: 8.0%
+2025-08-23 21:24:01,135 - backtrader_system.strategies.elite_ml_strategy - INFO - 💼 CLOSE 676 AMZN @ $178.41 - Stop loss: 8.0%
+2025-08-23 21:24:01,135 - backtrader_system.strategies.elite_ml_strategy - INFO - 💼 CLOSE 2840 BAC @ $34.19 - Profit target: 25.0%
+2025-08-23 21:24:01,570 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for MSFT
+2025-08-23 21:24:02,007 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for GOOGL
+2025-08-23 21:24:02,442 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AMZN
+2025-08-23 21:24:02,877 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for META
+2025-08-23 21:24:03,311 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for TSLA
+2025-08-23 21:24:03,745 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for NVDA
+2025-08-23 21:24:04,179 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for ORCL
+2025-08-23 21:24:04,615 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for BAC
+2025-08-23 21:24:04,624 - backtrader_system.strategies.elite_ml_strategy - INFO - 💼 SELL 4079 BAC @ $35.37 - ML Signal - Conf: 0.96
+2025-08-23 21:24:04,624 - backtrader_system.strategies.elite_ml_strategy - INFO - 💼 BUY 984 GOOGL @ $146.57 - ML Signal - Conf: 0.98
+2025-08-23 21:24:04,624 - backtrader_system.strategies.elite_ml_strategy - INFO - 💼 BUY 823 AMZN @ $175.26 - ML Signal - Conf: 0.94
+2025-08-23 21:24:04,624 - backtrader_system.strategies.elite_ml_strategy - INFO - 📈 Entered 3 new positions on 2025-04-07
+2025-08-23 21:24:04,625 - backtrader_system.strategies.elite_ml_strategy - INFO - 💼 CLOSE 584 AAPL @ $172.00 - Profit target: 25.0%
+2025-08-23 21:24:04,627 - backtrader_system.strategies.elite_ml_strategy - INFO - 💼 CLOSE 503 JPM @ $235.07 - Trailing stop: 12.0%
+2025-08-23 21:24:04,629 - backtrader_system.strategies.elite_ml_strategy - INFO - 💼 CLOSE 823 AMZN @ $167.32 - Trailing stop: 12.0%
+2025-08-23 21:24:04,630 - backtrader_system.strategies.elite_ml_strategy - INFO - 💼 CLOSE 4079 BAC @ $38.52 - Stop loss: 8.0%
+2025-08-23 21:24:05,071 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AAPL
+2025-08-23 21:24:05,515 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for MSFT
+2025-08-23 21:24:05,959 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AMZN
+2025-08-23 21:24:06,402 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for META
+2025-08-23 21:24:06,846 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for TSLA
+2025-08-23 21:24:07,290 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for NVDA
+2025-08-23 21:24:07,733 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for ORCL
+2025-08-23 21:24:08,179 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for JPM
+2025-08-23 21:24:08,624 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for BAC
+2025-08-23 21:24:09,077 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AAPL
+2025-08-23 21:24:09,523 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for MSFT
+2025-08-23 21:24:09,970 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AMZN
+2025-08-23 21:24:10,416 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for META
+2025-08-23 21:24:10,861 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for TSLA
+2025-08-23 21:24:11,307 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for NVDA
+2025-08-23 21:24:11,753 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for ORCL
+2025-08-23 21:24:12,232 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for JPM
+2025-08-23 21:24:12,678 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for BAC
+2025-08-23 21:24:12,687 - backtrader_system.strategies.elite_ml_strategy - INFO - 💼 SELL 310 AAPL @ $198.40 - ML Signal - Conf: 0.61
+2025-08-23 21:24:12,687 - backtrader_system.strategies.elite_ml_strategy - INFO - 📈 Entered 1 new positions on 2025-05-05
+2025-08-23 21:24:13,142 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for MSFT
+2025-08-23 21:24:13,594 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AMZN
+2025-08-23 21:24:14,045 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for META
+2025-08-23 21:24:14,495 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for TSLA
+2025-08-23 21:24:14,945 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for NVDA
+2025-08-23 21:24:15,394 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for ORCL
+2025-08-23 21:24:15,845 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for JPM
+2025-08-23 21:24:16,293 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for BAC
+2025-08-23 21:24:16,303 - backtrader_system.strategies.elite_ml_strategy - INFO - 💼 SELL 2439 BAC @ $43.11 - ML Signal - Conf: 0.62
+2025-08-23 21:24:16,303 - backtrader_system.strategies.elite_ml_strategy - INFO - 💼 SELL 444 TSLA @ $318.38 - ML Signal - Conf: 0.99
+2025-08-23 21:24:16,303 - backtrader_system.strategies.elite_ml_strategy - INFO - 💼 SELL 902 ORCL @ $156.89 - ML Signal - Conf: 0.93
+2025-08-23 21:24:16,303 - backtrader_system.strategies.elite_ml_strategy - INFO - 📈 Entered 3 new positions on 2025-05-12
+2025-08-23 21:24:16,305 - backtrader_system.strategies.elite_ml_strategy - INFO - 💼 CLOSE 444 TSLA @ $347.68 - Stop loss: 8.0%
+2025-08-23 21:24:16,311 - backtrader_system.strategies.elite_ml_strategy - INFO - 💼 CLOSE 902 ORCL @ $170.78 - Stop loss: 8.0%
+2025-08-23 21:24:16,316 - backtrader_system.strategies.elite_ml_strategy - INFO - 💼 CLOSE 2439 BAC @ $46.66 - Stop loss: 8.0%
+2025-08-23 21:24:16,783 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for MSFT
+2025-08-23 21:24:17,252 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AMZN
+2025-08-23 21:24:17,719 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for META
+2025-08-23 21:24:18,187 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for TSLA
+2025-08-23 21:24:18,655 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for NVDA
+2025-08-23 21:24:19,125 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for ORCL
+2025-08-23 21:24:19,591 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for JPM
+2025-08-23 21:24:20,107 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for BAC
+2025-08-23 21:24:20,117 - backtrader_system.strategies.elite_ml_strategy - INFO - 💼 SELL 2959 BAC @ $47.32 - ML Signal - Conf: 0.95
+2025-08-23 21:24:20,117 - backtrader_system.strategies.elite_ml_strategy - INFO - 💼 BUY 189 META @ $738.09 - ML Signal - Conf: 0.97
+2025-08-23 21:24:20,117 - backtrader_system.strategies.elite_ml_strategy - INFO - 💼 SELL 641 ORCL @ $218.17 - ML Signal - Conf: 0.98
+2025-08-23 21:24:20,117 - backtrader_system.strategies.elite_ml_strategy - INFO - 📈 Entered 3 new positions on 2025-06-30
+2025-08-23 21:24:20,119 - backtrader_system.strategies.elite_ml_strategy - INFO - 💼 CLOSE 641 ORCL @ $236.82 - Stop loss: 8.0%
+2025-08-23 21:24:20,123 - backtrader_system.strategies.elite_ml_strategy - INFO - 💼 CLOSE 984 GOOGL @ $183.58 - Profit target: 25.0%
+2025-08-23 21:24:20,129 - backtrader_system.strategies.elite_ml_strategy - INFO - 💼 CLOSE 310 AAPL @ $219.78 - Stop loss: 8.0%
+2025-08-23 21:24:20,617 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AAPL
+2025-08-23 21:24:21,104 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for MSFT
+2025-08-23 21:24:21,589 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for GOOGL
+2025-08-23 21:24:22,077 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for AMZN
+2025-08-23 21:24:22,563 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for TSLA
+2025-08-23 21:24:23,048 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for NVDA
+2025-08-23 21:24:23,538 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for ORCL
+2025-08-23 21:24:24,024 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Calculated 89 advanced features for JPM
+2025-08-23 21:24:24,034 - backtrader_system.strategies.elite_ml_strategy - INFO - 💼 SELL 617 AAPL @ $227.18 - ML Signal - Conf: 0.98
+2025-08-23 21:24:24,034 - backtrader_system.strategies.elite_ml_strategy - INFO - 💼 SELL 554 ORCL @ $252.68 - ML Signal - Conf: 0.99
+2025-08-23 21:24:24,034 - backtrader_system.strategies.elite_ml_strategy - INFO - 💼 SELL 413 TSLA @ $339.03 - ML Signal - Conf: 1.00
+2025-08-23 21:24:24,035 - backtrader_system.strategies.elite_ml_strategy - INFO - 📈 Entered 3 new positions on 2025-08-11
+2025-08-23 21:24:24,039 - backtrader_system.strategies.elite_ml_strategy - INFO - 🏁 Elite ML Strategy stopping...
+2025-08-23 21:24:24,039 - backtrader_system.strategies.elite_ml_strategy - INFO - 📊 Final Performance:
+2025-08-23 21:24:24,039 - backtrader_system.strategies.elite_ml_strategy - INFO -    Final Value: $1,180,002.00
+2025-08-23 21:24:24,039 - backtrader_system.strategies.elite_ml_strategy - INFO -    Total Trades: 55
+2025-08-23 21:24:24,039 - backtrader_system.strategies.elite_ml_strategy - INFO -    Win Rate: 48.0%
+2025-08-23 21:24:24,039 - backtrader_system.strategies.elite_ml_strategy - INFO -    Trades Won: 12, Lost: 13
+2025-08-23 21:24:24,039 - backtrader_system.strategies.elite_ml_strategy - INFO -    Profit Factor: 2.30
+2025-08-23 21:24:24,039 - backtrader_system.strategies.elite_ml_strategy - INFO - 🧠 ML Models Summary:
+2025-08-23 21:24:24,039 - backtrader_system.strategies.elite_ml_strategy - INFO -    Models Trained: 10
+2025-08-23 21:24:24,039 - __main__ - INFO - ✅ Elite backtest completed!
+2025-08-23 21:24:24,039 - __main__ - INFO - 📊 Final Portfolio Value: $1,180,002
+2025-08-23 21:24:24,040 - __main__ - INFO - 📈 Total Return: 18.00%
+2025-08-23 21:24:24,043 - __main__ - INFO - 📋 Trade blotter saved: elite_results/elite_trade_blotter_20250823_212424.csv
+2025-08-23 21:24:24,044 - __main__ - INFO - 📈 Equity curve saved: elite_results/elite_equity_curve_20250823_212424.csv
+2025-08-23 21:24:24,045 - __main__ - INFO - 🎯 Signals history saved: elite_results/elite_signals_20250823_212424.csv
+2025-08-23 21:24:24,045 - __main__ - INFO - 📊 Performance report: elite_results/elite_performance_report_20250823_212424.json

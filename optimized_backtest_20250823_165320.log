@@ -1,0 +1,310 @@
+2025-08-23 16:53:20,330 - __main__ - INFO - ==================================================
+2025-08-23 16:53:20,331 - __main__ - INFO - OPTIMIZED BACKTRADER ML SYSTEM
+2025-08-23 16:53:20,331 - __main__ - INFO - ==================================================
+2025-08-23 16:53:20,331 - __main__ - INFO - 🎯 Key Improvements:
+2025-08-23 16:53:20,331 - __main__ - INFO -    • Conservative Kelly sizing (12% max position)
+2025-08-23 16:53:20,331 - __main__ - INFO -    • 8% stop-loss protection
+2025-08-23 16:53:20,331 - __main__ - INFO -    • 25% portfolio heat limit
+2025-08-23 16:53:20,331 - __main__ - INFO -    • Higher signal threshold (0.35)
+2025-08-23 16:53:20,331 - __main__ - INFO -    • Minimum 3-day hold periods
+2025-08-23 16:53:20,331 - __main__ - INFO -    • Maximum 8 trades per day
+2025-08-23 16:53:20,331 - __main__ - INFO - ==================================================
+2025-08-23 16:53:20,331 - __main__ - INFO - 📊 Downloading data for 20 symbols...
+2025-08-23 16:53:20,331 - __main__ - INFO -    Downloading AAPL...
+2025-08-23 16:53:20,614 - __main__ - INFO -    ✅ AAPL: 753 bars
+2025-08-23 16:53:20,614 - __main__ - INFO -    Downloading MSFT...
+2025-08-23 16:53:20,752 - __main__ - INFO -    ✅ MSFT: 753 bars
+2025-08-23 16:53:20,753 - __main__ - INFO -    Downloading GOOGL...
+2025-08-23 16:53:20,829 - __main__ - INFO -    ✅ GOOGL: 753 bars
+2025-08-23 16:53:20,829 - __main__ - INFO -    Downloading AMZN...
+2025-08-23 16:53:20,904 - __main__ - INFO -    ✅ AMZN: 753 bars
+2025-08-23 16:53:20,904 - __main__ - INFO -    Downloading META...
+2025-08-23 16:53:20,973 - __main__ - INFO -    ✅ META: 753 bars
+2025-08-23 16:53:20,973 - __main__ - INFO -    Downloading TSLA...
+2025-08-23 16:53:21,038 - __main__ - INFO -    ✅ TSLA: 753 bars
+2025-08-23 16:53:21,038 - __main__ - INFO -    Downloading NVDA...
+2025-08-23 16:53:21,130 - __main__ - INFO -    ✅ NVDA: 753 bars
+2025-08-23 16:53:21,130 - __main__ - INFO -    Downloading ORCL...
+2025-08-23 16:53:21,250 - __main__ - INFO -    ✅ ORCL: 753 bars
+2025-08-23 16:53:21,251 - __main__ - INFO -    Downloading JPM...
+2025-08-23 16:53:21,369 - __main__ - INFO -    ✅ JPM: 753 bars
+2025-08-23 16:53:21,369 - __main__ - INFO -    Downloading BAC...
+2025-08-23 16:53:21,546 - __main__ - INFO -    ✅ BAC: 753 bars
+2025-08-23 16:53:21,546 - __main__ - INFO -    Downloading V...
+2025-08-23 16:53:21,643 - __main__ - INFO -    ✅ V: 753 bars
+2025-08-23 16:53:21,643 - __main__ - INFO -    Downloading MA...
+2025-08-23 16:53:21,738 - __main__ - INFO -    ✅ MA: 753 bars
+2025-08-23 16:53:21,738 - __main__ - INFO -    Downloading UNH...
+2025-08-23 16:53:21,871 - __main__ - INFO -    ✅ UNH: 753 bars
+2025-08-23 16:53:21,871 - __main__ - INFO -    Downloading JNJ...
+2025-08-23 16:53:22,038 - __main__ - INFO -    ✅ JNJ: 753 bars
+2025-08-23 16:53:22,038 - __main__ - INFO -    Downloading PG...
+2025-08-23 16:53:22,191 - __main__ - INFO -    ✅ PG: 753 bars
+2025-08-23 16:53:22,191 - __main__ - INFO -    Downloading KO...
+2025-08-23 16:53:22,372 - __main__ - INFO -    ✅ KO: 753 bars
+2025-08-23 16:53:22,372 - __main__ - INFO -    Downloading XOM...
+2025-08-23 16:53:22,580 - __main__ - INFO -    ✅ XOM: 753 bars
+2025-08-23 16:53:22,580 - __main__ - INFO -    Downloading HD...
+2025-08-23 16:53:22,713 - __main__ - INFO -    ✅ HD: 753 bars
+2025-08-23 16:53:22,713 - __main__ - INFO -    Downloading DIS...
+2025-08-23 16:53:22,954 - __main__ - INFO -    ✅ DIS: 753 bars
+2025-08-23 16:53:22,954 - __main__ - INFO -    Downloading CRM...
+2025-08-23 16:53:23,108 - __main__ - INFO -    ✅ CRM: 753 bars
+2025-08-23 16:53:23,109 - __main__ - INFO - ✅ Successfully downloaded 20 symbols
+2025-08-23 16:53:23,109 - __main__ - INFO - 🚀 Starting OPTIMIZED backtest...
+2025-08-23 16:53:23,109 - __main__ - INFO -    Symbols: 20
+2025-08-23 16:53:23,109 - __main__ - INFO -    Period: 2022-08-22 to 2025-08-22
+2025-08-23 16:53:23,109 - __main__ - INFO -    Capital: $1,000,000
+2025-08-23 16:53:23,112 - __main__ - INFO - ⚙️  Running optimized backtest...
+2025-08-23 16:53:23,953 - backtrader_system.strategies.optimized_ml_strategy - INFO - OPTIMIZED Strategy initialized with 20 symbols
+2025-08-23 16:53:23,953 - backtrader_system.strategies.optimized_ml_strategy - INFO - Key improvements: Conservative sizing (max 25.0%), Stop loss (8.0%), Higher signal threshold (0.25)
+2025-08-23 16:53:24,264 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2022-11-14: [TRAINING PHASE] Training ML models for 20 symbols
+2025-08-23 16:53:24,428 - backtrader_system.strategies.optimized_ml_strategy - INFO - [TRAINING PHASE] Successfully trained models for 0/20 symbols
+2025-08-23 16:53:24,456 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2022-11-21: [TRAINING PHASE] Training ML models for 20 symbols
+2025-08-23 16:53:24,621 - backtrader_system.strategies.optimized_ml_strategy - INFO - [TRAINING PHASE] Successfully trained models for 0/20 symbols
+2025-08-23 16:53:24,642 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2022-11-28: [TRAINING PHASE] Training ML models for 20 symbols
+2025-08-23 16:53:24,805 - backtrader_system.strategies.optimized_ml_strategy - INFO - [TRAINING PHASE] Successfully trained models for 0/20 symbols
+2025-08-23 16:53:24,833 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2022-12-05: [TRAINING PHASE] Training ML models for 20 symbols
+2025-08-23 16:53:24,997 - backtrader_system.strategies.optimized_ml_strategy - INFO - [TRAINING PHASE] Successfully trained models for 0/20 symbols
+2025-08-23 16:53:25,025 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2022-12-12: [TRAINING PHASE] Training ML models for 20 symbols
+2025-08-23 16:53:25,191 - backtrader_system.strategies.optimized_ml_strategy - INFO - [TRAINING PHASE] Successfully trained models for 0/20 symbols
+2025-08-23 16:53:25,221 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2022-12-19: [TRAINING PHASE] Training ML models for 20 symbols
+2025-08-23 16:53:25,399 - backtrader_system.strategies.optimized_ml_strategy - INFO - [TRAINING PHASE] Successfully trained models for 0/20 symbols
+2025-08-23 16:53:25,429 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2022-12-27: [TRAINING PHASE] Training ML models for 20 symbols
+2025-08-23 16:53:25,603 - backtrader_system.strategies.optimized_ml_strategy - INFO - [TRAINING PHASE] Successfully trained models for 0/20 symbols
+2025-08-23 16:53:25,628 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2023-01-03: [TRAINING PHASE] Training ML models for 20 symbols
+2025-08-23 16:53:25,796 - backtrader_system.strategies.optimized_ml_strategy - INFO - [TRAINING PHASE] Successfully trained models for 0/20 symbols
+2025-08-23 16:53:25,819 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2023-01-09: [TRAINING PHASE] Training ML models for 20 symbols
+2025-08-23 16:53:25,983 - backtrader_system.strategies.optimized_ml_strategy - INFO - [TRAINING PHASE] Successfully trained models for 0/20 symbols
+2025-08-23 16:53:26,014 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2023-01-17: [TRAINING PHASE] Training ML models for 20 symbols
+2025-08-23 16:53:26,181 - backtrader_system.strategies.optimized_ml_strategy - INFO - [TRAINING PHASE] Successfully trained models for 0/20 symbols
+2025-08-23 16:53:26,204 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2023-01-23: [TRAINING PHASE] Training ML models for 20 symbols
+2025-08-23 16:53:26,368 - backtrader_system.strategies.optimized_ml_strategy - INFO - [TRAINING PHASE] Successfully trained models for 0/20 symbols
+2025-08-23 16:53:26,398 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2023-01-30: [TRAINING PHASE] Training ML models for 20 symbols
+2025-08-23 16:53:26,563 - backtrader_system.strategies.optimized_ml_strategy - INFO - [TRAINING PHASE] Successfully trained models for 0/20 symbols
+2025-08-23 16:53:26,595 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2023-02-06: [TRAINING PHASE] Training ML models for 20 symbols
+2025-08-23 16:53:27,860 - backtrader_system.strategies.optimized_ml_strategy - INFO - [TRAINING PHASE] Successfully trained models for 20/20 symbols
+2025-08-23 16:53:27,893 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2023-02-13: [TRAINING PHASE] Training ML models for 20 symbols
+2025-08-23 16:53:29,175 - backtrader_system.strategies.optimized_ml_strategy - INFO - [TRAINING PHASE] Successfully trained models for 20/20 symbols
+2025-08-23 16:53:29,208 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2023-02-21: [TRAINING PHASE] Training ML models for 20 symbols
+2025-08-23 16:53:30,503 - backtrader_system.strategies.optimized_ml_strategy - INFO - [TRAINING PHASE] Successfully trained models for 20/20 symbols
+2025-08-23 16:53:30,531 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2023-02-27: [TRAINING PHASE] Training ML models for 20 symbols
+2025-08-23 16:53:31,848 - backtrader_system.strategies.optimized_ml_strategy - INFO - [TRAINING PHASE] Successfully trained models for 20/20 symbols
+2025-08-23 16:53:31,881 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2023-03-06: [TRAINING PHASE] Training ML models for 20 symbols
+2025-08-23 16:53:33,205 - backtrader_system.strategies.optimized_ml_strategy - INFO - [TRAINING PHASE] Successfully trained models for 20/20 symbols
+2025-08-23 16:53:33,240 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2023-03-13: [TRAINING PHASE] Training ML models for 20 symbols
+2025-08-23 16:53:34,583 - backtrader_system.strategies.optimized_ml_strategy - INFO - [TRAINING PHASE] Successfully trained models for 20/20 symbols
+2025-08-23 16:53:34,619 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2023-03-20: [TRAINING PHASE] Training ML models for 20 symbols
+2025-08-23 16:53:35,975 - backtrader_system.strategies.optimized_ml_strategy - INFO - [TRAINING PHASE] Successfully trained models for 20/20 symbols
+2025-08-23 16:53:36,011 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2023-03-27: [TRAINING PHASE] Training ML models for 20 symbols
+2025-08-23 16:53:37,392 - backtrader_system.strategies.optimized_ml_strategy - INFO - [TRAINING PHASE] Successfully trained models for 20/20 symbols
+2025-08-23 16:53:37,428 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2023-04-03: [TRAINING PHASE] Training ML models for 20 symbols
+2025-08-23 16:53:38,834 - backtrader_system.strategies.optimized_ml_strategy - INFO - [TRAINING PHASE] Successfully trained models for 20/20 symbols
+2025-08-23 16:53:38,864 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2023-04-10: [TRAINING PHASE] Training ML models for 20 symbols
+2025-08-23 16:53:40,279 - backtrader_system.strategies.optimized_ml_strategy - INFO - [TRAINING PHASE] Successfully trained models for 20/20 symbols
+2025-08-23 16:53:40,317 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2023-04-17: [TRAINING PHASE] Training ML models for 20 symbols
+2025-08-23 16:53:41,750 - backtrader_system.strategies.optimized_ml_strategy - INFO - [TRAINING PHASE] Successfully trained models for 20/20 symbols
+2025-08-23 16:53:41,787 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2023-04-24: [TRAINING PHASE] Training ML models for 20 symbols
+2025-08-23 16:53:43,234 - backtrader_system.strategies.optimized_ml_strategy - INFO - [TRAINING PHASE] Successfully trained models for 20/20 symbols
+2025-08-23 16:53:43,272 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2023-05-01: [TRAINING PHASE] Training ML models for 20 symbols
+2025-08-23 16:53:44,790 - backtrader_system.strategies.optimized_ml_strategy - INFO - [TRAINING PHASE] Successfully trained models for 20/20 symbols
+2025-08-23 16:53:44,830 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2023-05-08: [TRAINING PHASE] Training ML models for 20 symbols
+2025-08-23 16:53:46,316 - backtrader_system.strategies.optimized_ml_strategy - INFO - [TRAINING PHASE] Successfully trained models for 20/20 symbols
+2025-08-23 16:53:46,355 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2023-05-15: [TRAINING PHASE] Training ML models for 20 symbols
+2025-08-23 16:53:47,860 - backtrader_system.strategies.optimized_ml_strategy - INFO - [TRAINING PHASE] Successfully trained models for 20/20 symbols
+2025-08-23 16:53:47,900 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2023-05-22: [TRAINING PHASE] Training ML models for 20 symbols
+2025-08-23 16:53:49,425 - backtrader_system.strategies.optimized_ml_strategy - INFO - [TRAINING PHASE] Successfully trained models for 20/20 symbols
+2025-08-23 16:53:49,465 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2023-05-30: [TRAINING PHASE] Training ML models for 20 symbols
+2025-08-23 16:53:51,002 - backtrader_system.strategies.optimized_ml_strategy - INFO - [TRAINING PHASE] Successfully trained models for 20/20 symbols
+2025-08-23 16:53:51,035 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2023-06-05: [TRAINING PHASE] Training ML models for 20 symbols
+2025-08-23 16:53:52,580 - backtrader_system.strategies.optimized_ml_strategy - INFO - [TRAINING PHASE] Successfully trained models for 20/20 symbols
+2025-08-23 16:53:52,622 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2023-06-12: [TRAINING PHASE] Training ML models for 20 symbols
+2025-08-23 16:53:54,190 - backtrader_system.strategies.optimized_ml_strategy - INFO - [TRAINING PHASE] Successfully trained models for 20/20 symbols
+2025-08-23 16:53:54,232 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2023-06-20: [TRAINING PHASE] Training ML models for 20 symbols
+2025-08-23 16:53:55,812 - backtrader_system.strategies.optimized_ml_strategy - INFO - [TRAINING PHASE] Successfully trained models for 20/20 symbols
+2025-08-23 16:53:55,847 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2023-06-26: [TRAINING PHASE] Training ML models for 20 symbols
+2025-08-23 16:53:57,442 - backtrader_system.strategies.optimized_ml_strategy - INFO - [TRAINING PHASE] Successfully trained models for 20/20 symbols
+2025-08-23 16:53:57,485 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2023-07-03: [TRAINING PHASE] Training ML models for 20 symbols
+2025-08-23 16:53:59,103 - backtrader_system.strategies.optimized_ml_strategy - INFO - [TRAINING PHASE] Successfully trained models for 20/20 symbols
+2025-08-23 16:53:59,138 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2023-07-10: [TRAINING PHASE] Training ML models for 20 symbols
+2025-08-23 16:54:00,773 - backtrader_system.strategies.optimized_ml_strategy - INFO - [TRAINING PHASE] Successfully trained models for 20/20 symbols
+2025-08-23 16:54:00,817 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2023-07-17: [TRAINING PHASE] Training ML models for 20 symbols
+2025-08-23 16:54:02,462 - backtrader_system.strategies.optimized_ml_strategy - INFO - [TRAINING PHASE] Successfully trained models for 20/20 symbols
+2025-08-23 16:54:02,505 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2023-07-24: [TRAINING PHASE] Training ML models for 20 symbols
+2025-08-23 16:54:04,170 - backtrader_system.strategies.optimized_ml_strategy - INFO - [TRAINING PHASE] Successfully trained models for 20/20 symbols
+2025-08-23 16:54:04,213 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2023-07-31: [TRAINING PHASE] Training ML models for 20 symbols
+2025-08-23 16:54:05,904 - backtrader_system.strategies.optimized_ml_strategy - INFO - [TRAINING PHASE] Successfully trained models for 20/20 symbols
+2025-08-23 16:54:05,949 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2023-08-07: [TRAINING PHASE] Training ML models for 20 symbols
+2025-08-23 16:54:07,649 - backtrader_system.strategies.optimized_ml_strategy - INFO - [TRAINING PHASE] Successfully trained models for 20/20 symbols
+2025-08-23 16:54:07,694 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2023-08-14: [TRAINING PHASE] Training ML models for 20 symbols
+2025-08-23 16:54:09,428 - backtrader_system.strategies.optimized_ml_strategy - INFO - [TRAINING PHASE] Successfully trained models for 20/20 symbols
+2025-08-23 16:54:09,474 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2023-08-21: [TRAINING PHASE] Training ML models for 20 symbols
+2025-08-23 16:54:11,214 - backtrader_system.strategies.optimized_ml_strategy - INFO - [TRAINING PHASE] Successfully trained models for 20/20 symbols
+2025-08-23 16:54:11,261 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2023-08-28: [TRAINING PHASE] Training ML models for 20 symbols
+2025-08-23 16:54:13,075 - backtrader_system.strategies.optimized_ml_strategy - INFO - [TRAINING PHASE] Successfully trained models for 20/20 symbols
+2025-08-23 16:54:13,123 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2023-09-05: [TRAINING PHASE] Training ML models for 20 symbols
+2025-08-23 16:54:14,903 - backtrader_system.strategies.optimized_ml_strategy - INFO - [TRAINING PHASE] Successfully trained models for 20/20 symbols
+2025-08-23 16:54:14,941 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2023-09-11: [TRAINING PHASE] Training ML models for 20 symbols
+2025-08-23 16:54:16,731 - backtrader_system.strategies.optimized_ml_strategy - INFO - [TRAINING PHASE] Successfully trained models for 20/20 symbols
+2025-08-23 16:54:16,780 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2023-09-18: [TRAINING PHASE] Training ML models for 20 symbols
+2025-08-23 16:54:18,592 - backtrader_system.strategies.optimized_ml_strategy - INFO - [TRAINING PHASE] Successfully trained models for 20/20 symbols
+2025-08-23 16:54:18,641 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2023-09-25: [TRAINING PHASE] Training ML models for 20 symbols
+2025-08-23 16:54:20,536 - backtrader_system.strategies.optimized_ml_strategy - INFO - [TRAINING PHASE] Successfully trained models for 20/20 symbols
+2025-08-23 16:54:20,584 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2023-10-02: [TRAINING PHASE] Training ML models for 20 symbols
+2025-08-23 16:54:22,436 - backtrader_system.strategies.optimized_ml_strategy - INFO - [TRAINING PHASE] Successfully trained models for 20/20 symbols
+2025-08-23 16:54:22,485 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2023-10-09: [TRAINING PHASE] Training ML models for 20 symbols
+2025-08-23 16:54:24,356 - backtrader_system.strategies.optimized_ml_strategy - INFO - [TRAINING PHASE] Successfully trained models for 20/20 symbols
+2025-08-23 16:54:24,406 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2023-10-16: [TRAINING PHASE] Training ML models for 20 symbols
+2025-08-23 16:54:26,288 - backtrader_system.strategies.optimized_ml_strategy - INFO - [TRAINING PHASE] Successfully trained models for 20/20 symbols
+2025-08-23 16:54:26,337 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2023-10-23: [TRAINING PHASE] Training ML models for 20 symbols
+2025-08-23 16:54:28,244 - backtrader_system.strategies.optimized_ml_strategy - INFO - [TRAINING PHASE] Successfully trained models for 20/20 symbols
+2025-08-23 16:54:28,294 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2023-10-30: [TRAINING PHASE] Training ML models for 20 symbols
+2025-08-23 16:54:30,222 - backtrader_system.strategies.optimized_ml_strategy - INFO - [TRAINING PHASE] Successfully trained models for 20/20 symbols
+2025-08-23 16:54:30,274 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2023-11-06: [TRAINING PHASE] Training ML models for 20 symbols
+2025-08-23 16:54:32,220 - backtrader_system.strategies.optimized_ml_strategy - INFO - [TRAINING PHASE] Successfully trained models for 20/20 symbols
+2025-08-23 16:54:32,271 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2023-11-13: [TRAINING PHASE] Training ML models for 20 symbols
+2025-08-23 16:54:34,247 - backtrader_system.strategies.optimized_ml_strategy - INFO - [TRAINING PHASE] Successfully trained models for 20/20 symbols
+2025-08-23 16:54:34,300 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2023-11-20: [TRAINING PHASE] Training ML models for 20 symbols
+2025-08-23 16:54:36,287 - backtrader_system.strategies.optimized_ml_strategy - INFO - [TRAINING PHASE] Successfully trained models for 20/20 symbols
+2025-08-23 16:54:36,329 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2023-11-27: [TRAINING PHASE] Training ML models for 20 symbols
+2025-08-23 16:54:38,337 - backtrader_system.strategies.optimized_ml_strategy - INFO - [TRAINING PHASE] Successfully trained models for 20/20 symbols
+2025-08-23 16:54:38,391 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2023-12-04: [TRAINING PHASE] Training ML models for 20 symbols
+2025-08-23 16:54:40,411 - backtrader_system.strategies.optimized_ml_strategy - INFO - [TRAINING PHASE] Successfully trained models for 20/20 symbols
+2025-08-23 16:54:40,465 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2023-12-11: [TRAINING PHASE] Training ML models for 20 symbols
+2025-08-23 16:54:42,528 - backtrader_system.strategies.optimized_ml_strategy - INFO - [TRAINING PHASE] Successfully trained models for 20/20 symbols
+2025-08-23 16:54:42,582 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2023-12-18: [TRAINING PHASE] Training ML models for 20 symbols
+2025-08-23 16:54:44,663 - backtrader_system.strategies.optimized_ml_strategy - INFO - [TRAINING PHASE] Successfully trained models for 20/20 symbols
+2025-08-23 16:54:44,719 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2023-12-26: [TRAINING PHASE] Training ML models for 20 symbols
+2025-08-23 16:54:46,804 - backtrader_system.strategies.optimized_ml_strategy - INFO - [TRAINING PHASE] Successfully trained models for 20/20 symbols
+2025-08-23 16:54:46,850 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2024-01-02: [TRAINING PHASE] Training ML models for 20 symbols
+2025-08-23 16:54:48,941 - backtrader_system.strategies.optimized_ml_strategy - INFO - [TRAINING PHASE] Successfully trained models for 20/20 symbols
+2025-08-23 16:54:48,989 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2024-01-08: [TRAINING PHASE] Training ML models for 20 symbols
+2025-08-23 16:54:51,163 - backtrader_system.strategies.optimized_ml_strategy - INFO - [TRAINING PHASE] Successfully trained models for 20/20 symbols
+2025-08-23 16:54:51,219 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2024-01-16: [TRAINING PHASE] Training ML models for 20 symbols
+2025-08-23 16:54:53,347 - backtrader_system.strategies.optimized_ml_strategy - INFO - [TRAINING PHASE] Successfully trained models for 20/20 symbols
+2025-08-23 16:54:53,392 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2024-01-22: [TRAINING PHASE] Training ML models for 20 symbols
+2025-08-23 16:54:55,550 - backtrader_system.strategies.optimized_ml_strategy - INFO - [TRAINING PHASE] Successfully trained models for 20/20 symbols
+2025-08-23 16:54:55,608 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2024-01-29: [TRAINING PHASE] Training ML models for 20 symbols
+2025-08-23 16:54:57,766 - backtrader_system.strategies.optimized_ml_strategy - INFO - [TRAINING PHASE] Successfully trained models for 20/20 symbols
+2025-08-23 16:54:57,826 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2024-02-05: [TRAINING PHASE] Training ML models for 20 symbols
+2025-08-23 16:55:00,005 - backtrader_system.strategies.optimized_ml_strategy - INFO - [TRAINING PHASE] Successfully trained models for 20/20 symbols
+2025-08-23 16:55:00,066 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2024-02-12: [TRAINING PHASE] Training ML models for 20 symbols
+2025-08-23 16:55:02,281 - backtrader_system.strategies.optimized_ml_strategy - INFO - [TRAINING PHASE] Successfully trained models for 20/20 symbols
+2025-08-23 16:55:02,340 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2024-02-20: [TRAINING PHASE] Training ML models for 20 symbols
+2025-08-23 16:55:04,554 - backtrader_system.strategies.optimized_ml_strategy - INFO - [TRAINING PHASE] Successfully trained models for 20/20 symbols
+2025-08-23 16:55:04,603 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2024-02-26: [TRAINING PHASE] Training ML models for 20 symbols
+2025-08-23 16:55:06,830 - backtrader_system.strategies.optimized_ml_strategy - INFO - [TRAINING PHASE] Successfully trained models for 20/20 symbols
+2025-08-23 16:55:06,889 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2024-03-04: [TRAINING PHASE] Training ML models for 20 symbols
+2025-08-23 16:55:09,150 - backtrader_system.strategies.optimized_ml_strategy - INFO - [TRAINING PHASE] Successfully trained models for 20/20 symbols
+2025-08-23 16:55:09,210 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2024-03-11: [TRAINING PHASE] Training ML models for 20 symbols
+2025-08-23 16:55:11,481 - backtrader_system.strategies.optimized_ml_strategy - INFO - [TRAINING PHASE] Successfully trained models for 20/20 symbols
+2025-08-23 16:55:11,542 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2024-03-18: [TRAINING PHASE] Training ML models for 20 symbols
+2025-08-23 16:55:13,843 - backtrader_system.strategies.optimized_ml_strategy - INFO - [TRAINING PHASE] Successfully trained models for 20/20 symbols
+2025-08-23 16:55:13,904 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2024-03-25: [TRAINING PHASE] Training ML models for 20 symbols
+2025-08-23 16:55:16,229 - backtrader_system.strategies.optimized_ml_strategy - INFO - [TRAINING PHASE] Successfully trained models for 20/20 symbols
+2025-08-23 16:55:16,280 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2024-04-01: [TRAINING PHASE] Training ML models for 20 symbols
+2025-08-23 16:55:18,610 - backtrader_system.strategies.optimized_ml_strategy - INFO - [TRAINING PHASE] Successfully trained models for 20/20 symbols
+2025-08-23 16:55:18,672 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2024-04-08: [TRAINING PHASE] Training ML models for 20 symbols
+2025-08-23 16:55:21,107 - backtrader_system.strategies.optimized_ml_strategy - INFO - [TRAINING PHASE] Successfully trained models for 20/20 symbols
+2025-08-23 16:55:21,171 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2024-04-15: [TRAINING PHASE] Training ML models for 20 symbols
+2025-08-23 16:55:23,537 - backtrader_system.strategies.optimized_ml_strategy - INFO - [TRAINING PHASE] Successfully trained models for 20/20 symbols
+2025-08-23 16:55:23,600 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2024-04-22: [TRAINING PHASE] Training ML models for 20 symbols
+2025-08-23 16:55:25,989 - backtrader_system.strategies.optimized_ml_strategy - INFO - [TRAINING PHASE] Successfully trained models for 20/20 symbols
+2025-08-23 16:55:26,053 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2024-04-29: [TRAINING PHASE] Training ML models for 20 symbols
+2025-08-23 16:55:28,456 - backtrader_system.strategies.optimized_ml_strategy - INFO - [TRAINING PHASE] Successfully trained models for 20/20 symbols
+2025-08-23 16:55:28,519 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2024-05-06: [TRAINING PHASE] Training ML models for 20 symbols
+2025-08-23 16:55:30,938 - backtrader_system.strategies.optimized_ml_strategy - INFO - [TRAINING PHASE] Successfully trained models for 20/20 symbols
+2025-08-23 16:55:31,001 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2024-05-13: [TRAINING PHASE] Training ML models for 20 symbols
+2025-08-23 16:55:33,446 - backtrader_system.strategies.optimized_ml_strategy - INFO - [TRAINING PHASE] Successfully trained models for 20/20 symbols
+2025-08-23 16:55:33,511 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2024-05-20: [TRAINING PHASE] Training ML models for 20 symbols
+2025-08-23 16:55:35,980 - backtrader_system.strategies.optimized_ml_strategy - INFO - [TRAINING PHASE] Successfully trained models for 20/20 symbols
+2025-08-23 16:55:36,045 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2024-05-28: [TRAINING PHASE] Training ML models for 20 symbols
+2025-08-23 16:55:38,619 - backtrader_system.strategies.optimized_ml_strategy - INFO - [TRAINING PHASE] Successfully trained models for 20/20 symbols
+2025-08-23 16:55:38,674 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2024-06-03: [TRAINING PHASE] Training ML models for 20 symbols
+2025-08-23 16:55:41,219 - backtrader_system.strategies.optimized_ml_strategy - INFO - [TRAINING PHASE] Successfully trained models for 20/20 symbols
+2025-08-23 16:55:41,284 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2024-06-10: [TRAINING PHASE] Training ML models for 20 symbols
+2025-08-23 16:55:43,896 - backtrader_system.strategies.optimized_ml_strategy - INFO - [TRAINING PHASE] Successfully trained models for 20/20 symbols
+2025-08-23 16:55:43,977 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2024-06-17: [TRAINING PHASE] Training ML models for 20 symbols
+2025-08-23 16:55:46,602 - backtrader_system.strategies.optimized_ml_strategy - INFO - [TRAINING PHASE] Successfully trained models for 20/20 symbols
+2025-08-23 16:55:46,663 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2024-06-24: [TRAINING PHASE] Training ML models for 20 symbols
+2025-08-23 16:55:49,320 - backtrader_system.strategies.optimized_ml_strategy - INFO - [TRAINING PHASE] Successfully trained models for 20/20 symbols
+2025-08-23 16:55:49,389 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2024-07-01: [TRAINING PHASE] Training ML models for 20 symbols
+2025-08-23 16:55:51,970 - backtrader_system.strategies.optimized_ml_strategy - INFO - [TRAINING PHASE] Successfully trained models for 20/20 symbols
+2025-08-23 16:55:52,028 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2024-07-08: [TRAINING PHASE] Training ML models for 20 symbols
+2025-08-23 16:55:54,806 - backtrader_system.strategies.optimized_ml_strategy - INFO - [TRAINING PHASE] Successfully trained models for 20/20 symbols
+2025-08-23 16:55:54,884 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2024-07-15: [TRAINING PHASE] Training ML models for 20 symbols
+2025-08-23 16:55:57,599 - backtrader_system.strategies.optimized_ml_strategy - INFO - [TRAINING PHASE] Successfully trained models for 20/20 symbols
+2025-08-23 16:55:57,674 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2024-07-22: [TRAINING PHASE] Training ML models for 20 symbols
+2025-08-23 16:56:00,355 - backtrader_system.strategies.optimized_ml_strategy - INFO - [TRAINING PHASE] Successfully trained models for 20/20 symbols
+2025-08-23 16:56:00,425 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2024-07-29: [TRAINING PHASE] Training ML models for 20 symbols
+2025-08-23 16:56:03,044 - backtrader_system.strategies.optimized_ml_strategy - INFO - [TRAINING PHASE] Successfully trained models for 20/20 symbols
+2025-08-23 16:56:03,118 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2024-08-05: [TRAINING PHASE] Training ML models for 20 symbols
+2025-08-23 16:56:05,752 - backtrader_system.strategies.optimized_ml_strategy - INFO - [TRAINING PHASE] Successfully trained models for 20/20 symbols
+2025-08-23 16:56:05,822 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2024-08-12: [TRAINING PHASE] Training ML models for 20 symbols
+2025-08-23 16:56:08,484 - backtrader_system.strategies.optimized_ml_strategy - INFO - [TRAINING PHASE] Successfully trained models for 20/20 symbols
+2025-08-23 16:56:08,555 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2024-08-19: [TRAINING PHASE] Training ML models for 20 symbols
+2025-08-23 16:56:11,245 - backtrader_system.strategies.optimized_ml_strategy - INFO - [TRAINING PHASE] Successfully trained models for 20/20 symbols
+2025-08-23 16:56:11,316 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2024-08-26: [OUT-OF-SAMPLE TRADING] Using pre-trained models from 2-year training period
+2025-08-23 16:56:11,457 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2024-08-26: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:56:11,667 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2024-09-03: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:56:11,861 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2024-09-09: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:56:12,068 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2024-09-16: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:56:12,276 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2024-09-23: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:56:12,482 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2024-09-30: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:56:12,691 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2024-10-07: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:56:12,897 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2024-10-14: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:56:13,106 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2024-10-21: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:56:13,317 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2024-10-28: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:56:13,525 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2024-11-04: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:56:13,732 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2024-11-11: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:56:13,941 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2024-11-18: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:56:14,151 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2024-11-25: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:56:14,343 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2024-12-02: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:56:14,550 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2024-12-09: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:56:14,759 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2024-12-16: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:56:14,966 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2024-12-23: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:56:15,163 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2024-12-30: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:56:15,359 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2025-01-06: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:56:15,552 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2025-01-13: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:56:15,762 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2025-01-21: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:56:15,956 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2025-01-27: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:56:16,165 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2025-02-03: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:56:16,371 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2025-02-10: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:56:16,576 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2025-02-18: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:56:16,770 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2025-02-24: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:56:16,977 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2025-03-03: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:56:17,187 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2025-03-10: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:56:17,393 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2025-03-17: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:56:17,600 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2025-03-24: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:56:17,809 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2025-03-31: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:56:18,014 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2025-04-07: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:56:18,222 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2025-04-14: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:56:18,414 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2025-04-21: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:56:18,624 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2025-04-28: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:56:18,832 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2025-05-05: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:56:19,041 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2025-05-12: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:56:19,250 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2025-05-19: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:56:19,458 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2025-05-27: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:56:19,670 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2025-06-02: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:56:19,918 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2025-06-09: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:56:20,135 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2025-06-16: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:56:20,346 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2025-06-23: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:56:20,566 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2025-06-30: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:56:20,770 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2025-07-07: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:56:20,991 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2025-07-14: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:56:21,211 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2025-07-21: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:56:21,436 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2025-07-28: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:56:21,652 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2025-08-04: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:56:21,867 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2025-08-11: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:56:22,073 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2025-08-18: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:56:22,117 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2025-08-21: Strategy Completed!
+2025-08-23 16:56:22,117 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2025-08-21: Starting Value: $1,000,000
+2025-08-23 16:56:22,117 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2025-08-21: Final Value: $1,000,000
+2025-08-23 16:56:22,117 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2025-08-21: Total Return: 0.00%
+2025-08-23 16:56:22,117 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2025-08-21: Total Trades: 0
+2025-08-23 16:56:22,117 - __main__ - INFO - ✅ Backtest completed!
+2025-08-23 16:56:22,117 - __main__ - INFO - 📊 Final Portfolio Value: $1,000,000
+2025-08-23 16:56:22,117 - __main__ - INFO - 📈 Total Return: 0.00%
+2025-08-23 16:56:22,119 - __main__ - INFO - 📊 Performance report: results/optimized_performance_report_20250823_165622.json
+2025-08-23 16:56:22,119 - __main__ - INFO - 🎯 GENERATING OPTIMIZED PERFORMANCE ANALYSIS...
+2025-08-23 16:56:22,121 - __main__ - INFO - 📈 Equity curve saved: results/optimized_equity_curve_20250823_165622.csv

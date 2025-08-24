@@ -38,6 +38,88 @@ class MLSignalGenerator:
         
         self.min_training_days = config.get('min_training_days', 60)
         
+        # Storage for one-time trained models
+        self.trained_models = {}  # {symbol: {model_type: model}}
+        self.trained_scalers = {}  # {symbol: scaler}
+        
+    def train_models_with_full_data(self, symbol: str, training_data: pd.DataFrame) -> bool:
+        """
+        Train models once using all available training data for a symbol
+        This is the proper ML approach - train once, then use for out-of-sample prediction
+        """
+        try:
+            # Calculate technical indicators and prepare features
+            df_with_indicators = self.calculate_technical_indicators(training_data.copy())
+            df_with_features = self.calculate_ml_features(df_with_indicators)
+            
+            # Filter out rows with missing values
+            clean_data = df_with_features.dropna()
+            
+            if len(clean_data) < self.min_training_days:
+                self.logger.warning(f"Insufficient clean data for {symbol}: {len(clean_data)} < {self.min_training_days}")
+                return False
+            
+            # Prepare features and targets
+            feature_data = clean_data[self.feature_cols]
+            
+            # Scale features
+            scaler = RobustScaler()
+            X_scaled = scaler.fit_transform(feature_data)
+            
+            # Store scaler for this symbol
+            self.trained_scalers[symbol] = scaler
+            
+            # Initialize model storage for this symbol
+            if symbol not in self.trained_models:
+                self.trained_models[symbol] = {}
+            
+            models_trained = 0
+            
+            # 1. Train Signal Strength Model
+            y_strength = clean_data['ml_signal_strength'].values
+            try:
+                strength_model = RandomForestRegressor(
+                    n_estimators=100, max_depth=10, random_state=42, n_jobs=-1
+                )
+                strength_model.fit(X_scaled, y_strength)
+                self.trained_models[symbol]['strength'] = strength_model
+                
+                # Evaluate performance
+                strength_pred = strength_model.predict(X_scaled)
+                strength_r2 = r2_score(y_strength, strength_pred)
+                models_trained += 1
+                
+                self.logger.info(f"Trained strength model for {symbol}: R² = {strength_r2:.3f}")
+                
+            except Exception as e:
+                self.logger.warning(f"Failed to train strength model for {symbol}: {e}")
+            
+            # 2. Train Regime Model
+            y_regime = clean_data['regime_target'].values
+            try:
+                regime_model = RandomForestClassifier(
+                    n_estimators=100, max_depth=10, random_state=42, n_jobs=-1
+                )
+                regime_model.fit(X_scaled, y_regime)
+                self.trained_models[symbol]['regime'] = regime_model
+                
+                # Evaluate performance
+                regime_pred = regime_model.predict(X_scaled)
+                regime_accuracy = accuracy_score(y_regime, regime_pred)
+                models_trained += 1
+                
+                self.logger.info(f"Trained regime model for {symbol}: Accuracy = {regime_accuracy:.3f}")
+                
+            except Exception as e:
+                self.logger.warning(f"Failed to train regime model for {symbol}: {e}")
+            
+            self.logger.info(f"Successfully trained {models_trained}/2 models for {symbol} using {len(clean_data)} training samples")
+            return models_trained == 2
+            
+        except Exception as e:
+            self.logger.error(f"Error training models for {symbol}: {e}")
+            return False
+        
     def get_elite_stocks(self) -> List[str]:
         """Top 20 elite mega-cap stocks - from RealisticLiveTradingSystem"""
         return [
@@ -266,10 +348,10 @@ class MLSignalGenerator:
     
     def generate_base_signal(self, df: pd.DataFrame) -> Dict[str, Any]:
         """
-        Generate base technical signal - from RealisticLiveTradingSystem
+        Generate base technical signal - MORE AGGRESSIVE VERSION
         """
         try:
-            if len(df) < 50:
+            if len(df) < 20:  # Reduced from 50
                 return {'signal': 'HOLD', 'strength': 0.0, 'price': df['Close'].iloc[-1]}
             
             latest = df.iloc[-1]
@@ -282,45 +364,52 @@ class MLSignalGenerator:
             volume_ratio = latest.get('volume_ratio', 1.0)
             macd_hist = latest.get('macd_histogram', 0)
             
-            # Strong buy conditions
-            strong_buy = (
-                (rsi < 35 and price_vs_ma5 > -0.03) or
-                (price_vs_ma5 > 0.02 and price_vs_ma20 > 0.01 and volume_ratio > 1.2 and macd_hist > 0)
+            # More aggressive buy conditions - RELAXED THRESHOLDS
+            buy_conditions = (
+                (rsi < 45 and price_vs_ma5 > -0.05) or  # More lenient RSI
+                (price_vs_ma5 > 0.01 and price_vs_ma20 > -0.005 and volume_ratio > 1.0) or  # Relaxed conditions
+                (macd_hist > 0 and price_vs_ma5 > -0.02) or  # MACD momentum
+                (rsi < 50 and price_vs_ma20 > 0.005)  # RSI and price trend
             )
             
-            # Strong sell conditions
-            strong_sell = (
-                (rsi > 75 and price_vs_ma5 < 0.02) or
-                (price_vs_ma5 < -0.02 and price_vs_ma20 < -0.01 and macd_hist < 0)
+            # More aggressive sell conditions - RELAXED THRESHOLDS
+            sell_conditions = (
+                (rsi > 65 and price_vs_ma5 < 0.03) or  # More lenient RSI
+                (price_vs_ma5 < -0.01 and price_vs_ma20 < 0.005 and macd_hist < -0.001) or  # Relaxed conditions
+                (rsi > 60 and price_vs_ma5 < -0.01)  # Earlier sell signal
             )
             
             # Calculate signal strength
-            if strong_buy:
-                # Strength based on multiple confirmations
-                strength_factors = []
-                if rsi < 35 and price_vs_ma5 > -0.03:
-                    strength_factors.append(0.7)
-                if price_vs_ma5 > 0.02 and price_vs_ma20 > 0.01:
-                    strength_factors.append(0.6)
-                if volume_ratio > 1.2:
-                    strength_factors.append(0.3)
-                if macd_hist > 0:
-                    strength_factors.append(0.2)
+            if buy_conditions:
+                # Base strength higher to generate more trades
+                base_strength = 0.4
                 
-                signal_strength = min(0.9, sum(strength_factors))
+                # Add strength bonuses
+                if rsi < 35:
+                    base_strength += 0.3
+                if price_vs_ma5 > 0.02:
+                    base_strength += 0.2
+                if volume_ratio > 1.3:
+                    base_strength += 0.1
+                if macd_hist > 0:
+                    base_strength += 0.1
+                
+                signal_strength = min(0.95, base_strength)
                 return {'signal': 'BUY', 'strength': signal_strength, 'price': price}
                 
-            elif strong_sell:
-                # Strength based on sell confirmations
-                strength_factors = []
-                if rsi > 75 and price_vs_ma5 < 0.02:
-                    strength_factors.append(0.7)
-                if price_vs_ma5 < -0.02 and price_vs_ma20 < -0.01:
-                    strength_factors.append(0.6)
-                if macd_hist < 0:
-                    strength_factors.append(0.2)
+            elif sell_conditions:
+                # Base strength higher to generate more trades
+                base_strength = 0.4
                 
-                signal_strength = min(0.9, sum(strength_factors))
+                # Add strength bonuses
+                if rsi > 75:
+                    base_strength += 0.3
+                if price_vs_ma5 < -0.02:
+                    base_strength += 0.2
+                if macd_hist < -0.001:
+                    base_strength += 0.1
+                
+                signal_strength = min(0.95, base_strength)
                 return {'signal': 'SELL', 'strength': signal_strength, 'price': price}
             else:
                 return {'signal': 'HOLD', 'strength': 0.0, 'price': price}
@@ -332,22 +421,20 @@ class MLSignalGenerator:
     def enhance_signal_with_ml(self, symbol: str, base_signal: Dict, df: pd.DataFrame, 
                               current_date: pd.Timestamp) -> Dict[str, Any]:
         """
-        Enhance signal using ML models - from RealisticLiveTradingSystem
+        Enhance signal using pre-trained ML models
         """
         try:
             if base_signal['signal'] == 'HOLD':
                 return base_signal
             
-            # Check if we have models for this date and symbol
-            if (current_date not in self.daily_models or 
-                symbol not in self.daily_models[current_date] or
-                current_date not in self.daily_scalers or
-                symbol not in self.daily_scalers[current_date]):
+            # Check if we have trained models for this symbol
+            if (symbol not in self.trained_models or 
+                symbol not in self.trained_scalers):
                 return base_signal
             
             # Prepare features
             latest_features = df[self.feature_cols].iloc[-1:].values
-            scaler = self.daily_scalers[current_date][symbol]
+            scaler = self.trained_scalers[symbol]
             X_scaled = scaler.transform(latest_features)
             
             # Default enhancements
@@ -355,9 +442,9 @@ class MLSignalGenerator:
             regime_boost = 1.0
             
             # 1. Predict Signal Strength Enhancement
-            if 'strength' in self.daily_models[current_date][symbol]:
+            if 'strength' in self.trained_models[symbol]:
                 try:
-                    strength_model = self.daily_models[current_date][symbol]['strength']
+                    strength_model = self.trained_models[symbol]['strength']
                     predicted_strength = strength_model.predict(X_scaled)[0]
                     predicted_strength = np.clip(predicted_strength, 0.3, 1.0)
                     
@@ -369,9 +456,9 @@ class MLSignalGenerator:
                     self.logger.warning(f"Strength prediction failed for {symbol}: {e}")
             
             # 2. Predict Market Regime Enhancement
-            if 'regime' in self.daily_models[current_date][symbol]:
+            if 'regime' in self.trained_models[symbol]:
                 try:
-                    regime_model = self.daily_models[current_date][symbol]['regime']
+                    regime_model = self.trained_models[symbol]['regime']
                     regime_pred = regime_model.predict_proba(X_scaled)[0]
                     
                     # If model predicts trending regime (class 1), boost signal

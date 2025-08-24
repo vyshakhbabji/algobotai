@@ -1,0 +1,1292 @@
+2025-08-23 16:26:36,509 - yfinance - DEBUG - Entering history()
+2025-08-23 16:26:36,511 - peewee - DEBUG - ('CREATE TABLE IF NOT EXISTS "_tz_kv" ("key" VARCHAR(255) NOT NULL PRIMARY KEY, "value" VARCHAR(255)) WITHOUT ROWID', [])
+2025-08-23 16:26:36,511 - peewee - DEBUG - ('SELECT "t1"."key", "t1"."value" FROM "_tz_kv" AS "t1" WHERE ("t1"."key" = ?) LIMIT ? OFFSET ?', ['AAPL', 1, 0])
+2025-08-23 16:26:36,526 - yfinance - DEBUG -  Entering history()
+2025-08-23 16:26:36,529 - yfinance - DEBUG - AAPL: Yahoo GET parameters: {'period1': '2024-05-15 00:00:00-04:00', 'period2': '2025-08-22 00:00:00-04:00', 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2025-08-23 16:26:36,529 - yfinance - DEBUG -   Entering get()
+2025-08-23 16:26:36,529 - yfinance - DEBUG -    Entering _make_request()
+2025-08-23 16:26:36,529 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/v8/finance/chart/AAPL
+2025-08-23 16:26:36,529 - yfinance - DEBUG - params=frozendict.frozendict({'period1': 1715745600, 'period2': 1755835200, 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'})
+2025-08-23 16:26:36,529 - yfinance - DEBUG -     Entering _get_cookie_and_crumb()
+2025-08-23 16:26:36,529 - yfinance - DEBUG - cookie_mode = 'basic'
+2025-08-23 16:26:36,529 - yfinance - DEBUG -      Entering _get_cookie_and_crumb_basic()
+2025-08-23 16:26:36,529 - yfinance - DEBUG -       Entering _get_cookie_basic()
+2025-08-23 16:26:36,529 - yfinance - DEBUG -        Entering _load_cookie_curlCffi()
+2025-08-23 16:26:36,530 - peewee - DEBUG - ('CREATE TABLE IF NOT EXISTS "_cookieschema" ("strategy" VARCHAR(255) NOT NULL PRIMARY KEY, "fetch_date" DATETIME NOT NULL, "cookie_bytes" BLOB NOT NULL) WITHOUT ROWID', [])
+2025-08-23 16:26:36,530 - peewee - DEBUG - ('SELECT "t1"."strategy", "t1"."fetch_date", "t1"."cookie_bytes" FROM "_cookieschema" AS "t1" WHERE ("t1"."strategy" = ?) LIMIT ? OFFSET ?', ['curlCffi', 1, 0])
+2025-08-23 16:26:36,531 - yfinance - DEBUG -        Exiting _load_cookie_curlCffi()
+2025-08-23 16:26:36,531 - yfinance - DEBUG - reusing persistent cookie
+2025-08-23 16:26:36,531 - yfinance - DEBUG -       Exiting _get_cookie_basic()
+2025-08-23 16:26:36,531 - yfinance - DEBUG -       Entering _get_crumb_basic()
+2025-08-23 16:26:36,531 - yfinance - DEBUG -        Entering _get_cookie_basic()
+2025-08-23 16:26:36,531 - yfinance - DEBUG - reusing cookie
+2025-08-23 16:26:36,531 - yfinance - DEBUG -        Exiting _get_cookie_basic()
+2025-08-23 16:26:36,624 - yfinance - DEBUG - crumb = 'J1eqASBOUDa'
+2025-08-23 16:26:36,624 - yfinance - DEBUG -       Exiting _get_crumb_basic()
+2025-08-23 16:26:36,624 - yfinance - DEBUG -      Exiting _get_cookie_and_crumb_basic()
+2025-08-23 16:26:36,624 - yfinance - DEBUG -     Exiting _get_cookie_and_crumb()
+2025-08-23 16:26:36,858 - yfinance - DEBUG - response code=200
+2025-08-23 16:26:36,859 - yfinance - DEBUG -    Exiting _make_request()
+2025-08-23 16:26:36,859 - yfinance - DEBUG -   Exiting get()
+2025-08-23 16:26:36,869 - yfinance - DEBUG - AAPL: yfinance received OHLC data: 2024-05-15 13:30:00 -> 2025-08-21 13:30:00
+2025-08-23 16:26:36,873 - yfinance - DEBUG - AAPL: OHLC after cleaning: 2024-05-15 09:30:00-04:00 -> 2025-08-21 09:30:00-04:00
+2025-08-23 16:26:36,886 - yfinance - DEBUG - AAPL: OHLC after combining events: 2024-05-15 00:00:00-04:00 -> 2025-08-21 00:00:00-04:00
+2025-08-23 16:26:36,890 - yfinance - DEBUG - AAPL: yfinance returning OHLC: 2024-05-15 00:00:00-04:00 -> 2025-08-21 00:00:00-04:00
+2025-08-23 16:26:36,890 - yfinance - DEBUG -  Exiting history()
+2025-08-23 16:26:36,890 - yfinance - DEBUG - Exiting history()
+2025-08-23 16:26:36,892 - yfinance - DEBUG - Entering history()
+2025-08-23 16:26:36,892 - peewee - DEBUG - ('SELECT "t1"."key", "t1"."value" FROM "_tz_kv" AS "t1" WHERE ("t1"."key" = ?) LIMIT ? OFFSET ?', ['MSFT', 1, 0])
+2025-08-23 16:26:36,892 - yfinance - DEBUG -  Entering history()
+2025-08-23 16:26:36,892 - yfinance - DEBUG - MSFT: Yahoo GET parameters: {'period1': '2024-05-15 00:00:00-04:00', 'period2': '2025-08-22 00:00:00-04:00', 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2025-08-23 16:26:36,893 - yfinance - DEBUG -   Entering get()
+2025-08-23 16:26:36,893 - yfinance - DEBUG -    Entering _make_request()
+2025-08-23 16:26:36,893 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/v8/finance/chart/MSFT
+2025-08-23 16:26:36,893 - yfinance - DEBUG - params=frozendict.frozendict({'period1': 1715745600, 'period2': 1755835200, 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'})
+2025-08-23 16:26:36,893 - yfinance - DEBUG -     Entering _get_cookie_and_crumb()
+2025-08-23 16:26:36,893 - yfinance - DEBUG - cookie_mode = 'basic'
+2025-08-23 16:26:36,893 - yfinance - DEBUG -      Entering _get_cookie_and_crumb_basic()
+2025-08-23 16:26:36,893 - yfinance - DEBUG -       Entering _get_cookie_basic()
+2025-08-23 16:26:36,893 - yfinance - DEBUG - reusing cookie
+2025-08-23 16:26:36,893 - yfinance - DEBUG -       Exiting _get_cookie_basic()
+2025-08-23 16:26:36,893 - yfinance - DEBUG -       Entering _get_crumb_basic()
+2025-08-23 16:26:36,893 - yfinance - DEBUG - reusing crumb
+2025-08-23 16:26:36,893 - yfinance - DEBUG -       Exiting _get_crumb_basic()
+2025-08-23 16:26:36,893 - yfinance - DEBUG -      Exiting _get_cookie_and_crumb_basic()
+2025-08-23 16:26:36,893 - yfinance - DEBUG -     Exiting _get_cookie_and_crumb()
+2025-08-23 16:26:36,998 - yfinance - DEBUG - response code=200
+2025-08-23 16:26:36,998 - yfinance - DEBUG -    Exiting _make_request()
+2025-08-23 16:26:36,998 - yfinance - DEBUG -   Exiting get()
+2025-08-23 16:26:37,000 - yfinance - DEBUG - MSFT: yfinance received OHLC data: 2024-05-15 13:30:00 -> 2025-08-21 13:30:00
+2025-08-23 16:26:37,001 - yfinance - DEBUG - MSFT: OHLC after cleaning: 2024-05-15 09:30:00-04:00 -> 2025-08-21 09:30:00-04:00
+2025-08-23 16:26:37,006 - yfinance - DEBUG - MSFT: OHLC after combining events: 2024-05-15 00:00:00-04:00 -> 2025-08-21 00:00:00-04:00
+2025-08-23 16:26:37,008 - yfinance - DEBUG - MSFT: yfinance returning OHLC: 2024-05-15 00:00:00-04:00 -> 2025-08-21 00:00:00-04:00
+2025-08-23 16:26:37,008 - yfinance - DEBUG -  Exiting history()
+2025-08-23 16:26:37,008 - yfinance - DEBUG - Exiting history()
+2025-08-23 16:26:37,010 - yfinance - DEBUG - Entering history()
+2025-08-23 16:26:37,010 - peewee - DEBUG - ('SELECT "t1"."key", "t1"."value" FROM "_tz_kv" AS "t1" WHERE ("t1"."key" = ?) LIMIT ? OFFSET ?', ['GOOGL', 1, 0])
+2025-08-23 16:26:37,010 - yfinance - DEBUG -  Entering history()
+2025-08-23 16:26:37,010 - yfinance - DEBUG - GOOGL: Yahoo GET parameters: {'period1': '2024-05-15 00:00:00-04:00', 'period2': '2025-08-22 00:00:00-04:00', 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2025-08-23 16:26:37,010 - yfinance - DEBUG -   Entering get()
+2025-08-23 16:26:37,010 - yfinance - DEBUG -    Entering _make_request()
+2025-08-23 16:26:37,010 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/v8/finance/chart/GOOGL
+2025-08-23 16:26:37,010 - yfinance - DEBUG - params=frozendict.frozendict({'period1': 1715745600, 'period2': 1755835200, 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'})
+2025-08-23 16:26:37,011 - yfinance - DEBUG -     Entering _get_cookie_and_crumb()
+2025-08-23 16:26:37,011 - yfinance - DEBUG - cookie_mode = 'basic'
+2025-08-23 16:26:37,011 - yfinance - DEBUG -      Entering _get_cookie_and_crumb_basic()
+2025-08-23 16:26:37,011 - yfinance - DEBUG -       Entering _get_cookie_basic()
+2025-08-23 16:26:37,011 - yfinance - DEBUG - reusing cookie
+2025-08-23 16:26:37,011 - yfinance - DEBUG -       Exiting _get_cookie_basic()
+2025-08-23 16:26:37,011 - yfinance - DEBUG -       Entering _get_crumb_basic()
+2025-08-23 16:26:37,011 - yfinance - DEBUG - reusing crumb
+2025-08-23 16:26:37,011 - yfinance - DEBUG -       Exiting _get_crumb_basic()
+2025-08-23 16:26:37,011 - yfinance - DEBUG -      Exiting _get_cookie_and_crumb_basic()
+2025-08-23 16:26:37,011 - yfinance - DEBUG -     Exiting _get_cookie_and_crumb()
+2025-08-23 16:26:37,081 - yfinance - DEBUG - response code=200
+2025-08-23 16:26:37,081 - yfinance - DEBUG -    Exiting _make_request()
+2025-08-23 16:26:37,081 - yfinance - DEBUG -   Exiting get()
+2025-08-23 16:26:37,083 - yfinance - DEBUG - GOOGL: yfinance received OHLC data: 2024-05-15 13:30:00 -> 2025-08-21 13:30:00
+2025-08-23 16:26:37,083 - yfinance - DEBUG - GOOGL: OHLC after cleaning: 2024-05-15 09:30:00-04:00 -> 2025-08-21 09:30:00-04:00
+2025-08-23 16:26:37,087 - yfinance - DEBUG - GOOGL: OHLC after combining events: 2024-05-15 00:00:00-04:00 -> 2025-08-21 00:00:00-04:00
+2025-08-23 16:26:37,090 - yfinance - DEBUG - GOOGL: yfinance returning OHLC: 2024-05-15 00:00:00-04:00 -> 2025-08-21 00:00:00-04:00
+2025-08-23 16:26:37,090 - yfinance - DEBUG -  Exiting history()
+2025-08-23 16:26:37,090 - yfinance - DEBUG - Exiting history()
+2025-08-23 16:26:37,091 - yfinance - DEBUG - Entering history()
+2025-08-23 16:26:37,091 - peewee - DEBUG - ('SELECT "t1"."key", "t1"."value" FROM "_tz_kv" AS "t1" WHERE ("t1"."key" = ?) LIMIT ? OFFSET ?', ['AMZN', 1, 0])
+2025-08-23 16:26:37,091 - yfinance - DEBUG -  Entering history()
+2025-08-23 16:26:37,091 - yfinance - DEBUG - AMZN: Yahoo GET parameters: {'period1': '2024-05-15 00:00:00-04:00', 'period2': '2025-08-22 00:00:00-04:00', 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2025-08-23 16:26:37,091 - yfinance - DEBUG -   Entering get()
+2025-08-23 16:26:37,091 - yfinance - DEBUG -    Entering _make_request()
+2025-08-23 16:26:37,092 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/v8/finance/chart/AMZN
+2025-08-23 16:26:37,092 - yfinance - DEBUG - params=frozendict.frozendict({'period1': 1715745600, 'period2': 1755835200, 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'})
+2025-08-23 16:26:37,092 - yfinance - DEBUG -     Entering _get_cookie_and_crumb()
+2025-08-23 16:26:37,092 - yfinance - DEBUG - cookie_mode = 'basic'
+2025-08-23 16:26:37,092 - yfinance - DEBUG -      Entering _get_cookie_and_crumb_basic()
+2025-08-23 16:26:37,092 - yfinance - DEBUG -       Entering _get_cookie_basic()
+2025-08-23 16:26:37,092 - yfinance - DEBUG - reusing cookie
+2025-08-23 16:26:37,092 - yfinance - DEBUG -       Exiting _get_cookie_basic()
+2025-08-23 16:26:37,092 - yfinance - DEBUG -       Entering _get_crumb_basic()
+2025-08-23 16:26:37,092 - yfinance - DEBUG - reusing crumb
+2025-08-23 16:26:37,092 - yfinance - DEBUG -       Exiting _get_crumb_basic()
+2025-08-23 16:26:37,092 - yfinance - DEBUG -      Exiting _get_cookie_and_crumb_basic()
+2025-08-23 16:26:37,092 - yfinance - DEBUG -     Exiting _get_cookie_and_crumb()
+2025-08-23 16:26:37,149 - yfinance - DEBUG - response code=200
+2025-08-23 16:26:37,149 - yfinance - DEBUG -    Exiting _make_request()
+2025-08-23 16:26:37,149 - yfinance - DEBUG -   Exiting get()
+2025-08-23 16:26:37,150 - yfinance - DEBUG - AMZN: yfinance received OHLC data: 2024-05-15 13:30:00 -> 2025-08-21 13:30:00
+2025-08-23 16:26:37,151 - yfinance - DEBUG - AMZN: OHLC after cleaning: 2024-05-15 09:30:00-04:00 -> 2025-08-21 09:30:00-04:00
+2025-08-23 16:26:37,152 - yfinance - DEBUG - AMZN: OHLC after combining events: 2024-05-15 00:00:00-04:00 -> 2025-08-21 00:00:00-04:00
+2025-08-23 16:26:37,154 - yfinance - DEBUG - AMZN: yfinance returning OHLC: 2024-05-15 00:00:00-04:00 -> 2025-08-21 00:00:00-04:00
+2025-08-23 16:26:37,154 - yfinance - DEBUG -  Exiting history()
+2025-08-23 16:26:37,154 - yfinance - DEBUG - Exiting history()
+2025-08-23 16:26:37,155 - yfinance - DEBUG - Entering history()
+2025-08-23 16:26:37,155 - peewee - DEBUG - ('SELECT "t1"."key", "t1"."value" FROM "_tz_kv" AS "t1" WHERE ("t1"."key" = ?) LIMIT ? OFFSET ?', ['META', 1, 0])
+2025-08-23 16:26:37,155 - yfinance - DEBUG -  Entering history()
+2025-08-23 16:26:37,155 - yfinance - DEBUG - META: Yahoo GET parameters: {'period1': '2024-05-15 00:00:00-04:00', 'period2': '2025-08-22 00:00:00-04:00', 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2025-08-23 16:26:37,155 - yfinance - DEBUG -   Entering get()
+2025-08-23 16:26:37,155 - yfinance - DEBUG -    Entering _make_request()
+2025-08-23 16:26:37,155 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/v8/finance/chart/META
+2025-08-23 16:26:37,155 - yfinance - DEBUG - params=frozendict.frozendict({'period1': 1715745600, 'period2': 1755835200, 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'})
+2025-08-23 16:26:37,155 - yfinance - DEBUG -     Entering _get_cookie_and_crumb()
+2025-08-23 16:26:37,155 - yfinance - DEBUG - cookie_mode = 'basic'
+2025-08-23 16:26:37,155 - yfinance - DEBUG -      Entering _get_cookie_and_crumb_basic()
+2025-08-23 16:26:37,155 - yfinance - DEBUG -       Entering _get_cookie_basic()
+2025-08-23 16:26:37,155 - yfinance - DEBUG - reusing cookie
+2025-08-23 16:26:37,155 - yfinance - DEBUG -       Exiting _get_cookie_basic()
+2025-08-23 16:26:37,155 - yfinance - DEBUG -       Entering _get_crumb_basic()
+2025-08-23 16:26:37,155 - yfinance - DEBUG - reusing crumb
+2025-08-23 16:26:37,155 - yfinance - DEBUG -       Exiting _get_crumb_basic()
+2025-08-23 16:26:37,155 - yfinance - DEBUG -      Exiting _get_cookie_and_crumb_basic()
+2025-08-23 16:26:37,155 - yfinance - DEBUG -     Exiting _get_cookie_and_crumb()
+2025-08-23 16:26:37,206 - yfinance - DEBUG - response code=200
+2025-08-23 16:26:37,206 - yfinance - DEBUG -    Exiting _make_request()
+2025-08-23 16:26:37,206 - yfinance - DEBUG -   Exiting get()
+2025-08-23 16:26:37,207 - yfinance - DEBUG - META: yfinance received OHLC data: 2024-05-15 13:30:00 -> 2025-08-21 13:30:00
+2025-08-23 16:26:37,208 - yfinance - DEBUG - META: OHLC after cleaning: 2024-05-15 09:30:00-04:00 -> 2025-08-21 09:30:00-04:00
+2025-08-23 16:26:37,211 - yfinance - DEBUG - META: OHLC after combining events: 2024-05-15 00:00:00-04:00 -> 2025-08-21 00:00:00-04:00
+2025-08-23 16:26:37,213 - yfinance - DEBUG - META: yfinance returning OHLC: 2024-05-15 00:00:00-04:00 -> 2025-08-21 00:00:00-04:00
+2025-08-23 16:26:37,213 - yfinance - DEBUG -  Exiting history()
+2025-08-23 16:26:37,213 - yfinance - DEBUG - Exiting history()
+2025-08-23 16:26:37,214 - yfinance - DEBUG - Entering history()
+2025-08-23 16:26:37,214 - peewee - DEBUG - ('SELECT "t1"."key", "t1"."value" FROM "_tz_kv" AS "t1" WHERE ("t1"."key" = ?) LIMIT ? OFFSET ?', ['TSLA', 1, 0])
+2025-08-23 16:26:37,214 - yfinance - DEBUG -  Entering history()
+2025-08-23 16:26:37,214 - yfinance - DEBUG - TSLA: Yahoo GET parameters: {'period1': '2024-05-15 00:00:00-04:00', 'period2': '2025-08-22 00:00:00-04:00', 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2025-08-23 16:26:37,215 - yfinance - DEBUG -   Entering get()
+2025-08-23 16:26:37,215 - yfinance - DEBUG -    Entering _make_request()
+2025-08-23 16:26:37,215 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/v8/finance/chart/TSLA
+2025-08-23 16:26:37,215 - yfinance - DEBUG - params=frozendict.frozendict({'period1': 1715745600, 'period2': 1755835200, 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'})
+2025-08-23 16:26:37,215 - yfinance - DEBUG -     Entering _get_cookie_and_crumb()
+2025-08-23 16:26:37,215 - yfinance - DEBUG - cookie_mode = 'basic'
+2025-08-23 16:26:37,215 - yfinance - DEBUG -      Entering _get_cookie_and_crumb_basic()
+2025-08-23 16:26:37,215 - yfinance - DEBUG -       Entering _get_cookie_basic()
+2025-08-23 16:26:37,215 - yfinance - DEBUG - reusing cookie
+2025-08-23 16:26:37,215 - yfinance - DEBUG -       Exiting _get_cookie_basic()
+2025-08-23 16:26:37,215 - yfinance - DEBUG -       Entering _get_crumb_basic()
+2025-08-23 16:26:37,215 - yfinance - DEBUG - reusing crumb
+2025-08-23 16:26:37,215 - yfinance - DEBUG -       Exiting _get_crumb_basic()
+2025-08-23 16:26:37,215 - yfinance - DEBUG -      Exiting _get_cookie_and_crumb_basic()
+2025-08-23 16:26:37,215 - yfinance - DEBUG -     Exiting _get_cookie_and_crumb()
+2025-08-23 16:26:37,322 - yfinance - DEBUG - response code=200
+2025-08-23 16:26:37,322 - yfinance - DEBUG -    Exiting _make_request()
+2025-08-23 16:26:37,322 - yfinance - DEBUG -   Exiting get()
+2025-08-23 16:26:37,323 - yfinance - DEBUG - TSLA: yfinance received OHLC data: 2024-05-15 13:30:00 -> 2025-08-21 13:30:00
+2025-08-23 16:26:37,324 - yfinance - DEBUG - TSLA: OHLC after cleaning: 2024-05-15 09:30:00-04:00 -> 2025-08-21 09:30:00-04:00
+2025-08-23 16:26:37,326 - yfinance - DEBUG - TSLA: OHLC after combining events: 2024-05-15 00:00:00-04:00 -> 2025-08-21 00:00:00-04:00
+2025-08-23 16:26:37,328 - yfinance - DEBUG - TSLA: yfinance returning OHLC: 2024-05-15 00:00:00-04:00 -> 2025-08-21 00:00:00-04:00
+2025-08-23 16:26:37,328 - yfinance - DEBUG -  Exiting history()
+2025-08-23 16:26:37,328 - yfinance - DEBUG - Exiting history()
+2025-08-23 16:26:37,329 - yfinance - DEBUG - Entering history()
+2025-08-23 16:26:37,329 - peewee - DEBUG - ('SELECT "t1"."key", "t1"."value" FROM "_tz_kv" AS "t1" WHERE ("t1"."key" = ?) LIMIT ? OFFSET ?', ['NVDA', 1, 0])
+2025-08-23 16:26:37,329 - yfinance - DEBUG -  Entering history()
+2025-08-23 16:26:37,330 - yfinance - DEBUG - NVDA: Yahoo GET parameters: {'period1': '2024-05-15 00:00:00-04:00', 'period2': '2025-08-22 00:00:00-04:00', 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2025-08-23 16:26:37,330 - yfinance - DEBUG -   Entering get()
+2025-08-23 16:26:37,330 - yfinance - DEBUG -    Entering _make_request()
+2025-08-23 16:26:37,330 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/v8/finance/chart/NVDA
+2025-08-23 16:26:37,330 - yfinance - DEBUG - params=frozendict.frozendict({'period1': 1715745600, 'period2': 1755835200, 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'})
+2025-08-23 16:26:37,330 - yfinance - DEBUG -     Entering _get_cookie_and_crumb()
+2025-08-23 16:26:37,330 - yfinance - DEBUG - cookie_mode = 'basic'
+2025-08-23 16:26:37,330 - yfinance - DEBUG -      Entering _get_cookie_and_crumb_basic()
+2025-08-23 16:26:37,330 - yfinance - DEBUG -       Entering _get_cookie_basic()
+2025-08-23 16:26:37,330 - yfinance - DEBUG - reusing cookie
+2025-08-23 16:26:37,330 - yfinance - DEBUG -       Exiting _get_cookie_basic()
+2025-08-23 16:26:37,330 - yfinance - DEBUG -       Entering _get_crumb_basic()
+2025-08-23 16:26:37,330 - yfinance - DEBUG - reusing crumb
+2025-08-23 16:26:37,330 - yfinance - DEBUG -       Exiting _get_crumb_basic()
+2025-08-23 16:26:37,330 - yfinance - DEBUG -      Exiting _get_cookie_and_crumb_basic()
+2025-08-23 16:26:37,330 - yfinance - DEBUG -     Exiting _get_cookie_and_crumb()
+2025-08-23 16:26:37,410 - yfinance - DEBUG - response code=200
+2025-08-23 16:26:37,410 - yfinance - DEBUG -    Exiting _make_request()
+2025-08-23 16:26:37,410 - yfinance - DEBUG -   Exiting get()
+2025-08-23 16:26:37,412 - yfinance - DEBUG - NVDA: yfinance received OHLC data: 2024-05-15 13:30:00 -> 2025-08-21 13:30:00
+2025-08-23 16:26:37,413 - yfinance - DEBUG - NVDA: OHLC after cleaning: 2024-05-15 09:30:00-04:00 -> 2025-08-21 09:30:00-04:00
+2025-08-23 16:26:37,420 - yfinance - DEBUG - NVDA: OHLC after combining events: 2024-05-15 00:00:00-04:00 -> 2025-08-21 00:00:00-04:00
+2025-08-23 16:26:37,422 - yfinance - DEBUG - NVDA: yfinance returning OHLC: 2024-05-15 00:00:00-04:00 -> 2025-08-21 00:00:00-04:00
+2025-08-23 16:26:37,422 - yfinance - DEBUG -  Exiting history()
+2025-08-23 16:26:37,422 - yfinance - DEBUG - Exiting history()
+2025-08-23 16:26:37,423 - yfinance - DEBUG - Entering history()
+2025-08-23 16:26:37,424 - peewee - DEBUG - ('SELECT "t1"."key", "t1"."value" FROM "_tz_kv" AS "t1" WHERE ("t1"."key" = ?) LIMIT ? OFFSET ?', ['ORCL', 1, 0])
+2025-08-23 16:26:37,424 - yfinance - DEBUG -  Entering history()
+2025-08-23 16:26:37,424 - yfinance - DEBUG - ORCL: Yahoo GET parameters: {'period1': '2024-05-15 00:00:00-04:00', 'period2': '2025-08-22 00:00:00-04:00', 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2025-08-23 16:26:37,424 - yfinance - DEBUG -   Entering get()
+2025-08-23 16:26:37,424 - yfinance - DEBUG -    Entering _make_request()
+2025-08-23 16:26:37,424 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/v8/finance/chart/ORCL
+2025-08-23 16:26:37,424 - yfinance - DEBUG - params=frozendict.frozendict({'period1': 1715745600, 'period2': 1755835200, 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'})
+2025-08-23 16:26:37,424 - yfinance - DEBUG -     Entering _get_cookie_and_crumb()
+2025-08-23 16:26:37,424 - yfinance - DEBUG - cookie_mode = 'basic'
+2025-08-23 16:26:37,424 - yfinance - DEBUG -      Entering _get_cookie_and_crumb_basic()
+2025-08-23 16:26:37,424 - yfinance - DEBUG -       Entering _get_cookie_basic()
+2025-08-23 16:26:37,424 - yfinance - DEBUG - reusing cookie
+2025-08-23 16:26:37,424 - yfinance - DEBUG -       Exiting _get_cookie_basic()
+2025-08-23 16:26:37,424 - yfinance - DEBUG -       Entering _get_crumb_basic()
+2025-08-23 16:26:37,424 - yfinance - DEBUG - reusing crumb
+2025-08-23 16:26:37,424 - yfinance - DEBUG -       Exiting _get_crumb_basic()
+2025-08-23 16:26:37,424 - yfinance - DEBUG -      Exiting _get_cookie_and_crumb_basic()
+2025-08-23 16:26:37,424 - yfinance - DEBUG -     Exiting _get_cookie_and_crumb()
+2025-08-23 16:26:37,505 - yfinance - DEBUG - response code=200
+2025-08-23 16:26:37,505 - yfinance - DEBUG -    Exiting _make_request()
+2025-08-23 16:26:37,505 - yfinance - DEBUG -   Exiting get()
+2025-08-23 16:26:37,507 - yfinance - DEBUG - ORCL: yfinance received OHLC data: 2024-05-15 13:30:00 -> 2025-08-21 13:30:00
+2025-08-23 16:26:37,507 - yfinance - DEBUG - ORCL: OHLC after cleaning: 2024-05-15 09:30:00-04:00 -> 2025-08-21 09:30:00-04:00
+2025-08-23 16:26:37,512 - yfinance - DEBUG - ORCL: OHLC after combining events: 2024-05-15 00:00:00-04:00 -> 2025-08-21 00:00:00-04:00
+2025-08-23 16:26:37,514 - yfinance - DEBUG - ORCL: yfinance returning OHLC: 2024-05-15 00:00:00-04:00 -> 2025-08-21 00:00:00-04:00
+2025-08-23 16:26:37,514 - yfinance - DEBUG -  Exiting history()
+2025-08-23 16:26:37,514 - yfinance - DEBUG - Exiting history()
+2025-08-23 16:26:37,515 - yfinance - DEBUG - Entering history()
+2025-08-23 16:26:37,516 - peewee - DEBUG - ('SELECT "t1"."key", "t1"."value" FROM "_tz_kv" AS "t1" WHERE ("t1"."key" = ?) LIMIT ? OFFSET ?', ['JPM', 1, 0])
+2025-08-23 16:26:37,516 - yfinance - DEBUG -  Entering history()
+2025-08-23 16:26:37,516 - yfinance - DEBUG - JPM: Yahoo GET parameters: {'period1': '2024-05-15 00:00:00-04:00', 'period2': '2025-08-22 00:00:00-04:00', 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2025-08-23 16:26:37,516 - yfinance - DEBUG -   Entering get()
+2025-08-23 16:26:37,516 - yfinance - DEBUG -    Entering _make_request()
+2025-08-23 16:26:37,516 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/v8/finance/chart/JPM
+2025-08-23 16:26:37,516 - yfinance - DEBUG - params=frozendict.frozendict({'period1': 1715745600, 'period2': 1755835200, 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'})
+2025-08-23 16:26:37,516 - yfinance - DEBUG -     Entering _get_cookie_and_crumb()
+2025-08-23 16:26:37,516 - yfinance - DEBUG - cookie_mode = 'basic'
+2025-08-23 16:26:37,516 - yfinance - DEBUG -      Entering _get_cookie_and_crumb_basic()
+2025-08-23 16:26:37,516 - yfinance - DEBUG -       Entering _get_cookie_basic()
+2025-08-23 16:26:37,516 - yfinance - DEBUG - reusing cookie
+2025-08-23 16:26:37,516 - yfinance - DEBUG -       Exiting _get_cookie_basic()
+2025-08-23 16:26:37,516 - yfinance - DEBUG -       Entering _get_crumb_basic()
+2025-08-23 16:26:37,516 - yfinance - DEBUG - reusing crumb
+2025-08-23 16:26:37,516 - yfinance - DEBUG -       Exiting _get_crumb_basic()
+2025-08-23 16:26:37,517 - yfinance - DEBUG -      Exiting _get_cookie_and_crumb_basic()
+2025-08-23 16:26:37,517 - yfinance - DEBUG -     Exiting _get_cookie_and_crumb()
+2025-08-23 16:26:37,643 - yfinance - DEBUG - response code=200
+2025-08-23 16:26:37,643 - yfinance - DEBUG -    Exiting _make_request()
+2025-08-23 16:26:37,643 - yfinance - DEBUG -   Exiting get()
+2025-08-23 16:26:37,644 - yfinance - DEBUG - JPM: yfinance received OHLC data: 2024-05-15 13:30:00 -> 2025-08-21 13:30:00
+2025-08-23 16:26:37,645 - yfinance - DEBUG - JPM: OHLC after cleaning: 2024-05-15 09:30:00-04:00 -> 2025-08-21 09:30:00-04:00
+2025-08-23 16:26:37,649 - yfinance - DEBUG - JPM: OHLC after combining events: 2024-05-15 00:00:00-04:00 -> 2025-08-21 00:00:00-04:00
+2025-08-23 16:26:37,651 - yfinance - DEBUG - JPM: yfinance returning OHLC: 2024-05-15 00:00:00-04:00 -> 2025-08-21 00:00:00-04:00
+2025-08-23 16:26:37,652 - yfinance - DEBUG -  Exiting history()
+2025-08-23 16:26:37,652 - yfinance - DEBUG - Exiting history()
+2025-08-23 16:26:37,653 - yfinance - DEBUG - Entering history()
+2025-08-23 16:26:37,653 - peewee - DEBUG - ('SELECT "t1"."key", "t1"."value" FROM "_tz_kv" AS "t1" WHERE ("t1"."key" = ?) LIMIT ? OFFSET ?', ['BAC', 1, 0])
+2025-08-23 16:26:37,653 - yfinance - DEBUG -  Entering history()
+2025-08-23 16:26:37,653 - yfinance - DEBUG - BAC: Yahoo GET parameters: {'period1': '2024-05-15 00:00:00-04:00', 'period2': '2025-08-22 00:00:00-04:00', 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2025-08-23 16:26:37,653 - yfinance - DEBUG -   Entering get()
+2025-08-23 16:26:37,653 - yfinance - DEBUG -    Entering _make_request()
+2025-08-23 16:26:37,653 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/v8/finance/chart/BAC
+2025-08-23 16:26:37,653 - yfinance - DEBUG - params=frozendict.frozendict({'period1': 1715745600, 'period2': 1755835200, 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'})
+2025-08-23 16:26:37,653 - yfinance - DEBUG -     Entering _get_cookie_and_crumb()
+2025-08-23 16:26:37,653 - yfinance - DEBUG - cookie_mode = 'basic'
+2025-08-23 16:26:37,653 - yfinance - DEBUG -      Entering _get_cookie_and_crumb_basic()
+2025-08-23 16:26:37,653 - yfinance - DEBUG -       Entering _get_cookie_basic()
+2025-08-23 16:26:37,653 - yfinance - DEBUG - reusing cookie
+2025-08-23 16:26:37,653 - yfinance - DEBUG -       Exiting _get_cookie_basic()
+2025-08-23 16:26:37,653 - yfinance - DEBUG -       Entering _get_crumb_basic()
+2025-08-23 16:26:37,653 - yfinance - DEBUG - reusing crumb
+2025-08-23 16:26:37,654 - yfinance - DEBUG -       Exiting _get_crumb_basic()
+2025-08-23 16:26:37,654 - yfinance - DEBUG -      Exiting _get_cookie_and_crumb_basic()
+2025-08-23 16:26:37,654 - yfinance - DEBUG -     Exiting _get_cookie_and_crumb()
+2025-08-23 16:26:37,845 - yfinance - DEBUG - response code=200
+2025-08-23 16:26:37,846 - yfinance - DEBUG -    Exiting _make_request()
+2025-08-23 16:26:37,846 - yfinance - DEBUG -   Exiting get()
+2025-08-23 16:26:37,848 - yfinance - DEBUG - BAC: yfinance received OHLC data: 2024-05-15 13:30:00 -> 2025-08-21 13:30:00
+2025-08-23 16:26:37,849 - yfinance - DEBUG - BAC: OHLC after cleaning: 2024-05-15 09:30:00-04:00 -> 2025-08-21 09:30:00-04:00
+2025-08-23 16:26:37,855 - yfinance - DEBUG - BAC: OHLC after combining events: 2024-05-15 00:00:00-04:00 -> 2025-08-21 00:00:00-04:00
+2025-08-23 16:26:37,859 - yfinance - DEBUG - BAC: yfinance returning OHLC: 2024-05-15 00:00:00-04:00 -> 2025-08-21 00:00:00-04:00
+2025-08-23 16:26:37,859 - yfinance - DEBUG -  Exiting history()
+2025-08-23 16:26:37,859 - yfinance - DEBUG - Exiting history()
+2025-08-23 16:26:37,860 - yfinance - DEBUG - Entering history()
+2025-08-23 16:26:37,861 - peewee - DEBUG - ('SELECT "t1"."key", "t1"."value" FROM "_tz_kv" AS "t1" WHERE ("t1"."key" = ?) LIMIT ? OFFSET ?', ['V', 1, 0])
+2025-08-23 16:26:37,861 - yfinance - DEBUG -  Entering history()
+2025-08-23 16:26:37,861 - yfinance - DEBUG - V: Yahoo GET parameters: {'period1': '2024-05-15 00:00:00-04:00', 'period2': '2025-08-22 00:00:00-04:00', 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2025-08-23 16:26:37,861 - yfinance - DEBUG -   Entering get()
+2025-08-23 16:26:37,861 - yfinance - DEBUG -    Entering _make_request()
+2025-08-23 16:26:37,861 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/v8/finance/chart/V
+2025-08-23 16:26:37,861 - yfinance - DEBUG - params=frozendict.frozendict({'period1': 1715745600, 'period2': 1755835200, 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'})
+2025-08-23 16:26:37,861 - yfinance - DEBUG -     Entering _get_cookie_and_crumb()
+2025-08-23 16:26:37,861 - yfinance - DEBUG - cookie_mode = 'basic'
+2025-08-23 16:26:37,861 - yfinance - DEBUG -      Entering _get_cookie_and_crumb_basic()
+2025-08-23 16:26:37,861 - yfinance - DEBUG -       Entering _get_cookie_basic()
+2025-08-23 16:26:37,862 - yfinance - DEBUG - reusing cookie
+2025-08-23 16:26:37,862 - yfinance - DEBUG -       Exiting _get_cookie_basic()
+2025-08-23 16:26:37,862 - yfinance - DEBUG -       Entering _get_crumb_basic()
+2025-08-23 16:26:37,862 - yfinance - DEBUG - reusing crumb
+2025-08-23 16:26:37,862 - yfinance - DEBUG -       Exiting _get_crumb_basic()
+2025-08-23 16:26:37,862 - yfinance - DEBUG -      Exiting _get_cookie_and_crumb_basic()
+2025-08-23 16:26:37,862 - yfinance - DEBUG -     Exiting _get_cookie_and_crumb()
+2025-08-23 16:26:37,931 - yfinance - DEBUG - response code=200
+2025-08-23 16:26:37,931 - yfinance - DEBUG -    Exiting _make_request()
+2025-08-23 16:26:37,931 - yfinance - DEBUG -   Exiting get()
+2025-08-23 16:26:37,933 - yfinance - DEBUG - V: yfinance received OHLC data: 2024-05-15 13:30:00 -> 2025-08-21 13:30:00
+2025-08-23 16:26:37,934 - yfinance - DEBUG - V: OHLC after cleaning: 2024-05-15 09:30:00-04:00 -> 2025-08-21 09:30:00-04:00
+2025-08-23 16:26:37,938 - yfinance - DEBUG - V: OHLC after combining events: 2024-05-15 00:00:00-04:00 -> 2025-08-21 00:00:00-04:00
+2025-08-23 16:26:37,941 - yfinance - DEBUG - V: yfinance returning OHLC: 2024-05-15 00:00:00-04:00 -> 2025-08-21 00:00:00-04:00
+2025-08-23 16:26:37,941 - yfinance - DEBUG -  Exiting history()
+2025-08-23 16:26:37,941 - yfinance - DEBUG - Exiting history()
+2025-08-23 16:26:37,942 - yfinance - DEBUG - Entering history()
+2025-08-23 16:26:37,943 - peewee - DEBUG - ('SELECT "t1"."key", "t1"."value" FROM "_tz_kv" AS "t1" WHERE ("t1"."key" = ?) LIMIT ? OFFSET ?', ['MA', 1, 0])
+2025-08-23 16:26:37,943 - yfinance - DEBUG -  Entering history()
+2025-08-23 16:26:37,943 - yfinance - DEBUG - MA: Yahoo GET parameters: {'period1': '2024-05-15 00:00:00-04:00', 'period2': '2025-08-22 00:00:00-04:00', 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2025-08-23 16:26:37,943 - yfinance - DEBUG -   Entering get()
+2025-08-23 16:26:37,943 - yfinance - DEBUG -    Entering _make_request()
+2025-08-23 16:26:37,943 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/v8/finance/chart/MA
+2025-08-23 16:26:37,943 - yfinance - DEBUG - params=frozendict.frozendict({'period1': 1715745600, 'period2': 1755835200, 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'})
+2025-08-23 16:26:37,943 - yfinance - DEBUG -     Entering _get_cookie_and_crumb()
+2025-08-23 16:26:37,943 - yfinance - DEBUG - cookie_mode = 'basic'
+2025-08-23 16:26:37,943 - yfinance - DEBUG -      Entering _get_cookie_and_crumb_basic()
+2025-08-23 16:26:37,943 - yfinance - DEBUG -       Entering _get_cookie_basic()
+2025-08-23 16:26:37,943 - yfinance - DEBUG - reusing cookie
+2025-08-23 16:26:37,943 - yfinance - DEBUG -       Exiting _get_cookie_basic()
+2025-08-23 16:26:37,944 - yfinance - DEBUG -       Entering _get_crumb_basic()
+2025-08-23 16:26:37,944 - yfinance - DEBUG - reusing crumb
+2025-08-23 16:26:37,944 - yfinance - DEBUG -       Exiting _get_crumb_basic()
+2025-08-23 16:26:37,944 - yfinance - DEBUG -      Exiting _get_cookie_and_crumb_basic()
+2025-08-23 16:26:37,944 - yfinance - DEBUG -     Exiting _get_cookie_and_crumb()
+2025-08-23 16:26:38,021 - yfinance - DEBUG - response code=200
+2025-08-23 16:26:38,021 - yfinance - DEBUG -    Exiting _make_request()
+2025-08-23 16:26:38,021 - yfinance - DEBUG -   Exiting get()
+2025-08-23 16:26:38,023 - yfinance - DEBUG - MA: yfinance received OHLC data: 2024-05-15 13:30:00 -> 2025-08-21 13:30:00
+2025-08-23 16:26:38,024 - yfinance - DEBUG - MA: OHLC after cleaning: 2024-05-15 09:30:00-04:00 -> 2025-08-21 09:30:00-04:00
+2025-08-23 16:26:38,027 - yfinance - DEBUG - MA: OHLC after combining events: 2024-05-15 00:00:00-04:00 -> 2025-08-21 00:00:00-04:00
+2025-08-23 16:26:38,030 - yfinance - DEBUG - MA: yfinance returning OHLC: 2024-05-15 00:00:00-04:00 -> 2025-08-21 00:00:00-04:00
+2025-08-23 16:26:38,030 - yfinance - DEBUG -  Exiting history()
+2025-08-23 16:26:38,030 - yfinance - DEBUG - Exiting history()
+2025-08-23 16:26:38,031 - yfinance - DEBUG - Entering history()
+2025-08-23 16:26:38,031 - peewee - DEBUG - ('SELECT "t1"."key", "t1"."value" FROM "_tz_kv" AS "t1" WHERE ("t1"."key" = ?) LIMIT ? OFFSET ?', ['UNH', 1, 0])
+2025-08-23 16:26:38,031 - yfinance - DEBUG -  Entering history()
+2025-08-23 16:26:38,032 - yfinance - DEBUG - UNH: Yahoo GET parameters: {'period1': '2024-05-15 00:00:00-04:00', 'period2': '2025-08-22 00:00:00-04:00', 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2025-08-23 16:26:38,032 - yfinance - DEBUG -   Entering get()
+2025-08-23 16:26:38,032 - yfinance - DEBUG -    Entering _make_request()
+2025-08-23 16:26:38,032 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/v8/finance/chart/UNH
+2025-08-23 16:26:38,032 - yfinance - DEBUG - params=frozendict.frozendict({'period1': 1715745600, 'period2': 1755835200, 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'})
+2025-08-23 16:26:38,032 - yfinance - DEBUG -     Entering _get_cookie_and_crumb()
+2025-08-23 16:26:38,032 - yfinance - DEBUG - cookie_mode = 'basic'
+2025-08-23 16:26:38,032 - yfinance - DEBUG -      Entering _get_cookie_and_crumb_basic()
+2025-08-23 16:26:38,032 - yfinance - DEBUG -       Entering _get_cookie_basic()
+2025-08-23 16:26:38,032 - yfinance - DEBUG - reusing cookie
+2025-08-23 16:26:38,032 - yfinance - DEBUG -       Exiting _get_cookie_basic()
+2025-08-23 16:26:38,032 - yfinance - DEBUG -       Entering _get_crumb_basic()
+2025-08-23 16:26:38,032 - yfinance - DEBUG - reusing crumb
+2025-08-23 16:26:38,032 - yfinance - DEBUG -       Exiting _get_crumb_basic()
+2025-08-23 16:26:38,032 - yfinance - DEBUG -      Exiting _get_cookie_and_crumb_basic()
+2025-08-23 16:26:38,032 - yfinance - DEBUG -     Exiting _get_cookie_and_crumb()
+2025-08-23 16:26:38,138 - yfinance - DEBUG - response code=200
+2025-08-23 16:26:38,138 - yfinance - DEBUG -    Exiting _make_request()
+2025-08-23 16:26:38,138 - yfinance - DEBUG -   Exiting get()
+2025-08-23 16:26:38,140 - yfinance - DEBUG - UNH: yfinance received OHLC data: 2024-05-15 13:30:00 -> 2025-08-21 13:30:00
+2025-08-23 16:26:38,140 - yfinance - DEBUG - UNH: OHLC after cleaning: 2024-05-15 09:30:00-04:00 -> 2025-08-21 09:30:00-04:00
+2025-08-23 16:26:38,145 - yfinance - DEBUG - UNH: OHLC after combining events: 2024-05-15 00:00:00-04:00 -> 2025-08-21 00:00:00-04:00
+2025-08-23 16:26:38,148 - yfinance - DEBUG - UNH: yfinance returning OHLC: 2024-05-15 00:00:00-04:00 -> 2025-08-21 00:00:00-04:00
+2025-08-23 16:26:38,148 - yfinance - DEBUG -  Exiting history()
+2025-08-23 16:26:38,148 - yfinance - DEBUG - Exiting history()
+2025-08-23 16:26:38,150 - yfinance - DEBUG - Entering history()
+2025-08-23 16:26:38,150 - peewee - DEBUG - ('SELECT "t1"."key", "t1"."value" FROM "_tz_kv" AS "t1" WHERE ("t1"."key" = ?) LIMIT ? OFFSET ?', ['JNJ', 1, 0])
+2025-08-23 16:26:38,150 - yfinance - DEBUG -  Entering history()
+2025-08-23 16:26:38,150 - yfinance - DEBUG - JNJ: Yahoo GET parameters: {'period1': '2024-05-15 00:00:00-04:00', 'period2': '2025-08-22 00:00:00-04:00', 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2025-08-23 16:26:38,150 - yfinance - DEBUG -   Entering get()
+2025-08-23 16:26:38,150 - yfinance - DEBUG -    Entering _make_request()
+2025-08-23 16:26:38,150 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/v8/finance/chart/JNJ
+2025-08-23 16:26:38,150 - yfinance - DEBUG - params=frozendict.frozendict({'period1': 1715745600, 'period2': 1755835200, 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'})
+2025-08-23 16:26:38,150 - yfinance - DEBUG -     Entering _get_cookie_and_crumb()
+2025-08-23 16:26:38,150 - yfinance - DEBUG - cookie_mode = 'basic'
+2025-08-23 16:26:38,150 - yfinance - DEBUG -      Entering _get_cookie_and_crumb_basic()
+2025-08-23 16:26:38,151 - yfinance - DEBUG -       Entering _get_cookie_basic()
+2025-08-23 16:26:38,151 - yfinance - DEBUG - reusing cookie
+2025-08-23 16:26:38,151 - yfinance - DEBUG -       Exiting _get_cookie_basic()
+2025-08-23 16:26:38,151 - yfinance - DEBUG -       Entering _get_crumb_basic()
+2025-08-23 16:26:38,151 - yfinance - DEBUG - reusing crumb
+2025-08-23 16:26:38,151 - yfinance - DEBUG -       Exiting _get_crumb_basic()
+2025-08-23 16:26:38,151 - yfinance - DEBUG -      Exiting _get_cookie_and_crumb_basic()
+2025-08-23 16:26:38,151 - yfinance - DEBUG -     Exiting _get_cookie_and_crumb()
+2025-08-23 16:26:38,294 - yfinance - DEBUG - response code=200
+2025-08-23 16:26:38,294 - yfinance - DEBUG -    Exiting _make_request()
+2025-08-23 16:26:38,294 - yfinance - DEBUG -   Exiting get()
+2025-08-23 16:26:38,296 - yfinance - DEBUG - JNJ: yfinance received OHLC data: 2024-05-15 13:30:00 -> 2025-08-21 13:30:00
+2025-08-23 16:26:38,297 - yfinance - DEBUG - JNJ: OHLC after cleaning: 2024-05-15 09:30:00-04:00 -> 2025-08-21 09:30:00-04:00
+2025-08-23 16:26:38,302 - yfinance - DEBUG - JNJ: OHLC after combining events: 2024-05-15 00:00:00-04:00 -> 2025-08-21 00:00:00-04:00
+2025-08-23 16:26:38,305 - yfinance - DEBUG - JNJ: yfinance returning OHLC: 2024-05-15 00:00:00-04:00 -> 2025-08-21 00:00:00-04:00
+2025-08-23 16:26:38,305 - yfinance - DEBUG -  Exiting history()
+2025-08-23 16:26:38,305 - yfinance - DEBUG - Exiting history()
+2025-08-23 16:26:38,306 - yfinance - DEBUG - Entering history()
+2025-08-23 16:26:38,306 - peewee - DEBUG - ('SELECT "t1"."key", "t1"."value" FROM "_tz_kv" AS "t1" WHERE ("t1"."key" = ?) LIMIT ? OFFSET ?', ['PG', 1, 0])
+2025-08-23 16:26:38,306 - yfinance - DEBUG -  Entering history()
+2025-08-23 16:26:38,307 - yfinance - DEBUG - PG: Yahoo GET parameters: {'period1': '2024-05-15 00:00:00-04:00', 'period2': '2025-08-22 00:00:00-04:00', 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2025-08-23 16:26:38,307 - yfinance - DEBUG -   Entering get()
+2025-08-23 16:26:38,307 - yfinance - DEBUG -    Entering _make_request()
+2025-08-23 16:26:38,307 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/v8/finance/chart/PG
+2025-08-23 16:26:38,307 - yfinance - DEBUG - params=frozendict.frozendict({'period1': 1715745600, 'period2': 1755835200, 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'})
+2025-08-23 16:26:38,307 - yfinance - DEBUG -     Entering _get_cookie_and_crumb()
+2025-08-23 16:26:38,307 - yfinance - DEBUG - cookie_mode = 'basic'
+2025-08-23 16:26:38,307 - yfinance - DEBUG -      Entering _get_cookie_and_crumb_basic()
+2025-08-23 16:26:38,307 - yfinance - DEBUG -       Entering _get_cookie_basic()
+2025-08-23 16:26:38,307 - yfinance - DEBUG - reusing cookie
+2025-08-23 16:26:38,307 - yfinance - DEBUG -       Exiting _get_cookie_basic()
+2025-08-23 16:26:38,307 - yfinance - DEBUG -       Entering _get_crumb_basic()
+2025-08-23 16:26:38,307 - yfinance - DEBUG - reusing crumb
+2025-08-23 16:26:38,307 - yfinance - DEBUG -       Exiting _get_crumb_basic()
+2025-08-23 16:26:38,307 - yfinance - DEBUG -      Exiting _get_cookie_and_crumb_basic()
+2025-08-23 16:26:38,307 - yfinance - DEBUG -     Exiting _get_cookie_and_crumb()
+2025-08-23 16:26:38,448 - yfinance - DEBUG - response code=200
+2025-08-23 16:26:38,448 - yfinance - DEBUG -    Exiting _make_request()
+2025-08-23 16:26:38,448 - yfinance - DEBUG -   Exiting get()
+2025-08-23 16:26:38,450 - yfinance - DEBUG - PG: yfinance received OHLC data: 2024-05-15 13:30:00 -> 2025-08-21 13:30:00
+2025-08-23 16:26:38,451 - yfinance - DEBUG - PG: OHLC after cleaning: 2024-05-15 09:30:00-04:00 -> 2025-08-21 09:30:00-04:00
+2025-08-23 16:26:38,457 - yfinance - DEBUG - PG: OHLC after combining events: 2024-05-15 00:00:00-04:00 -> 2025-08-21 00:00:00-04:00
+2025-08-23 16:26:38,460 - yfinance - DEBUG - PG: yfinance returning OHLC: 2024-05-15 00:00:00-04:00 -> 2025-08-21 00:00:00-04:00
+2025-08-23 16:26:38,460 - yfinance - DEBUG -  Exiting history()
+2025-08-23 16:26:38,460 - yfinance - DEBUG - Exiting history()
+2025-08-23 16:26:38,462 - yfinance - DEBUG - Entering history()
+2025-08-23 16:26:38,462 - peewee - DEBUG - ('SELECT "t1"."key", "t1"."value" FROM "_tz_kv" AS "t1" WHERE ("t1"."key" = ?) LIMIT ? OFFSET ?', ['KO', 1, 0])
+2025-08-23 16:26:38,463 - yfinance - DEBUG -  Entering history()
+2025-08-23 16:26:38,463 - yfinance - DEBUG - KO: Yahoo GET parameters: {'period1': '2024-05-15 00:00:00-04:00', 'period2': '2025-08-22 00:00:00-04:00', 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2025-08-23 16:26:38,463 - yfinance - DEBUG -   Entering get()
+2025-08-23 16:26:38,463 - yfinance - DEBUG -    Entering _make_request()
+2025-08-23 16:26:38,463 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/v8/finance/chart/KO
+2025-08-23 16:26:38,463 - yfinance - DEBUG - params=frozendict.frozendict({'period1': 1715745600, 'period2': 1755835200, 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'})
+2025-08-23 16:26:38,463 - yfinance - DEBUG -     Entering _get_cookie_and_crumb()
+2025-08-23 16:26:38,463 - yfinance - DEBUG - cookie_mode = 'basic'
+2025-08-23 16:26:38,463 - yfinance - DEBUG -      Entering _get_cookie_and_crumb_basic()
+2025-08-23 16:26:38,463 - yfinance - DEBUG -       Entering _get_cookie_basic()
+2025-08-23 16:26:38,463 - yfinance - DEBUG - reusing cookie
+2025-08-23 16:26:38,463 - yfinance - DEBUG -       Exiting _get_cookie_basic()
+2025-08-23 16:26:38,463 - yfinance - DEBUG -       Entering _get_crumb_basic()
+2025-08-23 16:26:38,463 - yfinance - DEBUG - reusing crumb
+2025-08-23 16:26:38,463 - yfinance - DEBUG -       Exiting _get_crumb_basic()
+2025-08-23 16:26:38,463 - yfinance - DEBUG -      Exiting _get_cookie_and_crumb_basic()
+2025-08-23 16:26:38,463 - yfinance - DEBUG -     Exiting _get_cookie_and_crumb()
+2025-08-23 16:26:38,595 - yfinance - DEBUG - response code=200
+2025-08-23 16:26:38,596 - yfinance - DEBUG -    Exiting _make_request()
+2025-08-23 16:26:38,596 - yfinance - DEBUG -   Exiting get()
+2025-08-23 16:26:38,598 - yfinance - DEBUG - KO: yfinance received OHLC data: 2024-05-15 13:30:00 -> 2025-08-21 13:30:00
+2025-08-23 16:26:38,599 - yfinance - DEBUG - KO: OHLC after cleaning: 2024-05-15 09:30:00-04:00 -> 2025-08-21 09:30:00-04:00
+2025-08-23 16:26:38,606 - yfinance - DEBUG - KO: OHLC after combining events: 2024-05-15 00:00:00-04:00 -> 2025-08-21 00:00:00-04:00
+2025-08-23 16:26:38,609 - yfinance - DEBUG - KO: yfinance returning OHLC: 2024-05-15 00:00:00-04:00 -> 2025-08-21 00:00:00-04:00
+2025-08-23 16:26:38,609 - yfinance - DEBUG -  Exiting history()
+2025-08-23 16:26:38,609 - yfinance - DEBUG - Exiting history()
+2025-08-23 16:26:38,611 - yfinance - DEBUG - Entering history()
+2025-08-23 16:26:38,611 - peewee - DEBUG - ('SELECT "t1"."key", "t1"."value" FROM "_tz_kv" AS "t1" WHERE ("t1"."key" = ?) LIMIT ? OFFSET ?', ['XOM', 1, 0])
+2025-08-23 16:26:38,612 - yfinance - DEBUG -  Entering history()
+2025-08-23 16:26:38,612 - yfinance - DEBUG - XOM: Yahoo GET parameters: {'period1': '2024-05-15 00:00:00-04:00', 'period2': '2025-08-22 00:00:00-04:00', 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2025-08-23 16:26:38,612 - yfinance - DEBUG -   Entering get()
+2025-08-23 16:26:38,612 - yfinance - DEBUG -    Entering _make_request()
+2025-08-23 16:26:38,612 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/v8/finance/chart/XOM
+2025-08-23 16:26:38,612 - yfinance - DEBUG - params=frozendict.frozendict({'period1': 1715745600, 'period2': 1755835200, 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'})
+2025-08-23 16:26:38,612 - yfinance - DEBUG -     Entering _get_cookie_and_crumb()
+2025-08-23 16:26:38,612 - yfinance - DEBUG - cookie_mode = 'basic'
+2025-08-23 16:26:38,612 - yfinance - DEBUG -      Entering _get_cookie_and_crumb_basic()
+2025-08-23 16:26:38,612 - yfinance - DEBUG -       Entering _get_cookie_basic()
+2025-08-23 16:26:38,612 - yfinance - DEBUG - reusing cookie
+2025-08-23 16:26:38,612 - yfinance - DEBUG -       Exiting _get_cookie_basic()
+2025-08-23 16:26:38,612 - yfinance - DEBUG -       Entering _get_crumb_basic()
+2025-08-23 16:26:38,613 - yfinance - DEBUG - reusing crumb
+2025-08-23 16:26:38,613 - yfinance - DEBUG -       Exiting _get_crumb_basic()
+2025-08-23 16:26:38,613 - yfinance - DEBUG -      Exiting _get_cookie_and_crumb_basic()
+2025-08-23 16:26:38,613 - yfinance - DEBUG -     Exiting _get_cookie_and_crumb()
+2025-08-23 16:26:38,774 - yfinance - DEBUG - response code=200
+2025-08-23 16:26:38,775 - yfinance - DEBUG -    Exiting _make_request()
+2025-08-23 16:26:38,775 - yfinance - DEBUG -   Exiting get()
+2025-08-23 16:26:38,778 - yfinance - DEBUG - XOM: yfinance received OHLC data: 2024-05-15 13:30:00 -> 2025-08-21 13:30:00
+2025-08-23 16:26:38,780 - yfinance - DEBUG - XOM: OHLC after cleaning: 2024-05-15 09:30:00-04:00 -> 2025-08-21 09:30:00-04:00
+2025-08-23 16:26:38,788 - yfinance - DEBUG - XOM: OHLC after combining events: 2024-05-15 00:00:00-04:00 -> 2025-08-21 00:00:00-04:00
+2025-08-23 16:26:38,791 - yfinance - DEBUG - XOM: yfinance returning OHLC: 2024-05-15 00:00:00-04:00 -> 2025-08-21 00:00:00-04:00
+2025-08-23 16:26:38,792 - yfinance - DEBUG -  Exiting history()
+2025-08-23 16:26:38,792 - yfinance - DEBUG - Exiting history()
+2025-08-23 16:26:38,793 - yfinance - DEBUG - Entering history()
+2025-08-23 16:26:38,794 - peewee - DEBUG - ('SELECT "t1"."key", "t1"."value" FROM "_tz_kv" AS "t1" WHERE ("t1"."key" = ?) LIMIT ? OFFSET ?', ['HD', 1, 0])
+2025-08-23 16:26:38,794 - yfinance - DEBUG -  Entering history()
+2025-08-23 16:26:38,794 - yfinance - DEBUG - HD: Yahoo GET parameters: {'period1': '2024-05-15 00:00:00-04:00', 'period2': '2025-08-22 00:00:00-04:00', 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2025-08-23 16:26:38,795 - yfinance - DEBUG -   Entering get()
+2025-08-23 16:26:38,795 - yfinance - DEBUG -    Entering _make_request()
+2025-08-23 16:26:38,795 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/v8/finance/chart/HD
+2025-08-23 16:26:38,795 - yfinance - DEBUG - params=frozendict.frozendict({'period1': 1715745600, 'period2': 1755835200, 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'})
+2025-08-23 16:26:38,795 - yfinance - DEBUG -     Entering _get_cookie_and_crumb()
+2025-08-23 16:26:38,795 - yfinance - DEBUG - cookie_mode = 'basic'
+2025-08-23 16:26:38,795 - yfinance - DEBUG -      Entering _get_cookie_and_crumb_basic()
+2025-08-23 16:26:38,795 - yfinance - DEBUG -       Entering _get_cookie_basic()
+2025-08-23 16:26:38,795 - yfinance - DEBUG - reusing cookie
+2025-08-23 16:26:38,795 - yfinance - DEBUG -       Exiting _get_cookie_basic()
+2025-08-23 16:26:38,795 - yfinance - DEBUG -       Entering _get_crumb_basic()
+2025-08-23 16:26:38,795 - yfinance - DEBUG - reusing crumb
+2025-08-23 16:26:38,795 - yfinance - DEBUG -       Exiting _get_crumb_basic()
+2025-08-23 16:26:38,795 - yfinance - DEBUG -      Exiting _get_cookie_and_crumb_basic()
+2025-08-23 16:26:38,795 - yfinance - DEBUG -     Exiting _get_cookie_and_crumb()
+2025-08-23 16:26:38,893 - yfinance - DEBUG - response code=200
+2025-08-23 16:26:38,894 - yfinance - DEBUG -    Exiting _make_request()
+2025-08-23 16:26:38,894 - yfinance - DEBUG -   Exiting get()
+2025-08-23 16:26:38,896 - yfinance - DEBUG - HD: yfinance received OHLC data: 2024-05-15 13:30:00 -> 2025-08-21 13:30:00
+2025-08-23 16:26:38,897 - yfinance - DEBUG - HD: OHLC after cleaning: 2024-05-15 09:30:00-04:00 -> 2025-08-21 09:30:00-04:00
+2025-08-23 16:26:38,902 - yfinance - DEBUG - HD: OHLC after combining events: 2024-05-15 00:00:00-04:00 -> 2025-08-21 00:00:00-04:00
+2025-08-23 16:26:38,905 - yfinance - DEBUG - HD: yfinance returning OHLC: 2024-05-15 00:00:00-04:00 -> 2025-08-21 00:00:00-04:00
+2025-08-23 16:26:38,905 - yfinance - DEBUG -  Exiting history()
+2025-08-23 16:26:38,905 - yfinance - DEBUG - Exiting history()
+2025-08-23 16:26:38,906 - yfinance - DEBUG - Entering history()
+2025-08-23 16:26:38,907 - peewee - DEBUG - ('SELECT "t1"."key", "t1"."value" FROM "_tz_kv" AS "t1" WHERE ("t1"."key" = ?) LIMIT ? OFFSET ?', ['DIS', 1, 0])
+2025-08-23 16:26:38,907 - yfinance - DEBUG -  Entering history()
+2025-08-23 16:26:38,907 - yfinance - DEBUG - DIS: Yahoo GET parameters: {'period1': '2024-05-15 00:00:00-04:00', 'period2': '2025-08-22 00:00:00-04:00', 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2025-08-23 16:26:38,907 - yfinance - DEBUG -   Entering get()
+2025-08-23 16:26:38,907 - yfinance - DEBUG -    Entering _make_request()
+2025-08-23 16:26:38,907 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/v8/finance/chart/DIS
+2025-08-23 16:26:38,907 - yfinance - DEBUG - params=frozendict.frozendict({'period1': 1715745600, 'period2': 1755835200, 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'})
+2025-08-23 16:26:38,907 - yfinance - DEBUG -     Entering _get_cookie_and_crumb()
+2025-08-23 16:26:38,907 - yfinance - DEBUG - cookie_mode = 'basic'
+2025-08-23 16:26:38,907 - yfinance - DEBUG -      Entering _get_cookie_and_crumb_basic()
+2025-08-23 16:26:38,907 - yfinance - DEBUG -       Entering _get_cookie_basic()
+2025-08-23 16:26:38,907 - yfinance - DEBUG - reusing cookie
+2025-08-23 16:26:38,907 - yfinance - DEBUG -       Exiting _get_cookie_basic()
+2025-08-23 16:26:38,907 - yfinance - DEBUG -       Entering _get_crumb_basic()
+2025-08-23 16:26:38,908 - yfinance - DEBUG - reusing crumb
+2025-08-23 16:26:38,908 - yfinance - DEBUG -       Exiting _get_crumb_basic()
+2025-08-23 16:26:38,908 - yfinance - DEBUG -      Exiting _get_cookie_and_crumb_basic()
+2025-08-23 16:26:38,908 - yfinance - DEBUG -     Exiting _get_cookie_and_crumb()
+2025-08-23 16:26:39,046 - yfinance - DEBUG - response code=200
+2025-08-23 16:26:39,046 - yfinance - DEBUG -    Exiting _make_request()
+2025-08-23 16:26:39,046 - yfinance - DEBUG -   Exiting get()
+2025-08-23 16:26:39,049 - yfinance - DEBUG - DIS: yfinance received OHLC data: 2024-05-15 13:30:00 -> 2025-08-21 13:30:00
+2025-08-23 16:26:39,050 - yfinance - DEBUG - DIS: OHLC after cleaning: 2024-05-15 09:30:00-04:00 -> 2025-08-21 09:30:00-04:00
+2025-08-23 16:26:39,056 - yfinance - DEBUG - DIS: OHLC after combining events: 2024-05-15 00:00:00-04:00 -> 2025-08-21 00:00:00-04:00
+2025-08-23 16:26:39,060 - yfinance - DEBUG - DIS: yfinance returning OHLC: 2024-05-15 00:00:00-04:00 -> 2025-08-21 00:00:00-04:00
+2025-08-23 16:26:39,060 - yfinance - DEBUG -  Exiting history()
+2025-08-23 16:26:39,060 - yfinance - DEBUG - Exiting history()
+2025-08-23 16:26:39,062 - yfinance - DEBUG - Entering history()
+2025-08-23 16:26:39,062 - peewee - DEBUG - ('SELECT "t1"."key", "t1"."value" FROM "_tz_kv" AS "t1" WHERE ("t1"."key" = ?) LIMIT ? OFFSET ?', ['CRM', 1, 0])
+2025-08-23 16:26:39,062 - yfinance - DEBUG -  Entering history()
+2025-08-23 16:26:39,063 - yfinance - DEBUG - CRM: Yahoo GET parameters: {'period1': '2024-05-15 00:00:00-04:00', 'period2': '2025-08-22 00:00:00-04:00', 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2025-08-23 16:26:39,063 - yfinance - DEBUG -   Entering get()
+2025-08-23 16:26:39,063 - yfinance - DEBUG -    Entering _make_request()
+2025-08-23 16:26:39,063 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/v8/finance/chart/CRM
+2025-08-23 16:26:39,063 - yfinance - DEBUG - params=frozendict.frozendict({'period1': 1715745600, 'period2': 1755835200, 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'})
+2025-08-23 16:26:39,063 - yfinance - DEBUG -     Entering _get_cookie_and_crumb()
+2025-08-23 16:26:39,063 - yfinance - DEBUG - cookie_mode = 'basic'
+2025-08-23 16:26:39,063 - yfinance - DEBUG -      Entering _get_cookie_and_crumb_basic()
+2025-08-23 16:26:39,063 - yfinance - DEBUG -       Entering _get_cookie_basic()
+2025-08-23 16:26:39,063 - yfinance - DEBUG - reusing cookie
+2025-08-23 16:26:39,063 - yfinance - DEBUG -       Exiting _get_cookie_basic()
+2025-08-23 16:26:39,063 - yfinance - DEBUG -       Entering _get_crumb_basic()
+2025-08-23 16:26:39,063 - yfinance - DEBUG - reusing crumb
+2025-08-23 16:26:39,063 - yfinance - DEBUG -       Exiting _get_crumb_basic()
+2025-08-23 16:26:39,063 - yfinance - DEBUG -      Exiting _get_cookie_and_crumb_basic()
+2025-08-23 16:26:39,063 - yfinance - DEBUG -     Exiting _get_cookie_and_crumb()
+2025-08-23 16:26:39,121 - yfinance - DEBUG - response code=200
+2025-08-23 16:26:39,121 - yfinance - DEBUG -    Exiting _make_request()
+2025-08-23 16:26:39,121 - yfinance - DEBUG -   Exiting get()
+2025-08-23 16:26:39,122 - yfinance - DEBUG - CRM: yfinance received OHLC data: 2024-05-15 13:30:00 -> 2025-08-21 13:30:00
+2025-08-23 16:26:39,123 - yfinance - DEBUG - CRM: OHLC after cleaning: 2024-05-15 09:30:00-04:00 -> 2025-08-21 09:30:00-04:00
+2025-08-23 16:26:39,128 - yfinance - DEBUG - CRM: OHLC after combining events: 2024-05-15 00:00:00-04:00 -> 2025-08-21 00:00:00-04:00
+2025-08-23 16:26:39,130 - yfinance - DEBUG - CRM: yfinance returning OHLC: 2024-05-15 00:00:00-04:00 -> 2025-08-21 00:00:00-04:00
+2025-08-23 16:26:39,130 - yfinance - DEBUG -  Exiting history()
+2025-08-23 16:26:39,130 - yfinance - DEBUG - Exiting history()
+2025-08-23 16:26:39,490 - strategies.ml_strategy - INFO - Strategy initialized with 20 symbols
+2025-08-23 16:26:39,825 - strategies.ml_strategy - INFO - 2024-11-15: BUY SIGNAL: JNJ, Strength: 0.900, Size: 998, ML Enhanced: False
+2025-08-23 16:26:39,825 - strategies.ml_strategy - INFO - 2024-11-15: BUY SIGNAL: KO, Strength: 0.900, Size: 2483, ML Enhanced: False
+2025-08-23 16:26:39,826 - strategies.ml_strategy - INFO - 2024-11-15: BUY SIGNAL: DIS, Strength: 0.900, Size: 1314, ML Enhanced: False
+2025-08-23 16:26:39,826 - strategies.ml_strategy - INFO - 2024-11-15: Portfolio Value: $1,000,000, Return: +0.0%, Positions: 0
+2025-08-23 16:26:39,826 - strategies.ml_strategy - INFO - 2024-11-18: BUY EXECUTED: JNJ, Price: 148.90, Size: 998, Cost: 148599.04
+2025-08-23 16:26:39,826 - strategies.ml_strategy - INFO - 2024-11-18: BUY EXECUTED: KO, Price: 60.50, Size: 2483, Cost: 150232.83
+2025-08-23 16:26:39,826 - strategies.ml_strategy - INFO - 2024-11-18: BUY EXECUTED: DIS, Price: 112.35, Size: 1314, Cost: 147629.13
+2025-08-23 16:26:39,969 - strategies.ml_strategy - INFO - 2024-11-18: BUY SIGNAL: META, Strength: 0.700, Size: 271, ML Enhanced: False
+2025-08-23 16:26:39,969 - strategies.ml_strategy - INFO - 2024-11-18: BUY SIGNAL: KO, Strength: 0.700, Size: 1, ML Enhanced: False
+2025-08-23 16:26:39,969 - strategies.ml_strategy - INFO - 2024-11-18: BUY SIGNAL: DIS, Strength: 0.900, Size: 21, ML Enhanced: False
+2025-08-23 16:26:39,970 - strategies.ml_strategy - INFO - 2024-11-19: BUY EXECUTED: META, Price: 550.50, Size: 271, Cost: 149185.90
+2025-08-23 16:26:39,970 - strategies.ml_strategy - INFO - 2024-11-19: BUY EXECUTED: KO, Price: 60.55, Size: 1, Cost: 60.55
+2025-08-23 16:26:39,970 - strategies.ml_strategy - INFO - 2024-11-19: BUY EXECUTED: DIS, Price: 111.08, Size: 21, Cost: 2332.72
+2025-08-23 16:26:40,113 - strategies.ml_strategy - INFO - 2024-11-19: BUY SIGNAL: JNJ, Strength: 0.700, Size: 9, ML Enhanced: False
+2025-08-23 16:26:40,114 - strategies.ml_strategy - INFO - 2024-11-20: BUY EXECUTED: JNJ, Price: 149.33, Size: 9, Cost: 1343.94
+2025-08-23 16:26:40,257 - strategies.ml_strategy - INFO - 2024-11-20: BUY SIGNAL: JNJ, Strength: 0.900, Size: 4, ML Enhanced: False
+2025-08-23 16:26:40,257 - strategies.ml_strategy - INFO - 2024-11-21: BUY EXECUTED: JNJ, Price: 149.90, Size: 4, Cost: 599.61
+2025-08-23 16:26:40,403 - strategies.ml_strategy - INFO - 2024-11-21: BUY SIGNAL: ORCL, Strength: 0.900, Size: 795, ML Enhanced: False
+2025-08-23 16:26:40,403 - strategies.ml_strategy - INFO - 2024-11-21: BUY SIGNAL: CRM, Strength: 0.900, Size: 454, ML Enhanced: False
+2025-08-23 16:26:40,404 - strategies.ml_strategy - INFO - 2024-11-22: BUY EXECUTED: ORCL, Price: 191.43, Size: 795, Cost: 152187.56
+2025-08-23 16:26:40,404 - strategies.ml_strategy - INFO - 2024-11-22: BUY EXECUTED: CRM, Price: 337.50, Size: 454, Cost: 153223.81
+2025-08-23 16:26:40,718 - strategies.ml_strategy - INFO - 2024-11-22: BUY SIGNAL: PG, Strength: 0.900, Size: 878, ML Enhanced: False
+2025-08-23 16:26:40,718 - strategies.ml_strategy - INFO - 2024-11-22: BUY SIGNAL: HD, Strength: 0.900, Size: 368, ML Enhanced: False
+2025-08-23 16:26:40,718 - strategies.ml_strategy - INFO - 2024-11-22: Portfolio Value: $1,013,008, Return: +1.3%, Positions: 6
+2025-08-23 16:26:40,719 - strategies.ml_strategy - INFO - 2024-11-25: Order Failed: PG, Status: Margin
+2025-08-23 16:26:40,719 - strategies.ml_strategy - INFO - 2024-11-25: Order Failed: HD, Status: Margin
+2025-08-23 16:26:40,863 - strategies.ml_strategy - INFO - 2024-11-25: BUY SIGNAL: PG, Strength: 0.900, Size: 872, ML Enhanced: False
+2025-08-23 16:26:40,864 - strategies.ml_strategy - INFO - 2024-11-26: Order Failed: PG, Status: Margin
+2025-08-23 16:26:41,148 - strategies.ml_strategy - INFO - 2024-11-27: BUY SIGNAL: GOOGL, Strength: 0.700, Size: 896, ML Enhanced: False
+2025-08-23 16:26:41,148 - strategies.ml_strategy - INFO - 2024-11-27: BUY SIGNAL: NVDA, Strength: 0.700, Size: 1117, ML Enhanced: False
+2025-08-23 16:26:41,149 - strategies.ml_strategy - INFO - 2024-11-29: Order Failed: GOOGL, Status: Margin
+2025-08-23 16:26:41,149 - strategies.ml_strategy - INFO - 2024-11-29: Order Failed: NVDA, Status: Margin
+2025-08-23 16:26:41,605 - strategies.ml_strategy - INFO - 2024-12-02: EXIT SIGNAL: ORCL, Strength: 0.800
+2025-08-23 16:26:41,605 - strategies.ml_strategy - INFO - 2024-12-02: Portfolio Value: $1,011,935, Return: +1.2%, Positions: 6
+2025-08-23 16:26:41,606 - strategies.ml_strategy - INFO - 2024-12-03: SELL EXECUTED: ORCL, Price: 179.71, Size: -397, Value: 75998.06
+2025-08-23 16:26:41,893 - strategies.ml_strategy - INFO - 2024-12-04: BUY SIGNAL: XOM, Strength: 0.900, Size: 1387, ML Enhanced: False
+2025-08-23 16:26:41,894 - strategies.ml_strategy - INFO - 2024-12-05: BUY EXECUTED: XOM, Price: 111.62, Size: 1387, Cost: 154812.55
+2025-08-23 16:26:42,180 - strategies.ml_strategy - INFO - 2024-12-06: BUY SIGNAL: XOM, Strength: 0.700, Size: 8, ML Enhanced: False
+2025-08-23 16:26:42,180 - strategies.ml_strategy - INFO - 2024-12-09: BUY EXECUTED: XOM, Price: 111.55, Size: 8, Cost: 892.39
+2025-08-23 16:26:42,497 - strategies.ml_strategy - INFO - 2024-12-09: BUY SIGNAL: JNJ, Strength: 0.700, Size: 25, ML Enhanced: False
+2025-08-23 16:26:42,497 - strategies.ml_strategy - INFO - 2024-12-09: Portfolio Value: $1,016,627, Return: +1.7%, Positions: 7
+2025-08-23 16:26:42,497 - strategies.ml_strategy - INFO - 2024-12-10: BUY EXECUTED: JNJ, Price: 147.48, Size: 25, Cost: 3686.88
+2025-08-23 16:26:42,643 - strategies.ml_strategy - INFO - 2024-12-10: EXIT SIGNAL: ORCL, Strength: 0.800
+2025-08-23 16:26:42,643 - strategies.ml_strategy - INFO - 2024-12-10: BUY SIGNAL: GOOGL, Strength: 0.900, Size: 821, ML Enhanced: False
+2025-08-23 16:26:42,643 - strategies.ml_strategy - INFO - 2024-12-11: Order Failed: GOOGL, Status: Margin
+2025-08-23 16:26:42,643 - strategies.ml_strategy - INFO - 2024-12-11: SELL EXECUTED: ORCL, Price: 176.55, Size: -199, Value: 38094.75
+2025-08-23 16:26:42,789 - strategies.ml_strategy - INFO - 2024-12-11: EXIT SIGNAL: ORCL, Strength: 0.800
+2025-08-23 16:26:42,789 - strategies.ml_strategy - INFO - 2024-12-11: BUY SIGNAL: GOOGL, Strength: 0.900, Size: 780, ML Enhanced: False
+2025-08-23 16:26:42,789 - strategies.ml_strategy - INFO - 2024-12-11: BUY SIGNAL: TSLA, Strength: 0.900, Size: 358, ML Enhanced: False
+2025-08-23 16:26:42,789 - strategies.ml_strategy - INFO - 2024-12-11: BUY SIGNAL: JNJ, Strength: 0.900, Size: 18, ML Enhanced: False
+2025-08-23 16:26:42,789 - strategies.ml_strategy - INFO - 2024-12-11: BUY SIGNAL: XOM, Strength: 0.900, Size: 1, ML Enhanced: False
+2025-08-23 16:26:42,790 - strategies.ml_strategy - INFO - 2024-12-12: Order Failed: GOOGL, Status: Margin
+2025-08-23 16:26:42,790 - strategies.ml_strategy - INFO - 2024-12-12: Order Failed: TSLA, Status: Margin
+2025-08-23 16:26:42,790 - strategies.ml_strategy - INFO - 2024-12-12: Order Failed: JNJ, Status: Margin
+2025-08-23 16:26:42,790 - strategies.ml_strategy - INFO - 2024-12-12: Order Failed: XOM, Status: Margin
+2025-08-23 16:26:42,790 - strategies.ml_strategy - INFO - 2024-12-12: SELL EXECUTED: ORCL, Price: 176.55, Size: -99, Value: 18951.66
+2025-08-23 16:26:42,936 - strategies.ml_strategy - INFO - 2024-12-12: EXIT SIGNAL: ORCL, Strength: 0.800
+2025-08-23 16:26:42,936 - strategies.ml_strategy - INFO - 2024-12-12: BUY SIGNAL: JNJ, Strength: 0.700, Size: 25, ML Enhanced: False
+2025-08-23 16:26:42,936 - strategies.ml_strategy - INFO - 2024-12-12: BUY SIGNAL: XOM, Strength: 0.700, Size: 7, ML Enhanced: False
+2025-08-23 16:26:42,937 - strategies.ml_strategy - INFO - 2024-12-13: SELL EXECUTED: ORCL, Price: 173.58, Size: -50, Value: 9571.54
+2025-08-23 16:26:42,937 - strategies.ml_strategy - INFO - 2024-12-13: BUY EXECUTED: JNJ, Price: 143.28, Size: 25, Cost: 3581.88
+2025-08-23 16:26:42,937 - strategies.ml_strategy - INFO - 2024-12-13: BUY EXECUTED: XOM, Price: 108.88, Size: 7, Cost: 762.18
+2025-08-23 16:26:43,081 - strategies.ml_strategy - INFO - 2024-12-13: EXIT SIGNAL: ORCL, Strength: 0.800
+2025-08-23 16:26:43,081 - strategies.ml_strategy - INFO - 2024-12-13: BUY SIGNAL: JPM, Strength: 0.900, Size: 640, ML Enhanced: False
+2025-08-23 16:26:43,081 - strategies.ml_strategy - INFO - 2024-12-16: Order Failed: JPM, Status: Margin
+2025-08-23 16:26:43,082 - strategies.ml_strategy - INFO - 2024-12-16: SELL EXECUTED: ORCL, Price: 172.43, Size: -25, Value: 4785.77
+2025-08-23 16:26:43,439 - strategies.ml_strategy - INFO - 2024-12-16: EXIT SIGNAL: ORCL, Strength: 0.700
+2025-08-23 16:26:43,439 - strategies.ml_strategy - INFO - 2024-12-16: BUY SIGNAL: GOOGL, Strength: 0.900, Size: 766, ML Enhanced: False
+2025-08-23 16:26:43,439 - strategies.ml_strategy - INFO - 2024-12-16: BUY SIGNAL: TSLA, Strength: 0.900, Size: 324, ML Enhanced: False
+2025-08-23 16:26:43,439 - strategies.ml_strategy - INFO - 2024-12-16: BUY SIGNAL: ORCL, Strength: 0.700, Size: 860, ML Enhanced: False
+2025-08-23 16:26:43,439 - strategies.ml_strategy - INFO - 2024-12-16: BUY SIGNAL: JPM, Strength: 0.700, Size: 637, ML Enhanced: False
+2025-08-23 16:26:43,439 - strategies.ml_strategy - INFO - 2024-12-16: BUY SIGNAL: BAC, Strength: 0.700, Size: 3346, ML Enhanced: False
+2025-08-23 16:26:43,439 - strategies.ml_strategy - INFO - 2024-12-16: BUY SIGNAL: JNJ, Strength: 0.700, Size: 1, ML Enhanced: False
+2025-08-23 16:26:43,439 - strategies.ml_strategy - INFO - 2024-12-16: BUY SIGNAL: PG, Strength: 0.700, Size: 895, ML Enhanced: False
+2025-08-23 16:26:43,439 - strategies.ml_strategy - INFO - 2024-12-16: BUY SIGNAL: XOM, Strength: 0.900, Size: 22, ML Enhanced: False
+2025-08-23 16:26:43,439 - strategies.ml_strategy - INFO - 2024-12-16: BUY SIGNAL: HD, Strength: 0.700, Size: 370, ML Enhanced: False
+2025-08-23 16:26:43,439 - strategies.ml_strategy - INFO - 2024-12-16: BUY SIGNAL: DIS, Strength: 0.900, Size: 11, ML Enhanced: False
+2025-08-23 16:26:43,440 - strategies.ml_strategy - INFO - 2024-12-16: Portfolio Value: $1,002,112, Return: +0.2%, Positions: 7
+2025-08-23 16:26:43,440 - strategies.ml_strategy - INFO - 2024-12-17: Order Failed: GOOGL, Status: Margin
+2025-08-23 16:26:43,440 - strategies.ml_strategy - INFO - 2024-12-17: Order Failed: TSLA, Status: Margin
+2025-08-23 16:26:43,440 - strategies.ml_strategy - INFO - 2024-12-17: Order Failed: ORCL, Status: Margin
+2025-08-23 16:26:43,440 - strategies.ml_strategy - INFO - 2024-12-17: Order Failed: JPM, Status: Margin
+2025-08-23 16:26:43,440 - strategies.ml_strategy - INFO - 2024-12-17: Order Failed: BAC, Status: Margin
+2025-08-23 16:26:43,440 - strategies.ml_strategy - INFO - 2024-12-17: Order Failed: JNJ, Status: Margin
+2025-08-23 16:26:43,440 - strategies.ml_strategy - INFO - 2024-12-17: Order Failed: PG, Status: Margin
+2025-08-23 16:26:43,440 - strategies.ml_strategy - INFO - 2024-12-17: Order Failed: XOM, Status: Margin
+2025-08-23 16:26:43,440 - strategies.ml_strategy - INFO - 2024-12-17: Order Failed: HD, Status: Margin
+2025-08-23 16:26:43,440 - strategies.ml_strategy - INFO - 2024-12-17: Order Failed: DIS, Status: Margin
+2025-08-23 16:26:43,440 - strategies.ml_strategy - INFO - 2024-12-17: SELL EXECUTED: ORCL, Price: 169.36, Size: -25, Value: 4785.77
+2025-08-23 16:26:43,588 - strategies.ml_strategy - INFO - 2024-12-17: BUY SIGNAL: TSLA, Strength: 0.900, Size: 313, ML Enhanced: False
+2025-08-23 16:26:43,588 - strategies.ml_strategy - INFO - 2024-12-17: BUY SIGNAL: ORCL, Strength: 0.700, Size: 894, ML Enhanced: False
+2025-08-23 16:26:43,588 - strategies.ml_strategy - INFO - 2024-12-17: BUY SIGNAL: JPM, Strength: 0.700, Size: 641, ML Enhanced: False
+2025-08-23 16:26:43,588 - strategies.ml_strategy - INFO - 2024-12-17: BUY SIGNAL: BAC, Strength: 0.700, Size: 3381, ML Enhanced: False
+2025-08-23 16:26:43,588 - strategies.ml_strategy - INFO - 2024-12-17: BUY SIGNAL: PG, Strength: 0.700, Size: 900, ML Enhanced: False
+2025-08-23 16:26:43,588 - strategies.ml_strategy - INFO - 2024-12-17: BUY SIGNAL: XOM, Strength: 0.700, Size: 29, ML Enhanced: False
+2025-08-23 16:26:43,588 - strategies.ml_strategy - INFO - 2024-12-17: BUY SIGNAL: HD, Strength: 0.700, Size: 373, ML Enhanced: False
+2025-08-23 16:26:43,589 - strategies.ml_strategy - INFO - 2024-12-18: Order Failed: TSLA, Status: Margin
+2025-08-23 16:26:43,589 - strategies.ml_strategy - INFO - 2024-12-18: Order Failed: ORCL, Status: Margin
+2025-08-23 16:26:43,589 - strategies.ml_strategy - INFO - 2024-12-18: Order Failed: JPM, Status: Margin
+2025-08-23 16:26:43,589 - strategies.ml_strategy - INFO - 2024-12-18: Order Failed: BAC, Status: Margin
+2025-08-23 16:26:43,589 - strategies.ml_strategy - INFO - 2024-12-18: Order Failed: PG, Status: Margin
+2025-08-23 16:26:43,589 - strategies.ml_strategy - INFO - 2024-12-18: Order Failed: XOM, Status: Margin
+2025-08-23 16:26:43,589 - strategies.ml_strategy - INFO - 2024-12-18: Order Failed: HD, Status: Margin
+2025-08-23 16:26:43,737 - strategies.ml_strategy - INFO - 2024-12-18: EXIT SIGNAL: CRM, Strength: 0.800
+2025-08-23 16:26:43,737 - strategies.ml_strategy - INFO - 2024-12-18: BUY SIGNAL: UNH, Strength: 0.900, Size: 298, ML Enhanced: False
+2025-08-23 16:26:43,737 - strategies.ml_strategy - INFO - 2024-12-18: BUY SIGNAL: PG, Strength: 0.700, Size: 889, ML Enhanced: False
+2025-08-23 16:26:43,737 - strategies.ml_strategy - INFO - 2024-12-18: BUY SIGNAL: XOM, Strength: 0.700, Size: 23, ML Enhanced: False
+2025-08-23 16:26:43,737 - strategies.ml_strategy - INFO - 2024-12-19: Order Failed: PG, Status: Margin
+2025-08-23 16:26:43,737 - strategies.ml_strategy - INFO - 2024-12-19: Order Failed: XOM, Status: Margin
+2025-08-23 16:26:43,738 - strategies.ml_strategy - INFO - 2024-12-19: SELL EXECUTED: CRM, Price: 340.62, Size: -227, Value: 76611.91
+2025-08-23 16:26:43,738 - strategies.ml_strategy - INFO - 2024-12-19: BUY EXECUTED: UNH, Price: 494.50, Size: 298, Cost: 147361.39
+2025-08-23 16:26:43,884 - strategies.ml_strategy - INFO - 2024-12-19: EXIT SIGNAL: XOM, Strength: 0.900
+2025-08-23 16:26:43,884 - strategies.ml_strategy - INFO - 2024-12-19: EXIT SIGNAL: CRM, Strength: 0.800
+2025-08-23 16:26:43,884 - strategies.ml_strategy - INFO - 2024-12-19: BUY SIGNAL: ORCL, Strength: 0.700, Size: 875, ML Enhanced: False
+2025-08-23 16:26:43,884 - strategies.ml_strategy - INFO - 2024-12-19: BUY SIGNAL: JPM, Strength: 0.900, Size: 639, ML Enhanced: False
+2025-08-23 16:26:43,884 - strategies.ml_strategy - INFO - 2024-12-19: BUY SIGNAL: BAC, Strength: 0.700, Size: 3421, ML Enhanced: False
+2025-08-23 16:26:43,884 - strategies.ml_strategy - INFO - 2024-12-19: BUY SIGNAL: UNH, Strength: 0.700, Size: 5, ML Enhanced: False
+2025-08-23 16:26:43,884 - strategies.ml_strategy - INFO - 2024-12-19: BUY SIGNAL: PG, Strength: 0.900, Size: 883, ML Enhanced: False
+2025-08-23 16:26:43,884 - strategies.ml_strategy - INFO - 2024-12-19: BUY SIGNAL: XOM, Strength: 0.900, Size: 26, ML Enhanced: False
+2025-08-23 16:26:43,885 - strategies.ml_strategy - INFO - 2024-12-20: Order Failed: JPM, Status: Margin
+2025-08-23 16:26:43,885 - strategies.ml_strategy - INFO - 2024-12-20: Order Failed: BAC, Status: Margin
+2025-08-23 16:26:43,885 - strategies.ml_strategy - INFO - 2024-12-20: Order Failed: UNH, Status: Margin
+2025-08-23 16:26:43,885 - strategies.ml_strategy - INFO - 2024-12-20: Order Failed: PG, Status: Margin
+2025-08-23 16:26:43,885 - strategies.ml_strategy - INFO - 2024-12-20: Order Failed: XOM, Status: Margin
+2025-08-23 16:26:43,885 - strategies.ml_strategy - INFO - 2024-12-20: SELL EXECUTED: XOM, Price: 102.61, Size: -1402, Value: 156467.11
+2025-08-23 16:26:43,885 - strategies.ml_strategy - INFO - 2024-12-20: SELL EXECUTED: CRM, Price: 331.69, Size: -113, Value: 38137.20
+2025-08-23 16:26:43,885 - strategies.ml_strategy - INFO - 2024-12-20: BUY EXECUTED: ORCL, Price: 166.37, Size: 875, Cost: 145570.53
+2025-08-23 16:26:44,030 - strategies.ml_strategy - INFO - 2024-12-20: EXIT SIGNAL: META, Strength: 0.800
+2025-08-23 16:26:44,030 - strategies.ml_strategy - INFO - 2024-12-20: BUY SIGNAL: BAC, Strength: 0.900, Size: 3374, ML Enhanced: False
+2025-08-23 16:26:44,030 - strategies.ml_strategy - INFO - 2024-12-20: BUY SIGNAL: PG, Strength: 0.900, Size: 893, ML Enhanced: False
+2025-08-23 16:26:44,030 - strategies.ml_strategy - INFO - 2024-12-20: BUY SIGNAL: XOM, Strength: 0.900, Size: 1429, ML Enhanced: False
+2025-08-23 16:26:44,030 - strategies.ml_strategy - INFO - 2024-12-20: BUY SIGNAL: HD, Strength: 0.900, Size: 379, ML Enhanced: False
+2025-08-23 16:26:44,031 - strategies.ml_strategy - INFO - 2024-12-23: Order Failed: BAC, Status: Margin
+2025-08-23 16:26:44,031 - strategies.ml_strategy - INFO - 2024-12-23: Order Failed: PG, Status: Margin
+2025-08-23 16:26:44,031 - strategies.ml_strategy - INFO - 2024-12-23: Order Failed: XOM, Status: Margin
+2025-08-23 16:26:44,031 - strategies.ml_strategy - INFO - 2024-12-23: Order Failed: HD, Status: Margin
+2025-08-23 16:26:44,031 - strategies.ml_strategy - INFO - 2024-12-23: SELL EXECUTED: META, Price: 588.62, Size: -135, Value: 74317.70
+2025-08-23 16:26:44,348 - strategies.ml_strategy - INFO - 2024-12-23: BUY SIGNAL: ORCL, Strength: 0.700, Size: 5, ML Enhanced: False
+2025-08-23 16:26:44,348 - strategies.ml_strategy - INFO - 2024-12-23: BUY SIGNAL: BAC, Strength: 0.700, Size: 3408, ML Enhanced: False
+2025-08-23 16:26:44,348 - strategies.ml_strategy - INFO - 2024-12-23: BUY SIGNAL: PG, Strength: 0.700, Size: 895, ML Enhanced: False
+2025-08-23 16:26:44,348 - strategies.ml_strategy - INFO - 2024-12-23: BUY SIGNAL: XOM, Strength: 0.700, Size: 1428, ML Enhanced: False
+2025-08-23 16:26:44,348 - strategies.ml_strategy - INFO - 2024-12-23: BUY SIGNAL: HD, Strength: 0.700, Size: 381, ML Enhanced: False
+2025-08-23 16:26:44,348 - strategies.ml_strategy - INFO - 2024-12-23: Portfolio Value: $985,138, Return: -1.5%, Positions: 7
+2025-08-23 16:26:44,349 - strategies.ml_strategy - INFO - 2024-12-24: Order Failed: BAC, Status: Margin
+2025-08-23 16:26:44,349 - strategies.ml_strategy - INFO - 2024-12-24: Order Failed: PG, Status: Margin
+2025-08-23 16:26:44,349 - strategies.ml_strategy - INFO - 2024-12-24: Order Failed: XOM, Status: Margin
+2025-08-23 16:26:44,349 - strategies.ml_strategy - INFO - 2024-12-24: Order Failed: HD, Status: Margin
+2025-08-23 16:26:44,349 - strategies.ml_strategy - INFO - 2024-12-24: BUY EXECUTED: ORCL, Price: 168.32, Size: 5, Cost: 841.60
+2025-08-23 16:26:44,499 - strategies.ml_strategy - INFO - 2024-12-24: BUY SIGNAL: PG, Strength: 0.700, Size: 897, ML Enhanced: False
+2025-08-23 16:26:44,499 - strategies.ml_strategy - INFO - 2024-12-24: BUY SIGNAL: XOM, Strength: 0.700, Size: 1436, ML Enhanced: False
+2025-08-23 16:26:44,499 - strategies.ml_strategy - INFO - 2024-12-24: BUY SIGNAL: HD, Strength: 0.700, Size: 380, ML Enhanced: False
+2025-08-23 16:26:44,499 - strategies.ml_strategy - INFO - 2024-12-24: BUY SIGNAL: CRM, Strength: 0.700, Size: 319, ML Enhanced: False
+2025-08-23 16:26:44,499 - strategies.ml_strategy - INFO - 2024-12-26: Order Failed: PG, Status: Margin
+2025-08-23 16:26:44,499 - strategies.ml_strategy - INFO - 2024-12-26: Order Failed: XOM, Status: Margin
+2025-08-23 16:26:44,500 - strategies.ml_strategy - INFO - 2024-12-26: Order Failed: HD, Status: Margin
+2025-08-23 16:26:44,500 - strategies.ml_strategy - INFO - 2024-12-26: Order Failed: CRM, Status: Margin
+2025-08-23 16:26:44,646 - strategies.ml_strategy - INFO - 2024-12-26: BUY SIGNAL: BAC, Strength: 0.700, Size: 3379, ML Enhanced: False
+2025-08-23 16:26:44,646 - strategies.ml_strategy - INFO - 2024-12-26: BUY SIGNAL: PG, Strength: 0.700, Size: 890, ML Enhanced: False
+2025-08-23 16:26:44,646 - strategies.ml_strategy - INFO - 2024-12-26: BUY SIGNAL: XOM, Strength: 0.700, Size: 1435, ML Enhanced: False
+2025-08-23 16:26:44,646 - strategies.ml_strategy - INFO - 2024-12-26: BUY SIGNAL: HD, Strength: 0.700, Size: 381, ML Enhanced: False
+2025-08-23 16:26:44,646 - strategies.ml_strategy - INFO - 2024-12-26: BUY SIGNAL: CRM, Strength: 0.700, Size: 322, ML Enhanced: False
+2025-08-23 16:26:44,647 - strategies.ml_strategy - INFO - 2024-12-27: Order Failed: BAC, Status: Margin
+2025-08-23 16:26:44,647 - strategies.ml_strategy - INFO - 2024-12-27: Order Failed: PG, Status: Margin
+2025-08-23 16:26:44,647 - strategies.ml_strategy - INFO - 2024-12-27: Order Failed: XOM, Status: Margin
+2025-08-23 16:26:44,647 - strategies.ml_strategy - INFO - 2024-12-27: Order Failed: HD, Status: Margin
+2025-08-23 16:26:44,647 - strategies.ml_strategy - INFO - 2024-12-27: Order Failed: CRM, Status: Margin
+2025-08-23 16:26:44,794 - strategies.ml_strategy - INFO - 2024-12-27: BUY SIGNAL: ORCL, Strength: 0.700, Size: 2, ML Enhanced: False
+2025-08-23 16:26:44,794 - strategies.ml_strategy - INFO - 2024-12-27: BUY SIGNAL: BAC, Strength: 0.700, Size: 3375, ML Enhanced: False
+2025-08-23 16:26:44,794 - strategies.ml_strategy - INFO - 2024-12-27: BUY SIGNAL: PG, Strength: 0.700, Size: 888, ML Enhanced: False
+2025-08-23 16:26:44,795 - strategies.ml_strategy - INFO - 2024-12-27: BUY SIGNAL: XOM, Strength: 0.700, Size: 1427, ML Enhanced: False
+2025-08-23 16:26:44,795 - strategies.ml_strategy - INFO - 2024-12-27: BUY SIGNAL: HD, Strength: 0.700, Size: 381, ML Enhanced: False
+2025-08-23 16:26:44,795 - strategies.ml_strategy - INFO - 2024-12-27: BUY SIGNAL: CRM, Strength: 0.700, Size: 324, ML Enhanced: False
+2025-08-23 16:26:44,795 - strategies.ml_strategy - INFO - 2024-12-30: Order Failed: BAC, Status: Margin
+2025-08-23 16:26:44,795 - strategies.ml_strategy - INFO - 2024-12-30: Order Failed: PG, Status: Margin
+2025-08-23 16:26:44,795 - strategies.ml_strategy - INFO - 2024-12-30: Order Failed: XOM, Status: Margin
+2025-08-23 16:26:44,795 - strategies.ml_strategy - INFO - 2024-12-30: Order Failed: HD, Status: Margin
+2025-08-23 16:26:44,795 - strategies.ml_strategy - INFO - 2024-12-30: Order Failed: CRM, Status: Margin
+2025-08-23 16:26:44,795 - strategies.ml_strategy - INFO - 2024-12-30: BUY EXECUTED: ORCL, Price: 165.16, Size: 2, Cost: 330.31
+2025-08-23 16:26:44,941 - strategies.ml_strategy - INFO - 2024-12-30: BUY SIGNAL: MSFT, Strength: 0.700, Size: 347, ML Enhanced: False
+2025-08-23 16:26:44,941 - strategies.ml_strategy - INFO - 2024-12-30: BUY SIGNAL: ORCL, Strength: 0.700, Size: 4, ML Enhanced: False
+2025-08-23 16:26:44,941 - strategies.ml_strategy - INFO - 2024-12-30: BUY SIGNAL: BAC, Strength: 0.700, Size: 3381, ML Enhanced: False
+2025-08-23 16:26:44,941 - strategies.ml_strategy - INFO - 2024-12-30: BUY SIGNAL: PG, Strength: 0.700, Size: 894, ML Enhanced: False
+2025-08-23 16:26:44,941 - strategies.ml_strategy - INFO - 2024-12-30: BUY SIGNAL: XOM, Strength: 0.700, Size: 1425, ML Enhanced: False
+2025-08-23 16:26:44,941 - strategies.ml_strategy - INFO - 2024-12-30: BUY SIGNAL: HD, Strength: 0.700, Size: 381, ML Enhanced: False
+2025-08-23 16:26:44,942 - strategies.ml_strategy - INFO - 2024-12-31: Order Failed: MSFT, Status: Margin
+2025-08-23 16:26:44,942 - strategies.ml_strategy - INFO - 2024-12-31: Order Failed: ORCL, Status: Margin
+2025-08-23 16:26:44,942 - strategies.ml_strategy - INFO - 2024-12-31: Order Failed: BAC, Status: Margin
+2025-08-23 16:26:44,942 - strategies.ml_strategy - INFO - 2024-12-31: Order Failed: PG, Status: Margin
+2025-08-23 16:26:44,942 - strategies.ml_strategy - INFO - 2024-12-31: Order Failed: XOM, Status: Margin
+2025-08-23 16:26:44,942 - strategies.ml_strategy - INFO - 2024-12-31: Order Failed: HD, Status: Margin
+2025-08-23 16:26:45,255 - strategies.ml_strategy - INFO - 2024-12-31: EXIT SIGNAL: META, Strength: 0.800
+2025-08-23 16:26:45,256 - strategies.ml_strategy - INFO - 2024-12-31: BUY SIGNAL: MSFT, Strength: 0.700, Size: 350, ML Enhanced: False
+2025-08-23 16:26:45,256 - strategies.ml_strategy - INFO - 2024-12-31: BUY SIGNAL: ORCL, Strength: 0.700, Size: 6, ML Enhanced: False
+2025-08-23 16:26:45,256 - strategies.ml_strategy - INFO - 2024-12-31: BUY SIGNAL: BAC, Strength: 0.700, Size: 3381, ML Enhanced: False
+2025-08-23 16:26:45,256 - strategies.ml_strategy - INFO - 2024-12-31: BUY SIGNAL: PG, Strength: 0.700, Size: 892, ML Enhanced: False
+2025-08-23 16:26:45,256 - strategies.ml_strategy - INFO - 2024-12-31: BUY SIGNAL: XOM, Strength: 0.900, Size: 1402, ML Enhanced: False
+2025-08-23 16:26:45,256 - strategies.ml_strategy - INFO - 2024-12-31: BUY SIGNAL: HD, Strength: 0.700, Size: 382, ML Enhanced: False
+2025-08-23 16:26:45,256 - strategies.ml_strategy - INFO - 2024-12-31: Portfolio Value: $978,852, Return: -2.1%, Positions: 7
+2025-08-23 16:26:45,257 - strategies.ml_strategy - INFO - 2025-01-02: Order Failed: BAC, Status: Margin
+2025-08-23 16:26:45,257 - strategies.ml_strategy - INFO - 2025-01-02: Order Failed: PG, Status: Margin
+2025-08-23 16:26:45,257 - strategies.ml_strategy - INFO - 2025-01-02: Order Failed: XOM, Status: Margin
+2025-08-23 16:26:45,257 - strategies.ml_strategy - INFO - 2025-01-02: Order Failed: HD, Status: Margin
+2025-08-23 16:26:45,257 - strategies.ml_strategy - INFO - 2025-01-02: SELL EXECUTED: META, Price: 588.74, Size: -68, Value: 37434.10
+2025-08-23 16:26:45,257 - strategies.ml_strategy - INFO - 2025-01-02: BUY EXECUTED: MSFT, Price: 423.20, Size: 350, Cost: 148121.59
+2025-08-23 16:26:45,257 - strategies.ml_strategy - INFO - 2025-01-02: BUY EXECUTED: ORCL, Price: 167.15, Size: 6, Cost: 1002.90
+2025-08-23 16:26:45,406 - strategies.ml_strategy - INFO - 2025-01-02: BUY SIGNAL: BAC, Strength: 0.700, Size: 3338, ML Enhanced: False
+2025-08-23 16:26:45,406 - strategies.ml_strategy - INFO - 2025-01-02: BUY SIGNAL: PG, Strength: 0.700, Size: 897, ML Enhanced: False
+2025-08-23 16:26:45,406 - strategies.ml_strategy - INFO - 2025-01-02: BUY SIGNAL: XOM, Strength: 0.900, Size: 1398, ML Enhanced: False
+2025-08-23 16:26:45,406 - strategies.ml_strategy - INFO - 2025-01-02: BUY SIGNAL: HD, Strength: 0.700, Size: 380, ML Enhanced: False
+2025-08-23 16:26:45,406 - strategies.ml_strategy - INFO - 2025-01-02: BUY SIGNAL: CRM, Strength: 0.700, Size: 329, ML Enhanced: False
+2025-08-23 16:26:45,407 - strategies.ml_strategy - INFO - 2025-01-03: Order Failed: BAC, Status: Margin
+2025-08-23 16:26:45,407 - strategies.ml_strategy - INFO - 2025-01-03: Order Failed: PG, Status: Margin
+2025-08-23 16:26:45,407 - strategies.ml_strategy - INFO - 2025-01-03: Order Failed: XOM, Status: Margin
+2025-08-23 16:26:45,407 - strategies.ml_strategy - INFO - 2025-01-03: Order Failed: HD, Status: Margin
+2025-08-23 16:26:45,407 - strategies.ml_strategy - INFO - 2025-01-03: Order Failed: CRM, Status: Margin
+2025-08-23 16:26:45,554 - strategies.ml_strategy - INFO - 2025-01-03: BUY SIGNAL: ORCL, Strength: 0.700, Size: 2, ML Enhanced: False
+2025-08-23 16:26:45,555 - strategies.ml_strategy - INFO - 2025-01-03: BUY SIGNAL: PG, Strength: 0.700, Size: 906, ML Enhanced: False
+2025-08-23 16:26:45,555 - strategies.ml_strategy - INFO - 2025-01-03: BUY SIGNAL: XOM, Strength: 0.900, Size: 1399, ML Enhanced: False
+2025-08-23 16:26:45,555 - strategies.ml_strategy - INFO - 2025-01-03: BUY SIGNAL: HD, Strength: 0.700, Size: 382, ML Enhanced: False
+2025-08-23 16:26:45,555 - strategies.ml_strategy - INFO - 2025-01-03: BUY SIGNAL: CRM, Strength: 0.700, Size: 328, ML Enhanced: False
+2025-08-23 16:26:45,555 - strategies.ml_strategy - INFO - 2025-01-06: Order Failed: PG, Status: Margin
+2025-08-23 16:26:45,555 - strategies.ml_strategy - INFO - 2025-01-06: Order Failed: XOM, Status: Margin
+2025-08-23 16:26:45,555 - strategies.ml_strategy - INFO - 2025-01-06: Order Failed: HD, Status: Margin
+2025-08-23 16:26:45,555 - strategies.ml_strategy - INFO - 2025-01-06: Order Failed: CRM, Status: Margin
+2025-08-23 16:26:45,556 - strategies.ml_strategy - INFO - 2025-01-06: BUY EXECUTED: ORCL, Price: 165.95, Size: 2, Cost: 331.90
+2025-08-23 16:26:45,702 - strategies.ml_strategy - INFO - 2025-01-06: BUY SIGNAL: NVDA, Strength: 0.900, Size: 982, ML Enhanced: False
+2025-08-23 16:26:45,703 - strategies.ml_strategy - INFO - 2025-01-06: BUY SIGNAL: ORCL, Strength: 0.700, Size: 3, ML Enhanced: False
+2025-08-23 16:26:45,703 - strategies.ml_strategy - INFO - 2025-01-06: BUY SIGNAL: MA, Strength: 0.700, Size: 288, ML Enhanced: False
+2025-08-23 16:26:45,703 - strategies.ml_strategy - INFO - 2025-01-06: BUY SIGNAL: PG, Strength: 0.900, Size: 931, ML Enhanced: False
+2025-08-23 16:26:45,703 - strategies.ml_strategy - INFO - 2025-01-06: BUY SIGNAL: XOM, Strength: 0.900, Size: 1400, ML Enhanced: False
+2025-08-23 16:26:45,703 - strategies.ml_strategy - INFO - 2025-01-06: BUY SIGNAL: HD, Strength: 0.700, Size: 381, ML Enhanced: False
+2025-08-23 16:26:45,703 - strategies.ml_strategy - INFO - 2025-01-06: BUY SIGNAL: CRM, Strength: 0.700, Size: 331, ML Enhanced: False
+2025-08-23 16:26:45,704 - strategies.ml_strategy - INFO - 2025-01-07: Order Failed: NVDA, Status: Margin
+2025-08-23 16:26:45,704 - strategies.ml_strategy - INFO - 2025-01-07: Order Failed: ORCL, Status: Margin
+2025-08-23 16:26:45,704 - strategies.ml_strategy - INFO - 2025-01-07: Order Failed: MA, Status: Margin
+2025-08-23 16:26:45,704 - strategies.ml_strategy - INFO - 2025-01-07: Order Failed: PG, Status: Margin
+2025-08-23 16:26:45,704 - strategies.ml_strategy - INFO - 2025-01-07: Order Failed: XOM, Status: Margin
+2025-08-23 16:26:45,704 - strategies.ml_strategy - INFO - 2025-01-07: Order Failed: HD, Status: Margin
+2025-08-23 16:26:45,704 - strategies.ml_strategy - INFO - 2025-01-07: Order Failed: CRM, Status: Margin
+2025-08-23 16:26:45,852 - strategies.ml_strategy - INFO - 2025-01-07: BUY SIGNAL: ORCL, Strength: 0.700, Size: 20, ML Enhanced: False
+2025-08-23 16:26:45,852 - strategies.ml_strategy - INFO - 2025-01-07: BUY SIGNAL: BAC, Strength: 0.900, Size: 3215, ML Enhanced: False
+2025-08-23 16:26:45,852 - strategies.ml_strategy - INFO - 2025-01-07: BUY SIGNAL: MA, Strength: 0.700, Size: 287, ML Enhanced: False
+2025-08-23 16:26:45,852 - strategies.ml_strategy - INFO - 2025-01-07: BUY SIGNAL: PG, Strength: 0.900, Size: 924, ML Enhanced: False
+2025-08-23 16:26:45,852 - strategies.ml_strategy - INFO - 2025-01-07: BUY SIGNAL: HD, Strength: 0.700, Size: 385, ML Enhanced: False
+2025-08-23 16:26:45,852 - strategies.ml_strategy - INFO - 2025-01-07: BUY SIGNAL: CRM, Strength: 0.700, Size: 337, ML Enhanced: False
+2025-08-23 16:26:45,853 - strategies.ml_strategy - INFO - 2025-01-08: Order Failed: BAC, Status: Margin
+2025-08-23 16:26:45,853 - strategies.ml_strategy - INFO - 2025-01-08: Order Failed: MA, Status: Margin
+2025-08-23 16:26:45,853 - strategies.ml_strategy - INFO - 2025-01-08: Order Failed: PG, Status: Margin
+2025-08-23 16:26:45,853 - strategies.ml_strategy - INFO - 2025-01-08: Order Failed: HD, Status: Margin
+2025-08-23 16:26:45,853 - strategies.ml_strategy - INFO - 2025-01-08: Order Failed: CRM, Status: Margin
+2025-08-23 16:26:45,853 - strategies.ml_strategy - INFO - 2025-01-08: BUY EXECUTED: ORCL, Price: 160.86, Size: 20, Cost: 3217.23
+2025-08-23 16:26:46,170 - strategies.ml_strategy - INFO - 2025-01-08: BUY SIGNAL: TSLA, Strength: 0.700, Size: 370, ML Enhanced: False
+2025-08-23 16:26:46,170 - strategies.ml_strategy - INFO - 2025-01-08: BUY SIGNAL: PG, Strength: 0.700, Size: 920, ML Enhanced: False
+2025-08-23 16:26:46,170 - strategies.ml_strategy - INFO - 2025-01-08: BUY SIGNAL: HD, Strength: 0.700, Size: 382, ML Enhanced: False
+2025-08-23 16:26:46,170 - strategies.ml_strategy - INFO - 2025-01-08: BUY SIGNAL: DIS, Strength: 0.700, Size: 4, ML Enhanced: False
+2025-08-23 16:26:46,170 - strategies.ml_strategy - INFO - 2025-01-08: BUY SIGNAL: CRM, Strength: 0.700, Size: 335, ML Enhanced: False
+2025-08-23 16:26:46,170 - strategies.ml_strategy - INFO - 2025-01-08: Portfolio Value: $976,073, Return: -2.4%, Positions: 8
+2025-08-23 16:26:46,171 - strategies.ml_strategy - INFO - 2025-01-10: Order Failed: TSLA, Status: Margin
+2025-08-23 16:26:46,171 - strategies.ml_strategy - INFO - 2025-01-10: Order Failed: PG, Status: Margin
+2025-08-23 16:26:46,171 - strategies.ml_strategy - INFO - 2025-01-10: Order Failed: HD, Status: Margin
+2025-08-23 16:26:46,171 - strategies.ml_strategy - INFO - 2025-01-10: Order Failed: DIS, Status: Margin
+2025-08-23 16:26:46,171 - strategies.ml_strategy - INFO - 2025-01-10: Order Failed: CRM, Status: Margin
+2025-08-23 16:26:46,321 - strategies.ml_strategy - INFO - 2025-01-10: EXIT SIGNAL: ORCL, Strength: 0.800
+2025-08-23 16:26:46,321 - strategies.ml_strategy - INFO - 2025-01-10: BUY SIGNAL: PG, Strength: 0.900, Size: 927, ML Enhanced: False
+2025-08-23 16:26:46,322 - strategies.ml_strategy - INFO - 2025-01-10: BUY SIGNAL: CRM, Strength: 0.700, Size: 341, ML Enhanced: False
+2025-08-23 16:26:46,322 - strategies.ml_strategy - INFO - 2025-01-13: Order Failed: PG, Status: Margin
+2025-08-23 16:26:46,322 - strategies.ml_strategy - INFO - 2025-01-13: Order Failed: CRM, Status: Margin
+2025-08-23 16:26:46,322 - strategies.ml_strategy - INFO - 2025-01-13: SELL EXECUTED: ORCL, Price: 152.86, Size: -455, Value: 75647.24
+2025-08-23 16:26:46,471 - strategies.ml_strategy - INFO - 2025-01-13: EXIT SIGNAL: ORCL, Strength: 0.800
+2025-08-23 16:26:46,471 - strategies.ml_strategy - INFO - 2025-01-13: BUY SIGNAL: AAPL, Strength: 0.700, Size: 622, ML Enhanced: False
+2025-08-23 16:26:46,471 - strategies.ml_strategy - INFO - 2025-01-13: BUY SIGNAL: V, Strength: 0.900, Size: 476, ML Enhanced: False
+2025-08-23 16:26:46,472 - strategies.ml_strategy - INFO - 2025-01-13: BUY SIGNAL: MA, Strength: 0.700, Size: 288, ML Enhanced: False
+2025-08-23 16:26:46,472 - strategies.ml_strategy - INFO - 2025-01-13: BUY SIGNAL: PG, Strength: 0.700, Size: 932, ML Enhanced: False
+2025-08-23 16:26:46,472 - strategies.ml_strategy - INFO - 2025-01-13: BUY SIGNAL: DIS, Strength: 0.700, Size: 15, ML Enhanced: False
+2025-08-23 16:26:46,472 - strategies.ml_strategy - INFO - 2025-01-13: BUY SIGNAL: CRM, Strength: 0.700, Size: 343, ML Enhanced: False
+2025-08-23 16:26:46,472 - strategies.ml_strategy - INFO - 2025-01-14: Order Failed: AAPL, Status: Margin
+2025-08-23 16:26:46,472 - strategies.ml_strategy - INFO - 2025-01-14: Order Failed: V, Status: Margin
+2025-08-23 16:26:46,472 - strategies.ml_strategy - INFO - 2025-01-14: Order Failed: MA, Status: Margin
+2025-08-23 16:26:46,472 - strategies.ml_strategy - INFO - 2025-01-14: Order Failed: PG, Status: Margin
+2025-08-23 16:26:46,472 - strategies.ml_strategy - INFO - 2025-01-14: Order Failed: DIS, Status: Margin
+2025-08-23 16:26:46,472 - strategies.ml_strategy - INFO - 2025-01-14: Order Failed: CRM, Status: Margin
+2025-08-23 16:26:46,472 - strategies.ml_strategy - INFO - 2025-01-14: SELL EXECUTED: ORCL, Price: 155.53, Size: -227, Value: 37740.49
+2025-08-23 16:26:46,625 - strategies.ml_strategy - INFO - 2025-01-14: EXIT SIGNAL: META, Strength: 0.800
+2025-08-23 16:26:46,625 - strategies.ml_strategy - INFO - 2025-01-14: BUY SIGNAL: AAPL, Strength: 0.700, Size: 626, ML Enhanced: False
+2025-08-23 16:26:46,625 - strategies.ml_strategy - INFO - 2025-01-14: BUY SIGNAL: MSFT, Strength: 0.700, Size: 2, ML Enhanced: False
+2025-08-23 16:26:46,625 - strategies.ml_strategy - INFO - 2025-01-14: BUY SIGNAL: ORCL, Strength: 0.700, Size: 709, ML Enhanced: False
+2025-08-23 16:26:46,625 - strategies.ml_strategy - INFO - 2025-01-14: BUY SIGNAL: V, Strength: 0.700, Size: 473, ML Enhanced: False
+2025-08-23 16:26:46,625 - strategies.ml_strategy - INFO - 2025-01-14: BUY SIGNAL: MA, Strength: 0.700, Size: 287, ML Enhanced: False
+2025-08-23 16:26:46,625 - strategies.ml_strategy - INFO - 2025-01-14: BUY SIGNAL: PG, Strength: 0.700, Size: 929, ML Enhanced: False
+2025-08-23 16:26:46,625 - strategies.ml_strategy - INFO - 2025-01-14: BUY SIGNAL: DIS, Strength: 0.700, Size: 18, ML Enhanced: False
+2025-08-23 16:26:46,625 - strategies.ml_strategy - INFO - 2025-01-14: BUY SIGNAL: CRM, Strength: 0.700, Size: 337, ML Enhanced: False
+2025-08-23 16:26:46,626 - strategies.ml_strategy - INFO - 2025-01-15: Order Failed: AAPL, Status: Margin
+2025-08-23 16:26:46,626 - strategies.ml_strategy - INFO - 2025-01-15: Order Failed: MSFT, Status: Margin
+2025-08-23 16:26:46,626 - strategies.ml_strategy - INFO - 2025-01-15: Order Failed: ORCL, Status: Margin
+2025-08-23 16:26:46,626 - strategies.ml_strategy - INFO - 2025-01-15: Order Failed: V, Status: Margin
+2025-08-23 16:26:46,626 - strategies.ml_strategy - INFO - 2025-01-15: Order Failed: MA, Status: Margin
+2025-08-23 16:26:46,626 - strategies.ml_strategy - INFO - 2025-01-15: Order Failed: PG, Status: Margin
+2025-08-23 16:26:46,626 - strategies.ml_strategy - INFO - 2025-01-15: Order Failed: DIS, Status: Margin
+2025-08-23 16:26:46,626 - strategies.ml_strategy - INFO - 2025-01-15: Order Failed: CRM, Status: Margin
+2025-08-23 16:26:46,626 - strategies.ml_strategy - INFO - 2025-01-15: SELL EXECUTED: META, Price: 609.20, Size: -34, Value: 18717.05
+2025-08-23 16:26:46,774 - strategies.ml_strategy - INFO - 2025-01-15: BUY SIGNAL: AAPL, Strength: 0.700, Size: 617, ML Enhanced: False
+2025-08-23 16:26:46,774 - strategies.ml_strategy - INFO - 2025-01-15: BUY SIGNAL: ORCL, Strength: 0.900, Size: 702, ML Enhanced: False
+2025-08-23 16:26:46,774 - strategies.ml_strategy - INFO - 2025-01-15: BUY SIGNAL: JPM, Strength: 0.900, Size: 586, ML Enhanced: False
+2025-08-23 16:26:46,774 - strategies.ml_strategy - INFO - 2025-01-15: BUY SIGNAL: BAC, Strength: 0.900, Size: 3146, ML Enhanced: False
+2025-08-23 16:26:46,774 - strategies.ml_strategy - INFO - 2025-01-15: BUY SIGNAL: PG, Strength: 0.700, Size: 934, ML Enhanced: False
+2025-08-23 16:26:46,774 - strategies.ml_strategy - INFO - 2025-01-15: BUY SIGNAL: HD, Strength: 0.900, Size: 365, ML Enhanced: False
+2025-08-23 16:26:46,774 - strategies.ml_strategy - INFO - 2025-01-15: BUY SIGNAL: DIS, Strength: 0.700, Size: 24, ML Enhanced: False
+2025-08-23 16:26:46,774 - strategies.ml_strategy - INFO - 2025-01-15: BUY SIGNAL: CRM, Strength: 0.700, Size: 343, ML Enhanced: False
+2025-08-23 16:26:46,775 - strategies.ml_strategy - INFO - 2025-01-16: Order Failed: AAPL, Status: Margin
+2025-08-23 16:26:46,775 - strategies.ml_strategy - INFO - 2025-01-16: Order Failed: ORCL, Status: Margin
+2025-08-23 16:26:46,775 - strategies.ml_strategy - INFO - 2025-01-16: Order Failed: JPM, Status: Margin
+2025-08-23 16:26:46,775 - strategies.ml_strategy - INFO - 2025-01-16: Order Failed: BAC, Status: Margin
+2025-08-23 16:26:46,775 - strategies.ml_strategy - INFO - 2025-01-16: Order Failed: PG, Status: Margin
+2025-08-23 16:26:46,775 - strategies.ml_strategy - INFO - 2025-01-16: Order Failed: HD, Status: Margin
+2025-08-23 16:26:46,775 - strategies.ml_strategy - INFO - 2025-01-16: Order Failed: DIS, Status: Margin
+2025-08-23 16:26:46,775 - strategies.ml_strategy - INFO - 2025-01-16: Order Failed: CRM, Status: Margin
+2025-08-23 16:26:47,094 - strategies.ml_strategy - INFO - 2025-01-16: BUY SIGNAL: AAPL, Strength: 0.900, Size: 638, ML Enhanced: False
+2025-08-23 16:26:47,094 - strategies.ml_strategy - INFO - 2025-01-16: BUY SIGNAL: ORCL, Strength: 0.900, Size: 686, ML Enhanced: False
+2025-08-23 16:26:47,094 - strategies.ml_strategy - INFO - 2025-01-16: BUY SIGNAL: JPM, Strength: 0.900, Size: 577, ML Enhanced: False
+2025-08-23 16:26:47,094 - strategies.ml_strategy - INFO - 2025-01-16: BUY SIGNAL: PG, Strength: 0.700, Size: 921, ML Enhanced: False
+2025-08-23 16:26:47,095 - strategies.ml_strategy - INFO - 2025-01-16: BUY SIGNAL: DIS, Strength: 0.700, Size: 34, ML Enhanced: False
+2025-08-23 16:26:47,095 - strategies.ml_strategy - INFO - 2025-01-16: BUY SIGNAL: CRM, Strength: 0.700, Size: 340, ML Enhanced: False
+2025-08-23 16:26:47,095 - strategies.ml_strategy - INFO - 2025-01-16: Portfolio Value: $967,583, Return: -3.2%, Positions: 8
+2025-08-23 16:26:47,095 - strategies.ml_strategy - INFO - 2025-01-17: Order Failed: AAPL, Status: Margin
+2025-08-23 16:26:47,095 - strategies.ml_strategy - INFO - 2025-01-17: Order Failed: ORCL, Status: Margin
+2025-08-23 16:26:47,095 - strategies.ml_strategy - INFO - 2025-01-17: Order Failed: JPM, Status: Margin
+2025-08-23 16:26:47,095 - strategies.ml_strategy - INFO - 2025-01-17: Order Failed: PG, Status: Margin
+2025-08-23 16:26:47,095 - strategies.ml_strategy - INFO - 2025-01-17: Order Failed: DIS, Status: Margin
+2025-08-23 16:26:47,095 - strategies.ml_strategy - INFO - 2025-01-17: Order Failed: CRM, Status: Margin
+2025-08-23 16:26:47,241 - strategies.ml_strategy - INFO - 2025-01-17: BUY SIGNAL: AAPL, Strength: 0.900, Size: 635, ML Enhanced: False
+2025-08-23 16:26:47,241 - strategies.ml_strategy - INFO - 2025-01-17: BUY SIGNAL: ORCL, Strength: 0.900, Size: 681, ML Enhanced: False
+2025-08-23 16:26:47,241 - strategies.ml_strategy - INFO - 2025-01-17: BUY SIGNAL: JPM, Strength: 0.900, Size: 568, ML Enhanced: False
+2025-08-23 16:26:47,241 - strategies.ml_strategy - INFO - 2025-01-17: BUY SIGNAL: PG, Strength: 0.700, Size: 921, ML Enhanced: False
+2025-08-23 16:26:47,241 - strategies.ml_strategy - INFO - 2025-01-17: BUY SIGNAL: DIS, Strength: 0.700, Size: 31, ML Enhanced: False
+2025-08-23 16:26:47,241 - strategies.ml_strategy - INFO - 2025-01-17: BUY SIGNAL: CRM, Strength: 0.700, Size: 336, ML Enhanced: False
+2025-08-23 16:26:47,242 - strategies.ml_strategy - INFO - 2025-01-21: Order Failed: AAPL, Status: Margin
+2025-08-23 16:26:47,242 - strategies.ml_strategy - INFO - 2025-01-21: Order Failed: ORCL, Status: Margin
+2025-08-23 16:26:47,242 - strategies.ml_strategy - INFO - 2025-01-21: Order Failed: JPM, Status: Margin
+2025-08-23 16:26:47,242 - strategies.ml_strategy - INFO - 2025-01-21: Order Failed: PG, Status: Margin
+2025-08-23 16:26:47,242 - strategies.ml_strategy - INFO - 2025-01-21: Order Failed: DIS, Status: Margin
+2025-08-23 16:26:47,242 - strategies.ml_strategy - INFO - 2025-01-21: Order Failed: CRM, Status: Margin
+2025-08-23 16:26:47,389 - strategies.ml_strategy - INFO - 2025-01-21: BUY SIGNAL: ORCL, Strength: 0.900, Size: 629, ML Enhanced: False
+2025-08-23 16:26:47,389 - strategies.ml_strategy - INFO - 2025-01-21: BUY SIGNAL: JPM, Strength: 0.900, Size: 565, ML Enhanced: False
+2025-08-23 16:26:47,389 - strategies.ml_strategy - INFO - 2025-01-21: BUY SIGNAL: PG, Strength: 0.900, Size: 927, ML Enhanced: False
+2025-08-23 16:26:47,390 - strategies.ml_strategy - INFO - 2025-01-22: Order Failed: JPM, Status: Margin
+2025-08-23 16:26:47,390 - strategies.ml_strategy - INFO - 2025-01-22: Order Failed: PG, Status: Margin
+2025-08-23 16:26:47,390 - strategies.ml_strategy - INFO - 2025-01-22: BUY EXECUTED: ORCL, Price: 190.42, Size: 629, Cost: 119774.11
+2025-08-23 16:26:47,538 - strategies.ml_strategy - INFO - 2025-01-22: BUY SIGNAL: AAPL, Strength: 0.700, Size: 659, ML Enhanced: False
+2025-08-23 16:26:47,538 - strategies.ml_strategy - INFO - 2025-01-22: BUY SIGNAL: AMZN, Strength: 0.900, Size: 625, ML Enhanced: False
+2025-08-23 16:26:47,539 - strategies.ml_strategy - INFO - 2025-01-23: Order Failed: AAPL, Status: Margin
+2025-08-23 16:26:47,539 - strategies.ml_strategy - INFO - 2025-01-23: Order Failed: AMZN, Status: Margin
+2025-08-23 16:26:47,686 - strategies.ml_strategy - INFO - 2025-01-23: EXIT SIGNAL: META, Strength: 0.000
+2025-08-23 16:26:47,686 - strategies.ml_strategy - INFO - 2025-01-23: BUY SIGNAL: AAPL, Strength: 0.900, Size: 665, ML Enhanced: False
+2025-08-23 16:26:47,687 - strategies.ml_strategy - INFO - 2025-01-24: Order Failed: AAPL, Status: Margin
+2025-08-23 16:26:47,687 - strategies.ml_strategy - INFO - 2025-01-24: SELL EXECUTED: META, Price: 635.35, Size: -10, Value: 5505.01
+2025-08-23 16:26:48,008 - strategies.ml_strategy - INFO - 2025-01-24: EXIT SIGNAL: META, Strength: 0.900
+2025-08-23 16:26:48,008 - strategies.ml_strategy - INFO - 2025-01-24: BUY SIGNAL: AAPL, Strength: 0.700, Size: 668, ML Enhanced: False
+2025-08-23 16:26:48,008 - strategies.ml_strategy - INFO - 2025-01-24: BUY SIGNAL: META, Strength: 0.900, Size: 205, ML Enhanced: False
+2025-08-23 16:26:48,008 - strategies.ml_strategy - INFO - 2025-01-24: Portfolio Value: $989,739, Return: -1.0%, Positions: 8
+2025-08-23 16:26:48,009 - strategies.ml_strategy - INFO - 2025-01-27: Order Failed: AAPL, Status: Margin
+2025-08-23 16:26:48,009 - strategies.ml_strategy - INFO - 2025-01-27: Order Failed: META, Status: Margin
+2025-08-23 16:26:48,009 - strategies.ml_strategy - INFO - 2025-01-27: SELL EXECUTED: META, Price: 625.57, Size: -7, Value: 3853.51
+2025-08-23 16:26:48,154 - strategies.ml_strategy - INFO - 2025-01-27: EXIT SIGNAL: META, Strength: 0.900
+2025-08-23 16:26:48,155 - strategies.ml_strategy - INFO - 2025-01-27: EXIT SIGNAL: ORCL, Strength: 0.000
+2025-08-23 16:26:48,155 - strategies.ml_strategy - INFO - 2025-01-27: BUY SIGNAL: META, Strength: 0.900, Size: 206, ML Enhanced: False
+2025-08-23 16:26:48,155 - strategies.ml_strategy - INFO - 2025-01-27: BUY SIGNAL: MA, Strength: 0.900, Size: 269, ML Enhanced: False
+2025-08-23 16:26:48,155 - strategies.ml_strategy - INFO - 2025-01-27: BUY SIGNAL: PG, Strength: 0.900, Size: 879, ML Enhanced: False
+2025-08-23 16:26:48,155 - strategies.ml_strategy - INFO - 2025-01-27: BUY SIGNAL: HD, Strength: 0.900, Size: 351, ML Enhanced: False
+2025-08-23 16:26:48,155 - strategies.ml_strategy - INFO - 2025-01-27: BUY SIGNAL: CRM, Strength: 0.900, Size: 311, ML Enhanced: False
+2025-08-23 16:26:48,156 - strategies.ml_strategy - INFO - 2025-01-28: Order Failed: MA, Status: Margin
+2025-08-23 16:26:48,156 - strategies.ml_strategy - INFO - 2025-01-28: Order Failed: PG, Status: Margin
+2025-08-23 16:26:48,156 - strategies.ml_strategy - INFO - 2025-01-28: Order Failed: HD, Status: Margin
+2025-08-23 16:26:48,156 - strategies.ml_strategy - INFO - 2025-01-28: Order Failed: CRM, Status: Margin
+2025-08-23 16:26:48,156 - strategies.ml_strategy - INFO - 2025-01-28: SELL EXECUTED: META, Price: 664.90, Size: -5, Value: 2752.51
+2025-08-23 16:26:48,156 - strategies.ml_strategy - INFO - 2025-01-28: SELL EXECUTED: ORCL, Price: 162.06, Size: -857, Value: 157680.85
+2025-08-23 16:26:48,156 - strategies.ml_strategy - INFO - 2025-01-28: BUY EXECUTED: META, Price: 664.90, Size: 206, Cost: 136968.65
+2025-08-23 16:26:48,306 - strategies.ml_strategy - INFO - 2025-01-28: BUY SIGNAL: META, Strength: 0.900, Size: 1, ML Enhanced: False
+2025-08-23 16:26:48,307 - strategies.ml_strategy - INFO - 2025-01-28: BUY SIGNAL: CRM, Strength: 0.900, Size: 298, ML Enhanced: False
+2025-08-23 16:26:48,307 - strategies.ml_strategy - INFO - 2025-01-29: Order Failed: CRM, Status: Margin
+2025-08-23 16:26:48,307 - strategies.ml_strategy - INFO - 2025-01-29: BUY EXECUTED: META, Price: 673.88, Size: 1, Cost: 673.88
+2025-08-23 16:26:48,602 - strategies.ml_strategy - INFO - 2025-01-30: BUY SIGNAL: V, Strength: 0.900, Size: 432, ML Enhanced: False
+2025-08-23 16:26:48,602 - strategies.ml_strategy - INFO - 2025-01-30: BUY SIGNAL: MA, Strength: 0.900, Size: 261, ML Enhanced: False
+2025-08-23 16:26:48,602 - strategies.ml_strategy - INFO - 2025-01-31: Order Failed: V, Status: Margin
+2025-08-23 16:26:48,602 - strategies.ml_strategy - INFO - 2025-01-31: Order Failed: MA, Status: Margin
+2025-08-23 16:26:48,924 - strategies.ml_strategy - INFO - 2025-01-31: EXIT SIGNAL: MSFT, Strength: 0.800
+2025-08-23 16:26:48,925 - strategies.ml_strategy - INFO - 2025-01-31: BUY SIGNAL: GOOGL, Strength: 0.900, Size: 723, ML Enhanced: False
+2025-08-23 16:26:48,925 - strategies.ml_strategy - INFO - 2025-01-31: Portfolio Value: $981,575, Return: -1.8%, Positions: 7
+2025-08-23 16:26:48,925 - strategies.ml_strategy - INFO - 2025-02-03: Order Failed: GOOGL, Status: Margin
+2025-08-23 16:26:48,925 - strategies.ml_strategy - INFO - 2025-02-03: SELL EXECUTED: MSFT, Price: 409.35, Size: -175, Value: 74060.79
+2025-08-23 16:26:49,073 - strategies.ml_strategy - INFO - 2025-02-03: EXIT SIGNAL: MSFT, Strength: 0.800
+2025-08-23 16:26:49,073 - strategies.ml_strategy - INFO - 2025-02-04: SELL EXECUTED: MSFT, Price: 410.43, Size: -87, Value: 36818.80
+2025-08-23 16:26:49,221 - strategies.ml_strategy - INFO - 2025-02-04: BUY SIGNAL: GOOGL, Strength: 0.900, Size: 717, ML Enhanced: False
+2025-08-23 16:26:49,222 - strategies.ml_strategy - INFO - 2025-02-05: Order Failed: GOOGL, Status: Margin
+2025-08-23 16:26:50,727 - strategies.ml_strategy - INFO - 2025-02-07: Trained ML models for 20 symbols
+2025-08-23 16:26:50,895 - strategies.ml_strategy - INFO - 2025-02-07: EXIT SIGNAL: META, Strength: 1.000
+2025-08-23 16:26:50,895 - strategies.ml_strategy - INFO - 2025-02-07: Portfolio Value: $978,400, Return: -2.2%, Positions: 7
+2025-08-23 16:26:50,895 - strategies.ml_strategy - INFO - 2025-02-10: SELL EXECUTED: META, Price: 717.37, Size: -219, Value: 144248.55
+2025-08-23 16:26:51,044 - strategies.ml_strategy - INFO - 2025-02-10: EXIT SIGNAL: CRM, Strength: 0.800
+2025-08-23 16:26:51,045 - strategies.ml_strategy - INFO - 2025-02-11: SELL EXECUTED: CRM, Price: 323.00, Size: -57, Value: 19237.35
+2025-08-23 16:26:51,192 - strategies.ml_strategy - INFO - 2025-02-11: EXIT SIGNAL: CRM, Strength: 0.800
+2025-08-23 16:26:51,192 - strategies.ml_strategy - INFO - 2025-02-11: BUY SIGNAL: MSFT, Strength: 0.700, Size: 275, ML Enhanced: False
+2025-08-23 16:26:51,193 - strategies.ml_strategy - INFO - 2025-02-12: SELL EXECUTED: CRM, Price: 318.54, Size: -28, Value: 9449.93
+2025-08-23 16:26:51,193 - strategies.ml_strategy - INFO - 2025-02-12: BUY EXECUTED: MSFT, Price: 404.98, Size: 275, Cost: 111370.78
+2025-08-23 16:26:51,342 - strategies.ml_strategy - INFO - 2025-02-12: BUY SIGNAL: MSFT, Strength: 0.700, Size: 2, ML Enhanced: False
+2025-08-23 16:26:51,343 - strategies.ml_strategy - INFO - 2025-02-13: BUY EXECUTED: MSFT, Price: 404.78, Size: 2, Cost: 809.55
+2025-08-23 16:26:51,495 - strategies.ml_strategy - INFO - 2025-02-13: BUY SIGNAL: MSFT, Strength: 0.700, Size: 1, ML Enhanced: False
+2025-08-23 16:26:51,495 - strategies.ml_strategy - INFO - 2025-02-13: BUY SIGNAL: TSLA, Strength: 0.700, Size: 420, ML Enhanced: False
+2025-08-23 16:26:51,496 - strategies.ml_strategy - INFO - 2025-02-14: BUY EXECUTED: MSFT, Price: 405.56, Size: 1, Cost: 405.56
+2025-08-23 16:26:51,496 - strategies.ml_strategy - INFO - 2025-02-14: BUY EXECUTED: TSLA, Price: 360.62, Size: 420, Cost: 151460.40
+2025-08-23 16:26:52,709 - strategies.ml_strategy - INFO - 2025-02-14: Trained ML models for 20 symbols
+2025-08-23 16:26:52,870 - strategies.ml_strategy - INFO - 2025-02-14: Portfolio Value: $990,818, Return: -0.9%, Positions: 7
+2025-08-23 16:26:53,020 - strategies.ml_strategy - INFO - 2025-02-18: EXIT SIGNAL: UNH, Strength: 0.800
+2025-08-23 16:26:53,020 - strategies.ml_strategy - INFO - 2025-02-18: BUY SIGNAL: CRM, Strength: 0.700, Size: 420, ML Enhanced: False
+2025-08-23 16:26:53,021 - strategies.ml_strategy - INFO - 2025-02-19: Order Failed: CRM, Status: Margin
+2025-08-23 16:26:53,021 - strategies.ml_strategy - INFO - 2025-02-19: SELL EXECUTED: UNH, Price: 495.68, Size: -149, Value: 73680.69
+2025-08-23 16:26:53,171 - strategies.ml_strategy - INFO - 2025-02-19: BUY SIGNAL: HD, Strength: 0.900, Size: 383, ML Enhanced: False
+2025-08-23 16:26:53,171 - strategies.ml_strategy - INFO - 2025-02-19: BUY SIGNAL: CRM, Strength: 0.700, Size: 433, ML Enhanced: False
+2025-08-23 16:26:53,172 - strategies.ml_strategy - INFO - 2025-02-20: Order Failed: HD, Status: Margin
+2025-08-23 16:26:53,172 - strategies.ml_strategy - INFO - 2025-02-20: Order Failed: CRM, Status: Margin
+2025-08-23 16:26:53,322 - strategies.ml_strategy - INFO - 2025-02-20: BUY SIGNAL: GOOGL, Strength: 0.700, Size: 810, ML Enhanced: False
+2025-08-23 16:26:53,323 - strategies.ml_strategy - INFO - 2025-02-20: BUY SIGNAL: TSLA, Strength: 0.700, Size: 1, ML Enhanced: False
+2025-08-23 16:26:53,323 - strategies.ml_strategy - INFO - 2025-02-20: BUY SIGNAL: UNH, Strength: 0.700, Size: 151, ML Enhanced: False
+2025-08-23 16:26:53,323 - strategies.ml_strategy - INFO - 2025-02-20: BUY SIGNAL: HD, Strength: 0.700, Size: 382, ML Enhanced: False
+2025-08-23 16:26:53,323 - strategies.ml_strategy - INFO - 2025-02-20: BUY SIGNAL: CRM, Strength: 0.700, Size: 441, ML Enhanced: False
+2025-08-23 16:26:53,324 - strategies.ml_strategy - INFO - 2025-02-21: Order Failed: GOOGL, Status: Margin
+2025-08-23 16:26:53,324 - strategies.ml_strategy - INFO - 2025-02-21: Order Failed: TSLA, Status: Margin
+2025-08-23 16:26:53,324 - strategies.ml_strategy - INFO - 2025-02-21: Order Failed: UNH, Status: Margin
+2025-08-23 16:26:53,324 - strategies.ml_strategy - INFO - 2025-02-21: Order Failed: HD, Status: Margin
+2025-08-23 16:26:53,324 - strategies.ml_strategy - INFO - 2025-02-21: Order Failed: CRM, Status: Margin
+2025-08-23 16:26:53,475 - strategies.ml_strategy - INFO - 2025-02-21: EXIT SIGNAL: TSLA, Strength: 0.800
+2025-08-23 16:26:53,475 - strategies.ml_strategy - INFO - 2025-02-21: EXIT SIGNAL: UNH, Strength: 0.800
+2025-08-23 16:26:53,475 - strategies.ml_strategy - INFO - 2025-02-21: EXIT SIGNAL: KO, Strength: 0.900
+2025-08-23 16:26:53,475 - strategies.ml_strategy - INFO - 2025-02-21: EXIT SIGNAL: CRM, Strength: 0.800
+2025-08-23 16:26:53,475 - strategies.ml_strategy - INFO - 2025-02-21: BUY SIGNAL: GOOGL, Strength: 0.700, Size: 822, ML Enhanced: False
+2025-08-23 16:26:53,475 - strategies.ml_strategy - INFO - 2025-02-21: BUY SIGNAL: PG, Strength: 0.900, Size: 877, ML Enhanced: False
+2025-08-23 16:26:53,476 - strategies.ml_strategy - INFO - 2025-02-24: Order Failed: PG, Status: Margin
+2025-08-23 16:26:53,476 - strategies.ml_strategy - INFO - 2025-02-24: SELL EXECUTED: TSLA, Price: 338.14, Size: -210, Value: 75730.20
+2025-08-23 16:26:53,476 - strategies.ml_strategy - INFO - 2025-02-24: SELL EXECUTED: UNH, Price: 461.42, Size: -74, Value: 36593.10
+2025-08-23 16:26:53,476 - strategies.ml_strategy - INFO - 2025-02-24: SELL EXECUTED: KO, Price: 69.82, Size: -745, Value: 45075.91
+2025-08-23 16:26:53,476 - strategies.ml_strategy - INFO - 2025-02-24: SELL EXECUTED: CRM, Price: 310.53, Size: -14, Value: 4724.96
+2025-08-23 16:26:53,476 - strategies.ml_strategy - INFO - 2025-02-24: BUY EXECUTED: GOOGL, Price: 181.56, Size: 822, Cost: 149243.03
+2025-08-23 16:26:54,710 - strategies.ml_strategy - INFO - 2025-02-24: Trained ML models for 20 symbols
+2025-08-23 16:26:54,889 - strategies.ml_strategy - INFO - 2025-02-24: EXIT SIGNAL: TSLA, Strength: 0.862
+2025-08-23 16:26:54,889 - strategies.ml_strategy - INFO - 2025-02-24: EXIT SIGNAL: UNH, Strength: 1.000
+2025-08-23 16:26:54,889 - strategies.ml_strategy - INFO - 2025-02-24: EXIT SIGNAL: KO, Strength: 1.000
+2025-08-23 16:26:54,889 - strategies.ml_strategy - INFO - 2025-02-24: EXIT SIGNAL: CRM, Strength: 0.999
+2025-08-23 16:26:54,889 - strategies.ml_strategy - INFO - 2025-02-24: BUY SIGNAL: HD, Strength: 0.900, Size: 389, ML Enhanced: True
+2025-08-23 16:26:54,889 - strategies.ml_strategy - INFO - 2025-02-24: Portfolio Value: $980,298, Return: -2.0%, Positions: 8
+2025-08-23 16:26:54,890 - strategies.ml_strategy - INFO - 2025-02-25: SELL EXECUTED: TSLA, Price: 327.02, Size: -210, Value: 75730.20
+2025-08-23 16:26:54,890 - strategies.ml_strategy - INFO - 2025-02-25: SELL EXECUTED: UNH, Price: 455.58, Size: -75, Value: 37087.60
+2025-08-23 16:26:54,890 - strategies.ml_strategy - INFO - 2025-02-25: SELL EXECUTED: KO, Price: 69.84, Size: -1739, Value: 105217.47
+2025-08-23 16:26:54,890 - strategies.ml_strategy - INFO - 2025-02-25: SELL EXECUTED: CRM, Price: 305.29, Size: -15, Value: 5062.46
+2025-08-23 16:26:54,890 - strategies.ml_strategy - INFO - 2025-02-25: BUY EXECUTED: HD, Price: 380.21, Size: 389, Cost: 147901.44
+2025-08-23 16:26:55,041 - strategies.ml_strategy - INFO - 2025-02-25: EXIT SIGNAL: MSFT, Strength: 0.800
+2025-08-23 16:26:55,042 - strategies.ml_strategy - INFO - 2025-02-25: BUY SIGNAL: GOOGL, Strength: 0.900, Size: 17, ML Enhanced: False
+2025-08-23 16:26:55,042 - strategies.ml_strategy - INFO - 2025-02-25: BUY SIGNAL: AMZN, Strength: 0.900, Size: 690, ML Enhanced: False
+2025-08-23 16:26:55,042 - strategies.ml_strategy - INFO - 2025-02-25: BUY SIGNAL: BAC, Strength: 0.700, Size: 3383, ML Enhanced: False
+2025-08-23 16:26:55,042 - strategies.ml_strategy - INFO - 2025-02-25: BUY SIGNAL: UNH, Strength: 0.900, Size: 315, ML Enhanced: False
+2025-08-23 16:26:55,042 - strategies.ml_strategy - INFO - 2025-02-25: BUY SIGNAL: CRM, Strength: 0.700, Size: 481, ML Enhanced: False
+2025-08-23 16:26:55,043 - strategies.ml_strategy - INFO - 2025-02-26: Order Failed: BAC, Status: Margin
+2025-08-23 16:26:55,043 - strategies.ml_strategy - INFO - 2025-02-26: Order Failed: UNH, Status: Margin
+2025-08-23 16:26:55,043 - strategies.ml_strategy - INFO - 2025-02-26: Order Failed: CRM, Status: Margin
+2025-08-23 16:26:55,043 - strategies.ml_strategy - INFO - 2025-02-26: SELL EXECUTED: MSFT, Price: 396.63, Size: -183, Value: 74913.94
+2025-08-23 16:26:55,043 - strategies.ml_strategy - INFO - 2025-02-26: BUY EXECUTED: GOOGL, Price: 174.66, Size: 17, Cost: 2969.17
+2025-08-23 16:26:55,043 - strategies.ml_strategy - INFO - 2025-02-26: BUY EXECUTED: AMZN, Price: 214.94, Size: 690, Cost: 148308.60
+2025-08-23 16:26:55,193 - strategies.ml_strategy - INFO - 2025-02-26: EXIT SIGNAL: GOOGL, Strength: 0.800
+2025-08-23 16:26:55,193 - strategies.ml_strategy - INFO - 2025-02-26: BUY SIGNAL: BAC, Strength: 0.700, Size: 3366, ML Enhanced: False
+2025-08-23 16:26:55,193 - strategies.ml_strategy - INFO - 2025-02-26: BUY SIGNAL: UNH, Strength: 0.700, Size: 318, ML Enhanced: False
+2025-08-23 16:26:55,193 - strategies.ml_strategy - INFO - 2025-02-26: BUY SIGNAL: CRM, Strength: 0.900, Size: 476, ML Enhanced: False
+2025-08-23 16:26:55,194 - strategies.ml_strategy - INFO - 2025-02-27: Order Failed: UNH, Status: Margin
+2025-08-23 16:26:55,194 - strategies.ml_strategy - INFO - 2025-02-27: Order Failed: CRM, Status: Margin
+2025-08-23 16:26:55,194 - strategies.ml_strategy - INFO - 2025-02-27: SELL EXECUTED: GOOGL, Price: 173.58, Size: -419, Value: 76015.39
+2025-08-23 16:26:55,194 - strategies.ml_strategy - INFO - 2025-02-27: BUY EXECUTED: BAC, Price: 43.56, Size: 3366, Cost: 146612.27
+2025-08-23 16:26:55,350 - strategies.ml_strategy - INFO - 2025-02-27: EXIT SIGNAL: GOOGL, Strength: 0.800
+2025-08-23 16:26:55,351 - strategies.ml_strategy - INFO - 2025-02-27: BUY SIGNAL: MSFT, Strength: 0.700, Size: 188, ML Enhanced: False
+2025-08-23 16:26:55,351 - strategies.ml_strategy - INFO - 2025-02-27: BUY SIGNAL: AMZN, Strength: 0.700, Size: 5, ML Enhanced: False
+2025-08-23 16:26:55,351 - strategies.ml_strategy - INFO - 2025-02-27: BUY SIGNAL: META, Strength: 0.700, Size: 220, ML Enhanced: False
+2025-08-23 16:26:55,351 - strategies.ml_strategy - INFO - 2025-02-27: BUY SIGNAL: JPM, Strength: 0.700, Size: 566, ML Enhanced: False
+2025-08-23 16:26:55,351 - strategies.ml_strategy - INFO - 2025-02-27: BUY SIGNAL: UNH, Strength: 0.700, Size: 313, ML Enhanced: False
+2025-08-23 16:26:55,351 - strategies.ml_strategy - INFO - 2025-02-28: Order Failed: META, Status: Margin
+2025-08-23 16:26:55,352 - strategies.ml_strategy - INFO - 2025-02-28: Order Failed: JPM, Status: Margin
+2025-08-23 16:26:55,352 - strategies.ml_strategy - INFO - 2025-02-28: Order Failed: UNH, Status: Margin
+2025-08-23 16:26:55,352 - strategies.ml_strategy - INFO - 2025-02-28: SELL EXECUTED: GOOGL, Price: 168.28, Size: -210, Value: 38098.41
+2025-08-23 16:26:55,352 - strategies.ml_strategy - INFO - 2025-02-28: BUY EXECUTED: MSFT, Price: 391.30, Size: 188, Cost: 73563.87
+2025-08-23 16:26:55,352 - strategies.ml_strategy - INFO - 2025-02-28: BUY EXECUTED: AMZN, Price: 208.65, Size: 5, Cost: 1043.25
+2025-08-23 16:26:55,504 - strategies.ml_strategy - INFO - 2025-02-28: BUY SIGNAL: GOOGL, Strength: 0.900, Size: 660, ML Enhanced: False
+2025-08-23 16:26:55,504 - strategies.ml_strategy - INFO - 2025-02-28: BUY SIGNAL: AMZN, Strength: 0.900, Size: 1, ML Enhanced: False
+2025-08-23 16:26:55,504 - strategies.ml_strategy - INFO - 2025-02-28: BUY SIGNAL: META, Strength: 0.700, Size: 221, ML Enhanced: False
+2025-08-23 16:26:55,504 - strategies.ml_strategy - INFO - 2025-02-28: BUY SIGNAL: TSLA, Strength: 0.900, Size: 504, ML Enhanced: False
+2025-08-23 16:26:55,504 - strategies.ml_strategy - INFO - 2025-02-28: BUY SIGNAL: UNH, Strength: 0.700, Size: 314, ML Enhanced: False
+2025-08-23 16:26:55,504 - strategies.ml_strategy - INFO - 2025-02-28: BUY SIGNAL: CRM, Strength: 0.900, Size: 498, ML Enhanced: False
+2025-08-23 16:26:55,505 - strategies.ml_strategy - INFO - 2025-03-03: Order Failed: GOOGL, Status: Margin
+2025-08-23 16:26:55,505 - strategies.ml_strategy - INFO - 2025-03-03: Order Failed: AMZN, Status: Margin
+2025-08-23 16:26:55,505 - strategies.ml_strategy - INFO - 2025-03-03: Order Failed: META, Status: Margin
+2025-08-23 16:26:55,505 - strategies.ml_strategy - INFO - 2025-03-03: Order Failed: TSLA, Status: Margin
+2025-08-23 16:26:55,505 - strategies.ml_strategy - INFO - 2025-03-03: Order Failed: UNH, Status: Margin
+2025-08-23 16:26:55,505 - strategies.ml_strategy - INFO - 2025-03-03: Order Failed: CRM, Status: Margin
+2025-08-23 16:26:56,749 - strategies.ml_strategy - INFO - 2025-03-03: Trained ML models for 20 symbols
+2025-08-23 16:26:56,931 - strategies.ml_strategy - INFO - 2025-03-03: EXIT SIGNAL: GOOGL, Strength: 0.518
+2025-08-23 16:26:56,931 - strategies.ml_strategy - INFO - 2025-03-03: EXIT SIGNAL: JNJ, Strength: 1.000
+2025-08-23 16:26:56,931 - strategies.ml_strategy - INFO - 2025-03-03: BUY SIGNAL: MSFT, Strength: 0.965, Size: 6, ML Enhanced: True
+2025-08-23 16:26:56,931 - strategies.ml_strategy - INFO - 2025-03-03: BUY SIGNAL: GOOGL, Strength: 0.518, Size: 666, ML Enhanced: True
+2025-08-23 16:26:56,931 - strategies.ml_strategy - INFO - 2025-03-03: BUY SIGNAL: AMZN, Strength: 1.000, Size: 17, ML Enhanced: True
+2025-08-23 16:26:56,931 - strategies.ml_strategy - INFO - 2025-03-03: BUY SIGNAL: META, Strength: 0.945, Size: 223, ML Enhanced: True
+2025-08-23 16:26:56,931 - strategies.ml_strategy - INFO - 2025-03-03: BUY SIGNAL: TSLA, Strength: 0.919, Size: 513, ML Enhanced: True
+2025-08-23 16:26:56,931 - strategies.ml_strategy - INFO - 2025-03-03: BUY SIGNAL: ORCL, Strength: 0.861, Size: 906, ML Enhanced: True
+2025-08-23 16:26:56,931 - strategies.ml_strategy - INFO - 2025-03-03: BUY SIGNAL: UNH, Strength: 1.000, Size: 316, ML Enhanced: True
+2025-08-23 16:26:56,931 - strategies.ml_strategy - INFO - 2025-03-03: BUY SIGNAL: CRM, Strength: 1.000, Size: 499, ML Enhanced: True
+2025-08-23 16:26:56,931 - strategies.ml_strategy - INFO - 2025-03-03: Portfolio Value: $973,528, Return: -2.6%, Positions: 7
+2025-08-23 16:26:56,932 - strategies.ml_strategy - INFO - 2025-03-04: Order Failed: META, Status: Margin
+2025-08-23 16:26:56,932 - strategies.ml_strategy - INFO - 2025-03-04: Order Failed: TSLA, Status: Margin
+2025-08-23 16:26:56,932 - strategies.ml_strategy - INFO - 2025-03-04: Order Failed: ORCL, Status: Margin
+2025-08-23 16:26:56,932 - strategies.ml_strategy - INFO - 2025-03-04: Order Failed: UNH, Status: Margin
+2025-08-23 16:26:56,932 - strategies.ml_strategy - INFO - 2025-03-04: Order Failed: CRM, Status: Margin
+2025-08-23 16:26:56,932 - strategies.ml_strategy - INFO - 2025-03-04: SELL EXECUTED: GOOGL, Price: 165.85, Size: -210, Value: 38098.41
+2025-08-23 16:26:56,932 - strategies.ml_strategy - INFO - 2025-03-04: SELL EXECUTED: JNJ, Price: 166.65, Size: -1061, Value: 157811.34
+2025-08-23 16:26:56,932 - strategies.ml_strategy - INFO - 2025-03-04: BUY EXECUTED: MSFT, Price: 382.07, Size: 6, Cost: 2292.42
+2025-08-23 16:26:56,932 - strategies.ml_strategy - INFO - 2025-03-04: BUY EXECUTED: GOOGL, Price: 165.85, Size: 666, Cost: 110454.77
+2025-08-23 16:26:56,932 - strategies.ml_strategy - INFO - 2025-03-04: BUY EXECUTED: AMZN, Price: 200.11, Size: 17, Cost: 3401.87
+2025-08-23 16:26:57,083 - strategies.ml_strategy - INFO - 2025-03-04: EXIT SIGNAL: BAC, Strength: 0.800
+2025-08-23 16:26:57,083 - strategies.ml_strategy - INFO - 2025-03-04: BUY SIGNAL: GOOGL, Strength: 0.900, Size: 177, ML Enhanced: False
+2025-08-23 16:26:57,084 - strategies.ml_strategy - INFO - 2025-03-04: BUY SIGNAL: META, Strength: 0.900, Size: 225, ML Enhanced: False
+2025-08-23 16:26:57,084 - strategies.ml_strategy - INFO - 2025-03-04: BUY SIGNAL: UNH, Strength: 0.700, Size: 306, ML Enhanced: False
+2025-08-23 16:26:57,084 - strategies.ml_strategy - INFO - 2025-03-04: BUY SIGNAL: CRM, Strength: 0.900, Size: 502, ML Enhanced: False
+2025-08-23 16:26:57,084 - strategies.ml_strategy - INFO - 2025-03-05: Order Failed: UNH, Status: Margin
+2025-08-23 16:26:57,084 - strategies.ml_strategy - INFO - 2025-03-05: Order Failed: CRM, Status: Margin
+2025-08-23 16:26:57,084 - strategies.ml_strategy - INFO - 2025-03-05: SELL EXECUTED: BAC, Price: 42.13, Size: -1683, Value: 73306.13
+2025-08-23 16:26:57,084 - strategies.ml_strategy - INFO - 2025-03-05: BUY EXECUTED: GOOGL, Price: 170.12, Size: 177, Cost: 30110.87
+2025-08-23 16:26:57,084 - strategies.ml_strategy - INFO - 2025-03-05: BUY EXECUTED: META, Price: 639.94, Size: 225, Cost: 143986.02
+2025-08-23 16:26:57,235 - strategies.ml_strategy - INFO - 2025-03-05: EXIT SIGNAL: BAC, Strength: 0.800
+2025-08-23 16:26:57,235 - strategies.ml_strategy - INFO - 2025-03-05: BUY SIGNAL: GOOGL, Strength: 0.700, Size: 2, ML Enhanced: False
+2025-08-23 16:26:57,235 - strategies.ml_strategy - INFO - 2025-03-05: BUY SIGNAL: TSLA, Strength: 0.700, Size: 523, ML Enhanced: False
+2025-08-23 16:26:57,235 - strategies.ml_strategy - INFO - 2025-03-05: BUY SIGNAL: JPM, Strength: 0.700, Size: 586, ML Enhanced: False
+2025-08-23 16:26:57,235 - strategies.ml_strategy - INFO - 2025-03-05: BUY SIGNAL: UNH, Strength: 0.700, Size: 310, ML Enhanced: False
+2025-08-23 16:26:57,235 - strategies.ml_strategy - INFO - 2025-03-05: BUY SIGNAL: CRM, Strength: 0.700, Size: 501, ML Enhanced: False
+2025-08-23 16:26:57,236 - strategies.ml_strategy - INFO - 2025-03-06: Order Failed: TSLA, Status: Margin
+2025-08-23 16:26:57,236 - strategies.ml_strategy - INFO - 2025-03-06: Order Failed: JPM, Status: Margin
+2025-08-23 16:26:57,236 - strategies.ml_strategy - INFO - 2025-03-06: Order Failed: UNH, Status: Margin
+2025-08-23 16:26:57,236 - strategies.ml_strategy - INFO - 2025-03-06: Order Failed: CRM, Status: Margin
+2025-08-23 16:26:57,236 - strategies.ml_strategy - INFO - 2025-03-06: SELL EXECUTED: BAC, Price: 41.09, Size: -841, Value: 36631.29
+2025-08-23 16:26:57,236 - strategies.ml_strategy - INFO - 2025-03-06: BUY EXECUTED: GOOGL, Price: 170.13, Size: 2, Cost: 340.26
+2025-08-23 16:26:57,388 - strategies.ml_strategy - INFO - 2025-03-06: EXIT SIGNAL: META, Strength: 0.800
+2025-08-23 16:26:57,388 - strategies.ml_strategy - INFO - 2025-03-06: EXIT SIGNAL: BAC, Strength: 0.800
+2025-08-23 16:26:57,388 - strategies.ml_strategy - INFO - 2025-03-06: EXIT SIGNAL: DIS, Strength: 0.800
+2025-08-23 16:26:57,388 - strategies.ml_strategy - INFO - 2025-03-06: BUY SIGNAL: CRM, Strength: 0.900, Size: 500, ML Enhanced: False
+2025-08-23 16:26:57,389 - strategies.ml_strategy - INFO - 2025-03-07: SELL EXECUTED: META, Price: 624.33, Size: -112, Value: 71673.04
+2025-08-23 16:26:57,389 - strategies.ml_strategy - INFO - 2025-03-07: SELL EXECUTED: BAC, Price: 41.07, Size: -421, Value: 18337.42
+2025-08-23 16:26:57,389 - strategies.ml_strategy - INFO - 2025-03-07: SELL EXECUTED: DIS, Price: 104.55, Size: -667, Value: 74924.76
+2025-08-23 16:26:57,389 - strategies.ml_strategy - INFO - 2025-03-07: BUY EXECUTED: CRM, Price: 282.29, Size: 500, Cost: 141144.06
+2025-08-23 16:26:57,542 - strategies.ml_strategy - INFO - 2025-03-07: EXIT SIGNAL: DIS, Strength: 0.800
+2025-08-23 16:26:57,542 - strategies.ml_strategy - INFO - 2025-03-07: BUY SIGNAL: AMZN, Strength: 0.900, Size: 1, ML Enhanced: False
+2025-08-23 16:26:57,542 - strategies.ml_strategy - INFO - 2025-03-07: BUY SIGNAL: META, Strength: 0.900, Size: 114, ML Enhanced: False
+2025-08-23 16:26:57,543 - strategies.ml_strategy - INFO - 2025-03-07: BUY SIGNAL: NVDA, Strength: 0.900, Size: 1261, ML Enhanced: False
+2025-08-23 16:26:57,543 - strategies.ml_strategy - INFO - 2025-03-07: BUY SIGNAL: BAC, Strength: 0.900, Size: 3031, ML Enhanced: False
+2025-08-23 16:26:57,543 - strategies.ml_strategy - INFO - 2025-03-07: BUY SIGNAL: CRM, Strength: 0.700, Size: 3, ML Enhanced: False
+2025-08-23 16:26:57,543 - strategies.ml_strategy - INFO - 2025-03-10: Order Failed: NVDA, Status: Margin
+2025-08-23 16:26:57,543 - strategies.ml_strategy - INFO - 2025-03-10: Order Failed: BAC, Status: Margin
+2025-08-23 16:26:57,544 - strategies.ml_strategy - INFO - 2025-03-10: Order Failed: CRM, Status: Margin
+2025-08-23 16:26:57,544 - strategies.ml_strategy - INFO - 2025-03-10: SELL EXECUTED: DIS, Price: 103.99, Size: -334, Value: 37518.55
+2025-08-23 16:26:57,544 - strategies.ml_strategy - INFO - 2025-03-10: BUY EXECUTED: AMZN, Price: 195.60, Size: 1, Cost: 195.60
+2025-08-23 16:26:57,544 - strategies.ml_strategy - INFO - 2025-03-10: BUY EXECUTED: META, Price: 607.06, Size: 114, Cost: 69205.11
+2025-08-23 16:26:58,809 - strategies.ml_strategy - INFO - 2025-03-10: Trained ML models for 20 symbols
+2025-08-23 16:26:59,001 - strategies.ml_strategy - INFO - 2025-03-10: EXIT SIGNAL: MSFT, Strength: 1.000
+2025-08-23 16:26:59,001 - strategies.ml_strategy - INFO - 2025-03-10: EXIT SIGNAL: GOOGL, Strength: 1.000
+2025-08-23 16:26:59,001 - strategies.ml_strategy - INFO - 2025-03-10: EXIT SIGNAL: AMZN, Strength: 0.837
+2025-08-23 16:26:59,002 - strategies.ml_strategy - INFO - 2025-03-10: EXIT SIGNAL: BAC, Strength: 1.000
+2025-08-23 16:26:59,002 - strategies.ml_strategy - INFO - 2025-03-10: EXIT SIGNAL: DIS, Strength: 0.984
+2025-08-23 16:26:59,002 - strategies.ml_strategy - INFO - 2025-03-10: EXIT SIGNAL: CRM, Strength: 1.000
+2025-08-23 16:26:59,002 - strategies.ml_strategy - INFO - 2025-03-10: BUY SIGNAL: V, Strength: 0.854, Size: 405, ML Enhanced: True
+2025-08-23 16:26:59,002 - strategies.ml_strategy - INFO - 2025-03-10: BUY SIGNAL: MA, Strength: 1.000, Size: 257, ML Enhanced: True
+2025-08-23 16:26:59,002 - strategies.ml_strategy - INFO - 2025-03-10: Portfolio Value: $920,403, Return: -8.0%, Positions: 8
+2025-08-23 16:26:59,003 - strategies.ml_strategy - INFO - 2025-03-11: SELL EXECUTED: MSFT, Price: 377.68, Size: -377, Value: 150770.23
+2025-08-23 16:26:59,003 - strategies.ml_strategy - INFO - 2025-03-11: SELL EXECUTED: GOOGL, Price: 164.71, Size: -845, Value: 140905.89
+2025-08-23 16:26:59,003 - strategies.ml_strategy - INFO - 2025-03-11: SELL EXECUTED: AMZN, Price: 193.90, Size: -356, Value: 76367.40
+2025-08-23 16:26:59,003 - strategies.ml_strategy - INFO - 2025-03-11: SELL EXECUTED: BAC, Price: 39.47, Size: -421, Value: 18337.42
+2025-08-23 16:26:59,003 - strategies.ml_strategy - INFO - 2025-03-11: SELL EXECUTED: DIS, Price: 99.37, Size: -334, Value: 37518.55
+2025-08-23 16:26:59,003 - strategies.ml_strategy - INFO - 2025-03-11: SELL EXECUTED: CRM, Price: 272.86, Size: -500, Value: 141144.06
+2025-08-23 16:26:59,003 - strategies.ml_strategy - INFO - 2025-03-11: BUY EXECUTED: V, Price: 337.26, Size: 405, Cost: 136588.48
+2025-08-23 16:26:59,003 - strategies.ml_strategy - INFO - 2025-03-11: BUY EXECUTED: MA, Price: 535.62, Size: 257, Cost: 137655.50
+2025-08-23 16:26:59,156 - strategies.ml_strategy - INFO - 2025-03-11: EXIT SIGNAL: AMZN, Strength: 0.900
+2025-08-23 16:26:59,156 - strategies.ml_strategy - INFO - 2025-03-11: EXIT SIGNAL: V, Strength: 0.800
+2025-08-23 16:26:59,156 - strategies.ml_strategy - INFO - 2025-03-11: EXIT SIGNAL: MA, Strength: 0.800
+2025-08-23 16:26:59,156 - strategies.ml_strategy - INFO - 2025-03-11: BUY SIGNAL: MSFT, Strength: 0.900, Size: 360, ML Enhanced: False
+2025-08-23 16:26:59,157 - strategies.ml_strategy - INFO - 2025-03-11: BUY SIGNAL: AMZN, Strength: 0.900, Size: 339, ML Enhanced: False
+2025-08-23 16:26:59,157 - strategies.ml_strategy - INFO - 2025-03-11: BUY SIGNAL: NVDA, Strength: 0.900, Size: 1258, ML Enhanced: False
+2025-08-23 16:26:59,157 - strategies.ml_strategy - INFO - 2025-03-11: BUY SIGNAL: BAC, Strength: 0.700, Size: 3475, ML Enhanced: False
+2025-08-23 16:26:59,157 - strategies.ml_strategy - INFO - 2025-03-11: BUY SIGNAL: CRM, Strength: 0.700, Size: 495, ML Enhanced: False
+2025-08-23 16:26:59,158 - strategies.ml_strategy - INFO - 2025-03-12: Order Failed: CRM, Status: Margin
+2025-08-23 16:26:59,158 - strategies.ml_strategy - INFO - 2025-03-12: SELL EXECUTED: AMZN, Price: 200.72, Size: -357, Value: 76581.92
+2025-08-23 16:26:59,158 - strategies.ml_strategy - INFO - 2025-03-12: SELL EXECUTED: V, Price: 334.82, Size: -202, Value: 68125.61
+2025-08-23 16:26:59,158 - strategies.ml_strategy - INFO - 2025-03-12: SELL EXECUTED: MA, Price: 528.95, Size: -128, Value: 68559.94
+2025-08-23 16:26:59,158 - strategies.ml_strategy - INFO - 2025-03-12: BUY EXECUTED: MSFT, Price: 381.62, Size: 360, Cost: 137383.53
+2025-08-23 16:26:59,158 - strategies.ml_strategy - INFO - 2025-03-12: BUY EXECUTED: AMZN, Price: 200.72, Size: 339, Cost: 68044.08
+2025-08-23 16:26:59,158 - strategies.ml_strategy - INFO - 2025-03-12: BUY EXECUTED: NVDA, Price: 114.11, Size: 1258, Cost: 143553.00
+2025-08-23 16:26:59,158 - strategies.ml_strategy - INFO - 2025-03-12: BUY EXECUTED: BAC, Price: 40.07, Size: 3475, Cost: 139256.62
+2025-08-23 16:26:59,311 - strategies.ml_strategy - INFO - 2025-03-12: BUY SIGNAL: GOOGL, Strength: 0.700, Size: 823, ML Enhanced: False
+2025-08-23 16:26:59,311 - strategies.ml_strategy - INFO - 2025-03-12: BUY SIGNAL: AMZN, Strength: 0.700, Size: 352, ML Enhanced: False
+2025-08-23 16:26:59,311 - strategies.ml_strategy - INFO - 2025-03-12: BUY SIGNAL: TSLA, Strength: 0.900, Size: 554, ML Enhanced: False
+2025-08-23 16:26:59,312 - strategies.ml_strategy - INFO - 2025-03-12: BUY SIGNAL: ORCL, Strength: 0.900, Size: 916, ML Enhanced: False
+2025-08-23 16:26:59,312 - strategies.ml_strategy - INFO - 2025-03-12: BUY SIGNAL: V, Strength: 0.700, Size: 211, ML Enhanced: False
+2025-08-23 16:26:59,312 - strategies.ml_strategy - INFO - 2025-03-12: BUY SIGNAL: MA, Strength: 0.700, Size: 133, ML Enhanced: False
+2025-08-23 16:26:59,312 - strategies.ml_strategy - INFO - 2025-03-12: BUY SIGNAL: CRM, Strength: 0.700, Size: 484, ML Enhanced: False
+2025-08-23 16:26:59,312 - strategies.ml_strategy - INFO - 2025-03-13: Order Failed: GOOGL, Status: Margin
+2025-08-23 16:26:59,312 - strategies.ml_strategy - INFO - 2025-03-13: Order Failed: AMZN, Status: Margin
+2025-08-23 16:26:59,312 - strategies.ml_strategy - INFO - 2025-03-13: Order Failed: TSLA, Status: Margin
+2025-08-23 16:26:59,312 - strategies.ml_strategy - INFO - 2025-03-13: Order Failed: ORCL, Status: Margin
+2025-08-23 16:26:59,312 - strategies.ml_strategy - INFO - 2025-03-13: Order Failed: V, Status: Margin
+2025-08-23 16:26:59,313 - strategies.ml_strategy - INFO - 2025-03-13: Order Failed: MA, Status: Margin
+2025-08-23 16:26:59,313 - strategies.ml_strategy - INFO - 2025-03-13: Order Failed: CRM, Status: Margin
+2025-08-23 16:26:59,466 - strategies.ml_strategy - INFO - 2025-03-13: EXIT SIGNAL: HD, Strength: 0.800
+2025-08-23 16:26:59,466 - strategies.ml_strategy - INFO - 2025-03-13: BUY SIGNAL: GOOGL, Strength: 0.700, Size: 829, ML Enhanced: False
+2025-08-23 16:26:59,466 - strategies.ml_strategy - INFO - 2025-03-13: BUY SIGNAL: AMZN, Strength: 0.700, Size: 356, ML Enhanced: False
+2025-08-23 16:26:59,466 - strategies.ml_strategy - INFO - 2025-03-13: BUY SIGNAL: META, Strength: 0.700, Size: 1, ML Enhanced: False
+2025-08-23 16:26:59,466 - strategies.ml_strategy - INFO - 2025-03-13: BUY SIGNAL: TSLA, Strength: 0.700, Size: 559, ML Enhanced: False
+2025-08-23 16:26:59,466 - strategies.ml_strategy - INFO - 2025-03-13: BUY SIGNAL: ORCL, Strength: 0.900, Size: 917, ML Enhanced: False
+2025-08-23 16:26:59,466 - strategies.ml_strategy - INFO - 2025-03-13: BUY SIGNAL: JPM, Strength: 0.900, Size: 605, ML Enhanced: False
+2025-08-23 16:26:59,466 - strategies.ml_strategy - INFO - 2025-03-13: BUY SIGNAL: V, Strength: 0.700, Size: 208, ML Enhanced: False
+2025-08-23 16:26:59,466 - strategies.ml_strategy - INFO - 2025-03-13: BUY SIGNAL: MA, Strength: 0.700, Size: 131, ML Enhanced: False
+2025-08-23 16:26:59,466 - strategies.ml_strategy - INFO - 2025-03-13: BUY SIGNAL: CRM, Strength: 0.700, Size: 497, ML Enhanced: False
+2025-08-23 16:26:59,467 - strategies.ml_strategy - INFO - 2025-03-14: Order Failed: GOOGL, Status: Margin
+2025-08-23 16:26:59,467 - strategies.ml_strategy - INFO - 2025-03-14: Order Failed: AMZN, Status: Margin
+2025-08-23 16:26:59,467 - strategies.ml_strategy - INFO - 2025-03-14: Order Failed: META, Status: Margin
+2025-08-23 16:26:59,467 - strategies.ml_strategy - INFO - 2025-03-14: Order Failed: TSLA, Status: Margin
+2025-08-23 16:26:59,467 - strategies.ml_strategy - INFO - 2025-03-14: Order Failed: ORCL, Status: Margin
+2025-08-23 16:26:59,467 - strategies.ml_strategy - INFO - 2025-03-14: Order Failed: JPM, Status: Margin
+2025-08-23 16:26:59,467 - strategies.ml_strategy - INFO - 2025-03-14: Order Failed: V, Status: Margin
+2025-08-23 16:26:59,467 - strategies.ml_strategy - INFO - 2025-03-14: Order Failed: MA, Status: Margin
+2025-08-23 16:26:59,467 - strategies.ml_strategy - INFO - 2025-03-14: Order Failed: CRM, Status: Margin
+2025-08-23 16:26:59,467 - strategies.ml_strategy - INFO - 2025-03-14: SELL EXECUTED: HD, Price: 348.48, Size: -194, Value: 73760.62
+2025-08-23 16:26:59,622 - strategies.ml_strategy - INFO - 2025-03-14: EXIT SIGNAL: HD, Strength: 0.900
+2025-08-23 16:26:59,622 - strategies.ml_strategy - INFO - 2025-03-14: BUY SIGNAL: AAPL, Strength: 0.700, Size: 649, ML Enhanced: False
+2025-08-23 16:26:59,622 - strategies.ml_strategy - INFO - 2025-03-14: BUY SIGNAL: GOOGL, Strength: 0.700, Size: 837, ML Enhanced: False
+2025-08-23 16:26:59,622 - strategies.ml_strategy - INFO - 2025-03-14: BUY SIGNAL: TSLA, Strength: 0.700, Size: 553, ML Enhanced: False
+2025-08-23 16:26:59,622 - strategies.ml_strategy - INFO - 2025-03-14: BUY SIGNAL: ORCL, Strength: 0.700, Size: 932, ML Enhanced: False
+2025-08-23 16:26:59,622 - strategies.ml_strategy - INFO - 2025-03-14: BUY SIGNAL: JPM, Strength: 0.700, Size: 601, ML Enhanced: False
+2025-08-23 16:26:59,622 - strategies.ml_strategy - INFO - 2025-03-14: BUY SIGNAL: V, Strength: 0.700, Size: 215, ML Enhanced: False
+2025-08-23 16:26:59,622 - strategies.ml_strategy - INFO - 2025-03-14: BUY SIGNAL: MA, Strength: 0.700, Size: 133, ML Enhanced: False
+2025-08-23 16:26:59,622 - strategies.ml_strategy - INFO - 2025-03-14: BUY SIGNAL: HD, Strength: 0.900, Size: 201, ML Enhanced: False
+2025-08-23 16:26:59,622 - strategies.ml_strategy - INFO - 2025-03-14: BUY SIGNAL: DIS, Strength: 0.700, Size: 1408, ML Enhanced: False
+2025-08-23 16:26:59,622 - strategies.ml_strategy - INFO - 2025-03-14: BUY SIGNAL: CRM, Strength: 0.700, Size: 496, ML Enhanced: False
+2025-08-23 16:26:59,623 - strategies.ml_strategy - INFO - 2025-03-17: Order Failed: GOOGL, Status: Margin
+2025-08-23 16:26:59,623 - strategies.ml_strategy - INFO - 2025-03-17: Order Failed: TSLA, Status: Margin
+2025-08-23 16:26:59,623 - strategies.ml_strategy - INFO - 2025-03-17: Order Failed: ORCL, Status: Margin
+2025-08-23 16:26:59,623 - strategies.ml_strategy - INFO - 2025-03-17: Order Failed: JPM, Status: Margin
+2025-08-23 16:26:59,623 - strategies.ml_strategy - INFO - 2025-03-17: Order Failed: V, Status: Margin
+2025-08-23 16:26:59,623 - strategies.ml_strategy - INFO - 2025-03-17: Order Failed: MA, Status: Margin
+2025-08-23 16:26:59,623 - strategies.ml_strategy - INFO - 2025-03-17: Order Failed: HD, Status: Margin
+2025-08-23 16:26:59,623 - strategies.ml_strategy - INFO - 2025-03-17: Order Failed: DIS, Status: Margin
+2025-08-23 16:26:59,623 - strategies.ml_strategy - INFO - 2025-03-17: Order Failed: CRM, Status: Margin
+2025-08-23 16:26:59,623 - strategies.ml_strategy - INFO - 2025-03-17: SELL EXECUTED: HD, Price: 349.59, Size: -195, Value: 74140.82
+2025-08-23 16:26:59,623 - strategies.ml_strategy - INFO - 2025-03-17: BUY EXECUTED: AAPL, Price: 212.79, Size: 649, Cost: 138100.16
+2025-08-23 16:27:00,917 - strategies.ml_strategy - INFO - 2025-03-17: Trained ML models for 20 symbols
+2025-08-23 16:27:01,090 - strategies.ml_strategy - INFO - 2025-03-17: BUY SIGNAL: AMZN, Strength: 0.713, Size: 367, ML Enhanced: True
+2025-08-23 16:27:01,090 - strategies.ml_strategy - INFO - 2025-03-17: BUY SIGNAL: TSLA, Strength: 0.851, Size: 580, ML Enhanced: True
+2025-08-23 16:27:01,090 - strategies.ml_strategy - INFO - 2025-03-17: BUY SIGNAL: JPM, Strength: 0.984, Size: 597, ML Enhanced: True
+2025-08-23 16:27:01,090 - strategies.ml_strategy - INFO - 2025-03-17: BUY SIGNAL: V, Strength: 0.836, Size: 211, ML Enhanced: True
+2025-08-23 16:27:01,090 - strategies.ml_strategy - INFO - 2025-03-17: BUY SIGNAL: MA, Strength: 0.952, Size: 131, ML Enhanced: True
+2025-08-23 16:27:01,090 - strategies.ml_strategy - INFO - 2025-03-17: BUY SIGNAL: HD, Strength: 0.961, Size: 392, ML Enhanced: True
+2025-08-23 16:27:01,090 - strategies.ml_strategy - INFO - 2025-03-17: BUY SIGNAL: DIS, Strength: 0.743, Size: 1397, ML Enhanced: True
+2025-08-23 16:27:01,090 - strategies.ml_strategy - INFO - 2025-03-17: Portfolio Value: $921,778, Return: -7.8%, Positions: 8
+2025-08-23 16:27:01,091 - strategies.ml_strategy - INFO - 2025-03-18: Order Failed: AMZN, Status: Margin
+2025-08-23 16:27:01,091 - strategies.ml_strategy - INFO - 2025-03-18: Order Failed: TSLA, Status: Margin
+2025-08-23 16:27:01,091 - strategies.ml_strategy - INFO - 2025-03-18: Order Failed: JPM, Status: Margin
+2025-08-23 16:27:01,091 - strategies.ml_strategy - INFO - 2025-03-18: Order Failed: V, Status: Margin
+2025-08-23 16:27:01,091 - strategies.ml_strategy - INFO - 2025-03-18: Order Failed: MA, Status: Margin
+2025-08-23 16:27:01,091 - strategies.ml_strategy - INFO - 2025-03-18: Order Failed: HD, Status: Margin
+2025-08-23 16:27:01,091 - strategies.ml_strategy - INFO - 2025-03-18: Order Failed: DIS, Status: Margin
+2025-08-23 16:27:01,245 - strategies.ml_strategy - INFO - 2025-03-18: EXIT SIGNAL: META, Strength: 0.800
+2025-08-23 16:27:01,245 - strategies.ml_strategy - INFO - 2025-03-18: BUY SIGNAL: AMZN, Strength: 0.700, Size: 367, ML Enhanced: False
+2025-08-23 16:27:01,245 - strategies.ml_strategy - INFO - 2025-03-18: BUY SIGNAL: ORCL, Strength: 0.700, Size: 916, ML Enhanced: False
+2025-08-23 16:27:01,245 - strategies.ml_strategy - INFO - 2025-03-18: BUY SIGNAL: JPM, Strength: 0.700, Size: 586, ML Enhanced: False
+2025-08-23 16:27:01,245 - strategies.ml_strategy - INFO - 2025-03-18: BUY SIGNAL: MA, Strength: 0.700, Size: 128, ML Enhanced: False
+2025-08-23 16:27:01,245 - strategies.ml_strategy - INFO - 2025-03-18: BUY SIGNAL: HD, Strength: 0.700, Size: 392, ML Enhanced: False
+2025-08-23 16:27:01,245 - strategies.ml_strategy - INFO - 2025-03-18: BUY SIGNAL: DIS, Strength: 0.700, Size: 1377, ML Enhanced: False
+2025-08-23 16:27:01,245 - strategies.ml_strategy - INFO - 2025-03-18: BUY SIGNAL: CRM, Strength: 0.700, Size: 490, ML Enhanced: False
+2025-08-23 16:27:01,246 - strategies.ml_strategy - INFO - 2025-03-19: Order Failed: ORCL, Status: Margin
+2025-08-23 16:27:01,246 - strategies.ml_strategy - INFO - 2025-03-19: Order Failed: JPM, Status: Margin
+2025-08-23 16:27:01,246 - strategies.ml_strategy - INFO - 2025-03-19: Order Failed: MA, Status: Margin
+2025-08-23 16:27:01,246 - strategies.ml_strategy - INFO - 2025-03-19: Order Failed: HD, Status: Margin
+2025-08-23 16:27:01,246 - strategies.ml_strategy - INFO - 2025-03-19: Order Failed: DIS, Status: Margin
+2025-08-23 16:27:01,246 - strategies.ml_strategy - INFO - 2025-03-19: Order Failed: CRM, Status: Margin
+2025-08-23 16:27:01,246 - strategies.ml_strategy - INFO - 2025-03-19: SELL EXECUTED: META, Price: 583.83, Size: -113, Value: 70447.33
+2025-08-23 16:27:01,246 - strategies.ml_strategy - INFO - 2025-03-19: BUY EXECUTED: AMZN, Price: 193.38, Size: 367, Cost: 70970.46
+2025-08-23 16:27:01,410 - strategies.ml_strategy - INFO - 2025-03-19: BUY SIGNAL: META, Strength: 0.900, Size: 122, ML Enhanced: False
+2025-08-23 16:27:01,410 - strategies.ml_strategy - INFO - 2025-03-19: BUY SIGNAL: JPM, Strength: 0.700, Size: 583, ML Enhanced: False
+2025-08-23 16:27:01,410 - strategies.ml_strategy - INFO - 2025-03-19: BUY SIGNAL: MA, Strength: 0.700, Size: 129, ML Enhanced: False
+2025-08-23 16:27:01,410 - strategies.ml_strategy - INFO - 2025-03-19: BUY SIGNAL: HD, Strength: 0.700, Size: 392, ML Enhanced: False
+2025-08-23 16:27:01,410 - strategies.ml_strategy - INFO - 2025-03-19: BUY SIGNAL: DIS, Strength: 0.700, Size: 1381, ML Enhanced: False
+2025-08-23 16:27:01,410 - strategies.ml_strategy - INFO - 2025-03-20: Order Failed: META, Status: Margin
+2025-08-23 16:27:01,410 - strategies.ml_strategy - INFO - 2025-03-20: Order Failed: JPM, Status: Margin
+2025-08-23 16:27:01,410 - strategies.ml_strategy - INFO - 2025-03-20: Order Failed: MA, Status: Margin
+2025-08-23 16:27:01,410 - strategies.ml_strategy - INFO - 2025-03-20: Order Failed: HD, Status: Margin
+2025-08-23 16:27:01,411 - strategies.ml_strategy - INFO - 2025-03-20: Order Failed: DIS, Status: Margin
+2025-08-23 16:27:01,575 - strategies.ml_strategy - INFO - 2025-03-20: BUY SIGNAL: AMZN, Strength: 0.700, Size: 2, ML Enhanced: False
+2025-08-23 16:27:01,575 - strategies.ml_strategy - INFO - 2025-03-20: BUY SIGNAL: META, Strength: 0.900, Size: 121, ML Enhanced: False
+2025-08-23 16:27:01,575 - strategies.ml_strategy - INFO - 2025-03-20: BUY SIGNAL: TSLA, Strength: 0.900, Size: 584, ML Enhanced: False
+2025-08-23 16:27:01,575 - strategies.ml_strategy - INFO - 2025-03-20: BUY SIGNAL: JPM, Strength: 0.700, Size: 584, ML Enhanced: False
+2025-08-23 16:27:01,575 - strategies.ml_strategy - INFO - 2025-03-20: BUY SIGNAL: V, Strength: 0.700, Size: 205, ML Enhanced: False
+2025-08-23 16:27:01,575 - strategies.ml_strategy - INFO - 2025-03-20: BUY SIGNAL: MA, Strength: 0.700, Size: 129, ML Enhanced: False
+2025-08-23 16:27:01,576 - strategies.ml_strategy - INFO - 2025-03-20: BUY SIGNAL: HD, Strength: 0.700, Size: 390, ML Enhanced: False
+2025-08-23 16:27:01,576 - strategies.ml_strategy - INFO - 2025-03-20: BUY SIGNAL: DIS, Strength: 0.700, Size: 1403, ML Enhanced: False
+2025-08-23 16:27:01,576 - strategies.ml_strategy - INFO - 2025-03-21: Order Failed: META, Status: Margin
+2025-08-23 16:27:01,576 - strategies.ml_strategy - INFO - 2025-03-21: Order Failed: TSLA, Status: Margin
+2025-08-23 16:27:01,576 - strategies.ml_strategy - INFO - 2025-03-21: Order Failed: JPM, Status: Margin
+2025-08-23 16:27:01,576 - strategies.ml_strategy - INFO - 2025-03-21: Order Failed: V, Status: Margin
+2025-08-23 16:27:01,576 - strategies.ml_strategy - INFO - 2025-03-21: Order Failed: MA, Status: Margin
+2025-08-23 16:27:01,576 - strategies.ml_strategy - INFO - 2025-03-21: Order Failed: HD, Status: Margin
+2025-08-23 16:27:01,576 - strategies.ml_strategy - INFO - 2025-03-21: Order Failed: DIS, Status: Margin
+2025-08-23 16:27:01,576 - strategies.ml_strategy - INFO - 2025-03-21: BUY EXECUTED: AMZN, Price: 192.90, Size: 2, Cost: 385.80
+2025-08-23 16:27:01,740 - strategies.ml_strategy - INFO - 2025-03-21: BUY SIGNAL: JPM, Strength: 0.900, Size: 580, ML Enhanced: False
+2025-08-23 16:27:01,740 - strategies.ml_strategy - INFO - 2025-03-21: BUY SIGNAL: V, Strength: 0.900, Size: 211, ML Enhanced: False
+2025-08-23 16:27:01,740 - strategies.ml_strategy - INFO - 2025-03-21: BUY SIGNAL: MA, Strength: 0.900, Size: 130, ML Enhanced: False
+2025-08-23 16:27:01,741 - strategies.ml_strategy - INFO - 2025-03-21: BUY SIGNAL: PG, Strength: 0.900, Size: 843, ML Enhanced: False
+2025-08-23 16:27:01,741 - strategies.ml_strategy - INFO - 2025-03-21: BUY SIGNAL: KO, Strength: 0.900, Size: 2035, ML Enhanced: False
+2025-08-23 16:27:01,741 - strategies.ml_strategy - INFO - 2025-03-21: BUY SIGNAL: HD, Strength: 0.900, Size: 397, ML Enhanced: False
+2025-08-23 16:27:01,741 - strategies.ml_strategy - INFO - 2025-03-21: BUY SIGNAL: DIS, Strength: 0.900, Size: 1401, ML Enhanced: False
+2025-08-23 16:27:01,741 - strategies.ml_strategy - INFO - 2025-03-24: Order Failed: JPM, Status: Margin
+2025-08-23 16:27:01,741 - strategies.ml_strategy - INFO - 2025-03-24: Order Failed: V, Status: Margin
+2025-08-23 16:27:01,741 - strategies.ml_strategy - INFO - 2025-03-24: Order Failed: MA, Status: Margin
+2025-08-23 16:27:01,741 - strategies.ml_strategy - INFO - 2025-03-24: Order Failed: PG, Status: Margin
+2025-08-23 16:27:01,741 - strategies.ml_strategy - INFO - 2025-03-24: Order Failed: KO, Status: Margin
+2025-08-23 16:27:01,742 - strategies.ml_strategy - INFO - 2025-03-24: Order Failed: HD, Status: Margin
+2025-08-23 16:27:01,742 - strategies.ml_strategy - INFO - 2025-03-24: Order Failed: DIS, Status: Margin

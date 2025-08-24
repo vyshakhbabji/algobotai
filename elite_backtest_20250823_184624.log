@@ -1,0 +1,46 @@
+2025-08-23 18:46:24,636 - __main__ - INFO - ============================================================
+2025-08-23 18:46:24,636 - __main__ - INFO - 🚀 ELITE ML TRADING SYSTEM - MAXIMUM ACCURACY & PROFIT
+2025-08-23 18:46:24,636 - __main__ - INFO - ============================================================
+2025-08-23 18:46:24,636 - __main__ - INFO - 🎯 Elite Features:
+2025-08-23 18:46:24,636 - __main__ - INFO -    • XGBoost + LightGBM + Neural Network Ensemble
+2025-08-23 18:46:24,636 - __main__ - INFO -    • 100+ Advanced Technical Features
+2025-08-23 18:46:24,636 - __main__ - INFO -    • Multi-horizon Predictions (1d, 3d, 5d, 10d, 20d)
+2025-08-23 18:46:24,636 - __main__ - INFO -    • Risk-adjusted Kelly Position Sizing
+2025-08-23 18:46:24,636 - __main__ - INFO -    • Regime-aware Trading
+2025-08-23 18:46:24,636 - __main__ - INFO -    • Advanced Risk Management
+2025-08-23 18:46:24,636 - __main__ - INFO -    • Market Context Integration (VIX, SPY)
+2025-08-23 18:46:24,636 - __main__ - INFO - ============================================================
+2025-08-23 18:46:24,637 - __main__ - INFO - 📊 Data Periods:
+2025-08-23 18:46:24,637 - __main__ - INFO -    Training: 2024-01-01 to 2024-10-19
+2025-08-23 18:46:24,637 - __main__ - INFO -    Testing: 2024-10-19 to 2024-12-31
+2025-08-23 18:46:24,637 - __main__ - INFO - 📈 Downloading data for 3 symbols...
+2025-08-23 18:46:24,637 - __main__ - INFO -    Downloading AAPL...
+2025-08-23 18:46:24,794 - __main__ - INFO -    ✅ AAPL: 251 bars
+2025-08-23 18:46:24,794 - __main__ - INFO -    Downloading MSFT...
+2025-08-23 18:46:24,891 - __main__ - INFO -    ✅ MSFT: 251 bars
+2025-08-23 18:46:24,891 - __main__ - INFO -    Downloading GOOGL...
+2025-08-23 18:46:24,958 - __main__ - INFO -    ✅ GOOGL: 251 bars
+2025-08-23 18:46:24,959 - __main__ - INFO - ✅ Successfully downloaded 3 symbols
+2025-08-23 18:46:24,959 - __main__ - INFO - 🚀 Starting ELITE backtest...
+2025-08-23 18:46:24,959 - __main__ - INFO -    Symbols: 3
+2025-08-23 18:46:24,959 - __main__ - INFO -    Period: 2024-01-01 to 2024-12-31
+2025-08-23 18:46:24,959 - __main__ - INFO -    Capital: $100,000
+2025-08-23 18:46:24,959 - __main__ - INFO -    Training Split: 80%
+2025-08-23 18:46:24,960 - __main__ - INFO - ⚙️  Running elite backtest...
+2025-08-23 18:46:25,312 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Market context data loaded (VIX, SPY)
+2025-08-23 18:46:25,312 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - 🚀 Enhanced ML Signal Generator initialized
+2025-08-23 18:46:25,312 - backtrader_system.strategies.elite_ml_strategy - INFO - 🚀 Elite ML Trading Strategy initialized
+2025-08-23 18:46:25,312 - backtrader_system.strategies.elite_ml_strategy - INFO - 📊 Monitoring 3 symbols
+2025-08-23 18:46:25,312 - backtrader_system.strategies.elite_ml_strategy - INFO - 🎯 Signal threshold: 0.15
+2025-08-23 18:46:25,312 - backtrader_system.strategies.elite_ml_strategy - INFO - 💰 Max position size: 15.0%
+2025-08-23 18:46:25,314 - backtrader_system.strategies.elite_ml_strategy - INFO - 🎬 Elite ML Strategy starting...
+2025-08-23 18:46:25,339 - backtrader_system.strategies.elite_ml_strategy - INFO - 🏁 Elite ML Strategy stopping...
+2025-08-23 18:46:25,340 - backtrader_system.strategies.elite_ml_strategy - INFO - 📊 Final Performance:
+2025-08-23 18:46:25,340 - backtrader_system.strategies.elite_ml_strategy - INFO -    Final Value: $100,000.00
+2025-08-23 18:46:25,340 - backtrader_system.strategies.elite_ml_strategy - INFO -    Total Trades: 0
+2025-08-23 18:46:25,340 - backtrader_system.strategies.elite_ml_strategy - INFO -    Win Rate: 0.0%
+2025-08-23 18:46:25,340 - backtrader_system.strategies.elite_ml_strategy - INFO -    Trades Won: 0, Lost: 0
+2025-08-23 18:46:25,340 - __main__ - INFO - ✅ Elite backtest completed!
+2025-08-23 18:46:25,340 - __main__ - INFO - 📊 Final Portfolio Value: $100,000
+2025-08-23 18:46:25,340 - __main__ - INFO - 📈 Total Return: 0.00%
+2025-08-23 18:46:25,341 - __main__ - ERROR - Elite backtest failed: 'EnhancedMLSignalGenerator' object has no attribute 'get_model_summary'

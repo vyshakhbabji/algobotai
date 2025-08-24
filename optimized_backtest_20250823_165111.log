@@ -1,0 +1,125 @@
+2025-08-23 16:51:11,890 - __main__ - INFO - ==================================================
+2025-08-23 16:51:11,890 - __main__ - INFO - OPTIMIZED BACKTRADER ML SYSTEM
+2025-08-23 16:51:11,890 - __main__ - INFO - ==================================================
+2025-08-23 16:51:11,890 - __main__ - INFO - 🎯 Key Improvements:
+2025-08-23 16:51:11,890 - __main__ - INFO -    • Conservative Kelly sizing (12% max position)
+2025-08-23 16:51:11,890 - __main__ - INFO -    • 8% stop-loss protection
+2025-08-23 16:51:11,890 - __main__ - INFO -    • 25% portfolio heat limit
+2025-08-23 16:51:11,891 - __main__ - INFO -    • Higher signal threshold (0.35)
+2025-08-23 16:51:11,891 - __main__ - INFO -    • Minimum 3-day hold periods
+2025-08-23 16:51:11,891 - __main__ - INFO -    • Maximum 8 trades per day
+2025-08-23 16:51:11,891 - __main__ - INFO - ==================================================
+2025-08-23 16:51:11,891 - __main__ - INFO - 📊 Downloading data for 20 symbols...
+2025-08-23 16:51:11,891 - __main__ - INFO -    Downloading AAPL...
+2025-08-23 16:51:12,189 - __main__ - INFO -    ✅ AAPL: 753 bars
+2025-08-23 16:51:12,189 - __main__ - INFO -    Downloading MSFT...
+2025-08-23 16:51:12,314 - __main__ - INFO -    ✅ MSFT: 753 bars
+2025-08-23 16:51:12,314 - __main__ - INFO -    Downloading GOOGL...
+2025-08-23 16:51:12,389 - __main__ - INFO -    ✅ GOOGL: 753 bars
+2025-08-23 16:51:12,389 - __main__ - INFO -    Downloading AMZN...
+2025-08-23 16:51:12,480 - __main__ - INFO -    ✅ AMZN: 753 bars
+2025-08-23 16:51:12,480 - __main__ - INFO -    Downloading META...
+2025-08-23 16:51:12,554 - __main__ - INFO -    ✅ META: 753 bars
+2025-08-23 16:51:12,555 - __main__ - INFO -    Downloading TSLA...
+2025-08-23 16:51:12,628 - __main__ - INFO -    ✅ TSLA: 753 bars
+2025-08-23 16:51:12,628 - __main__ - INFO -    Downloading NVDA...
+2025-08-23 16:51:12,759 - __main__ - INFO -    ✅ NVDA: 753 bars
+2025-08-23 16:51:12,759 - __main__ - INFO -    Downloading ORCL...
+2025-08-23 16:51:12,879 - __main__ - INFO -    ✅ ORCL: 753 bars
+2025-08-23 16:51:12,879 - __main__ - INFO -    Downloading JPM...
+2025-08-23 16:51:13,019 - __main__ - INFO -    ✅ JPM: 753 bars
+2025-08-23 16:51:13,019 - __main__ - INFO -    Downloading BAC...
+2025-08-23 16:51:13,153 - __main__ - INFO -    ✅ BAC: 753 bars
+2025-08-23 16:51:13,153 - __main__ - INFO -    Downloading V...
+2025-08-23 16:51:13,258 - __main__ - INFO -    ✅ V: 753 bars
+2025-08-23 16:51:13,258 - __main__ - INFO -    Downloading MA...
+2025-08-23 16:51:13,359 - __main__ - INFO -    ✅ MA: 753 bars
+2025-08-23 16:51:13,359 - __main__ - INFO -    Downloading UNH...
+2025-08-23 16:51:13,483 - __main__ - INFO -    ✅ UNH: 753 bars
+2025-08-23 16:51:13,483 - __main__ - INFO -    Downloading JNJ...
+2025-08-23 16:51:13,661 - __main__ - INFO -    ✅ JNJ: 753 bars
+2025-08-23 16:51:13,662 - __main__ - INFO -    Downloading PG...
+2025-08-23 16:51:13,847 - __main__ - INFO -    ✅ PG: 753 bars
+2025-08-23 16:51:13,847 - __main__ - INFO -    Downloading KO...
+2025-08-23 16:51:14,034 - __main__ - INFO -    ✅ KO: 753 bars
+2025-08-23 16:51:14,034 - __main__ - INFO -    Downloading XOM...
+2025-08-23 16:51:14,259 - __main__ - INFO -    ✅ XOM: 753 bars
+2025-08-23 16:51:14,259 - __main__ - INFO -    Downloading HD...
+2025-08-23 16:51:14,400 - __main__ - INFO -    ✅ HD: 753 bars
+2025-08-23 16:51:14,400 - __main__ - INFO -    Downloading DIS...
+2025-08-23 16:51:14,634 - __main__ - INFO -    ✅ DIS: 753 bars
+2025-08-23 16:51:14,634 - __main__ - INFO -    Downloading CRM...
+2025-08-23 16:51:14,715 - __main__ - INFO -    ✅ CRM: 753 bars
+2025-08-23 16:51:14,715 - __main__ - INFO - ✅ Successfully downloaded 20 symbols
+2025-08-23 16:51:14,716 - __main__ - INFO - 🚀 Starting OPTIMIZED backtest...
+2025-08-23 16:51:14,716 - __main__ - INFO -    Symbols: 20
+2025-08-23 16:51:14,716 - __main__ - INFO -    Period: 2022-08-22 to 2025-08-22
+2025-08-23 16:51:14,716 - __main__ - INFO -    Capital: $1,000,000
+2025-08-23 16:51:14,719 - __main__ - INFO - ⚙️  Running optimized backtest...
+2025-08-23 16:51:15,563 - backtrader_system.strategies.optimized_ml_strategy - INFO - OPTIMIZED Strategy initialized with 20 symbols
+2025-08-23 16:51:15,564 - backtrader_system.strategies.optimized_ml_strategy - INFO - Key improvements: Conservative sizing (max 25.0%), Stop loss (8.0%), Higher signal threshold (0.25)
+2025-08-23 16:51:19,620 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2024-08-22: [OUT-OF-SAMPLE TRADING] Using pre-trained models from 2-year training period
+2025-08-23 16:51:19,805 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2024-08-22: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:51:19,991 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2024-08-27: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:51:20,183 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2024-09-03: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:51:20,371 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2024-09-09: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:51:20,572 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2024-09-16: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:51:20,774 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2024-09-23: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:51:20,973 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2024-09-30: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:51:21,173 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2024-10-07: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:51:21,373 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2024-10-14: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:51:21,575 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2024-10-21: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:51:21,775 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2024-10-28: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:51:21,977 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2024-11-04: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:51:22,177 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2024-11-11: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:51:22,379 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2024-11-18: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:51:22,581 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2024-11-25: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:51:22,771 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2024-12-02: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:51:22,968 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2024-12-09: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:51:23,169 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2024-12-16: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:51:23,370 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2024-12-23: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:51:23,557 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2024-12-30: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:51:23,746 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2025-01-06: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:51:23,936 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2025-01-13: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:51:24,135 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2025-01-21: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:51:24,321 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2025-01-27: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:51:24,520 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2025-02-03: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:51:24,722 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2025-02-10: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:51:24,920 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2025-02-18: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:51:25,109 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2025-02-24: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:51:25,309 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2025-03-03: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:51:25,511 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2025-03-10: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:51:25,718 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2025-03-17: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:51:25,924 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2025-03-24: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:51:26,134 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2025-03-31: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:51:26,350 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2025-04-07: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:51:26,562 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2025-04-14: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:51:26,753 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2025-04-21: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:51:26,954 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2025-04-28: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:51:27,154 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2025-05-05: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:51:27,354 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2025-05-12: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:51:27,554 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2025-05-19: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:51:27,761 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2025-05-27: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:51:27,949 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2025-06-02: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:51:28,149 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2025-06-09: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:51:28,350 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2025-06-16: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:51:28,540 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2025-06-23: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:51:28,743 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2025-06-30: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:51:28,932 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2025-07-07: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:51:29,134 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2025-07-14: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:51:29,333 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2025-07-21: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:51:29,538 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2025-07-28: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:51:29,744 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2025-08-04: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:51:29,945 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2025-08-11: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:51:30,147 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2025-08-18: Portfolio Value: $1,000,000, Return: 0.0%, Positions: 0, Exposure: 0.0%, Heat: 0.0%
+2025-08-23 16:51:30,186 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2025-08-21: Strategy Completed!
+2025-08-23 16:51:30,186 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2025-08-21: Starting Value: $1,000,000
+2025-08-23 16:51:30,186 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2025-08-21: Final Value: $1,000,000
+2025-08-23 16:51:30,187 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2025-08-21: Total Return: 0.00%
+2025-08-23 16:51:30,187 - backtrader_system.strategies.optimized_ml_strategy - INFO - 2025-08-21: Total Trades: 0
+2025-08-23 16:51:30,187 - __main__ - INFO - ✅ Backtest completed!
+2025-08-23 16:51:30,187 - __main__ - INFO - 📊 Final Portfolio Value: $1,000,000
+2025-08-23 16:51:30,187 - __main__ - INFO - 📈 Total Return: 0.00%
+2025-08-23 16:51:30,189 - __main__ - INFO - 📊 Performance report: results/optimized_performance_report_20250823_165130.json
+2025-08-23 16:51:30,189 - __main__ - INFO - 🎯 GENERATING OPTIMIZED PERFORMANCE ANALYSIS...
+2025-08-23 16:51:30,190 - __main__ - INFO - 📈 Equity curve saved: results/optimized_equity_curve_20250823_165130.csv

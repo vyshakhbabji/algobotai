@@ -1,0 +1,21 @@
+{
+  "timestamp": "2025-08-23T17:15:07.825905",
+  "backtest_type": "OPTIMIZED",
+  "initial_capital": 1000000.0,
+  "final_value": 1408860.9358951394,
+  "total_return_pct": 40.88609358951393,
+  "total_trades": 107,
+  "win_rate_pct": 32.857142857142854,
+  "avg_regime_accuracy": 0,
+  "avg_strength_r2": 0,
+  "optimizations_applied": [
+    "Conservative Kelly sizing (12% max)",
+    "8% stop-loss protection",
+    "25% portfolio heat limit",
+    "Higher signal threshold (0.35)",
+    "Minimum 3-day hold periods",
+    "Maximum 8 trades per day",
+    "Reduced max positions to 12",
+    "Profit targets at 15%"
+  ]
+}

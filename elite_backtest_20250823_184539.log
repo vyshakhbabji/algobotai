@@ -1,0 +1,55 @@
+2025-08-23 18:45:39,447 - __main__ - INFO - ============================================================
+2025-08-23 18:45:39,447 - __main__ - INFO - 🚀 ELITE ML TRADING SYSTEM - MAXIMUM ACCURACY & PROFIT
+2025-08-23 18:45:39,447 - __main__ - INFO - ============================================================
+2025-08-23 18:45:39,447 - __main__ - INFO - 🎯 Elite Features:
+2025-08-23 18:45:39,447 - __main__ - INFO -    • XGBoost + LightGBM + Neural Network Ensemble
+2025-08-23 18:45:39,447 - __main__ - INFO -    • 100+ Advanced Technical Features
+2025-08-23 18:45:39,447 - __main__ - INFO -    • Multi-horizon Predictions (1d, 3d, 5d, 10d, 20d)
+2025-08-23 18:45:39,447 - __main__ - INFO -    • Risk-adjusted Kelly Position Sizing
+2025-08-23 18:45:39,447 - __main__ - INFO -    • Regime-aware Trading
+2025-08-23 18:45:39,447 - __main__ - INFO -    • Advanced Risk Management
+2025-08-23 18:45:39,447 - __main__ - INFO -    • Market Context Integration (VIX, SPY)
+2025-08-23 18:45:39,447 - __main__ - INFO - ============================================================
+2025-08-23 18:45:39,448 - __main__ - INFO - 📊 Data Periods:
+2025-08-23 18:45:39,448 - __main__ - INFO -    Training: 2022-08-22 to 2024-08-22
+2025-08-23 18:45:39,448 - __main__ - INFO -    Testing: 2024-08-22 to 2025-08-22
+2025-08-23 18:45:39,448 - __main__ - INFO - 📈 Downloading data for 3 symbols...
+2025-08-23 18:45:39,448 - __main__ - INFO -    Downloading AAPL...
+2025-08-23 18:45:39,732 - __main__ - INFO -    ✅ AAPL: 753 bars
+2025-08-23 18:45:39,732 - __main__ - INFO -    Downloading MSFT...
+2025-08-23 18:45:39,839 - __main__ - INFO -    ✅ MSFT: 753 bars
+2025-08-23 18:45:39,839 - __main__ - INFO -    Downloading GOOGL...
+2025-08-23 18:45:39,917 - __main__ - INFO -    ✅ GOOGL: 753 bars
+2025-08-23 18:45:39,917 - __main__ - INFO - ✅ Successfully downloaded 3 symbols
+2025-08-23 18:45:39,917 - __main__ - INFO - 🚀 Starting ELITE backtest...
+2025-08-23 18:45:39,917 - __main__ - INFO -    Symbols: 3
+2025-08-23 18:45:39,917 - __main__ - INFO -    Period: 2022-08-22 to 2025-08-22
+2025-08-23 18:45:39,917 - __main__ - INFO -    Capital: $1,000,000
+2025-08-23 18:45:39,917 - __main__ - INFO -    Training Split: 67%
+2025-08-23 18:45:39,918 - __main__ - INFO - ⚙️  Running elite backtest...
+2025-08-23 18:45:40,325 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - ✅ Market context data loaded (VIX, SPY)
+2025-08-23 18:45:40,325 - backtrader_system.strategies.enhanced_ml_signal_generator - INFO - 🚀 Enhanced ML Signal Generator initialized
+2025-08-23 18:45:40,325 - backtrader_system.strategies.elite_ml_strategy - INFO - 🚀 Elite ML Trading Strategy initialized
+2025-08-23 18:45:40,325 - backtrader_system.strategies.elite_ml_strategy - INFO - 📊 Monitoring 3 symbols
+2025-08-23 18:45:40,326 - backtrader_system.strategies.elite_ml_strategy - INFO - 🎯 Signal threshold: 0.15
+2025-08-23 18:45:40,326 - backtrader_system.strategies.elite_ml_strategy - INFO - 💰 Max position size: 15.0%
+2025-08-23 18:45:40,328 - backtrader_system.strategies.elite_ml_strategy - INFO - 🎬 Elite ML Strategy starting...
+2025-08-23 18:45:40,377 - backtrader_system.strategies.elite_ml_strategy - INFO - 🧠 Training ML models for 3 symbols...
+2025-08-23 18:45:40,428 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for AAPL: 'Rolling' object has no attribute 'kurtosis'
+2025-08-23 18:45:41,566 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error training ensemble models for AAPL: Input X contains NaN.
+MLPRegressor does not accept missing values encoded as NaN natively. For supervised learning, you might want to consider sklearn.ensemble.HistGradientBoostingClassifier and Regressor which accept missing values encoded as NaNs natively. Alternatively, it is possible to preprocess the data, for instance by using an imputer transformer in a pipeline or drop samples with missing values. See https://scikit-learn.org/stable/modules/impute.html You can find a list of all estimators that handle NaN values at the following page: https://scikit-learn.org/stable/modules/impute.html#estimators-that-handle-nan-values
+2025-08-23 18:45:41,616 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for MSFT: 'Rolling' object has no attribute 'kurtosis'
+2025-08-23 18:45:42,738 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error training ensemble models for MSFT: Input X contains NaN.
+MLPRegressor does not accept missing values encoded as NaN natively. For supervised learning, you might want to consider sklearn.ensemble.HistGradientBoostingClassifier and Regressor which accept missing values encoded as NaNs natively. Alternatively, it is possible to preprocess the data, for instance by using an imputer transformer in a pipeline or drop samples with missing values. See https://scikit-learn.org/stable/modules/impute.html You can find a list of all estimators that handle NaN values at the following page: https://scikit-learn.org/stable/modules/impute.html#estimators-that-handle-nan-values
+2025-08-23 18:45:42,788 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for GOOGL: 'Rolling' object has no attribute 'kurtosis'
+2025-08-23 18:45:43,907 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error training ensemble models for GOOGL: Input X contains NaN.
+MLPRegressor does not accept missing values encoded as NaN natively. For supervised learning, you might want to consider sklearn.ensemble.HistGradientBoostingClassifier and Regressor which accept missing values encoded as NaNs natively. Alternatively, it is possible to preprocess the data, for instance by using an imputer transformer in a pipeline or drop samples with missing values. See https://scikit-learn.org/stable/modules/impute.html You can find a list of all estimators that handle NaN values at the following page: https://scikit-learn.org/stable/modules/impute.html#estimators-that-handle-nan-values
+2025-08-23 18:45:43,907 - backtrader_system.strategies.elite_ml_strategy - WARNING - ⚠️ Only trained 0 models, need at least 3
+2025-08-23 18:45:43,908 - backtrader_system.strategies.elite_ml_strategy - INFO - 🧠 Training ML models for 3 symbols...
+2025-08-23 18:45:43,958 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for AAPL: 'Rolling' object has no attribute 'kurtosis'
+2025-08-23 18:45:45,081 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error training ensemble models for AAPL: Input X contains NaN.
+MLPRegressor does not accept missing values encoded as NaN natively. For supervised learning, you might want to consider sklearn.ensemble.HistGradientBoostingClassifier and Regressor which accept missing values encoded as NaNs natively. Alternatively, it is possible to preprocess the data, for instance by using an imputer transformer in a pipeline or drop samples with missing values. See https://scikit-learn.org/stable/modules/impute.html You can find a list of all estimators that handle NaN values at the following page: https://scikit-learn.org/stable/modules/impute.html#estimators-that-handle-nan-values
+2025-08-23 18:45:45,132 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for MSFT: 'Rolling' object has no attribute 'kurtosis'
+2025-08-23 18:45:46,271 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error training ensemble models for MSFT: Input X contains NaN.
+MLPRegressor does not accept missing values encoded as NaN natively. For supervised learning, you might want to consider sklearn.ensemble.HistGradientBoostingClassifier and Regressor which accept missing values encoded as NaNs natively. Alternatively, it is possible to preprocess the data, for instance by using an imputer transformer in a pipeline or drop samples with missing values. See https://scikit-learn.org/stable/modules/impute.html You can find a list of all estimators that handle NaN values at the following page: https://scikit-learn.org/stable/modules/impute.html#estimators-that-handle-nan-values
+2025-08-23 18:45:46,323 - backtrader_system.strategies.enhanced_ml_signal_generator - ERROR - Error calculating advanced features for GOOGL: 'Rolling' object has no attribute 'kurtosis'
